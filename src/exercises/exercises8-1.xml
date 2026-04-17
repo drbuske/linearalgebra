@@ -1,85 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercises>
+<exercises xml:id="exercises-8-1">
 
-  <exercise>
+  <exercise xml:id="exercise-8-1-1">
     <statement>
-      <p> Consider the matrix and vectors
-      <me>
-	A = \left[\begin{array}{rr}
-	8 \amp -10 \\
-	5 \amp -7 \\
-	\end{array}\right],\qquad
-	\vvec_1=\twovec{2}{1},~~~
-	\vvec_2=\twovec{1}{1}
-      </me>.
-      <ol marker="a.">
-	<li><p> Show that <m>\vvec_1</m> and
-	<m>\vvec_2</m> are eigenvectors of <m>A</m> and find their
-	associated eigenvalues. </p>
-	<sage>
-	  <input>
-	  </input>
-	</sage>
-	</li>
-
-	<li><p> Express the vector <m>\xvec = \twovec{-4}{-1}</m> as a
-	linear combination of <m>\vvec_1</m> and
-	<m>\vvec_2</m>. </p></li>
-
-	<li><p> Use this expression to compute <m>A\xvec</m>,
-	<m>A^2\xvec</m>, and <m>A^{-1}\xvec</m> as a linear
-	combination of eigenvectors. </p></li>
-      </ol></p>
+      <p>
+        Consider the set <m>\mathbb{R}^2</m> with the following non-standard
+        addition operation <m>\oplus</m>:
+        <me>(a,b)\oplus(c,d)=(a+d,b+c).</me>
+        Scalar multiplication is defined in the usual way.
+        Is this a vector space? Explain why or why not.
+      </p>
     </statement>
-
-    <solution>
-      <p><ol marker="a.">
-	<li><p> We find that <m>A\vvec_1 = 3\vvec_1</m> and
-	<m>A\vvec_2=-2\vvec_2</m> so the associated eigenvalues are
-	<m>\lambda_1 = 3</m> and <m>\lambda_2=-2</m>. </p></li>
-
-	<li><p> Setting up an augmented matrix and row reducing shows
-	us that <m>\xvec=\twovec{-4}{-1} = -3\vvec_1 +
-	2\vvec_2</m>. </p></li>
-
-	<li><p> We then have
-	<me>
-	  \begin{alignedat}{3}
-	  A\xvec\amp{}={}\amp -9\vvec_1 \amp{}-{}\amp 4\vvec_2\\
-	  A^2\xvec\amp{}={}\amp -27\vvec_1\amp{}+{}\amp8\vvec_2 \\
-	  A^{-1}\xvec\amp{}={}\amp -\vvec_1 \amp{}-{}\amp \vvec_2\text{.} \\
-	  \end{alignedat}
-	</me>
-	</p></li>
-      </ol></p>
-    </solution>
-
-    <answer>
-      <p><ol marker="a.">
-	<li><p> We find that <m>A\vvec_1 = 3\vvec_1</m> and
-	<m>A\vvec_2=-2\vvec_2</m> so the associated eigenvalues are
-	<m>\lambda_1 = 3</m> and <m>\lambda_2=-2</m>. </p></li>
-
-	<li><p> <m>\xvec=\twovec{-4}{-1} = -3\vvec_1 +
-	2\vvec_2</m>. </p></li>
-
-	<li><p> We find
-	<me>
-	  \begin{alignedat}{3}
-	  A\xvec\amp{}={}\amp -9\vvec_1 \amp{}-{}\amp 4\vvec_2\\
-	  A^2\xvec\amp{}={}\amp -27\vvec_1\amp{}+{}\amp8\vvec_2 \\
-	  A^{-1}\xvec\amp{}={}\amp -\vvec_1 \amp{}-{}\amp \vvec_2\text{.} \\
-	  \end{alignedat}
-	</me>
-	</p></li>
-      </ol></p>
-    </answer>
   </exercise>
-	
 
+  <exercise xml:id="exercise-8-1-2">
+    <statement>
+      <p>
+        Consider <m>\mathbb{R}^2</m> with the following non-standard
+        addition operation <m>\oplus</m>:
+        <me>(a,b)\oplus(c,d)=(0,b+d).</me>
+        Scalar multiplication is defined in the usual way.
+        Is this a vector space? Explain why or why not.
+      </p>
+    </statement>
+  </exercise>
 
+  <exercise xml:id="exercise-8-1-3">
+    <statement>
+      <p>
+        Consider <m>\mathbb{R}^2</m> with the following non-standard
+        scalar multiplication:
+        <me>c\odot(a,b)=(a,cb).</me>
+        Vector addition is defined as usual.
+        Is this a vector space? Explain why or why not.
+      </p>
+    </statement>
+  </exercise>
 
-	
+  <exercise xml:id="exercise-8-1-4">
+    <statement>
+      <p>
+        Consider <m>\mathbb{R}^2</m> with the following non-standard
+        addition operation <m>\oplus</m>:
+        <me>(a,b)\oplus(c,d)=(a-c,b-d).</me>
+        Scalar multiplication is defined as usual.
+        Is this a vector space? Explain why or why not.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-1-5">
+    <statement>
+      <p>
+        Prove that the set <m>\mathrm{Seq}_{\mathbb{R}}</m> from <xref ref="example-8-7"/>
+        is a vector space.
+        <em>Hint:</em> this is a special case of <xref ref="example-8-6"/>,
+        if you realize that a sequence <m>(a_i)_{i\in\mathbb{N}}</m>
+        is the same thing as a function <m>a:\mathbb{N}\to \mathbb{R}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  
+ <exercise xml:id="exercise-8-1-6">
+    <statement>
+      <p>
+        Prove that the set <m>\mathbb{P}</m> from <xref ref="example-8-8"/> is a vector space.
+      </p>
+    </statement>
+  </exercise>
+
+ <exercise xml:id="exercise-8-1-7">
+    <statement>
+      <p>
+        Let <m>V</m> be the set of functions defined on a set <m>X</m> that have
+        values in a vector space <m>W</m>. Is this a vector space? Explain.
+      </p>
+    </statement>
+  </exercise>
+
+  
+ <exercise xml:id="exercise-8-1-8">
+    <statement>
+      <p>
+        Consider the set <m>\mathbb{R}^2</m> with the following non-standard
+        operations of addition and scalar multiplication:
+        <md>
+          <mrow>(a,b)\oplus(c,d) = (a+c-1, b+d-1),
+        </mrow>
+        <mrow>
+          k\odot(c,d) = (kc+(1-k), kd+(1-k)).</mrow>
+        </md>
+        Show that <m>\mathbb{R}^2</m> is a vector space with these operations.
+        <em>Hint:</em> the zero vector is not <m>(0,0)</m>, but <m>(1,1)</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  
+<exercise xml:id="exercise-8-1-9">
+    <statement>
+      <p>
+        Consider the set <m>\mathbb{R}</m> of real numbers. Addition of real
+        numbers is defined in the usual way, and scalar multiplication is just
+        multiplication of one real number by another. In other words,
+        <m>x+y</m> means to add the two numbers and <m>xy</m> means to multiply
+        them. Show that <m>\mathbb{R}</m>, with these operations, is a real
+        vector space.
+      </p>
+    </statement>
+  </exercise>
+
+  
+ <exercise xml:id="exercise-8-1-10">
+    <statement>
+      <p>
+        Let <m>K=\mathbb{Q}</m> be the field of rational numbers, and let <m>V</m>
+        be the set of real numbers of the form <m>a+b\sqrt{2}</m>, where
+        <m>a</m> and <m>b</m> are rational numbers. Show that with the usual
+        operations, <m>V</m> is a <m>\mathbb{Q}</m>-vector space.
+      </p>
+    </statement>
+  </exercise>
+
 
 </exercises>
+

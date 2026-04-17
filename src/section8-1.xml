@@ -411,15 +411,15 @@
 
 <!-- Example 8.7 -->
 <example xml:id="example-8-7">
-  <title>Infinite sequences</title>
+  <title>Infinite real sequences</title>
 
   <statement>
     <p>
-      Let <m>K</m> be a field. A sequence of elements of <m>K</m> is an infinite
-      list <m>(a_0,a_1,a_2,a_3,\ldots)</m>, where <m>a_i\in K</m> for all <m>i</m>.
+      A sequence of real numbers, i.e. elements of <m>\mathbb{R}</m> is an infinite
+      list <m>(a_0,a_1,a_2,a_3,\ldots)</m>, where <m>a_i\in \mathbb{R}</m> for all <m>i</m>.
       We also use the notation <m>(a_i)_{i\in\mathbb{N}}</m>, or occasionally
-      <m>(a_i)</m>, to denote such a sequence. Let <m>\mathrm{Seq}_K</m> be the
-      set of sequences of elements of <m>K</m>.
+      <m>(a_i)</m>, to denote such a sequence. Let <m>\mathrm{Seq}_{\mathbb{R}}</m> be the
+      set of sequences of real numbers.
     </p>
 
     <p>
@@ -432,7 +432,7 @@
       <m>
         k(a_i)_{i\in\mathbb{N}}=(ka_i)_{i\in\mathbb{N}}
       </m>.
-      Then <m>\mathrm{Seq}_K</m> is a vector space.
+      Then <m>\mathrm{Seq}_{\mathbb{R}}</m> is a vector space.
     </p>
   </statement>
 </example>
@@ -443,20 +443,99 @@
 
   <statement>
     <p>
-      Let <m>K</m> be a field, and let <m>P</m> be the set of all polynomials
-      (of any degree) with coefficients from <m>K</m>, i.e., expressions of
+      Let <m>\mathbb{P}</m> be the set of all polynomials
+      (of any degree) with real coefficients, i.e., expressions of
       the form
       <m>
         p(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0
       </m>,
-      where <m>n\ge 0</m> and <m>a_0,\ldots,a_n\in K</m>.
+      where <m>n\ge 0</m> and <m>a_0,\ldots,a_n\in \mathbb{R}</m>.
       Addition and scalar multiplication of polynomials are defined in the
-      usual way. Then <m>P</m> is a vector space.
+      usual way. Then <m>\mathbb{P}</m> is a vector space.
     </p>
   </statement>
 </example>
 
- 
+ <proposition xml:id="proposition-8-9">
+  <title>Elementary consequences of the vector space axioms</title>
+
+  <statement>
+    <p>
+      In any vector space, the following are true:
+    </p>
+
+    <ol marker="(a)">
+      <li>
+        The additive unit is unique. In other words, whenever
+        <m>\uvec+\vvec=\uvec</m>, then <m>\vvec=\zerovec</m>.
+      </li>
+      <li>
+        Additive inverses are unique. In other words, whenever
+        <m>\uvec+\vvec=\zerovec</m>, then <m>\vvec=-\uvec</m>.
+      </li>
+      <li>
+        <m>0\uvec=\zerovec</m> for all vectors <m>\uvec</m>.
+      </li>
+      <li>
+        The following cancellation law holds: if
+        <m>\uvec+\wvec=\vvec+\wvec</m>, then <m>\uvec=\vvec</m>.
+      </li>
+    </ol>
+  </statement>
+
+  <proof>
+    <p>
+      We prove the first three properties, and leave the last one as an exercise.
+      Assume <m>V</m> is any vector space over a field <m>K</m>.
+    </p>
+
+    <p>
+      <em>(a)</em> Consider arbitrary vectors <m>\uvec,\vvec\in V</m> and assume
+      <m>\uvec+\vvec=\uvec</m>. Applying the law (A1) (commutative law) to the left-hand
+      side, we have <m>\vvec+\uvec=\uvec</m>. Adding <m>-\uvec</m> to both sides of the
+      equation, we have
+      <m>(\vvec+\uvec)+(-\uvec)=\uvec+(-\uvec)</m>. Applying the law (A2) (associative law) to the
+      left-hand side, we have <m>\vvec+(\uvec+(-\uvec))=\uvec+(-\uvec)</m>. Applying the law (A4)
+      (additive inverse law) to both sides of the equation, we have
+      <m>\vvec+\zerovec=\zerovec</m>. Applying the law (A3) (additive unit law) to the left-hand
+      side, we have <m>\vvec=\zerovec</m>. This proves that whenever <m>\uvec+\vvec=\uvec</m>, then
+      <m>\vvec=\zerovec</m>, or in other words, <m>\vvec=\zerovec</m> is the only element acting as an
+      additive unit.
+    </p>
+
+    <p>
+      <em>(b)</em> Consider arbitrary vectors <m>\uvec,\vvec\in V</m> and assume
+      <m>\uvec+\vvec=\zerovec</m>. Applying the law (A1) (commutative law) to the left-hand
+      side, we have <m>\vvec+\uvec=\zerovec</m>. Adding <m>-\uvec</m> to both sides of the equation,
+      we have <m>(\vvec+\uvec)+(-\uvec)=\zerovec+(-\uvec)</m>. Applying the law (A2) (associative law)
+      to the left-hand side, we have <m>\vvec+(\uvec+(-\uvec))=\zerovec+(-\uvec)</m>. Applying the law
+      (A4) (additive inverse law) to the left-hand side, we have
+      <m>\vvec+\zerovec=\zerovec+(-\uvec)</m>. Applying the law (A1) (commutative law) to the
+      right-hand side, we have <m>\vvec+\zerovec=-\uvec+\zerovec</m>. Applying the law (A3)
+      (additive unit law) to both sides of the equation, we have
+      <m>\vvec=-\uvec</m>. This proves that whenever <m>\uvec+\vvec=\zerovec</m>, then <m>\vvec=-\uvec</m>,
+      or in other words, <m>\vvec=-\uvec</m> is the only element acting as an additive
+      inverse of <m>\uvec</m>.
+    </p>
+
+    <p>
+      <em>(c)</em> First, note that the scalar <m>0\in K</m> satisfies the
+      property <m>0+0=0</m>, by property (A3) of the definition of a field.
+      Now let <m>\uvec\in V</m> be any vector. Using the vector space law (SM2)
+      (distributive law over scalar addition) and <m>0+0=0</m>, we have
+      <m>0\uvec+0\uvec=(0+0)\uvec=0\uvec</m>. Next, we use a small trick: add <m>-(0\uvec)</m> to
+      both sides of the equation. This gives
+      <m>(0\uvec+0\uvec)+(-(0\uvec))=0\uvec+(-(0\uvec))</m>. Applying the additional laws (A2),
+      (A4), and (A3), we have <m>0\uvec+(0\uvec+(-(0\uvec)))=0\uvec+(-(0\uvec))</m>,
+      <m>0\uvec+\zerovec=\zerovec</m>, and <m>0\uvec=\zerovec</m>. This proves that <m>0\uvec=\zerovec</m> holds for all
+      vectors <m>\uvec</m>, as desired.
+    </p>
+
+    <p>
+      <em>(d)</em> This is left as an exercise.
+    </p>
+  </proof>
+</proposition>
 
   </subsection>
 
