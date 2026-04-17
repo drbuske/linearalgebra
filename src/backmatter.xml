@@ -2,7 +2,15 @@
 <backmatter xml:id="backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Back Matter</title>
 
-  
+
+
+
+  <xi:include href="./sage-reference.xml" />
+
+  <xi:include href="./print-note.xml" />
+
+    <appendix>
+      <title>Acknowledgement</title>
   <acknowledgement>
     <p>
       David Austin has written the vast majority of this text and deserves nearly 100% of the credit for its production.  I acknowledge him and his acknowledgements are found below.  
@@ -68,11 +76,7 @@
       so please know that your voice is always welcomed.
     </p>
   </acknowledgement>
-
-
-  <xi:include href="./sage-reference.xml" />
-
-  <xi:include href="./print-note.xml" />
+</appendix>
 
   <appendix xml:id="proteus-questions" component="proteus">
     <title>Proteus questions</title>

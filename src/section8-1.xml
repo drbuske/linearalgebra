@@ -25,6 +25,144 @@
     to understand. We will now see that they in fact apply to all vector spaces.
   </p>
 
+<exploration xml:id="preview-vecspace-5-1">
+  <!-- <title>Preview Activity: What Should Count as a Vector?</title> -->
+
+  <introduction>
+    <p>
+      In many courses, vectors first appear as arrows in the plane or as
+      lists of numbers in <m>\mathbb{R}^n</m>. In this section, we will step
+      back and ask a more basic question:
+      <em>what properties make a collection of objects behave like vectors?</em>
+    </p>
+
+    <p>
+      In this activity, you will examine several different sets together with
+      rules for addition and scalar multiplication. Your goal is not to check
+      a list of axioms, but to identify which structural features seem essential
+      and which failures cause problems.
+    </p>
+  </introduction>
+
+  <!-- Task 1 -->
+  <task xml:id="preview-vecspace-task-1">
+    <statement>
+      <p>
+        Consider the following sets, each equipped with the <em>usual</em>
+        addition and scalar multiplication.
+      </p>
+
+      <ol>
+        <li>
+          The set <m>\mathbb{R}^2</m> of ordered pairs <m>(x,y)</m>.
+        </li>
+        <li>
+          The set of all polynomials of degree at most 2.
+        </li>
+        <li>
+          The set of all real-valued functions defined on <m>\mathbb{R}</m>.
+        </li>
+      </ol>
+
+      <p>
+        For each set:
+      </p>
+
+      <ol>
+        <li>Give an example of adding two elements.</li>
+        <li>Give an example of multiplying an element by a scalar.</li>
+        <li>
+          Identify one feature that all three sets seem to have in common.
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 2 -->
+  <task xml:id="preview-vecspace-task-2">
+    <statement>
+      <p>
+        Now consider the following collections. In each case, the objects look
+        familiar, but the set has been restricted in some way.
+      </p>
+
+      <ol>
+        <li>
+          The set of all polynomials with constant term equal to 1.
+        </li>
+        <li>
+          The set of all vectors in <m>\mathbb{R}^2</m> whose coordinates are
+          positive.
+        </li>
+        <li>
+          The set of all functions <m>f:\mathbb{R}\to\mathbb{R}</m> such that
+          <m>f(0)=0</m>.
+        </li>
+      </ol>
+
+      <p>
+        For each example:
+      </p>
+
+      <ol>
+        <li>
+          Decide whether the set still behaves like a space of vectors.
+        </li>
+        <li>
+          Find a specific operation (addition or scalar multiplication)
+          that causes a problem, if one exists.
+        </li>
+        <li>
+          Explain why this failure is significant.
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 3 -->
+  <task xml:id="preview-vecspace-task-3">
+    <statement>
+      <p>
+        In <m>\mathbb{R}^2</m>, there is a special vector that satisfies
+        <m>v + \mathbf{0} = v</m> for every vector <m>v</m>.
+      </p>
+
+      <p>
+        For each of the following sets, discuss whether such a special element
+        exists.
+      </p>
+
+      <ol>
+        <li>
+          Polynomials of degree at most 2.
+        </li>
+        <li>
+          Polynomials with constant term equal to 1.
+        </li>
+        <li>
+          Functions that satisfy <m>f(0)=0</m>.
+        </li>
+      </ol>
+
+      <p>
+        What role does this special element seem to play in determining whether
+        a set should be considered a vector space?
+      </p>
+    </statement>
+  </task>
+
+  <!-- Wrap-up -->
+  <conclusion>
+    <p>
+      The examples in this activity suggest that “being a vector” is not about
+      what objects look like, but about how they behave under addition and
+      scalar multiplication. In the next section, these ideas will be distilled
+      into a precise definition of a <em>vector space</em>.
+    </p>
+  </conclusion>
+
+</exploration>
+
 </introduction>
 
   <subsection xml:id="section-definition-vector-spaces">
@@ -110,7 +248,7 @@
     </p>
 
     <example xml:id="example-rn-vector-space">
-      <title><m>\mathbb{R}^n</m> is a vector space</title>
+      <!-- <title><m>\mathbb{R}^n</m> is a vector space</title> -->
 
       <statement>
         <p> The set <m>\mathbb{R}^n</m> of <m>n</m>-dimensional real column vectors,
@@ -127,7 +265,7 @@
     </example>
 
      <example xml:id="example-cn-vector-space">
-      <title><m>\mathbb{C}^n</m> is a vector space</title>
+      <!-- <title><m>\mathbb{C}^n</m> is a vector space</title> -->
 
       <statement>
         <p> The set <m>\mathbb{C}^n</m> of <m>n</m>-dimensional complex column vectors,
@@ -140,7 +278,7 @@
     <p>We now consider some other examples of vector spaces. </p>
 
     <example xml:id="example-p2-polynomials">
-      <title>Vector space of polynomials of degree 2</title>
+      <!-- <title>Vector space of polynomials of degree 2</title> -->
 
       <statement>
         <p> Let <m>\mathbb{P}_2</m> be the set of all polynomials of degree at most 2 with
@@ -285,7 +423,7 @@
 
 <!-- Example 8.4 -->
 <example xml:id="example-8-4">
-  <title>Vector space of matrices</title>
+  <!-- <title>Vector space of matrices</title> -->
 
   <statement>
     <p>
@@ -303,7 +441,7 @@
 
 <!-- Example 8.5 -->
 <example xml:id="example-8-5">
-  <title>Not a vector space</title>
+  <!-- <title>Not a vector space</title> -->
 
   <statement>
     <p>
@@ -335,7 +473,7 @@
 
 <!-- Example 8.6 -->
 <example xml:id="example-8-6">
-  <title>Vector space of functions</title>
+  <!-- <title>Vector space of functions</title> -->
 
   <statement>
     <p>
@@ -411,7 +549,7 @@
 
 <!-- Example 8.7 -->
 <example xml:id="example-8-7">
-  <title>Infinite real sequences</title>
+  <!-- <title>Infinite real sequences</title> -->
 
   <statement>
     <p>
@@ -439,7 +577,7 @@
 
 <!-- Example 8.8 -->
 <example xml:id="example-8-8">
-  <title>Vector space of polynomials of unbounded degree</title>
+  <!-- <title>Vector space of polynomials of unbounded degree</title> -->
 
   <statement>
     <p>
@@ -456,8 +594,91 @@
   </statement>
 </example>
 
+<activity xml:id="vs-polys-degree-n">
+
+  <statement>
+<p>
+  Let <m>n \geq 0</m> be an integer and let <m>\mathbb{P}_{n}</m> denote the set of all polynomials with real coefficients of degree at most <m>n \geq 0</m>.
+  Members of <m>\mathbb{P}_{n}</m> have the form
+  <md>
+    <mrow> {\pvec}(t) = a_{0} + a_{1}t + a_{2}t^{2} + \cdots + a_{n} t^{n} </mrow>
+  </md>
+  where <m>a_{0}, a_{1}, \ldots, a_{n}</m> are real numbers and <m>t</m> is a real variable.
+  The purpose of this activity is to verify that <m>\mathbb{P}_{n}</m> is a vector space.
+</p>
+
+  <ol marker="(a)">
+    <li>
+      <p>
+        Explain why <m>\mathbb{P}_{n}</m> is closed under the operation of usual polynomial addition.
+        That is, explain why <m>{\pvec}+ \qvec \in \mathbb{P}_{n}</m> if <m>\pvec, \qvec \in \mathbb{P}_{n}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Explain why <m>\mathbb{P}_{n}</m> is closed under scalar multiplication.
+        That is, explain why <m>c{\pvec}\in \mathbb{P}_{n}</m> if <m>c \in \mathbb{R}</m> and <m>\pvec\in \mathbb{P}_{n}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Identify/describe the zero element <m>{\zerovec}\in \mathbb{P}_{n}</m> in axiom <em>(A3)</em>.
+        Then show that <m>\pvec +{\zerovec}= \pvec</m> for every <m>\pvec \in \mathbb{P}_{n}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For an element <m>\pvec \in \mathbb{P}_{n}</m>, identify/describe the additive inverse <m>-\pvec</m> in axiom A4.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For elements <m>\pvec, \qvec \in \mathbb{P}_{n}</m>, show that axiom <em>(SM1)</em> holds.
+      </p>
+    </li>
+  </ol>
+  </statement>
+
+  <solution>
+    <ol>
+      <li>
+        <p>If <m>\pvec, \qvec \in \mathbb{P}_{n}</m>, then both <m>\pvec</m> and <m>\qvec</m> are polynomials of degree at most <m>n</m>. Adding two such polynomials yields a polynomial <m>\pvec + \qvec</m> having degree at most <m>n</m> as well. </p>
+      </li>
+
+      <li>
+      <p>
+        If <m>\pvec\in \mathbb{P}_{n}</m>, then <m>\pvec(x)=a_{0}+a_{1}x+a_{2}x^{2} + \hdots + a_{n}x^{n}</m>. For any constant <m>c</m>, we then have <m>(c\pvec)(x) = c(a_{0}+a_{1}x+a_{2}x^{2} + \hdots + a_{n}x^{n}) = c\cdot a_{0} + (c\cdot a_{1})x + (c \cdot a_{2})x^{2} + \hdots + (c \cdot a_{n})x^{n}</m> which is clearly also in <m>\mathbb{P}_{n}</m>. 
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>{\zerovec}(x) = 0 + 0x + 0x^{2} + \hdots 0x^{n}</m>. If <m>\pvec</m> is any element in <m>\mathbb{P}_{n}</m>, then <m>\pvec(x) = a_{0} + a_{1}x + a_{2}x^{2} + \hdots + a_{n}x^{n}</m> so that <m>\pvec(x) +{\zerovec}(x) = (a_{0} + a_{1}x + a_{2}x^{2} + \hdots + a_{n}x^{n}) + (0 + 0x + 0x^{2} + \hdots 0x^{n}) = (a_{0}+0) + (a_{1}+0)x + (a_{2}+0)x^{2} + \hdots + (a_{n}+0)x^{n} = a_{0} + a_{1}x + a_{2}x^{2} + \hdots + a_{n}x^{n} = \pvec(x)</m>. 
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\pvec</m> is any element in <m>\mathbb{P}_{n}</m>, then <m>\pvec(x) = a_{0} + a_{1}x + a_{2}x^{2} + \hdots + a_{n}x^{n}</m> and the additive inverse is <m>-\pvec</m> defined by <m>-\pvec(x) = -a_{0} -a_{1}x - a_{2}x^{2} - \hdots - a_{n}x^{n}</m>. 
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\pvec</m> is any element in <m>\mathbb{P}_{n}</m>, then <m>\pvec(x) = a_{0} + a_{1}x + a_{2}x^{2} + \hdots + a_{n}x^{n}</m>. Similarly, if <m>\qvec</m> is any element in <m>\mathbb{P}_{n}</m>, then <m>\qvec(x) = b_{0} + b_{1}x + b_{2}x^{2} + \hdots + b_{n}x^{n}</m>. For any constant <m>k \in \mathbb{R}</m>, we then have <m>(k(\pvec+\qvec))(x) = k(\pvec(x) + \qvec(x)) = k((a_{0}+b_{0}) + (a_{1}+b_{1})x + (a_{2}+b_{2})x^{2} + \hdots + (a_{n}+b_{n})x^{n} = ka_{0} + kb_{0} + ka_{1}x + kb_{1}x + ka_{2}x^{2} + kb_{2}x^{2} + \hdots + ka_{n}x^{n} + kb_{n}x^{n} = (ka_{0} + ka_{1}x + ka_{2}x^{2} + \hdots + ka_{n}x^{n}) + (kb_{0} + kb_{1}x + kb_{2}x^{2} + \hdots + kb_{n}x^{n}) = (k\pvec)(x) + (k\qvec)(x)</m>. 
+      </p>
+    </li>
+    </ol>
+  </solution>
+
+</activity>
+
  <proposition xml:id="proposition-8-9">
-  <title>Elementary consequences of the vector space axioms</title>
+  <!-- <title>Elementary consequences of the vector space axioms</title> -->
 
   <statement>
     <p>
@@ -537,6 +758,32 @@
   </proof>
 </proposition>
 
+  </subsection>
+
+  <subsection xml:id="subsec-VSintro-Summary">
+    <title>Summary</title>
+
+   <p> The main purpose of this section was to investigate the definition of a vector space over a field through identification of the
+      required operations and axioms.</p>
+
+  <ul>
+    <li>
+      Standard examples of vector spaces include
+      <m>\mathbb{R}^n</m>, polynomial spaces, matrix spaces, and spaces of
+      functions.
+    </li>
+    <li>
+      We can determine whether a given set with specified operations is a vector
+      space by checking the vector space axioms.  We can also identify examples of sets that fail to be vector spaces and explain
+      which axioms are violated.
+    </li>
+
+    <li>
+      The vector space axioms derive basic consequences such as the
+      uniqueness of the zero vector and additive inverses.
+    </li>
+  </ul>
+``
   </subsection>
 
   
