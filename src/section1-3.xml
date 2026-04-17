@@ -810,7 +810,9 @@ A.rref()
     </p>
 
     <p> This may seem like an absurd situation, but
-      we'll see in <xref ref="subsec-google" /> how we use the results
+      we
+	  <!-- 'll see in <xref ref="subsec-google" /> how we --> 
+	  use the results
       of such a computation every day.
       Clearly, we will need some better tools to deal with
       <em>really</em> big problems like this one.

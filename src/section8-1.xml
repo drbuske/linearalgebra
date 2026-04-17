@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-vecspace-intro"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title> Vector Spaces </title>
+
+  <introduction>
+  <p>
+    Earlier, we considered <m>\mathbb{R}^n</m>, the set of <m>n</m>-dimensional column
+    vectors. We now introduce a more general concept of “vector”, as an element
+    of an abstract vector space. Basically, vectors are entities that can be added
+    and scaled. While some vectors look like lists of numbers (for example, column
+    vectors, row vectors), other kinds of vectors don’t look like lists of numbers
+    at all (for example, functions, polynomials). Part of the power of linear algebra
+    comes from our ability to find vector spaces in many unexpected places.
+  </p>
+
+  <p>
+    Much of the content of this chapter will be a repetition of things we have already
+    seen in the context of <m>\mathbb{R}^n</m>. For example, we will be talking about
+    linear combinations, linear independence, spanning sets, bases, subspaces,
+    linear transformations, and so on. We initially introduced these concepts in
+    the context of the vector space <m>\mathbb{R}^n</m>, so that they would be easier
+    to understand. We will now see that they in fact apply to all vector spaces.
+  </p>
+
+</introduction>
+
+  <subsection xml:id="section-definition-vector-spaces">
+    <title>Definition of vector spaces</title>
+
+    <!-- <objectives>
+      <ul>
+      <li>Develop the concept of a vector space through axioms.</li>
+      <li>
+        Use the vector space axioms to determine if a set and its operations
+        constitute a vector space.
+      </li>
+      <li>Encounter several examples of vector spaces.</li>
+      </ul>
+    </objectives> -->
+
+    <definition xml:id="definition-vector-space">
+      <title>Vector space</title>
+
+      <p>
+        Let <m>K</m> be a field. A <term>vector space</term> over <m>K</m> is a set <m>V</m>
+        equipped with two operations of <term>addition</term> and <term>scalar multiplication</term>, such
+        that the following properties hold:
+      </p>
+
+      <ul>
+        <li>
+          <em>A1.</em> Commutative law of addition:
+          <m>\uvec + \vvec = \vvec + \uvec</m>.
+        </li>
+        <li>
+          <em>A2.</em> Associative law of addition:
+          <m>(\uvec + \vvec) + \wvec = \uvec + (\vvec + \wvec)</m>.
+        </li>
+        <li>
+          <em>A3.</em> The existence of an additive unit:
+          there exists an element <m>\zerovec \in V</m> such that for all <m>\uvec</m>,
+          <m>\uvec + \zerovec = \uvec</m>.
+        </li>
+        <li>
+          <em>A4.</em> The law of additive inverses:
+          <m>\uvec + (-\uvec) = \zerovec</m>.
+        </li>
+        <li>
+          <em>SM1.</em> The distributive law over vector addition:
+          <m>k(\uvec + \vvec) = k\uvec + k\vvec</m>.
+        </li>
+        <li>
+          <em>SM2.</em> The distributive law over scalar addition:
+          <m>(k + \ell)\uvec = k\uvec + \ell \uvec</m>.
+        </li>
+        <li>
+          <em>SM3.</em> The associative law for scalar multiplication:
+          <m>k(\ell \uvec) = (k\ell)\uvec</m>.
+        </li>
+        <li>
+          <em>SM4.</em> The rule for multiplication by one:
+          <m>1\uvec = \uvec</m>.
+        </li>
+      </ul>
+    </definition>
+
+    <p>
+      The above definition is concerned about two operations: vector addition,
+      denoted by <m>\vvec + \wvec</m>, and scalar multiplication, denoted by <m>k\vvec</m>
+      or sometimes <m>k \cdot \vvec</m>. In the law of additive inverses, we have
+      written <m>-\uvec</m> for <m>(-1)\uvec</m>.
+    </p>
+
+    <p>
+      Often, the scalars will be real numbers, but it is also possible to use
+      scalars from a different field <m>K</m>. We also use the term
+      <term><m>K</m>-vector space</term> to refer to a vector space over a field <m>K</m>.
+      When <m>K = \mathbb{R}</m>, we also speak of a <term>real vector space</term>, and when
+      <m>K = \mathbb{C}</m>, we speak of a <term>complex vector space</term>. If the field
+      is clear from the context, we often don’t mention it at all, and just speak
+      of a “vector space”.
+    </p>
+
+    <p>
+      The elements of a vector space are called <term>vectors</term>. Our first example of a
+      vector space is of course <m>\mathbb{R}^n</m>.
+    </p>
+
+    <example xml:id="example-rn-vector-space">
+      <title><m>\mathbb{R}^n</m> is a vector space</title>
+
+      <statement>
+        <p> The set <m>\mathbb{R}^n</m> of <m>n</m>-dimensional real column vectors,
+        with the usual operations of vector addition and scalar multiplication,
+        is a (real) vector space. 
+        </p>
+
+        <p>
+          <b>Proof:</b> Properties (A1)–(A4) hold by our definition of vector addition, and
+          properties (SM1)–(SM4) hold by our definition of vector-scalar
+          multiplication.
+        </p>
+      </statement>
+    </example>
+
+     <example xml:id="example-cn-vector-space">
+      <title><m>\mathbb{C}^n</m> is a vector space</title>
+
+      <statement>
+        <p> The set <m>\mathbb{C}^n</m> of <m>n</m>-dimensional complex column vectors,
+        with the usual operations of vector addition and scalar multiplication,
+        is a (complex) vector space. 
+        </p>
+      </statement>
+    </example>
+
+    <p>We now consider some other examples of vector spaces. </p>
+
+    <example xml:id="example-p2-polynomials">
+      <title>Vector space of polynomials of degree 2</title>
+
+      <statement>
+        <p> Let <m>\mathbb{P}_2</m> be the set of all polynomials of degree at most 2 with
+        real coefficients, i.e., expressions of the form
+        <m>p(x) = ax^2 + bx + c</m>, where <m>a,b,c \in \mathbb{R}</m>. Define addition
+        and scalar multiplication of polynomials in the usual way:
+        <md>
+          <mrow>(ax^2 + bx + c) + (a'x^2 + b'x + c') =
+          (a + a')x^2 + (b + b')x + (c + c')
+        </mrow>
+        <mrow>k(ax^2 + bx + c) = kax^2 + kbx + kc.</mrow>
+      </md>
+        Then <m>\mathbb{P}_2</m> is a vector space.</p>
+      
+
+    <p>
+      <alert>Proof:</alert> To show that <m>\mathbb{P}_2</m> is a vector space, we verify the 8 vector space axioms.
+      Let
+      <m>p(x) = a_2x^2 + a_1x + a_0</m>,
+      <m>q(x) = b_2x^2 + b_1x + b_0</m>,
+      and
+      <m>r(x) = c_2x^2 + c_1x + c_0</m>
+      be polynomials in <m>\mathbb{P}_2</m> and let <m>k,\ell</m> be scalars.
+    </p>
+
+    <p>
+      <em>(A1)</em> We prove the commutative law of addition.
+      <md>
+        <mrow>p(x) + q(x)
+        \amp  = (a_2x^2 + a_1x + a_0) + (b_2x^2 + b_1x + b_0)</mrow>
+        <mrow> \amp = (a_2 + b_2)x^2 + (a_1 + b_1)x + (a_0 + b_0).</mrow>
+      </md>
+      Since addition in <m>\mathbb{R}</m> is commutative, this equals
+      <md>
+        <mrow> (b_2 + a_2)x^2 + (b_1 + a_1)x + (b_0 + a_0)
+        = q(x) + p(x).</mrow>
+      </md>
+    </p>
+
+    <p>
+<em>(A2)</em> We prove the associative law of addition.
+      <md>
+        <mrow>(p(x) + q(x)) + r(x)
+         \amp = ((a_2 + b_2)x^2 + (a_1 + b_1)x + (a_0 + b_0))
+          + (c_2x^2 + c_1x + c_0)</mrow>
+      <mrow>
+        \amp = ((a_2 + b_2) + c_2)x^2
+          + ((a_1 + b_1) + c_1)x
+          + ((a_0 + b_0) + c_0).
+      </mrow>
+    </md>
+      By associativity in <m>\mathbb{R}</m>, this equals
+      <md>
+        <mrow> (a_2 + (b_2 + c_2))x^2
+        + (a_1 + (b_1 + c_1))x
+        + (a_0 + (b_0 + c_0))
+      \amp 
+        = p(x) + (q(x) + r(x)).
+      </mrow>
+    </md>
+    </p>
+
+
+<p>
+      <em>(A3)</em> To prove the existence of an additive unit, let
+      <m>0(x) = 0x^2 + 0x + 0</m>, the so‑called zero polynomial.
+      Then
+      <md>
+        <mrow> p(x) + 0(x)
+        \amp = (a_2 + 0)x^2 + (a_1 + 0)x + (a_0 + 0) </mrow>
+        <mrow> \amp = p(x).</mrow>
+      </md>
+    </p>
+
+    <p>
+ <em>(A4)</em> We prove the law of additive inverses.
+      <md>
+        <mrow> p(x) + (-p(x))
+        \amp = (a_2x^2 + a_1x + a_0) + (-a_2x^2 - a_1x - a_0)
+      </mrow>
+      <mrow>
+        \amp = (a_2 - a_2)x^2 + (a_1 - a_1)x + (a_0 - a_0) </mrow>
+      <mrow> \amp  = 0(x). </mrow>
+      </md>
+    </p>
+
+
+  <p>
+      <em>(SM1)</em> We prove the distributive law over vector addition.
+      <md>
+        <mrow> k(p(x) + q(x))
+        \amp = k((a_2 + b_2)x^2 + (a_1 + b_1)x + (a_0 + b_0))
+      </mrow>
+      <mrow>
+        \amp = (ka_2 + kb_2)x^2 + (ka_1 + kb_1)x + (ka_0 + kb_0)
+      </mrow>
+      <mrow> \amp = kp(x) + kq(x).</mrow>
+      </md>
+    </p>
+
+    <p>
+  <em>(SM2)</em> We prove the distributive law over scalar addition.
+      <md>
+        <mrow> (k + \ell)p(x)
+        \amp = (k + \ell)(a_2x^2 + a_1x + a_0)
+      </mrow>
+      <mrow>
+        \amp = ka_2x^2 + ka_1x + ka_0
+        + \ell a_2x^2 + \ell a_1x + \ell a_0
+      </mrow>
+      <mrow> \amp = kp(x) + \ell p(x).</mrow>
+      </md>
+    </p>
+
+    <p>
+      <em>(SM3)</em> We prove the associative law for scalar multiplication.
+      <md>
+        <mrow> k(\ell p(x))
+        \amp = k(\ell a_2x^2 + \ell a_1x + \ell a_0)</mrow>
+        <mrow> \amp = (k\ell)a_2x^2 + (k\ell)a_1x + (k\ell)a_0 </mrow>
+        <mrow> \amp = (k\ell)p(x).</mrow>
+      </md>
+    </p>
+
+<p>
+      <em>(SM4)</em> Finally, we prove the rule for multiplication by one.
+      <md>
+        <mrow> 1p(x)
+        \amp = 1(a_2x^2 + a_1x + a_0)</mrow>
+        <mrow> \amp = a_2x^2 + a_1x + a_0</mrow>
+        <mrow> \amp = p(x).</mrow>
+      </md>
+    </p>
+
+    <p>
+      Since the operations of addition and scalar multiplication on <m>\mathbb{P}_2</m>
+      satisfy the 8 vector space axioms, <m>\mathbb{P}_2</m> is a vector space.
+    </p>
+</statement>
+
+    </example>
+
+<!-- Example 8.4 -->
+<example xml:id="example-8-4">
+  <title>Vector space of matrices</title>
+
+  <statement>
+    <p>
+      Let <m>M_{m,n}(\mathbb{R})</m> be the set of all <m>m\times n</m>-matrices with real entries, together with the usual operations of matrix addition
+      and scalar multiplication. Then <m>M_{m,n}(\mathbb{R})</m> is a vector space.
+    </p>
+
+    <p>
+      <alert>Proof:</alert> The properties (A1)–(A4) hold by our definition of matrix addition, and
+      the properties (SM1)–(SM4) hold by our definition of scalar-matrix
+      multiplication.
+    </p>
+  </statement>
+</example>
+
+<!-- Example 8.5 -->
+<example xml:id="example-8-5">
+  <title>Not a vector space</title>
+
+  <statement>
+    <p>
+      Let <m>V</m> denote the set of <m>2\times3</m>-matrices. Let us define a
+      non-standard addition in <m>V</m> by <m>A\oplus B = A</m> for all matrices
+      <m>A,B\in V</m>. Let scalar multiplication in <m>V</m> be the usual scalar
+      multiplication of matrices. We show that <m>V</m> is not a vector space.
+    </p>
+
+
+    <p>
+      In order to show that <m>V</m> is not a vector space, it suffices to find
+      one of the 8 axioms that is not satisfied. We will begin by examining the
+      axioms for addition until one is found which does not hold. In fact, for
+      this example, the very first axiom fails.
+    </p>
+
+    <p>
+      Let
+      <me>
+        A=\begin{pmatrix}1\amp 0 \amp 0\\0\amp 0 \amp 0\end{pmatrix},
+        B=\begin{pmatrix}0\amp 0\amp 0\\1\amp 0\amp 0\end{pmatrix}.
+      </me>
+      Then <m>A\oplus B=A</m> and <m>B\oplus A=B</m>. Since <m>A\neq B</m>,
+      we have <m>A\oplus B\neq B\oplus A</m>, so property (A1) is false.
+    </p>
+  </statement>
+</example>
+
+<!-- Example 8.6 -->
+<example xml:id="example-8-6">
+  <title>Vector space of functions</title>
+
+  <statement>
+    <p>
+      Let <m>X</m> be a nonempty set and define
+      <m>\mathrm{Func}_{X,\mathbb{R}}</m> to be the set of functions defined on <m>X</m>
+      and valued in <m>\mathbb{R}</m>. In other words, the elements of
+      <m>\mathrm{Func}_{X,\mathbb{R}}</m> are functions <m>f:X\to \mathbb{R}</m>. The sum of two
+      functions is defined by <m>(f+g)(x)=f(x)+g(x)</m>, and scalar multiplication
+      is defined by <m>(kf)(x)=k(f(x))</m>. Then <m>\mathrm{Func}_{X,\mathbb{R}}</m> is a
+      vector space.
+    </p>
+
+    <p>
+      To verify that <m>\mathrm{Func}_{X,\mathbb{R}}</m> is a vector space, we must prove
+      the 8 axioms of vector spaces. Let <m>f,g,h</m> be functions in
+      <m>\mathrm{Func}_{X,\mathbb{R}}</m>, and let <m>k,\ell</m> be scalars.
+    </p>
+
+    <p>
+      Recall that two functions <m>f,g</m> are equal if for all <m>x\in X</m>,
+      we have <m>f(x)=g(x)</m>.
+    </p>
+
+    <p>
+      <em>(A1)</em> For all <m>x\in X</m>,
+      <m>(f+g)(x)=f(x)+g(x)=g(x)+f(x)=(g+f)(x)</m>. Therefore <m>f+g=g+f</m>.
+    </p>
+
+    <p>
+      <em>(A2)</em> For all <m>x\in X</m>,
+      <m>((f+g)+h)(x)=f(x)+(g(x)+h(x))=(f+(g+h))(x)</m>. Therefore
+      <m>(f+g)+h=f+(g+h)</m>.
+    </p>
+
+    <p>
+      <em>(A3)</em> Let <m>0</m> denote the function defined by <m>0(x)=0</m>.
+      Then <m>(f+0)(x)=f(x)</m> for all <m>x</m>, so <m>f+0=f</m>.
+    </p>
+
+    <p>
+      <em>(A4)</em> Let <m>-f</m> be defined by <m>(-f)(x)=-f(x)</m>. Then
+      <m>(f+(-f))(x)=0</m> for all <m>x</m>, so <m>f+(-f)=0</m>.
+    </p>
+
+    <p>
+      <em>(SM1)</em> For all <m>x</m>,
+      <m>(k(f+g))(x)=k(f(x)+g(x))=(kf+kg)(x)</m>, hence
+      <m>k(f+g)=kf+kg</m>.
+    </p>
+
+    <p>
+      <em>(SM2)</em> <m>((k+\ell)f)(x)=kf(x)+\ell f(x)</m>, so
+      <m>(k+\ell)f=kf+\ell f</m>.
+    </p>
+
+    <p>
+      <em>(SM3)</em> <m>((k\ell)f)(x)=k(\ell f(x))</m>, so
+      <m>(k\ell)f=k(\ell f)</m>.
+    </p>
+
+    <p>
+      <em>(SM4)</em> <m>(1f)(x)=f(x)</m> for all <m>x</m>, so <m>1f=f</m>.
+    </p>
+
+    <p>
+      It follows that <m>\mathrm{Func}_{X,\mathbb{R}}</m> satisfies all the required
+      axioms and is a vector space.
+    </p>
+  </statement>
+</example>
+
+<p>For the next two examples of vector spaces, we leave the proofs as an exercise.</p>
+
+<!-- Example 8.7 -->
+<example xml:id="example-8-7">
+  <title>Infinite sequences</title>
+
+  <statement>
+    <p>
+      Let <m>K</m> be a field. A sequence of elements of <m>K</m> is an infinite
+      list <m>(a_0,a_1,a_2,a_3,\ldots)</m>, where <m>a_i\in K</m> for all <m>i</m>.
+      We also use the notation <m>(a_i)_{i\in\mathbb{N}}</m>, or occasionally
+      <m>(a_i)</m>, to denote such a sequence. Let <m>\mathrm{Seq}_K</m> be the
+      set of sequences of elements of <m>K</m>.
+    </p>
+
+    <p>
+      We add two sequences by adding their <m>i</m>th elements:
+      <m>
+        (a_i)_{i\in\mathbb{N}}+(b_i)_{i\in\mathbb{N}}
+        =(a_i+b_i)_{i\in\mathbb{N}}
+      </m>.
+      We scale a sequence by scaling each of its elements:
+      <m>
+        k(a_i)_{i\in\mathbb{N}}=(ka_i)_{i\in\mathbb{N}}
+      </m>.
+      Then <m>\mathrm{Seq}_K</m> is a vector space.
+    </p>
+  </statement>
+</example>
+
+<!-- Example 8.8 -->
+<example xml:id="example-8-8">
+  <title>Vector space of polynomials of unbounded degree</title>
+
+  <statement>
+    <p>
+      Let <m>K</m> be a field, and let <m>P</m> be the set of all polynomials
+      (of any degree) with coefficients from <m>K</m>, i.e., expressions of
+      the form
+      <m>
+        p(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0
+      </m>,
+      where <m>n\ge 0</m> and <m>a_0,\ldots,a_n\in K</m>.
+      Addition and scalar multiplication of polynomials are defined in the
+      usual way. Then <m>P</m> is a vector space.
+    </p>
+  </statement>
+</example>
+
+ 
+
+  </subsection>
+
+  
+  <xi:include href="exercises/exercises8-1.xml" /> 
+
+</section>
+
+
+

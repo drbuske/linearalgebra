@@ -3,16 +3,20 @@
     <directories external="../assets" generated="../generated-assets" />
     <version include="production"/>
   </source>
+
   <html>
     <css
       theme="default-modern"
-      palette="blue-green"
+      primary-color="#386F94"
+        primary-color-dark="#5192BD"
+        provide-dark-mode="yes"
     />
+    <!-- palette="blue-green" -->
     <!--
       -->       
     <!-- Examples and exercises are knowlized by default -->
     <!-- We disable this behavior  -->
-    <knowl example="no" exercise-divisional="no" exercise-inline="no" />
+    <knowl example="no" exercise-divisional="no" exercise-inline="no" proof="yes" />
     <webwork server="https://webwork-ptx.aimath.org"/>
   </html>
   <latex sides="two"

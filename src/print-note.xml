@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-<frontmatter xml:id="preface" xmlns:xi="http://www.w3.org/2001/XInclude">
--->
-  <preface>
+
+<appendix xml:id="preface" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+ <!-- <preface> -->
     <title>A note on the print version</title>
 
     <p>
@@ -48,8 +48,8 @@ A = matrix([[1,2], [2,1]])
     </p>
 
     
-  </preface>
+  <!-- </preface> -->
 
-<!--  
-</frontmatter>
--->
+  
+</appendix>
+

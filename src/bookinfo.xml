@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <docinfo>
-  <brandlogo url="https://understandinglinearalgebra.org"
-	     source="images/ula-logo.png" />
-  <document-id component="production">ula</document-id>
+  <brandlogo url="https://drbuske.github.io/Math312"
+	     source="images/SCSU_StC_Pri_DkBlkBG.png" alt="SCSU logo"><description>SCSU logo</description></brandlogo>
+  <!-- <document-id component="production">ula</document-id>
   <document-id component="proteus-id">ula-proteus</document-id>
   <document-id component="proteus-playground">ula-proteus-playground</document-id>
   <blurb shelf="Mathematics">
@@ -11,7 +11,7 @@
     includes many activities designed to facilitate an active learning
     environment, embedded Sage cells to develop
     computational proficiency, and numerous realistic applications.
-  </blurb>
+  </blurb> -->
   <macros>
     \newcommand{\avec}{{\mathbf a}}
     \newcommand{\bvec}{{\mathbf b}}
@@ -83,5 +83,15 @@
 
   <rename element="exploration">Preview Activity</rename>
   <rename element="convention">Notation</rename>
+
+    <!-- If you put any latex-image elements you can include preambles -->
+  <!-- for those in the next element. -->
+<latex-image-preamble>
+  \usepackage{tikz, pgfplots,xcolor}
+  \usetikzlibrary{positioning,matrix,arrows,shadings}
+  \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+  \usetikzlibrary{calc}
+  \definecolor{linecolor}{HTML}{0074C8}
+</latex-image-preamble>
 
 </docinfo>
