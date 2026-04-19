@@ -20,6 +20,7 @@
     \newcommand{\dtil}{\widetilde{\mathbf d}}
     \newcommand{\evec}{{\mathbf e}}
     \newcommand{\fvec}{{\mathbf f}}
+        \newcommand{\gvec}{{\mathbf g}}
     \newcommand{\nvec}{{\mathbf n}}
     \newcommand{\pvec}{{\mathbf p}}
     \newcommand{\qvec}{{\mathbf q}}
@@ -31,6 +32,7 @@
     \newcommand{\xvec}{{\mathbf x}}
     \newcommand{\yvec}{{\mathbf y}}
     \newcommand{\zvec}{{\mathbf z}}
+    \newcommand{\Mvec}{{\mathbf M}}
     \newcommand{\rvec}{{\mathbf r}}
     \newcommand{\mvec}{{\mathbf m}}
     \newcommand{\zerovec}{{\mathbf 0}}

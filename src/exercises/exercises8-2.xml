@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <exercises xml:id="exercises-8-2">
+
+	<exercise label="ula-8-2-spansort">
+      <title>Does these vectors span the vector space?  </title>
+      <statement>  
+      <p>
+        Determine whether each set spans the vector space or not.  
+      </p>
+
+      </statement>
+      <cardsort>
+        <match>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}, \begin{bmatrix}1 \\ 1 \end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+          <premise> The set <m>\{1,x,x^2\}</m> in the vector space <m>\mathbb{P}_2</m>.</premise>
+		  <premise> The set <m>\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}, \begin{bmatrix}0 \\ 0 \\ 1 \end{bmatrix}\right\}</m> in <m>\mathbb{R}^3</m>.</premise>
+          <response><p>Spans the space</p></response>
+        </match>
+
+        <match>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 1 \end{bmatrix}, \begin{bmatrix}2 \\ 2\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+          <premise>The set <m>\{x,x^2\}</m> in the vector space <m>\mathbb{P}_2</m>.</premise>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 2 \end{bmatrix}, \begin{bmatrix}3 \\ 6\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+		  <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}\right\}</m> in <m>\mathbb{R}^3</m>.</premise>
+          <response><p>Does not span the space</p></response>
+        </match>
+        
+      </cardsort>
+    </exercise>
+
+  <exercise xml:id="exercise-8-2-1">
+    <statement>
+      <p>
+        Let <m>V</m> be a vector space and suppose
+        <m>\{\uvec_1,\ldots,\uvec_k\}</m> is a set of vectors in <m>V</m>. Show that
+        <m>\zerovec</m> is in <m>\mathrm{span}\{\uvec_1,\ldots,\uvec_k\}</m>.
+        
+      </p>
+    </statement>
+	<solution>
+		<p>
+			<m>\zerovec = 0\uvec_1 + \cdots + 0\uvec_k</m>.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-2">
+    <statement>
+      <p>
+        Determine whether <m>p(x)=4x^2-x</m> is in
+        <m>\mathrm{span}\{x^2+x,x^2-1,-x+2\}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-3">
+    <statement>
+      <p>
+        Determine whether <m>p(x)=-x^2+x+2</m> is in
+        <m>\mathrm{span}\{x^2+x+1,2x^2+x\}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-4">
+    <statement>
+    <ol>
+		<li>
+			<p>
+				Write
+        <m>
+          A=\begin{bmatrix}1\amp3\\0\amp0\end{bmatrix}
+        </m>
+        as a linear combination of
+        <me>
+          \begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix},
+          \begin{bmatrix}0\amp 1\\1\amp 0\end{bmatrix},
+          \begin{bmatrix}1\amp 0\\1\amp 1\end{bmatrix},
+          \begin{bmatrix}0\amp 1\\1\amp 1\end{bmatrix}.
+        </me>
+      </p>
+	</li>
+	<li>
+		<p>
+			Show that the above set of four matrices is a spanning set for
+        <m>\Mvec_{2,2}</m>, the vector space of all <m>2\times2</m> matrices.
+		</p>
+	</li>
+	</ol> 
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-5">
+    <statement>
+      <p>
+        Consider the vector space
+        <m>\mathrm{Seq}_{\mathbb{R}}</m> of infinite sequences of real numbers. A sequence
+        <m>a=(a_i)_{i\in\mathbb{N}}</m> is called <term>finitely supported</term> if all but
+        finitely many elements of the sequence are zero. In other words,
+        <m>a</m> is finitely supported if there exists some
+        <m>N\in\mathbb{N}</m> such that <m>a_k=0</m> for all <m>k\ge N</m>.
+      </p>
+
+	  <p>
+	Let <m>e^0,e^1,e^2,\ldots</m> be the sequences from <xref ref="example-8-14"/>.
+        Show that
+        <m>
+          a\in\mathrm{span}\{e^0,e^1,e^2,\ldots\}
+        </m>
+        if and only if <m>a</m> is finitely supported.
+</p>
+
+    </statement>
+	<solution>
+
+			<p>
+        Let <m>S=\{e^0,e^1,e^2,\ldots\}</m>. To prove the left-to-right
+        implication, assume <m>a\in\mathrm{span}(S)</m>. Then there exists
+        some finite subset
+        <m>\{e^{k_1},e^{k_2},\ldots,e^{k_n}\}</m> of <m>S</m> and scalars
+        <m>b_1,\ldots,b_n</m> such that
+        <m>
+          a=b_1e^{k_1}+\cdots+b_ne^{k_n}.
+        </m>
+      </p>
+
+      <p>
+        Let <m>N\in\mathbb{N}</m> be a number that is greater than
+        <m>k_1,\ldots,k_n</m>. Since each of the sequences
+        <m>e^{k_1},\ldots,e^{k_n}</m> is zero after the first <m>N</m> elements,
+        the same is true for their linear combination <m>a</m>. Thus,
+        <m>a</m> is finitely supported.
+      </p>
+
+      <p>
+        To prove the right-to-left direction, assume <m>a</m> is finitely
+        supported. Let <m>N\in\mathbb{N}</m> such that <m>a_k=0</m> for all
+        <m>k\ge N</m>. Then
+        <m>
+          a=(a_0,a_1,\ldots,a_{N-1},0,0,0,\ldots),
+        </m>
+        with infinitely many zeros following. Therefore,
+        <m>
+          a=a_0e^0+a_1e^1+\cdots+a_{N-1}e^{N-1},
+        </m>
+        and it follows that <m>a\in\mathrm{span}(S)</m>.
+  
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-6">
+    <statement>
+      <p>
+        For each of the following sets of polynomials, determine whether the
+        set is linearly independent. If it is linearly dependent, write one
+        polynomial as a linear combination of the other polynomials in the
+        set.
+      </p>
+
+      <ol marker="(a)">
+        <li> <m>\{x+1, x^2+2, x^2-x-3\}</m>. </li>
+      
+        <li> <m>\{x^2+x, -2x^2-4x-6, 2x-2\}</m>. </li>
+	  </ol>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-7">
+    <statement>
+      <p>
+        Determine whether each of the following sets of matrices is linearly
+        independent. If it is linearly dependent, write one matrix as a linear
+        combination of the other matrices in the set.
+      </p>
+
+      <ol marker="(a)">
+<li>
+        <m>
+          \left\{
+          \begin{bmatrix}1\amp2\\0\amp1\end{bmatrix},
+          \begin{bmatrix}-7\amp2\\-2\amp-3\end{bmatrix},
+          \begin{bmatrix}4\amp0\\1\amp2\end{bmatrix}
+          \right\}.
+        </m>
+	</li>
+
+      <li>
+        <m>
+          \left\{
+          \begin{bmatrix}1\amp0\\0\amp1\end{bmatrix},
+          \begin{bmatrix}0\amp1\\0\amp1\end{bmatrix},
+          \begin{bmatrix}1\amp0\\1\amp0\end{bmatrix},
+          \begin{bmatrix}0\amp0\\1\amp1\end{bmatrix}
+          \right\}.
+        </m>
+	</li>
+</ol>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-8">
+    <statement>
+      <p>
+        Consider polynomials
+        <me>\{a_ix^3+b_ix^2+c_ix+d_i : i=1,2,3,4.\}</me>
+        Show that this collection of polynomials is linearly independent if
+        and only if
+        <me>
+          \begin{bmatrix}
+            a_1 \amp b_1 \amp c_1 \amp d_1 \\
+            a_2 \amp b_2 \amp c_2 \amp d_2 \\
+            a_3 \amp b_3 \amp c_3 \amp d_3 \\
+            a_4 \amp b_4 \amp c_4 \amp d_4
+          \end{bmatrix}
+        </me>
+        is an invertible matrix. 
+	</p>
+    </statement>
+
+	<solution>
+		<p>
+			Let <m>p_i(x)</m> denote the <m>i</m>th of
+        these polynomials. Suppose
+        <m>
+          C_1p_1(x)+\cdots+C_4p_4(x)=0.
+        </m>
+        Then collecting terms according to the exponent of <m>x</m>, we have
+        <md>
+          <mrow>C_1a_1+C_2a_2+C_3a_3+C_4a_4=0,</mrow>
+          <mrow>C_1b_1+C_2b_2+C_3b_3+C_4b_4=0,</mrow>
+		  <mrow>C_1c_1+C_2c_2+C_3c_3+C_4c_4=0,</mrow>
+          <mrow>C_1d_1+C_2d_2+C_3d_3+C_4d_4=0.</mrow>
+        </md>
+      </p>
+
+      <p>
+        The matrix of coefficients is just the transpose of the above matrix.
+        There exists a non-trivial solution if and only if the determinant of
+        this matrix equals 0.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-2-9">
+    <statement>
+      <p>
+        Assume <m>\uvec,\vvec,\wvec</m> are linearly independent elements of some vector
+        space <m>V</m>. Consider the set of vectors
+        <me>
+          R=\{2\uvec-\wvec,\;\wvec+\vvec,\;3\vvec+\tfrac12\uvec\}.
+        </me>
+        Determine whether <m>R</m> is linearly independent.
+      </p>
+
+      
+    </statement>
+	<solution>
+<p>
+        To determine whether <m>R</m> is linearly independent, we must solve
+        the equation
+        <me>
+          a(2\uvec-\wvec)+b(\wvec+\vvec)+c(3\vvec+\tfrac12\uvec)=0.
+        </me>
+        If the only solution is the trivial solution, the set is linearly
+        independent.
+      </p>
+
+      <p>
+        We rewrite the equation as follows:
+        <me>
+          (2a+\tfrac12c)\uvec+(b+3c)\vvec+(-a+b)\wvec=\zerovec.
+        </me>
+        Since <m>\uvec,\vvec,\wvec</m> are linearly independent, the coefficients in the
+        last equation must all equal 0. In other words:
+        <md>
+          <mrow>2a+\tfrac12c\amp =0,</mrow>
+		  <mrow>b+3c \amp =0,</mrow> 
+		  <mrow>-a+b\amp =0.</mrow>
+        </md>
+      </p>
+
+      <p>
+        We solve and find that the unique solution is
+        <m>a=b=c=0</m>. Therefore, the set <m>R</m> is linearly independent.
+      </p>
+	</solution>
+  </exercise>
+
+
+</exercises>

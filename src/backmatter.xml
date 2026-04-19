@@ -3,15 +3,13 @@
   <title>Back Matter</title>
 
 
-
-
   <xi:include href="./sage-reference.xml" />
 
   <xi:include href="./print-note.xml" />
 
     <appendix>
       <title>Acknowledgement</title>
-  <acknowledgement>
+  <!-- <acknowledgement> -->
     <p>
       David Austin has written the vast majority of this text and deserves nearly 100% of the credit for its production.  I acknowledge him and his acknowledgements are found below.  
     </p>
@@ -75,7 +73,7 @@
       from those who are using the book gives meaning to this project,
       so please know that your voice is always welcomed.
     </p>
-  </acknowledgement>
+  <!-- </acknowledgement> -->
 </appendix>
 
   <appendix xml:id="proteus-questions" component="proteus">
@@ -83,10 +81,11 @@
     <list-of elements="inlineexercise" divisions="section" />
   </appendix>
 
-  <index>
+  <!-- <index>
     <title>Index</title>
     <index-list />
-  </index>
+  </index> -->
+
   <colophon>
     <p>
       This book was authored in <pretext />.

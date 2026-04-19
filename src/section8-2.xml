@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-lin-comb-span-lin-ind"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Linear combinations, span, and linear independence </title>
+
+  <introduction>
+  
+<p>
+    In this section, we will again explore concepts introduced earlier in terms
+    of <m>\mathbb{R}^n</m> and extend them to apply to abstract vector spaces.
+    We can now revisit many of the concepts earlier introduced in the context
+    of general vector spaces.
+  </p>
+
+  <exploration xml:id="preview-lincombo-5-2">
+
+  <introduction>
+    <p>
+      In the previous section, we learned what it means for a set of objects
+      to form a vector space. In this section, we ask a new question:
+      <em>how can vectors be built from other vectors?</em>
+    </p>
+
+    <p>
+      Rather than beginning with formal definitions, this activity invites you
+      to experiment with combinations of vectors and to identify patterns that
+      will later be captured by precise mathematical language.
+    </p>
+  </introduction>
+
+  <!-- Task 1 -->
+  <task xml:id="preview-lc-task-1">
+    <statement>
+      <p>
+        Consider the vectors
+        <m>\uvec=\begin{bmatrix}1 \\ 0 \end{bmatrix}</m> and <m>\vvec=\begin{bmatrix}0 \\ 1 \end{bmatrix}</m> in <m>\mathbb{R}^2</m>.
+      </p>
+
+      <ol>
+        <li>
+          List at least five different vectors that can be formed using
+          expressions of the form
+          <m>a\uvec+b\vvec</m>, where <m>a</m> and <m>b</m> are real numbers.
+        </li>
+        <li>
+          Describe, in words, the collection of all vectors that can be formed
+          this way.
+        </li>
+        <li>
+          What changes if you restrict <m>a</m> and <m>b</m> to be integers?
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 2 -->
+  <task xml:id="preview-lc-task-2">
+    <statement>
+      <p>
+        Now consider the vectors <m>\wvec=\begin{bmatrix}1 \\ 1\end{bmatrix}</m> and <m>\zvec=\begin{bmatrix}2 \\ 2\end{bmatrix}</m> in
+        <m>\mathbb{R}^2</m>.
+      </p>
+
+      <ol>
+        <li>
+          Which vectors can be formed using expressions of the form
+          <m>a\wvec+b\zvec</m>?
+        </li>
+        <li>
+          Compare your answer with the result from the previous task.
+        </li>
+        <li>
+          What seems different about the roles played by <m>\wvec</m> and
+          <m>\zvec</m> compared to <m>\uvec</m> and <m>\vvec</m>?
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 3 -->
+  <task xml:id="preview-lc-task-3">
+    <statement>
+      <p>
+        Consider the set of polynomials
+        <m>p_1(x)=x</m> and <m>p_2(x)=x^2</m>.
+      </p>
+
+      <ol>
+        <li>
+          Write several expressions that combine <m>p_1</m> and <m>p_2</m>
+          using multiplication by numbers and addition.
+        </li>
+        <li>
+          Which polynomials can be created this way?
+        </li>
+        <li>
+          Is it possible to create the polynomial <m>1</m> using these two
+          polynomials? Explain.
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 4 -->
+  <!-- <task xml:id="preview-lc-task-4">
+    <statement>
+      <p>
+        In each of the previous tasks, you worked with a small collection of
+        vectors and examined all the vectors that could be produced from them.
+      </p>
+
+      <ol>
+        <li>
+          What properties must a collection of vectors have in order to
+          generate “many” other vectors?
+        </li>
+        <li>
+          What kinds of collections seem insufficient for this purpose?
+        </li>
+        <li>
+          How might you decide whether one vector is “redundant” given the
+          others?
+        </li>
+      </ol>
+    </statement>
+  </task> -->
+
+  <conclusion>
+    <p>
+      This activity suggests that some collections of vectors are powerful
+      enough to generate large portions of a vector space, while others are
+      limited or redundant. In the remainder of this section, we will develop
+      precise language to describe these ideas using the concepts of linear
+      combinations, span, and linear independence.
+    </p>
+  </conclusion>
+
+  </exploration>
+
+  <p>
+    We will look at linear combinations, span, and linear independence in this
+    section, and at subspaces, bases, and dimension in the next section.
+  </p>
+
+</introduction>
+
+  <subsection xml:id="section-definition-linear-combos">
+    <title>Linear combinations</title>
+
+   
+<definition xml:id="definition-8-10">
+    <!-- <title>Linear combination</title> -->
+
+    <p>
+      Let <m>V</m> be a vector space over a field <m>K</m>. Let
+      <m>\uvec_1,\ldots,\uvec_n \in V</m>. A vector <m>\vvec \in V</m> is called a
+      <term>linear combination</term> of <m>\uvec_1,\ldots,\uvec_n</m> if there exist
+      scalars <m>a_1,\ldots,a_n \in K</m> such that
+      <md><mrow>\vvec = a_1\uvec_1 + \cdots + a_n\uvec_n.</mrow></md>
+    </p>
+  </definition>
+
+  <!-- Example 8.11 -->
+<example xml:id="example-8-11">
+  <!-- <title>Linear combination of matrices</title> -->
+
+    <p>
+      We write the matrix
+      <me>
+        A=\begin{bmatrix}1\amp3\\-1\amp2\end{bmatrix}
+      </me>
+      as a linear combination of
+      <me>
+        \begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix},
+        \begin{bmatrix}1\amp 0\\0\amp -1\end{bmatrix},
+        \begin{bmatrix}0\amp 1\\1\amp 0\end{bmatrix},
+        \begin{bmatrix}0\amp -1\\1\amp 0\end{bmatrix}.
+      </me>
+    </p>
+
+    <p>
+      We must find coefficients <m>a,b,c,d</m> such that
+      <me>
+        \begin{bmatrix}1\amp 3\\-1\amp 2\end{bmatrix}
+        =
+        a\begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix}
+        +b\begin{bmatrix}1\amp 0\\0\amp -1\end{bmatrix}
+        +c\begin{bmatrix}0\amp 1\\1\amp 0\end{bmatrix}
+        +d\begin{bmatrix}0\amp -1\\1\amp 0\end{bmatrix},
+      </me>
+      or equivalently,
+      <me>
+        \begin{bmatrix}1\amp 3\\-1\amp 2\end{bmatrix}
+        =
+        \begin{bmatrix}
+          a+b \amp c-d \\
+          c+d \amp a-b
+        \end{bmatrix}.
+      </me>
+    </p>
+
+    <p>
+      This yields a system of four equations in four variables:
+      <md>
+        <mrow> a+b \amp =  1, </mrow>
+        <mrow> c+d \amp =  -1, </mrow>
+        <mrow> c-d \amp =  3, </mrow>
+        <mrow> a-b \amp = 2.</mrow>
+      </md>
+      We can easily solve the system of equations to find the unique solution
+      <m>a=\tfrac32</m>, <m>b=-\tfrac12</m>, <m>c=1</m>, <m>d=-2</m>.
+    </p>
+
+    <p>
+      Therefore
+      <me>
+        \begin{bmatrix}1\amp3\\-1\amp2\end{bmatrix}
+        =
+        \tfrac32\begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix}
+        -\tfrac12\begin{bmatrix}1\amp 0\\0\amp -1\end{bmatrix}
+        +1\begin{bmatrix}0\amp 1\\1\amp 0\end{bmatrix}
+        -2\begin{bmatrix}0\amp -1\\1\amp 0\end{bmatrix}.
+      </me>
+    </p>
+
+</example>
+
+<!-- Example 8.12 -->
+<example xml:id="example-8-12">
+  <!-- <title>Linear combination of polynomials</title> -->
+
+    <p>
+      We write the polynomial <m>p(x)=7x^2+4x-3</m> as a linear combination of
+      <m>q_1(x)=x^2</m>, <m>q_2(x)=(x+1)^2</m>, and <m>q_3(x)=(x+2)^2</m>.
+    </p>
+
+    <p>
+      Note that
+      <m>q_2(x)=(x+1)^2=x^2+2x+1</m> and
+      <m>q_3(x)=(x+2)^2=x^2+4x+4</m>.
+      We must find coefficients <m>a,b,c</m> such that
+      <me>
+        p(x)=a\cdot q_1(x)+b\cdot q_2(x)+c\cdot q_3(x),
+      </me>
+      or equivalently,
+      <me>
+        7x^2+4x-3=ax^2+b(x^2+2x+1)+c(x^2+4x+4).
+      </me>
+    </p>
+
+    <p>
+      Collecting equal powers of <m>x</m>, we can rewrite this as
+      <me>
+        7x^2+4x-3=(a+b+c)x^2+(2b+4c)x+(b+4c).
+      </me>
+      Since two polynomials are equal if and only if each corresponding
+      coefficient is equal, this yields a system of three equations in three
+      variables:
+      <md>
+        <mrow> a+b+c=7,</mrow>
+        <mrow> 2b+4c=4,</mrow>
+        <mrow> b+4c=-3.</mrow>
+      </md>
+    </p>
+
+    <p>
+      We can easily solve this system of equations and find that the unique
+      solution is <m>a=\tfrac52</m>, <m>b=7</m>, and <m>c=-\tfrac52</m>.
+      Therefore
+      <me>
+        p(x)=\tfrac52q_1(x)+7q_2(x)-\tfrac52q_3(x).
+      </me>
+    </p>
+</example>
+
+</subsection>
+
+  <subsection xml:id="section-definition-span">
+    <title>Span of a set of vectors</title>
+
+    <p>As earlier seen, the span of a set of vectors is defined as the set of all of its linear combinations. We
+generalize the concept of span to consider spans of arbitrary (possibly finite, possibly infinite) sets of
+vectors.</p>
+
+ <definition xml:id="definition-8-13">
+    <!-- <title>Span of a set of vectors</title> -->
+<p>
+      Let <m>V</m> be a vector space over some field <m>K</m>, and let
+      <m>S</m> be a set of vectors (i.e., a subset of <m>V</m>).
+      The <term>span</term> of <m>S</m> is the set of all linear combinations
+      of elements of <m>S</m>.
+    </p>
+
+<p>
+      In symbols,
+      <me>
+        \mathrm{span}(S)
+        =
+        \{a_1\uvec_1+\cdots+a_k\uvec_k \mid
+        \uvec_1,\ldots,\uvec_k\in S,\ a_1,\ldots,a_k\in K\}.
+      </me>
+    </p>
+  </definition>
+
+  <p>
+  It is important not to misunderstand this definition. Even when the set
+  <m>S</m> is infinite, each individual element <m>\vvec \in\mathrm{span}(S)</m>
+  is a linear combination of only finitely many elements
+  <m>\uvec_1,\ldots,\uvec_k</m> of <m>S</m>. The definition does not talk about infinite
+  linear combinations
+  <m>a_1\uvec_1+a_2\uvec_2+a_3\uvec_3+\cdots</m>. Indeed, such infinite sums do not
+  typically exist.
+</p>
+
+<p>
+  However, different elements <m>\vvec,\wvec\in\mathrm{span}(S)</m> can be linear
+  combinations of a different (finite) number of vectors of <m>S</m>. For
+  example, it is possible that <m>\vvec</m> is a linear combination of 10 elements
+  of <m>S</m>, and <m>\wvec</m> is a linear combination of 100 elements of <m>S</m>.
+</p>
+
+<example xml:id="example-8-14">
+  <!-- <title>Spans of sequences</title> -->
+
+    <p>
+      Consider the vector space <m>\mathrm{Seq}_{\mathbb{R}}</m> of infinite sequences of real numbers.
+      For every <m>k\in\mathbb{N}</m>, let <m>e^k</m> be the sequence whose
+      <m>k</m>th element is 1 and that is 0 everywhere else, i.e.,
+      <md>
+      <mrow>e^0=(1,0,0,0,0,\ldots),</mrow>,
+      <mrow>e^1=(0,1,0,0,0,\ldots),</mrow>
+      <mrow>e^2=(0,0,1,0,0,\ldots),</mrow>
+        </md> and so on.
+      Let <m>S=\{e^k : k\in\mathbb{N}\}</m>.
+      Which of the following sequences are in <m>\mathrm{span}(S)</m>?
+    </p>
+
+    <p>
+      <md>
+        <mrow> \text{(a)}\ f=(1,1,1,0,0,0,0,0,\ldots), </mrow>
+        <mrow> \text{(b)}\ g=(1,2,0,5,0,0,0,0,\ldots),</mrow>
+        <mrow> \text{(c)}\ h=(1,1,1,1,1,1,1,1,\ldots), </mrow>
+        <mrow> \text{(d)}\ m=(1,0,1,0,1,0,1,0,\ldots).</mrow>
+      </md>
+    </p>
+
+    <p>
+      (a) We have <m>f\in\mathrm{span}(S)</m>, because
+      <m>f=e^0+e^1+e^2</m>.
+    </p>
+
+    <p>
+      (b) We have <m>g\in\mathrm{span}(S)</m>, because
+      <m>g=1e^0+2e^1+5e^3</m>.
+    </p>
+
+    <p>
+      (c) The sequence <m>h</m> is not in <m>\mathrm{span}(S)</m>, because
+      each element of <m>\mathrm{span}(S)</m> is, by definition, a linear
+      combination of finitely many elements of <m>S</m>. No linear
+      combinations of finitely many <m>e^k</m> can end in infinitely many
+      ones. Note that we are not permitted to write an infinite sum such as
+      <m>e^0+e^1+e^2+\cdots</m>. Such infinite sums are not defined in vector
+      spaces.
+    </p>
+
+    <p>
+      (d) The sequence <m>m</m> is not in <m>\mathrm{span}(S)</m>, for the
+      same reason. We would need to add infinitely many sequences of the form
+      <m>e^k</m> to get a sequence that contains infinitely many non-zero
+      elements. However, this is not permitted by the definition of span.
+    </p>
+
+</example>
+
+<!-- Example 8.15 -->
+<example xml:id="example-8-15">
+  <!-- <title>Span of polynomials</title> -->
+
+    <p>
+      Let <m>p(x)=7x^2+4x-3</m>. Is <m>p(x)\in\mathrm{span}\{x^2,(x+1)^2,(x+2)^2\}</m>?
+    </p>
+
+    <p>
+      The answer is yes, because we found in <xref ref="example-8-12"/> that
+      <me>
+        p(x)=\tfrac52x^2+7(x+1)^2-\tfrac52(x+2)^2.
+      </me>
+    </p>
+
+</example>
+
+<p>
+  We say that a set of vectors <m>S</m> is a spanning set for <m>V</m> if
+  <m>V=\mathrm{span}(S)</m>.
+</p>
+
+<!-- Example 8.16 -->
+<example xml:id="example-8-16">
+  <!-- <title>Spanning set</title> -->
+
+    <p>
+      Let <m>S=\{x^2,(x+1)^2,(x+2)^2\}</m>. We show that <m>S</m> is a spanning set
+      for <m>\mathbb{P}_2</m>, the vector space of all polynomials of degree at most 2.
+    </p>
+
+    <p>
+      This is analogous to <xref ref="example-8-12"/>. Consider an arbitrary element
+      <m>p(x)=p_2x^2+p_1x+p_0</m> of <m>\mathbb{P}_2</m>. We must show that
+      <m>p(x)\in\mathrm{span}(S)</m>, i.e., that there exist
+      <m>a,b,c\in \mathbb{R}</m> such that
+      <me>
+        p(x)=ax^2+b(x+1)^2+c(x+2)^2.
+      </me>
+    </p>
+
+    <p>
+      We can equivalently rewrite this equation as
+      <me>
+        p_2x^2+p_1x+p_0=(a+b+c)x^2+(2b+4c)x+(b+4c),
+      </me>
+      which yields the system of equations
+<me>
+\begin{aligned}
+a + b + c \amp = p_2 \\
+2b + 4c \amp = p_1 \\
+b + 4c \amp = p_0
+\end{aligned}
+\qquad \simeq \qquad
+\begin{bmatrix}
+1 \amp 1 \amp 1 \amp  p_2 \\
+0 \amp 2 \amp 4 \amp  p_1 \\
+0 \amp 1 \amp 4 \amp  p_0
+\end{bmatrix}
+\qquad \simeq \qquad
+\begin{bmatrix}
+1 \amp 1 \amp 1 \amp  p_2 \\
+0 \amp 2 \amp 4 \amp  p_1 \\
+0 \amp 0 \amp 4 \amp  2p_0 - p_1
+\end{bmatrix}.
+</me>
+    </p>
+
+    <p>
+      Since the system has rank 3, it has a solution. Therefore
+      <m>p(x)\in\mathrm{span}(S)</m>. Since <m>p(x)</m> was an arbitrary
+      element of <m>\mathbb{P}_2</m>, it follows that <m>S</m> is a spanning set for
+      <m>\mathbb{P}_2</m>.
+    </p>
+
+</example>
+
+
+
+
+</subsection>
+
+  <subsection xml:id="section-definition-independence">
+    <title>Linear independence</title>
+
+ <p>We now define the concept of linear independence in a general vector space. Here too, we generalize the
+definition to an arbitrary (finite or infinite) set of vectors.</p>
+
+ <definition xml:id="definition-8-17">
+    <!-- <title>Linear independence</title> -->
+
+    <p>
+      Let <m>V</m> be a vector space over a field <m>K</m>. A finite set of
+      vectors <m>\{\uvec_1,\ldots,\uvec_k\}</m> is called <term>linearly independent</term>
+      if the equation
+      <me>a_1\uvec_1+\cdots+a_k\uvec_k=0</me>
+      has only the trivial solution
+      <me>a_1=\cdots=a_k=0.</me>
+    </p>
+
+    <p>
+      An infinite set of vectors is linearly independent if every finite
+      subset is linearly independent.
+    </p>
+  </definition>
+
+
+<!-- Example 8.18 -->
+<example xml:id="example-8-18">
+  <!-- <title>Linearly independent polynomials</title> -->
+
+    <p>
+      Determine whether the polynomials
+      <m>x^2</m>, <m>x^2+2x-1</m>, and <m>2x^2-x+3</m>
+      are linearly independent.
+    </p>
+
+    <p>
+      According to the definition of linear independence, we must solve the
+      equation
+      <me>
+        ax^2+b(x^2+2x-1)+c(2x^2-x+3)=0.
+      </me>
+      If there is a non-trivial solution, the polynomials are linearly
+      dependent. If there is only the trivial solution, they are linearly
+      independent.
+    </p>
+
+    <p>
+      We first rearrange the left-hand side to collect equal powers of
+      <m>x</m>:
+      <me>
+        (a+b+2c)x^2+(2b-c)x+(3c-b)=0.
+      </me>
+      This turns into a system of 3 equations in 3 variables:
+      <me>
+        \begin{aligned}
+a+b+2c \amp = 0 \\
+2b-c \amp = 0 \\
+3c-b \amp = 0
+\end{aligned}
+        \simeq
+        \begin{bmatrix}
+          1 \amp 1 \amp 2 \amp 0 \\
+          0 \amp 2 \amp -1 \amp 0 \\
+          0 \amp -1 \amp 3 \amp 0
+        \end{bmatrix}
+        \simeq
+        \begin{bmatrix}
+          1 \amp 1 \amp 2 \amp 0 \\
+          0 \amp 2 \amp -1 \amp 0 \\
+          0 \amp 0 \amp 1 \amp 0
+        \end{bmatrix}.
+      </me>
+    </p>
+
+    <p>
+      Since the system has rank 3, there are no free variables. The only
+      solution is <m>a=b=c=0</m>, and the polynomials are linearly
+      independent.
+    </p>
+
+</example>
+
+<!-- Example 8.19 -->
+<example xml:id="example-8-19">
+  <!-- <title>Linearly independent sequences</title> -->
+
+    <p>
+      Consider again the real-valued sequences from
+      <xref ref="example-8-14"/>,
+      <md>
+        <mrow>e^0=(1,0,0,0,0,\ldots),</mrow>
+      <mrow>e^1=(0,1,0,0,0,\ldots),</mrow>
+      <mrow>e^2=(0,0,1,0,0,\ldots), </mrow> 
+      </md> and so on.
+      Let <m>S=\{e^0,e^1,e^2,\ldots\}</m>.
+      This is an infinite subset of <m>\mathrm{Seq}_{\mathbb{R}}</m>.
+      We show that <m>S</m> is linearly independent.
+    </p>
+
+    <p>
+      Since <m>S</m> is an infinite set, we have to show that every finite
+      subset of <m>S</m> is linearly independent. So consider a finite
+      subset
+      <me>\{e^{k_1},e^{k_2},\ldots,e^{k_n}\}\subseteq S</me>
+      and assume that
+      <me>
+        a_1e^{k_1}+a_2e^{k_2}+\cdots+a_ne^{k_n}=0.
+      </me>
+    </p>
+
+    <p>
+      We have to show that <m>a_1,\ldots,a_n=0</m>.
+      Consider some index <m>i\in\{1,\ldots,n\}</m>.
+      Then the <m>k_i</m>th element of
+      <m>a_1e^{k_1}+\cdots+a_ne^{k_n}</m>
+      is equal to <m>a_i</m> by the left-hand side of the equation, but it is
+      also equal to 0 by the right-hand side. It follows that
+      <m>a_i=0</m> for all <m>i\in\{1,\ldots,n\}</m>.
+    </p>
+
+    <p>
+      Therefore <m>e^{k_1},e^{k_2},\ldots,e^{k_n}</m> is linearly independent.
+      Since this was an arbitrary finite subset of <m>S</m>, it follows,
+      by definition, that <m>S</m> is linearly independent.
+    </p>
+
+</example>
+
+<!-- Example 8.20 -->
+<example xml:id="example-8-20">
+  <!-- <title>Linearly dependent matrices</title> -->
+
+    <p>
+      We determine whether the following elements of <m>\Mvec_{2,2}</m> are
+      linearly independent:
+      <me>
+        M_1=\begin{bmatrix}-1 \amp 0 \\ 1 \amp -1\end{bmatrix},\quad
+        M_2=\begin{bmatrix}1 \amp 1 \\ 1 \amp 2\end{bmatrix},\quad
+        M_3=\begin{bmatrix}1 \amp 3 \\ 5 \amp 4\end{bmatrix}.
+      </me>
+    </p>
+
+    <p>
+      We look for solutions to
+      <m>aM_1+bM_2+cM_3=0</m>.
+      Notice that this equation has non-trivial solutions, for example
+      <m>a=2</m>, <m>b=3</m>, and <m>c=-1</m>.
+      Therefore the matrices are linearly dependent.
+    </p>
+
+</example>
+
+<!-- Example 8.21 -->
+<example xml:id="example-8-21">
+  <title>Linearly independent functions</title>
+
+    <p>
+      In the vector space <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m> of
+      real-valued functions on the real numbers, we show that the functions
+      <m>f(x)=\sin x</m> and <m>g(x)=\cos x</m> are linearly independent.
+    </p>
+
+    <p>
+      Assume <m>A\sin x+B\cos x=0</m>. Note that this is an equality of
+      functions, which means that it is true for all <m>x</m>.
+    </p>
+
+    <p>
+      In particular, substituting <m>x=0</m> into the equation, and using
+      the fact that <m>\sin 0=0</m> and <m>\cos 0=1</m>, we have
+      <me>
+        0=A\sin 0+B\cos 0=A\cdot 0+B\cdot 1=B,
+      </me>
+      and therefore <m>B=0</m>.
+      On the other hand, substituting <m>x=\tfrac{\pi}{2}</m> into the
+      equation, and using the fact that <m>\sin\tfrac{\pi}{2}=1</m> and
+      <m>\cos\tfrac{\pi}{2}=0</m>, we have
+      <me>
+        0=A\sin\tfrac{\pi}{2}+B\cos\tfrac{\pi}{2}
+        =A\cdot 1+B\cdot 0=A,
+      </me>
+      and therefore <m>A=0</m>.
+      Therefore the equation <m>A\sin x+B\cos x=0</m> only has the trivial
+      solution <m>A=B=0</m>, and it follows that <m>\sin x</m> and
+      <m>\cos x</m> are linearly independent.
+    </p>
+
+</example>
+
+<p>The properties of linear independence that were discussed earlier remain true in the general setting of
+vector spaces. We also have the usual characterization of linear dependence in terms of redundant vectors:</p>
+
+  <proposition xml:id="proposition-8-22">
+  <!-- <title>Linear dependence and redundant vectors</title> -->
+
+  <statement>
+    <p>
+      Let <m>V</m> be a vector space, and let
+      <m>\uvec_1,\uvec_2,\ldots</m> be a (finite or infinite) sequence of vectors in
+      <m>V</m>. If <m>\uvec_1,\uvec_2,\ldots</m> are linearly dependent, then at least
+      one of the vectors can be written as a linear combination of earlier
+      vectors in the sequence:
+      <me>
+        \uvec_j = a_1\uvec_1 + a_2\uvec_2 + \cdots + a_{j-1}\uvec_{j-1},
+      </me>
+      for some <m>j</m>. We say that the vector
+      <m>\uvec_j</m> is <term>redundant</term>.
+    </p>
+  </statement>
+
+  <proof>
+    <p>
+      Suppose that the vectors are linearly dependent. Then the equation
+      <m>
+        b_1\uvec_1 + \cdots + b_k\uvec_k = 0
+      </m>
+      has a non-trivial solution for some <m>k</m>. In other words, there
+      exist scalars <m>b_1,\ldots,b_k</m>, not all equal to zero, such that
+      <m>
+        b_1\uvec_1 + \cdots + b_k\uvec_k = 0.
+      </m>
+    </p>
+
+    <p>
+      Let <m>j</m> be the largest index such that <m>b_j \neq 0</m>. Then
+      <m>
+        b_1\uvec_1 + \cdots + b_j\uvec_j = 0.
+      </m>
+      Dividing by <m>b_j</m> and solving for <m>\uvec_j</m>, we have
+      <me>
+        \uvec_j = -\frac{b_1}{b_j}\uvec_1 - \cdots - \frac{b_{j-1}}{b_j}\uvec_{j-1},
+      </me>
+      so <m>\uvec_j</m> can be written as a linear combination of earlier vectors
+      as claimed.
+    </p>
+  </proof>
+</proposition>
+
+<example xml:id="example-8-23">
+  <!-- <title>Polynomials of increasing degree</title> -->
+
+    <p>
+      Consider a sequence of non-zero polynomials
+      <m>p_1(x),\ldots,p_k(x)</m> of increasing degree, i.e., such that the
+      degree of each <m>p_i(x)</m> is strictly larger than that of
+      <m>p_{i-1}(x)</m>. We show that <m>p_1(x),\ldots,p_k(x)</m> are linearly
+      independent in the vector space <m>\mathbb{P}</m>.
+    </p>
+
+    <p>
+      A polynomial of degree <m>n</m> cannot be a linear combination of
+      polynomials of degree less than <m>n</m>. Therefore, none of the
+      polynomials <m>p_1(x),\ldots,p_k(x)</m> can be written as a linear
+      combination of earlier polynomials. By <xref ref="proposition-8-22"/>,
+      <m>p_1(x),\ldots,p_k(x)</m> are linearly independent.
+    </p>
+
+</example>
+
+<proposition xml:id="proposition-8-24">
+  <!-- <title>Adding to a linearly independent set</title> -->
+
+  <statement>
+    <p>
+      Suppose <m>\{\uvec_1,\ldots,\uvec_k\}</m> is linearly independent and
+      <m>\vvec\notin \mathrm{span}\{\uvec_1,\ldots,\uvec_k\}</m>. Then the set
+      <m>\{\uvec_1,\ldots,\uvec_k,\vvec\}</m> is also linearly independent.
+    </p>
+  </statement>
+
+  <proof>
+    <p>
+      Assume, on the contrary, that the set were linearly dependent. Then by
+      <xref ref="proposition-8-22"/>, one of the vectors can be written as a linear
+      combination of earlier vectors. This vector cannot be one of the
+      <m>\uvec_i</m>, because <m>\uvec_1,\ldots,\uvec_k</m> are linearly independent. It
+      also cannot be <m>\vvec</m>, because
+      <m>\vvec\notin \mathrm{span}\{\uvec_1,\ldots,\uvec_k\}</m>. Therefore, our assumption
+      cannot be true, and the set is linearly independent.
+    </p>
+  </proof>
+</proposition>
+``
+
+
+  </subsection>
+
+  <subsection xml:id="subsec-lincombo-Summary">
+    <title>Summary</title>
+
+  <ul>
+    <li>
+      Linear combinations describe how new vectors can be formed by adding
+      scalar multiples of given vectors, providing a systematic way to build
+      vectors from other vectors.
+    </li>
+    <li>
+      The span of a set of vectors consists of all vectors that can be formed
+      as linear combinations of those vectors, allowing us to determine when
+      a collection of vectors generates part or all of a vector space.
+    </li>
+    <li>
+      Linear independence captures the idea of non‑redundancy: a set of
+      vectors is linearly independent if none of its vectors can be written
+      as a linear combination of the others.
+    </li>
+  </ul>
+
+  </subsection>
+
+  
+  <xi:include href="exercises/exercises8-2.xml" /> 
+
+</section>
+
+
+

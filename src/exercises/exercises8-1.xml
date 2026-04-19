@@ -2,6 +2,32 @@
 
 <exercises xml:id="exercises-8-1">
 
+  <exercise label="ula-proteus-8-1-vssort">
+      <title>Is This a Vector Space?</title>
+      <statement>  
+      <p>
+        Determine whether each set is a vector space or not.  
+      </p>
+
+      </statement>
+      <cardsort>
+        <match>
+          <premise>All vectors in <m>\mathbb{R}^3</m> with the usual vector addition and scalar multiplication.</premise>
+          <premise>The set of all polynomials <m>\mathbb{P}_2</m> with real coefficients of degree at most 2.</premise>
+          <premise>The set of all real-valued functions <m>f</m> such that <m>f(0)=0</m>.</premise>
+          <response><p>Is a vector space</p></response>
+        </match>
+
+        <match>
+          <premise>The set of all vectors in <m>\mathbb{R}^2</m> with positive entries under the usual addition and scalar multiplication.</premise>
+          <premise>The set of all polynomials with constant term equal to 1 under the usual addition and scalar multiplication.</premise>
+          <premise>The set of all real <m>2 \times 2</m> matrices with determinant 1 under the usual matrix addition and scalar multiplication.</premise>
+          <response><p>Is not a vector space</p></response>
+        </match>
+        
+      </cardsort>
+    </exercise>
+
   <exercise xml:id="exercise-8-1-1">
     <statement>
       <p>

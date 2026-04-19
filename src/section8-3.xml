@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-vecsubspace-intro"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title> Subspaces </title>
+
+  <introduction>
+  <p>
+    In this section we will consider subspaces of general vector spaces.
+  </p>
+
+<exploration xml:id="preview-subspace-5-3">
+
+  <!-- <title>Preview Activity: When Is a Subset Still a Vector Space?</title> -->
+
+  <introduction>
+    <p>
+      In earlier sections, we studied vector spaces as entire collections of
+      objects. In practice, however, we often work with smaller collections
+      that live inside a larger vector space. In this activity, we explore
+      when such a subset behaves like a vector space in its own right.
+    </p>
+
+    <p>
+      Rather than starting with a formal definition, you will examine examples
+      and look for patterns that help explain which subsets work and which do
+      not.
+    </p>
+  </introduction>
+
+  <!-- Task 1 -->
+  <task xml:id="preview-subspaces-task-1">
+    <statement>
+      <p>
+        Consider the following subsets of <m>\mathbb{R}^2</m>.
+      </p>
+
+      <ol>
+        <li>
+          All vectors of the form <m>\begin{bmatrix}x \\ 0 \end{bmatrix}</m>.
+        </li>
+        <li>
+          All vectors of the form <m>\begin{bmatrix}x \\ 1 \end{bmatrix}</m>.
+        </li>
+        <li>
+          All vectors of the form <m>\begin{bmatrix}x \\ y \end{bmatrix}</m> with <m>x+y=0</m>.
+        </li>
+      </ol>
+
+      <p>
+        For each subset:
+      </p>
+
+      <ol>
+        <li>
+          Decide whether adding two vectors from the subset produces another
+          vector in the subset.
+        </li>
+        <li>
+          Decide whether multiplying a vector in the subset by a scalar keeps
+          the result in the subset.
+        </li>
+        <li>
+          Identify one example where something fails, if it does.
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 2 -->
+  <task xml:id="preview-subspaces-task-2">
+    <statement>
+      <p>
+        Now consider the following subsets of the vector space <m>\mathbb{P}_2</m> of
+        polynomials of degree at most 2.
+      </p>
+
+      <ol>
+        <li>
+          All polynomials with zero constant term.
+        </li>
+        <li>
+          All polynomials with constant term equal to 1.
+        </li>
+        <li>
+          All polynomials that have a fixed real number <m>r</m> as a root.
+        </li>
+      </ol>
+
+      <p>
+        For each subset:
+      </p>
+
+      <ol>
+        <li>
+          Decide whether the zero polynomial belongs to the subset.
+        </li>
+        <li>
+          Test whether the subset is closed under addition.
+        </li>
+        <li>
+          Test whether the subset is closed under scalar multiplication.
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 3 -->
+  <task xml:id="preview-subspaces-task-3">
+    <statement>
+      <p>
+        In each of the previous examples, some subsets behaved well under the
+        vector space operations, while others failed in specific ways.
+      </p>
+
+      <ol>
+        <li>
+          Which properties seem to fail most often?
+        </li>
+        <li>
+          Why does the failure of a single property prevent a subset from
+          behaving like a vector space?
+        </li>
+        <li>
+          What role does the zero vector seem to play in all successful
+          examples?
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <conclusion>
+    <p>
+      These examples suggest that only certain subsets of a vector space are
+      stable under the operations of addition and scalar multiplication.
+      In the next section, we will formalize these observations by introducing
+      the definition of a <em>subspace</em>.
+    </p>
+  </conclusion>
+
+</exploration>
+
+</introduction>
+
+  <subsection xml:id="section-definition-subspaces">
+    <title>Definition of subspace</title>
+
+<definition xml:id="definition-8-25">
+  <!-- <title>Subspace</title> -->
+
+  <p>
+    Let <m>V</m> be a vector space over a field <m>K</m>. A subset
+    <m>W \subseteq V</m> is said to be a <term>subspace</term> of <m>V</m> if the following
+    conditions hold:
+  </p>
+
+  <ol>
+    <li>
+      <m>\zerovec \in W</m>, where <m>\zerovec</m> is the additive unit of <m>V</m>.
+    </li>
+    <li>
+      <m>W</m> is closed under addition: Whenever <m>\uvec,\vvec \in W</m>, then
+      <m>\uvec+\vvec \in W</m>.
+    </li>
+    <li>
+      <m>W</m> is closed under scalar multiplication: Whenever <m>k \in K</m>
+      and <m>\uvec \in W</m>, then <m>k\uvec \in W</m>.
+    </li>
+  </ol>
+</definition>
+
+<!-- Example 8.26 -->
+<example xml:id="example-8-26">
+  <!-- <title>Subspaces of <m>\mathbb{R}^3</m></title> -->
+
+    <p>
+      As we have seen, the subspaces of <m>\mathbb{R}^3</m> are:
+    </p>
+
+    <ul>
+      <li>the zero subspace <m>\{\zerovec\}</m>;</li>
+      <li>lines through the origin;</li>
+      <li>planes through the origin;</li>
+      <li><m>\mathbb{R}^3</m> itself.</li>
+    </ul>
+</example>
+
+<!-- Example 8.27 -->
+<example xml:id="example-8-27">
+  <!-- <title>Space of continuous functions</title> -->
+
+    <p>
+      Let <m>V=\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>, the vector space of
+      functions from real numbers to real numbers. Let <m>W\subseteq V</m> be
+      the subset of continuous functions. Then <m>W</m> is a subspace of
+      <m>V</m>.
+    </p>
+
+    <p>
+      <alert>Proof:</alert> We know from calculus that:
+    </p>
+
+    <ol>
+      <li>
+        the zero function, defined by <m>f(x)=0</m> for all <m>x</m>, is
+        continuous;
+      </li>
+      <li>
+        if <m>f,g</m> are continuous functions, then <m>f+g</m> is continuous;
+      </li>
+      <li>
+        if <m>f</m> is a continuous function and <m>k</m> a constant, then
+        <m>kf</m> is continuous.
+      </li>
+    </ol>
+
+    <p>
+      It follows that <m>W</m> contains <m>\zerovec</m>, and is closed under addition
+      and scalar multiplication. Therefore, <m>W</m> is a subspace of
+      <m>V</m>.
+    </p>
+
+</example>
+
+<!-- Example 8.28 -->
+<example xml:id="example-8-28">
+  <!-- <title>Space of differentiable functions</title> -->
+
+    <p>
+      Let <m>V=\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>. Recall from calculus
+      that a function <m>f:\mathbb{R}\to\mathbb{R}</m> is called <term>differentiable</term>
+      if the derivative <m>f'(x)</m> exists for all <m>x\in\mathbb{R}</m>.
+      Let <m>W\subseteq V</m> be the subset of differentiable functions.
+      Then <m>W</m> is a subspace of <m>V</m>.
+    </p>
+
+    <p>
+      We know from calculus that:
+    </p>
+
+    <ol>
+      <li>
+        the zero function, defined by <m>f(x)=0</m> for all <m>x</m>, is
+        differentiable. In fact, its derivative is <m>f'(x)=0</m>;
+      </li>
+      <li>
+        if <m>f,g</m> are differentiable functions, then
+        <m>h=f+g</m> is differentiable. In fact,
+        <m>h'(x)=f'(x)+g'(x)</m>;
+      </li>
+      <li>
+        if <m>f</m> is a differentiable function and <m>k</m> a constant, then
+        <m>h=kf</m> is differentiable. In fact, <m>h'=kf'</m>.
+      </li>
+    </ol>
+
+    <p>
+      It follows that <m>W</m> contains <m>\zerovec</m>, and is closed under addition
+      and scalar multiplication. Therefore, <m>W</m> is a subspace of
+      <m>V</m>.
+    </p>
+
+</example>
+
+<!-- Example 8.29 -->
+<example xml:id="example-8-29">
+  <!-- <title>Space of sequences satisfying a linear recurrence</title> -->
+
+    <p>
+      Let <m>V=\mathrm{Seq}_{\mathbb{R}}</m>, the vector space of sequences of
+      real numbers. Let
+      <me>
+        W=\{a\in\mathrm{Seq}_{\mathbb{R}}\mid
+        \text{for all }n\ge 0,\ a_{n+2}=a_n+a_{n+1}\}.
+      </me>
+      In other words, <m>W</m> is the set of all sequences satisfying the
+      recurrence relation <m>a_{n+2}=a_n+a_{n+1}</m>. Then <m>W</m> is a
+      subspace of <m>V</m>.
+    </p>
+
+    <p>
+      <alert>Proof:</alert> Before we prove that <m>W</m> is a subspace, let us first consider an
+      example. The following sequences are elements of <m>W</m>, because
+      they both satisfy the recurrence:
+    </p>
+
+    <p>
+      <md>
+        <mrow> a\amp =(1,1,2,3,5,8,13,21,\ldots),</mrow>
+        <mrow> b\amp =(1,3,4,7,11,18,29,47,\ldots).</mrow>
+      </md>
+    </p>
+
+    <p>
+      Note that if we add these sequences, we get
+      <me>
+        a+b=(2,4,6,10,16,26,42,68,\ldots),
+      </me>
+      which again satisfies the recurrence. Therefore, the set <m>W</m> is
+      closed under the addition of these particular sequences <m>a</m> and
+      <m>b</m>.
+    </p>
+
+    <p>
+      We now prove the properties in general.
+    </p>
+
+    <ol>
+      <li>
+        Let <m>z</m> be the zero sequence, defined by <m>z_n=0</m> for all
+        <m>n</m>. Then <m>z</m> satisfies the recurrence relation, since for
+        all <m>n\ge 0</m>, <m>z_{n+2}=0=z_n+z_{n+1}</m>. Therefore <m>z\in W</m>.
+      </li>
+
+      <li>
+        To show that <m>W</m> is closed under addition, consider any two
+        sequences <m>a,b\in W</m>, and let <m>c=a+b</m>. Then for all
+        <m>n\ge 0</m>,
+        <me>
+          c_{n+2}=a_{n+2}+b_{n+2}
+          =(a_n+a_{n+1})+(b_n+b_{n+1})
+          =(a_n+b_n)+(a_{n+1}+b_{n+1})
+          =c_n+c_{n+1},
+        </me>
+        so <m>c</m> satisfies the recurrence. It follows that
+        <m>c\in W</m>.
+      </li>
+
+      <li>
+        To show that <m>W</m> is closed under scalar multiplication, consider
+        any <m>k\in\mathbb{R}</m> and <m>a\in W</m>, and let <m>c=ka</m>. Then
+        for all <m>n\ge 0</m>,
+        <me>
+          c_{n+2}=ka_{n+2}=k(a_n+a_{n+1})=ka_n+ka_{n+1}=c_n+c_{n+1},
+        </me>
+        so <m>c</m> satisfies the recurrence. It follows that
+        <m>c\in W</m>.
+      </li>
+    </ol>
+
+</example>
+
+<activity xml:id="subspace-sequences">
+
+  <statement>
+<ol marker="(a)">
+  <li>Let <m>c</m> denote the vector space of convergent, infinite sequences of real numbers.
+Let <m>c_{0}</m> denote the subset of infinite sequences of real numbers that converge to 0.
+Show that <m>c_{0}</m> is a subspace of <m>c</m>.
+</li>
+<li>Let <m>W</m> denote the subset of <m>c</m> (the vector space of convergent, infinite sequences) that consists of those sequences having <alert>finite support</alert>.
+By that, we mean that <m>W</m> consists of sequences where only finitely many of the terms are nonzero.
+Is <m>W</m> a subspace of <m>c</m>? Why or why not?  </li>
+<li> Is the set of convergent, geometric sequences (i.e.
+those of the form <m>a_{n}=ar^{n}</m> where <m>|r|&#x3C;1</m>) a subspace of <m>c</m>? Why or why not?  </li>
+<li>Is the set <m>\displaystyle S=\left\{ (a_{n}) \in c : \lim_{n \rightarrow \infty}a_{n}= 1 \right\}</m> a subspace of <m>c</m>? Why or why not? </li>
+<li> Is the set of all constant sequences a subspace of <m>c</m>? Why or why not?    </li>
+</ol>
+  </statement>
+
+  <solution>
+    <p>
+      <ol marker="(a)">
+        <li>We show that if <m>(\avec_{n})</m> and <m>(\bvec_{n})</m> are sequences in <m>c_{0}</m>, then their sum is as well.
+But the sum of two sequences that converge to 0 also converges to 0.
+We also show that if <m>(\avec_{n})</m> is a sequence converging to 0 then any multiple of it will also converge to 0.
+But this is clear.
+So <m>c_{0}</m> is closed under addition and scalar multiplication.
+The zero element is obviously the sequence of all 0's and hence clearly converges to 0 and is in <m>c_{0}</m>. </li>
+        <li><m>W</m> is a subspace. If we add two such sequences, then the sum will only have a finite number of terms that are not zero (at most double the number of nonzero terms in each individual sequence). If we multiply such a sequence by a constant, it will have (at most) the same number of nonzero terms. The zero sequence (consisting of all 0's) has no nonzero terms and so is also in <m>W</m>.
+</li>  
+<li>No.
+Adding the sequences <m>(r,r^{2},r^{3},\hdots)</m> and <m>(s,s^{2},s^{3},\hdots)</m> gives a sequence <m>(r+s, r^{2}+s^{2}, r^{3}+s^{3},\hdots)</m> which is not geometric unless either <m>r</m> or <m>s</m> is 0.    </li>
+<li>No.
+The constant sequence <m>(1,1,1,\hdots)</m> is in <m>S</m>, but adding this sequence to itself will not yield a sequence in <m>S</m>.</li>
+<li>Yes.
+The zero sequence <m>(0,0,0,\hdots)</m> is the zero element and is constant.
+Adding two constant sequences will yield a constant sequence.
+Multiplying each term of a sequence by a scalar <m>k</m> will produce another constant sequence. </li>
+</ol>
+    </p>
+  </solution>
+
+</activity>
+
+<!-- Example 8.30 -->
+<example xml:id="example-8-30">
+  <!-- <title>Solution space of a linear differential equation</title> -->
+
+    <p>
+      Let <m>V=\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>. Recall from calculus
+      that a <term>differential equation</term> is an equation about an unknown function
+      and its derivatives. For example <me>f''=-f</me> is a differential
+      equation. The functions <m>f(x)=\sin x</m>, <m>f(x)=\cos x</m>, and
+      <m>f(x)=0</m> are examples of solutions of this differential equation.
+      Let <m>W</m> be the set of all functions that are solutions of the
+      differential equation <m>f''=-f</m>. Then <m>W</m> is a subspace of
+      <m>V</m>.
+    </p>
+
+    <p>
+      <alert>Proof:</alert>The zero function <m>f(x)=0</m> is a solution of the differential
+      equation, and therefore an element of <m>W</m>.
+    </p>
+
+    <p>
+      To show that <m>W</m> is closed under addition, let <m>f,g\in W</m> and
+      consider <m>h=f+g</m>. Then <m>f''=-f</m> and <m>g''=-g</m>, and therefore
+      <m>h''=f''+g''=-f+(-g)=-h</m>. Therefore <m>h\in W</m>.
+    </p>
+
+    <p>
+      To show that <m>W</m> is closed under scalar multiplication, let
+      <m>k\in\mathbb{R}</m> and <m>f\in W</m>, and consider <m>h=kf</m>. Then
+      <m>f''=-f</m>, and therefore <m>h''=kf''=k(-f)=-h</m>. It follows that
+      <m>h\in W</m>.
+    </p>
+
+</example>
+
+<!-- Example 8.31 -->
+<example xml:id="example-8-31">
+  <!-- <title>Subspace of polynomials</title> -->
+
+    <p>
+      Consider <m>\mathbb{P}_2</m>, the vector space of polynomials of degree at most 2,
+      with real coefficients. Fix some real number <m>r</m>,
+      and let <m>W\subseteq \mathbb{P}_2</m> be the subset of polynomials that have
+      <m>r</m> as a root. Then <m>W</m> is a subspace of <m>\mathbb{P}_2</m>.
+    </p>
+
+    <p>
+      <alert>Proof:</alert> We can express <m>W</m> as follows:
+      <m>
+        W=\{p\in \mathbb{P}_2\mid p(r)=0\}.
+      </m>
+      We need to show that <m>W</m> is a subspace.
+    </p>
+
+    <p>
+      <m>1.</m> The zero polynomial, given by <m>0(x)=0</m>, satisfies
+      <m>0(r)=0</m>, so <m>0\in W</m>.
+    </p>
+
+    <p>
+      <m>2.</m> To show that <m>W</m> is closed under addition, assume
+      <m>p,q\in W</m>, and let <m>s=p+q</m>. Then <m>p(r)=0</m> and
+      <m>q(r)=0</m>, therefore <m>s(r)=p(r)+q(r)=0</m>. It follows that
+      <m>s\in W</m>.
+    </p>
+
+    <p>
+      <m>3.</m> To show that <m>W</m> is closed under scalar multiplication,
+      assume <m>p(x)\in W</m> and <m>k</m> be a scalar. Then
+      <m>(kp)(r)=k(p(r))=k0=0</m>, and therefore <m>kp\in W</m>.
+    </p>
+
+</example>
+
+<!-- Example 8.32 -->
+<example xml:id="example-8-32">
+  <!-- <title>Trivial subspaces of <m>V</m></title> -->
+
+    <p>
+      Let <m>V</m> be an arbitrary vector space over a field <m>K</m>.
+      Then <m>\{\zerovec\}</m> is a subspace of <m>V</m>, called the zero subspace.
+      Also, <m>V</m> is a subspace of itself.
+    </p>
+
+    <p>
+      <alert>Proof:</alert> Clearly <m>\{\zerovec\}</m> contains <m>\zerovec</m>, and is closed under addition and
+      scalar multiplication because <m>\zerovec+\zerovec=\zerovec</m> and <m>k\zerovec=\zerovec</m> for all
+      <m>k</m>. Similarly, <m>V</m> contains <m>\zerovec</m> and is closed under
+      addition and scalar multiplication, because addition and scalar
+      multiplication are operations on <m>V</m>. Therefore, both
+      <m>\{\zerovec\}</m> and <m>V</m> are subspaces of <m>V</m>.
+    </p>
+
+</example>
+
+<activity xml:id="subspace-function-spaces">
+<statement>
+  <ol marker="(a)">
+    <li>
+      <p>
+        Let <m>V=C(-\infty,\infty)</m>, the vector space of continuous real-valued functions.
+Define <m>W</m> to be the set of functions <m>\fvec \in V</m> for which <m>\fvec' - \fvec = 0</m>.
+For example, <m>\fvec(x)=e^{x}</m> is in <m>W</m>.
+Show that <m>W</m> is a subspace of <m>V</m>.  
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>V=C(-\infty,\infty)</m> as before.
+Define <m>W</m> to be the set of functions <m>\fvec \in V</m> for which <m>\fvec'' + \fvec = 0</m>.
+For example, <m>\fvec(x)=\sin x</m> and <m>\fvec(x) = \cos x</m> are in <m>W</m>.
+Is <m>W</m> a subspace of <m>V</m>? If so, prove it.
+If not, why not?
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>V = \Mvec_{2 \times 2}(\mathbb{R})</m>, the vector space of <m>2\times 2</m> real-valued matrices.
+Is <m>W = \left\{ \left[ \begin{array}{cc}a &#x26; 0 \\ 0 &#x26; b\end{array} \right] : a,b \in \mathbb{R}\right\}</m> a subspace of <m>V</m>? If so, prove it.
+If not, why not? If so, what is the dimension of this subspace?
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>V = \Mvec_{2 \times 2}(\mathbb{R})</m>, the vector space of <m>2\times 2</m> real-valued matrices.
+Is <m>W = \left\{ \left[ \begin{array}{cc}a &#x26; b \\ 0 &#x26; a\end{array} \right] : a,b \in \mathbb{R}\right\}</m> a subspace of <m>V</m>? If so, prove it.
+If not, why not? If so, what is the dimension of this subspace?   
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>V = \Mvec_{2 \times 2}(\mathbb{R})</m>.
+Show that <m>W = \left\{ A: A\left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right] = \left[ \begin{array}{cc}1 &#x26; 1 \\ 0 &#x26; -1\end{array} \right]A \right\}</m> is a subspace of <m>V</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>V = \mathbb{P}_{2}</m>, the vector space of polynomials with real coefficients of degree at most 2.
+Let <m>W = \left\{ p \in V : p(0)=1\right\}</m>.
+Is <m>W</m> a subspace of <m>V</m>? If so, prove it.
+If not, why not?
+      </p>
+    </li>
+    <li>
+      <p>
+     Let <m>V = \mathbb{P}_{2}</m>, the vector space of polynomials with real coefficients of degree at most 2.
+Let <m>W = \left\{ p(x)=ax^{2}+bx+c \mid a+b+c=0\right\}</m>.
+Is <m>W</m> a subspace of <m>V</m>? If so, prove it.
+If not, why not?
+      </p>
+    </li>
+    <li>
+      <p>
+  Let <m>V=C(-\infty,\infty)</m>, the vector space of continuous real-valued functions.
+Define <m>W = C_{0}(-\infty,\infty)</m>, the set of functions <m>\fvec \in V</m> that vanish at infinity.
+That is <m>\displaystyle W = \left\{ \fvec \in V : \lim_{x \rightarrow \pm\infty}\fvec(x) = 0 \right\}</m>.
+Is <m>W</m> a subspace of <m>V</m>? Why or why not?
+      </p>
+    </li>
+  </ol>
+</statement>
+<solution>
+  <ol marker="(a)">
+    <li>
+      <p>
+        The zero vector, <m>{\bfseries{0}}(x) = 0</m> (the constant zero function) is in <m>W</m> since it satisfies the equation <m>\fvec' - \fvec=0</m>.
+If <m>\fvec</m> and <m>\gvec</m> both satisfy the equation, then <m>\fvec+\gvec</m> also satisfies the equation since <m>(\fvec+\gvec)' - (\fvec+\gvec) = (\fvec' - \fvec) + (\gvec' - \gvec) = 0 +0 = 0</m>.
+Also, if <m>\fvec \in W</m>, and <m>k</m> is any real number, then <m>k\fvec \in W</m> since <m>(k\fvec)' - (k\fvec) = k(\fvec' - \fvec) = k(0) = 0</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>W</m> is a subspace. The zero vector, <m>{\bfseries{0}}(x) = 0</m> (the constant zero function) is in <m>W</m> since it satisfies the equation <m>\fvec'' + \fvec=0</m>. If <m>\fvec</m> and <m>\gvec</m> both satisfy the equation, then <m>\fvec+\gvec</m> also satisfies the equation since <m>(\fvec+\gvec)'' + (\fvec+\gvec) = (\fvec'' + \fvec) + (\gvec'' + \gvec) = 0 +0 = 0</m>. Also, if <m>\fvec \in W</m>, and <m>k</m> is any real number, then <m>k\fvec \in W</m> since <m>(k\fvec)'' + (k\fvec) = k(\fvec'' + \fvec) = k(0) = 0</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Yes and the dimension is 2.
+The zero matrix <m>{\zerovec}= \left[ \begin{array}{cc}0 &#x26; 0 \\ 0 &#x26; 0\end{array} \right]</m> is clearly in <m>W</m>.
+If <m>A=\left[ \begin{array}{cc}a_1 &#x26; 0 \\ 0 &#x26; b_1\end{array} \right] \in W</m> and <m>B=\left[ \begin{array}{cc}a_2 &#x26; 0 \\ 0 &#x26; b_2\end{array} \right] \in W</m>, then <m>A+B =\left[ \begin{array}{cc}a_1+a_2 &#x26; 0 \\ 0 &#x26; b_1+b_2\end{array} \right]</m> which is clearly in <m>W</m> as well.
+Also, for any scalar <m>k</m>, we have <m>kA = k \left[ \begin{array}{cc}a_1 &#x26; 0 \\ 0 &#x26; b_1\end{array} \right] = \left[ \begin{array}{cc}ka_1 &#x26; 0 \\ 0 &#x26; kb_1\end{array} \right]</m> which is also clearly in <m>W</m>.
+A basis is <m>\left\{ \left[ \begin{array}{cc}1 &#x26; 0 \\ 0 &#x26; 0\end{array} \right], \left[ \begin{array}{cc}0 &#x26; 0 \\ 0 &#x26; 1\end{array} \right] \right\}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Yes and the dimension is 2.
+The zero matrix <m>{\zerovec}= \left[ \begin{array}{cc}0 &#x26; 0 \\ 0 &#x26; 0\end{array} \right]</m> is clearly in <m>W</m>.
+If <m>A=\left[ \begin{array}{cc}a_1 &#x26; b_1 \\ 0 &#x26; a_1\end{array} \right] \in W</m> and <m>B=\left[ \begin{array}{cc}a_2 &#x26; b_2 \\ 0 &#x26; a_2\end{array} \right] \in W</m>, then <m>A+B =\left[ \begin{array}{cc}a_1+a_2 &#x26; b_1+b_2 \\ 0 &#x26; a_1+a_2\end{array} \right]</m> which is clearly in <m>W</m> as well.
+Also, for any scalar <m>k</m>, we have <m>kA = k \left[ \begin{array}{cc}a_1 &#x26; b_1 \\ 0 &#x26; a_1\end{array} \right] = \left[ \begin{array}{cc}ka_1 &#x26; kb_1 \\ 0 &#x26; ka_1\end{array} \right]</m> which is also clearly in <m>W</m>.
+A basis is <m>\left\{ \left[ \begin{array}{cc}1 &#x26; 0 \\ 0 &#x26; 1\end{array} \right], \left[ \begin{array}{cc}0 &#x26; 1 \\ 0 &#x26; 0\end{array} \right] \right\}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Since the <m>\zerovec</m> matrix commutes with any matrix, we know that <m>{\zerovec}\in W</m>.
+Suppose <m>A, B \in W</m>.
+Then <m>A\left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right] = \left[ \begin{array}{cc}1 &#x26; 1 \\ 0 &#x26; -1\end{array} \right]A</m> and <m>B\left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right] = \left[ \begin{array}{cc}1 &#x26; 1 \\ 0 &#x26; -1\end{array} \right]B</m>.
+So <md>
+  <mrow> (A+B)[ 1 &#x26; 0  1 &#x26; -1 ] &#x26; \amp = &#x26; A[ 1 &#x26; 0  1 &#x26; -1 ] + B[ 1 &#x26; 0  1 &#x26; -1 ]  &#x26; </mrow>
+  <mrow> \amp = &#x26; [ 1 &#x26; 0  1 &#x26; -1 ]A + [ 1 &#x26; 0  1 &#x26; -1 ]B  &#x26; </mrow>
+  <mrow> \amp = &#x26; [ 1 &#x26; 1  0 &#x26; -1 ](A+B).</mrow>
+</md>
+Also, <me>(kA)\left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right] = k \left( A\left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right] \right) = k\left( \left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right]A \right) = \left[ \begin{array}{cc}1 &#x26; 0 \\ 1 &#x26; -1\end{array} \right](kA).</me>
+      </p>
+    </li>
+    <li>
+      <p>
+        No.
+The zero polynomial is not in <m>W</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Yes.
+First, the zero polynomial <m>{\zerovec(x) = 0</m> is in <m>W</m> since all coefficients are 0 (and hence their sum is too).
+If <m>\pvec, \qvec \in W</m>, where <m>\pvec(x) = a_{1}x^{2} + b_{1}x + c_{1}</m> and <m>\qvec(x) = a_{2}x^{2} + b_{2}x + c_{2}</m>, then <m>(\pvec+\qvec)(x) = a_{1}x^{2} + b_{1}x + c_{1} + a_{2}x^{2} + b_{2}x + c_{2} = (a_{1}+a_{2})x^{2} + (b_{1}+b_{2})x + (c_{1}+c_{2})</m> and we have <m>(a_{1}+a_{2}) + (b_{1}+b_{2}) + (c_{1}+c_{2})=0</m> since <m>a_{1}+b_{1}+c_{1}=0</m> and <m>a_{2}+b_{2}+c_{2}=0</m>.
+Also, <m>(k\pvec)(x) = k(a_{1}x^{2}+b_{1}x+c_{1}) = (ka_{1})x^{2} + (kb_{1})x + (kc_{1})</m> where <m>ka_{1} + kb_{1} + kc_{1} = k(a_{1}+b_{1}+c_{1})=0</m> so that <m>W</m> is closed under addition and scalar multiplication.
+      </p>
+    </li>
+    <li>
+      <p>
+        Yes.
+The zero function <m>{\zerovec}(x) = 0</m> is in <m>W</m> since it vanishes at <m>\pm \infty</m>.
+Adding two functions that vanish at <m>\pm \infty</m> will produce a function that also vanishes there.
+And multiplying such a function by a constant will still vanish at <m>\pm \infty</m>. 
+      </p>
+    </li>
+  </ol>
+</solution>
+</activity>
+
+  </subsection>
+
+  <subsection xml:id="subsec-subspace-is-vs">
+    <title>Subspaces are vector spaces</title>
+
+<p>The interest of subspaces lies in the fact that they are vector spaces in their own right, as stated in the
+following proposition.</p>
+
+<!-- Proposition 8.33 -->
+<proposition xml:id="proposition-8-33">
+  <!-- <title>Subspaces are vector spaces</title> -->
+
+  <statement>
+    <p>
+      Let <m>W</m> be a subspace of a vector space <m>V</m>. Then <m>W</m>
+      satisfies the vector space axioms <em>(A1)–(A4)</em> and <em>(SM1)–(SM4)</em>, with respect
+      to the same operations (addition and scalar multiplication) as those
+      defined on <m>V</m>.
+    </p>
+  </statement>
+
+  <proof>
+    <p>
+      Since <m>W</m> is a subspace, it is closed under addition and scalar
+      multiplication. This ensures that addition and scalar multiplication are
+      well-defined operations on <m>W</m>. The axioms <em>(A1)</em>, <em>(A2)</em>, <em>(A4)</em>, and
+      <em>(SM1)–(SM4)</em> all obviously hold in <m>W</m>, because they hold in <m>V</m>
+      (two elements of <m>W</m> are equal in <m>W</m> if and only if they are
+      equal in <m>V</m>). The axiom <em>(A3)</em> holds because <m>\zerovec\in W</m>.
+    </p>
+  </proof>
+</proposition>
+
+<!-- Proposition 8.34 -->
+<proposition xml:id="proposition-8-34">
+  <!-- <title>Span is smallest subspace containing given vectors</title> -->
+
+  <statement>
+    <p>
+      Let <m>V</m> be a vector space over some field <m>K</m>, and consider a
+      set of vectors <m>S\subseteq V</m>. Then <m>\mathrm{span}(S)</m> is the
+      smallest subspace of <m>V</m> containing <m>S</m>. More explicitly, we
+      have:
+    </p>
+
+    <ol marker="(a)">
+      <li>
+        The set <m>\mathrm{span}(S)</m> is a subspace of <m>V</m>,
+        and <m>S\subseteq\mathrm{span}(S)</m>.
+      </li>
+      <li>
+        If <m>W</m> is any other subspace of <m>V</m> such that
+        <m>S\subseteq W</m>, then
+        <m>\mathrm{span}(S)\subseteq W</m>.
+      </li>
+    </ol>
+  </statement>
+
+  <proof>
+    <ol marker="(a)">
+      <li> To show that <m>\mathrm{span}(S)</m> is a subspace, first
+      note that <m>\zerovec\in\mathrm{span}(S)</m>, because <m>\zerovec</m> is the empty
+      linear combination. Also, if <m>\vvec,\uvec\in\mathrm{span}(S)</m>, then by
+      definition of span, there exist
+      <m>
+        \vvec_1,\ldots,\vvec_k,\uvec_1,\ldots,\uvec_\ell\in S</m> and
+      <m>a_1,\ldots,a_k,b_1,\ldots,b_\ell\in K</m> such that
+      <md>
+        <mrow>\vvec \amp =a_1\vvec_1+\cdots+a_k\vvec_k,</mrow>
+        <mrow>\uvec \amp =b_1\uvec_1+\cdots+b_\ell \uvec_\ell.</mrow>
+      </md>
+      Then
+      <me>
+        \vvec+\uvec=a_1\vvec_1+\cdots+a_k\vvec_k+b_1\uvec_1+\cdots+b_\ell \uvec_\ell,
+      </me>
+      and therefore <m>\vvec+\uvec\in\mathrm{span}(S)</m>. It follows that
+      <m>\mathrm{span}(S)</m> is closed under addition. The proof for scalar
+      multiplication is similar. Finally, every <m>\vvec\in S</m> is trivially a
+      linear combination of itself, <m>\vvec=1\vvec</m>, and therefore
+      <m>S\subseteq\mathrm{span}(S)</m>.
+    </li>
+
+    <li>
+      Consider any other subspace <m>W</m> of <m>V</m> such that
+      <m>S\subseteq W</m>. To show that
+      <m>\mathrm{span}(S)\subseteq W</m>, consider an arbitrary element
+      <m>\vvec\in\mathrm{span}(S)</m>. By definition of span, there exist
+      <m>\vvec_1,\ldots,\vvec_k\in S</m> and <m>a_1,\ldots,a_k\in K</m> such that
+      <m>
+        \vvec=a_1\vvec_1+\cdots+a_k\vvec_k.
+      </m>
+      By assumption, <m>\vvec_1,\ldots,\vvec_k\in W</m>. Since <m>W</m> is closed under
+      addition and scalar multiplication, it follows that <m>\vvec\in W</m>.
+      Since <m>\vvec</m> was an arbitrary element of <m>\mathrm{span}(S)</m>, it
+      follows that <m>\mathrm{span}(S)\subseteq W</m>.
+    </li>
+  </ol>
+  </proof>
+</proposition>
+
+<p>While the last proposition looks technical, it can actually be useful for proving that two sets of vectors
+span the same subspace. The following in an example of this.</p>
+
+<example xml:id="example-8-35">
+
+    <p>
+      We show that the sets
+      <m>
+        S=\{x^2-2x+1,\;x-1\}
+      </m>
+      and
+      <m>
+        T=\{x^2-1,\;x^2-x\}
+      </m>
+      span the same subspace of <m>\mathbb{P}_2</m>. In other words, we show that
+      <me>\mathrm{span}(S)=\mathrm{span}(T).</me>
+    </p>
+
+    <p>
+      To show that two sets are equal, we must show that each is a subset of
+      the other. So we will show
+      <m>\mathrm{span}(S)\subseteq\mathrm{span}(T)</m> and
+      <m>\mathrm{span}(T)\subseteq\mathrm{span}(S)</m>.
+      By <xref ref="proposition-8-34"/>, it is sufficient to show that
+      <m>S\subseteq\mathrm{span}(T)</m> and
+      <m>T\subseteq\mathrm{span}(S)</m>, i.e., we must show that every element
+      of <m>S</m> is a linear combination of elements of <m>T</m> and vice
+      versa.
+    </p>
+
+    <p>
+      <m>1.</m> <m>S\subseteq\mathrm{span}(T)</m>. We have
+      <md>
+        <mrow> x^2-2x+1 \amp =(-1)(x^2-1)+2(x^2-x)\in\mathrm{span}(T),</mrow>
+        <mrow> x-1 \amp =1(x^2-1)-1(x^2-x)\in\mathrm{span}(T). </mrow>
+      </md>
+      Since each element of <m>S</m> is an element of
+      <m>\mathrm{span}(T)</m>, it follows that
+      <m>S\subseteq\mathrm{span}(T)</m>.
+      By <xref ref="proposition-8-34"/>, this implies that
+      <m>\mathrm{span}(S)\subseteq\mathrm{span}(T)</m>.
+    </p>
+
+    <p>
+      <m>2.</m> <m>T\subseteq\mathrm{span}(S)</m>. We have
+      <md>
+        <mrow> x^2-1\amp =1(x^2-2x+1)-2(x-1)\in\mathrm{span}(S),</mrow>
+        <mrow> x^2-x\amp =1(x^2-2x+1)-1(x-1)\in\mathrm{span}(S).</mrow>
+      </md>
+      Since each element of <m>T</m> is an element of
+      <m>\mathrm{span}(S)</m>, it follows that
+      <m>T\subseteq\mathrm{span}(S)</m>.
+      By <xref ref="proposition-8-34"/>, this implies that
+      <m>\mathrm{span}(T)\subseteq\mathrm{span}(S)</m>.
+    </p>
+
+</example>
+
+  </subsection>
+
+  <subsection xml:id="subsec-subspace-Summary">
+    <title>Summary</title>
+
+  <ul>
+    <li>
+      A subspace is a subset of a vector space that contains the zero vector
+      and is closed under addition and scalar multiplication.
+    </li>
+    <li>
+      Many familiar collections, such as solution sets of linear equations,
+      spaces of functions with special properties, and sets defined by linear
+      conditions, naturally form subspaces.
+    </li>
+    <li>
+      Every subspace is itself a vector space when equipped with the same
+      operations as the larger space.
+    </li>
+    <li>
+      The span of a set of vectors is the smallest subspace containing that
+      set, providing a systematic way to describe subspaces.
+    </li>
+  </ul>
+
+  </subsection>
+
+  
+  <xi:include href="exercises/exercises8-3.xml" /> 
+
+</section>
+
+
+

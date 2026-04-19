@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-basis-dimension"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Basis and dimension </title>
+
+  <introduction>
+  <p>
+    As we did for <m>\mathbb{R}^n</m> earlier, we are also able to give meaning to basis and dimension for general vector spaces.  
+  </p>
+
+<exploration xml:id="preview-basisdim-5-4">
+
+  <introduction>
+    <p>
+      In the previous sections, we studied spanning sets and linear
+      independence. In this section, we combine these ideas to address a
+      fundamental question:
+      <em>what is the smallest collection of vectors needed to describe every
+      vector in a space?</em>
+    </p>
+
+    <p>
+      Rather than starting with formal definitions, this activity asks you to
+      experiment with representing vectors using different sets and to observe
+      when representations are possible, unique, or redundant.
+    </p>
+  </introduction>
+
+  <!-- Task 1 -->
+  <task xml:id="preview-basis-task-1">
+    <statement>
+      <p>
+        Consider the vectors
+        <m>\uvec_1=\begin{bmatrix}1 \\ 0 \end{bmatrix}</m>, <m>\uvec_2=\begin{bmatrix}0 \\ 1 \end{bmatrix}</m>, and <m>\uvec_3=\begin{bmatrix}1 \\ 1 \end{bmatrix}</m> in
+        <m>\mathbb{R}^2</m>.
+      </p>
+
+      <ol>
+        <li>
+          Show that every vector in <m>\mathbb{R}^2</m> can be written as a
+          combination of <m>\uvec_1</m> and <m>\uvec_2</m>.
+        </li>
+        <li>
+          Show that every vector in <m>\mathbb{R}^2</m> can also be written as a
+          combination of <m>\uvec_1</m> and <m>\uvec_3</m>.
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 2 -->
+  <task xml:id="preview-basis-task-2">
+    <statement>
+      <p>
+        Now consider the set
+        <m>S=\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix},\begin{bmatrix}0 \\ 1 \end{bmatrix},\begin{bmatrix}1 \\ 1 \end{bmatrix}\right\}</m>.
+      </p>
+
+      <ol>
+        <li>
+          Is it possible to remove one vector from <m>S</m> and still represent
+          every vector in <m>\mathbb{R}^2</m>? Explain.
+        </li>
+        <li>
+          What does this suggest about whether all three vectors are necessary?
+        </li>
+        <li>
+          How might you recognize when a vector in a spanning set is
+          unnecessary?
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <!-- Task 3 -->
+  <task xml:id="preview-basis-task-3">
+    <statement>
+      <p>
+        Consider the vector space <m>\mathbb{P}_2</m> of polynomials of degree at most 2.
+      </p>
+
+      <ol>
+        <li>
+          Explain why every polynomial in <m>\mathbb{P}_2</m> can be written using the
+          set <m>\{1,x,x^2\}</m>.
+        </li>
+        <li>
+          Could a set with only two polynomials possibly describe every element
+          of <m>\mathbb{P}_2</m>? Why or why not?
+        </li>
+        <li>
+          How does this compare to what you observed in <m>\mathbb{R}^2</m>?
+        </li>
+      </ol>
+    </statement>
+  </task>
+
+  <conclusion>
+    <p>
+      These examples suggest that certain spanning sets are minimal and free
+      of redundancy, while others are not. In the remainder of this section,
+      we will formalize these ideas using the concepts of basis and dimension.
+    </p>
+  </conclusion>
+
+</exploration>
+
+</introduction>
+
+  <subsection xml:id="section-definition-basis">
+    <title>Bases</title>
+
+    <definition xml:id="definition-basis">
+
+<p>
+    Let <m>V</m> be a vector space. A set <m>\mathcal{B}</m> of vectors is called a <term>basis</term>
+    of <m>V</m> if
+  </p>
+
+  <ol>
+    <li>
+      <m>\mathcal{B}</m> is a spanning set for <m>V</m>, and
+    </li>
+    <li>
+      <m>\mathcal{B}</m> is linearly independent.
+    </li>
+  </ol>
+</definition>
+
+<!-- Example 8.37 -->
+<example xml:id="example-8-37">
+  <!-- <title>Bases of <m>P_2</m></title> -->
+
+    <p>
+      Consider the vector space <m>\mathbb{P}_2</m> of polynomials of degree at most 2
+      with real coefficients.
+    </p>
+
+    <ul>
+      <li>
+        <m>\{1,x,x^2\}</m> is a basis of <m>\mathbb{P}_2</m>.
+      </li>
+      <li>
+        <m>\{x^2,(x+1)^2,(x+2)^2\}</m> is a basis of <m>\mathbb{P}_2</m>.
+      </li>
+      <li>
+        <m>\{1,x-1,(x-1)^2\}</m> is a basis of <m>\mathbb{P}_2</m>.
+      </li>
+    </ul>
+
+    <p>
+      Unlike <m>\mathbb{R}^n</m>, a vector space like <m>\mathbb{P}_2</m> does not
+      necessarily have a “standard” basis. One basis might be useful for one
+      application, and another basis for a different application.
+    </p>
+
+    <p>
+      It is easy to verify that each set of vectors is linearly independent
+      and spanning. See <xref ref="example-8-16"/>, <xref ref="example-8-18"/>, and <xref ref="example-8-23"/> for similar calculations.
+    </p>
+
+</example>
+
+<!-- Example 8.38 -->
+<example xml:id="example-8-38">
+  <!-- <title>An infinite basis</title> -->
+
+    <p>
+      Consider the vector space <m>\mathbb{P}</m> of all polynomials with <em>rational</em> coefficients. The following is a basis for <m>\mathbb{P}</m>:
+      <me>
+        \{1,x,x^2,x^3,x^4,\ldots\}.
+      </me>
+    </p>
+
+    <p>
+      Note that this basis is infinite.
+    </p>
+
+    <p>
+      <alert>Proof:</alert> The polynomials <m>1,x,x^2,x^3,x^4,\ldots</m> are linearly independent by
+      <xref ref="proposition-8-22"/>. Namely, if they were linearly dependent, then one
+      of the polynomials could be written as a linear combination of earlier
+      ones. However, this is not possible because a polynomial of degree
+      <m>n</m> cannot be a linear combination of polynomials of degree less
+      than <m>n</m>.
+    </p>
+
+    <p>
+      To show that the polynomials <m>1,x,x^2,x^3,x^4,\ldots</m> are a spanning
+      set, consider an arbitrary element <m>p(x)</m> of <m>\mathbb{P}</m>. Then by
+      definition, <m>p(x)</m> is of the form
+      <me>
+        p(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0,
+      </me>
+      for some <m>n\ge 0</m> and <m>a_0,\ldots,a_n\in \mathbb{Q}</m>. But then
+      <m>p(x)</m> is a linear combination of <m>1,\ldots,x^n</m>, i.e., it is
+      in the span of
+      <m>\{1,x,x^2,x^3,x^4,\ldots\}</m>.
+    </p>
+
+</example>
+
+<!-- Example 8.39 -->
+<example xml:id="example-8-39">
+  <!-- <title>Not a basis</title> -->
+
+    <p>
+      Consider the vector space <m>\mathrm{Seq}_{\mathbb{R}}</m> of infinite sequences.
+      As before, let <m>e^k</m> be the sequence whose <m>k</m>th element is 1
+      and that is 0 everywhere else, i.e.,
+      <md>
+        <mrow> e^0\amp =(1,0,0,0,0,\ldots),\; </mrow>
+        <mrow> e^1\amp =(0,1,0,0,0,\ldots),\; </mrow>
+        <mrow> e^2\amp =(0,0,1,0,0,\ldots), </mrow>
+      </md>
+      and so on. Then the set
+      <me>\{e^0,e^1,e^2,\ldots\}</me> is not a basis of
+      <m>\mathrm{Seq}_{\mathbb{R}}</m>.
+    </p>
+
+    <p>
+      Indeed, although we saw in <xref ref="example-8-19"/> that the sequences
+      <m>e^0,e^1,e^2,\ldots</m> are linearly independent, <xref ref="example-8-14"/>
+      shows that they are not spanning. Indeed,
+      <me>
+        W=\mathrm{span}\{e^0,e^1,e^2,\ldots\}
+      </me>
+      is a subspace of <m>\mathrm{Seq}_{\mathbb{R}}</m>, consisting exactly of the
+      finitely supported sequences, i.e., those sequences that have only
+      finitely many non-zero components. Thus,
+      <m>\{e^0,e^1,e^2,\ldots\}</m> is a basis of <m>W</m>.
+    </p>
+
+</example>
+
+<p>
+  The following theorem ensures that every vector space has a basis. We will not prove this theorem,
+because when the spaces are infinite-dimensional, the proof uses mathematics that is beyond the scope
+of this book. The proof uses a reasoning principle called the axiom of choice, which allows us to prove
+the existence of a basis even in cases where we cannot find an actual concrete example of a basis. For
+example, it is not possible to give a specific example of a basis for the space <m>\mathrm{Seq}_{\mathbb{R}}</m>, even though the
+following theorem guarantees that such a basis exists.
+</p>
+
+<!-- Theorem 8.40 -->
+<theorem xml:id="theorem-8-40">
+  <!-- <title>Existence of bases</title> -->
+
+  <statement>
+    <p>
+      Every vector space has a basis.
+    </p>
+  </statement>
+</theorem>
+
+<p>
+  It is useful to think about the <term>Exchange Lemma</term> in the context of <m>\mathbb{R}^n</m>.  It is
+  true in general vector spaces as well.
+</p>
+
+<!-- Lemma 8.41 -->
+<lemma xml:id="lemma-8-41">
+  <title>[Exchange Lemma]</title> 
+
+  <statement>
+    <p>
+      Let <m>V</m> be a vector space over a field <m>K</m>. Suppose
+      <m>\uvec_1,\ldots,\uvec_r</m> are linearly independent elements of
+      <m>\mathrm{span}\{\vvec_1,\ldots,\vvec_s\}</m>. Then <m>r\le s</m>.
+    </p>
+  </statement>
+
+</lemma>
+
+<p>
+  An important consequence of the Exchange Lemma is that any two
+  bases of a vector space have the same size.
+</p>
+
+<!-- Theorem 8.42 -->
+<theorem xml:id="theorem-8-42">
+  <!-- <title>Bases are of the same size</title> -->
+
+  <statement>
+    <p>
+      Let <m>V</m> be a vector space over some field <m>K</m>, and let
+      <m>\mathcal{B}_1</m> and <m>\mathcal{B}_2</m> be bases of <m>V</m>. Then either
+      <m>\mathcal{B}_1</m> and <m>\mathcal{B}_2</m> are both finite and have the same number of
+      elements, or else <m>\mathcal{B}_1</m> and <m>\mathcal{B}_2</m> are both infinite.
+    </p>
+  </statement>
+
+  <proof>
+    <p>
+      We first show that <m>\mathcal{B}_1</m> and <m>\mathcal{B}_2</m> are either both finite or
+      both infinite. Assume one of them, say <m>\mathcal{B}_1</m>, is finite and contains
+      <m>s</m> vectors. Since <m>\mathcal{B}_1</m> is spanning and <m>\mathcal{B}_2</m> is linearly
+      independent, it follows from the Exchange Lemma that <m>\mathcal{B}_2</m> cannot
+      contain more than <m>s</m> vectors, and in particular, <m>\mathcal{B}_2</m> must
+      be finite. So the sets are either both finite or both infinite.
+    </p>
+
+    <p>
+      If they are both finite, say of size <m>s</m> and <m>r</m>, then by the
+      Exchange Lemma, we have <m>s\le r</m> and <m>r\le s</m>, hence
+      <m>r=s</m>.
+    </p>
+  </proof>
+</theorem>
+
+  </subsection>
+
+    <subsection xml:id="subsec-dimension-vs">
+    <title>Dimension</title>
+
+    <p><xref ref="theorem-8-42"/> allows us to define the dimension of a vector space.</p>
+
+    <!-- Definition 8.43 -->
+<definition xml:id="definition-8-43">
+  <!-- <title>Dimension</title> -->
+
+  <p>
+    Let <m>V</m> be a vector space over a field <m>K</m>. If <m>V</m> has a
+    basis consisting of <m>n</m> vectors, we say that <m>V</m> has dimension
+    <m>n</m>, and we write <m>\dim(V)=n</m>. In this case we also say that
+    <m>V</m> is finite-dimensional. If <m>V</m> has an infinite basis, we say
+    that <m>V</m> is infinite-dimensional, and we write
+    <m>\dim(V)=\infty</m>.
+  </p>
+</definition>
+
+<p>
+  Note that the dimension is well-defined by <xref ref="theorem-8-40"/> and <xref ref="theorem-8-42"/>,
+  since these theorems ensure that every vector space has a basis (and
+  therefore a dimension), and that any two bases are of the same size (and
+  therefore a vector space cannot have more than one dimension).
+</p>
+
+<p>
+  We now calculate the dimensions of some vector spaces we encountered earlier.
+</p>
+
+<ul>
+  <li>
+    The space <m>\mathbb{R}^n</m> has dimension <m>n</m>.
+  </li>
+  <li>
+    The space <m>\mathbb{P}_2</m> has dimension <m>3</m>. We found several bases for this
+    space in <xref ref="example-8-37"/>.
+  </li>
+  <li>
+    The space <m>\Mvec_{m,n}(\mathbb{R})</m> has dimension <m>mn</m>. A possible basis consists
+    of all the matrices that contain a single <m>1</m> and zeros everywhere
+    else.
+  </li>
+  <li>
+    The space <m>\mathrm{Func}_{X,K}</m> is infinite-dimensional if <m>X</m> is
+    an infinite set. If <m>X</m> is a finite set of <m>n</m> elements, then
+    this space is <m>n</m>-dimensional. In that case, a basis is given by the
+    set of functions whose value is <m>1</m> for one input and <m>0</m> for all
+    other inputs.
+  </li>
+  <li>
+    The space <m>\mathrm{Seq}_{\mathbb{R}}</m> is infinite-dimensional. We found an
+    infinite linearly independent set in <xref ref="example-8-19"/>, showing that the
+    space cannot be finite-dimensional.
+  </li>
+  <li>
+    The space <m>\mathbb{P}</m> is infinite-dimensional. We found a basis for this space
+    in <xref ref="example-8-38"/>.
+  </li>
+  <li>
+    The subspace of <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m> consisting of
+    the continuous functions is infinite-dimensional. For example, the
+    functions <m>1,x,x^2,x^3,\ldots</m> form an infinite, linearly independent
+    set of continuous functions.
+  </li>
+  <li>
+    The subspace of <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m> consisting of
+    the differentiable functions is infinite-dimensional. Again, the set
+    <m>1,x,x^2,x^3,\ldots</m> is an infinite linearly independent set in this
+    space.
+  </li>
+</ul>
+
+<!-- Example 8.44 -->
+<example xml:id="example-8-44">
+  <!-- <title>Space of sequences satisfying a linear recurrence</title> -->
+
+    <p>
+      In <xref ref="example-8-29"/>, we considered the space <m>W</m> of sequences of
+      real numbers that satisfy the recurrence
+      <m>a_{n+2}=a_n+a_{n+1}</m>. What is the dimension of this space?
+    </p>
+
+    <p>
+      The space is <m>2</m>-dimensional. The easiest way to see this is to
+      observe that a sequence <m>a\in W</m> is determined by its first two
+      elements. We can say that the first two elements of the sequence are
+      parameters, and all the other elements are then computed by the
+      recurrence relation.
+    </p>
+
+    <p>
+      Specifically, suppose <m>a_0=x</m> and <m>a_1=y</m>. Using the recurrence
+      relation to compute the remaining elements, we have
+      <md>
+        <mrow> a\amp =(x,y,x+y,x+2y,2x+3y,3x+5y,\ldots) </mrow>
+        <mrow> \amp =x(1,0,1,1,2,3,\ldots)+y(0,1,1,2,3,5,\ldots).</mrow>
+      </md>
+    </p>
+
+    <p>
+      Since this is the general form of the elements of <m>W</m>, and since the
+      two sequences starting with <m>1,0</m> and <m>0,1</m> are clearly
+      linearly independent, it follows that
+      <me>
+        \{(1,0,1,1,2,3,\ldots),(0,1,1,2,3,5,\ldots)\}
+      </me>
+      is a basis of <m>W</m>.
+    </p>
+
+</example>
+
+<!-- Example 8.45 -->
+<example xml:id="example-8-45">
+  <!-- <title>Solution space of a linear differential equation</title> -->
+
+    <p>
+      In <xref ref="example-8-30"/>, we considered the space of solutions of the
+      differential equation <m>f''=-f</m>. What is the dimension of this
+      space?
+    </p>
+
+    <p>
+      From calculus, we know that the general solution of the differential
+      equation <m>f''=-f</m> is
+      <m>f(x)=A\sin x+B\cos x</m>, where <m>A,B</m> are constants. We also know,
+      from <xref ref="example-8-21"/>, that <m>\sin x</m> and <m>\cos x</m> are linearly
+      independent. It follows that <m>\{\sin x,\cos x\}</m> is a basis for the
+      solution space. The solution space is therefore <m>2</m>-dimensional.
+    </p>
+
+</example>
+
+<p>
+  We conclude this section by stating two properties of bases that generalize
+  earlier theorems: every linearly independent set can be extended to a basis
+  by adding 0 or more vectors, and every spanning set can be reduced to a
+  basis by removing 0 or more vectors.
+</p>
+
+<!-- Proposition 8.46 -->
+<proposition xml:id="proposition-8-46">
+  <!-- <title>Extending a linearly independent set to a basis</title> -->
+
+  <statement>
+    <p>
+      Let <m>V</m> be a vector space, and let <m>S\subseteq V</m> be a linearly
+      independent set of vectors. Then <m>S</m> can be extended to a basis of
+      <m>V</m>, i.e., there exists a basis <m>B</m> of <m>V</m> such that
+      <m>S\subseteq B</m>.
+    </p>
+  </statement>
+</proposition>
+
+<!-- Proposition 8.47 -->
+<proposition xml:id="proposition-8-47">
+  <!-- <title>Shrinking a spanning set to a basis</title> -->
+
+  <statement>
+    <p>
+      Let <m>V</m> be a vector space, and let <m>S\subseteq V</m> be a spanning
+      set of <m>V</m>. Then <m>S</m> can be shrunk to a basis, i.e., there exists
+      a basis <m>\mathcal{B}</m> of <m>V</m> such that <m>\mathcal{B}\subseteq S</m>.
+    </p>
+  </statement>
+</proposition>
+
+<!-- Example 8.48 -->
+<example xml:id="example-8-48">
+  <!-- <title>Extending a linearly independent set to a basis</title> -->
+
+    <p>
+      Let <m>S\subseteq \Mvec_{2,2}(\mathbb{R})</m> be the linearly independent set given by
+      <me>
+        S=\left\{
+        \begin{bmatrix}1\amp0\\0\amp0\end{bmatrix},
+        \begin{bmatrix}0\amp1\\0\amp0\end{bmatrix}
+        \right\}.
+      </me>
+      We enlarge <m>S</m> to a basis of <m>M_{2,2}</m>.
+    </p>
+
+    <p>
+      We can obtain a basis of <m>\Mvec_{2,2}(\mathbb{R})</m> by adding two more linearly
+      independent matrices
+      <me>
+        \begin{bmatrix}0\amp0\\1\amp0\end{bmatrix}
+     \quad
+      \textrm{ and }
+     \quad
+        \begin{bmatrix}0\amp0\\0\amp1\end{bmatrix}.
+      </me>
+      The resulting basis is
+      <me>
+        \mathcal{B}=\left\{
+        \begin{bmatrix}1\amp0\\0\amp0\end{bmatrix},
+        \begin{bmatrix}0\amp1\\0\amp0\end{bmatrix},
+        \begin{bmatrix}0\amp0\\1\amp0\end{bmatrix},
+        \begin{bmatrix}0\amp0\\0\amp1\end{bmatrix}
+        \right\}.
+      </me>
+    </p>
+
+</example>
+
+<example xml:id="example-8-49">
+  <!-- <title>Shrinking a spanning set to a basis</title> -->
+
+    <p>
+      Consider the spanning set <m>S\subseteq \mathbb{P}_2</m> given by
+      <me>
+        S=\{1,x,2x+1,x^2+1,x^2+2\}.
+      </me>
+      We shrink <m>S</m> to a basis of <m>\mathbb{P}_2</m>.
+    </p>
+
+    <p>
+      We use a version of the <term>casting-out method</term>. We examine each element of
+      <m>S</m> from left to right and cast out the elements that are linear
+      combinations of previous elements. Clearly the first two elements,
+      <m>1</m> and <m>x</m>, are linearly independent.
+    </p>
+
+    <p>
+      The next element, <m>2x+1</m>, is redundant because it is a linear
+      combination of <m>1</m> and <m>x</m>. The next element <m>x^2+1</m> is
+      linearly independent of <m>1</m> and <m>x</m>. The final element
+      <m>x^2+2</m> is redundant because it is a linear combination of <m>1</m>
+      and <m>x^2+1</m>.
+    </p>
+
+    <p>
+      Therefore, the following subset of <m>S</m> is a basis of <m>\mathbb{P}_2</m>:
+      <me>
+        \mathcal{B}=\{1,x,x^2+1\}.
+      </me>
+    </p>
+</example>
+
+<activity xml:id="subspace-dimension">
+<statement>
+  <p> For each vector space below, calculate the dimension.  </p>
+    <ol marker="(a)">
+      <li>
+        <p>
+          <m>\mathbb{R}^{n}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\mathbb{P}_{5}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>M_{3 \times 3}(\mathbb{R})</m>, the vector space of <m>3 \times 3</m> matrics with real entries.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>{\cal{L}}_{3}(\mathbb{R})</m>, the subspace of lower triangular <m>3 \times 3</m> matrices.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>C(0,1)</m>, the vector space of continuous real-valued functions on <m>(0,1)</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>c_{0}</m>, the subspace of real-valued sequences that converge to 0. 
+        </p>
+      </li>
+      <li>
+        <p>
+          The subspace <m>W ={\textrm{span}}\ \left\{ 1, x, x+1, x+2, x^{2}, x^{2}+x \right\}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The subspace of constant real-valued sequences.  
+        </p>
+      </li>
+    </ol>
+</statement>
+<solution>
+  <ol>
+    <li>
+      <p>
+        <m>n</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        6
+      </p>
+    </li>
+    <li>
+      <p>
+        9
+      </p>
+    </li>
+    <li>
+      <p>
+        6
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>\infty</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>\infty</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        3
+      </p>
+    </li>
+    <li>
+      <p>
+        1
+      </p>
+    </li>
+  </ol>
+</solution>
+</activity>
+
+    </subsection>
+
+  <subsection xml:id="subsec-basisdim-Summary">
+    <title>Summary</title>
+
+  <ul>
+    <li>
+      A basis of a vector space is a collection of vectors that is both
+      spanning and linearly independent, allowing every vector in the space
+      to be written uniquely as a linear combination of the basis vectors.
+    </li>
+    <li>
+      Although a vector space may have many different bases, all bases of a
+      given vector space have the same size, which captures an intrinsic
+      property of the space.
+    </li>
+    <li>
+      The dimension of a vector space is the number of vectors in any basis
+      for the space, providing a way to measure the “size” or complexity of
+      the space.
+    </li>
+    <li>
+      Every vector space has a basis, and any linearly independent set can be
+      extended to a basis, while any spanning set can be reduced to a basis.
+    </li>
+  </ul>
+
+  </subsection>
+
+  
+  <xi:include href="exercises/exercises8-4.xml" /> 
+
+</section>
+
+
+

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="exercises-8-3">
+
+  <exercise xml:id="exercise-8-3-1">
+    <statement>
+      <p>
+        Consider the set of symmetric <m>n\times n</m>-matrices, i.e., matrices
+        satisfying <m>A=A^T</m>. Show that this set of symmetric matrices is a
+        subspace of <m>\Mvec_{n,n}</m>, the vector space of all
+        <m>n\times n</m>-matrices.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-2">
+    <statement>
+      <p>
+        Consider the set of all vectors
+        <m>\begin{bmatrix}x\\y\end{bmatrix}\in\mathbb{R}^2</m>
+        such that <m>x+y\ge 0</m>. Is this a subspace of <m>\mathbb{R}^2</m>?
+        
+      </p>
+    </statement>
+	<solution>
+		<p>
+			No. It is not closed under scalar multiplication.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-3">
+    <statement>
+      <p>
+        Consider the set of all vectors
+        <m>\begin{bmatrix}x\\y\end{bmatrix}\in\mathbb{R}^2</m>
+        such that <m>xy=0</m>. Is this a subspace of <m>\mathbb{R}^2</m>?
+        
+      </p>
+    </statement>
+	<solution>
+		<p>
+			No. It is not closed under addition.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-4">
+    <statement>
+      <p>
+        Let <m>V</m> be the set of those polynomials
+        <m>ax^2+bx+c\in \mathbb{P}_2</m> such that <m>a+b+c=0</m>. Is <m>V</m> a subspace
+        of <m>\mathbb{P}_2</m>? Explain.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-5">
+    <statement>
+      <p>
+        Let <m>U,W</m> be subspaces of a vector space <m>V</m> and consider
+        <m>U+W</m> defined as the set of all vectors that can be written of the
+        form <m>\uvec+\wvec</m>, where <m>\uvec\in U</m> and <m>\wvec\in W</m>. Show that
+        <m>U+W</m> is a subspace of <m>V</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-6">
+    <statement>
+      <p>
+        Let <m>U,W</m> be subspaces of a vector space <m>V</m>. Then
+        <m>U\cap W</m> consists of all vectors which are in both <m>U</m> and
+        <m>W</m>. Show that <m>U\cap W</m> is a subspace of <m>V</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-7">
+    <statement>
+      <p>
+        Let <m>U,W</m> be subspaces of a vector space <m>V</m>. Then
+        <m>U\cup W</m> consists of all vectors which are in either <m>U</m> or
+        <m>W</m>. Show that <m>U\cup W</m> is not necessarily a subspace of
+        <m>V</m> by giving an example where <m>U\cup W</m> fails to be a
+        subspace.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-8">
+    <statement>
+      <p>
+        Let
+        <m>
+          U=\left\{
+          \begin{bmatrix}x\\y\\z\end{bmatrix}\in\mathbb{R}^3
+          \ \middle|\ |x|\le 4
+          \right\}.
+        </m>
+        Is <m>U</m> a subspace of <m>\mathbb{R}^3</m>?
+        
+      </p>
+    </statement>
+
+	<solution>
+		<p>
+			This is not a subspace.
+        <m>
+          \begin{bmatrix}1\\1\\1\end{bmatrix}
+        </m>
+        is in it, but
+        <m>
+          5\begin{bmatrix}1\\1\\1\end{bmatrix}
+        </m>
+        is not.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-9">
+    <statement>
+      <p>
+        Let <m>W</m> be the subset of <m>\Mvec_{2,2}(\mathbb{R})</m> given by
+        <me>
+          W=\left\{
+          \begin{bmatrix}a\amp b\\c\amp d\end{bmatrix}
+          \ \middle|\ a,b,c,d\in \mathbb{R},\ a+b=c+d
+          \right\}.
+        </me>
+        Is <m>W</m> a subspace of <m>\Mvec_{2,2}(\mathbb{R})</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-10">
+    <statement>
+      <p>
+        Let
+        <m>
+          U=\left\{
+          A\in \Mvec_{2,2}(\mathbb{R})
+          \ \middle|\
+          A\begin{bmatrix}1\amp 0\\1\amp -1\end{bmatrix}
+          =
+          \begin{bmatrix}1\amp 1\\0\amp -1\end{bmatrix}A
+          \right\}.
+        </m>
+        Show that <m>U</m> is a subspace of <m>\Mvec_{2,2}(\mathbb{R})</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-11">
+    <statement>
+      <p>
+        Let <m>W</m> be the subset of <m>\mathbb{P}_3</m> given by
+        <me>
+          W=\{ax^3+bx^2+cx+d \mid a,b,c,d\in \mathbb{R},\ d=0\}.
+        </me>
+        Is <m>W</m> a subspace of <m>\mathbb{P}_3</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-12">
+    <statement>
+      <p>
+        Let <m>W</m> be the subset of <m>\mathbb{P}_3</m> given by
+        <me>
+          W=\{p(x) \mid p(2)=1\}.
+        </me>
+        Is <m>W</m> a subspace of <m>\mathbb{P}_3</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-13">
+    <statement>
+      <p>
+        Let <m>W</m> be the subset of <m>\mathrm{Seq}_{\mathbb{R}}</m>
+        consisting of all real-valued sequences that are alternating, i.e., where
+        <m>a_i\ge 0</m> for even <m>i</m> and <m>a_i\le 0</m> for odd <m>i</m>,
+        or vice versa. Is <m>W</m> a subspace of <m>\mathrm{Seq}_{\mathbb{R}}</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-14">
+    <statement>
+      <p>
+        Let <m>W</m> be the subset of <m>\mathrm{Seq}_{\mathbb{R}}</m> consisting of all
+        real-valued sequences that satisfy the recurrence relation
+        <m>
+          a_{n+3}=a_{n+2}+2a_{n+1}-a_n.
+        </m>
+        Is <m>W</m> a subspace of <m>\mathrm{Seq}_{\mathbb{R}}</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-15">
+    <statement>
+      <p>
+        A sequence <m>(a_i)_{i\in\mathbb{N}}</m> is called <term>periodic</term> if there
+        exists some <m>k&gt;0</m> such that for all <m>i</m>,
+        <m>a_{i+k}=a_i</m>. The number <m>k</m> is called a <term>period</term> of the
+        sequence. For example, the following is a periodic sequence with
+        period 3:
+        <me>
+          (1,5,-7,1,5,-7,1,5,-7,1,5,-7,1,\ldots).
+        </me>
+      </p>
+
+      <ol>
+        <li> Show that the set of all periodic sequences of a fixed period
+        <m>k</m> forms a subspace of <m>\mathrm{Seq}_{\mathbb{R}}</m>.
+		</li>
+
+     
+        <li> More difficult: show that the set of all periodic sequences of
+        all periods forms a subspace of <m>\mathrm{Seq}_{\mathbb{R}}</m>.
+		</li>
+	</ol>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-16">
+    <statement>
+      <p>
+        A function <m>f:\mathbb{R}\to\mathbb{R}</m> is called <term>symmetric</term> if
+        <m>f(x)=f(-x)</m> for all <m>x\in\mathbb{R}</m>. Let <m>W</m> be the
+        subset of <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m> consisting of
+        all symmetric functions. Is <m>W</m> a subspace of
+        <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-17">
+    <statement>
+      <p>
+        A function <m>f:\mathbb{R}\to\mathbb{R}</m> is said to <term>vanish at infinity</term>
+        if <m>\lim_{x\to\infty}f(x)=0</m> and
+        <m>\lim_{x\to-\infty}f(x)=0</m>. Let <m>W</m> be the subset of
+        <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m> consisting of all
+        functions that vanish at infinity. Prove that <m>W</m> is a subspace
+        of <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-18">
+    <statement>
+      <p>
+        Show that the sets
+        <m>
+          S=\{x+2,(x+2)^2\}
+        </m>
+        and
+        <m>
+          T=\{x^2-4,x^2+x-2\}
+        </m>
+        span the same subspace of <m>\mathbb{P}_2</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-3-19">
+    <statement>
+      <p>
+        Show that the sets
+        <m>
+          S=\left\{
+          \begin{bmatrix}1\amp0\\0\amp1\end{bmatrix},
+          \begin{bmatrix}0\amp1\\1\amp0\end{bmatrix}
+          \right\}
+        </m>
+        and
+        <m>
+          T=\left\{
+          \begin{bmatrix}1\amp1\\1\amp1\end{bmatrix},
+          \begin{bmatrix}1\amp-1\\-1\amp1\end{bmatrix}
+          \right\}
+        </m>
+        span the same subspace of <m>\Mvec_{2,2}(\mathbb{R})</m>.
+      </p>
+    </statement>
+  </exercise>
+
+
+</exercises>

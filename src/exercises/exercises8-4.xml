@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="exercises-8-4">
+
+  <exercise xml:id="exercise-8-4-1">
+    <statement>
+      <p>
+        Let <m>\mathbb{P}_3</m> be the vector space of polynomials of degree at most
+        <m>3</m>. Determine which of the following are bases for this vector
+        space.
+      </p>
+
+      <ol>
+        <li> <m>\left\{ x^3+1, x^2+x, 2x^3+x^2, 2x^3-x^2-3x+1\right\}</m>.
+		</li>
+
+      <li>
+        <m>\left\{ x+1, x^3+x^2+2x, x^2+x, x^3+x^2+x\right\}</m>.
+	  </li>
+	</ol>
+     
+    </statement>
+	<solution>
+			 <ol>
+        <li> Yes. Suppose
+        <me>
+          c_1(x^3+1)+c_2(x^2+x)+c_3(2x^3+x^2)+c_4(2x^3-x^2-3x+1)=0.
+        </me>
+        Then collect equal powers of <m>x</m>:
+        <me>
+          (c_1+2c_3+2c_4)x^3+(c_2+c_3-c_4)x^2+(c_2-3c_4)x+(c_1+c_4)=0.
+        </me>
+
+      <p>
+        Does the system
+        <md>
+          <mrow>c_1+2c_3+2c_4 \amp =0,</mrow>
+          <mrow>c_2+c_3-c_4\amp =0,</mrow>
+          <mrow>c_2-3c_4\amp =0,</mrow>
+          <mrow>c_1+c_4\amp =0</mrow>
+        </md>
+        have a non-trivial solution?
+        The only solution is
+        <me>c_1=0, c_2=0, c_3=0, c_4=0,</me>
+        and therefore, the polynomials are linearly independent.
+        Since there are <m>4</m> linearly independent polynomials in a
+        <m>4</m>-dimensional space, they form a basis.
+	</p>
+	</li>
+
+      <li>
+        Yes.
+	  </li>
+	</ol>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-2">
+    <statement>
+      <p>
+        Determine whether the following is a basis for <m>\mathbb{P}_2</m>, the vector
+        space of polynomials of degree at most <m>2</m>:
+        <me>\left\{x^2+x+1, 2x^2+2x+1, x+1\right\}.</me>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-3">
+    <statement>
+      <p>
+        Find a basis for the following subspace of <m>\mathbb{P}_2</m>:
+        <me>
+          W=\mathrm{span}\{1+x+x^2,\;1+2x,\;1+5x-3x^2\}.
+        </me>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-4">
+    <statement>
+      <p>
+        Find a basis for the following subspace of <m>\mathbb{P}_3</m>:
+        <me>
+          W=\mathrm{span}\{1+x-x^2+x^3,\;1+2x+3x^3,\;-1+3x+5x^2+7x^3,\;
+          1+6x+4x^2+11x^3\}.
+        </me>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-5">
+    <statement>
+      <p>
+        Extend the following linearly independent set of polynomials to a
+        basis of <m>\mathbb{P}_3</m>:
+        <me>\left\{x^3+x^2-x-1, 3x^3+2x^2+2x-1\right\}</me>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-6">
+    <statement>
+      <p>
+        Let <m>V</m> be a <m>5</m>-dimensional vector space. If you have
+        <m>5</m> linearly independent vectors in <m>V</m>, can you conclude
+        that the vectors span <m>V</m>? 
+      </p>
+    </statement>
+	<solution>
+		<p>
+			Yes, because the set of
+        <m>5</m> linearly independent vectors can be extended to a basis
+        <m>B</m> of <m>V</m>. But since <m>V</m> is <m>5</m>-dimensional,
+        <m>B</m> has only <m>5</m> elements, which must be the original
+        <m>5</m> vectors.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-7">
+    <statement>
+      <p>
+        Let <m>V</m> be a <m>5</m>-dimensional vector space. If you have
+        <m>6</m> vectors in <m>V</m>, is it possible that they are linearly
+        independent? Explain. 
+      </p>
+    </statement>
+	<solution>
+		<p>
+			No. Since <m>V</m> has a spanning set of size
+        <m>5</m>, the <m>6</m> vectors cannot be linearly independent by the
+        Exchange Lemma.
+		</p>
+	</solution>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-8">
+    <statement>
+      <p>
+        Find a basis for the vector space of symmetric
+        <m>3\times 3</m>-matrices, i.e., matrices satisfying <m>A=A^T</m>.
+        What is the dimension of this space?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-9">
+    <statement>
+      <p>
+        Let <m>W</m> be the subspace of <m>P_3</m> (over the field
+        <m>\mathbb{R}</m>) consisting of all polynomials <m>p(x)</m> that
+        satisfy <m>p(3)=0</m>. Find a basis for <m>W</m>. What is the
+        dimension of <m>W</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="exercise-8-4-10">
+    <statement>
+      <p>
+        Find a basis for
+        <me>
+          U=\left\{
+          A\in M_{2,2}(\mathbb{R})
+          \ \middle|\
+          A\begin{bmatrix}1\amp0\\1\amp-1\end{bmatrix}
+          =
+          \begin{bmatrix}1\amp1\\0\amp-1\end{bmatrix}A
+          \right\}.
+        </me>
+        What is the dimension of <m>U</m>?
+      </p>
+    </statement>
+  </exercise>
+
+</exercises>

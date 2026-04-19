@@ -10,5 +10,8 @@
   </introduction>
 
   <xi:include href="./section8-1.xml" />
+  <xi:include href="./section8-2.xml" />
+  <xi:include href="./section8-3.xml" />
+  <xi:include href="./section8-4.xml" />
 
 </chapter>

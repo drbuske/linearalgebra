@@ -3,7 +3,7 @@
 <section xml:id="sec-vecspace-intro"
 	 xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <title> Vector Spaces </title>
+  <title> Vector spaces </title>
 
   <introduction>
   <p>
@@ -675,6 +675,96 @@
     </ol>
   </solution>
 
+</activity>
+
+<activity xml:id="vs-continuous_ab">
+
+  <statement>
+<p> Let <m>(a,b)</m> be an open interval of real numbers.
+Define <m>C(a,b)</m> to be the set of continuous, real-valued functions <m>\fvec</m> defined on <m>(a,b)</m>.
+That is, elements are continuous functions <m>\fvec: (a,b) \rightarrow \mathbb{R}</m>.
+Define the addition of continous functions by
+<md>
+  <mrow>(\fvec+\gvec)(x) = \fvec(x)+\gvec(x)</mrow>
+</md>
+and scalar multiplication by
+<md>
+  <mrow> (c\fvec)(x) = c(\fvec(x)).</mrow>
+</md>
+We investigate whether <m>C(a,b)</m> is a vector space or not.</p>
+<ol marker="(a)">
+  <li>Explain why <m>C(a,b)</m> is closed under addition as defined.
+That is, explain why <m>{\fvec}+ \gvec \in C(a,b)</m> if <m>\fvec, \gvec \in C(a,b)</m>.  
+</li>
+<li>Explain why <m>C(a,b)</m> is closed under scalar multiplication.
+That is, explain why <m>c{\fvec}\in C(a,b)</m> if <m>c \in \mathbb{R}</m> and 
+<m>\fvec \in C(a,b)</m>.</li>
+<li>Identify/describe the zero element <alert>0</alert> and additive inverse <m>-\fvec</m> of elements <m>\fvec \in C(a,b)</m>.
+How do you know that these elements are also in <m>C(a,b)</m>?   </li>
+<li>Carefully show that axiom <em>(SM2)</em> holds for <m>C(a,b)</m>.  </li>
+<li>Is <m>C(a,b)</m> a vector space?  </li>
+</ol>
+  </statement>
+
+  <solution>
+    <p>
+      <ol marker="(a)">
+        <li>Adding two continuous functions gives another continuous function.</li>
+        <li>Think of multiplying by <m>c</m> as vertically stretching the graph of a function <m>f(x)</m>.
+If <m>c &#x3C; 0</m>, then it is also reflected about the <m>x-</m>axis.
+In any case, if a function <m>f(x)</m> is continuous, then vertically stretching and/or 
+reflecting about the <m>x</m>-axis will not change the continuous nature of the graph.</li>
+<li>The <m>{\bfseries{0}}</m> element in <m>C(a,b)</m> is the zero function <m>{\bfseries{0}}(x) = 0</m> for every <m>x</m>.
+Since constant functions are continuous, the zero function is continuous.
+If <m>\fvec</m> is continuous on <m>(a,b)</m>, then <m>-\fvec</m> is the function having graph reflected about the <m>x</m>-axis and is therefore also continuous.
+</li>  
+<li>If <m>\uvec \in C(a,b)</m>, then <m>\uvec(x)</m> is a continuous function on <m>(a,b)</m>.
+For any <m>k, l \in \mathbb{R}</m>, we then have <m>((k+l)\uvec)(x) = k\uvec(x) + l\uvec(x)</m>. </li>
+<li>yes.</li>
+</ol>
+    </p>
+  </solution>
+
+</activity>
+
+<activity xml:id="vs-sequences-real">
+<statement>
+  <p>
+   Let <m>\mathbb{R}^{\mathbb{N}}</m> denote the space of all infinite sequences <m>a_{0}, a_{1}, a_{2}, \ldots</m> of real numbers.
+We denote such a sequence as <m>(\avec_{n})</m> where it is understood that the subscripts <m>n</m> run from 0 to <m>\infty</m>.
+Addition is defined by <m>(\avec_{n}) + (\bvec_{n}) = (\avec_{n}+\bvec_{n})</m> and scalar multiplication by <m>c(\avec_{n}) = (c\avec_{n})</m> for <m>c \in \mathbb{R}</m>.
+  </p>
+  <ol marker="(a)">
+    <li>Identify the zero element <m>{\zerovec}</m> in <m>\mathbb{R}^{\mathbb{N}}</m> from axiom <em>(A3)</em>.</li>
+    <li>Identify the additive inverse of <m>(\avec_{n}) \in \mathbb{R}^{\mathbb{N}}</m> and then show that <m>(\avec_{n}) + (-\avec_{n}) ={\zerovec}</m> for every <m>(\avec_{n}) \in \mathbb{R}^{\mathbb{N}}</m>. </li>
+    <li> Is <m>\mathbb{R}^{\mathbb{N}}</m> a vector space?  </li>
+    <li>Let <m>c</m> denote the space of all <alert>convergent sequences</alert> of real numbers under the same operations.
+Is <m>c</m> a vector space or not?  </li>
+<li>Let <m>c_{1}</m> denote the space of all real <alert>sequences that converge to 1</alert> under the same operations.
+Is <m>c_{1}</m> a vector space or not?  </li>
+<li> Let <m>c_{0}</m> denote the space of all real <alert>sequences that converge to 0</alert> under the same operations.
+Is <m>c_{0}</m> a vector space or not? </li>
+<li>Let <m>c^{+}</m> denote the space of all real <alert>positive sequences</alert> under the same operations.
+Is <m>c^{+}</m> a vector space or not? </li>
+  </ol>
+</statement>
+<solution>
+  <p>
+    <ol marker="(a)">
+      <li> The zero element <m>{\zerovec}</m> is the sequence <m>0,0,0,0,\hdots</m></li>
+      <li> For <m>(\avec_{n}) \in \mathbb{R}^{\mathbb{N}}</m>, we have <m>(\avec_{n}) = a_{1}, a_{2}, a_{3}, \ldots</m>.
+The additive inverse <m>(-\avec_{n})</m> is the sequence <m>-a_{1}, -a_{2}, -a_{3}, \ldots</m>.
+Then, <m>(\avec_{n}) + (-\avec_{n}) = (a_{1} , a_{2} , a_{3} , \ldots) + (-a_{1}, - a_{2}, - a_{3}, \ldots) =( (a_{1}-a_{1}) , (a_{2}-a_{2}) , (a_{3}-a_{3}), \ldots) = (0,0,0,\ldots)={\zerovec}</m>.</li>
+<li>Yes.</li>
+<li>Yes; note that the sum of two convergent sequences is also convergent.  So too is a scalar multiple of a convergent sequence. </li>
+<li>No.
+This is easy to see by taking the constant sequence <m>1,1,1,1,\ldots</m> and adding it to itself.
+This sequence does not converge to 1. </li>
+<li>Yes.  The sum of two such sequences also converges to 0 and any constant multiple of a sequence converging to 0 also converges to 0.</li>
+<li>No.  There is no additive unit - see axiom <em>(A3)</em>. </li>
+    </ol>
+  </p>
+</solution>
 </activity>
 
  <proposition xml:id="proposition-8-9">
