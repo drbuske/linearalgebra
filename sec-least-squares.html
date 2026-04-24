@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.4';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
@@ -589,7 +589,22 @@ sagecell.makeSagecell({
 <div class="autopermalink" data-description="Task 6.5.1.c"><a href="#ula-preview-6-5-c" title="Copy permalink for Task 6.5.1.c">🔗</a></div></article><article class="task exercise-like" id="ula-preview-6-5-d"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ula-preview-6-5-d-1-1">Explain why the equation <span class="process-math">\(A\xvec=\widehat\bvec\)</span> must be consistent and then find its solution.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-6-5-d-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 6.5.1.d"><a href="#ula-preview-6-5-d" title="Copy permalink for Task 6.5.1.d">🔗</a></div></article><div class="autopermalink" data-description="Preview Activity 6.5.1"><a href="#ula-preview-6-5" title="Copy permalink for Preview Activity 6.5.1">🔗</a></div></article></section><section class="subsection" id="sec-least-squares-3"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Task 6.5.1.d"><a href="#ula-preview-6-5-d" title="Copy permalink for Task 6.5.1.d">🔗</a></div></article><div class="autopermalink" data-description="Preview Activity 6.5.1"><a href="#ula-preview-6-5" title="Copy permalink for Preview Activity 6.5.1">🔗</a></div></article><article class="objectives goal-like" id="sec-least-squares-2-5"><h3 class="heading"><span class="type">Videos</span></h3>
+<ul class="disc" id="sec-least-squares-2-5-1">
+<li id="sec-least-squares-2-5-1-1">
+<div class="para" id="sec-least-squares-2-5-1-1-1">
+<a class="external" href="https://youtu.be/e2zQ90x5XxI?si=KQaVCwEUyqNtoUqx" target="_blank"><code class="code-inline tex2jax_ignore">Linear Regression (13:24)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-least-squares-2-5-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-least-squares-2-5-1-1" title="Copy permalink for Objective">🔗</a></div>
+</li>
+<li id="sec-least-squares-2-5-1-2">
+<div class="para" id="sec-least-squares-2-5-1-2-1">
+<a class="external" href="https://youtu.be/j-1Gq5yzOds?si=RjGIOjG3N9Lt8mNM" target="_blank"><code class="code-inline tex2jax_ignore">Least-Squares Approximation (13:24)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-least-squares-2-5-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-least-squares-2-5-1-2" title="Copy permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Videos"><a href="#sec-least-squares-2-5" title="Copy permalink for Videos">🔗</a></div></article></section><section class="subsection" id="sec-least-squares-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.5.1</span><span class="space"> </span><span class="title">A first example</span>
 </h3>
 <div class="para" id="sec-least-squares-3-2">When we’ve encountered inconsistent systems in the past, we’ve simply said there is no solution and moved on.  The preview activity, however, shows how we can find approximate solutions to an inconsistent system: if there are no solutions to <span class="process-math">\(A\xvec = \bvec\text{,}\)</span> we instead solve the consistent system <span class="process-math">\(A\xvec = \bhat\text{,}\)</span> the orthogonal projection of <span class="process-math">\(\bvec\)</span> onto <span class="process-math">\(\col(A)\text{.}\)</span>  As we’ll see, this solution is, in a specific sense, the best possible.<div class="autopermalink" data-description="Paragraph"><a href="#sec-least-squares-3-2" title="Copy permalink for Paragraph">🔗</a></div>

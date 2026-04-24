@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.4';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
@@ -595,7 +595,23 @@ sagecell.makeSagecell({
 <div class="para" id="ula-preview-3-2-e-1-1">Explain why every vector in <span class="process-math">\(\real^2\)</span> can be written as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> in exactly one way.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-3-2-e-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 3.2.1.e"><a href="#ula-preview-3-2-e" title="Copy permalink for Task 3.2.1.e">🔗</a></div></article><div class="autopermalink" data-description="Preview Activity 3.2.1"><a href="#ula-preview-3-2" title="Copy permalink for Preview Activity 3.2.1">🔗</a></div></article><div class="para" id="sec-bases-2-6">In the preview activity, we worked with a set of two vectors in <span class="process-math">\(\real^2\)</span> and found that we could express any vector in <span class="process-math">\(\real^2\)</span> in two different ways:  in the usual way where the components of the vector describe horizontal and vertical changes, and in a new way as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{.}\)</span> We could also translate between these two descriptions.  This example illustrates the central idea of this section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-bases-2-6" title="Copy permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="sec-bases-3"><h3 class="heading hide-type">
+</div>
+<article class="objectives goal-like" id="sec-bases-2-7"><h3 class="heading"><span class="type">Videos</span></h3>
+<ul class="disc" id="sec-bases-2-7-1">
+<li id="sec-bases-2-7-1-1">
+<div class="para" id="sec-bases-2-7-1-1-1">
+<a class="external" href="https://youtu.be/BKeQor6Y2EM?si=AL_yPSMdK4S7u2bL" target="_blank"><code class="code-inline tex2jax_ignore">Basis and Dimension (7:14)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-bases-2-7-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-bases-2-7-1-1" title="Copy permalink for Objective">🔗</a></div>
+</li>
+<li id="sec-bases-2-7-1-2">
+<div class="para" id="sec-bases-2-7-1-2-1">
+<a class="external" href="https://youtu.be/0QFE8J-Ge00?si=VvT_cG3pQRL6SfeI" target="_blank"><code class="code-inline tex2jax_ignore">Coordinates and Change of Basis (11:12)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-bases-2-7-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-bases-2-7-1-2" title="Copy permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Videos"><a href="#sec-bases-2-7" title="Copy permalink for Videos">🔗</a></div></article></section><section class="subsection" id="sec-bases-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Bases</span>
 </h3>
 <div class="para" id="sec-bases-3-2">In the preview activity, we created a new coordinate system for <span class="process-math">\(\real^2\)</span> using linear combinations of a set of two vectors.  More generally, the following definition will guide us.<div class="autopermalink" data-description="Paragraph"><a href="#sec-bases-3-2" title="Copy permalink for Paragraph">🔗</a></div>
