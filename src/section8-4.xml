@@ -107,6 +107,22 @@
 
 </exploration>
 
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/fo9wmJ0lzh8?si=MUsX2OAIVGSSxuOv" visual="The Dimension of a Subspace (5:10)"/>
+            </p>
+        </li>
+         <li>
+            <p>
+                <url href="https://youtu.be/xQeH2vrQ-5A?si=lzM_3hj_pKEh8Rcm" visual="Dimension of Null Space and Column Space (3:26)"/>
+            </p>
+        </li>
+	</ul>
+</objectives>
+
 </introduction>
 
   <subsection xml:id="section-definition-basis">

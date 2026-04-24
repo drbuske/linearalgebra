@@ -178,6 +178,20 @@
       </task>
     </exploration>
 
+	<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/e2zQ90x5XxI?si=KQaVCwEUyqNtoUqx" visual="Linear Regression (13:24)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/j-1Gq5yzOds?si=RjGIOjG3N9Lt8mNM" visual="Least-Squares Approximation (13:24)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

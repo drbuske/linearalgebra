@@ -253,6 +253,20 @@
       </task>
 
     </exploration>
+
+	<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/FJRSqDkcs1U?si=ajMnNzyAF9icF_0j" visual="Matrix Transformations - Part 1 (11:58)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/ZJWxK9Iw-1o?si=g1eSGLABZ3z6SFjP" visual="Linear Transformations - Part 2 (7:43)"/></p>
+        </li>
+	</ul>
+</objectives>
   </introduction>
 
   <subsection>

@@ -29,6 +29,23 @@
       connection between linear 
       systems and linear combinations.  
     </p>
+
+	   <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/g3aO3W18Wjw?si=dNETCQq-_JTCIARg" visual="Matrices and Matrix-Vector Product (14:17)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/AUSWMTSTspQ?si=bZW6v6h86uCYRTOB" visual="Matrix Arithmetic, Matrix Multiplication and Matrix Transpose (13:46)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/EiWGoOunTU0?si=V4MovtC_4c_oolxL" visual="Elementary Matrices (8:03)"/></p>
+        </li>
+	</ul>
+</objectives>
     
   </introduction>
 

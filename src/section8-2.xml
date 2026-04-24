@@ -144,6 +144,17 @@
     section, and at subspaces, bases, and dimension in the next section.
   </p>
 
+  <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/SzZaQnzstfE?si=X_3DIlCagZeLoyNz" visual="The Vector Space of Polynomials: Span, Linear Independence, and Basis (12:49)"/>
+            </p>
+        </li>
+	</ul>
+</objectives>
+
 </introduction>
 
   <subsection xml:id="section-definition-linear-combos">

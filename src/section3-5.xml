@@ -171,6 +171,24 @@
         <response/>
       </task>
     </exploration>
+
+	 <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/Ui2dAqa-6D0?si=b-BeYt3TWrbgyD7d" visual="Subspaces (9:57)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/KDvmx6qwgSU?si=BHU9LMT9N2jLO8hk" visual="Null Space (6:30)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/OMOKNu25xCY?si=ZKIg8vMTk2njxlb2" visual="Column Space (6:09)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

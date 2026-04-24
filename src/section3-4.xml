@@ -211,6 +211,23 @@
 
     </exploration>
 
+	 <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/WLbZllTXpMs?si=YfCOV966N8lajxUe" visual="Determinants (8:27)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/75CnJ3GQTmI?si=-K_a1qI44Pi6jCVh" visual="Determinants and Row Operations (8:36)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/OsBDCRlUwfQ?si=uQqPITRXJhBZJ69u" visual="Determinants and Invertible Matrices (8:04)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

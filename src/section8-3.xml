@@ -141,6 +141,27 @@
 
 </exploration>
 
+ <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/rgxyxcTwvuo?si=4PCtdaKEGz-an1J6" visual="Subspaces are the Natural Subsets of Linear Algebra (6:25)"/>
+            </p>
+        </li>
+         <li>
+            <p>
+                <url href="https://youtu.be/GK0CvvX7ceM?si=_3TzLeRJRf-1wxLf" visual="The Span is a Subspace (5:02)"/>
+            </p>
+        </li>
+         <li>
+            <p>
+                <url href="https://youtu.be/YQRioQ1XUck?si=C3QMeMx6HvIsi9Wh" visual="The Null Space and Column Space of a Matrix (10:40)"/>
+            </p>
+        </li>
+	</ul>
+</objectives>
+
 </introduction>
 
   <subsection xml:id="section-definition-subspaces">

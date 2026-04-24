@@ -158,6 +158,23 @@
 
     </exploration>
 
+     <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/Yyy1nehBIjs?si=aBIuvDSEVXvDkG1J" visual="Intro to Eigenvectors (7:09)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/iXJsjWhb6aE?si=s6gF2Bywvr3dU6fZ" visual="Intro to Complex Numbers (6:29)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/X6W-cSgfa6I?si=EHVyg7Gh2Zfmvmlz" visual="Complex Numbers - Polar Form (7:04)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

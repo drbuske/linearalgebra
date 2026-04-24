@@ -18,6 +18,21 @@
     generally be a useful strategy.  Instead, we will approach this
     problem algebraically and develop a technique to describe the
     solution spaces of general linear systems.</p>
+
+	   <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/J3FXEGdTPJc?si=bk69vC3IdEfBa-v8" visual="Gaussian Elimination (6:23)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/cXSqU660008?si=tFmtrVWhlFi29IMM" visual="Row Operations and Echelon Form (8:07)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

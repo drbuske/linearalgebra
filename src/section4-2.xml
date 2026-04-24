@@ -129,6 +129,23 @@
 
     </exploration>
 
+	  <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/DQz0u6LkTEc?si=6Qux3lwBdiQyezsv" visual="Eigenvalue Problem (7:34)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/8TZfgEOmB_Q?si=D3Aqh_CAkGL1Yo5Y" visual="Characteristic Equation and Repeated EIgenvalues (8:22)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/4MmZouS__J4?si=vJkUYKWXl98UYq2R" visual="Eigenvector Basis (3:52)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

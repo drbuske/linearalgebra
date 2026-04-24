@@ -168,6 +168,20 @@
       </task>
     </exploration>
 
+	  <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/4J0s1Xo2L-w?si=7aprIN8wep7ao3qX" visual="Dot Product (3:24)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/fa_TfVGC1jQ?si=72LoWJd29sLF1l-f" visual="Length and Orthogonality (11:26)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

@@ -175,6 +175,20 @@
       </task>
 
     </exploration>
+
+	 <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/kWssP242EgI?si=BBtZdHN1kdBYl_o9" visual="Matrix Inverse (10:47)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/atlPNhu9VXc?si=Hoh1iAzSsSVBtGQ6" visual="Matrix Inverse by Row Operations (6:21)"/></p>
+        </li>
+	</ul>
+</objectives>
     
   </introduction>
 

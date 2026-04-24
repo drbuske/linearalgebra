@@ -85,6 +85,7 @@
 
   <rename element="exploration">Preview Activity</rename>
   <rename element="convention">Notation</rename>
+  <rename element="objectives">Videos</rename>
 
     <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->

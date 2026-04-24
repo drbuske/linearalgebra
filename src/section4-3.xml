@@ -203,6 +203,21 @@
       </task>
 
     </exploration>
+
+	  <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/PrELT2y7dC4?si=GJzu312hwAJ2nJlX" visual="Similar Matrices (14:48)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/5MWwYZ27L9I?si=MahmlLZcO6SB8J8-" visual="Diagonalization (7:53)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

@@ -166,6 +166,21 @@
         <response/>
       </task>
     </exploration>
+
+	  <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/6VvAMmctvcE?si=WPKc1Z3kl4Ck0zu5" visual="Orthogonal Complements (9:16)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/fGZQSXMYIx4?si=NRj20kpU4YNbZ4bC" visual="Dimension Theorem for Orthogonal Complements (7:41)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
   
   <subsection>

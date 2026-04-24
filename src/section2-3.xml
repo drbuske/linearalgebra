@@ -36,6 +36,8 @@
       vectors. 
     </p>
 
+	
+
     <exploration label="ula-preview-2-3">
       <title> The existence of solutions </title>
 
@@ -220,6 +222,21 @@
         <response/>
       </task>
     </exploration>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/JrVWBfr8M38?si=d34UL-G0et_4sMOB" visual="Span - Part 1 (5:36)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/BFC8rliyKDU?si=mhoCJkQFR5tNMtlV" visual="Span and Linear Systems - Part 2 (7:40)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
   
   <subsection>

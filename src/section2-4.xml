@@ -256,6 +256,20 @@
       </task>
     </exploration>
 
+	<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/I1UqU0e5L1A?si=3MjRsPV9Kyu0vDKo" visual="Linear Dependence - Part 1 (7:08)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/8xca7G8Kazo?si=u6y5slb_cLix6qbm" visual="Linear Dependence and Linear Systems - Part 2 (9:58)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>

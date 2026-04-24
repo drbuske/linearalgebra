@@ -199,6 +199,20 @@
       </task>
     </exploration>
 
+	 <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/Pp4APwaPVzI?si=PONpDo9kbAcdUYMs" visual="Gram-Schmidt Process (12:44)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/o9Eu9pdL-DA?si=qTtAbMFW2XPLkYeD" visual="Gram-Schmidt Process - Part 2 (16:35)"/></p>
+        </li>
+	</ul>
+</objectives>
+
   </introduction>
 
   <subsection>
