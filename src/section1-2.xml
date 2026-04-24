@@ -22,6 +22,12 @@
 	   <objectives>
 <!-- <title>Videos</title> -->
 <ul>
+		<li>
+            <p><url href="https://youtu.be/H8MiZMJr1kQ?si=T6bx4fqssIxymmEz" visual="What is a solution to a Linear System? (5:27)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/qKyturOAD60?si=THEJ4clZaRjZlN8h" visual="Visualizing Solutions to Linear Systems (8:18)"/></p>
+        </li>
 	        <li>
             <p>
                 <url href="https://youtu.be/J3FXEGdTPJc?si=bk69vC3IdEfBa-v8" visual="Gaussian Elimination (6:23)"/>
@@ -29,6 +35,9 @@
         </li>
         <li>
             <p><url href="https://youtu.be/cXSqU660008?si=tFmtrVWhlFi29IMM" visual="Row Operations and Echelon Form (8:07)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/vhm1bPMAgyU?si=0IAgYKv5epigW1Ex" visual="The Gaussian Algorithm Visualized (13:36)"/></p>
         </li>
 	</ul>
 </objectives>
