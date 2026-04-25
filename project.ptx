@@ -14,6 +14,8 @@
     xsl="xsl"
     >
   <targets>
+    <target name="course" source="ula.xml" format="html"
+            publication="publication.ptx" deploy-dir="course" />
     <target
         name="html"
         format="html"

@@ -23,7 +23,7 @@
     <website>
       <!-- <url href="https://understandinglinearalgebra.org"
            visual="understandinglinearalgebra.org"/> -->
-           <url href="https://drbuske.github.io/Math312" visual="https://drbuske.github.io/Math312"/>
+           <url href="https://drbuske.github.io/linearalgebra" visual="https://drbuske.github.io/linearalgebra"/>
       <!--
       <name>http://gvsu.edu/s/0Ck</name>
       <address>http://gvsu.edu/s/0Ck</address>
@@ -68,7 +68,7 @@
 
 
 
-  <xi:include href="./syllabus.ptx" />
+  <!-- <xi:include href="./syllabus.ptx" /> -->
 
   
 

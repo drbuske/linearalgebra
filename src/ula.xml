@@ -4,8 +4,8 @@
   <xi:include href="bookinfo.xml" />
   
   <book xml:id="ula">
-    <title> Linear Algebra</title>
-    <subtitle>MATH 312</subtitle>
+    <title>Linear Algebra</title>
+    <!-- <subtitle>MATH 312</subtitle> -->
     <!-- <subtitle component="proteus-subtitle">PROTEUS Version</subtitle>
     <subtitle component="proteus-playground-subtitle">PROTEUS Playground</subtitle> -->
 
