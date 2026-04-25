@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="proposition theorem-like"><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.3.10</span><span class="period">.</span>
+</h4>
+<div class="para">Let <span class="process-math">\(V\)</span> be a vector space over some field <span class="process-math">\(K\text{,}\)</span> and consider a set of vectors <span class="process-math">\(S\subseteq V\text{.}\)</span> Then <span class="process-math">\(\mathrm{span}(S)\)</span> is the smallest subspace of <span class="process-math">\(V\)</span> containing <span class="process-math">\(S\text{.}\)</span> More explicitly, we have:<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-34-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <ol class="lower-alpha ol-marker-5" id="proposition-8-34-1-2">
+<li>
+<div class="para">The set <span class="process-math">\(\mathrm{span}(S)\)</span> is a subspace of <span class="process-math">\(V\text{,}\)</span> and <span class="process-math">\(S\subseteq\mathrm{span}(S)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#proposition-8-34-1-2-1" title="Copy permalink for Item a">🔗</a></div>
+</li>
+<li>
+<div class="para">If <span class="process-math">\(W\)</span> is any other subspace of <span class="process-math">\(V\)</span> such that <span class="process-math">\(S\subseteq W\text{,}\)</span> then <span class="process-math">\(\mathrm{span}(S)\subseteq W\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#proposition-8-34-1-2-2" title="Copy permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Proposition 5.3.10"><a href="#proposition-8-34" title="Copy permalink for Proposition 5.3.10">🔗</a></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><ol class="lower-alpha ol-marker-5" id="proposition-8-34-2-1">
+<li>
+<div class="para">To show that <span class="process-math">\(\mathrm{span}(S)\)</span> is a subspace, first note that <span class="process-math">\(\zerovec\in\mathrm{span}(S)\text{,}\)</span> because <span class="process-math">\(\zerovec\)</span> is the empty linear combination. Also, if <span class="process-math">\(\vvec,\uvec\in\mathrm{span}(S)\text{,}\)</span> then by definition of span, there exist <span class="process-math">\(\vvec_1,\ldots,\vvec_k,\uvec_1,\ldots,\uvec_\ell\in S\)</span> and <span class="process-math">\(a_1,\ldots,a_k,b_1,\ldots,b_\ell\in K\)</span> such that<div class="displaymath process-math">
+\begin{align*}
+\vvec \amp =a_1\vvec_1+\cdots+a_k\vvec_k,\\
+\uvec \amp =b_1\uvec_1+\cdots+b_\ell \uvec_\ell.
+\end{align*}
+</div>Then<div class="displaymath process-math">
+\begin{equation*}
+\vvec+\uvec=a_1\vvec_1+\cdots+a_k\vvec_k+b_1\uvec_1+\cdots+b_\ell \uvec_\ell,
+\end{equation*}
+</div>and therefore <span class="process-math">\(\vvec+\uvec\in\mathrm{span}(S)\text{.}\)</span> It follows that <span class="process-math">\(\mathrm{span}(S)\)</span> is closed under addition. The proof for scalar multiplication is similar. Finally, every <span class="process-math">\(\vvec\in S\)</span> is trivially a linear combination of itself, <span class="process-math">\(\vvec=1\vvec\text{,}\)</span> and therefore <span class="process-math">\(S\subseteq\mathrm{span}(S)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#proposition-8-34-2-1-1" title="Copy permalink for Item a">🔗</a></div>
+</li>
+<li>
+<div class="para">Consider any other subspace <span class="process-math">\(W\)</span> of <span class="process-math">\(V\)</span> such that <span class="process-math">\(S\subseteq W\text{.}\)</span> To show that <span class="process-math">\(\mathrm{span}(S)\subseteq W\text{,}\)</span> consider an arbitrary element <span class="process-math">\(\vvec\in\mathrm{span}(S)\text{.}\)</span> By definition of span, there exist <span class="process-math">\(\vvec_1,\ldots,\vvec_k\in S\)</span> and <span class="process-math">\(a_1,\ldots,a_k\in K\)</span> such that <span class="process-math">\(\vvec=a_1\vvec_1+\cdots+a_k\vvec_k.\)</span> By assumption, <span class="process-math">\(\vvec_1,\ldots,\vvec_k\in W\text{.}\)</span> Since <span class="process-math">\(W\)</span> is closed under addition and scalar multiplication, it follows that <span class="process-math">\(\vvec\in W\text{.}\)</span> Since <span class="process-math">\(\vvec\)</span> was an arbitrary element of <span class="process-math">\(\mathrm{span}(S)\text{,}\)</span> it follows that <span class="process-math">\(\mathrm{span}(S)\subseteq W\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#proposition-8-34-2-1-2" title="Copy permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Proof 5.3.10.1"><a href="#proposition-8-34-2" title="Copy permalink for Proof 5.3.10.1">🔗</a></div></article></details><span class="incontext"><a class="internal" href="sec-vecsubspace-intro.html#proposition-8-34">in-context</a></span>
+</body>
+</html>
