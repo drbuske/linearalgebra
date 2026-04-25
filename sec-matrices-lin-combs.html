@@ -246,7 +246,7 @@ sagecell.makeSagecell({
 <div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="codenumber">1</span> <span class="title">Course Information</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-4.html" class="internal"><span class="codenumber">2</span> <span class="title">Topics and Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="codenumber">2</span> <span class="title">Topics and Learning Outcomes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-calendar.html" class="internal"><span class="codenumber">3</span> <span class="title">Calendar</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-assessments.html" class="internal"><span class="codenumber">4</span> <span class="title">Assessments and Grades</span></a></div></li>
 </ul>
@@ -1618,7 +1618,112 @@ B = \left[\begin{array}{rr}
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-lin-combs-7-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 2.2.5: Summary"><a href="#sec-matrices-lin-combs-7" title="Copy permalink for Subsection 2.2.5: Summary">🔗</a></div></section><section class="exercises" id="sec-matrices-lin-combs-8"><h3 class="heading hide-type">
+<article class="exercise exercise-like" id="ula_proteus_2-2_Linear_Combinations_v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Determining if a vector is a linear combination of a set of vectors.</span>
+</h4>
+<div class="para" id="ula_proteus_2-2_Linear_Combinations_v1-2-1">Explain how you would determine whether a given vector <span class="process-math">\(\bvec\)</span> in <span class="process-math">\(\real^n\)</span> is a linear combination of a given set of vectors <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\)</span> in <span class="process-math">\(\real^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-2_Linear_Combinations_v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.2.9: Determining if a vector is a linear combination of a set of vectors"><a href="#ula_proteus_2-2_Linear_Combinations_v1" title="Copy permalink for Checkpoint 2.2.9: Determining if a vector is a linear combination of a set of vectors">🔗</a></div></article><article class="exercise exercise-like" id="ula_proteus_2-2_Linear_Combinations2_v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Writing a vector as a linear combination of other vectors in three ways.</span>
+</h4>
+<div class="para" id="ula_proteus_2-2_Linear_Combinations2_v1-2-1">Express the vector <span class="process-math">\(\vvec = \threevec{8}{-7}{-17}\)</span> as a linear combination of <span class="process-math">\(\xvec_1=\threevec1{-1}{-2}\text{,}\)</span> <span class="process-math">\(\xvec_2=\threevec{-1}{2}{1}\text{,}\)</span> <span class="process-math">\(\xvec_3=\threevec3{-2}{-7}\)</span> in three different ways. Explain how you arrived at your three different expressions.<div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-2_Linear_Combinations2_v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.2.10: Writing a vector as a linear combination of other vectors in three ways"><a href="#ula_proteus_2-2_Linear_Combinations2_v1" title="Copy permalink for Checkpoint 2.2.10: Writing a vector as a linear combination of other vectors in three ways">🔗</a></div></article><article class="exercise exercise-like" id="ula_proteus_2-2_Linear_Combinations3_v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Connecting linear combinations and matrix multiplication.</span>
+</h4>
+<div class="para logical" id="ula_proteus_2-2_Linear_Combinations3_v1-2-1">
+<div class="para">Suppose <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\)</span> are vectors in <span class="process-math">\(\real^3\text{,}\)</span> and let <span class="process-math">\(A=\begin{bmatrix} \vvec_1 \amp \vvec_2 \amp \vvec_3
+\end{bmatrix}
+\text{.}\)</span> Suppose that a solution to <span class="process-math">\(A\xvec= \threevec{11}{5}{-7}\)</span> is given by <span class="process-math">\(\xvec = \threevec4{-1}2
+\text{.}\)</span> Find constants <span class="process-math">\(c_1\text{,}\)</span> <span class="process-math">\(c_2\text{,}\)</span> and <span class="process-math">\(c_3\)</span> with</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c_1 \vvec_1 + c_2 \vvec_2 + c_3\vvec_3 = 
+\threevec{11}5{-7}\text{.}
+\end{equation*}
+</div>
+<div class="para">Explain your thinking.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-2_Linear_Combinations3_v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.2.11: Connecting linear combinations and matrix multiplication"><a href="#ula_proteus_2-2_Linear_Combinations3_v1" title="Copy permalink for Checkpoint 2.2.11: Connecting linear combinations and matrix multiplication">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-2-2-algprop-v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Algebraic properties of matrix multiplication.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-2-algprop-v1">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-2-2-algprop-v1-2-1">Suppose <span class="process-math">\(b\)</span> and <span class="process-math">\(c\)</span> are scalars, <span class="process-math">\(\vvec,
+\wvec\)</span> are vectors in <span class="process-math">\(\real^5\text{,}\)</span> and <span class="process-math">\(A\)</span> is a <span class="process-math">\(5\times 5\)</span> matrix. Determine whether each of the following algebraic properties is Always True, Never True, or Sometimes True.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-algprop-v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag1" data-category="1"><span class="process-math">\(A(b\vvec +c\wvec)=bA\vvec +
+cA\wvec\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag2" data-category="1"><span class="process-math">\(A\zerovec=\zerovec\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag3" data-category="1"><span class="process-math">\((a+b)\vvec=a\vvec+b\vvec\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag4" data-category="1"><span class="process-math">\(A(b\vvec)=bA\vvec\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag5" data-category="1">
+<span class="process-math">\(I\vvec=\vvec\)</span> where <span class="process-math">\(I\)</span> is the <span class="process-math">\(5\times5\)</span> identity</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag6" data-category="1"><span class="process-math">\(0\vvec=\zerovec\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-2-algprop-v1_drag1" data-category="1">Always True</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag7" data-category="2"><span class="process-math">\(A\vvec=\vvec A\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag8" data-category="2"><div class="para" id="ula-proteus-2-2-algprop-v1-3-2-3-1">If <span class="process-math">\(A\vvec=3\vvec\text{,}\)</span> then <span class="process-math">\(A=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-algprop-v1-3-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-2-algprop-v1_drag2" data-category="2">Never True</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag9" data-category="3"><div class="para" id="ula-proteus-2-2-algprop-v1-3-3-2-1">If <span class="process-math">\(A\vvec=A\wvec\text{,}\)</span> then <span class="process-math">\(\vvec=\wvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-algprop-v1-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-algprop-v1_drag10" data-category="3"><div class="para" id="ula-proteus-2-2-algprop-v1-3-3-3-1">If <span class="process-math">\(A\vvec=\zerovec\text{,}\)</span> then <span class="process-math">\(\vvec=\zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-algprop-v1-3-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-2-algprop-v1_drag3" data-category="3">Sometimes True</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 2.2.12: Algebraic properties of matrix multiplication"><a href="#ula-proteus-2-2-algprop-v1" title="Copy permalink for Checkpoint 2.2.12: Algebraic properties of matrix multiplication">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-2-2-equivalence-representations-v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Representing linear systems.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-2-equivalence-representations-v1">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-2-1">Given below is a series of tasks in two columns.  If possible, match each task in the left column with an equivalent task in the right column.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula-proteus-2-2-equivalence-representations-v1_drag1" data-category="1"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-1-1-1">Find all vectors <span class="process-math">\(\xvec\)</span> for which <span class="process-math">\(\begin{bmatrix}
+3 \amp 3 \amp -1 \\
+2 \amp -1 \amp 3 \\
+4 \amp 0 \amp -1 \\
+\end{bmatrix}
+\xvec = \threevec043
+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-equivalence-representations-v1_drag2" data-category="1"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-1-2-1">Find scalars <span class="process-math">\(c_1\text{,}\)</span> <span class="process-math">\(c_2\text{,}\)</span> and <span class="process-math">\(c_3\)</span> so that <span class="process-math">\(c_1\threevec324 + c_2\threevec3{-1}0 +
+c_3\threevec{-1}3{-1} = \threevec043\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-2-equivalence-representations-v1_drag1" data-category="1"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-1-3-1">Find <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> that satisfy <span class="process-math">\(\begin{alignedat}{4}
+3x \amp {}+{} \amp 3y \amp {}-{} \amp z \amp {}={} \amp 0 \\
+2x \amp {}-{} \amp  y \amp {}+{} \amp 3z \amp {}={} \amp 4 \\
+4x \amp {}{} \amp   \amp {}-{} \amp  z \amp {}={} \amp  3 \\
+\end{alignedat}
+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-equivalence-representations-v1_drag3" data-category="2"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-2-1-1">Find the linear combinations of the vectors <span class="process-math">\(\threevec324\text{,}\)</span> <span class="process-math">\(\threevec30{-1}\text{,}\)</span> <span class="process-math">\(\threevec{-1}2{-1}\)</span> that form the vector <span class="process-math">\(\threevec043\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-2-equivalence-representations-v1_drag2" data-category="2"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-2-2-1">Find the set of solutions to the linear system represented by the augmented matrix <span class="process-math">\(\left[
+\begin{array}{ccc|c}
+3 \amp 3 \amp -1 \amp 0 \\
+2 \amp 0 \amp 2 \amp 4 \\
+4 \amp -1 \amp -1 \amp 3 \\
+\end{array}\right]
+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-equivalence-representations-v1_drag4" data-category="3"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-3-1-1">Find the product <span class="process-math">\(\begin{bmatrix}
+3 \amp 3 \amp -1 \\
+2 \amp -1 \amp 3 \\
+4 \amp 0 \amp -1 \\
+\end{bmatrix}
+\threevec043
+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-2-equivalence-representations-v1_drag3" data-category="3"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-3-2-1">Find the linear combination of the vectors <span class="process-math">\(\threevec324\text{,}\)</span> <span class="process-math">\(\threevec{3}{-1}0\text{,}\)</span> <span class="process-math">\(\threevec{-1}3{-1}\)</span> with weights <span class="process-math">\(c_1=0\text{,}\)</span> <span class="process-math">\(c_2=4\text{,}\)</span> and <span class="process-math">\(c_3=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-equivalence-representations-v1_drag5" data-category="4"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-4-1-1">Describe the ways in which <span class="process-math">\(\threevec324\)</span> can be expressed as a linear combination of <span class="process-math">\(\threevec30{-1}\text{,}\)</span> <span class="process-math">\(\threevec{-1}{2}{-1}\text{,}\)</span> <span class="process-math">\(\threevec043\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-2-equivalence-representations-v1_drag6" data-category="4"><div class="para" id="ula-proteus-2-2-equivalence-representations-v1-3-4-2-1">Find vectors <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> that satisfy the linear system described by <span class="process-math">\(\left[
+\begin{array}{ccc|c}
+3 \amp 3 \amp -1 \amp 0 \\
+2 \amp 0 \amp 2 \amp 4 \\
+4 \amp -1 \amp -1 \amp 3 \\
+\end{array}\right]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-2-equivalence-representations-v1-3-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 2.2.13: Representing linear systems"><a href="#ula-proteus-2-2-equivalence-representations-v1" title="Copy permalink for Checkpoint 2.2.13: Representing linear systems">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.2.5: Summary"><a href="#sec-matrices-lin-combs-7" title="Copy permalink for Subsection 2.2.5: Summary">🔗</a></div></section><section class="exercises" id="sec-matrices-lin-combs-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-matrices-lin-combs-8-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
@@ -1695,9 +1800,9 @@ A\twovec{0}{1} =
 <div class="autopermalink" data-description="Exercise 2.2.6.3"><a href="#sec-matrices-lin-combs-8-3" title="Copy permalink for Exercise 2.2.6.3">🔗</a></div></article><article class="exercise exercise-like" id="sec-matrices-lin-combs-8-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para" id="sec-matrices-lin-combs-8-4-1-1">Suppose that the matrix <span class="process-math">\(A = \left[\begin{array}{rr}
 \vvec_1 \amp \vvec_2
-\end{array}\right]\)</span> where <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> are shown in <a href="sec-matrices-lin-combs.html#ex-eq-graphical" class="xref" data-knowl="./knowl/xref/ex-eq-graphical.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.9">Figure 2.2.9</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-lin-combs-8-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+\end{array}\right]\)</span> where <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> are shown in <a href="sec-matrices-lin-combs.html#ex-eq-graphical" class="xref" data-knowl="./knowl/xref/ex-eq-graphical.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.14">Figure 2.2.14</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-lin-combs-8-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="ex-eq-graphical"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/ex-matrix-cols.svg" role="img" class="contained"></div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.9<span class="period">.</span></span><span class="space"> </span>Two vectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> that form the columns of the matrix <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Figure 2.2.9"><a href="#ex-eq-graphical" title="Copy permalink for Figure 2.2.9">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-matrices-lin-combs-8-4-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.14<span class="period">.</span></span><span class="space"> </span>Two vectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> that form the columns of the matrix <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Figure 2.2.14"><a href="#ex-eq-graphical" title="Copy permalink for Figure 2.2.14">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-matrices-lin-combs-8-4-1-3">
 <ol class="lower-alpha ol-marker-1" id="sec-matrices-lin-combs-8-4-1-3-1">
 <li id="sec-matrices-lin-combs-8-4-1-3-1-1">
 <div class="para" id="sec-matrices-lin-combs-8-4-1-3-1-1-1">What is the shape of the matrix <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-lin-combs-8-4-1-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
@@ -1706,7 +1811,7 @@ A\twovec{0}{1} =
 </li>
 <li id="sec-matrices-lin-combs-8-4-1-3-1-2">
 <div class="para logical" id="sec-matrices-lin-combs-8-4-1-3-1-2-1">
-<div class="para">On <a href="sec-matrices-lin-combs.html#ex-eq-graphical" class="xref" data-knowl="./knowl/xref/ex-eq-graphical.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.9">Figure 2.2.9</a>, indicate the vectors</div>
+<div class="para">On <a href="sec-matrices-lin-combs.html#ex-eq-graphical" class="xref" data-knowl="./knowl/xref/ex-eq-graphical.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.14">Figure 2.2.14</a>, indicate the vectors</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-eq-graphical.html">
 \begin{equation*}
 A\twovec{1}{0}, ~~~A\twovec{2}{3}, ~~~A\twovec{0}{-3}\text{.}

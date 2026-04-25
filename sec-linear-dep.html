@@ -246,7 +246,7 @@ sagecell.makeSagecell({
 <div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="codenumber">1</span> <span class="title">Course Information</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-4.html" class="internal"><span class="codenumber">2</span> <span class="title">Topics and Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="codenumber">2</span> <span class="title">Topics and Learning Outcomes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-calendar.html" class="internal"><span class="codenumber">3</span> <span class="title">Calendar</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-assessments.html" class="internal"><span class="codenumber">4</span> <span class="title">Assessments and Grades</span></a></div></li>
 </ul>
@@ -1247,7 +1247,97 @@ A=\left[\begin{array}{rrrr} \vvec_1\amp\vvec_2 \amp
 <td class="l t b1 r0 l0 t0" style="max-width:300px;"><div class="para" id="sec-linear-dep-6-5-2-7-2-1">A set of linearly independent vectors in <span class="process-math">\(\real^m\)</span> has at most <span class="process-math">\(m\)</span> vectors.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-dep-6-5-2-7-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
-</table></div></figure><div class="autopermalink" data-description="Subsection 2.4.4: Summary"><a href="#sec-linear-dep-6" title="Copy permalink for Subsection 2.4.4: Summary">🔗</a></div></section><section class="exercises" id="sec-linear-dep-7"><h3 class="heading hide-type">
+</table></div></figure><article class="exercise exercise-like" id="ula-proteus-2-4-linear-indep-definition"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">Defining the concept of linear dependence.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="ula-proteus-2-4-linear-indep-definition-2-1">Select the best definition of a set of linear dependent vectors in <span class="process-math">\(\real^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-linear-indep-definition-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-ula-proteus-2-4-linear-indep-definition" data-multipleanswers="false">
+<li data-component="answer" id="rs-ula-proteus-2-4-linear-indep-definition_opt_a"><div class="para" id="ula-proteus-2-4-linear-indep-definition-3-1-1-1">A set of <span class="process-math">\(n\)</span> vectors that span <span class="process-math">\(\real^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-linear-indep-definition-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-ula-proteus-2-4-linear-indep-definition_opt_a">This set of vectors is linearly independent, but a linearly dependent set need not have <span class="process-math">\(n\)</span> vectors.</li>
+<li data-component="answer" id="rs-ula-proteus-2-4-linear-indep-definition_opt_b"><div class="para" id="ula-proteus-2-4-linear-indep-definition-3-2-1-1">A set of vectors that can be used to form the zero vector <span class="process-math">\(\zerovec\)</span> as a linear combination.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-linear-indep-definition-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-ula-proteus-2-4-linear-indep-definition_opt_b">The zero vector <span class="process-math">\(\zerovec\)</span> is a linear combination of any set of vectors if we choose all the weights to be zero.</li>
+<li data-component="answer" id="rs-ula-proteus-2-4-linear-indep-definition_opt_c" data-correct=""><div class="para" id="ula-proteus-2-4-linear-indep-definition-3-3-1-1">A set of vectors in which one vector is a linear combination of the others.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-linear-indep-definition-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-ula-proteus-2-4-linear-indep-definition_opt_c">This is correct!  You may wish to also select the other choices and consider why they are not the best definition.</li>
+<li data-component="answer" id="rs-ula-proteus-2-4-linear-indep-definition_opt_d"><div class="para" id="ula-proteus-2-4-linear-indep-definition-3-4-1-1">A matrix without a pivot position in some column.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-linear-indep-definition-3-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-ula-proteus-2-4-linear-indep-definition_opt_d">This is a test we can use to determine if the columns of a matrix form a linearly dependent set but is not what we mean by a linear dependent set.</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 2.4.11: Defining the concept of linear dependence"><a href="#ula-proteus-2-4-linear-indep-definition" title="Copy permalink for Checkpoint 2.4.11: Defining the concept of linear dependence">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-2-4-linear-indep-review"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">A review of linear independence.</span>
+</h4>
+<div class="introduction" id="ula-proteus-2-4-linear-indep-review-2"><div class="para" id="ula-proteus-2-4-linear-indep-review-2-1">This set of questions summarizes our discussion of linear independence in this section.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-linear-indep-review-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ula-proteus-linear_independence_q1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="ula-proteus-linear_independence_q1-1-1">
+<div class="para">Suppose there are three vectors <span class="process-math">\(\wvec_1\text{,}\)</span> <span class="process-math">\(\wvec_2\text{,}\)</span> and <span class="process-math">\(\wvec_3\)</span> for which <span class="process-math">\(\wvec_1 = 2\wvec_2 + 3\wvec_3\text{.}\)</span>  If possible, find a linear combination</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_1\wvec_1 + a_2\wvec_2 + a_3\wvec_3 = \zerovec
+\end{equation*}
+</div>
+<div class="para">with nonzero scalars <span class="process-math">\(a_1\text{,}\)</span> <span class="process-math">\(a_2\text{,}\)</span> and <span class="process-math">\(a_3\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-linear_independence_q1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.4.12.a"><a href="#ula-proteus-linear_independence_q1" title="Copy permalink for Task 2.4.12.a">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-linear_independence_q2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="ula-proteus-linear_independence_q2-1-1">
+<div class="para">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\text{,}\)</span> and <span class="process-math">\(\vvec_4\)</span> are vectors such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-linear-independence.html">
+\begin{equation*}
+2\vvec_1 -3\vvec_2 -\vvec_3 +\vvec_4= \zerovec\text{.}
+\end{equation*}
+</div>
+<div class="para">What, if anything, can you conclude about the linear independence or linear dependence of this set of vectors? Explain your thinking by referring to the <a href="sec-linear-dep.html#definition-linear-independence" class="xref" data-knowl="./knowl/xref/definition-linear-independence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.4.5">definition of linear independence.</a>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-linear_independence_q2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.4.12.b"><a href="#ula-proteus-linear_independence_q2" title="Copy permalink for Task 2.4.12.b">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-linear_independence_q3"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="ula-proteus-linear_independence_q3-1-1">
+<div class="para">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\text{,}\)</span> and <span class="process-math">\(\vvec_4\)</span> are vectors such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2\vvec_1 -3\vvec_2 -\vvec_3 +\vvec_4= \zerovec\text{.}
+\end{equation*}
+</div>
+<div class="para">What, if anything, can you conclude about the relationship between <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}\)</span> and <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\vvec_3}\text{?}\)</span> Explain your thinking.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-linear_independence_q3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.4.12.c"><a href="#ula-proteus-linear_independence_q3" title="Copy permalink for Task 2.4.12.c">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-linear_independence_q4"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ula-proteus-linear_independence_q4-1-1">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> form a linearly independent set of vectors in <span class="process-math">\(\real^n\text{.}\)</span> Is it Always True, Sometimes True, or Never True that <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> form a linearly independent set? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-linear_independence_q4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.4.12.d"><a href="#ula-proteus-linear_independence_q4" title="Copy permalink for Task 2.4.12.d">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-linear_independence_q5"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ula-proteus-linear_independence_q5-1-1">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> form a linearly independent set of vectors in <span class="process-math">\(\real^n\)</span> and that <span class="process-math">\(\vvec_4\)</span> is a fourth vector in <span class="process-math">\(\real^n\text{.}\)</span> Is it Always True, Sometimes True, or Never True that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\text{,}\)</span> and <span class="process-math">\(\vvec_4\)</span> form a linearly independent set? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-linear_independence_q5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.4.12.e"><a href="#ula-proteus-linear_independence_q5" title="Copy permalink for Task 2.4.12.e">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 2.4.12: A review of linear independence"><a href="#ula-proteus-2-4-linear-indep-review" title="Copy permalink for Checkpoint 2.4.12: A review of linear independence">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-2-4-recognizing-linear-independence"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.13</span><span class="period">.</span><span class="space"> </span><span class="title">Recognizing linear independence.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-4-recognizing-linear-independence">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-2-4-recognizing-linear-independence-2-1">Suppose that <span class="process-math">\(\basis{\vvec}{n}\)</span> is a set of vectors in <span class="process-math">\(\real^{23}\)</span> and that <span class="process-math">\(A=\begin{bmatrix}
+\vvec_1\amp\ldots\amp\vvec_n
+\end{bmatrix}
+\text{.}\)</span> For each of the statements on the left, determine what we can conclude about the linear independence of this set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-4-recognizing-linear-independence-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag1" data-category="1">The matrix <span class="process-math">\(A\)</span> has a pivot position in every column.</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag2" data-category="1">The equation <span class="process-math">\(A\xvec=\zerovec\)</span> has exactly one solution.</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-4-recognizing-linear-independence_drag1" data-category="1">Linearly independent</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag3" data-category="2"><span class="process-math">\(\vvec_1+\vvec_2+\ldots+\vvec_n = \zerovec\text{.}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag4" data-category="2">
+<span class="process-math">\(\basis{\vvec}{n}\)</span> is a set of <span class="process-math">\(25\)</span> vectors.</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-4-recognizing-linear-independence_drag2" data-category="2">Linearly dependent</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag5" data-category="3"><span class="process-math">\(\laspan{\basis{\vvec}{n}} = \real^{23}\text{.}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag6" data-category="3">
+<span class="process-math">\(\basis{\vvec}{n}\)</span> is a set of <span class="process-math">\(23\)</span> vectors.</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag7" data-category="3">
+<span class="process-math">\(\basis{\vvec}{n}\)</span> is a set of <span class="process-math">\(22\)</span> vectors.</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag8" data-category="3">The matrix <span class="process-math">\(A\)</span> has a pivot position in every row.</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-4-recognizing-linear-independence_drag3" data-category="3">Not enough information to determine</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 2.4.13: Recognizing linear independence"><a href="#ula-proteus-2-4-recognizing-linear-independence" title="Copy permalink for Checkpoint 2.4.13: Recognizing linear independence">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.4.4: Summary"><a href="#sec-linear-dep-6" title="Copy permalink for Subsection 2.4.4: Summary">🔗</a></div></section><section class="exercises" id="sec-linear-dep-7"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-linear-dep-7-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
