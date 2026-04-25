@@ -1101,9 +1101,9 @@
 	  <m>d</m>.
 	</p></li>
       </ol>
-      The matrices of this form give a model for the complex numbers
+      <!-- The matrices of this form give a model for the complex numbers
       and will play an important role in <xref
-      ref="sec-dynamical" />.
+      ref="sec-dynamical" />. -->
       </p>
     </statement>
 

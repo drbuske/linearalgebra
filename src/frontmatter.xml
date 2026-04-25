@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Front Matter</title>
-  <subtitle>Math 312</subtitle>
+  <!-- <subtitle>Math 312</subtitle> -->
 
   <titlepage>
     <titlepage-items/>
@@ -21,8 +21,9 @@
       2026
     </edition>
     <website>
-      <url href="https://understandinglinearalgebra.org"
-           visual="understandinglinearalgebra.org"/>
+      <!-- <url href="https://understandinglinearalgebra.org"
+           visual="understandinglinearalgebra.org"/> -->
+           <url href="https://drbuske.github.io/Math312" visual="https://drbuske.github.io/Math312"/>
       <!--
       <name>http://gvsu.edu/s/0Ck</name>
       <address>http://gvsu.edu/s/0Ck</address>
@@ -50,6 +51,15 @@
     <colophon-items/>
   </colophon>
 
+   <preface>
+      <title>Acknowledgement</title>
+  <!-- <acknowledgement> -->
+    <p>
+      David Austin has written the vast majority of this text (Understanding Linear Algebra) and deserves significant credit for its production.  I acknowledge him and his acknowledgements are found in an appendix.  
+    </p>
+
+  </preface>
+
   <!-- <dedication>
     <p>
       For Sam and Henry
@@ -59,7 +69,7 @@
 
 
   <xi:include href="./syllabus.ptx" />
-  <xi:include href="./preface.xml" />
+
   
 
 </frontmatter>

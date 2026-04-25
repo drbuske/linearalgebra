@@ -7,6 +7,8 @@
 
   <xi:include href="./print-note.xml" />
 
+  <xi:include href="./preface.xml" />
+
     <appendix>
       <title>Acknowledgement</title>
   <!-- <acknowledgement> -->

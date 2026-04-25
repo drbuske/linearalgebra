@@ -1135,9 +1135,10 @@
     </assemblage>
 
     <p>
-      There is one final property we wish to record though we will
+      There is one final property we wish to record.
+	  <!-- though we will
       wait until <xref ref="sec-svd-intro" /> to explain why it is
-      true.
+      true.--> 
     </p>
 
     <proposition xml:id="prop-col-row-rank">

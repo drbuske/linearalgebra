@@ -449,7 +449,7 @@
       <m>A</m>; we simply write
       <me>
 	A = \left[\begin{array}{rrrr}
-
+	  T(\evec_1) \amp T(\evec_2) \amp \ldots \amp T(\evec_n)
 	\end{array}\right]
       </me>.
       We will now check that <m>T(\xvec) = A\xvec</m> using the

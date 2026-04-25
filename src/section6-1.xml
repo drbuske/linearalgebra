@@ -1835,6 +1835,126 @@ plotclusters(clusters, centroids)
 	</li>
       </ul>
     </p>
+
+	<exercise label="cardsort-dot-product">
+  <title>Understanding the Dot Product</title>
+
+  <statement>
+    <p>
+      Match each statement or situation with the correct interpretation
+      of the dot product.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        Two vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m> satisfy
+        <m>\mathbf{v}\cdot\mathbf{w}=0</m>.
+      </premise>
+
+      <response>
+        <p>The vectors are orthogonal</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        The dot product of two nonzero vectors is positive.
+      </premise>
+
+      <response>
+        <p>The angle between the vectors is acute</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        The dot product of two nonzero vectors is negative.
+      </premise>
+
+      <response>
+        <p>The angle between the vectors is obtuse</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\mathbf{v}\cdot\mathbf{v}</m>
+      </premise>
+
+      <response>
+        <p>The square of the length of <m>\mathbf{v}</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\mathbf{v}\cdot\mathbf{w} = \|\mathbf{v}\|\,\|\mathbf{w}\|\cos\theta</m>
+      </premise>
+
+      <response>
+        <p>Geometric definition of the dot product</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
+<exercise label="choices-kmeans">
+  <title>k‑Means Clustering</title>
+
+  <statement>
+    <p>
+      What is the primary goal of the k‑means algorithm?
+    </p>
+  </statement>
+
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>To partition data into <m>k</m> clusters by minimizing the distance from
+      points to their assigned cluster centers</statement>
+    </choice>
+    <choice>
+      <statement>To find clusters of arbitrary shape using density estimates</statement>
+    </choice>
+    <choice>
+      <statement>To build a hierarchy of nested clusters</statement>
+    </choice>
+    <choice>
+      <statement>To classify data using labeled training examples</statement>
+    </choice>
+  </choices>
+
+</exercise>
+
+<exercise label="choices-kmeans-2">
+  <title>k‑Means Clustering II</title>
+
+  <statement>
+	<p>
+      What must be chosen <em>before</em> running the k‑means algorithm?
+	</p>
+  </statement>
+
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>The number of clusters <m>k</m></statement>
+    </choice>
+    <choice>
+      <statement>The final cluster centers</statement>
+    </choice>
+    <choice>
+      <statement>The order in which points are processed</statement>
+    </choice>
+    <choice>
+      <statement>The stopping tolerance for distances</statement>
+    </choice>
+  </choices>
+
+</exercise>
+
   </subsection>
 
   <xi:include href="exercises/exercises6-1.xml" />

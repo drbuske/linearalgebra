@@ -28,7 +28,7 @@
     <tableofcontents level="2" />
     <exercise-divisional
       statement="yes"
-      hint="no"
+      hint="yes"
       answer="no"
       solution="no"
     />
