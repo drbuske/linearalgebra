@@ -1154,7 +1154,240 @@ T(\vvec+\wvec) \amp = T(\vvec)+T(\wvec). \\
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-5-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 2.6.3: Summary"><a href="#sec-transforms-geom-5" title="Copy permalink for Subsection 2.6.3: Summary">🔗</a></div></section><section class="exercises" id="sec-transforms-geom-6"><h3 class="heading hide-type">
+<article class="exercise exercise-like" id="ula-proteus-2-6-seeing-functions-v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.6.19</span><span class="period">.</span><span class="space"> </span><span class="title">Seeing matrix transformations as functions.</span>
+</h4>
+<div class="introduction" id="ula-proteus-2-6-seeing-functions-v1-2"><div class="para logical" id="ula-proteus-2-6-seeing-functions-v1-2-1">
+<div class="para">Consider the function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T\left(\threevec{x_1}{x_2}{x_3}\right) =
+\twovec{x_1 - 2x_2+4x_3}{2x_2+2x_3}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-seeing-functions-v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ula-proteus-2-6-seeing-functions-a-v1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ula-proteus-2-6-seeing-functions-a-v1-1-1">Evaluate <span class="process-math">\(T(\xvec)\)</span> if <span class="process-math">\(\xvec=\threevec312\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-seeing-functions-a-v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.6.19.a"><a href="#ula-proteus-2-6-seeing-functions-a-v1" title="Copy permalink for Task 2.6.19.a">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-2-6-seeing-functions-b-v1"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ula-proteus-2-6-seeing-functions-b-v1-1-1">If we write <span class="process-math">\(T:\real^m\to\real^n\text{,}\)</span> what are the values of <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-seeing-functions-b-v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.6.19.b"><a href="#ula-proteus-2-6-seeing-functions-b-v1" title="Copy permalink for Task 2.6.19.b">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-2-6-seeing-functions-c-v1"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ula-proteus-2-6-seeing-functions-c-v1-1-1">What is the matrix <span class="process-math">\(A\)</span> for which <span class="process-math">\(T(\xvec) = A\xvec\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-seeing-functions-c-v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.6.19.c"><a href="#ula-proteus-2-6-seeing-functions-c-v1" title="Copy permalink for Task 2.6.19.c">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-2-6-seeing-functions-d-v1"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ula-proteus-2-6-seeing-functions-d-v1-1-1">Describe all vectors <span class="process-math">\(\xvec\)</span> for which <span class="process-math">\(T(\xvec) =
+\zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-seeing-functions-d-v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.6.19.d"><a href="#ula-proteus-2-6-seeing-functions-d-v1" title="Copy permalink for Task 2.6.19.d">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-2-6-seeing-functions-e-v1"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ula-proteus-2-6-seeing-functions-e-v1-1-1">Describe all vectors <span class="process-math">\(\xvec\)</span> for which <span class="process-math">\(T(\xvec) =
+\twovec88\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-seeing-functions-e-v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.6.19.e"><a href="#ula-proteus-2-6-seeing-functions-e-v1" title="Copy permalink for Task 2.6.19.e">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 2.6.19: Seeing matrix transformations as functions"><a href="#ula-proteus-2-6-seeing-functions-v1" title="Copy permalink for Checkpoint 2.6.19: Seeing matrix transformations as functions">🔗</a></div></article><article class="exercise exercise-like" id="ula_proteus_2-6_Correct_Matrix_for_Transformation_v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.6.20</span><span class="period">.</span><span class="space"> </span><span class="title">Finding matrices of transformations.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1">
+<span data-subcomponent="question"><div class="para" id="ula_proteus_2-6_Correct_Matrix_for_Transformation_v1-2-1">On the left, you are given some transformations in vector form. If the transformation is a matrix transformation, drag it to the associated matrix. Otherwise, drag it to "Not a matrix transformation".<div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-6_Correct_Matrix_for_Transformation_v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag1" data-category="1"><span class="process-math">\(T\left(\cthreevec{x}{y}{z}\right)=
+\cthreevec{4x-z}{y-2x}{2x-3z+5y}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag1" data-category="1"><span class="process-math">\(\begin{bmatrix}
+4 \amp 0 \amp -1 \\ -2 \amp 1 \amp 0 \\ 2 \amp 5 \amp -3
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag2" data-category="2"><span class="process-math">\(T\left(\cthreevec{x}{y}{z}\right)=
+\cthreevec{4x+2z-2y}{y+5z}{-3z-x}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag2" data-category="2"><span class="process-math">\(\begin{bmatrix}
+4 \amp -2 \amp 2 \\ 0 \amp 1 \amp 5 \\ -1 \amp 0 \amp -3
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag3" data-category="3"><span class="process-math">\(T\left(\cthreevec{x}{y}{z}\right)=\ctwovec{z}{y-4x}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag3" data-category="3"><span class="process-math">\(\begin{bmatrix}
+0 \amp 0 \amp 1 \\ -4 \amp 1 \amp 0
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag4" data-category="4"><span class="process-math">\(T\left(\ctwovec{x_1}{x_2}\right)=
+\cthreevec{-4x_2}{x_2}{x_1}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag4" data-category="4"><span class="process-math">\(\begin{bmatrix}
+0 \amp -4 \\ 0 \amp 1 \\ 1 \amp 0
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag5" data-category="5"><span class="process-math">\(T\left(\cthreevec{x}{y}{z}\right)=
+\cthreevec{z-x^2}{x+y+z}{0}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag6" data-category="5"><span class="process-math">\(T\left(\cthreevec{a}{b}{c}\right)=
+\cthreevec{4a-1}{b-2}{2a-3c+5}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Correct_Matrix_for_Transformation_v1_drag5" data-category="5">Not a matrix transformation</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 2.6.20: Finding matrices of transformations"><a href="#ula_proteus_2-6_Correct_Matrix_for_Transformation_v1" title="Copy permalink for Checkpoint 2.6.20: Finding matrices of transformations">🔗</a></div></article><article class="exercise exercise-like" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.6.21</span><span class="period">.</span><span class="space"> </span><span class="title">Finding matrices of transformations graphically.</span>
+</h4>
+<div class="introduction" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1-2">
+<div class="para" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1-2-1">The unit square is shown on the left of <a href="sec-transforms-geom.html#diagram-unit-square-transformed" class="xref" data-knowl="./knowl/xref/diagram-unit-square-transformed.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.22">Figure 2.6.22</a>. Suppose that the matrix transformation <span class="process-math">\(T\)</span> transforms the unit square into the parallelogram shown on the right.<div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="diagram-unit-square-transformed"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;">
+<img src="generated/prefigure/prefigure-unit-square-2-6.svg" role="img" class="contained" alt="The unit square and the vector one zero."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="diagram-unit-square-transformed-1-1-description"><div class="para" id="diagram-unit-square-transformed-1-1-3-1">A <span class="process-math">\(1\time1\)</span> coordinate grid and a set of coordinate axes along with a <span class="process-math">\(1\times1\)</span> square with opposite corners at the origin and <span class="process-math">\((1,1)\text{.}\)</span> The vector <span class="process-math">\(\twovec10\)</span> is also included.<div class="autopermalink" data-description="Paragraph"><a href="#diagram-unit-square-transformed-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<div class="sbspanel top" style="width:44.4444444444444%;">
+<img src="generated/prefigure/prefigure-unit-square-2-6-transformed.svg" role="img" class="contained" alt="A paralellogram and vector."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="diagram-unit-square-transformed-1-2-description"><div class="para" id="diagram-unit-square-transformed-1-2-3-1">A <span class="process-math">\(1\times1\)</span> coordinate grid and a set of coordinate axes together with the parallelogram whose vertices are the origin, <span class="process-math">\((3,-1)\text{,}\)</span> <span class="process-math">\((4,1)\text{,}\)</span> and <span class="process-math">\((1,2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#diagram-unit-square-transformed-1-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.22<span class="period">.</span></span><span class="space"> </span>The unit square, which appears on the left, is transformed into the parallelogram shown on the right.<div class="autopermalink" data-description="Figure 2.6.22"><a href="#diagram-unit-square-transformed" title="Copy permalink for Figure 2.6.22">🔗</a></div></figcaption></figure>
+</div>
+<article class="task exercise-like" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task1_v1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task1_v1-1-1">Give the matrix of the transformation <span class="process-math">\(T\)</span> described above.<div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task1_v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.6.21.a"><a href="#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task1_v1" title="Copy permalink for Task 2.6.21.a">🔗</a></div></article><article class="task exercise-like" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1">
+<span data-subcomponent="question"><div class="para" id="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1-1-1">Using the transformation <span class="process-math">\(T\text{,}\)</span> match each of the expressions on the left with the appropriate output.<div class="autopermalink" data-description="Paragraph"><a href="#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag1" data-category="1"><div class="displaymath process-math">
+\begin{equation*}
+T\left(\twovec{1}{1}\right)
+\end{equation*}
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag1" data-category="1"><div class="displaymath process-math">
+\begin{equation*}
+\twovec{4}{1}
+\end{equation*}
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag2" data-category="2"><div class="displaymath process-math">
+\begin{equation*}
+T\left(\twovec{0}{1}\right)
+\end{equation*}
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag2" data-category="2"><div class="displaymath process-math">
+\begin{equation*}
+\twovec{1}{2}
+\end{equation*}
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag3" data-category="3"><div class="displaymath process-math">
+\begin{equation*}
+T\left(\twovec{-1}{0}\right)
+\end{equation*}
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag3" data-category="3"><div class="displaymath process-math">
+\begin{equation*}
+\twovec{-3}{1}
+\end{equation*}
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag4" data-category="4"><div class="displaymath process-math">
+\begin{equation*}
+T\left(\twovec{1}{0}\right)
+\end{equation*}
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag4" data-category="4"><div class="displaymath process-math">
+\begin{equation*}
+\twovec{3}{-1}
+\end{equation*}
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag5" data-category="5"><div class="displaymath process-math">
+\begin{equation*}
+T\left(\twovec{2}{-1}\right)
+\end{equation*}
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag5" data-category="5"><div class="displaymath process-math">
+\begin{equation*}
+\twovec{5}{-4}
+\end{equation*}
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag6" data-category="6"><div class="displaymath process-math">
+\begin{equation*}
+T\left(\twovec{0}{0}\right)
+\end{equation*}
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1_drag6" data-category="6"><div class="displaymath process-math">
+\begin{equation*}
+\twovec{0}{0}
+\end{equation*}
+</div></li>
+</ul></div></div>
+<div class="autopermalink" data-description="Task 2.6.21.b"><a href="#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_task2_v1" title="Copy permalink for Task 2.6.21.b">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 2.6.21: Finding matrices of transformations graphically"><a href="#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1" title="Copy permalink for Checkpoint 2.6.21: Finding matrices of transformations graphically">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-2-6-algebraic-properties"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.6.23</span><span class="period">.</span><span class="space"> </span><span class="title">Algebraic properties of matrix transformations.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-6-algebraic-properties">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-2-6-algebraic-properties-2-1">Suppose <span class="process-math">\(T\)</span> is a matrix transformation <span class="process-math">\(T(\xvec) =
+A\xvec\)</span> defined by the matrix <span class="process-math">\(A\text{.}\)</span> Determine whether each of the following properties is Always True, Never True, or Sometimes True.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag1" data-category="1"><div class="para" id="ula-proteus-2-6-algebraic-properties-3-1-1-1">If <span class="process-math">\(T(\xvec_1)=\zerovec\)</span> and <span class="process-math">\(T(\xvec_2)=\zerovec\text{,}\)</span> then <span class="process-math">\(T(\xvec_1
++\xvec_2)=\zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag2" data-category="1"><span class="process-math">\(T(\zerovec)=\zerovec\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag3" data-category="1"><div class="para" id="ula-proteus-2-6-algebraic-properties-3-1-3-1">If <span class="process-math">\(T(\xvec)=\zerovec\text{,}\)</span> then <span class="process-math">\(T(r\xvec)=\zerovec\)</span> for any scalar <span class="process-math">\(r\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-3-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-algebraic-properties_drag1" data-category="1">Always True</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag4" data-category="2"><div class="para" id="ula-proteus-2-6-algebraic-properties-3-2-1-1">If <span class="process-math">\(A\)</span> is a <span class="process-math">\(4\times 5\)</span> matrix and <span class="process-math">\(T(\xvec)=\yvec\text{,}\)</span> then <span class="process-math">\(\yvec\)</span> is in <span class="process-math">\(\real^5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-algebraic-properties_drag2" data-category="2">Never True</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag5" data-category="3"><div class="para" id="ula-proteus-2-6-algebraic-properties-3-3-1-1">If <span class="process-math">\(T(\xvec_1)=T(\xvec_2)\text{,}\)</span> then <span class="process-math">\(\xvec_1=\xvec_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag6" data-category="3"><div class="para" id="ula-proteus-2-6-algebraic-properties-3-3-2-1">If <span class="process-math">\(T(\xvec)=\zerovec\text{,}\)</span> then <span class="process-math">\(\xvec=\zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-algebraic-properties_drag7" data-category="3"><div class="para" id="ula-proteus-2-6-algebraic-properties-3-3-3-1">If <span class="process-math">\(A\xvec=\zerovec\text{,}\)</span> then <span class="process-math">\(\xvec=\zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-algebraic-properties-3-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-algebraic-properties_drag3" data-category="3">Sometimes True</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 2.6.23: Algebraic properties of matrix transformations"><a href="#ula-proteus-2-6-algebraic-properties" title="Copy permalink for Checkpoint 2.6.23: Algebraic properties of matrix transformations">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-2-6-identify-matrix-graphically"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.6.24</span><span class="period">.</span><span class="space"> </span><span class="title">Identifying matrix transformations graphically.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-6-identify-matrix-graphically">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-2-1">The unit square is depicted in <a href="sec-transforms-geom.html#diagram-unit-square" class="xref" data-knowl="./knowl/xref/diagram-unit-square.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.25">Figure 2.6.25</a>.  The right columns shows the image of the unit square under a matrix transformation. Match each matrix in the left column with the corresponding image of the unit square.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="diagram-unit-square"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/prefigure/prefigure-unit-square.svg" role="img" class="contained" alt="The unit square"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="diagram-unit-square-2-description"><div class="para" id="diagram-unit-square-2-3-1">The unit square, which is <span class="process-math">\(1\times1\)</span> square whose sides are parallel to the coordinate axes and with opposite corners at the origin and <span class="process-math">\((1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#diagram-unit-square-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.25<span class="period">.</span></span><span class="space"> </span>The unit square<div class="autopermalink" data-description="Figure 2.6.25"><a href="#diagram-unit-square" title="Copy permalink for Figure 2.6.25">🔗</a></div></figcaption></figure></span><li data-subcomponent="draggable" id="rs-ula-proteus-2-6-identify-matrix-graphically_drag1" data-category="1"><span class="process-math">\(\begin{bmatrix}
+0 \amp -1 \\
+1 \amp 0 \\
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-identify-matrix-graphically_drag1" data-category="1"><figure class="figure figure-like" id="ula-proteus-2-6-identify-matrix-graphically-3-1-2-1"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/prefigure-grid-1.svg" role="img" class="contained" alt="A square in the second quadrant of the coordinate plane."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-proteus-2-6-identify-matrix-graphically-3-1-2-1-1-description"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-3-1-2-1-1-3-1">A <span class="process-math">\(1\times1\)</span> square with sides parallel to the coordinate axes and opposite corners at the origin and <span class="process-math">\((-1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-1-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.26<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.6.26"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-1-2-1" title="Copy permalink for Figure 2.6.26">🔗</a></div></figcaption></figure></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-identify-matrix-graphically_drag2" data-category="2"><span class="process-math">\(\begin{bmatrix}
+-1 \amp 0 \\
+0 \amp 2 \\
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-identify-matrix-graphically_drag2" data-category="2"><figure class="figure figure-like" id="ula-proteus-2-6-identify-matrix-graphically-3-2-2-1"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/prefigure-grid-2.svg" role="img" class="contained" alt="A rectangle in the second quadrant of the coordinate plane with width one and height two."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-proteus-2-6-identify-matrix-graphically-3-2-2-1-1-description"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-3-2-2-1-1-3-1">A rectangle whose sides are parallel to the coordinate axes and with opposite corners at the origin and <span class="process-math">\((-1,2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-2-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.27<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.6.27"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-2-2-1" title="Copy permalink for Figure 2.6.27">🔗</a></div></figcaption></figure></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-identify-matrix-graphically_drag3" data-category="3"><span class="process-math">\(\begin{bmatrix}
+1 \amp 1 \\
+0 \amp 1 \\
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-identify-matrix-graphically_drag3" data-category="3"><figure class="figure figure-like" id="ula-proteus-2-6-identify-matrix-graphically-3-3-2-1"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/prefigure-grid-3.svg" role="img" class="contained" alt="A parallelogram in the first quadrant of the coordinate plane."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-proteus-2-6-identify-matrix-graphically-3-3-2-1-1-description"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-3-3-2-1-1-3-1">A parallelogram whose corners are at the origin, <span class="process-math">\((1,0)\text{,}\)</span> <span class="process-math">\((2,1)\text{,}\)</span> and <span class="process-math">\((1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-3-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.28<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.6.28"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-3-2-1" title="Copy permalink for Figure 2.6.28">🔗</a></div></figcaption></figure></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-identify-matrix-graphically_drag4" data-category="4"><span class="process-math">\(\begin{bmatrix}
+1 \amp 0 \\
+0 \amp 1 \\
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-identify-matrix-graphically_drag4" data-category="4"><figure class="figure figure-like" id="ula-proteus-2-6-identify-matrix-graphically-3-4-2-1"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/prefigure-grid-4.svg" role="img" class="contained" alt="The unit square in the coordinate plane."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-proteus-2-6-identify-matrix-graphically-3-4-2-1-1-description"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-3-4-2-1-1-3-1">A <span class="process-math">\(1\times1\)</span> square whose sides are parallel to the coordinate axes and with opposite corners at the origin and <span class="process-math">\((1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-4-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.29<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.6.29"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-4-2-1" title="Copy permalink for Figure 2.6.29">🔗</a></div></figcaption></figure></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-identify-matrix-graphically_drag5" data-category="5"><span class="process-math">\(\begin{bmatrix}
+1 \amp -1 \\
+1 \amp 1 \\
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-identify-matrix-graphically_drag5" data-category="5"><figure class="figure figure-like" id="ula-proteus-2-6-identify-matrix-graphically-3-5-2-1"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/prefigure-grid-5.svg" role="img" class="contained" alt="A square in the coordinate plane."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-proteus-2-6-identify-matrix-graphically-3-5-2-1-1-description"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-3-5-2-1-1-3-1">A square in the coordinate plane with corners at the origin, <span class="process-math">\((1,1)\text{,}\)</span> <span class="process-math">\((0,2)\text{,}\)</span> and <span class="process-math">\((-1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-5-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.30<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.6.30"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-5-2-1" title="Copy permalink for Figure 2.6.30">🔗</a></div></figcaption></figure></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-2-6-identify-matrix-graphically_drag6" data-category="6"><span class="process-math">\(\begin{bmatrix}
+1 \amp 1 \\
+1 \amp 1 \\
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-2-6-identify-matrix-graphically_drag6" data-category="6"><figure class="figure figure-like" id="ula-proteus-2-6-identify-matrix-graphically-3-6-2-1"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/prefigure-grid-6.svg" role="img" class="contained" alt="A line segment from the origin extending into the first quadrant at a 45 degree angle."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-proteus-2-6-identify-matrix-graphically-3-6-2-1-1-description"><div class="para" id="ula-proteus-2-6-identify-matrix-graphically-3-6-2-1-1-3-1">The line segment from the origin to the point <span class="process-math">\((2,2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-6-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.31<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.6.31"><a href="#ula-proteus-2-6-identify-matrix-graphically-3-6-2-1" title="Copy permalink for Figure 2.6.31">🔗</a></div></figcaption></figure></li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 2.6.24: Identifying matrix transformations graphically"><a href="#ula-proteus-2-6-identify-matrix-graphically" title="Copy permalink for Checkpoint 2.6.24: Identifying matrix transformations graphically">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.6.3: Summary"><a href="#sec-transforms-geom-5" title="Copy permalink for Subsection 2.6.3: Summary">🔗</a></div></section><section class="exercises" id="sec-transforms-geom-6"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-transforms-geom-6-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
@@ -1218,12 +1451,12 @@ T(\vvec+\wvec) \amp = T(\vvec)+T(\wvec). \\
 </div> <div class="para" id="ex-compose-reflections-1-2">It is a general fact that the composition of two reflections results in a rotation through twice the angle from the first line of reflection to the second.  We will investigate this more generally in <a href="sec-transforms-geom.html#ex-reflection-compose-general" class="xref" data-knowl="./knowl/xref/ex-reflection-compose-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.6.4.8">Exercise 2.6.4.8</a><div class="autopermalink" data-description="Paragraph"><a href="#ex-compose-reflections-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 2.6.4.2"><a href="#ex-compose-reflections" title="Copy permalink for Exercise 2.6.4.2">🔗</a></div></article><article class="exercise exercise-like" id="sec-transforms-geom-6-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="sec-transforms-geom-6-3-1-1">Shown below in <a href="sec-transforms-geom.html#fig-3d-basis" class="xref" data-knowl="./knowl/xref/fig-3d-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.19">Figure 2.6.19</a> are the vectors <span class="process-math">\(\evec_1\text{,}\)</span> <span class="process-math">\(\evec_2\text{,}\)</span> and <span class="process-math">\(\evec_3\)</span> in <span class="process-math">\(\real^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-transforms-geom-6-3-1-1">Shown below in <a href="sec-transforms-geom.html#fig-3d-basis" class="xref" data-knowl="./knowl/xref/fig-3d-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.32">Figure 2.6.32</a> are the vectors <span class="process-math">\(\evec_1\text{,}\)</span> <span class="process-math">\(\evec_2\text{,}\)</span> and <span class="process-math">\(\evec_3\)</span> in <span class="process-math">\(\real^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="fig-3d-basis"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;">
 <img src="external/images/3d-basis.svg" role="img" class="contained" alt="A set of three dimensional coordinate axes with a vector of length one drawn on each of the axes."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-3d-basis-1-1-description"><div class="para" id="fig-3d-basis-1-1-2-1">A set of three dimensional coordinate axes.  Each coordinate axis contains a vector of length one pointing in the direction in which the coordinate increases.  In particular, we have <span class="process-math">\(\evec_1=\threevec100\text{,}\)</span> <span class="process-math">\(\evec_2=\threevec010\text{,}\)</span> and <span class="process-math">\(\evec_3=\threevec001\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fig-3d-basis-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.19<span class="period">.</span></span><span class="space"> </span>The vectors <span class="process-math">\(\evec_1\text{,}\)</span> <span class="process-math">\(\evec_2\text{,}\)</span> and <span class="process-math">\(\evec_3\)</span> in <span class="process-math">\(\real^3\text{.}\)</span><div class="autopermalink" data-description="Figure 2.6.19"><a href="#fig-3d-basis" title="Copy permalink for Figure 2.6.19">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-transforms-geom-6-3-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.32<span class="period">.</span></span><span class="space"> </span>The vectors <span class="process-math">\(\evec_1\text{,}\)</span> <span class="process-math">\(\evec_2\text{,}\)</span> and <span class="process-math">\(\evec_3\)</span> in <span class="process-math">\(\real^3\text{.}\)</span><div class="autopermalink" data-description="Figure 2.6.32"><a href="#fig-3d-basis" title="Copy permalink for Figure 2.6.32">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-transforms-geom-6-3-1-3">
 <ol class="lower-alpha ol-marker-1" id="sec-transforms-geom-6-3-1-3-1">
 <li id="sec-transforms-geom-6-3-1-3-1-1">
 <div class="para" id="sec-transforms-geom-6-3-1-3-1-1-1">Imagine that the thumb of your right hand points in the direction of <span class="process-math">\(\evec_1\text{.}\)</span>  A positive rotation about the <span class="process-math">\(x\)</span> axis corresponds to a rotation in the direction in which your fingers point. Find the matrix definining the matrix transformation <span class="process-math">\(T\)</span> that rotates vectors by <span class="process-math">\(90^\circ\)</span> around the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-3-1-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
@@ -1339,7 +1572,7 @@ A=\left[\begin{array}{rr}
 <div class="autopermalink" data-description="Item"><a href="#sec-transforms-geom-6-5-1-2-1-4" title="Copy permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para">This is shown in <a href="sec-transforms-geom.html#fig-ex-rotate-about-p" class="xref" data-knowl="./knowl/xref/fig-ex-rotate-about-p.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.20">Figure 2.6.20</a>.</div>
+<div class="para">This is shown in <a href="sec-transforms-geom.html#fig-ex-rotate-about-p" class="xref" data-knowl="./knowl/xref/fig-ex-rotate-about-p.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.33">Figure 2.6.33</a>.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-5-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="fig-ex-rotate-about-p"><div class="sidebyside"><div class="sbsrow" style="margin-left:17.5%;margin-right:17.5%;"><div class="sbspanel top" style="width:100%;">
 <img src="external/images/ex-rotate-about-p.svg" role="img" class="contained" alt="A set of four diagrams illustrating how to rotate a vector about a point other than the origin."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-ex-rotate-about-p-1-1-description">
@@ -1348,7 +1581,7 @@ A=\left[\begin{array}{rr}
 </div>
 </div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.20<span class="period">.</span></span><span class="space"> </span>A sequence of matrix transformations that, when read right to left and top to bottom, rotate a vector about the point <span class="process-math">\((1,2)\text{.}\)</span><div class="autopermalink" data-description="Figure 2.6.20"><a href="#fig-ex-rotate-about-p" title="Copy permalink for Figure 2.6.20">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-transforms-geom-6-5-1-4">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.33<span class="period">.</span></span><span class="space"> </span>A sequence of matrix transformations that, when read right to left and top to bottom, rotate a vector about the point <span class="process-math">\((1,2)\text{.}\)</span><div class="autopermalink" data-description="Figure 2.6.33"><a href="#fig-ex-rotate-about-p" title="Copy permalink for Figure 2.6.33">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-transforms-geom-6-5-1-4">
 <div class="para">Remember that, when working with homogeneous coordinates, we consider matrices of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1390,14 +1623,14 @@ d \amp e \amp f \\
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-5-1-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 2.6.4.5"><a href="#sec-transforms-geom-6-5" title="Copy permalink for Exercise 2.6.4.5">🔗</a></div></article><article class="exercise exercise-like" id="sec-transforms-geom-6-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para" id="sec-transforms-geom-6-6-1-1">Consider the matrix transformation <span class="process-math">\(T:\real^2\to\real^2\)</span> that assigns to a vector <span class="process-math">\(\xvec\)</span> the closest vector on horizontal axis as illustrated in <a href="sec-transforms-geom.html#fig-ex-projection" class="xref" data-knowl="./knowl/xref/fig-ex-projection.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.21">Figure 2.6.21</a>.  This transformation is called the <em class="emphasis">projection</em> onto the horizontal axis.  You may imagine <span class="process-math">\(T(\xvec)\)</span> as the shadow cast by <span class="process-math">\(\xvec\)</span> from a flashlight far up on the positive <span class="process-math">\(y\)</span>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-transforms-geom-6-6-1-1">Consider the matrix transformation <span class="process-math">\(T:\real^2\to\real^2\)</span> that assigns to a vector <span class="process-math">\(\xvec\)</span> the closest vector on horizontal axis as illustrated in <a href="sec-transforms-geom.html#fig-ex-projection" class="xref" data-knowl="./knowl/xref/fig-ex-projection.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.34">Figure 2.6.34</a>.  This transformation is called the <em class="emphasis">projection</em> onto the horizontal axis.  You may imagine <span class="process-math">\(T(\xvec)\)</span> as the shadow cast by <span class="process-math">\(\xvec\)</span> from a flashlight far up on the positive <span class="process-math">\(y\)</span>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="fig-ex-projection"><div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel top" style="width:100%;">
 <img src="external/images/v-projection.svg" role="img" class="contained" alt="Two diagrams that show a vector and its vertical projection onto the horizontal axis."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-ex-projection-1-1-description"><div class="para" id="fig-ex-projection-1-1-2-1">The diagram on the left shows a vector <span class="process-math">\(\xvec =
 \twovec23\text{.}\)</span>  The matrix transformation <span class="process-math">\(T\)</span> projects vertically onto the horizontal axis so that the diagram on the right shows the vector <span class="process-math">\(T(\xvec) =
 \twovec20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fig-ex-projection-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.21<span class="period">.</span></span><span class="space"> </span>Projection onto the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" data-description="Figure 2.6.21"><a href="#fig-ex-projection" title="Copy permalink for Figure 2.6.21">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-transforms-geom-6-6-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.34<span class="period">.</span></span><span class="space"> </span>Projection onto the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" data-description="Figure 2.6.34"><a href="#fig-ex-projection" title="Copy permalink for Figure 2.6.34">🔗</a></div></figcaption></figure> <div class="para logical" id="sec-transforms-geom-6-6-1-3">
 <ol class="lower-alpha ol-marker-1" id="sec-transforms-geom-6-6-1-3-1">
 <li id="sec-transforms-geom-6-6-1-3-1-1">
 <div class="para" id="sec-transforms-geom-6-6-1-3-1-1-1">Find the matrix that defines this matrix transformation <span class="process-math">\(T\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-6-1-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
@@ -1524,14 +1757,14 @@ b \amp a \\
 \end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">We will draw the vector <span class="process-math">\(\twovec{a}{b}\)</span> in the plane and express it using polar coordinates <span class="process-math">\(r\)</span> and <span class="process-math">\(\theta\)</span> as shown in <a href="sec-transforms-geom.html#fig-ex-complex-polar" class="xref" data-knowl="./knowl/xref/fig-ex-complex-polar.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.22">Figure 2.6.22</a>.</div>
+<div class="para">We will draw the vector <span class="process-math">\(\twovec{a}{b}\)</span> in the plane and express it using polar coordinates <span class="process-math">\(r\)</span> and <span class="process-math">\(\theta\)</span> as shown in <a href="sec-transforms-geom.html#fig-ex-complex-polar" class="xref" data-knowl="./knowl/xref/fig-ex-complex-polar.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.35">Figure 2.6.35</a>.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-transforms-geom-6-7-1-1-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-ex-complex-polar"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;">
 <img src="external/images/ex-complex-polar.svg" role="img" class="contained" alt="A vector is represented by an arrow with its length and the angle with the horizontal axis indicated."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-ex-complex-polar-1-1-description"><div class="para" id="fig-ex-complex-polar-1-1-2-1">The vector <span class="process-math">\(\twovec ab\)</span> is represented as an arrow beginning at the origin.  The length of the vector is denoted by <span class="process-math">\(r\)</span> and the angle with the positive horizontal axis by <span class="process-math">\(\theta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fig-ex-complex-polar-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.22<span class="period">.</span></span><span class="space"> </span>A vector may be expressed in polar coordinates.<div class="autopermalink" data-description="Figure 2.6.22"><a href="#fig-ex-complex-polar" title="Copy permalink for Figure 2.6.22">🔗</a></div></figcaption></figure><div class="para logical" id="sec-transforms-geom-6-7-1-1-2-4-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.35<span class="period">.</span></span><span class="space"> </span>A vector may be expressed in polar coordinates.<div class="autopermalink" data-description="Figure 2.6.35"><a href="#fig-ex-complex-polar" title="Copy permalink for Figure 2.6.35">🔗</a></div></figcaption></figure><div class="para logical" id="sec-transforms-geom-6-7-1-1-2-4-3">
 <div class="para">We then have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1612,15 +1845,15 @@ T\)</span> in terms of the <span class="process-math">\(a\text{,}\)</span> <span
 \end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">We would like to find a similar expression for the matrix that represents the reflection across <span class="process-math">\(L_\theta\text{,}\)</span> the line passing through the origin and making an angle of <span class="process-math">\(\theta\)</span> with the positive <span class="process-math">\(x\)</span>-axis, as shown in <a href="sec-transforms-geom.html#fig-ex-reflection-def" class="xref" data-knowl="./knowl/xref/fig-ex-reflection-def.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.23">Figure 2.6.23</a>.</div>
+<div class="para">We would like to find a similar expression for the matrix that represents the reflection across <span class="process-math">\(L_\theta\text{,}\)</span> the line passing through the origin and making an angle of <span class="process-math">\(\theta\)</span> with the positive <span class="process-math">\(x\)</span>-axis, as shown in <a href="sec-transforms-geom.html#fig-ex-reflection-def" class="xref" data-knowl="./knowl/xref/fig-ex-reflection-def.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.36">Figure 2.6.36</a>.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ex-reflection-compose-general-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="fig-ex-reflection-def"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;">
 <img src="external/images/ex-reflection-def.svg" role="img" class="contained" alt="A line, a vector x, and the result of reflecting x in the line."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-ex-reflection-def-1-1-description"><div class="para" id="fig-ex-reflection-def-1-1-2-1">The line <span class="process-math">\(L_\theta\)</span> that makes an angle <span class="process-math">\(\theta\)</span> with the positive horizontal axis along with a vector <span class="process-math">\(\xvec\text{.}\)</span>  The result of reflecting <span class="process-math">\(\xvec\)</span> in the line <span class="process-math">\(L_\theta\)</span> is shown and denoted by <span class="process-math">\(T(\xvec)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fig-ex-reflection-def-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.23<span class="period">.</span></span><span class="space"> </span>The reflection across the line <span class="process-math">\(L_\theta\text{.}\)</span><div class="autopermalink" data-description="Figure 2.6.23"><a href="#fig-ex-reflection-def" title="Copy permalink for Figure 2.6.23">🔗</a></div></figcaption></figure> <ol class="lower-alpha ol-marker-1" id="ex-reflection-compose-general-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.36<span class="period">.</span></span><span class="space"> </span>The reflection across the line <span class="process-math">\(L_\theta\text{.}\)</span><div class="autopermalink" data-description="Figure 2.6.36"><a href="#fig-ex-reflection-def" title="Copy permalink for Figure 2.6.36">🔗</a></div></figcaption></figure> <ol class="lower-alpha ol-marker-1" id="ex-reflection-compose-general-1-3">
 <li id="ex-reflection-compose-general-1-3-1">
-<div class="para" id="ex-reflection-compose-general-1-3-1-1">To do this, notice that this reflection can be obtained by composing three separate transformations as shown in <a href="sec-transforms-geom.html#fig-ex-reflection-compose" class="xref" data-knowl="./knowl/xref/fig-ex-reflection-compose.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.24">Figure 2.6.24</a>.  Beginning with the vector <span class="process-math">\(\xvec\text{,}\)</span> we apply the transformation <span class="process-math">\(R\)</span> to rotate by <span class="process-math">\(-\theta\)</span> and obtain <span class="process-math">\(R(\xvec)\text{.}\)</span>  Next, we apply <span class="process-math">\(S\text{,}\)</span> a reflection in the horizontal axis, followed by <span class="process-math">\(T\text{,}\)</span> a rotation by <span class="process-math">\(\theta\text{.}\)</span>  We see that <span class="process-math">\(T(S(R(\xvec)))\)</span> is the same as the reflection of <span class="process-math">\(\xvec\)</span> in the original line <span class="process-math">\(L_\theta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-reflection-compose-general-1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-reflection-compose-general-1-3-1-1">To do this, notice that this reflection can be obtained by composing three separate transformations as shown in <a href="sec-transforms-geom.html#fig-ex-reflection-compose" class="xref" data-knowl="./knowl/xref/fig-ex-reflection-compose.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.6.37">Figure 2.6.37</a>.  Beginning with the vector <span class="process-math">\(\xvec\text{,}\)</span> we apply the transformation <span class="process-math">\(R\)</span> to rotate by <span class="process-math">\(-\theta\)</span> and obtain <span class="process-math">\(R(\xvec)\text{.}\)</span>  Next, we apply <span class="process-math">\(S\text{,}\)</span> a reflection in the horizontal axis, followed by <span class="process-math">\(T\text{,}\)</span> a rotation by <span class="process-math">\(\theta\text{.}\)</span>  We see that <span class="process-math">\(T(S(R(\xvec)))\)</span> is the same as the reflection of <span class="process-math">\(\xvec\)</span> in the original line <span class="process-math">\(L_\theta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-reflection-compose-general-1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-ex-reflection-compose"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel top" style="width:100%;">
 <img src="external/images/ex-reflection-compose.svg" role="img" class="contained" alt="A series of four diagrams that decompose the reflection in a line into simpler transformations."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-ex-reflection-compose-1-1-description">
@@ -1629,7 +1862,7 @@ T\)</span> in terms of the <span class="process-math">\(a\text{,}\)</span> <span
 </div>
 </div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.24<span class="period">.</span></span><span class="space"> </span>Reflection in the line <span class="process-math">\(L_\theta\)</span> as a composition of three transformations.<div class="autopermalink" data-description="Figure 2.6.24"><a href="#fig-ex-reflection-compose" title="Copy permalink for Figure 2.6.24">🔗</a></div></figcaption></figure><div class="para logical" id="ex-reflection-compose-general-1-3-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.6.37<span class="period">.</span></span><span class="space"> </span>Reflection in the line <span class="process-math">\(L_\theta\)</span> as a composition of three transformations.<div class="autopermalink" data-description="Figure 2.6.37"><a href="#fig-ex-reflection-compose" title="Copy permalink for Figure 2.6.37">🔗</a></div></figcaption></figure><div class="para logical" id="ex-reflection-compose-general-1-3-1-3">
 <div class="para">Using this decomposition, show that the reflection in the line <span class="process-math">\(L_\theta\)</span> is described by the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}

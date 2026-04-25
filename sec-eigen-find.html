@@ -1455,7 +1455,146 @@ A.eigenvectors_right()
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-eigen-find-7-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 4.2.5: Summary"><a href="#sec-eigen-find-7" title="Copy permalink for Subsection 4.2.5: Summary">🔗</a></div></section><section class="exercises" id="sec-eigen-find-8"><h3 class="heading hide-type">
+<article class="exercise exercise-like" id="ula-proteus-4-2-reasoning-about-eigenthings"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.2.15</span><span class="period">.</span><span class="space"> </span><span class="title">Reasoning about eigenvectors and eigenvalues.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-4-2-reasoning-about-eigenthings">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-4-2-reasoning-about-eigenthings-2-1">Determine whether each of the statements about the eigenvectors and eigenvalues of a square matrix <span class="process-math">\(A\)</span> is Always True, Never True, or Sometimes True.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-reasoning-about-eigenthings-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag1" data-category="1">If <span class="process-math">\(\det(A+4I)=0\text{,}\)</span> then <span class="process-math">\(\lambda=-4\)</span> is an eigenvalue of <span class="process-math">\(A\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag2" data-category="1">If <span class="process-math">\(\lambda=3\)</span> is an eigenvalue of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(E_3=\nul(A-3I)\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag3" data-category="1">If <span class="process-math">\(\lambda = 0\)</span> is an eigenvalue of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(\det(A) = 0\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag4" data-category="1">If <span class="process-math">\(\nul(A-5I)=\{0\}\text{,}\)</span> then <span class="process-math">\(\lambda=5\)</span> is not an eigenvalue of <span class="process-math">\(A\text{.}\)</span>
+</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag1" data-category="1">Always True</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag5" data-category="2">If <span class="process-math">\(\lambda\)</span> is an eigenvalue of a matrix <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(A-\lambda I\)</span> is row equivalent to <span class="process-math">\(I\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag6" data-category="2">If the columns of <span class="process-math">\(A+I\)</span> are linearly independent, then <span class="process-math">\(\lambda=-1\)</span> is an eigenvalue of <span class="process-math">\(A\text{.}\)</span>
+</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag2" data-category="2">Never True</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag7" data-category="3">The eigenvalues of a matrix are its diagonal entries.</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag8" data-category="3">If <span class="process-math">\((\lambda-3)^2\)</span> is a factor of the characteristic polynomial of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(\dim E_3 = 2\text{.}\)</span>
+</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-4-2-reasoning-about-eigenthings_drag3" data-category="3">Sometimes True</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 4.2.15: Reasoning about eigenvectors and eigenvalues"><a href="#ula-proteus-4-2-reasoning-about-eigenthings" title="Copy permalink for Checkpoint 4.2.15: Reasoning about eigenvectors and eigenvalues">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-4-2-finding-and-using-eigenvectors"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.2.16</span><span class="period">.</span><span class="space"> </span><span class="title">Finding and using eigenvectors.</span>
+</h4>
+<div class="introduction" id="ula-proteus-4-2-finding-and-using-eigenvectors-2"><div class="para" id="ula-proteus-4-2-finding-and-using-eigenvectors-2-1">Let <span class="process-math">\(A = \begin{bmatrix}
+7 \amp -36 \\
+3 \amp -14
+\end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskA"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskA-1-1">Find the characteristic polynomial of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskA-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.16.a"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskA" title="Copy permalink for Task 4.2.16.a">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskB"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskB-1-1">Use the characteristic polynomial to find the eigenvalues of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskB-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.16.b"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskB" title="Copy permalink for Task 4.2.16.b">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskC"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskC-1-1">Find a basis for each eigenspace of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskC-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.16.c"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskC" title="Copy permalink for Task 4.2.16.c">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskD"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskD-1-1">Suppose <span class="process-math">\(\xvec = \twovec{-5}{-3}\text{.}\)</span> Write <span class="process-math">\(\xvec\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskD-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.16.d"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskD" title="Copy permalink for Task 4.2.16.d">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskE"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ula-proteus-4-2-finding-and-using-eigenvectors-taskE-1-1">Suppose <span class="process-math">\(\xvec = \twovec{-5}{-3}\text{.}\)</span> Use your answer to the preceding part to write <span class="process-math">\(A\xvec\)</span> as a linear combination of the eigenvectors of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskE-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.16.e"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors-taskE" title="Copy permalink for Task 4.2.16.e">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 4.2.16: Finding and using eigenvectors"><a href="#ula-proteus-4-2-finding-and-using-eigenvectors" title="Copy permalink for Checkpoint 4.2.16: Finding and using eigenvectors">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-4-2-reasoning-char-poly"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.2.17</span><span class="period">.</span><span class="space"> </span><span class="title">Reasoning with the characteristic polynomial.</span>
+</h4>
+<div class="introduction" id="ula-proteus-4-2-reasoning-char-poly-2"><div class="para" id="ula-proteus-4-2-reasoning-char-poly-2-1">Suppose the matrix <span class="process-math">\(A\)</span> has the characteristic polynomial <span class="process-math">\(\det(A - \lambda I) =
+(2-\lambda)(5-\lambda)(-1-\lambda)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-reasoning-char-poly-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ula-proteus-4-2-reasoning-char-poly-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ula-proteus-4-2-reasoning-char-poly-a-1-1">What is the shape of <span class="process-math">\(A\text{?}\)</span> Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-reasoning-char-poly-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.17.a"><a href="#ula-proteus-4-2-reasoning-char-poly-a" title="Copy permalink for Task 4.2.17.a">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-reasoning-char-poly-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ula-proteus-4-2-reasoning-char-poly-b-1-1">What are the eigenvalues of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-reasoning-char-poly-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.17.b"><a href="#ula-proteus-4-2-reasoning-char-poly-b" title="Copy permalink for Task 4.2.17.b">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-reasoning-char-poly-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ula-proteus-4-2-reasoning-char-poly-c-1-1">What can we conclude about the dimensions of the eigenspaces?<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-reasoning-char-poly-c-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.17.c"><a href="#ula-proteus-4-2-reasoning-char-poly-c" title="Copy permalink for Task 4.2.17.c">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-4-2-reasoning-char-poly-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ula-proteus-4-2-reasoning-char-poly-d-1-1">Can any vector in <span class="process-math">\(\real^3\)</span> be expressed as a linear combination of eigenvectors?  Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-reasoning-char-poly-d-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.17.d"><a href="#ula-proteus-4-2-reasoning-char-poly-d" title="Copy permalink for Task 4.2.17.d">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 4.2.17: Reasoning with the characteristic polynomial"><a href="#ula-proteus-4-2-reasoning-char-poly" title="Copy permalink for Checkpoint 4.2.17: Reasoning with the characteristic polynomial">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-4-2-conditions-for-evector-basis"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.2.18</span><span class="period">.</span><span class="space"> </span><span class="title">Determining when there is a basis of eigenvectors.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-4-2-conditions-for-evector-basis">
+<span data-subcomponent="question"><div class="para" id="ula-proteus-4-2-conditions-for-evector-basis-2-1">Determine whether each condition on an <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(A\)</span> implies that there is a basis of <span class="process-math">\(\real^n\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-conditions-for-evector-basis-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag1" data-category="1"><span class="process-math">\(\det(A-\lambda I) = -\lambda(4-\lambda) (2-\lambda)\text{.}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag2" data-category="1"><span class="process-math">\(\det(A-\lambda I) = \lambda^2-4\text{.}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag3" data-category="1"><span class="process-math">\(A = 5I\text{.}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag4" data-category="1">
+<span class="process-math">\(A\)</span> is <span class="process-math">\(2\times2\)</span> and there are vectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> with with <span class="process-math">\(A\vvec_1 = -4\vvec_1\)</span> and <span class="process-math">\(A\vvec_2 = 0\text{.}\)</span>
+</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-4-2-conditions-for-evector-basis_drag1" data-category="1">There is a basis of eigenvectors.</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag5" data-category="2"><span class="process-math">\(\det(A-\lambda I) = 4 + \lambda^2\text{.}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-4-2-conditions-for-evector-basis_drag2" data-category="2">There is not a basis of eigenvectors.</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag6" data-category="3"><span class="process-math">\(\det(A-\lambda I) =
+-\lambda(4-\lambda)^2 (2-\lambda)^3
+\text{.}\)</span></li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag7" data-category="3">
+<span class="process-math">\(A\)</span> is <span class="process-math">\(3\times3\)</span> and there are vectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> with <span class="process-math">\(A\vvec_1 = -4\vvec_1\)</span> and <span class="process-math">\(A\vvec_2 = 0\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-ula-proteus-4-2-conditions-for-evector-basis_drag8" data-category="3">
+<span class="process-math">\(A\)</span> is invertible.</li>
+<li data-subcomponent="dropzone" for="rs-ula-proteus-4-2-conditions-for-evector-basis_drag3" data-category="3">There is not enough information to determine.</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 4.2.18: Determining when there is a basis of eigenvectors"><a href="#ula-proteus-4-2-conditions-for-evector-basis" title="Copy permalink for Checkpoint 4.2.18: Determining when there is a basis of eigenvectors">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-4-2-proofcharpoly-v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.2.19</span><span class="period">.</span><span class="space"> </span><span class="title">Proving the characteristic polynomial condition.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-ula-proteus-4-2-proofcharpoly-v1">
+<div class="parsons_question parsons-text"><div class="para" id="ula-proteus-4-2-proofcharpoly-v1-2-1">Suppose <span class="process-math">\(A\)</span> is an <span class="process-math">\(n\times n\)</span> matrix and <span class="process-math">\(\lambda\)</span> is a scalar. Put the appropriate statements in order to give a proof that if <span class="process-math">\(A\xvec = \lambda \xvec\)</span> for some nonzero vector <span class="process-math">\(\xvec\text{,}\)</span> then <span class="process-math">\(\det(A-\lambda
+I_n)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-noindent="true"><div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-1-1">Assume <span class="process-math">\(A\xvec = \lambda \xvec\)</span> for some nonzero vector <span class="process-math">\(\xvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-2-1">
+<span class="process-math">\(A\xvec-\lambda \xvec=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-3-1">
+<span class="process-math">\(A\xvec-\lambda I_n \xvec=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-4-1">
+<span class="process-math">\((A-\lambda I_n)\xvec=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-5-1">Since <span class="process-math">\(\xvec\)</span> is not zero, <span class="process-math">\((A-\lambda I_n)\)</span> is not invertible.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-6-1">Therefore, <span class="process-math">\(\det(A-\lambda I_n)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-7-1">Assume <span class="process-math">\(\det(A-\lambda I_n)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-7-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> #distractor
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-8-1">
+<span class="process-math">\((A-\lambda)\xvec=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-8-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> #distractor
+---
+<div class="para" id="ula-proteus-4-2-proofcharpoly-v1-3-9-1">
+<span class="process-math">\((A-\lambda I_n)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-proofcharpoly-v1-3-9-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> #distractor</pre>
+</div></div></div>
+<div class="autopermalink" data-description="Checkpoint 4.2.19: Proving the characteristic polynomial condition"><a href="#ula-proteus-4-2-proofcharpoly-v1" title="Copy permalink for Checkpoint 4.2.19: Proving the characteristic polynomial condition">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-4-2-examplemultandbasis-v1"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.2.20</span><span class="period">.</span><span class="space"> </span><span class="title">Finding examples of matrices with multiplicity 2.</span>
+</h4>
+<div class="introduction" id="ula-proteus-4-2-examplemultandbasis-v1-2"><div class="para" id="ula-proteus-4-2-examplemultandbasis-v1-2-1">Give an example of a matrix that meets the given criteria.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-4-2-examplemultandbasis-v1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ula-protues-4-2-examplemultandbasis-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ula-protues-4-2-examplemultandbasis-a-1-1">Give an example of a <span class="process-math">\(2\times 2\)</span> matrix <span class="process-math">\(A\)</span> with one real eigenvalue of multiplicity 2 for which there is a basis of <span class="process-math">\(\real^2\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{.}\)</span>  Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-protues-4-2-examplemultandbasis-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.20.a"><a href="#ula-protues-4-2-examplemultandbasis-a" title="Copy permalink for Task 4.2.20.a">🔗</a></div></article><article class="task exercise-like" id="ula-protues-4-2-examplemultandbasis-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ula-protues-4-2-examplemultandbasis-b-1-1">Give an example of a <span class="process-math">\(2\times 2\)</span> matrix <span class="process-math">\(A\)</span> with one real eigenvalue of multiplicity 2 for which there is <em class="emphasis">not</em> a basis of <span class="process-math">\(\real^2\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{.}\)</span>  Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-protues-4-2-examplemultandbasis-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.2.20.b"><a href="#ula-protues-4-2-examplemultandbasis-b" title="Copy permalink for Task 4.2.20.b">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 4.2.20: Finding examples of matrices with multiplicity 2"><a href="#ula-proteus-4-2-examplemultandbasis-v1" title="Copy permalink for Checkpoint 4.2.20: Finding examples of matrices with multiplicity 2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 4.2.5: Summary"><a href="#sec-eigen-find-7" title="Copy permalink for Subsection 4.2.5: Summary">🔗</a></div></section><section class="exercises" id="sec-eigen-find-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-eigen-find-8-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>

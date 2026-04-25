@@ -913,8 +913,8 @@ R\xhat = Q^T\bvec.
 <div class="autopermalink" data-description="Paragraph"><a href="#activity-BFI-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="activity-BFI-1-1-1-2-2">
-<div class="para">Since <span class="process-math">\(R\)</span> is upper triangular, this is a relatively simple equation to solve using back substitution, as we saw in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "sec-gaussian-revisited" missing or not unique]</code>.  We will therefore write the least-squares approximate solution as</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">Since <span class="process-math">\(R\)</span> is upper triangular, this is a relatively simple equation to solve using back substitution.  We will therefore write the least-squares approximate solution as</div>
+<div class="displaymath process-math">
 \begin{equation*}
 \xhat = R^{-1}Q^T\bvec,
 \end{equation*}
@@ -1278,7 +1278,33 @@ list_plot(data, color='blue', size=40)
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-least-squares-7-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.5.5: Summary"><a href="#sec-least-squares-7" title="Copy permalink for Subsection 6.5.5: Summary">🔗</a></div></section><section class="exercises" id="sec-least-squares-8"><h3 class="heading hide-type">
+<article class="exercise exercise-like" id="ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.5.11</span><span class="period">.</span><span class="space"> </span><span class="title">Finding and using eigenvectors.</span>
+</h4>
+<div class="introduction" id="ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system-2"><div class="para" id="ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system-2-1">Consider the linear system of equations given by <span class="process-math">\(\left\{  \begin{array}{rcrcr}
+2x \amp - \amp 3y \amp=\amp 1 \\
+-2x \amp + \amp y \amp=\amp 3 \\
+x \amp - \amp y \amp=\amp 1\end{array} \right.\text{.}\)</span>  The Sage cell below loads many of the commands that we have used in this section. <div id="ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system-2-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">sage.repl.load.load("https://raw.githubusercontent.com/davidaustinm/ula_modules/master/orthogonality.py", globals())
+</script></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ula-proteus-6-5-least-squares-solution-taskA"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ula-proteus-6-5-least-squares-solution-taskA-1-1">Find the reduced row echelon form of the augmented matrix corresponding to this linear system and explain why this shows that the system is inconsistent.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-6-5-least-squares-solution-taskA-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.5.11.a"><a href="#ula-proteus-6-5-least-squares-solution-taskA" title="Copy permalink for Task 6.5.11.a">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-6-5-least-squares-solution-taskB"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ula-proteus-6-5-least-squares-solution-taskB-1-1">This system can be written in the form <span class="process-math">\(A\xvec =
+\bvec\text{.}\)</span> What does the fact that the linear system is inconsistent say about the relationship between <span class="process-math">\(\bvec\)</span> and <span class="process-math">\(\col(A)\text{?}\)</span> Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-6-5-least-squares-solution-taskB-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.5.11.b"><a href="#ula-proteus-6-5-least-squares-solution-taskB" title="Copy permalink for Task 6.5.11.b">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-6-5-least-squares-solution-taskC"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ula-proteus-6-5-least-squares-solution-taskC-1-1">Determine a matrix <span class="process-math">\(P\)</span> such that <span class="process-math">\(P\bvec\)</span> is the orthogonal projection of <span class="process-math">\(\bvec\)</span> onto <span class="process-math">\(\col(A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-6-5-least-squares-solution-taskC-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.5.11.c"><a href="#ula-proteus-6-5-least-squares-solution-taskC" title="Copy permalink for Task 6.5.11.c">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-6-5-least-squares-solution-taskD"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ula-proteus-6-5-least-squares-solution-taskD-1-1">Use the matrix <span class="process-math">\(P\)</span> found in  the previous part to find the orthogonal projection <span class="process-math">\(\widehat{\bvec}\)</span> of <span class="process-math">\(\bvec\)</span> onto <span class="process-math">\(\col A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-6-5-least-squares-solution-taskD-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.5.11.d"><a href="#ula-proteus-6-5-least-squares-solution-taskD" title="Copy permalink for Task 6.5.11.d">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-6-5-least-squares-solution-taskE"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ula-proteus-6-5-least-squares-solution-taskE-1-1">With <span class="process-math">\(A\)</span> and <span class="process-math">\(\bhat\)</span> as in the previous part, find the solution <span class="process-math">\(\xhat\)</span> to the linear system <span class="process-math">\(A\xvec = \bhat\text{.}\)</span> Explain the significance of the solution <span class="process-math">\(\xhat\)</span> as it relates to the original linear system <span class="process-math">\(A\xvec = \bvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-6-5-least-squares-solution-taskE-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.5.11.e"><a href="#ula-proteus-6-5-least-squares-solution-taskE" title="Copy permalink for Task 6.5.11.e">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 6.5.11: Finding and using eigenvectors"><a href="#ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system" title="Copy permalink for Checkpoint 6.5.11: Finding and using eigenvectors">🔗</a></div></article><div class="autopermalink" data-description="Subsection 6.5.5: Summary"><a href="#sec-least-squares-7" title="Copy permalink for Subsection 6.5.5: Summary">🔗</a></div></section><section class="exercises" id="sec-least-squares-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">6.5.6</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <div class="para logical" id="sec-least-squares-8-1">
@@ -1356,7 +1382,7 @@ list_plot(data, color='blue', size=40)
 </div>
 <div class="autopermalink" data-description="Exercise 6.5.6.1"><a href="#sec-least-squares-8-2" title="Copy permalink for Exercise 6.5.6.1">🔗</a></div></article><article class="exercise exercise-like" id="ex-lst-squares-line"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para logical" id="ex-lst-squares-line-1-1">
-<div class="para">Consider the data in <a href="sec-least-squares.html#table-lst-squares-line" class="xref" data-knowl="./knowl/xref/table-lst-squares-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.11: A dataset with four points.">Table 6.5.11</a>. <figure class="table table-like" id="table-lst-squares-line"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.5.11<span class="period">.</span></span><span class="space"> </span>A dataset with four points.<div class="autopermalink" data-description="Table 6.5.11: A dataset with four points."><a href="#table-lst-squares-line" title="Copy permalink for Table 6.5.11: A dataset with four points.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">Consider the data in <a href="sec-least-squares.html#table-lst-squares-line" class="xref" data-knowl="./knowl/xref/table-lst-squares-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.12: A dataset with four points.">Table 6.5.12</a>. <figure class="table table-like" id="table-lst-squares-line"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.5.12<span class="period">.</span></span><span class="space"> </span>A dataset with four points.<div class="autopermalink" data-description="Table 6.5.12: A dataset with four points."><a href="#table-lst-squares-line" title="Copy permalink for Table 6.5.12: A dataset with four points.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
@@ -1411,7 +1437,7 @@ list_plot(data, color='blue', size=40)
 </div>
 <div class="autopermalink" data-description="Exercise 6.5.6.2"><a href="#ex-lst-squares-line" title="Copy permalink for Exercise 6.5.6.2">🔗</a></div></article><article class="exercise exercise-like" id="sec-least-squares-8-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-least-squares-8-4-1-1">
-<div class="para">Consider the four points in <a href="sec-least-squares.html#table-lst-squares-line" class="xref" data-knowl="./knowl/xref/table-lst-squares-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.11: A dataset with four points.">Table 6.5.11</a>. <div id="sec-least-squares-8-4-1-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
+<div class="para">Consider the four points in <a href="sec-least-squares.html#table-lst-squares-line" class="xref" data-knowl="./knowl/xref/table-lst-squares-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.12: A dataset with four points.">Table 6.5.12</a>. <div id="sec-least-squares-8-4-1-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
 </div>
 <ol class="lower-alpha ol-marker-1" id="sec-least-squares-8-4-1-1-3">
@@ -1448,7 +1474,7 @@ list_plot(data, color='blue', size=40)
 </div>
 <div class="autopermalink" data-description="Exercise 6.5.6.3"><a href="#sec-least-squares-8-4" title="Copy permalink for Exercise 6.5.6.3">🔗</a></div></article><article class="exercise exercise-like" id="sec-least-squares-8-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-least-squares-8-5-1-1">
-<div class="para">Consider the data in <a href="sec-least-squares.html#table-lst-squares-multi" class="xref" data-knowl="./knowl/xref/table-lst-squares-multi.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.12: A simple dataset">Table 6.5.12</a>. <figure class="table table-like" id="table-lst-squares-multi"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.5.12<span class="period">.</span></span><span class="space"> </span>A simple dataset<div class="autopermalink" data-description="Table 6.5.12: A simple dataset"><a href="#table-lst-squares-multi" title="Copy permalink for Table 6.5.12: A simple dataset">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">Consider the data in <a href="sec-least-squares.html#table-lst-squares-multi" class="xref" data-knowl="./knowl/xref/table-lst-squares-multi.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.13: A simple dataset">Table 6.5.13</a>. <figure class="table table-like" id="table-lst-squares-multi"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.5.13<span class="period">.</span></span><span class="space"> </span>A simple dataset<div class="autopermalink" data-description="Table 6.5.13: A simple dataset"><a href="#table-lst-squares-multi" title="Copy permalink for Table 6.5.13: A simple dataset">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x_1\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x_2\)</span></td>
