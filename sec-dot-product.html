@@ -146,7 +146,7 @@ sagecell.makeSagecell({
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://drbuske.github.io/Math312"><img src="external/images/SCSU_StC_Pri_DkBlkBG.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="ula.html"><span class="title">Linear Algebra</span></a></h1>
+<h1 class="heading"><a href="ula.html"><span class="title">Linear Algebra</span> <span class="subtitle">MATH 312</span></a></h1>
 <p class="byline">Dale Buske</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -241,17 +241,16 @@ sagecell.makeSagecell({
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
-<li class="toc-item toc-preface">
-<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="codenumber">1</span> <span class="title">Syllabus</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="codenumber">1</span> <span class="title">Course Information</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="codenumber">2</span> <span class="title">Topics and Learning Outcomes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-calendar.html" class="internal"><span class="codenumber">3</span> <span class="title">Calendar</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-assessments.html" class="internal"><span class="codenumber">4</span> <span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Topics and Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-calendar.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-assessments.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Assessments and Grades</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-7.html" class="internal"><span class="title">Our goals</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -538,8 +537,9 @@ sagecell.makeSagecell({
 <ul class="structural toc-item-list">
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-sage-reference.html" class="internal"><span class="codenumber">A</span> <span class="title">Sage Reference</span></a></div></li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="codenumber">B</span> <span class="title">A note on the print version</span></a></div></li>
-<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">Acknowledgement</span></a></div></li>
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">Textbook goals</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="codenumber">D</span> <span class="title">Acknowledgement</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -1270,7 +1270,64 @@ plotclusters(clusters, centroids)
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-dot-product-5-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.1.3: Summary"><a href="#sec-dot-product-5" title="Copy permalink for Subsection 6.1.3: Summary">🔗</a></div></section><section class="exercises" id="sec-dot-product-6"><h3 class="heading hide-type">
+<article class="exercise exercise-like" id="cardsort-dot-product"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Understanding the Dot Product.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-cardsort-dot-product">
+<span data-subcomponent="question"><div class="para" id="cardsort-dot-product-2-1">Match each statement or situation with the correct interpretation of the dot product.<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-dot-product-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-cardsort-dot-product_drag1" data-category="1">Two vectors <span class="process-math">\(\mathbf{v}\)</span> and <span class="process-math">\(\mathbf{w}\)</span> satisfy <span class="process-math">\(\mathbf{v}\cdot\mathbf{w}=0\text{.}\)</span>
+</li>
+<li data-subcomponent="dropzone" for="rs-cardsort-dot-product_drag1" data-category="1"><div class="para" id="cardsort-dot-product-3-1-2-1">The vectors are orthogonal<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-dot-product-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-cardsort-dot-product_drag2" data-category="2">The dot product of two nonzero vectors is positive.</li>
+<li data-subcomponent="dropzone" for="rs-cardsort-dot-product_drag2" data-category="2"><div class="para" id="cardsort-dot-product-3-2-2-1">The angle between the vectors is acute<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-dot-product-3-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-cardsort-dot-product_drag3" data-category="3">The dot product of two nonzero vectors is negative.</li>
+<li data-subcomponent="dropzone" for="rs-cardsort-dot-product_drag3" data-category="3"><div class="para" id="cardsort-dot-product-3-3-2-1">The angle between the vectors is obtuse<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-dot-product-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-cardsort-dot-product_drag4" data-category="4"><span class="process-math">\(\mathbf{v}\cdot\mathbf{v}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-cardsort-dot-product_drag4" data-category="4"><div class="para" id="cardsort-dot-product-3-4-2-1">The square of the length of <span class="process-math">\(\mathbf{v}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#cardsort-dot-product-3-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-subcomponent="draggable" id="rs-cardsort-dot-product_drag5" data-category="5"><span class="process-math">\(\mathbf{v}\cdot\mathbf{w} = \|\mathbf{v}\|\,\|\mathbf{w}\|\cos\theta\)</span></li>
+<li data-subcomponent="dropzone" for="rs-cardsort-dot-product_drag5" data-category="5"><div class="para" id="cardsort-dot-product-3-5-2-1">Geometric definition of the dot product<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-dot-product-3-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></li>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.16: Understanding the Dot Product"><a href="#cardsort-dot-product" title="Copy permalink for Checkpoint 6.1.16: Understanding the Dot Product">🔗</a></div></article><article class="exercise exercise-like" id="choices-kmeans"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.17</span><span class="period">.</span><span class="space"> </span><span class="title">k‑Means Clustering.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="choices-kmeans-2-1">What is the primary goal of the k‑means algorithm?<div class="autopermalink" data-description="Paragraph"><a href="#choices-kmeans-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-choices-kmeans" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-choices-kmeans_opt_a" data-correct="">To partition data into <span class="process-math">\(k\)</span> clusters by minimizing the distance from points to their assigned cluster centers</li>
+<li data-component="feedback" id="rs-choices-kmeans_opt_a">
+<li data-component="answer" id="rs-choices-kmeans_opt_b">To find clusters of arbitrary shape using density estimates</li>
+<li data-component="feedback" id="rs-choices-kmeans_opt_b">
+<li data-component="answer" id="rs-choices-kmeans_opt_c">To build a hierarchy of nested clusters</li>
+<li data-component="feedback" id="rs-choices-kmeans_opt_c">
+<li data-component="answer" id="rs-choices-kmeans_opt_d">To classify data using labeled training examples</li>
+<li data-component="feedback" id="rs-choices-kmeans_opt_d">
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.17: k‑Means Clustering"><a href="#choices-kmeans" title="Copy permalink for Checkpoint 6.1.17: k‑Means Clustering">🔗</a></div></article><article class="exercise exercise-like" id="choices-kmeans-2"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.18</span><span class="period">.</span><span class="space"> </span><span class="title">k‑Means Clustering II.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="choices-kmeans-2-2-1">What must be chosen <em class="emphasis">before</em> running the k‑means algorithm?<div class="autopermalink" data-description="Paragraph"><a href="#choices-kmeans-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-choices-kmeans-2" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-choices-kmeans-2_opt_a" data-correct="">The number of clusters <span class="process-math">\(k\)</span>
+</li>
+<li data-component="feedback" id="rs-choices-kmeans-2_opt_a">
+<li data-component="answer" id="rs-choices-kmeans-2_opt_b">The final cluster centers</li>
+<li data-component="feedback" id="rs-choices-kmeans-2_opt_b">
+<li data-component="answer" id="rs-choices-kmeans-2_opt_c">The order in which points are processed</li>
+<li data-component="feedback" id="rs-choices-kmeans-2_opt_c">
+<li data-component="answer" id="rs-choices-kmeans-2_opt_d">The stopping tolerance for distances</li>
+<li data-component="feedback" id="rs-choices-kmeans-2_opt_d">
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.18: k‑Means Clustering II"><a href="#choices-kmeans-2" title="Copy permalink for Checkpoint 6.1.18: k‑Means Clustering II">🔗</a></div></article><div class="autopermalink" data-description="Subsection 6.1.3: Summary"><a href="#sec-dot-product-5" title="Copy permalink for Subsection 6.1.3: Summary">🔗</a></div></section><section class="exercises" id="sec-dot-product-6"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-dot-product-6-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
@@ -1579,11 +1636,11 @@ q(\xvec) = \xvec\cdot(A\xvec),
 <img src="external/images/ex-eq-line.svg" role="img" class="contained" alt="A line with three vectors used to develop an equation of the line."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-ex-eq-line-1-1-description"><div class="para" id="fig-ex-eq-line-1-1-2-1">A line moves across the diagram with a coordinate grid and axes in the background.  There are three vectors, one labelled <span class="process-math">\(\pvec\text{,}\)</span> which begins at the origin and ends at a point on the line, and a vector <span class="process-math">\(\nvec\text{,}\)</span> which begins at the tip of <span class="process-math">\(\pvec\)</span> and points orthogonally to the line. There is a third vector <span class="process-math">\(\xvec\text{,}\)</span> which begins at the origin and ends at a general point on the line.<div class="autopermalink" data-description="Paragraph"><a href="#fig-ex-eq-line-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></div></details>
 </div></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.1.16<span class="period">.</span></span><span class="space"> </span>A line, a point <span class="process-math">\(\pvec\)</span> on the line, and a vector <span class="process-math">\(\nvec\)</span> perpendicular to the line.<div class="autopermalink" data-description="Figure 6.1.16"><a href="#fig-ex-eq-line" title="Copy permalink for Figure 6.1.16">🔗</a></div></figcaption></figure>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.1.19<span class="period">.</span></span><span class="space"> </span>A line, a point <span class="process-math">\(\pvec\)</span> on the line, and a vector <span class="process-math">\(\nvec\)</span> perpendicular to the line.<div class="autopermalink" data-description="Figure 6.1.19"><a href="#fig-ex-eq-line" title="Copy permalink for Figure 6.1.19">🔗</a></div></figcaption></figure>
 </div>
 <ol class="lower-alpha ol-marker-1" id="sec-dot-product-6-11-1-1-4">
 <li id="sec-dot-product-6-11-1-1-4-1">
-<div class="para" id="sec-dot-product-6-11-1-1-4-1-1">Find the slope and vertical intercept of the line shown in <a href="sec-dot-product.html#fig-ex-eq-line" class="xref" data-knowl="./knowl/xref/fig-ex-eq-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.16">Figure 6.1.16</a>.  Then write an equation for the line in the form <span class="process-math">\(y=mx+b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-dot-product-6-11-1-1-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-dot-product-6-11-1-1-4-1-1">Find the slope and vertical intercept of the line shown in <a href="sec-dot-product.html#fig-ex-eq-line" class="xref" data-knowl="./knowl/xref/fig-ex-eq-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.19">Figure 6.1.19</a>.  Then write an equation for the line in the form <span class="process-math">\(y=mx+b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-dot-product-6-11-1-1-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 6.1.4.11.a"><a href="#sec-dot-product-6-11-1-1-4-1" title="Copy permalink for Item 6.1.4.11.a">🔗</a></div>
 </li>
@@ -1604,7 +1661,7 @@ q(\xvec) = \xvec\cdot(A\xvec),
 <div class="autopermalink" data-description="Item 6.1.4.11.d"><a href="#sec-dot-product-6-11-1-1-4-4" title="Copy permalink for Item 6.1.4.11.d">🔗</a></div>
 </li>
 <li id="sec-dot-product-6-11-1-1-4-5">
-<div class="para" id="sec-dot-product-6-11-1-1-4-5-1">Identify the vectors <span class="process-math">\(\pvec\)</span> and <span class="process-math">\(\nvec\)</span> for the line illustrated in <a href="sec-dot-product.html#fig-ex-eq-line" class="xref" data-knowl="./knowl/xref/fig-ex-eq-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.16">Figure 6.1.16</a> and use them to write the equation of the line in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>  Verify that this expression is algebraically equivalent to the equation <span class="process-math">\(y=mx+b\)</span> that you earlier found for this line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-dot-product-6-11-1-1-4-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-dot-product-6-11-1-1-4-5-1">Identify the vectors <span class="process-math">\(\pvec\)</span> and <span class="process-math">\(\nvec\)</span> for the line illustrated in <a href="sec-dot-product.html#fig-ex-eq-line" class="xref" data-knowl="./knowl/xref/fig-ex-eq-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.19">Figure 6.1.19</a> and use them to write the equation of the line in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>  Verify that this expression is algebraically equivalent to the equation <span class="process-math">\(y=mx+b\)</span> that you earlier found for this line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-dot-product-6-11-1-1-4-5-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 6.1.4.11.e"><a href="#sec-dot-product-6-11-1-1-4-5" title="Copy permalink for Item 6.1.4.11.e">🔗</a></div>
 </li>
