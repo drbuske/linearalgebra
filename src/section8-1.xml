@@ -51,6 +51,9 @@
                 <url href="https://youtu.be/72GtkP6nP_A?si=JrbUeX-6672SGk2M" visual="Vector Spaces - Definition and Examples (8:10)"/>
             </p>
         </li>
+        	  <li>
+                <url href="https://youtu.be/TgKwz5Ikpc8?si=9Y5XWeLoRf4CTn3Y" visual="Abstract Vector Spaces (16:45)"/>
+        </li>
 	</ul>
 </objectives>
 
@@ -885,7 +888,101 @@ This sequence does not converge to 1. </li>
       uniqueness of the zero vector and additive inverses.
     </li>
   </ul>
-``
+
+  <exercise label="ula-proteus-8-1-vssort">
+      <title>Is This a Vector Space?</title>
+      <statement>  
+      <p>
+        Determine whether each set is a vector space or not.  
+      </p>
+
+      </statement>
+      <cardsort>
+        <match>
+          <premise>All vectors in <m>\mathbb{R}^3</m> with the usual vector addition and scalar multiplication.</premise>
+          <premise>The set of all polynomials <m>\mathbb{P}_2</m> with real coefficients of degree at most 2.</premise>
+          <premise>The set of all real-valued functions <m>f</m> such that <m>f(0)=0</m>.</premise>
+          <response><p>Is a vector space</p></response>
+        </match>
+
+        <match>
+          <premise>The set of all vectors in <m>\mathbb{R}^2</m> with positive entries under the usual addition and scalar multiplication.</premise>
+          <premise>The set of all polynomials with constant term equal to 1 under the usual addition and scalar multiplication.</premise>
+          <premise>The set of all real <m>2 \times 2</m> matrices with determinant 1 under the usual matrix addition and scalar multiplication.</premise>
+          <response><p>Is not a vector space</p></response>
+        </match>
+        
+      </cardsort>
+    </exercise>
+
+    <exercise label="cardsort-vecspace-basic-ideas">
+  <title>Basic Ideas Behind Vector Spaces</title>
+
+  <statement>
+    <p>
+      Vector spaces are defined by a small number of basic ideas.
+      Match each statement with the idea it illustrates.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        Adding two vectors in the space always produces another vector in the
+        same space.
+      </premise>
+
+      <response>
+        <p>Closure under addition</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        There is a vector that leaves every vector unchanged when added to it.
+      </premise>
+
+      <response>
+        <p>Zero vector</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        For every vector, there is another vector that adds with it to give the
+        zero vector.
+      </premise>
+
+      <response>
+        <p>Additive inverse</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        Multiplying a vector by a real number produces another vector in the
+        space.
+      </premise>
+
+      <response>
+        <p>Closure under scalar multiplication</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        Linear combinations of vectors in the space stay in the space.
+      </premise>
+
+      <response>
+        <p>Vector space structure</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   </subsection>
 
   

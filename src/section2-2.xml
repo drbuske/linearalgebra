@@ -1603,8 +1603,7 @@ A*B
     </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula_proteus_2-2_Linear_Combinations_v1">
+    <exercise label="ula_proteus_2-2_Linear_Combinations_v1">
       <title>Determining if a vector is a linear combination of
       a set of vectors</title>
       <statement>
@@ -1618,8 +1617,7 @@ A*B
     </exercise>
 
 
-    <exercise component="proteus"
-              label="ula_proteus_2-2_Linear_Combinations2_v1">
+    <exercise label="ula_proteus_2-2_Linear_Combinations2_v1">
       <title>Writing a vector as a linear combination of other vectors
       in three ways</title> 
       <statement>
@@ -1637,8 +1635,7 @@ A*B
     </exercise>
 
 
-    <exercise component="proteus"
-              label="ula_proteus_2-2_Linear_Combinations3_v1">
+    <exercise label="ula_proteus_2-2_Linear_Combinations3_v1">
       <title>Connecting linear combinations and matrix
       multiplication</title> 
       <statement>
@@ -1664,8 +1661,7 @@ A*B
       <response/>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-2-2-algprop-v1">
+    <exercise label="ula-proteus-2-2-algprop-v1">
       <title>Algebraic properties of matrix multiplication</title>
 
       <statement>
@@ -1706,8 +1702,7 @@ A*B
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-2-2-equivalence-representations-v1">
+    <exercise  label="ula-proteus-2-2-equivalence-representations-v1">
       <title>Representing linear systems</title>
 
       <statement>

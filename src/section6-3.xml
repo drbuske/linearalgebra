@@ -1895,8 +1895,7 @@
       </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-3-determining-weights-from-dot-products">
+    <exercise label="ula-proteus-6-3-determining-weights-from-dot-products">
       <title>Determining weights from dot products</title>
       <statement>
         <p>
@@ -1938,8 +1937,7 @@
       </evaluation>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-3-reasoning-orthog-basis">
+    <exercise label="ula-proteus-6-3-reasoning-orthog-basis">
       <title>Reasoning about an orthogonal basis</title>
 
       <statement>
@@ -2019,8 +2017,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-3-matching-orthog-proj">
+    <exercise label="ula-proteus-6-3-matching-orthog-proj">
       <title>Reasoning about orthogonal projections</title>
 
       <statement>
@@ -2062,8 +2059,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-3-process-for-decomposing-a-vector">
+    <exercise label="ula-proteus-6-3-process-for-decomposing-a-vector">
       <title>Writing a vector as a sum of a vector in <m>W</m> and a
       vector orthogonal to <m>W</m></title>
       <statement>

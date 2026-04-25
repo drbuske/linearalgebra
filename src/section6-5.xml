@@ -1015,8 +1015,10 @@ plot_model(xhat, data, domain=(12, 22))
 
 	      <p>
 		Since <m>R</m> is upper triangular, this is a relatively
-		simple equation to solve using back substitution, as we
-		saw in <xref ref="sec-gaussian-revisited" />.  We will
+		simple equation to solve using back substitution.
+		<!-- , as we
+		saw in <xref ref="sec-gaussian-revisited" />.  -->
+		We will
 		therefore write the least-squares approximate solution as
 		<me>
 		  \xhat = R^{-1}Q^T\bvec,
@@ -1924,8 +1926,7 @@ plot_model(xhat, data)
       </ul>
     </p>
 
-    <exercise component="proteus-playground"
-              label="ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system">
+    <exercise label="ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system">
       <title>Finding and using eigenvectors</title>
       <introduction>
         <p>

@@ -776,6 +776,93 @@ vector spaces. We also have the usual characterization of linear dependence in t
     </li>
   </ul>
 
+  <exercise label="ula-8-2-spansort">
+      <title>Do these vectors span the vector space?  </title>
+      <statement>  
+      <p>
+        Determine whether each set spans the vector space or not.  
+      </p>
+
+      </statement>
+      <cardsort>
+        <match>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}, \begin{bmatrix}1 \\ 1 \end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+          <premise> The set <m>\{1,x,x^2\}</m> in the vector space <m>\mathbb{P}_2</m>.</premise>
+		  <premise> The set <m>\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}, \begin{bmatrix}0 \\ 0 \\ 1 \end{bmatrix}\right\}</m> in <m>\mathbb{R}^3</m>.</premise>
+          <response><p>Spans the space</p></response>
+        </match>
+
+        <match>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 1 \end{bmatrix}, \begin{bmatrix}2 \\ 2\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+          <premise>The set <m>\{x,x^2\}</m> in the vector space <m>\mathbb{P}_2</m>.</premise>
+          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 2 \end{bmatrix}, \begin{bmatrix}3 \\ 6\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
+		  <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}\right\}</m> in <m>\mathbb{R}^3</m>.</premise>
+          <response><p>Does not span the space</p></response>
+        </match>
+        
+      </cardsort>
+    </exercise>
+
+   <exercise label="cardsort-linear-independence">
+  <title>Linear Independence</title>
+
+  <statement>
+    <p>
+      Determine whether the given set is <em>linearly independent</em> or
+      <em>linearly dependent</em>.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        The set
+        <m>\{(1,0),(0,1)\}</m>
+        in <m>\mathbb{R}^2</m>.
+      </premise>
+      <premise>
+        The set
+        <m>\{1,x,x^2\}</m>
+        in the vector space <m>\mathbb{P}_2</m>.
+      </premise>
+      <premise>
+        The set of functions
+        <m>\{\sin x,\cos x\}</m>
+        in <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>.
+      </premise>
+
+      <response>
+        <p>Linearly independent</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        The set
+        <m>\{(1,2),(2,4)\}</m>
+        in <m>\mathbb{R}^2</m>.
+      </premise>
+      <premise>
+        The set
+        <m>\{x^2+1,x^2-1,2x^2\}</m>
+        in the vector space <m>\mathbb{P}_2</m>.
+      </premise>
+      <premise>
+        The set of functions
+        <m>\{e^x,3e^x\}</m>
+        in <m>\mathrm{Func}_{\mathbb{R},\mathbb{R}}</m>.
+      </premise>
+
+      <response>
+        <p>Linearly dependent</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise> 
+
   </subsection>
 
   

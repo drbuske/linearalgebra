@@ -1183,8 +1183,7 @@
       </tabular>
     </table>
 
-    <exercise component="proteus"
-              label="ula-proteus-2-4-linear-indep-definition">
+    <exercise label="ula-proteus-2-4-linear-indep-definition">
       <title>Defining the concept of linear dependence</title>
 
       <statement>
@@ -1237,8 +1236,7 @@
       </choices>
     </exercise>
 	
-    <exercise component="proteus"
-              label="ula-proteus-2-4-linear-indep-review">
+    <exercise label="ula-proteus-2-4-linear-indep-review">
       <title>
         A review of linear independence
       </title>
@@ -1327,8 +1325,7 @@
       </task>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-2-4-recognizing-linear-independence">
+    <exercise label="ula-proteus-2-4-recognizing-linear-independence">
       <title>Recognizing linear independence</title>
 
       <statement>

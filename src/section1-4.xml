@@ -191,7 +191,7 @@
 	  every row and every column.  What is special about
 	  such a matrix? </p>
         </statement>
-        <response componet="rs-preview"/>
+        <response component="rs-preview"/>
         <solution>
           <p>
 	    A matrix with a pivot position in every row and every
@@ -1004,8 +1004,7 @@
       </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-1-4-pivots-reading-q1">
+    <exercise label="ula-proteus-1-4-pivots-reading-q1">
       <title>Pivots and the solution sets of linear systems</title>
 
       <introduction>
@@ -1059,8 +1058,7 @@
       </task>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-1-4-pivots-reading-q2">
+    <exercise label="ula-proteus-1-4-pivots-reading-q2">
       <title>The shape of a matrix and consistency</title>
       <statement>
         <p>
@@ -1073,8 +1071,7 @@
       <response/>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-1-4-pivots-reading-q3">
+    <exercise label="ula-proteus-1-4-pivots-reading-q3">
       <title>The shape of a matrix and solutions to a linear
       system</title> 
       <statement>

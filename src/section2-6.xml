@@ -191,6 +191,9 @@
         <li>
             <p><url href="https://youtu.be/rsCPzNuoCFs?si=i_uHrNZY9wwvsqnO" visual="Computer Graphics (4:58)"/></p>
         </li>
+        <li>
+            <p><url href="https://youtu.be/kYB8IZa5AuE?si=Z3DjLyKm7CjuzXAN" visual="Linear Transformations and Matrices (10:58)"/></p>
+        </li>
 	</ul>
 </objectives>
 
@@ -1634,8 +1637,7 @@
     </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-2-6-seeing-functions-v1">
+    <exercise label="ula-proteus-2-6-seeing-functions-v1">
       <title> Seeing matrix transformations as functions </title>
 
       <introduction>
@@ -1693,8 +1695,7 @@
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula_proteus_2-6_Correct_Matrix_for_Transformation_v1">
+    <exercise label="ula_proteus_2-6_Correct_Matrix_for_Transformation_v1">
       <title>Finding matrices of transformations</title>
       <statement>
         <p>On the left, you are given some transformations in vector
@@ -1772,8 +1773,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1">
+    <exercise label="ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1">
       <title>Finding matrices of transformations graphically</title>
 
       <introduction>
@@ -1911,8 +1911,7 @@
       </task>
     </exercise>
          
-    <exercise component="proteus"
-              label="ula-proteus-2-6-algebraic-properties">
+    <exercise label="ula-proteus-2-6-algebraic-properties">
       <title>Algebraic properties of matrix transformations</title>
 
       <statement>
@@ -1977,8 +1976,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-2-6-identify-matrix-graphically">
+    <exercise label="ula-proteus-2-6-identify-matrix-graphically">
       <title>Identifying matrix transformations graphically</title>
 
       <statement>

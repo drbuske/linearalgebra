@@ -1463,8 +1463,7 @@
       </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-2-reasoning-with-transpose-orthog-comp">
+    <exercise label="ula-proteus-6-2-reasoning-with-transpose-orthog-comp">
       <title>Reasoning about the matrix transpose and
       orthogonality</title>
       <statement>
@@ -1543,8 +1542,7 @@
       </evaluation>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-2-vectors_in_W_and_W_perp">
+    <exercise label="ula-proteus-6-2-vectors_in_W_and_W_perp">
       <title>Determining whether vectors are in <m>W</m> or
       <m>W^\perp</m></title>
       <statement>
@@ -1631,8 +1629,7 @@
       <response/>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-2-determining-dims-of-col-and-nul">
+    <exercise label="ula-proteus-6-2-determining-dims-of-col-and-nul">
       <title>Dimensions of column spaces and null spaces</title>
       <statement>
         <p>
@@ -1722,8 +1719,7 @@
       </evaluation>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-6-2-matching-vectors-col-nul">
+    <exercise label="ula-proteus-6-2-matching-vectors-col-nul">
       <title>Placing vectors in subspaces</title>
 
       <statement>

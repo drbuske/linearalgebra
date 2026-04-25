@@ -186,6 +186,9 @@
 		<li>
             <p><url href="https://youtu.be/OMOKNu25xCY?si=ZKIg8vMTk2njxlb2" visual="Column Space (6:09)"/></p>
         </li>
+		<li>
+            <p><url href="https://youtu.be/uQhTuRlWMxw?si=3zBoH6ZG6BAsFyEt" visual="Inverse Matrices, Column Space and Null Space (12:08)"/></p>
+        </li>
 	</ul>
 </objectives>
 
@@ -1216,8 +1219,7 @@ p	  </p></li>
       </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-5-def-subspace">
+    <exercise label="ula-proteus-3-5-def-subspace">
       <title>Defining the column space</title>
 
       <statement>
@@ -1261,8 +1263,7 @@ p	  </p></li>
       </choices>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-5-subspace-short-ans">
+    <exercise label="ula-proteus-3-5-subspace-short-ans">
       <title>Describing properties of subspaces</title>
 
       <task label="ula-proteus-3-5-subspace-short-ans-a">
@@ -1309,8 +1310,7 @@ p	  </p></li>
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-5-eltsofspaces-v1">
+    <exercise label="ula-proteus-3-5-eltsofspaces-v1">
       <title>Determining elements of spaces</title>
       <statement>
         <p>Consider the matrix <m>A</m> and its reduced row
@@ -1366,8 +1366,7 @@ p	  </p></li>
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-5-matchdim-v1">
+    <exercise label="ula-proteus-3-5-matchdim-v1">
       <title>Determining dimensions of subspaces</title>
       <statement>
         <p>Suppose <m>A</m> is a <m>23\times 24</m> matrix with
@@ -1409,8 +1408,7 @@ p	  </p></li>
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-5-matching-rank-true-false-sometimes">
+    <exercise label="ula-proteus-3-5-matching-rank-true-false-sometimes">
       <title>Implications of an <m>n\times n</m> matrix having rank
       <m>n</m></title>
 

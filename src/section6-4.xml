@@ -1453,8 +1453,7 @@ sage.repl.load.load("https://raw.githubusercontent.com/davidaustinm/ula_modules/
       </ul>
     </p>
 
-    <exercise component="proteus-playground"
-              label="ula-proteus-6-4-short-ans-gram-schmidt">
+    <exercise label="ula-proteus-6-4-short-ans-gram-schmidt">
       <title>Describing the Gram-Schmidt algorithm</title>
 
       <introduction>
@@ -1506,8 +1505,7 @@ sage.repl.load.load("https://raw.githubusercontent.com/davidaustinm/ula_modules/
       </task>
     </exercise>
 
-    <exercise component="proteus-playground"
-              label="ula-proteus-6-4-parsons-problem-for-gram-schmit">
+    <exercise label="ula-proteus-6-4-parsons-problem-for-gram-schmit">
       <title>Using Gram-Schmidt to obtain an orthonormal basis</title>
       <statement>
         <p>
@@ -1575,8 +1573,7 @@ sage.repl.load.load("https://raw.githubusercontent.com/davidaustinm/ula_modules/
       </blocks>
     </exercise>
 
-    <exercise component="proteus-playground" xml:id="exercise-QR-matrix-sizes"
-              label="ula-proteus-6-4-matrix-sizes-and-products-in-QR-factorization">
+    <exercise label="ula-proteus-6-4-matrix-sizes-and-products-in-QR-factorization">
       <title>The shapes of a <m>QR</m>-factorization</title>
       <statement>
         <p>
@@ -1646,8 +1643,7 @@ sage.repl.load.load("https://raw.githubusercontent.com/davidaustinm/ula_modules/
       </evaluation>
     </exercise>
 
-    <exercise component="proteus-playground"
-              label="ula_proteus_Section_6_4_QR_Factorization_True_False">
+    <exercise label="ula_proteus_Section_6_4_QR_Factorization_True_False">
       <title>
         Evaluating the truth or falsity of statements about the
         <m>QR</m>-factorization

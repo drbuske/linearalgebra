@@ -820,6 +820,109 @@ span the same subspace. The following in an example of this.</p>
     </li>
   </ul>
 
+  <exercise label="cardsort-vecsubspace-intro">
+  <title>Identifying Vector Subspaces</title>
+
+  <statement>
+    <p>
+      Determine whether the subset of a vector space, together with the usual vector addition and scalar multiplication, is a <em>subspace</em> of the given vector
+      space.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        The set of all vectors of the form
+        <m>(x,0)\in\mathbb{R}^2</m>.
+      </premise>
+      <premise>
+        The set of all vectors
+        <m>(x,y)\in\mathbb{R}^2</m> such that <m>x+y=0</m>.
+      </premise>
+      <premise>
+        The set of all polynomials in <m>\mathbb{P}_2</m> with zero constant term.
+      </premise>
+
+      <response>
+        <p>Subspace</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        The set of all vectors
+        <m>(x,y)\in\mathbb{R}^2</m> such that <m>x+y=1</m>.
+      </premise>
+      <premise>
+        The set of all polynomials in <m>\mathbb{P}_2</m> of degree exactly <m>2</m>.
+      </premise>
+
+      <response>
+        <p>Not a subspace</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
+<exercise label="cardsort-vecsubspace-sufficient">
+  <title>What Guarantees a Subspace?</title>
+
+  <statement>
+    <p>
+      Each card describes a property of a subset of a vector space.
+      Match each property with one conclusion that follows.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        A nonempty subset is closed under addition and scalar multiplication.
+      </premise>
+
+      <response>
+        <p>The subset is a subspace</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        A subset contains the zero vector and is closed under addition.
+      </premise>
+
+      <response>
+        <p>Scalar closure must still be checked</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        A subset contains the zero vector and is closed under scalar
+        multiplication.
+      </premise>
+
+      <response>
+        <p>Additive closure must still be checked</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        A subset is the span of a set of vectors.
+      </premise>
+
+      <response>
+        <p>The subset is automatically a subspace</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   </subsection>
 
   

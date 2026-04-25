@@ -686,6 +686,131 @@ following theorem guarantees that such a basis exists.
     </li>
   </ul>
 
+  <exercise label="cardsort-basis-dimension">
+  <title>Understanding Basis and Dimension</title>
+
+  <statement>
+    <p>
+      Determine whether the set of vectors given is a <em>basis</em> for the given vector space or
+      <em>not</em> a basis.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        The set
+        <m>\{(1,0),(0,1)\}</m>
+        in <m>\mathbb{R}^2</m>.
+      </premise>
+      <premise>
+        The set
+        <m>\{1,x,x^2\}</m>
+        in the vector space <m>\mathbb{P}_2</m>.
+      </premise>
+      <premise>
+        The set
+        <m>\{(1,0,0),(0,1,0),(0,0,1)\}</m>
+        in <m>\mathbb{R}^3</m>.
+      </premise>
+
+      <response>
+        <p>Basis</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        The set
+        <m>\{(1,0),(0,1),(1,1)\}</m>
+        in <m>\mathbb{R}^2</m>.
+      </premise>
+      <premise>
+        The set
+        <m>\{1,x\}</m>
+        in the vector space <m>\mathbb{P}_2</m>.
+      </premise>
+      <premise>
+        The set
+        <m>\{(1,0,0),(0,1,0)\}</m>
+        in <m>\mathbb{R}^3</m>.
+      </premise>
+
+      <response>
+        <p>Not a basis</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
+<exercise label="cardsort-dimension">
+  <title>Understanding Dimension</title>
+
+  <statement>
+    <p>
+      Sort the vector spaces below according to their dimension.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        The vector space <m>\mathbb{R}^2</m>.
+      </premise>
+      <premise>
+        The span of <m>\{\sin x,\cos x\}</m>.
+      </premise>
+<premise>
+  The set of all <m>2\times 2</m> matrices of the form
+  <m>
+    \begin{pmatrix}
+      a \amp b\\
+      0 \amp 0
+    \end{pmatrix}
+  </m>
+  with <m>a,b\in\mathbb{R}</m>.
+</premise>
+
+
+      <response>
+        <p>Dimension <m>2</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        The vector space <m>\mathbb{R}^3</m>.
+      </premise>
+      <premise>
+        The vector space <m>\mathbb{P}_2</m> of all polynomials of degree at most
+        <m>2</m>.
+      </premise>
+<premise>
+  The set of all symmetric <m>2\times 2</m> matrices,
+  <m>
+    \left\{
+    \begin{pmatrix}
+      a \amp b\\
+      b \amp c
+    \end{pmatrix}
+    \;\middle|\;
+    a,b,c\in\mathbb{R}
+    \right\}.
+  </m>
+</premise>
+
+
+      <response>
+        <p>Dimension <m>3</m></p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   </subsection>
 
   

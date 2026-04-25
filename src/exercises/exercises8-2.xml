@@ -2,33 +2,7 @@
 
  <exercises xml:id="exercises-8-2">
 
-	<exercise label="ula-8-2-spansort">
-      <title>Does these vectors span the vector space?  </title>
-      <statement>  
-      <p>
-        Determine whether each set spans the vector space or not.  
-      </p>
-
-      </statement>
-      <cardsort>
-        <match>
-          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
-          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}, \begin{bmatrix}1 \\ 1 \end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
-          <premise> The set <m>\{1,x,x^2\}</m> in the vector space <m>\mathbb{P}_2</m>.</premise>
-		  <premise> The set <m>\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}, \begin{bmatrix}0 \\ 0 \\ 1 \end{bmatrix}\right\}</m> in <m>\mathbb{R}^3</m>.</premise>
-          <response><p>Spans the space</p></response>
-        </match>
-
-        <match>
-          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 1 \end{bmatrix}, \begin{bmatrix}2 \\ 2\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
-          <premise>The set <m>\{x,x^2\}</m> in the vector space <m>\mathbb{P}_2</m>.</premise>
-          <premise>The set <m>\left\{\begin{bmatrix}1 \\ 2 \end{bmatrix}, \begin{bmatrix}3 \\ 6\end{bmatrix}\right\}</m> in <m>\mathbb{R}^2</m>.</premise>
-		  <premise>The set <m>\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}\right\}</m> in <m>\mathbb{R}^3</m>.</premise>
-          <response><p>Does not span the space</p></response>
-        </match>
-        
-      </cardsort>
-    </exercise>
+	
 
   <exercise xml:id="exercise-8-2-1">
     <statement>

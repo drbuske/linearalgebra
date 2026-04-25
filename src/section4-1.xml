@@ -928,8 +928,7 @@
     </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-1-eigen-def">
+    <exercise label="ula-proteus-4-1-eigen-def">
       <title>
         Using the definition of eigenvectors and
         eigenvalues
@@ -998,8 +997,7 @@
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-1-identifying-eigenvectors">
+    <exercise label="ula-proteus-4-1-identifying-eigenvectors">
       <title>Identifying eigenvectors and eigenvalues of a
       matrix</title>
 
@@ -1067,8 +1065,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-1-linearity-v1">
+    <exercise label="ula-proteus-4-1-linearity-v1">
       <title>Applying linearity to products of eigenvectors</title>
       <statement>
         <p>Suppose <m>\vvec_1</m> and <m>\vvec_2</m> are
@@ -1107,8 +1104,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-1-using-eigenvectors-to-compute-matrix-power-times-vector">
+    <exercise label="ula-proteus-4-1-using-eigenvectors-to-compute-matrix-power-times-vector">
       <title>Using eigenvectors in computations involving matrix powers</title>
       <introduction>
         <p>

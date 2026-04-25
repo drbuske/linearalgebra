@@ -1523,8 +1523,7 @@
       </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-1-2-augmented-system-v1">
+    <exercise label="ula-proteus-1-2-augmented-system-v1">
       <!--
           Created at Proteus Ann Arbor workshop, 6/23/25
       -->
@@ -1648,8 +1647,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-1-2-rref-identify-v1">
+    <exercise label="ula-proteus-1-2-rref-identify-v1">
       <!--
           Created at Proteus Ann Arbor workshop, 6/23/25
       -->
@@ -1743,8 +1741,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-1-2-elimination">
+    <exercise label="ula-proteus-1-2-elimination">
       <title>Implementing Gaussian elimination</title>
       <!--
           Created at Proteus Ann Arbor workshop, 6/23/25
@@ -1872,8 +1869,7 @@
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula_proteus_1_2_RREF_using_EROs_v1">
+    <exercise label="ula_proteus_1_2_RREF_using_EROs_v1">
       <title>Do elementary row operations to achieve RREF</title>
       <statement>
         <p>
@@ -2000,8 +1996,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula_proteus_1-2_Solutions_from_RREF_v1">
+    <exercise label="ula_proteus_1-2_Solutions_from_RREF_v1">
       <title>Determine the number of solutions from RREF</title>
       <statement>
         <p>

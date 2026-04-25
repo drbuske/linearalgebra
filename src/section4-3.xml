@@ -215,6 +215,30 @@
         <li>
             <p><url href="https://youtu.be/5MWwYZ27L9I?si=MahmlLZcO6SB8J8-" visual="Diagonalization (7:53)"/></p>
         </li>
+		<li>
+            <p><url href="https://youtu.be/q48o3PXlg4Q?si=6M0i1fhXgjVFP192" visual="Diagonal Matrices are Freaking Awesome (6:27)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/nNwZA1X-C3c?si=5An3P6hA735hJ-db" visual="How the Diagonalization Process Works (7:29)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/Z8KBxf4C8kk?si=m1LpeFs3jLrjp4iT" visual="Compute Large Powers of a Matrix via Diagonalization (3:00)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/EJG6gBeVdfw?si=h8WKpv4Z011c-wPH" visual="Visualizing Diagonalization and Eigenbases (9:45)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/ieWyx2mlZyk?si=bEyvwM2xfyVQNRiM" visual="Diagonalizing a Matrix (10:07)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/FOoi8h47Tw4?si=rfNtKYCIk3DiNX1S" visual="Complex Eigenvalues, Eigenvectors, and Diagonalization (14:09)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/jNtiENbAcFM?si=ZmslHDhMLhQuWKT6" visual="Similar Matrices have Similar Properties (8:46)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/s4c5LQ5a4ek?si=fhO5YAwV4jAuLnwd" visual="The Similarity Relationship Represents a Change of Basis (9:58)"/></p>
+        </li>
 	</ul>
 </objectives>
 
@@ -1285,8 +1309,7 @@ P*C*P.inverse()
     </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-3-constructing-matrix-from-eigenpairs">
+    <exercise label="ula-proteus-4-3-constructing-matrix-from-eigenpairs">
       <title>Constructing a matrix from its eigenvalues and eigenvectors</title>
       <statement>
         <p>
@@ -1321,8 +1344,7 @@ P*C*P.inverse()
       <response/>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-3-diagonalizating-matrix">
+    <exercise label="ula-proteus-4-3-diagonalizating-matrix">
       <title>Diagonalizing a matrix</title>
 
       <introduction>
@@ -1366,8 +1388,7 @@ P*C*P.inverse()
       </task>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-3-diagonalizabel-t-f">
+    <exercise label="ula-proteus-4-3-diagonalizabel-t-f">
       <title>Reasoning about diagonalizable matrices</title>
 
       <statement>
@@ -1424,8 +1445,7 @@ P*C*P.inverse()
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-3-matching-diagonalizable-or-not">
+    <exercise label="ula-proteus-4-3-matching-diagonalizable-or-not">
       <title>Conditions affecting diagonalizability</title>
 
       <statement>
@@ -1487,8 +1507,7 @@ P*C*P.inverse()
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-3-conditions-for-diagonalizability">
+    <exercise label="ula-proteus-4-3-conditions-for-diagonalizability">
       <title>Determining when a matrix is diagonalizable</title>
 
       <statement>
@@ -1550,8 +1569,7 @@ P*C*P.inverse()
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-        label="ula-proteus-4-3-proofA2simD2-v1">
+    <exercise label="ula-proteus-4-3-proofA2simD2-v1">
       <title>Proving if <m>A</m> is diagonalizable, then <m>A^2</m> is
       diagonlizable</title>
 
@@ -1590,8 +1608,7 @@ P*C*P.inverse()
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-3-proofsimmatricesdet-v1">
+    <exercise label="ula-proteus-4-3-proofsimmatricesdet-v1">
       <title>Proving similar matrices have the same determinant</title>
 
       <statement>

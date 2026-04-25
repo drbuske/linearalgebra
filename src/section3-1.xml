@@ -188,10 +188,25 @@
             <p><url href="https://youtu.be/atlPNhu9VXc?si=Hoh1iAzSsSVBtGQ6" visual="Matrix Inverse by Row Operations (6:21)"/></p>
         </li>
 		<li>
+            <p><url href="https://youtu.be/VhzjrWo0BZU?si=f7WcTtn3e2zTVHJW" visual="Elementary Matrices (7:20)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/yt2l480ov1A?si=NZdQTrJ-Fudv6HNZ" visual="You can `Invert` Matrices to Solve Equations...Sometimes! (7:11)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/TRuDbPjTWjg?si=4Nfjs1yt5V-wUtcV" visual="Finding Inverses to 2-by-2 Matrices is Easy! (3:03)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/52Yh17c6Gdk?si=m7QY0AwBeeVN4qiz" visual="Finding the Inverse of a Matrix (6:29)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/K8vZAsyKYtc?si=LBy4hciDnjA8zg3L" visual="When Does a Matrix Fail to be Invertible? (8:44)"/></p>
+        </li>
+		<li>
             <p><url href="https://youtu.be/SFEFKYUBuYQ?si=pkionD6xgbceF20i" visual="Visualizing Invertible Transformations (8:11)"/></p>
         </li>
 		<li>
-            <p><url href="https://youtu.be/aA4Gtfy4ctQ?si=M4EIVcQ4RHK1qTDP" visual="Invertible Matrices correspond wth Invertiable Transformations (6:38)"/></p>
+            <p><url href="https://youtu.be/aA4Gtfy4ctQ?si=M4EIVcQ4RHK1qTDP" visual="Invertible Matrices correspond with Invertible Transformations (6:38)"/></p>
         </li>
 	</ul>
 </objectives>
@@ -898,9 +913,9 @@
 	determinants
       </xref>
       and 
-      <xref ref="sec-gaussian-revisited" text="custom">
+      <!-- <xref ref="sec-gaussian-revisited" text="custom"> -->
 	LU factorizations.
-      </xref>
+      <!-- </xref> -->
       Triangular matrices will play an important role.
     </p>
 
@@ -1372,8 +1387,8 @@
 	</me>
 	This way of writing <m>A=LU</m> as the product of a lower and
 	an upper triangular matrix is known as an <m>LU</m>
-	factorization of <m>A</m>, and its usefulness will be explored
-	in <xref ref="sec-gaussian-revisited"/>.
+	factorization of <m>A</m>, and its usefulness will be explored later.
+	<!-- in <xref ref="sec-gaussian-revisited"/>. -->
 	</p>
 
       </statement>
@@ -1414,15 +1429,14 @@
     </ul>
     </p>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-1-matching-matrix-invertibility">
+    <exercise label="ula-proteus-3-1-matching-matrix-invertibility">
       <title>Determining the invertibility of matrices</title>
 
       <statement>
         <p>
           Given below are some descriptions of matrices where <m>*</m>
           represents a nonzero number.  For each matrix, determine if
-          it is invertibile, not invertible, or whether more information is 
+          it is invertible, not invertible, or whether more information is 
           needed. 
         </p>
       </statement>
@@ -1505,8 +1519,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-1-matching-invertibility-conditions">
+    <exercise label="ula-proteus-3-1-matching-invertibility-conditions">
       <title>Determining conditions for invertibility</title>
 
       <statement>
@@ -1568,8 +1581,7 @@
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-3-1-reading-invertibility">
+    <exercise  label="ula-proteus-3-1-reading-invertibility">
       <title>Connecting invertibility to solutions of equations</title>
       <statement>
         <p>If <m>A</m> is a matrix such that

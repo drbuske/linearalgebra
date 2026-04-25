@@ -143,6 +143,18 @@
 		<li>
             <p><url href="https://youtu.be/4MmZouS__J4?si=vJkUYKWXl98UYq2R" visual="Eigenvector Basis (3:52)"/></p>
         </li>
+		<li>
+            <p><url href="https://youtu.be/4wTHFmZPhT0?si=97AYLgtC16OhKPUw" visual="What Eigenvalues and Eigenvectors Mean Geometrically (9:08)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/LsZ-nNy0ZRs?si=h3M2L2EfnS3ss1HD" visual="Using Determinants to Compute Eigenvalues and Eigenvectors (4:35)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/4u55V_Yp-QI?si=5e0Hl2nZESa3lJDW" visual="Computing Eigenvalues and Eigenvectors (7:32)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/PFDu9oVAE-g?si=cMIkXOHqlTb68Exy" visual="Eigenvectors and Eigenvalues (17:15)"/></p>
+        </li>
 	</ul>
 </objectives>
 
@@ -1331,8 +1343,7 @@ A.eigenvectors_right()
       an approximation. </p></li>
     </ul></p>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-2-reasoning-about-eigenthings">
+    <exercise label="ula-proteus-4-2-reasoning-about-eigenthings">
       <title>Reasoning about eigenvectors and eigenvalues</title>
 
       <statement>
@@ -1393,8 +1404,7 @@ A.eigenvectors_right()
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-2-finding-and-using-eigenvectors">
+    <exercise label="ula-proteus-4-2-finding-and-using-eigenvectors">
       <title>Finding and using eigenvectors</title>
       <introduction>
         <p>
@@ -1440,8 +1450,7 @@ A.eigenvectors_right()
       </task>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-2-reasoning-char-poly">
+    <exercise label="ula-proteus-4-2-reasoning-char-poly">
       <title>Reasoning with the characteristic polynomial</title>
 
       <introduction>
@@ -1491,8 +1500,7 @@ A.eigenvectors_right()
       </task>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-2-conditions-for-evector-basis">
+    <exercise label="ula-proteus-4-2-conditions-for-evector-basis">
       <title>Determining when there is a basis of eigenvectors</title>
 
       <statement>
@@ -1556,8 +1564,7 @@ A.eigenvectors_right()
       </cardsort>
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-2-proofcharpoly-v1">
+    <exercise label="ula-proteus-4-2-proofcharpoly-v1">
       <title>Proving the characteristic polynomial condition</title>
       <statement>
         <p>Suppose <m>A</m> is an <m>n\times n</m> matrix and
@@ -1601,8 +1608,7 @@ A.eigenvectors_right()
 
     </exercise>
 
-    <exercise component="proteus"
-              label="ula-proteus-4-2-examplemultandbasis-v1">
+    <exercise label="ula-proteus-4-2-examplemultandbasis-v1">
       <title>Finding examples of matrices with multiplicity 2</title>
       <introduction>
         <p>Give an example of a matrix that meets the given
