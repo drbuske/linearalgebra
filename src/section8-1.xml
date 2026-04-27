@@ -43,19 +43,7 @@
       and which failures cause problems.
     </p>
 
-    <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/72GtkP6nP_A?si=JrbUeX-6672SGk2M" visual="Vector Spaces - Definition and Examples (8:10)"/>
-            </p>
-        </li>
-        	  <li>
-                <url href="https://youtu.be/TgKwz5Ikpc8?si=9Y5XWeLoRf4CTn3Y" visual="Abstract Vector Spaces (16:45)"/>
-        </li>
-	</ul>
-</objectives>
+    
 
   </introduction>
 
@@ -177,6 +165,20 @@
   </conclusion>
 
 </exploration>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/72GtkP6nP_A?si=JrbUeX-6672SGk2M" visual="Vector Spaces - Definition and Examples (8:10)"/>
+            </p>
+        </li>
+        	  <li>
+                <url href="https://youtu.be/TgKwz5Ikpc8?si=9Y5XWeLoRf4CTn3Y" visual="Abstract Vector Spaces (16:45)"/>
+        </li>
+	</ul>
+</objectives>
 
 </introduction>
 
