@@ -29,11 +29,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -66,14 +66,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -162,32 +162,40 @@ window.MathJax = {
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<div style="width:600px; height:412px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">
+<div style="aspect-ratio: 1.454545454545455;">
 <div class="sbsgroup">
-<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel top" style="width:31.0344827586207%;"><canvas style="display:block" id="a" width="180" height="36"></canvas></div>
-<div class="sbspanel top" style="width:31.0344827586207%;"><canvas style="display:block" id="b" width="180" height="36"></canvas></div>
-<div class="sbspanel top" style="width:31.0344827586207%;"><canvas style="display:block" id="c" width="180" height="36"></canvas></div>
-</div></div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel top" style="width:31.0344827586207%;"><canvas style="display:block" id="d" width="180" height="36"></canvas></div>
-<div class="sbspanel top" style="width:31.0344827586207%;"><canvas style="display:block" id="e" width="180" height="36"></canvas></div>
-<div class="sbspanel top" style="width:31.0344827586207%;"><canvas style="display:block" id="f" width="180" height="36"></canvas></div>
-</div></div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel top" style="width:47.3684210526316%;"><canvas style="display:block" id="left" width="270" height="270"></canvas></div>
-<div class="sbspanel top" style="width:47.3684210526316%;"><canvas style="display:block" id="right" width="270" height="270"></canvas></div>
-</div></div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:33%;margin-right:33%;">
-<div class="sbspanel top" style="width:44.1176470588235%;"><button xmlns="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" type="button" id="compose">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;grid-template-columns:31.0344827586207% 31.0344827586207% 31.0344827586207%;column-gap:3.333333333333333%;">
+<div class="sbspanel sbspanel--top top" style=""><canvas id="a" style="width:180px; height:36px; display: block; aspect-ratio:5;" width="180" height="36"></canvas></div>
+<div class="sbspanel sbspanel--top top" style=""><canvas id="b" style="width:180px; height:36px; display: block; aspect-ratio:5;" width="180" height="36"></canvas></div>
+<div class="sbspanel sbspanel--top top" style=""><canvas id="c" style="width:180px; height:36px; display: block; aspect-ratio:5;" width="180" height="36"></canvas></div>
+</div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;grid-template-columns:31.0344827586207% 31.0344827586207% 31.0344827586207%;column-gap:3.333333333333333%;">
+<div class="sbspanel sbspanel--top top" style=""><canvas id="d" style="width:180px; height:36px; display: block; aspect-ratio:5;" width="180" height="36"></canvas></div>
+<div class="sbspanel sbspanel--top top" style=""><canvas id="e" style="width:180px; height:36px; display: block; aspect-ratio:5;" width="180" height="36"></canvas></div>
+<div class="sbspanel sbspanel--top top" style=""><canvas id="f" style="width:180px; height:36px; display: block; aspect-ratio:5;" width="180" height="36"></canvas></div>
+</div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;grid-template-columns:47.3684210526316% 47.3684210526316%;column-gap:5%;">
+<div class="sbspanel sbspanel--top top" style=""><canvas id="left" style="width:270px; height:270px; display: block; aspect-ratio:1;" width="270" height="270"></canvas></div>
+<div class="sbspanel sbspanel--top top" style=""><canvas id="right" style="width:270px; height:270px; display: block; aspect-ratio:1;" width="270" height="270"></canvas></div>
+</div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:33%;margin-right:33%;grid-template-columns:44.1176470588235% 44.1176470588235%;column-gap:4%;">
+<div class="sbspanel sbspanel--top top" style=""><button xmlns="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" type="button" id="compose">
 		    Compose
 		  </button></div>
-<div class="sbspanel top" style="width:44.1176470588235%;"><button xmlns="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" type="button" id="reset">
+<div class="sbspanel sbspanel--top top" style=""><button xmlns="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" type="button" id="reset">
 		    Reset
 		  </button></div>
-</div></div>
+</div>
+</div>
+</div>
 </div>
 <script src="external/jslibrary/animate.js"></script>
-</div>
 </body>
 </html>

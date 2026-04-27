@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -73,14 +73,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -97,7 +97,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Linear Algebra">
 <meta property="book:author" content=" Dale Buske ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -128,7 +128,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -523,86 +523,107 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-lin-comb-span-lin-ind"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Linear combinations, span, and linear independence</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-lin-comb-span-lin-ind">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear combinations, span, and linear independence</span>
 </h2>
-<section class="introduction" id="sec-lin-comb-span-lin-ind-2"><div class="para" id="sec-lin-comb-span-lin-ind-2-1">In this section, we will again explore concepts introduced earlier in terms of <span class="process-math">\(\mathbb{R}^n\)</span> and extend them to apply to abstract vector spaces. We can now revisit many of the concepts earlier introduced in the context of general vector spaces.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lin-comb-span-lin-ind-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-lin-comb-span-lin-ind-2">
+<div class="para" id="sec-lin-comb-span-lin-ind-2-1">In this section, we will again explore concepts introduced earlier in terms of <span class="process-math">\(\mathbb{R}^n\)</span> and extend them to apply to abstract vector spaces. We can now revisit many of the concepts earlier introduced in the context of general vector spaces.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lin-comb-span-lin-ind-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exploration project-like" id="preview-lincombo-5-2"><h3 class="heading">
-<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
+<span class="type">Preview Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="introduction" id="preview-lincombo-5-2-1">
-<div class="para" id="preview-lincombo-5-2-1-1">In the previous section, we learned what it means for a set of objects to form a vector space. In this section, we ask a new question: <em class="emphasis">how can vectors be built from other vectors?</em><div class="autopermalink" data-description="Paragraph"><a href="#preview-lincombo-5-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="preview-lincombo-5-2-1-1">In the previous section, we learned what it means for a set of objects to form a vector space. In this section, we ask a new question: <em class="emphasis">how can vectors be built from other vectors?</em><div class="autopermalink" data-description="Paragraph"><a href="#preview-lincombo-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="preview-lincombo-5-2-1-2">Rather than beginning with formal definitions, this activity invites you to experiment with combinations of vectors and to identify patterns that will later be captured by precise mathematical language.<div class="autopermalink" data-description="Paragraph"><a href="#preview-lincombo-5-2-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="preview-lincombo-5-2-1-2">Rather than beginning with formal definitions, this activity invites you to experiment with combinations of vectors and to identify patterns that will later be captured by precise mathematical language.<div class="autopermalink" data-description="Paragraph"><a href="#preview-lincombo-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="preview-lc-task-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="preview-lc-task-1-1-1">Consider the vectors <span class="process-math">\(\uvec=\begin{bmatrix}1 \\ 0 \end{bmatrix}\)</span> and <span class="process-math">\(\vvec=\begin{bmatrix}0 \\ 1 \end{bmatrix}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#preview-lc-task-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <ol class="decimal" id="preview-lc-task-1-1-2">
+<div class="para" id="preview-lc-task-1-1-1">Consider the vectors <span class="process-math">\(\uvec=\begin{bmatrix}1 \\ 0 \end{bmatrix}\)</span> and <span class="process-math">\(\vvec=\begin{bmatrix}0 \\ 1 \end{bmatrix}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#preview-lc-task-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="preview-lc-task-1-1-2">
 <li id="preview-lc-task-1-1-2-1">
 <div class="para" id="p-derived-preview-lc-task-1-1-2-1">List at least five different vectors that can be formed using expressions of the form <span class="process-math">\(a\uvec+b\vvec\text{,}\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are real numbers.</div>
-<div class="autopermalink" data-description="Item 1"><a href="#preview-lc-task-1-1-2-1" title="Copy permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#preview-lc-task-1-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="preview-lc-task-1-1-2-2">
 <div class="para" id="p-derived-preview-lc-task-1-1-2-2">Describe, in words, the collection of all vectors that can be formed this way.</div>
-<div class="autopermalink" data-description="Item 2"><a href="#preview-lc-task-1-1-2-2" title="Copy permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#preview-lc-task-1-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="preview-lc-task-1-1-2-3">
 <div class="para" id="p-derived-preview-lc-task-1-1-2-3">What changes if you restrict <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> to be integers?</div>
-<div class="autopermalink" data-description="Item 3"><a href="#preview-lc-task-1-1-2-3" title="Copy permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#preview-lc-task-1-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Task 5.2.1.a"><a href="#preview-lc-task-1" title="Copy permalink for Task 5.2.1.a">🔗</a></div></article><article class="task exercise-like" id="preview-lc-task-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="preview-lc-task-2-1-1">Now consider the vectors <span class="process-math">\(\wvec=\begin{bmatrix}1 \\ 1\end{bmatrix}\)</span> and <span class="process-math">\(\zvec=\begin{bmatrix}2 \\ 2\end{bmatrix}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#preview-lc-task-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <ol class="decimal" id="preview-lc-task-2-1-2">
+<div class="autopermalink" data-description="Task 5.2.1.a"><a href="#preview-lc-task-1" title="Copy heading and permalink for Task 5.2.1.a" aria-label="Copy heading and permalink for Task 5.2.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="preview-lc-task-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="preview-lc-task-2-1-1">Now consider the vectors <span class="process-math">\(\wvec=\begin{bmatrix}1 \\ 1\end{bmatrix}\)</span> and <span class="process-math">\(\zvec=\begin{bmatrix}2 \\ 2\end{bmatrix}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#preview-lc-task-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="preview-lc-task-2-1-2">
 <li id="preview-lc-task-2-1-2-1">
 <div class="para" id="p-derived-preview-lc-task-2-1-2-1">Which vectors can be formed using expressions of the form <span class="process-math">\(a\wvec+b\zvec\text{?}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#preview-lc-task-2-1-2-1" title="Copy permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#preview-lc-task-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="preview-lc-task-2-1-2-2">
 <div class="para" id="p-derived-preview-lc-task-2-1-2-2">Compare your answer with the result from the previous task.</div>
-<div class="autopermalink" data-description="Item 2"><a href="#preview-lc-task-2-1-2-2" title="Copy permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#preview-lc-task-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="preview-lc-task-2-1-2-3">
 <div class="para" id="p-derived-preview-lc-task-2-1-2-3">What seems different about the roles played by <span class="process-math">\(\wvec\)</span> and <span class="process-math">\(\zvec\)</span> compared to <span class="process-math">\(\uvec\)</span> and <span class="process-math">\(\vvec\text{?}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#preview-lc-task-2-1-2-3" title="Copy permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#preview-lc-task-2-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Task 5.2.1.b"><a href="#preview-lc-task-2" title="Copy permalink for Task 5.2.1.b">🔗</a></div></article><article class="task exercise-like" id="preview-lc-task-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="preview-lc-task-3-1-1">Consider the set of polynomials <span class="process-math">\(p_1(x)=x\)</span> and <span class="process-math">\(p_2(x)=x^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#preview-lc-task-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <ol class="decimal" id="preview-lc-task-3-1-2">
+<div class="autopermalink" data-description="Task 5.2.1.b"><a href="#preview-lc-task-2" title="Copy heading and permalink for Task 5.2.1.b" aria-label="Copy heading and permalink for Task 5.2.1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="preview-lc-task-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="preview-lc-task-3-1-1">Consider the set of polynomials <span class="process-math">\(p_1(x)=x\)</span> and <span class="process-math">\(p_2(x)=x^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#preview-lc-task-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="preview-lc-task-3-1-2">
 <li id="preview-lc-task-3-1-2-1">
 <div class="para" id="p-derived-preview-lc-task-3-1-2-1">Write several expressions that combine <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\)</span> using multiplication by numbers and addition.</div>
-<div class="autopermalink" data-description="Item 1"><a href="#preview-lc-task-3-1-2-1" title="Copy permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#preview-lc-task-3-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="preview-lc-task-3-1-2-2">
 <div class="para" id="p-derived-preview-lc-task-3-1-2-2">Which polynomials can be created this way?</div>
-<div class="autopermalink" data-description="Item 2"><a href="#preview-lc-task-3-1-2-2" title="Copy permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#preview-lc-task-3-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="preview-lc-task-3-1-2-3">
 <div class="para" id="p-derived-preview-lc-task-3-1-2-3">Is it possible to create the polynomial <span class="process-math">\(1\)</span> using these two polynomials? Explain.</div>
-<div class="autopermalink" data-description="Item 3"><a href="#preview-lc-task-3-1-2-3" title="Copy permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#preview-lc-task-3-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Task 5.2.1.c"><a href="#preview-lc-task-3" title="Copy permalink for Task 5.2.1.c">🔗</a></div></article><div class="conclusion" id="preview-lincombo-5-2-5"><div class="para" id="preview-lincombo-5-2-5-1">This activity suggests that some collections of vectors are powerful enough to generate large portions of a vector space, while others are limited or redundant. In the remainder of this section, we will develop precise language to describe these ideas using the concepts of linear combinations, span, and linear independence.<div class="autopermalink" data-description="Paragraph"><a href="#preview-lincombo-5-2-5-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-<div class="autopermalink" data-description="Preview Activity 5.2.1"><a href="#preview-lincombo-5-2" title="Copy permalink for Preview Activity 5.2.1">🔗</a></div></article><div class="para" id="sec-lin-comb-span-lin-ind-2-3">We will look at linear combinations, span, and linear independence in this section, and at subspaces, bases, and dimension in the next section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lin-comb-span-lin-ind-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 5.2.1.c"><a href="#preview-lc-task-3" title="Copy heading and permalink for Task 5.2.1.c" aria-label="Copy heading and permalink for Task 5.2.1.c">🔗</a></div>
+</article>
+<div class="conclusion" id="preview-lincombo-5-2-5">
+<div class="para" id="preview-lincombo-5-2-5-1">This activity suggests that some collections of vectors are powerful enough to generate large portions of a vector space, while others are limited or redundant. In the remainder of this section, we will develop precise language to describe these ideas using the concepts of linear combinations, span, and linear independence.<div class="autopermalink" data-description="Paragraph"><a href="#preview-lincombo-5-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Preview Activity 5.2.1"><a href="#preview-lincombo-5-2" title="Copy heading and permalink for Preview Activity 5.2.1" aria-label="Copy heading and permalink for Preview Activity 5.2.1">🔗</a></div>
+</article>
+<div class="para" id="sec-lin-comb-span-lin-ind-2-3">We will look at linear combinations, span, and linear independence in this section, and at subspaces, bases, and dimension in the next section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lin-comb-span-lin-ind-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="objectives goal-like" id="sec-lin-comb-span-lin-ind-2-4"><h3 class="heading"><span class="type">Videos</span></h3>
-<ul class="disc" id="sec-lin-comb-span-lin-ind-2-4-1"><li id="sec-lin-comb-span-lin-ind-2-4-1-1">
+<ul class="disc" id="sec-lin-comb-span-lin-ind-2-4-1">
+<li id="sec-lin-comb-span-lin-ind-2-4-1-1">
 <div class="para" id="sec-lin-comb-span-lin-ind-2-4-1-1-1">
-<a class="external" href="https://youtu.be/SzZaQnzstfE?si=X_3DIlCagZeLoyNz" target="_blank"><code class="code-inline tex2jax_ignore">The Vector Space of Polynomials: Span, Linear Independence, and Basis (12:49)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-lin-comb-span-lin-ind-2-4-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<a class="external" href="https://youtu.be/SzZaQnzstfE?si=X_3DIlCagZeLoyNz" target="_blank"><code class="code-inline tex2jax_ignore">The Vector Space of Polynomials: Span, Linear Independence, and Basis (12:49)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-lin-comb-span-lin-ind-2-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-lin-comb-span-lin-ind-2-4-1-1" title="Copy permalink for Objective">🔗</a></div>
-</li></ul>
-<div class="autopermalink" data-description="Videos"><a href="#sec-lin-comb-span-lin-ind-2-4" title="Copy permalink for Videos">🔗</a></div></article></section><section class="subsection" id="section-definition-linear-combos"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="space"> </span><span class="title">Linear combinations</span>
+<div class="autopermalink" data-description="Objective"><a href="#sec-lin-comb-span-lin-ind-2-4-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Videos"><a href="#sec-lin-comb-span-lin-ind-2-4" title="Copy heading and permalink for Videos" aria-label="Copy heading and permalink for Videos">🔗</a></div>
+</article></section>
+<section class="subsection" id="section-definition-linear-combos">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear combinations</span>
 </h3>
 <article class="definition definition-like" id="definition-8-10"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="definition-8-10-1">
 <div class="para">Let <span class="process-math">\(V\)</span> be a vector space over a field <span class="process-math">\(K\text{.}\)</span> Let <span class="process-math">\(\uvec_1,\ldots,\uvec_n \in V\text{.}\)</span> A vector <span class="process-math">\(\vvec \in V\)</span> is called a <dfn class="terminology">linear combination</dfn> of <span class="process-math">\(\uvec_1,\ldots,\uvec_n\)</span> if there exist scalars <span class="process-math">\(a_1,\ldots,a_n \in K\)</span> such that</div>
@@ -611,20 +632,22 @@ eBookConfig.enable_chatcodes =  false;
 \vvec = a_1\uvec_1 + \cdots + a_n\uvec_n.
 \end{gather*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-10-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.2.1"><a href="#definition-8-10" title="Copy permalink for Definition 5.2.1">🔗</a></div></article><article class="example example-like" id="example-8-11"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 5.2.1"><a href="#definition-8-10" title="Copy heading and permalink for Definition 5.2.1" aria-label="Copy heading and permalink for Definition 5.2.1">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="example-8-11-1">
 <div class="para">We write the matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-11-1-1">
 \begin{equation*}
 A=\begin{bmatrix}1\amp3\\-1\amp2\end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">as a linear combination of</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-11-1-2">
 \begin{equation*}
 \begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix},
 \begin{bmatrix}1\amp 0\\0\amp -1\end{bmatrix},
@@ -632,11 +655,11 @@ A=\begin{bmatrix}1\amp3\\-1\amp2\end{bmatrix}
 \begin{bmatrix}0\amp -1\\1\amp 0\end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-11-2">
 <div class="para">We must find coefficients <span class="process-math">\(a,b,c,d\)</span> such that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-11-2-2">
 \begin{equation*}
 \begin{bmatrix}1\amp 3\\-1\amp 2\end{bmatrix}
 =
@@ -647,7 +670,7 @@ a\begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">or equivalently,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-11-2-3">
 \begin{equation*}
 \begin{bmatrix}1\amp 3\\-1\amp 2\end{bmatrix}
 =
@@ -657,7 +680,7 @@ c+d \amp a-b
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-11-3">
 <div class="para">This yields a system of four equations in four variables:</div>
@@ -671,11 +694,11 @@ a-b \amp = 2.
 </div>
 <div class="para">We can easily solve the system of equations to find the unique solution <span class="process-math">\(a=\tfrac32\text{,}\)</span> <span class="process-math">\(b=-\tfrac12\text{,}\)</span> <span class="process-math">\(c=1\text{,}\)</span> <span class="process-math">\(d=-2\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-11-4">
 <div class="para">Therefore</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-11-4-1">
 \begin{equation*}
 \begin{bmatrix}1\amp3\\-1\amp2\end{bmatrix}
 =
@@ -685,31 +708,33 @@ a-b \amp = 2.
 -2\begin{bmatrix}0\amp -1\\1\amp 0\end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-11-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.2"><a href="#example-8-11" title="Copy permalink for Example 5.2.2">🔗</a></div></article><article class="example example-like" id="example-8-12"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
+<div class="autopermalink" data-description="Example 5.2.2"><a href="#example-8-11" title="Copy heading and permalink for Example 5.2.2" aria-label="Copy heading and permalink for Example 5.2.2">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-12"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="example-8-12-1">We write the polynomial <span class="process-math">\(p(x)=7x^2+4x-3\)</span> as a linear combination of <span class="process-math">\(q_1(x)=x^2\text{,}\)</span> <span class="process-math">\(q_2(x)=(x+1)^2\text{,}\)</span> and <span class="process-math">\(q_3(x)=(x+2)^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-12-1">We write the polynomial <span class="process-math">\(p(x)=7x^2+4x-3\)</span> as a linear combination of <span class="process-math">\(q_1(x)=x^2\text{,}\)</span> <span class="process-math">\(q_2(x)=(x+1)^2\text{,}\)</span> and <span class="process-math">\(q_3(x)=(x+2)^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-12-2">
 <div class="para">Note that <span class="process-math">\(q_2(x)=(x+1)^2=x^2+2x+1\)</span> and <span class="process-math">\(q_3(x)=(x+2)^2=x^2+4x+4\text{.}\)</span> We must find coefficients <span class="process-math">\(a,b,c\)</span> such that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-12-2-4">
 \begin{equation*}
 p(x)=a\cdot q_1(x)+b\cdot q_2(x)+c\cdot q_3(x),
 \end{equation*}
 </div>
 <div class="para">or equivalently,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-12-2-5">
 \begin{equation*}
 7x^2+4x-3=ax^2+b(x^2+2x+1)+c(x^2+4x+4).
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-12-3">
 <div class="para">Collecting equal powers of <span class="process-math">\(x\text{,}\)</span> we can rewrite this as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-12-3-2">
 \begin{equation*}
 7x^2+4x-3=(a+b+c)x^2+(2b+4c)x+(b+4c).
 \end{equation*}
@@ -722,30 +747,34 @@ a+b+c=7,\\
 b+4c=-3.
 \end{gather*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-12-4">
 <div class="para">We can easily solve this system of equations and find that the unique solution is <span class="process-math">\(a=\tfrac52\text{,}\)</span> <span class="process-math">\(b=7\text{,}\)</span> and <span class="process-math">\(c=-\tfrac52\text{.}\)</span> Therefore</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-12-4-4">
 \begin{equation*}
 p(x)=\tfrac52q_1(x)+7q_2(x)-\tfrac52q_3(x).
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-12-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.3"><a href="#example-8-12" title="Copy permalink for Example 5.2.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection 5.2.1: Linear combinations"><a href="#section-definition-linear-combos" title="Copy permalink for Subsection 5.2.1: Linear combinations">🔗</a></div></section><section class="subsection" id="section-definition-span"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="space"> </span><span class="title">Span of a set of vectors</span>
+<div class="autopermalink" data-description="Example 5.2.3"><a href="#example-8-12" title="Copy heading and permalink for Example 5.2.3" aria-label="Copy heading and permalink for Example 5.2.3">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.2.1: Linear combinations"><a href="#section-definition-linear-combos" title="Copy heading and permalink for Subsection 5.2.1: Linear combinations" aria-label="Copy heading and permalink for Subsection 5.2.1: Linear combinations">🔗</a></div>
+</section>
+<section class="subsection" id="section-definition-span">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Span of a set of vectors</span>
 </h3>
-<div class="para" id="section-definition-span-2">As earlier seen, the span of a set of vectors is defined as the set of all of its linear combinations. We generalize the concept of span to consider spans of arbitrary (possibly finite, possibly infinite) sets of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="section-definition-span-2">As earlier seen, the span of a set of vectors is defined as the set of all of its linear combinations. We generalize the concept of span to consider spans of arbitrary (possibly finite, possibly infinite) sets of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-8-13"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="definition-8-13-1">Let <span class="process-math">\(V\)</span> be a vector space over some field <span class="process-math">\(K\text{,}\)</span> and let <span class="process-math">\(S\)</span> be a set of vectors (i.e., a subset of <span class="process-math">\(V\)</span>). The <dfn class="terminology">span</dfn> of <span class="process-math">\(S\)</span> is the set of all linear combinations of elements of <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-8-13-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="definition-8-13-1">Let <span class="process-math">\(V\)</span> be a vector space over some field <span class="process-math">\(K\text{,}\)</span> and let <span class="process-math">\(S\)</span> be a set of vectors (i.e., a subset of <span class="process-math">\(V\)</span>). The <dfn class="terminology">span</dfn> of <span class="process-math">\(S\)</span> is the set of all linear combinations of elements of <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-8-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="definition-8-13-2">
 <div class="para">In symbols,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-8-13-2-1">
 \begin{equation*}
 \mathrm{span}(S)
 =
@@ -753,14 +782,16 @@ p(x)=\tfrac52q_1(x)+7q_2(x)-\tfrac52q_3(x).
 \uvec_1,\ldots,\uvec_k\in S,\ a_1,\ldots,a_k\in K\}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-13-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.2.4"><a href="#definition-8-13" title="Copy permalink for Definition 5.2.4">🔗</a></div></article><div class="para" id="section-definition-span-4">It is important not to misunderstand this definition. Even when the set <span class="process-math">\(S\)</span> is infinite, each individual element <span class="process-math">\(\vvec \in\mathrm{span}(S)\)</span> is a linear combination of only finitely many elements <span class="process-math">\(\uvec_1,\ldots,\uvec_k\)</span> of <span class="process-math">\(S\text{.}\)</span> The definition does not talk about infinite linear combinations <span class="process-math">\(a_1\uvec_1+a_2\uvec_2+a_3\uvec_3+\cdots\text{.}\)</span> Indeed, such infinite sums do not typically exist.<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 5.2.4"><a href="#definition-8-13" title="Copy heading and permalink for Definition 5.2.4" aria-label="Copy heading and permalink for Definition 5.2.4">🔗</a></div>
+</article>
+<div class="para" id="section-definition-span-4">It is important not to misunderstand this definition. Even when the set <span class="process-math">\(S\)</span> is infinite, each individual element <span class="process-math">\(\vvec \in\mathrm{span}(S)\)</span> is a linear combination of only finitely many elements <span class="process-math">\(\uvec_1,\ldots,\uvec_k\)</span> of <span class="process-math">\(S\text{.}\)</span> The definition does not talk about infinite linear combinations <span class="process-math">\(a_1\uvec_1+a_2\uvec_2+a_3\uvec_3+\cdots\text{.}\)</span> Indeed, such infinite sums do not typically exist.<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="section-definition-span-5">However, different elements <span class="process-math">\(\vvec,\wvec\in\mathrm{span}(S)\)</span> can be linear combinations of a different (finite) number of vectors of <span class="process-math">\(S\text{.}\)</span> For example, it is possible that <span class="process-math">\(\vvec\)</span> is a linear combination of 10 elements of <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(\wvec\)</span> is a linear combination of 100 elements of <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="section-definition-span-5">However, different elements <span class="process-math">\(\vvec,\wvec\in\mathrm{span}(S)\)</span> can be linear combinations of a different (finite) number of vectors of <span class="process-math">\(S\text{.}\)</span> For example, it is possible that <span class="process-math">\(\vvec\)</span> is a linear combination of 10 elements of <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(\wvec\)</span> is a linear combination of 100 elements of <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-8-14"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="example-8-14-1">
 <div class="para">Consider the vector space <span class="process-math">\(\mathrm{Seq}_{\mathbb{R}}\)</span> of infinite sequences of real numbers. For every <span class="process-math">\(k\in\mathbb{N}\text{,}\)</span> let <span class="process-math">\(e^k\)</span> be the sequence whose <span class="process-math">\(k\)</span>th element is 1 and that is 0 everywhere else, i.e.,</div>
@@ -773,7 +804,7 @@ e^2=(0,0,1,0,0,\ldots),
 </div>
 <div class="para">and so on. Let <span class="process-math">\(S=\{e^k : k\in\mathbb{N}\}\text{.}\)</span> Which of the following sequences are in <span class="process-math">\(\mathrm{span}(S)\text{?}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-14-2">
 <div class="displaymath process-math" id="example-8-14-2-1">
@@ -784,55 +815,59 @@ e^2=(0,0,1,0,0,\ldots),
 \text{(d)}\ m=(1,0,1,0,1,0,1,0,\ldots).
 \end{gather*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-14-3">(a) We have <span class="process-math">\(f\in\mathrm{span}(S)\text{,}\)</span> because <span class="process-math">\(f=e^0+e^1+e^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-14-3">(a) We have <span class="process-math">\(f\in\mathrm{span}(S)\text{,}\)</span> because <span class="process-math">\(f=e^0+e^1+e^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-14-4">(b) We have <span class="process-math">\(g\in\mathrm{span}(S)\text{,}\)</span> because <span class="process-math">\(g=1e^0+2e^1+5e^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-14-4">(b) We have <span class="process-math">\(g\in\mathrm{span}(S)\text{,}\)</span> because <span class="process-math">\(g=1e^0+2e^1+5e^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-14-5">(c) The sequence <span class="process-math">\(h\)</span> is not in <span class="process-math">\(\mathrm{span}(S)\text{,}\)</span> because each element of <span class="process-math">\(\mathrm{span}(S)\)</span> is, by definition, a linear combination of finitely many elements of <span class="process-math">\(S\text{.}\)</span> No linear combinations of finitely many <span class="process-math">\(e^k\)</span> can end in infinitely many ones. Note that we are not permitted to write an infinite sum such as <span class="process-math">\(e^0+e^1+e^2+\cdots\text{.}\)</span> Such infinite sums are not defined in vector spaces.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-14-5">(c) The sequence <span class="process-math">\(h\)</span> is not in <span class="process-math">\(\mathrm{span}(S)\text{,}\)</span> because each element of <span class="process-math">\(\mathrm{span}(S)\)</span> is, by definition, a linear combination of finitely many elements of <span class="process-math">\(S\text{.}\)</span> No linear combinations of finitely many <span class="process-math">\(e^k\)</span> can end in infinitely many ones. Note that we are not permitted to write an infinite sum such as <span class="process-math">\(e^0+e^1+e^2+\cdots\text{.}\)</span> Such infinite sums are not defined in vector spaces.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-14-6">(d) The sequence <span class="process-math">\(m\)</span> is not in <span class="process-math">\(\mathrm{span}(S)\text{,}\)</span> for the same reason. We would need to add infinitely many sequences of the form <span class="process-math">\(e^k\)</span> to get a sequence that contains infinitely many non-zero elements. However, this is not permitted by the definition of span.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-14-6">(d) The sequence <span class="process-math">\(m\)</span> is not in <span class="process-math">\(\mathrm{span}(S)\text{,}\)</span> for the same reason. We would need to add infinitely many sequences of the form <span class="process-math">\(e^k\)</span> to get a sequence that contains infinitely many non-zero elements. However, this is not permitted by the definition of span.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-14-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.5"><a href="#example-8-14" title="Copy permalink for Example 5.2.5">🔗</a></div></article><article class="example example-like" id="example-8-15"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.6</span><span class="period">.</span>
+<div class="autopermalink" data-description="Example 5.2.5"><a href="#example-8-14" title="Copy heading and permalink for Example 5.2.5" aria-label="Copy heading and permalink for Example 5.2.5">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-15"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="example-8-15-1">Let <span class="process-math">\(p(x)=7x^2+4x-3\text{.}\)</span> Is <span class="process-math">\(p(x)\in\mathrm{span}\{x^2,(x+1)^2,(x+2)^2\}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-15-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-15-1">Let <span class="process-math">\(p(x)=7x^2+4x-3\text{.}\)</span> Is <span class="process-math">\(p(x)\in\mathrm{span}\{x^2,(x+1)^2,(x+2)^2\}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-15-2">
 <div class="para">The answer is yes, because we found in <a href="sec-lin-comb-span-lin-ind.html#example-8-12" class="xref" data-knowl="./knowl/xref/example-8-12.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.3">Example 5.2.3</a> that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-8-12.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-8-12.html" id="example-8-15-2-2">
 \begin{equation*}
 p(x)=\tfrac52x^2+7(x+1)^2-\tfrac52(x+2)^2.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-15-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.6"><a href="#example-8-15" title="Copy permalink for Example 5.2.6">🔗</a></div></article><div class="para" id="section-definition-span-8">We say that a set of vectors <span class="process-math">\(S\)</span> is a spanning set for <span class="process-math">\(V\)</span> if <span class="process-math">\(V=\mathrm{span}(S)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 5.2.6"><a href="#example-8-15" title="Copy heading and permalink for Example 5.2.6" aria-label="Copy heading and permalink for Example 5.2.6">🔗</a></div>
+</article>
+<div class="para" id="section-definition-span-8">We say that a set of vectors <span class="process-math">\(S\)</span> is a spanning set for <span class="process-math">\(V\)</span> if <span class="process-math">\(V=\mathrm{span}(S)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-definition-span-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-8-16"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.7</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="example-8-16-1">Let <span class="process-math">\(S=\{x^2,(x+1)^2,(x+2)^2\}\text{.}\)</span> We show that <span class="process-math">\(S\)</span> is a spanning set for <span class="process-math">\(\mathbb{P}_2\text{,}\)</span> the vector space of all polynomials of degree at most 2.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-16-1">Let <span class="process-math">\(S=\{x^2,(x+1)^2,(x+2)^2\}\text{.}\)</span> We show that <span class="process-math">\(S\)</span> is a spanning set for <span class="process-math">\(\mathbb{P}_2\text{,}\)</span> the vector space of all polynomials of degree at most 2.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-16-2">
 <div class="para">This is analogous to <a href="sec-lin-comb-span-lin-ind.html#example-8-12" class="xref" data-knowl="./knowl/xref/example-8-12.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.3">Example 5.2.3</a>. Consider an arbitrary element <span class="process-math">\(p(x)=p_2x^2+p_1x+p_0\)</span> of <span class="process-math">\(\mathbb{P}_2\text{.}\)</span> We must show that <span class="process-math">\(p(x)\in\mathrm{span}(S)\text{,}\)</span> i.e., that there exist <span class="process-math">\(a,b,c\in \mathbb{R}\)</span> such that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-8-12.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-8-12.html" id="example-8-16-2-6">
 \begin{equation*}
 p(x)=ax^2+b(x+1)^2+c(x+2)^2.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-16-3">
 <div class="para">We can equivalently rewrite this equation as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-16-3-1">
 \begin{equation*}
 p_2x^2+p_1x+p_0=(a+b+c)x^2+(2b+4c)x+(b+4c),
 \end{equation*}
 </div>
 <div class="para">which yields the system of equations</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-16-3-2">
 \begin{equation*}
 \begin{aligned}
 a + b + c \amp = p_2 \\
@@ -853,60 +888,66 @@ b + 4c \amp = p_0
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-16-4">Since the system has rank 3, it has a solution. Therefore <span class="process-math">\(p(x)\in\mathrm{span}(S)\text{.}\)</span> Since <span class="process-math">\(p(x)\)</span> was an arbitrary element of <span class="process-math">\(\mathbb{P}_2\text{,}\)</span> it follows that <span class="process-math">\(S\)</span> is a spanning set for <span class="process-math">\(\mathbb{P}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-16-4">Since the system has rank 3, it has a solution. Therefore <span class="process-math">\(p(x)\in\mathrm{span}(S)\text{.}\)</span> Since <span class="process-math">\(p(x)\)</span> was an arbitrary element of <span class="process-math">\(\mathbb{P}_2\text{,}\)</span> it follows that <span class="process-math">\(S\)</span> is a spanning set for <span class="process-math">\(\mathbb{P}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-16-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.7"><a href="#example-8-16" title="Copy permalink for Example 5.2.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection 5.2.2: Span of a set of vectors"><a href="#section-definition-span" title="Copy permalink for Subsection 5.2.2: Span of a set of vectors">🔗</a></div></section><section class="subsection" id="section-definition-independence"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="space"> </span><span class="title">Linear independence</span>
+<div class="autopermalink" data-description="Example 5.2.7"><a href="#example-8-16" title="Copy heading and permalink for Example 5.2.7" aria-label="Copy heading and permalink for Example 5.2.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.2.2: Span of a set of vectors"><a href="#section-definition-span" title="Copy heading and permalink for Subsection 5.2.2: Span of a set of vectors" aria-label="Copy heading and permalink for Subsection 5.2.2: Span of a set of vectors">🔗</a></div>
+</section>
+<section class="subsection" id="section-definition-independence">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear independence</span>
 </h3>
-<div class="para" id="section-definition-independence-2">We now define the concept of linear independence in a general vector space. Here too, we generalize the definition to an arbitrary (finite or infinite) set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-independence-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="section-definition-independence-2">We now define the concept of linear independence in a general vector space. Here too, we generalize the definition to an arbitrary (finite or infinite) set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-independence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-8-17"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.8</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="definition-8-17-1">
 <div class="para">Let <span class="process-math">\(V\)</span> be a vector space over a field <span class="process-math">\(K\text{.}\)</span> A finite set of vectors <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k\}\)</span> is called <dfn class="terminology">linearly independent</dfn> if the equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-8-17-1-5">
 \begin{equation*}
 a_1\uvec_1+\cdots+a_k\uvec_k=0
 \end{equation*}
 </div>
 <div class="para">has only the trivial solution</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-8-17-1-6">
 \begin{equation*}
 a_1=\cdots=a_k=0.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-17-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="definition-8-17-2">An infinite set of vectors is linearly independent if every finite subset is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-17-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="definition-8-17-2">An infinite set of vectors is linearly independent if every finite subset is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#definition-8-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.2.8"><a href="#definition-8-17" title="Copy permalink for Definition 5.2.8">🔗</a></div></article><article class="example example-like" id="example-8-18"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.9</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 5.2.8"><a href="#definition-8-17" title="Copy heading and permalink for Definition 5.2.8" aria-label="Copy heading and permalink for Definition 5.2.8">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-18"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="example-8-18-1">Determine whether the polynomials <span class="process-math">\(x^2\text{,}\)</span> <span class="process-math">\(x^2+2x-1\text{,}\)</span> and <span class="process-math">\(2x^2-x+3\)</span> are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-18-1">Determine whether the polynomials <span class="process-math">\(x^2\text{,}\)</span> <span class="process-math">\(x^2+2x-1\text{,}\)</span> and <span class="process-math">\(2x^2-x+3\)</span> are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-18-2">
 <div class="para">According to the definition of linear independence, we must solve the equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-18-2-1">
 \begin{equation*}
 ax^2+b(x^2+2x-1)+c(2x^2-x+3)=0.
 \end{equation*}
 </div>
 <div class="para">If there is a non-trivial solution, the polynomials are linearly dependent. If there is only the trivial solution, they are linearly independent.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-18-3">
 <div class="para">We first rearrange the left-hand side to collect equal powers of <span class="process-math">\(x\text{:}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-18-3-2">
 \begin{equation*}
 (a+b+2c)x^2+(2b-c)x+(3c-b)=0.
 \end{equation*}
 </div>
 <div class="para">This turns into a system of 3 equations in 3 variables:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-18-3-3">
 \begin{equation*}
 \begin{aligned}
 a+b+2c \amp = 0 \\
@@ -927,12 +968,14 @@ a+b+2c \amp = 0 \\
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-18-4">Since the system has rank 3, there are no free variables. The only solution is <span class="process-math">\(a=b=c=0\text{,}\)</span> and the polynomials are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-18-4">Since the system has rank 3, there are no free variables. The only solution is <span class="process-math">\(a=b=c=0\text{,}\)</span> and the polynomials are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-18-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.9"><a href="#example-8-18" title="Copy permalink for Example 5.2.9">🔗</a></div></article><article class="example example-like" id="example-8-19"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.10</span><span class="period">.</span>
+<div class="autopermalink" data-description="Example 5.2.9"><a href="#example-8-18" title="Copy heading and permalink for Example 5.2.9" aria-label="Copy heading and permalink for Example 5.2.9">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-19"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="example-8-19-1">
 <div class="para">Consider again the real-valued sequences from <a href="sec-lin-comb-span-lin-ind.html#example-8-14" class="xref" data-knowl="./knowl/xref/example-8-14.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.5">Example 5.2.5</a>,</div>
@@ -944,130 +987,153 @@ e^2=(0,0,1,0,0,\ldots),
 \end{gather*}
 </div>
 <div class="para">and so on. Let <span class="process-math">\(S=\{e^0,e^1,e^2,\ldots\}\text{.}\)</span> This is an infinite subset of <span class="process-math">\(\mathrm{Seq}_{\mathbb{R}}\text{.}\)</span> We show that <span class="process-math">\(S\)</span> is linearly independent.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-19-2">
 <div class="para">Since <span class="process-math">\(S\)</span> is an infinite set, we have to show that every finite subset of <span class="process-math">\(S\)</span> is linearly independent. So consider a finite subset</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-19-2-3">
 \begin{equation*}
 \{e^{k_1},e^{k_2},\ldots,e^{k_n}\}\subseteq S
 \end{equation*}
 </div>
 <div class="para">and assume that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-19-2-4">
 \begin{equation*}
 a_1e^{k_1}+a_2e^{k_2}+\cdots+a_ne^{k_n}=0.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-19-3">We have to show that <span class="process-math">\(a_1,\ldots,a_n=0\text{.}\)</span> Consider some index <span class="process-math">\(i\in\{1,\ldots,n\}\text{.}\)</span> Then the <span class="process-math">\(k_i\)</span>th element of <span class="process-math">\(a_1e^{k_1}+\cdots+a_ne^{k_n}\)</span> is equal to <span class="process-math">\(a_i\)</span> by the left-hand side of the equation, but it is also equal to 0 by the right-hand side. It follows that <span class="process-math">\(a_i=0\)</span> for all <span class="process-math">\(i\in\{1,\ldots,n\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-19-3">We have to show that <span class="process-math">\(a_1,\ldots,a_n=0\text{.}\)</span> Consider some index <span class="process-math">\(i\in\{1,\ldots,n\}\text{.}\)</span> Then the <span class="process-math">\(k_i\)</span>th element of <span class="process-math">\(a_1e^{k_1}+\cdots+a_ne^{k_n}\)</span> is equal to <span class="process-math">\(a_i\)</span> by the left-hand side of the equation, but it is also equal to 0 by the right-hand side. It follows that <span class="process-math">\(a_i=0\)</span> for all <span class="process-math">\(i\in\{1,\ldots,n\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-19-4">Therefore <span class="process-math">\(e^{k_1},e^{k_2},\ldots,e^{k_n}\)</span> is linearly independent. Since this was an arbitrary finite subset of <span class="process-math">\(S\text{,}\)</span> it follows, by definition, that <span class="process-math">\(S\)</span> is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-19-4">Therefore <span class="process-math">\(e^{k_1},e^{k_2},\ldots,e^{k_n}\)</span> is linearly independent. Since this was an arbitrary finite subset of <span class="process-math">\(S\text{,}\)</span> it follows, by definition, that <span class="process-math">\(S\)</span> is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-19-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.10"><a href="#example-8-19" title="Copy permalink for Example 5.2.10">🔗</a></div></article><article class="example example-like" id="example-8-20"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.11</span><span class="period">.</span>
+<div class="autopermalink" data-description="Example 5.2.10"><a href="#example-8-19" title="Copy heading and permalink for Example 5.2.10" aria-label="Copy heading and permalink for Example 5.2.10">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-20"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="example-8-20-1">
 <div class="para">We determine whether the following elements of <span class="process-math">\(\Mvec_{2,2}\)</span> are linearly independent:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-20-1-2">
 \begin{equation*}
 M_1=\begin{bmatrix}-1 \amp 0 \\ 1 \amp -1\end{bmatrix},\quad
 M_2=\begin{bmatrix}1 \amp 1 \\ 1 \amp 2\end{bmatrix},\quad
 M_3=\begin{bmatrix}1 \amp 3 \\ 5 \amp 4\end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-20-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-20-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-20-2">We look for solutions to <span class="process-math">\(aM_1+bM_2+cM_3=0\text{.}\)</span> Notice that this equation has non-trivial solutions, for example <span class="process-math">\(a=2\text{,}\)</span> <span class="process-math">\(b=3\text{,}\)</span> and <span class="process-math">\(c=-1\text{.}\)</span> Therefore the matrices are linearly dependent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-20-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-20-2">We look for solutions to <span class="process-math">\(aM_1+bM_2+cM_3=0\text{.}\)</span> Notice that this equation has non-trivial solutions, for example <span class="process-math">\(a=2\text{,}\)</span> <span class="process-math">\(b=3\text{,}\)</span> and <span class="process-math">\(c=-1\text{.}\)</span> Therefore the matrices are linearly dependent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-20-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.11"><a href="#example-8-20" title="Copy permalink for Example 5.2.11">🔗</a></div></article><article class="example example-like" id="example-8-21"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Linearly independent functions.</span>
+<div class="autopermalink" data-description="Example 5.2.11"><a href="#example-8-20" title="Copy heading and permalink for Example 5.2.11" aria-label="Copy heading and permalink for Example 5.2.11">🔗</a></div>
+</article>
+<article class="example example-like" id="example-8-21"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linearly independent functions.</span>
 </h4>
-<div class="para" id="example-8-21-2">In the vector space <span class="process-math">\(\mathrm{Func}_{\mathbb{R},\mathbb{R}}\)</span> of real-valued functions on the real numbers, we show that the functions <span class="process-math">\(f(x)=\sin x\)</span> and <span class="process-math">\(g(x)=\cos x\)</span> are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-21-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-21-2">In the vector space <span class="process-math">\(\mathrm{Func}_{\mathbb{R},\mathbb{R}}\)</span> of real-valued functions on the real numbers, we show that the functions <span class="process-math">\(f(x)=\sin x\)</span> and <span class="process-math">\(g(x)=\cos x\)</span> are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-21-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-21-3">Assume <span class="process-math">\(A\sin x+B\cos x=0\text{.}\)</span> Note that this is an equality of functions, which means that it is true for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-21-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-21-3">Assume <span class="process-math">\(A\sin x+B\cos x=0\text{.}\)</span> Note that this is an equality of functions, which means that it is true for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-21-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-8-21-4">
 <div class="para">In particular, substituting <span class="process-math">\(x=0\)</span> into the equation, and using the fact that <span class="process-math">\(\sin 0=0\)</span> and <span class="process-math">\(\cos 0=1\text{,}\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-21-4-4">
 \begin{equation*}
 0=A\sin 0+B\cos 0=A\cdot 0+B\cdot 1=B,
 \end{equation*}
 </div>
 <div class="para">and therefore <span class="process-math">\(B=0\text{.}\)</span> On the other hand, substituting <span class="process-math">\(x=\tfrac{\pi}{2}\)</span> into the equation, and using the fact that <span class="process-math">\(\sin\tfrac{\pi}{2}=1\)</span> and <span class="process-math">\(\cos\tfrac{\pi}{2}=0\text{,}\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-8-21-4-9">
 \begin{equation*}
 0=A\sin\tfrac{\pi}{2}+B\cos\tfrac{\pi}{2}
 =A\cdot 1+B\cdot 0=A,
 \end{equation*}
 </div>
 <div class="para">and therefore <span class="process-math">\(A=0\text{.}\)</span> Therefore the equation <span class="process-math">\(A\sin x+B\cos x=0\)</span> only has the trivial solution <span class="process-math">\(A=B=0\text{,}\)</span> and it follows that <span class="process-math">\(\sin x\)</span> and <span class="process-math">\(\cos x\)</span> are linearly independent.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-8-21-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-8-21-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.12: Linearly independent functions"><a href="#example-8-21" title="Copy permalink for Example 5.2.12: Linearly independent functions">🔗</a></div></article><div class="para" id="section-definition-independence-8">The properties of linear independence that were discussed earlier remain true in the general setting of vector spaces. We also have the usual characterization of linear dependence in terms of redundant vectors:<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-independence-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 5.2.12: Linearly independent functions"><a href="#example-8-21" title="Copy heading and permalink for Example 5.2.12: Linearly independent functions" aria-label="Copy heading and permalink for Example 5.2.12: Linearly independent functions">🔗</a></div>
+</article>
+<div class="para" id="section-definition-independence-8">The properties of linear independence that were discussed earlier remain true in the general setting of vector spaces. We also have the usual characterization of linear dependence in terms of redundant vectors:<div class="autopermalink" data-description="Paragraph"><a href="#section-definition-independence-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="proposition-8-22"><h4 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.2.13</span><span class="period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="proposition-8-22-1-1">
 <div class="para">Let <span class="process-math">\(V\)</span> be a vector space, and let <span class="process-math">\(\uvec_1,\uvec_2,\ldots\)</span> be a (finite or infinite) sequence of vectors in <span class="process-math">\(V\text{.}\)</span> If <span class="process-math">\(\uvec_1,\uvec_2,\ldots\)</span> are linearly dependent, then at least one of the vectors can be written as a linear combination of earlier vectors in the sequence:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="proposition-8-22-1-1-5">
 \begin{equation*}
 \uvec_j = a_1\uvec_1 + a_2\uvec_2 + \cdots + a_{j-1}\uvec_{j-1},
 \end{equation*}
 </div>
 <div class="para">for some <span class="process-math">\(j\text{.}\)</span> We say that the vector <span class="process-math">\(\uvec_j\)</span> is <dfn class="terminology">redundant</dfn>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-22-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proposition 5.2.13"><a href="#proposition-8-22" title="Copy permalink for Proposition 5.2.13">🔗</a></div></article><details id="proposition-8-22-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="proposition-8-22-2-1">Suppose that the vectors are linearly dependent. Then the equation <span class="process-math">\(b_1\uvec_1 + \cdots + b_k\uvec_k = 0\)</span> has a non-trivial solution for some <span class="process-math">\(k\text{.}\)</span> In other words, there exist scalars <span class="process-math">\(b_1,\ldots,b_k\text{,}\)</span> not all equal to zero, such that <span class="process-math">\(b_1\uvec_1 + \cdots + b_k\uvec_k = 0.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-22-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Proposition 5.2.13"><a href="#proposition-8-22" title="Copy heading and permalink for Proposition 5.2.13" aria-label="Copy heading and permalink for Proposition 5.2.13">🔗</a></div>
+</article>
+<details id="proposition-8-22-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="proposition-8-22-2-1">Suppose that the vectors are linearly dependent. Then the equation <span class="process-math">\(b_1\uvec_1 + \cdots + b_k\uvec_k = 0\)</span> has a non-trivial solution for some <span class="process-math">\(k\text{.}\)</span> In other words, there exist scalars <span class="process-math">\(b_1,\ldots,b_k\text{,}\)</span> not all equal to zero, such that <span class="process-math">\(b_1\uvec_1 + \cdots + b_k\uvec_k = 0.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="proposition-8-22-2-2">
 <div class="para">Let <span class="process-math">\(j\)</span> be the largest index such that <span class="process-math">\(b_j \neq 0\text{.}\)</span> Then <span class="process-math">\(b_1\uvec_1 + \cdots + b_j\uvec_j = 0.\)</span> Dividing by <span class="process-math">\(b_j\)</span> and solving for <span class="process-math">\(\uvec_j\text{,}\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="proposition-8-22-2-2-6">
 \begin{equation*}
 \uvec_j = -\frac{b_1}{b_j}\uvec_1 - \cdots - \frac{b_{j-1}}{b_j}\uvec_{j-1},
 \end{equation*}
 </div>
 <div class="para">so <span class="process-math">\(\uvec_j\)</span> can be written as a linear combination of earlier vectors as claimed.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-22-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-22-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 5.2.13.1"><a href="#proposition-8-22-2" title="Copy permalink for Proof 5.2.13.1">🔗</a></div></article></details><article class="example example-like" id="example-8-23"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.14</span><span class="period">.</span>
+<div class="autopermalink" data-description="Proof 5.2.13.1"><a href="#proposition-8-22-2" title="Copy heading and permalink for Proof 5.2.13.1" aria-label="Copy heading and permalink for Proof 5.2.13.1">🔗</a></div>
+</article></details>
+<article class="example example-like" id="example-8-23"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="example-8-23-1">Consider a sequence of non-zero polynomials <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> of increasing degree, i.e., such that the degree of each <span class="process-math">\(p_i(x)\)</span> is strictly larger than that of <span class="process-math">\(p_{i-1}(x)\text{.}\)</span> We show that <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> are linearly independent in the vector space <span class="process-math">\(\mathbb{P}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-23-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-23-1">Consider a sequence of non-zero polynomials <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> of increasing degree, i.e., such that the degree of each <span class="process-math">\(p_i(x)\)</span> is strictly larger than that of <span class="process-math">\(p_{i-1}(x)\text{.}\)</span> We show that <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> are linearly independent in the vector space <span class="process-math">\(\mathbb{P}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-8-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-8-23-2">A polynomial of degree <span class="process-math">\(n\)</span> cannot be a linear combination of polynomials of degree less than <span class="process-math">\(n\text{.}\)</span> Therefore, none of the polynomials <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> can be written as a linear combination of earlier polynomials. By <a href="sec-lin-comb-span-lin-ind.html#proposition-8-22" class="xref" data-knowl="./knowl/xref/proposition-8-22.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 5.2.13">Proposition 5.2.13</a>, <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-23-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-8-23-2">A polynomial of degree <span class="process-math">\(n\)</span> cannot be a linear combination of polynomials of degree less than <span class="process-math">\(n\text{.}\)</span> Therefore, none of the polynomials <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> can be written as a linear combination of earlier polynomials. By <a href="sec-lin-comb-span-lin-ind.html#proposition-8-22" class="xref" data-knowl="./knowl/xref/proposition-8-22.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 5.2.13">Proposition 5.2.13</a>, <span class="process-math">\(p_1(x),\ldots,p_k(x)\)</span> are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#example-8-23-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.2.14"><a href="#example-8-23" title="Copy permalink for Example 5.2.14">🔗</a></div></article><article class="proposition theorem-like" id="proposition-8-24"><h4 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.2.15</span><span class="period">.</span>
+<div class="autopermalink" data-description="Example 5.2.14"><a href="#example-8-23" title="Copy heading and permalink for Example 5.2.14" aria-label="Copy heading and permalink for Example 5.2.14">🔗</a></div>
+</article>
+<article class="proposition theorem-like" id="proposition-8-24"><h4 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="proposition-8-24-1-1">Suppose <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k\}\)</span> is linearly independent and <span class="process-math">\(\vvec\notin \mathrm{span}\{\uvec_1,\ldots,\uvec_k\}\text{.}\)</span> Then the set <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k,\vvec\}\)</span> is also linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-24-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="proposition-8-24-1-1">Suppose <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k\}\)</span> is linearly independent and <span class="process-math">\(\vvec\notin \mathrm{span}\{\uvec_1,\ldots,\uvec_k\}\text{.}\)</span> Then the set <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k,\vvec\}\)</span> is also linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proposition 5.2.15"><a href="#proposition-8-24" title="Copy permalink for Proposition 5.2.15">🔗</a></div></article><details id="proposition-8-24-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="proposition-8-24-2-1">Assume, on the contrary, that the set were linearly dependent. Then by <a href="sec-lin-comb-span-lin-ind.html#proposition-8-22" class="xref" data-knowl="./knowl/xref/proposition-8-22.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 5.2.13">Proposition 5.2.13</a>, one of the vectors can be written as a linear combination of earlier vectors. This vector cannot be one of the <span class="process-math">\(\uvec_i\text{,}\)</span> because <span class="process-math">\(\uvec_1,\ldots,\uvec_k\)</span> are linearly independent. It also cannot be <span class="process-math">\(\vvec\text{,}\)</span> because <span class="process-math">\(\vvec\notin \mathrm{span}\{\uvec_1,\ldots,\uvec_k\}\text{.}\)</span> Therefore, our assumption cannot be true, and the set is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-24-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Proposition 5.2.15"><a href="#proposition-8-24" title="Copy heading and permalink for Proposition 5.2.15" aria-label="Copy heading and permalink for Proposition 5.2.15">🔗</a></div>
+</article>
+<details id="proposition-8-24-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="proposition-8-24-2-1">Assume, on the contrary, that the set were linearly dependent. Then by <a href="sec-lin-comb-span-lin-ind.html#proposition-8-22" class="xref" data-knowl="./knowl/xref/proposition-8-22.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 5.2.13">Proposition 5.2.13</a>, one of the vectors can be written as a linear combination of earlier vectors. This vector cannot be one of the <span class="process-math">\(\uvec_i\text{,}\)</span> because <span class="process-math">\(\uvec_1,\ldots,\uvec_k\)</span> are linearly independent. It also cannot be <span class="process-math">\(\vvec\text{,}\)</span> because <span class="process-math">\(\vvec\notin \mathrm{span}\{\uvec_1,\ldots,\uvec_k\}\text{.}\)</span> Therefore, our assumption cannot be true, and the set is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#proposition-8-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 5.2.15.1"><a href="#proposition-8-24-2" title="Copy permalink for Proof 5.2.15.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 5.2.3: Linear independence"><a href="#section-definition-independence" title="Copy permalink for Subsection 5.2.3: Linear independence">🔗</a></div></section><section class="subsection" id="subsec-lincombo-Summary"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="space"> </span><span class="title">Summary</span>
+<div class="autopermalink" data-description="Proof 5.2.15.1"><a href="#proposition-8-24-2" title="Copy heading and permalink for Proof 5.2.15.1" aria-label="Copy heading and permalink for Proof 5.2.15.1">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 5.2.3: Linear independence"><a href="#section-definition-independence" title="Copy heading and permalink for Subsection 5.2.3: Linear independence" aria-label="Copy heading and permalink for Subsection 5.2.3: Linear independence">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-lincombo-Summary">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
 </h3>
 <ul class="disc" id="subsec-lincombo-Summary-2">
 <li id="subsec-lincombo-Summary-2-1">
 <div class="para" id="p-derived-subsec-lincombo-Summary-2-1">Linear combinations describe how new vectors can be formed by adding scalar multiples of given vectors, providing a systematic way to build vectors from other vectors.</div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-lincombo-Summary-2-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-lincombo-Summary-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-lincombo-Summary-2-2">
 <div class="para" id="p-derived-subsec-lincombo-Summary-2-2">The span of a set of vectors consists of all vectors that can be formed as linear combinations of those vectors, allowing us to determine when a collection of vectors generates part or all of a vector space.</div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-lincombo-Summary-2-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-lincombo-Summary-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-lincombo-Summary-2-3">
 <div class="para" id="p-derived-subsec-lincombo-Summary-2-3">Linear independence captures the idea of non‑redundancy: a set of vectors is linearly independent if none of its vectors can be written as a linear combination of the others.</div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-lincombo-Summary-2-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-lincombo-Summary-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <article class="exercise exercise-like" id="ula-8-2-spansort"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.2.16</span><span class="period">.</span><span class="space"> </span><span class="title">Do these vectors span the vector space?</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Do these vectors span the vector space?</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-8-2-spansort">
-<span data-subcomponent="question"><div class="para" id="ula-8-2-spansort-2-1">Determine whether each set spans the vector space or not.<div class="autopermalink" data-description="Paragraph"><a href="#ula-8-2-spansort-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span data-subcomponent="question">
+<div class="para" id="ula-8-2-spansort-2-1">Determine whether each set spans the vector space or not.<div class="autopermalink" data-description="Paragraph"><a href="#ula-8-2-spansort-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></span><li data-subcomponent="draggable" id="rs-ula-8-2-spansort_drag1" data-category="1">The set <span class="process-math">\(\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}\right\}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>
 </li>
 <li data-subcomponent="draggable" id="rs-ula-8-2-spansort_drag2" data-category="1">The set <span class="process-math">\(\left\{\begin{bmatrix}1 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1\end{bmatrix}, \begin{bmatrix}1 \\ 1 \end{bmatrix}\right\}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>
@@ -1076,8 +1142,9 @@ M_3=\begin{bmatrix}1 \amp 3 \\ 5 \amp 4\end{bmatrix}.
 </li>
 <li data-subcomponent="draggable" id="rs-ula-8-2-spansort_drag4" data-category="1">The set <span class="process-math">\(\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}, \begin{bmatrix}0 \\ 0 \\ 1 \end{bmatrix}\right\}\)</span> in <span class="process-math">\(\mathbb{R}^3\text{.}\)</span>
 </li>
-<li data-subcomponent="dropzone" for="rs-ula-8-2-spansort_drag1" data-category="1"><div class="para" id="ula-8-2-spansort-3-1-5-1">Spans the space<div class="autopermalink" data-description="Paragraph"><a href="#ula-8-2-spansort-3-1-5-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-8-2-spansort_drag1" data-category="1">
+<div class="para" id="ula-8-2-spansort-3-1-5-1">Spans the space</div>
+</li>
 <li data-subcomponent="draggable" id="rs-ula-8-2-spansort_drag5" data-category="2">The set <span class="process-math">\(\left\{\begin{bmatrix}1 \\ 1 \end{bmatrix}, \begin{bmatrix}2 \\ 2\end{bmatrix}\right\}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>
 </li>
 <li data-subcomponent="draggable" id="rs-ula-8-2-spansort_drag6" data-category="2">The set <span class="process-math">\(\{x,x^2\}\)</span> in the vector space <span class="process-math">\(\mathbb{P}_2\text{.}\)</span>
@@ -1086,49 +1153,65 @@ M_3=\begin{bmatrix}1 \amp 3 \\ 5 \amp 4\end{bmatrix}.
 </li>
 <li data-subcomponent="draggable" id="rs-ula-8-2-spansort_drag8" data-category="2">The set <span class="process-math">\(\left\{\begin{bmatrix}1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix}\right\}\)</span> in <span class="process-math">\(\mathbb{R}^3\text{.}\)</span>
 </li>
-<li data-subcomponent="dropzone" for="rs-ula-8-2-spansort_drag2" data-category="2"><div class="para" id="ula-8-2-spansort-3-2-5-1">Does not span the space<div class="autopermalink" data-description="Paragraph"><a href="#ula-8-2-spansort-3-2-5-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-subcomponent="dropzone" for="rs-ula-8-2-spansort_drag2" data-category="2">
+<div class="para" id="ula-8-2-spansort-3-2-5-1">Does not span the space</div>
+</li>
 </ul></div></div>
-<div class="autopermalink" data-description="Checkpoint 5.2.16: Do these vectors span the vector space?"><a href="#ula-8-2-spansort" title="Copy permalink for Checkpoint 5.2.16: Do these vectors span the vector space?">🔗</a></div></article><article class="exercise exercise-like" id="cardsort-linear-independence"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.2.17</span><span class="period">.</span><span class="space"> </span><span class="title">Linear Independence.</span>
+<div class="autopermalink" data-description="Checkpoint 5.2.16: Do these vectors span the vector space?"><a href="#ula-8-2-spansort" title="Copy heading and permalink for Checkpoint 5.2.16: Do these vectors span the vector space?" aria-label="Copy heading and permalink for Checkpoint 5.2.16: Do these vectors span the vector space?">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="cardsort-linear-independence"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Independence.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-cardsort-linear-independence">
-<span data-subcomponent="question"><div class="para" id="cardsort-linear-independence-2-1">Determine whether the given set is <em class="emphasis">linearly independent</em> or <em class="emphasis">linearly dependent</em>.<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-linear-independence-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span data-subcomponent="question">
+<div class="para" id="cardsort-linear-independence-2-1">Determine whether the given set is <em class="emphasis">linearly independent</em> or <em class="emphasis">linearly dependent</em>.<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-linear-independence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></span><li data-subcomponent="draggable" id="rs-cardsort-linear-independence_drag1" data-category="1">The set <span class="process-math">\(\{(1,0),(0,1)\}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>
 </li>
 <li data-subcomponent="draggable" id="rs-cardsort-linear-independence_drag2" data-category="1">The set <span class="process-math">\(\{1,x,x^2\}\)</span> in the vector space <span class="process-math">\(\mathbb{P}_2\text{.}\)</span>
 </li>
 <li data-subcomponent="draggable" id="rs-cardsort-linear-independence_drag3" data-category="1">The set of functions <span class="process-math">\(\{\sin x,\cos x\}\)</span> in <span class="process-math">\(\mathrm{Func}_{\mathbb{R},\mathbb{R}}\text{.}\)</span>
 </li>
-<li data-subcomponent="dropzone" for="rs-cardsort-linear-independence_drag1" data-category="1"><div class="para" id="cardsort-linear-independence-3-1-4-1">Linearly independent<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-linear-independence-3-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-subcomponent="dropzone" for="rs-cardsort-linear-independence_drag1" data-category="1">
+<div class="para" id="cardsort-linear-independence-3-1-4-1">Linearly independent</div>
+</li>
 <li data-subcomponent="draggable" id="rs-cardsort-linear-independence_drag4" data-category="2">The set <span class="process-math">\(\{(1,2),(2,4)\}\)</span> in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>
 </li>
 <li data-subcomponent="draggable" id="rs-cardsort-linear-independence_drag5" data-category="2">The set <span class="process-math">\(\{x^2+1,x^2-1,2x^2\}\)</span> in the vector space <span class="process-math">\(\mathbb{P}_2\text{.}\)</span>
 </li>
 <li data-subcomponent="draggable" id="rs-cardsort-linear-independence_drag6" data-category="2">The set of functions <span class="process-math">\(\{e^x,3e^x\}\)</span> in <span class="process-math">\(\mathrm{Func}_{\mathbb{R},\mathbb{R}}\text{.}\)</span>
 </li>
-<li data-subcomponent="dropzone" for="rs-cardsort-linear-independence_drag2" data-category="2"><div class="para" id="cardsort-linear-independence-3-2-4-1">Linearly dependent<div class="autopermalink" data-description="Paragraph"><a href="#cardsort-linear-independence-3-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-subcomponent="dropzone" for="rs-cardsort-linear-independence_drag2" data-category="2">
+<div class="para" id="cardsort-linear-independence-3-2-4-1">Linearly dependent</div>
+</li>
 </ul></div></div>
-<div class="autopermalink" data-description="Checkpoint 5.2.17: Linear Independence"><a href="#cardsort-linear-independence" title="Copy permalink for Checkpoint 5.2.17: Linear Independence">🔗</a></div></article><div class="autopermalink" data-description="Subsection 5.2.4: Summary"><a href="#subsec-lincombo-Summary" title="Copy permalink for Subsection 5.2.4: Summary">🔗</a></div></section><section class="exercises" id="exercises-8-2"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="space"> </span><span class="title">Exercises</span>
+<div class="autopermalink" data-description="Checkpoint 5.2.17: Linear Independence"><a href="#cardsort-linear-independence" title="Copy heading and permalink for Checkpoint 5.2.17: Linear Independence" aria-label="Copy heading and permalink for Checkpoint 5.2.17: Linear Independence">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.2.4: Summary"><a href="#subsec-lincombo-Summary" title="Copy heading and permalink for Subsection 5.2.4: Summary" aria-label="Copy heading and permalink for Subsection 5.2.4: Summary">🔗</a></div>
+</section>
+<section class="exercises" id="exercises-8-2">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-8-2-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="exercise-8-2-1-1-1">Let <span class="process-math">\(V\)</span> be a vector space and suppose <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k\}\)</span> is a set of vectors in <span class="process-math">\(V\text{.}\)</span> Show that <span class="process-math">\(\zerovec\)</span> is in <span class="process-math">\(\mathrm{span}\{\uvec_1,\ldots,\uvec_k\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise-8-2-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-8-2-1-1-1">Let <span class="process-math">\(V\)</span> be a vector space and suppose <span class="process-math">\(\{\uvec_1,\ldots,\uvec_k\}\)</span> is a set of vectors in <span class="process-math">\(V\text{.}\)</span> Show that <span class="process-math">\(\zerovec\)</span> is in <span class="process-math">\(\mathrm{span}\{\uvec_1,\ldots,\uvec_k\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.5.1"><a href="#exercise-8-2-1" title="Copy permalink for Exercise 5.2.5.1">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="exercise-8-2-2-1-1">Determine whether <span class="process-math">\(p(x)=4x^2-x\)</span> is in <span class="process-math">\(\mathrm{span}\{x^2+x,x^2-1,-x+2\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 5.2.5.1"><a href="#exercise-8-2-1" title="Copy heading and permalink for Exercise 5.2.5.1" aria-label="Copy heading and permalink for Exercise 5.2.5.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-8-2-2-1-1">Determine whether <span class="process-math">\(p(x)=4x^2-x\)</span> is in <span class="process-math">\(\mathrm{span}\{x^2+x,x^2-1,-x+2\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.5.2"><a href="#exercise-8-2-2" title="Copy permalink for Exercise 5.2.5.2">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="exercise-8-2-3-1-1">Determine whether <span class="process-math">\(p(x)=-x^2+x+2\)</span> is in <span class="process-math">\(\mathrm{span}\{x^2+x+1,2x^2+x\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 5.2.5.2"><a href="#exercise-8-2-2" title="Copy heading and permalink for Exercise 5.2.5.2" aria-label="Copy heading and permalink for Exercise 5.2.5.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-8-2-3-1-1">Determine whether <span class="process-math">\(p(x)=-x^2+x+2\)</span> is in <span class="process-math">\(\mathrm{span}\{x^2+x+1,2x^2+x\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.5.3"><a href="#exercise-8-2-3" title="Copy permalink for Exercise 5.2.5.3">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 5.2.5.3"><a href="#exercise-8-2-3" title="Copy heading and permalink for Exercise 5.2.5.3" aria-label="Copy heading and permalink for Exercise 5.2.5.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-8-2-4-1-1">
 <li id="exercise-8-2-4-1-1-1">
 <div class="para logical" id="exercise-8-2-4-1-1-1-1">
 <div class="para">Write <span class="process-math">\(A=\begin{bmatrix}1\amp3\\0\amp0\end{bmatrix}\)</span> as a linear combination of</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-8-2-4-1-1-1-1-2">
 \begin{equation*}
 \begin{bmatrix}1\amp 0\\0\amp 1\end{bmatrix},
 \begin{bmatrix}0\amp 1\\1\amp 0\end{bmatrix},
@@ -1136,42 +1219,51 @@ M_3=\begin{bmatrix}1 \amp 3 \\ 5 \amp 4\end{bmatrix}.
 \begin{bmatrix}0\amp 1\\1\amp 1\end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-4-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-4-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5.2.5.4.a"><a href="#exercise-8-2-4-1-1-1" title="Copy permalink for Item 5.2.5.4.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.2.5.4.a"><a href="#exercise-8-2-4-1-1-1" title="Copy heading and permalink for Item 5.2.5.4.a" aria-label="Copy heading and permalink for Item 5.2.5.4.a">🔗</a></div>
 </li>
 <li id="exercise-8-2-4-1-1-2">
-<div class="para" id="exercise-8-2-4-1-1-2-1">Show that the above set of four matrices is a spanning set for <span class="process-math">\(\Mvec_{2,2}\text{,}\)</span> the vector space of all <span class="process-math">\(2\times2\)</span> matrices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-4-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-8-2-4-1-1-2-1">Show that the above set of four matrices is a spanning set for <span class="process-math">\(\Mvec_{2,2}\text{,}\)</span> the vector space of all <span class="process-math">\(2\times2\)</span> matrices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-4-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5.2.5.4.b"><a href="#exercise-8-2-4-1-1-2" title="Copy permalink for Item 5.2.5.4.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.2.5.4.b"><a href="#exercise-8-2-4-1-1-2" title="Copy heading and permalink for Item 5.2.5.4.b" aria-label="Copy heading and permalink for Item 5.2.5.4.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Exercise 5.2.5.4"><a href="#exercise-8-2-4" title="Copy permalink for Exercise 5.2.5.4">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<div class="para" id="exercise-8-2-5-1-1">Consider the vector space <span class="process-math">\(\mathrm{Seq}_{\mathbb{R}}\)</span> of infinite sequences of real numbers. A sequence <span class="process-math">\(a=(a_i)_{i\in\mathbb{N}}\)</span> is called <dfn class="terminology">finitely supported</dfn> if all but finitely many elements of the sequence are zero. In other words, <span class="process-math">\(a\)</span> is finitely supported if there exists some <span class="process-math">\(N\in\mathbb{N}\)</span> such that <span class="process-math">\(a_k=0\)</span> for all <span class="process-math">\(k\ge N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="exercise-8-2-5-1-2">Let <span class="process-math">\(e^0,e^1,e^2,\ldots\)</span> be the sequences from <a href="sec-lin-comb-span-lin-ind.html#example-8-14" class="xref" data-knowl="./knowl/xref/example-8-14.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.5">Example 5.2.5</a>. Show that <span class="process-math">\(a\in\mathrm{span}\{e^0,e^1,e^2,\ldots\}\)</span> if and only if <span class="process-math">\(a\)</span> is finitely supported.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-5-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 5.2.5.4"><a href="#exercise-8-2-4" title="Copy heading and permalink for Exercise 5.2.5.4" aria-label="Copy heading and permalink for Exercise 5.2.5.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-8-2-5-1-1">Consider the vector space <span class="process-math">\(\mathrm{Seq}_{\mathbb{R}}\)</span> of infinite sequences of real numbers. A sequence <span class="process-math">\(a=(a_i)_{i\in\mathbb{N}}\)</span> is called <dfn class="terminology">finitely supported</dfn> if all but finitely many elements of the sequence are zero. In other words, <span class="process-math">\(a\)</span> is finitely supported if there exists some <span class="process-math">\(N\in\mathbb{N}\)</span> such that <span class="process-math">\(a_k=0\)</span> for all <span class="process-math">\(k\ge N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="exercise-8-2-5-1-2">Let <span class="process-math">\(e^0,e^1,e^2,\ldots\)</span> be the sequences from <a href="sec-lin-comb-span-lin-ind.html#example-8-14" class="xref" data-knowl="./knowl/xref/example-8-14.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.5">Example 5.2.5</a>. Show that <span class="process-math">\(a\in\mathrm{span}\{e^0,e^1,e^2,\ldots\}\)</span> if and only if <span class="process-math">\(a\)</span> is finitely supported.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.5.5"><a href="#exercise-8-2-5" title="Copy permalink for Exercise 5.2.5.5">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para" id="exercise-8-2-6-1-1">For each of the following sets of polynomials, determine whether the set is linearly independent. If it is linearly dependent, write one polynomial as a linear combination of the other polynomials in the set.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <ol class="lower-alpha ol-marker-5" id="exercise-8-2-6-1-2">
+<div class="autopermalink" data-description="Exercise 5.2.5.5"><a href="#exercise-8-2-5" title="Copy heading and permalink for Exercise 5.2.5.5" aria-label="Copy heading and permalink for Exercise 5.2.5.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-8-2-6-1-1">For each of the following sets of polynomials, determine whether the set is linearly independent. If it is linearly dependent, write one polynomial as a linear combination of the other polynomials in the set.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha ol-marker-5" id="exercise-8-2-6-1-2">
 <li id="exercise-8-2-6-1-2-1">
 <div class="para" id="p-derived-exercise-8-2-6-1-2-1"><span class="process-math">\(\{x+1, x^2+2, x^2-x-3\}\text{.}\)</span></div>
-<div class="autopermalink" data-description="Item 5.2.5.6.a"><a href="#exercise-8-2-6-1-2-1" title="Copy permalink for Item 5.2.5.6.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.2.5.6.a"><a href="#exercise-8-2-6-1-2-1" title="Copy heading and permalink for Item 5.2.5.6.a" aria-label="Copy heading and permalink for Item 5.2.5.6.a">🔗</a></div>
 </li>
 <li id="exercise-8-2-6-1-2-2">
 <div class="para" id="p-derived-exercise-8-2-6-1-2-2"><span class="process-math">\(\{x^2+x, -2x^2-4x-6, 2x-2\}\text{.}\)</span></div>
-<div class="autopermalink" data-description="Item 5.2.5.6.b"><a href="#exercise-8-2-6-1-2-2" title="Copy permalink for Item 5.2.5.6.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.2.5.6.b"><a href="#exercise-8-2-6-1-2-2" title="Copy heading and permalink for Item 5.2.5.6.b" aria-label="Copy heading and permalink for Item 5.2.5.6.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Exercise 5.2.5.6"><a href="#exercise-8-2-6" title="Copy permalink for Exercise 5.2.5.6">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="exercise-8-2-7-1-1">Determine whether each of the following sets of matrices is linearly independent. If it is linearly dependent, write one matrix as a linear combination of the other matrices in the set.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <ol class="lower-alpha ol-marker-5" id="exercise-8-2-7-1-2">
+<div class="autopermalink" data-description="Exercise 5.2.5.6"><a href="#exercise-8-2-6" title="Copy heading and permalink for Exercise 5.2.5.6" aria-label="Copy heading and permalink for Exercise 5.2.5.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-8-2-7-1-1">Determine whether each of the following sets of matrices is linearly independent. If it is linearly dependent, write one matrix as a linear combination of the other matrices in the set.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha ol-marker-5" id="exercise-8-2-7-1-2">
 <li id="exercise-8-2-7-1-2-1">
 <div class="para" id="p-derived-exercise-8-2-7-1-2-1"><span class="process-math">\(\displaystyle \left\{
 \begin{bmatrix}1\amp2\\0\amp1\end{bmatrix},
 \begin{bmatrix}-7\amp2\\-2\amp-3\end{bmatrix},
 \begin{bmatrix}4\amp0\\1\amp2\end{bmatrix}
 \right\}.\)</span></div>
-<div class="autopermalink" data-description="Item 5.2.5.7.a"><a href="#exercise-8-2-7-1-2-1" title="Copy permalink for Item 5.2.5.7.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.2.5.7.a"><a href="#exercise-8-2-7-1-2-1" title="Copy heading and permalink for Item 5.2.5.7.a" aria-label="Copy heading and permalink for Item 5.2.5.7.a">🔗</a></div>
 </li>
 <li id="exercise-8-2-7-1-2-2">
 <div class="para" id="p-derived-exercise-8-2-7-1-2-2"><span class="process-math">\(\displaystyle \left\{
@@ -1180,19 +1272,21 @@ M_3=\begin{bmatrix}1 \amp 3 \\ 5 \amp 4\end{bmatrix}.
 \begin{bmatrix}1\amp0\\1\amp0\end{bmatrix},
 \begin{bmatrix}0\amp0\\1\amp1\end{bmatrix}
 \right\}.\)</span></div>
-<div class="autopermalink" data-description="Item 5.2.5.7.b"><a href="#exercise-8-2-7-1-2-2" title="Copy permalink for Item 5.2.5.7.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.2.5.7.b"><a href="#exercise-8-2-7-1-2-2" title="Copy heading and permalink for Item 5.2.5.7.b" aria-label="Copy heading and permalink for Item 5.2.5.7.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Exercise 5.2.5.7"><a href="#exercise-8-2-7" title="Copy permalink for Exercise 5.2.5.7">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 5.2.5.7"><a href="#exercise-8-2-7" title="Copy heading and permalink for Exercise 5.2.5.7" aria-label="Copy heading and permalink for Exercise 5.2.5.7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="exercise-8-2-8-1-1">
 <div class="para">Consider polynomials</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-8-2-8-1-1-1">
 \begin{equation*}
 \{a_ix^3+b_ix^2+c_ix+d_i : i=1,2,3,4.\}
 \end{equation*}
 </div>
 <div class="para">Show that this collection of polynomials is linearly independent if and only if</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-8-2-8-1-1-2">
 \begin{equation*}
 \begin{bmatrix}
 a_1 \amp b_1 \amp c_1 \amp d_1 \\
@@ -1203,20 +1297,26 @@ a_4 \amp b_4 \amp c_4 \amp d_4
 \end{equation*}
 </div>
 <div class="para">is an invertible matrix.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-8-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.5.8"><a href="#exercise-8-2-8" title="Copy permalink for Exercise 5.2.5.8">🔗</a></div></article><article class="exercise exercise-like" id="exercise-8-2-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 5.2.5.8"><a href="#exercise-8-2-8" title="Copy heading and permalink for Exercise 5.2.5.8" aria-label="Copy heading and permalink for Exercise 5.2.5.8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-8-2-9"><h4 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="exercise-8-2-9-1-1">
 <div class="para">Assume <span class="process-math">\(\uvec,\vvec,\wvec\)</span> are linearly independent elements of some vector space <span class="process-math">\(V\text{.}\)</span> Consider the set of vectors</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-8-2-9-1-1-3">
 \begin{equation*}
 R=\{2\uvec-\wvec,\;\wvec+\vvec,\;3\vvec+\tfrac12\uvec\}.
 \end{equation*}
 </div>
 <div class="para">Determine whether <span class="process-math">\(R\)</span> is linearly independent.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-9-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-8-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.5.9"><a href="#exercise-8-2-9" title="Copy permalink for Exercise 5.2.5.9">🔗</a></div></article><div class="autopermalink" data-description="Exercises 5.2.5"><a href="#exercises-8-2" title="Copy permalink for Exercises 5.2.5">🔗</a></div></section><div class="autopermalink" data-description="Section 5.2: Linear combinations, span, and linear independence"><a href="#sec-lin-comb-span-lin-ind" title="Copy permalink for Section 5.2: Linear combinations, span, and linear independence">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercise 5.2.5.9"><a href="#exercise-8-2-9" title="Copy heading and permalink for Exercise 5.2.5.9" aria-label="Copy heading and permalink for Exercise 5.2.5.9">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises 5.2.5"><a href="#exercises-8-2" title="Copy heading and permalink for Exercises 5.2.5" aria-label="Copy heading and permalink for Exercises 5.2.5">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 5.2: Linear combinations, span, and linear independence"><a href="#sec-lin-comb-span-lin-ind" title="Copy heading and permalink for Section 5.2: Linear combinations, span, and linear independence" aria-label="Copy heading and permalink for Section 5.2: Linear combinations, span, and linear independence">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-vecspace-intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-vecsubspace-intro.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

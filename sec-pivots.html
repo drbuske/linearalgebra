@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -73,14 +73,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -97,7 +97,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Linear Algebra">
 <meta property="book:author" content=" Dale Buske ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -128,7 +128,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
@@ -535,21 +535,26 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-pivots"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Pivots and their influence on solution spaces</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-pivots">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pivots and their influence on solution spaces</span>
 </h2>
-<section class="introduction" id="sec-pivots-2"><div class="para" id="sec-pivots-2-1">By now, we have seen several examples illustrating how the reduced row echelon matrix leads to a convenient description of the solution space to a linear system.  In this section, we will use this understanding to make some general observations about how certain features of the reduced row echelon matrix reflect the nature of the solution space.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-pivots-2">
+<div class="para" id="sec-pivots-2-1">By now, we have seen several examples illustrating how the reduced row echelon matrix leads to a convenient description of the solution space to a linear system.  In this section, we will use this understanding to make some general observations about how certain features of the reduced row echelon matrix reflect the nature of the solution space.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-pivots-2-2">Remember that a leading entry in a reduced row echelon matrix is the leftmost nonzero entry in a row of the matrix.  As we’ll see, the positions of these leading entries encode a lot of information about the solution space of the corresponding linear system.  For this reason, we make the following definition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-2-2">Remember that a leading entry in a reduced row echelon matrix is the leftmost nonzero entry in a row of the matrix.  As we’ll see, the positions of these leading entries encode a lot of information about the solution space of the corresponding linear system.  For this reason, we make the following definition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec-pivots-2-3"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec-pivots-2-3-2">A <dfn class="terminology">pivot position</dfn> in a matrix <span class="process-math">\(A\)</span> is the position of a leading entry in the reduced row echelon matrix of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-2-3-2">A <dfn class="terminology">pivot position</dfn> in a matrix <span class="process-math">\(A\)</span> is the position of a leading entry in the reduced row echelon matrix of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.4.1"><a href="#sec-pivots-2-3" title="Copy permalink for Definition 1.4.1">🔗</a></div></article><div class="para logical" id="sec-pivots-2-4">
+<div class="autopermalink" data-description="Definition 1.4.1"><a href="#sec-pivots-2-3" title="Copy heading and permalink for Definition 1.4.1" aria-label="Copy heading and permalink for Definition 1.4.1">🔗</a></div>
+</article>
+<div class="para logical" id="sec-pivots-2-4">
 <div class="para">For instance, in this reduced row echelon matrix, the pivot positions are indicated in bold:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-2-4-1">
 \begin{equation*}
 \begin{bmatrix}
 {\mathbf 1} \amp \gray{0} \amp \gray{*} \amp \gray{0} \\
@@ -560,15 +565,15 @@ sagecell.makeSagecell({
 \end{equation*}
 </div>
 <div class="para">We can refer to pivot positions by their row and column number saying, for instance, that there is a pivot position in the third row and fourth column.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exploration project-like" id="ula-preview-1-4"><h3 class="heading">
-<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Some basic observations about pivots.</span>
+<span class="type">Preview Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Some basic observations about pivots.</span>
 </h3>
 <article class="task exercise-like" id="ula-preview-1-4-a"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="ula-preview-1-4-a-1-1">
 <div class="para">Shown below is a matrix and its reduced row echelon form.  Indicate the pivot positions.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ula-preview-1-4-a-1-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrrr}
@@ -587,59 +592,81 @@ sagecell.makeSagecell({
 \right]\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.a"><a href="#ula-preview-1-4-a" title="Copy permalink for Task 1.4.1.a">🔗</a></div></article><article class="task exercise-like" id="ula-preview-1-4-b"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ula-preview-1-4-b-1-1">How many pivot positions can there be in one row?  In a <span class="process-math">\(3\times5\)</span> matrix, what is the largest possible number of pivot positions?  Give an example of a <span class="process-math">\(3\times5\)</span> matrix that has the largest possible number of pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.a"><a href="#ula-preview-1-4-a" title="Copy heading and permalink for Task 1.4.1.a" aria-label="Copy heading and permalink for Task 1.4.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-preview-1-4-b"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ula-preview-1-4-b-1-1">How many pivot positions can there be in one row?  In a <span class="process-math">\(3\times5\)</span> matrix, what is the largest possible number of pivot positions?  Give an example of a <span class="process-math">\(3\times5\)</span> matrix that has the largest possible number of pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.b"><a href="#ula-preview-1-4-b" title="Copy permalink for Task 1.4.1.b">🔗</a></div></article><article class="task exercise-like" id="ula-preview-1-4-c"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="ula-preview-1-4-c-1-1">How many pivots can there be in one column?  In a <span class="process-math">\(5\times3\)</span> matrix, what is the largest possible number of pivot positions?  Give an example of a <span class="process-math">\(5\times3\)</span> matrix that has the largest possible number of pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-c-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.b"><a href="#ula-preview-1-4-b" title="Copy heading and permalink for Task 1.4.1.b" aria-label="Copy heading and permalink for Task 1.4.1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-preview-1-4-c"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ula-preview-1-4-c-1-1">How many pivots can there be in one column?  In a <span class="process-math">\(5\times3\)</span> matrix, what is the largest possible number of pivot positions?  Give an example of a <span class="process-math">\(5\times3\)</span> matrix that has the largest possible number of pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.c"><a href="#ula-preview-1-4-c" title="Copy permalink for Task 1.4.1.c">🔗</a></div></article><article class="task exercise-like" id="ula-preview-1-4-d"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="ula-preview-1-4-d-1-1">Give an example of a matrix with a pivot position in every row and every column.  What is special about such a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-d-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.c"><a href="#ula-preview-1-4-c" title="Copy heading and permalink for Task 1.4.1.c" aria-label="Copy heading and permalink for Task 1.4.1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-preview-1-4-d"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="ula-preview-1-4-d-1-1">Give an example of a matrix with a pivot position in every row and every column.  What is special about such a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-4-d-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.d"><a href="#ula-preview-1-4-d" title="Copy permalink for Task 1.4.1.d">🔗</a></div></article><div class="autopermalink" data-description="Preview Activity 1.4.1: Some basic observations about pivots"><a href="#ula-preview-1-4" title="Copy permalink for Preview Activity 1.4.1: Some basic observations about pivots">🔗</a></div></article><div class="para" id="sec-pivots-2-6">When we have looked at solution spaces of linear systems, we have frequently asked whether there are infinitely many solutions, exactly one solution, or no solutions.  We will now break this question into two separate questions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.d"><a href="#ula-preview-1-4-d" title="Copy heading and permalink for Task 1.4.1.d" aria-label="Copy heading and permalink for Task 1.4.1.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Preview Activity 1.4.1: Some basic observations about pivots"><a href="#ula-preview-1-4" title="Copy heading and permalink for Preview Activity 1.4.1: Some basic observations about pivots" aria-label="Copy heading and permalink for Preview Activity 1.4.1: Some basic observations about pivots">🔗</a></div>
+</article>
+<div class="para" id="sec-pivots-2-6">When we have looked at solution spaces of linear systems, we have frequently asked whether there are infinitely many solutions, exactly one solution, or no solutions.  We will now break this question into two separate questions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="question example-like" id="fundamental-questions"><h3 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Two Fundamental Questions.</span>
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two Fundamental Questions.</span>
 </h3>
 <div class="para logical" id="fundamental-questions-2">
 <div class="para">When we encounter a linear system, we often ask</div>
 <dl class="description-list">
-<dt id="fundamental-questions-2-1-1">Existence<div class="autopermalink" data-description="Item: Existence"><a href="#fundamental-questions-2-1-1" title="Copy permalink for Item: Existence">🔗</a></div>
+<dt id="fundamental-questions-2-1-1">Existence<div class="autopermalink" data-description="Item: Existence"><a href="#fundamental-questions-2-1-1" title="Copy heading and permalink for Item: Existence" aria-label="Copy heading and permalink for Item: Existence">🔗</a></div>
 </dt>
-<dd><div class="para" id="fundamental-questions-2-1-1-2">Is there a solution to the linear system?  If so, we say that the system is <em class="emphasis">consistent</em>; if not, we say it is <em class="emphasis">inconsistent</em>. <div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-2-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="fundamental-questions-2-1-2">Uniqueness<div class="autopermalink" data-description="Item: Uniqueness"><a href="#fundamental-questions-2-1-2" title="Copy permalink for Item: Uniqueness">🔗</a></div>
-</dt>
-<dd><div class="para" id="fundamental-questions-2-1-2-2">If the linear system is consistent, is the solution unique or are there infinitely many solutions?<div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-2-1-2-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-</dl>
-<div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-2" title="Copy permalink for Paragraph">🔗</a></div>
+<dd>
+<div class="para" id="fundamental-questions-2-1-1-2">Is there a solution to the linear system?  If so, we say that the system is <em class="emphasis">consistent</em>; if not, we say it is <em class="emphasis">inconsistent</em>. <div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Question 1.4.2: Two Fundamental Questions"><a href="#fundamental-questions" title="Copy permalink for Question 1.4.2: Two Fundamental Questions">🔗</a></div></article><div class="para" id="sec-pivots-2-8">These two questions represent two sides of a coin that appear in many variations throughout our explorations.  In this section, we will study how the location of the pivots influence the answers to these two questions.  We begin by considering the first question concerning the existence of solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-8" title="Copy permalink for Paragraph">🔗</a></div>
+</dd>
+<dt id="fundamental-questions-2-1-2">Uniqueness<div class="autopermalink" data-description="Item: Uniqueness"><a href="#fundamental-questions-2-1-2" title="Copy heading and permalink for Item: Uniqueness" aria-label="Copy heading and permalink for Item: Uniqueness">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="fundamental-questions-2-1-2-2">If the linear system is consistent, is the solution unique or are there infinitely many solutions?<div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 1.4.2: Two Fundamental Questions"><a href="#fundamental-questions" title="Copy heading and permalink for Question 1.4.2: Two Fundamental Questions" aria-label="Copy heading and permalink for Question 1.4.2: Two Fundamental Questions">🔗</a></div>
+</article>
+<div class="para" id="sec-pivots-2-8">These two questions represent two sides of a coin that appear in many variations throughout our explorations.  In this section, we will study how the location of the pivots influence the answers to these two questions.  We begin by considering the first question concerning the existence of solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="objectives goal-like" id="sec-pivots-2-9"><h3 class="heading"><span class="type">Videos</span></h3>
-<ul class="disc" id="sec-pivots-2-9-1"><li id="sec-pivots-2-9-1-1">
+<ul class="disc" id="sec-pivots-2-9-1">
+<li id="sec-pivots-2-9-1-1">
 <div class="para" id="sec-pivots-2-9-1-1-1">
-<a class="external" href="https://youtu.be/iQ4fokLHA6I?si=K_4O22jLV1qsX5KW" target="_blank"><code class="code-inline tex2jax_ignore">Existence and Uniqueness for Linear Systems (7:21)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-9-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<a class="external" href="https://youtu.be/iQ4fokLHA6I?si=K_4O22jLV1qsX5KW" target="_blank"><code class="code-inline tex2jax_ignore">Existence and Uniqueness for Linear Systems (7:21)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-2-9-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-pivots-2-9-1-1" title="Copy permalink for Objective">🔗</a></div>
-</li></ul>
-<div class="autopermalink" data-description="Videos"><a href="#sec-pivots-2-9" title="Copy permalink for Videos">🔗</a></div></article></section><section class="subsection" id="sec-pivots-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">The existence of solutions</span>
+<div class="autopermalink" data-description="Objective"><a href="#sec-pivots-2-9-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Videos"><a href="#sec-pivots-2-9" title="Copy heading and permalink for Videos" aria-label="Copy heading and permalink for Videos">🔗</a></div>
+</article></section>
+<section class="subsection" id="sec-pivots-3">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The existence of solutions</span>
 </h3>
 <article class="activity project-like" id="sec-pivots-3-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="sec-pivots-3-2-1-1">
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-3-2-1-1-1">
 <li id="li-existence-examples">
-<div class="para" id="li-existence-examples-1">Shown below are three augmented matrices in reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="li-existence-examples-1">Shown below are three augmented matrices in reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="li-existence-examples-2-1">
-<div class="displaymath process-math">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33.3333333333333% 33.3333333333333% 33.3333333333333%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="li-existence-examples-2-1">
+<div class="displaymath process-math" id="li-existence-examples-2-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -651,10 +678,12 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="li-existence-examples-2-2">
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="li-existence-examples-2-2">
+<div class="displaymath process-math" id="li-existence-examples-2-2-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -666,10 +695,12 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-2-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="li-existence-examples-2-3">
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="li-existence-examples-2-3">
+<div class="displaymath process-math" id="li-existence-examples-2-3-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -681,37 +712,39 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-2-3" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-</div></div>
-<div class="para" id="li-existence-examples-3">For each matrix, identify the pivot positions and determine if the corresponding linear system is consistent. Explain how the location of the pivots determines whether the system is consistent or inconsistent.<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#li-existence-examples" title="Copy permalink for Item a">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="para" id="li-existence-examples-3">For each matrix, identify the pivot positions and determine if the corresponding linear system is consistent. Explain how the location of the pivots determines whether the system is consistent or inconsistent.<div class="autopermalink" data-description="Paragraph"><a href="#li-existence-examples-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#li-existence-examples" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec-pivots-3-2-1-1-1-2">
-<div class="para" id="sec-pivots-3-2-1-1-1-2-1">Each of the augmented matrices above has a row in which each entry is zero.  What, if anything, does the presence of such a row tell us about the consistency of the corresponding linear system?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-3-2-1-1-1-2-1">Each of the augmented matrices above has a row in which each entry is zero.  What, if anything, does the presence of such a row tell us about the consistency of the corresponding linear system?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec-pivots-3-2-1-1-1-2" title="Copy permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-pivots-3-2-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec-pivots-3-2-1-1-1-3">
-<div class="para" id="sec-pivots-3-2-1-1-1-3-1">Give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix in reduced row echelon form that represents a consistent system.  Indicate the pivot positions in your matrix and explain why these pivot positions guarantee a consistent system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-3-2-1-1-1-3-1">Give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix in reduced row echelon form that represents a consistent system.  Indicate the pivot positions in your matrix and explain why these pivot positions guarantee a consistent system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec-pivots-3-2-1-1-1-3" title="Copy permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-pivots-3-2-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="li-pivots-existence">
-<div class="para" id="li-pivots-existence-1">Give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix in reduced row echelon form that represents an inconsistent system.  Indicate the pivot positions in your matrix and explain why these pivot positions guarantee an inconsistent system.<div class="autopermalink" data-description="Paragraph"><a href="#li-pivots-existence-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="li-pivots-existence-1">Give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix in reduced row echelon form that represents an inconsistent system.  Indicate the pivot positions in your matrix and explain why these pivot positions guarantee an inconsistent system.<div class="autopermalink" data-description="Paragraph"><a href="#li-pivots-existence-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#li-pivots-existence" title="Copy permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#li-pivots-existence" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="sec-pivots-3-2-1-1-1-5">
-<div class="para" id="sec-pivots-3-2-1-1-1-5-1">Write the reduced row echelon form of the coefficient matrix of the corresponding linear system in <a href="sec-pivots.html#li-pivots-existence" class="xref" data-knowl="./knowl/xref/li-pivots-existence.html" data-reveal-label="Reveal" data-close-label="Close" title="Item d">Item d</a>?  (Remember that the <a href="sec-sage-introduction.html#principle-augmentation-principle" class="xref" data-knowl="./knowl/xref/principle-augmentation-principle.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.1: Augmentation Principle">Augmentation Principle</a> says that the reduced row echelon form of the coefficient matrix simply consists of the first four columns of the augmented matrix.) What do you notice about the pivot positions in this coefficient matrix?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-3-2-1-1-1-5-1">Write the reduced row echelon form of the coefficient matrix of the corresponding linear system in <a href="sec-pivots.html#li-pivots-existence" class="xref" data-knowl="./knowl/xref/li-pivots-existence.html" data-reveal-label="Reveal" data-close-label="Close" title="Item d">Item d</a>?  (Remember that the <a href="sec-sage-introduction.html#principle-augmentation-principle" class="xref" data-knowl="./knowl/xref/principle-augmentation-principle.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.1: Augmentation Principle">Augmentation Principle</a> says that the reduced row echelon form of the coefficient matrix simply consists of the first four columns of the augmented matrix.) What do you notice about the pivot positions in this coefficient matrix?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#sec-pivots-3-2-1-1-1-5" title="Copy permalink for Item e">🔗</a></div>
+<div class="autopermalink" data-description="Item e"><a href="#sec-pivots-3-2-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 <li id="sec-pivots-3-2-1-1-1-6">
 <div class="para logical" id="sec-pivots-3-2-1-1-1-6-1">
 <div class="para">Suppose we have a linear system for which the <em class="emphasis">coefficient</em> matrix has the following reduced row echelon form.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-3-2-1-1-1-6-1-2">
 \begin{equation*}
 \left[
 \begin{array}{rrrrr}
@@ -724,16 +757,18 @@ sagecell.makeSagecell({
 \end{equation*}
 </div>
 <div class="para">What can you say about the consistency of the linear system?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item f"><a href="#sec-pivots-3-2-1-1-1-6" title="Copy permalink for Item f">🔗</a></div>
+<div class="autopermalink" data-description="Item f"><a href="#sec-pivots-3-2-1-1-1-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.4.2"><a href="#sec-pivots-3-2" title="Copy permalink for Activity 1.4.2">🔗</a></div></article><div class="para logical" id="sec-pivots-3-3">
+<div class="autopermalink" data-description="Activity 1.4.2"><a href="#sec-pivots-3-2" title="Copy heading and permalink for Activity 1.4.2" aria-label="Copy heading and permalink for Activity 1.4.2">🔗</a></div>
+</article>
+<div class="para logical" id="sec-pivots-3-3">
 <div class="para">Let’s summarize the results of this activity by considering the following reduced row echelon matrix:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-3-3-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -746,27 +781,27 @@ sagecell.makeSagecell({
 \end{equation*}
 </div>
 <div class="para">In terms of variables <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\text{,}\)</span> the final equation says</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-3-3-5">
 \begin{equation*}
 0x + 0y + 0z = 0\text{.}
 \end{equation*}
 </div>
 <div class="para">If we evaluate the left-hand side with any values of <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\text{,}\)</span> we get 0, which means that the equation always holds.  Therefore, its presence has no effect on the solution space defined by the other three equations.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-3-4">
 <div class="para">The third equation, however, says that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-3-4-1">
 \begin{equation*}
 0x + 0y + 0z = 1\text{.}
 \end{equation*}
 </div>
 <div class="para">Again, if we evaluate the left-hand side with any values of <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\text{,}\)</span> we get 0 so this equation cannot be satisfied for any <span class="process-math">\((x,y,z)\text{.}\)</span>  This means that the entire linear system has no solution and is therefore inconsistent.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-3-5">
 <div class="para">An equation like this appears in the reduced row echelon matrix as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-3-5-1">
 \begin{equation*}
 \left[
 \begin{array}{cccc|c}
@@ -779,18 +814,20 @@ sagecell.makeSagecell({
 </div>
 <div class="para">The pivot positions make this condition clear: <em class="emphasis">the system is inconsistent if there is a pivot position in the rightmost column of the corresponding augmented matrix.</em>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-pivots-3-6">In fact, we will soon see that the system is consistent if there is not a pivot in the rightmost column of the corresponding augmented matrix.  This leaves us with the following<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-3-6">In fact, we will soon see that the system is consistent if there is not a pivot in the rightmost column of the corresponding augmented matrix.  This leaves us with the following<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="thm-pivot-inconsistency"><h4 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="thm-pivot-inconsistency-1-1">A linear system is inconsistent if and only if there is a pivot position in the rightmost column of the corresponding augmented matrix.<div class="autopermalink" data-description="Paragraph"><a href="#thm-pivot-inconsistency-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-pivot-inconsistency-1-1">A linear system is inconsistent if and only if there is a pivot position in the rightmost column of the corresponding augmented matrix.<div class="autopermalink" data-description="Paragraph"><a href="#thm-pivot-inconsistency-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proposition 1.4.3"><a href="#thm-pivot-inconsistency" title="Copy permalink for Proposition 1.4.3">🔗</a></div></article><div class="para logical" id="sec-pivots-3-8">
+<div class="autopermalink" data-description="Proposition 1.4.3"><a href="#thm-pivot-inconsistency" title="Copy heading and permalink for Proposition 1.4.3" aria-label="Copy heading and permalink for Proposition 1.4.3">🔗</a></div>
+</article>
+<div class="para logical" id="sec-pivots-3-8">
 <div class="para">This also says something about the pivot positions of the coefficient matrix.  Consider an example of an inconsistent system corresponding to the reduced row echelon form of the following augmented matrix</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-augmentation-principle.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-augmentation-principle.html" id="sec-pivots-3-8-1">
 \begin{equation*}
 \left[
 \begin{array}{ccc|c}
@@ -802,7 +839,7 @@ sagecell.makeSagecell({
 \end{equation*}
 </div>
 <div class="para">The <a href="sec-sage-introduction.html#principle-augmentation-principle" class="xref" data-knowl="./knowl/xref/principle-augmentation-principle.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.1: Augmentation Principle">Augmentation Principle</a> says that that the reduced row echelon form of the coefficient matrix is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-augmentation-principle.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-augmentation-principle.html" id="sec-pivots-3-8-3">
 \begin{equation*}
 \left[
 \begin{array}{ccc}
@@ -814,7 +851,7 @@ sagecell.makeSagecell({
 \end{equation*}
 </div>
 <div class="para">which shows that the coefficient matrix has a row without a pivot position.  To turn this around, we see that <em class="emphasis">if every row of the coefficient matrix has a pivot position, then the system must be consistent.</em> For instance, if our linear system has a coefficient matrix whose reduced row echelon form is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-augmentation-principle.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-augmentation-principle.html" id="sec-pivots-3-8-5">
 \begin{equation*}
 \left[
 \begin{array}{ccc}
@@ -826,24 +863,31 @@ sagecell.makeSagecell({
 \end{equation*}
 </div>
 <div class="para">then we can guarantee that the linear system is consistent because there is no way to obtain a pivot in the rightmost column of the augmented matrix.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="sec-pivots-3-9"><h4 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
-</h4>If every row of the coefficient matrix has a pivot position, then the corresponding system of linear equations is consistent.<div class="autopermalink" data-description="Proposition 1.4.4"><a href="#sec-pivots-3-9" title="Copy permalink for Proposition 1.4.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.4.1: The existence of solutions"><a href="#sec-pivots-3" title="Copy permalink for Subsection 1.4.1: The existence of solutions">🔗</a></div></section><section class="subsection" id="sec-pivots-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">The uniqueness of solutions</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>If every row of the coefficient matrix has a pivot position, then the corresponding system of linear equations is consistent.<div class="autopermalink" data-description="Proposition 1.4.4"><a href="#sec-pivots-3-9" title="Copy heading and permalink for Proposition 1.4.4" aria-label="Copy heading and permalink for Proposition 1.4.4">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.4.1: The existence of solutions"><a href="#sec-pivots-3" title="Copy heading and permalink for Subsection 1.4.1: The existence of solutions" aria-label="Copy heading and permalink for Subsection 1.4.1: The existence of solutions">🔗</a></div>
+</section>
+<section class="subsection" id="sec-pivots-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The uniqueness of solutions</span>
 </h3>
-<div class="para" id="sec-pivots-4-2">Now that we have studied the role that pivot positions play in the existence of solutions, let’s turn to the question of uniqueness.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-2">Now that we have studied the role that pivot positions play in the existence of solutions, let’s turn to the question of uniqueness.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="sec-pivots-4-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="sec-pivots-4-3-1-1">
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-4-3-1-1-1">
 <li id="sec-pivots-4-3-1-1-1-1">
-<div class="para" id="sec-pivots-4-3-1-1-1-1-1">Here are the three augmented matrices in reduced row echelon form that we considered in the previous section. <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="sec-pivots-4-3-1-1-1-1-1-1-1">
-<div class="displaymath process-math">
+<div class="para" id="sec-pivots-4-3-1-1-1-1-1">Here are the three augmented matrices in reduced row echelon form that we considered in the previous section. 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33.3333333333333% 33.3333333333333% 33.3333333333333%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="sec-pivots-4-3-1-1-1-1-1-1-1">
+<div class="displaymath process-math" id="sec-pivots-4-3-1-1-1-1-1-1-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -855,10 +899,12 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="sec-pivots-4-3-1-1-1-1-1-1-2">
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="sec-pivots-4-3-1-1-1-1-1-1-2">
+<div class="displaymath process-math" id="sec-pivots-4-3-1-1-1-1-1-1-2-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -870,10 +916,12 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="sec-pivots-4-3-1-1-1-1-1-1-3">
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="sec-pivots-4-3-1-1-1-1-1-1-3">
+<div class="displaymath process-math" id="sec-pivots-4-3-1-1-1-1-1-1-3-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -885,41 +933,48 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-</div></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-pivots-4-3-1-1-1-1-2">For each matrix, identify the pivot positions and state whether the corresponding linear system is consistent.  If the system is consistent, explain whether the solution is unique or whether there are infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec-pivots-4-3-1-1-1-1" title="Copy permalink for Item a">🔗</a></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-pivots-4-3-1-1-1-1-2">For each matrix, identify the pivot positions and state whether the corresponding linear system is consistent.  If the system is consistent, explain whether the solution is unique or whether there are infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-pivots-4-3-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec-pivots-4-3-1-1-1-2">
-<div class="para" id="sec-pivots-4-3-1-1-1-2-1">If possible, give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix that corresponds to a linear system having a unique solution.  If it is not possible, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-3-1-1-1-2-1">If possible, give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix that corresponds to a linear system having a unique solution.  If it is not possible, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec-pivots-4-3-1-1-1-2" title="Copy permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-pivots-4-3-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec-pivots-4-3-1-1-1-3">
-<div class="para" id="sec-pivots-4-3-1-1-1-3-1">If possible, give an example of a <span class="process-math">\(5\times3\)</span> augmented matrix that corresponds to a linear system having a unique solution.  If it is not possible, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-3-1-1-1-3-1">If possible, give an example of a <span class="process-math">\(5\times3\)</span> augmented matrix that corresponds to a linear system having a unique solution.  If it is not possible, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec-pivots-4-3-1-1-1-3" title="Copy permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-pivots-4-3-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="sec-pivots-4-3-1-1-1-4">
-<div class="para" id="sec-pivots-4-3-1-1-1-4-1">What condition on the pivot positions guarantees that a linear system has a unique solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-3-1-1-1-4-1">What condition on the pivot positions guarantees that a linear system has a unique solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#sec-pivots-4-3-1-1-1-4" title="Copy permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#sec-pivots-4-3-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="sec-pivots-4-3-1-1-1-5">
-<div class="para" id="sec-pivots-4-3-1-1-1-5-1">If a linear system has a unique solution, what can we say about the relationship between the number of equations and the number of variables?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-3-1-1-1-5-1">If a linear system has a unique solution, what can we say about the relationship between the number of equations and the number of variables?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#sec-pivots-4-3-1-1-1-5" title="Copy permalink for Item e">🔗</a></div>
+<div class="autopermalink" data-description="Item e"><a href="#sec-pivots-4-3-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.4.3"><a href="#sec-pivots-4-3" title="Copy permalink for Activity 1.4.3">🔗</a></div></article><div class="para" id="sec-pivots-4-4">Let’s consider what we’ve learned in this activity.  Since we are interested in the question of whether a consistent linear system has a unique solution or infinitely many, we will only consider consistent systems.  By the results of the previous section, this means that there is not a pivot in the rightmost column of the augmented matrix.  Here are two possible examples: <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:50%;"><div class="para logical" id="sec-pivots-4-4-1-1">
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Activity 1.4.3"><a href="#sec-pivots-4-3" title="Copy heading and permalink for Activity 1.4.3" aria-label="Copy heading and permalink for Activity 1.4.3">🔗</a></div>
+</article>
+<div class="para" id="sec-pivots-4-4">Let’s consider what we’ve learned in this activity.  Since we are interested in the question of whether a consistent linear system has a unique solution or infinitely many, we will only consider consistent systems.  By the results of the previous section, this means that there is not a pivot in the rightmost column of the augmented matrix.  Here are two possible examples: 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="sec-pivots-4-4-1-1">
+<div class="displaymath process-math" id="sec-pivots-4-4-1-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -930,10 +985,12 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-<div class="sbspanel top" style="width:50%;"><div class="para logical" id="sec-pivots-4-4-1-2">
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para logical" id="sec-pivots-4-4-1-2">
+<div class="displaymath process-math" id="sec-pivots-4-4-1-2-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -944,14 +1001,16 @@ sagecell.makeSagecell({
 \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-4-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
-</div></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-4-5">
 <div class="para">In the first example, we have the equations</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-5-1">
 \begin{equation*}
 \begin{alignedat}{4}
 x_1 \amp {}={} \amp 4 \\
@@ -962,11 +1021,11 @@ x_3 \amp {}={} \amp 2 \\
 </div>
 <div class="para">demonstrating the fact that there is a unique solution <span class="process-math">\((x_1,x_2,x_3) = (4,-1,2)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-4-6">
 <div class="para">In the second example, we have the equations</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-6-1">
 \begin{equation*}
 \begin{alignedat}{4}
 x_1 \amp \amp \amp {}+{} \amp 2x_3\amp {}={} \amp -2 \\
@@ -975,7 +1034,7 @@ x_1 \amp \amp \amp {}+{} \amp 2x_3\amp {}={} \amp -2 \\
 \end{equation*}
 </div>
 <div class="para">that we may rewrite in parametric form as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-6-2">
 \begin{equation*}
 \begin{alignedat}{4}
 x_1 \amp {}={} \amp -2-2x_3 \\
@@ -984,61 +1043,63 @@ x_2 \amp {}={} \amp 4-x_3 \\
 \end{equation*}
 </div>
 <div class="para">Here we see that <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> are basic variables that may be expressed in terms of the free variable <span class="process-math">\(x_3\text{.}\)</span>  In this case, the presence of the free variable leads to infinitely many solutions.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-pivots-4-7">Remember that every column of the coefficient matrix corresponds to a variable in our linear system.  In the first example, we see that every column of the coefficient contains a pivot position, which means that every variable is uniquely determined.  In the second example, the column of the coefficient matrix corresponding to <span class="process-math">\(x_3\)</span> does not contain a pivot position, which  results in <span class="process-math">\(x_3\)</span> appearing as a free variable.  This illustrates the following principle.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-7" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-7">Remember that every column of the coefficient matrix corresponds to a variable in our linear system.  In the first example, we see that every column of the coefficient contains a pivot position, which means that every variable is uniquely determined.  In the second example, the column of the coefficient matrix corresponding to <span class="process-math">\(x_3\)</span> does not contain a pivot position, which  results in <span class="process-math">\(x_3\)</span> appearing as a free variable.  This illustrates the following principle.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="principle theorem-like" id="sec-pivots-4-8"><h4 class="heading">
-<span class="type">Principle</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="sec-pivots-4-8-1-1">
 <div class="para">Suppose that we consider a consistent linear system.</div>
 <ul class="disc" id="sec-pivots-4-8-1-1-1">
 <li id="sec-pivots-4-8-1-1-1-1">
-<div class="para" id="sec-pivots-4-8-1-1-1-1-1">If every column of the coefficient matrix contains a pivot position, then the system has a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-8-1-1-1-1-1">If every column of the coefficient matrix contains a pivot position, then the system has a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-pivots-4-8-1-1-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-pivots-4-8-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-pivots-4-8-1-1-1-2">
-<div class="para" id="sec-pivots-4-8-1-1-1-2-1">If there is a column in the coefficient matrix that contains no pivot position, then the system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-8-1-1-1-2-1">If there is a column in the coefficient matrix that contains no pivot position, then the system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-pivots-4-8-1-1-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-pivots-4-8-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-pivots-4-8-1-1-1-3">
-<div class="para" id="sec-pivots-4-8-1-1-1-3-1">Columns that contain a pivot position correspond to basic variables while columns that do not correspond to free variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-4-8-1-1-1-3-1">Columns that contain a pivot position correspond to basic variables while columns that do not correspond to free variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-pivots-4-8-1-1-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-pivots-4-8-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Principle 1.4.5"><a href="#sec-pivots-4-8" title="Copy permalink for Principle 1.4.5">🔗</a></div></article><div class="para" id="sec-pivots-4-9">When a linear system has a unique solution, every column of the coefficient matrix has a pivot position.  Since every row contains at most one pivot position, there must be at least as many rows as columns in the coefficient matrix.  Therefore, the linear system has at least as many equations as variables, which is something we intuitively suspected in <a href="sec-expect.html" class="internal" title="Section 1.1: What can we expect">Section 1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-9" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Principle 1.4.5"><a href="#sec-pivots-4-8" title="Copy heading and permalink for Principle 1.4.5" aria-label="Copy heading and permalink for Principle 1.4.5">🔗</a></div>
+</article>
+<div class="para" id="sec-pivots-4-9">When a linear system has a unique solution, every column of the coefficient matrix has a pivot position.  Since every row contains at most one pivot position, there must be at least as many rows as columns in the coefficient matrix.  Therefore, the linear system has at least as many equations as variables, which is something we intuitively suspected in <a href="sec-expect.html" class="internal" title="Section 1.1: What can we expect">Section 1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-4-10">
 <div class="para">It is reasonable to ask how we choose the free variables.  For instance, if we have a single equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-10-1">
 \begin{equation*}
 x + 2y = 4\text{,}
 \end{equation*}
 </div>
 <div class="para">then we may write</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-10-2">
 \begin{equation*}
 x = 4-2y
 \end{equation*}
 </div>
 <div class="para">or, equivalently,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-10-3">
 \begin{equation*}
 y = 2 - \frac12 x\text{.}
 \end{equation*}
 </div>
 <div class="para">Clearly, either variable may be considered as a free variable in this case.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-10" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-4-11">
 <div class="para">As we’ll see in the future, we are more interested in the <em class="emphasis">number</em> of free variables rather than in their choice. For convenience, we will adopt the convention that free variables correspond to columns without a pivot position, which allows us to quickly identify them.  For example, the variables <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_4\)</span> appear as free variables in the following linear system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-4-11-4">
 \begin{equation*}
 \left[
 \begin{array}{rrrr|r}
@@ -1048,92 +1109,111 @@ y = 2 - \frac12 x\text{.}
 \right]\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-11" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.4.2: The uniqueness of solutions"><a href="#sec-pivots-4" title="Copy permalink for Subsection 1.4.2: The uniqueness of solutions">🔗</a></div></section><section class="subsection" id="sec-pivots-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="space"> </span><span class="title">Summary</span>
+<div class="autopermalink" data-description="Subsection 1.4.2: The uniqueness of solutions"><a href="#sec-pivots-4" title="Copy heading and permalink for Subsection 1.4.2: The uniqueness of solutions" aria-label="Copy heading and permalink for Subsection 1.4.2: The uniqueness of solutions">🔗</a></div>
+</section>
+<section class="subsection" id="sec-pivots-5">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
 </h3>
-<div class="para" id="sec-pivots-5-2">We have seen how the locations of pivot positions, in both the augmented and coefficient matrices, give vital information about the existence and uniqueness of solutions to linear systems.  More specifically,<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-5-2">We have seen how the locations of pivot positions, in both the augmented and coefficient matrices, give vital information about the existence and uniqueness of solutions to linear systems.  More specifically,<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-pivots-5-3">
 <ul class="disc" id="sec-pivots-5-3-1">
 <li id="sec-pivots-5-3-1-1">
-<div class="para" id="sec-pivots-5-3-1-1-1">A linear system is inconsistent exactly when a pivot position appears in the rightmost column of the <em class="emphasis">augmented</em> matrix.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-5-3-1-1-1">A linear system is inconsistent exactly when a pivot position appears in the rightmost column of the <em class="emphasis">augmented</em> matrix.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-pivots-5-3-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-pivots-5-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-pivots-5-3-1-2">
-<div class="para" id="sec-pivots-5-3-1-2-1">If a linear system is consistent, the solution is unique when every column of the <em class="emphasis">coefficient</em> matrix contains a pivot position.  There are infinitely many solutions when there is a column of the <em class="emphasis">coefficient</em> matrix without a pivot position.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-5-3-1-2-1">If a linear system is consistent, the solution is unique when every column of the <em class="emphasis">coefficient</em> matrix contains a pivot position.  There are infinitely many solutions when there is a column of the <em class="emphasis">coefficient</em> matrix without a pivot position.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-pivots-5-3-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-pivots-5-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-pivots-5-3-1-3">
-<div class="para" id="sec-pivots-5-3-1-3-1">If a linear system is consistent, the columns of the coefficient matrix containing pivot positions correspond to basic variables and the columns without pivot positions correspond to free variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-5-3-1-3-1">If a linear system is consistent, the columns of the coefficient matrix containing pivot positions correspond to basic variables and the columns without pivot positions correspond to free variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-pivots-5-3-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-pivots-5-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="ula-proteus-1-4-pivots-reading-q1"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Pivots and the solution sets of linear systems.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pivots and the solution sets of linear systems.</span>
 </h4>
-<div class="introduction" id="ula-proteus-1-4-pivots-reading-q1-2"><div class="para" id="ula-proteus-1-4-pivots-reading-q1-2-1">Suppose that <span class="process-math">\(A=\left[\begin{array}{ccc|c}
+<div class="introduction" id="ula-proteus-1-4-pivots-reading-q1-2">
+<div class="para" id="ula-proteus-1-4-pivots-reading-q1-2-1">Suppose that <span class="process-math">\(A=\left[\begin{array}{ccc|c}
 1 \amp 0 \amp 1 \amp * \\
 0 \amp 1 \amp -2 \amp * \\
 0 \amp 0 \amp 0 \amp * \\
 0 \amp 0 \amp 0 \amp * \\
-\end{array}\right]\text{,}\)</span> where each <span class="process-math">\(*\)</span> represents an unknown number.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
+\end{array}\right]\text{,}\)</span> where each <span class="process-math">\(*\)</span> represents an unknown number.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
 <article class="task exercise-like" id="ula-proteus-pivots-reading-q1-part-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ula-proteus-pivots-reading-q1-part-a-1-1">If the linear system represented by <span class="process-math">\(A\)</span> is <em class="emphasis">consistent</em> and <span class="process-math">\(A\)</span> is in <em class="emphasis">reduced row echelon form</em>, can we determine any of the unknown numbers? If so, which ones? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-pivots-reading-q1-part-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ula-proteus-pivots-reading-q1-part-a-1-1">If the linear system represented by <span class="process-math">\(A\)</span> is <em class="emphasis">consistent</em> and <span class="process-math">\(A\)</span> is in <em class="emphasis">reduced row echelon form</em>, can we determine any of the unknown numbers? If so, which ones? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-pivots-reading-q1-part-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.6.a"><a href="#ula-proteus-pivots-reading-q1-part-a" title="Copy permalink for Task 1.4.6.a">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-pivots-reading-q1-part-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="ula-proteus-pivots-reading-q1-part-b-1-1">If the linear system represented by <span class="process-math">\(A\)</span> is <em class="emphasis">inconsistent</em> and <span class="process-math">\(A\)</span> is in <em class="emphasis">reduced row echelon form</em>, can we determine any of the unknown numbers? If so, which ones? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-pivots-reading-q1-part-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.6.a"><a href="#ula-proteus-pivots-reading-q1-part-a" title="Copy heading and permalink for Task 1.4.6.a" aria-label="Copy heading and permalink for Task 1.4.6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-proteus-pivots-reading-q1-part-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ula-proteus-pivots-reading-q1-part-b-1-1">If the linear system represented by <span class="process-math">\(A\)</span> is <em class="emphasis">inconsistent</em> and <span class="process-math">\(A\)</span> is in <em class="emphasis">reduced row echelon form</em>, can we determine any of the unknown numbers? If so, which ones? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-pivots-reading-q1-part-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.6.b"><a href="#ula-proteus-pivots-reading-q1-part-b" title="Copy permalink for Task 1.4.6.b">🔗</a></div></article><article class="task exercise-like" id="ula-proteus-pivots-reading-q1-part-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="ula-proteus-pivots-reading-q1-part-c-1-1">If the linear system represented by <span class="process-math">\(A\)</span> is <em class="emphasis">consistent</em> and <span class="process-math">\(A\)</span> is in <em class="emphasis">reduced row echelon form</em>, can you guarantee that there is a single solution or that there are infinitely many solutions? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-pivots-reading-q1-part-c-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.6.b"><a href="#ula-proteus-pivots-reading-q1-part-b" title="Copy heading and permalink for Task 1.4.6.b" aria-label="Copy heading and permalink for Task 1.4.6.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-proteus-pivots-reading-q1-part-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ula-proteus-pivots-reading-q1-part-c-1-1">If the linear system represented by <span class="process-math">\(A\)</span> is <em class="emphasis">consistent</em> and <span class="process-math">\(A\)</span> is in <em class="emphasis">reduced row echelon form</em>, can you guarantee that there is a single solution or that there are infinitely many solutions? Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-pivots-reading-q1-part-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.6.c"><a href="#ula-proteus-pivots-reading-q1-part-c" title="Copy permalink for Task 1.4.6.c">🔗</a></div></article><div class="autopermalink" data-description="Checkpoint 1.4.6: Pivots and the solution sets of linear systems"><a href="#ula-proteus-1-4-pivots-reading-q1" title="Copy permalink for Checkpoint 1.4.6: Pivots and the solution sets of linear systems">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-1-4-pivots-reading-q2"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">The shape of a matrix and consistency.</span>
+<div class="autopermalink" data-description="Task 1.4.6.c"><a href="#ula-proteus-pivots-reading-q1-part-c" title="Copy heading and permalink for Task 1.4.6.c" aria-label="Copy heading and permalink for Task 1.4.6.c">🔗</a></div>
+</article><div class="autopermalink" data-description="Checkpoint 1.4.6: Pivots and the solution sets of linear systems"><a href="#ula-proteus-1-4-pivots-reading-q1" title="Copy heading and permalink for Checkpoint 1.4.6: Pivots and the solution sets of linear systems" aria-label="Copy heading and permalink for Checkpoint 1.4.6: Pivots and the solution sets of linear systems">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ula-proteus-1-4-pivots-reading-q2"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The shape of a matrix and consistency.</span>
 </h4>
-<div class="para" id="ula-proteus-1-4-pivots-reading-q2-2-1">Give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix in reduced row echelon form having two pivot positions and for which the associated system is consistent or explain why this is not possible.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ula-proteus-1-4-pivots-reading-q2-2-1">Give an example of a <span class="process-math">\(3\times5\)</span> augmented matrix in reduced row echelon form having two pivot positions and for which the associated system is consistent or explain why this is not possible.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 1.4.7: The shape of a matrix and consistency"><a href="#ula-proteus-1-4-pivots-reading-q2" title="Copy permalink for Checkpoint 1.4.7: The shape of a matrix and consistency">🔗</a></div></article><article class="exercise exercise-like" id="ula-proteus-1-4-pivots-reading-q3"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span><span class="space"> </span><span class="title">The shape of a matrix and solutions to a linear system.</span>
+<div class="autopermalink" data-description="Checkpoint 1.4.7: The shape of a matrix and consistency"><a href="#ula-proteus-1-4-pivots-reading-q2" title="Copy heading and permalink for Checkpoint 1.4.7: The shape of a matrix and consistency" aria-label="Copy heading and permalink for Checkpoint 1.4.7: The shape of a matrix and consistency">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ula-proteus-1-4-pivots-reading-q3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The shape of a matrix and solutions to a linear system.</span>
 </h4>
 <div class="para logical" id="ula-proteus-1-4-pivots-reading-q3-2-1">
 <div class="para">Suppose you have a linear system with 4 equations and 5 variables.  Which of the following options are not possible as solution sets of the linear system?</div>
 <ul class="disc" id="ula-proteus-1-4-pivots-reading-q3-2-1-1">
 <li id="ula-proteus-1-4-pivots-reading-q3-2-1-1-1">
-<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-1-1-1-1">infinitely many solutions<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-1-1-1-1">infinitely many solutions<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ula-proteus-1-4-pivots-reading-q3-2-1-1-2">
-<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-1-1-2-1">one and only one solution<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-1-1-2-1">one and only one solution<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ula-proteus-1-4-pivots-reading-q3-2-1-1-3">
-<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-1-1-3-1">no solution<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-1-1-3-1">no solution<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-2">Explain your response by considering the possible pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ula-proteus-1-4-pivots-reading-q3-2-2">Explain your response by considering the possible pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#ula-proteus-1-4-pivots-reading-q3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 1.4.8: The shape of a matrix and solutions to a linear system"><a href="#ula-proteus-1-4-pivots-reading-q3" title="Copy permalink for Checkpoint 1.4.8: The shape of a matrix and solutions to a linear system">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.4.3: Summary"><a href="#sec-pivots-5" title="Copy permalink for Subsection 1.4.3: Summary">🔗</a></div></section><section class="exercises" id="sec-pivots-6"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="space"> </span><span class="title">Exercises</span>
+<div class="autopermalink" data-description="Checkpoint 1.4.8: The shape of a matrix and solutions to a linear system"><a href="#ula-proteus-1-4-pivots-reading-q3" title="Copy heading and permalink for Checkpoint 1.4.8: The shape of a matrix and solutions to a linear system" aria-label="Copy heading and permalink for Checkpoint 1.4.8: The shape of a matrix and solutions to a linear system">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.4.3: Summary"><a href="#sec-pivots-5" title="Copy heading and permalink for Subsection 1.4.3: Summary" aria-label="Copy heading and permalink for Subsection 1.4.3: Summary">🔗</a></div>
+</section>
+<section class="exercises" id="sec-pivots-6">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="sec-pivots-6-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<article class="exercise exercise-like" id="sec-pivots-6-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-1-1-1">
 <div class="para">For each of the augmented matrices in reduced row echelon form given below, determine whether the corresponding linear system is consistent and, if so, determine whether the solution is unique.  If the system is consistent, identify the free variables and the basic variables and give a description of the solution space in parametric form.</div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-1-1-1-1">
 <li id="sec-pivots-6-1-1-1-1-1">
 <div class="para logical" id="sec-pivots-6-1-1-1-1-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-1-1-1-1-1-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrrr|r}
@@ -1144,13 +1224,13 @@ y = 2 - \frac12 x\text{.}
 \right]\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.1.a"><a href="#sec-pivots-6-1-1-1-1-1" title="Copy permalink for Item 1.4.4.1.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.1.a"><a href="#sec-pivots-6-1-1-1-1-1" title="Copy heading and permalink for Item 1.4.4.1.a" aria-label="Copy heading and permalink for Item 1.4.4.1.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-1-1-1-1-2">
 <div class="para logical" id="sec-pivots-6-1-1-1-1-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-1-1-1-1-2-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrrr|r}
@@ -1162,13 +1242,13 @@ y = 2 - \frac12 x\text{.}
 \right]\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.1.b"><a href="#sec-pivots-6-1-1-1-1-2" title="Copy permalink for Item 1.4.4.1.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.1.b"><a href="#sec-pivots-6-1-1-1-1-2" title="Copy heading and permalink for Item 1.4.4.1.b" aria-label="Copy heading and permalink for Item 1.4.4.1.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-1-1-1-1-3">
 <div class="para logical" id="sec-pivots-6-1-1-1-1-3-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-1-1-1-1-3-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrrr|r}
@@ -1181,13 +1261,13 @@ y = 2 - \frac12 x\text{.}
 \right]\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.1.c"><a href="#sec-pivots-6-1-1-1-1-3" title="Copy permalink for Item 1.4.4.1.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.1.c"><a href="#sec-pivots-6-1-1-1-1-3" title="Copy heading and permalink for Item 1.4.4.1.c" aria-label="Copy heading and permalink for Item 1.4.4.1.c">🔗</a></div>
 </li>
 <li id="sec-pivots-6-1-1-1-1-4">
 <div class="para logical" id="sec-pivots-6-1-1-1-1-4-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-1-1-1-1-4-1-1">
 \begin{equation*}
 \left[
 \begin{array}{rrr|r}
@@ -1198,14 +1278,16 @@ y = 2 - \frac12 x\text{.}
 \right]\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.1.d"><a href="#sec-pivots-6-1-1-1-1-4" title="Copy permalink for Item 1.4.4.1.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.1.d"><a href="#sec-pivots-6-1-1-1-1-4" title="Copy heading and permalink for Item 1.4.4.1.d" aria-label="Copy heading and permalink for Item 1.4.4.1.d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.1"><a href="#sec-pivots-6-1" title="Copy permalink for Exercise 1.4.4.1">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.1"><a href="#sec-pivots-6-1" title="Copy heading and permalink for Exercise 1.4.4.1" aria-label="Copy heading and permalink for Exercise 1.4.4.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-2-1-1">
 <div class="para">For each of the following linear systems, determine whether the system is consistent, and, if so, determine whether there are infinitely many solutions. <div id="sec-pivots-6-2-1-1-1" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
@@ -1213,7 +1295,7 @@ y = 2 - \frac12 x\text{.}
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-2-1-1-2">
 <li id="sec-pivots-6-2-1-1-2-1">
 <div class="para logical" id="sec-pivots-6-2-1-1-2-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-2-1-1-2-1-1-1">
 \begin{equation*}
 \begin{alignedat}{5}
 2x_1\amp{}-{}\amp x_2\amp {}+{}\amp 3x_3 \amp {}{}
@@ -1227,13 +1309,13 @@ y = 2 - \frac12 x\text{.}
 \end{alignedat}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.2.a"><a href="#sec-pivots-6-2-1-1-2-1" title="Copy permalink for Item 1.4.4.2.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.2.a"><a href="#sec-pivots-6-2-1-1-2-1" title="Copy heading and permalink for Item 1.4.4.2.a" aria-label="Copy heading and permalink for Item 1.4.4.2.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-2-1-1-2-2">
 <div class="para logical" id="sec-pivots-6-2-1-1-2-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-2-1-1-2-2-1-1">
 \begin{equation*}
 \begin{alignedat}{5}
 2x_1\amp{}-{}\amp x_2\amp {}+{}\amp 3x_3 \amp {}+{}
@@ -1247,13 +1329,13 @@ y = 2 - \frac12 x\text{.}
 \end{alignedat}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.2.b"><a href="#sec-pivots-6-2-1-1-2-2" title="Copy permalink for Item 1.4.4.2.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.2.b"><a href="#sec-pivots-6-2-1-1-2-2" title="Copy heading and permalink for Item 1.4.4.2.b" aria-label="Copy heading and permalink for Item 1.4.4.2.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-2-1-1-2-3">
 <div class="para logical" id="sec-pivots-6-2-1-1-2-3-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-2-1-1-2-3-1-1">
 \begin{equation*}
 \begin{alignedat}{5}
 2x_1\amp{}-{}\amp x_2\amp {}+{}\amp 3x_3 \amp {}+{}
@@ -1267,97 +1349,105 @@ y = 2 - \frac12 x\text{.}
 \end{alignedat}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.2.c"><a href="#sec-pivots-6-2-1-1-2-3" title="Copy permalink for Item 1.4.4.2.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.2.c"><a href="#sec-pivots-6-2-1-1-2-3" title="Copy heading and permalink for Item 1.4.4.2.c" aria-label="Copy heading and permalink for Item 1.4.4.2.c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.2"><a href="#sec-pivots-6-2" title="Copy permalink for Exercise 1.4.4.2">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.2"><a href="#sec-pivots-6-2" title="Copy heading and permalink for Exercise 1.4.4.2" aria-label="Copy heading and permalink for Exercise 1.4.4.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-3-1-1">
 <div class="para">Include an example of an appropriate matrix as you justify your responses to the following questions.</div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-3-1-1-1">
 <li id="sec-pivots-6-3-1-1-1-1">
-<div class="para" id="sec-pivots-6-3-1-1-1-1-1">Suppose a linear system having six equations and three variables is consistent.  Can you guarantee that the solution is unique? Can you guarantee that there are infinitely many solutions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-3-1-1-1-1-1">Suppose a linear system having six equations and three variables is consistent.  Can you guarantee that the solution is unique? Can you guarantee that there are infinitely many solutions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.3.a"><a href="#sec-pivots-6-3-1-1-1-1" title="Copy permalink for Item 1.4.4.3.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.3.a"><a href="#sec-pivots-6-3-1-1-1-1" title="Copy heading and permalink for Item 1.4.4.3.a" aria-label="Copy heading and permalink for Item 1.4.4.3.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-3-1-1-1-2">
-<div class="para" id="sec-pivots-6-3-1-1-1-2-1">Suppose that a linear system having three equations and six variables is consistent.  Can you guarantee that the solution is unique? Can you guarantee that there are infinitely many solutions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-3-1-1-1-2-1">Suppose that a linear system having three equations and six variables is consistent.  Can you guarantee that the solution is unique? Can you guarantee that there are infinitely many solutions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.3.b"><a href="#sec-pivots-6-3-1-1-1-2" title="Copy permalink for Item 1.4.4.3.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.3.b"><a href="#sec-pivots-6-3-1-1-1-2" title="Copy heading and permalink for Item 1.4.4.3.b" aria-label="Copy heading and permalink for Item 1.4.4.3.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-3-1-1-1-3">
-<div class="para" id="sec-pivots-6-3-1-1-1-3-1">Suppose that a linear system is consistent and has a unique solution.  What can you guarantee about the pivot positions in the augmented matrix?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-3-1-1-1-3-1">Suppose that a linear system is consistent and has a unique solution.  What can you guarantee about the pivot positions in the augmented matrix?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.3.c"><a href="#sec-pivots-6-3-1-1-1-3" title="Copy permalink for Item 1.4.4.3.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.3.c"><a href="#sec-pivots-6-3-1-1-1-3" title="Copy heading and permalink for Item 1.4.4.3.c" aria-label="Copy heading and permalink for Item 1.4.4.3.c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.3"><a href="#sec-pivots-6-3" title="Copy permalink for Exercise 1.4.4.3">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.3"><a href="#sec-pivots-6-3" title="Copy heading and permalink for Exercise 1.4.4.3" aria-label="Copy heading and permalink for Exercise 1.4.4.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-4-1-1">
 <div class="para">Determine whether the following statements are true or false and provide a justification for your response.</div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-4-1-1-1">
 <li id="sec-pivots-6-4-1-1-1-1">
-<div class="para" id="sec-pivots-6-4-1-1-1-1-1">If the coefficient matrix of a linear system has a pivot in the rightmost column, then the system is inconsistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-4-1-1-1-1-1">If the coefficient matrix of a linear system has a pivot in the rightmost column, then the system is inconsistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.4.a"><a href="#sec-pivots-6-4-1-1-1-1" title="Copy permalink for Item 1.4.4.4.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.4.a"><a href="#sec-pivots-6-4-1-1-1-1" title="Copy heading and permalink for Item 1.4.4.4.a" aria-label="Copy heading and permalink for Item 1.4.4.4.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-4-1-1-1-2">
-<div class="para" id="sec-pivots-6-4-1-1-1-2-1">If a linear system has two equations and four variables, then it must be consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-4-1-1-1-2-1">If a linear system has two equations and four variables, then it must be consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.4.b"><a href="#sec-pivots-6-4-1-1-1-2" title="Copy permalink for Item 1.4.4.4.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.4.b"><a href="#sec-pivots-6-4-1-1-1-2" title="Copy heading and permalink for Item 1.4.4.4.b" aria-label="Copy heading and permalink for Item 1.4.4.4.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-4-1-1-1-3">
-<div class="para" id="sec-pivots-6-4-1-1-1-3-1">If a linear system having four equations and three variables is consistent, then the solution is unique.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-4-1-1-1-3-1">If a linear system having four equations and three variables is consistent, then the solution is unique.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.4.c"><a href="#sec-pivots-6-4-1-1-1-3" title="Copy permalink for Item 1.4.4.4.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.4.c"><a href="#sec-pivots-6-4-1-1-1-3" title="Copy heading and permalink for Item 1.4.4.4.c" aria-label="Copy heading and permalink for Item 1.4.4.4.c">🔗</a></div>
 </li>
 <li id="sec-pivots-6-4-1-1-1-4">
-<div class="para" id="sec-pivots-6-4-1-1-1-4-1">Suppose that a linear system has four equations and four variables and that the coefficient matrix has four pivots. Then the linear system is consistent and has a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-4-1-1-1-4-1">Suppose that a linear system has four equations and four variables and that the coefficient matrix has four pivots. Then the linear system is consistent and has a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.4.d"><a href="#sec-pivots-6-4-1-1-1-4" title="Copy permalink for Item 1.4.4.4.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.4.d"><a href="#sec-pivots-6-4-1-1-1-4" title="Copy heading and permalink for Item 1.4.4.4.d" aria-label="Copy heading and permalink for Item 1.4.4.4.d">🔗</a></div>
 </li>
 <li id="sec-pivots-6-4-1-1-1-5">
-<div class="para" id="sec-pivots-6-4-1-1-1-5-1">Suppose that a linear system has five equations and three variables and that the coefficient matrix has a pivot position in every column.  Then the linear system is consistent and has a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-4-1-1-1-5-1">Suppose that a linear system has five equations and three variables and that the coefficient matrix has a pivot position in every column.  Then the linear system is consistent and has a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.4.e"><a href="#sec-pivots-6-4-1-1-1-5" title="Copy permalink for Item 1.4.4.4.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.4.e"><a href="#sec-pivots-6-4-1-1-1-5" title="Copy heading and permalink for Item 1.4.4.4.e" aria-label="Copy heading and permalink for Item 1.4.4.4.e">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.4"><a href="#sec-pivots-6-4" title="Copy permalink for Exercise 1.4.4.4">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.4"><a href="#sec-pivots-6-4" title="Copy heading and permalink for Exercise 1.4.4.4" aria-label="Copy heading and permalink for Exercise 1.4.4.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-5-1-1">
 <div class="para">We began our explorations in <a href="sec-expect.html" class="internal" title="Section 1.1: What can we expect">Section 1.1</a> by noticing that the solution spaces of linear systems with more equations seem to be smaller.  Let’s reexamine this idea using what we know about pivot positions.</div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-5-1-1-2">
 <li id="sec-pivots-6-5-1-1-2-1">
-<div class="para" id="sec-pivots-6-5-1-1-2-1-1">Remember that the solution space of a single linear equation in three variables is a plane.  Can two planes ever intersect in a single point?  What are the possible ways in which two planes can intersect?  How can our understanding of pivot positions help answer these questions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-5-1-1-2-1-1">Remember that the solution space of a single linear equation in three variables is a plane.  Can two planes ever intersect in a single point?  What are the possible ways in which two planes can intersect?  How can our understanding of pivot positions help answer these questions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.5.a"><a href="#sec-pivots-6-5-1-1-2-1" title="Copy permalink for Item 1.4.4.5.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.5.a"><a href="#sec-pivots-6-5-1-1-2-1" title="Copy heading and permalink for Item 1.4.4.5.a" aria-label="Copy heading and permalink for Item 1.4.4.5.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-5-1-1-2-2">
-<div class="para" id="sec-pivots-6-5-1-1-2-2-1">Suppose that a consistent linear system has more variables than equations.  By considering the possible pivot positions, what can you say with certainty about the solution space?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-5-1-1-2-2-1">Suppose that a consistent linear system has more variables than equations.  By considering the possible pivot positions, what can you say with certainty about the solution space?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.5.b"><a href="#sec-pivots-6-5-1-1-2-2" title="Copy permalink for Item 1.4.4.5.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.5.b"><a href="#sec-pivots-6-5-1-1-2-2" title="Copy heading and permalink for Item 1.4.4.5.b" aria-label="Copy heading and permalink for Item 1.4.4.5.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-5-1-1-2-3">
-<div class="para" id="sec-pivots-6-5-1-1-2-3-1">If a linear system has many more equations than variables, why is it reasonable to expect the system to be inconsistent?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-5-1-1-2-3-1">If a linear system has many more equations than variables, why is it reasonable to expect the system to be inconsistent?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.5.c"><a href="#sec-pivots-6-5-1-1-2-3" title="Copy permalink for Item 1.4.4.5.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.5.c"><a href="#sec-pivots-6-5-1-1-2-3" title="Copy heading and permalink for Item 1.4.4.5.c" aria-label="Copy heading and permalink for Item 1.4.4.5.c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.5"><a href="#sec-pivots-6-5" title="Copy permalink for Exercise 1.4.4.5">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.5"><a href="#sec-pivots-6-5" title="Copy heading and permalink for Exercise 1.4.4.5" aria-label="Copy heading and permalink for Exercise 1.4.4.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-6-1-1">
 <div class="para">The following linear systems contain either one or two parameters.</div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-6-1-1-1">
 <li id="sec-pivots-6-6-1-1-1-1">
 <div class="para logical" id="sec-pivots-6-6-1-1-1-1-1">
 <div class="para">For what values of the parameter <span class="process-math">\(k\)</span> is the following system consistent?  For which of those values is the solution unique?</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-6-1-1-1-1-1-2">
 \begin{equation*}
 \begin{alignedat}{3}
 -x_1 \amp {}+{} \amp 2x_2 \amp {}={} \amp 3 \\
@@ -1365,14 +1455,14 @@ y = 2 - \frac12 x\text{.}
 \end{alignedat}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-6-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-6-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.6.a"><a href="#sec-pivots-6-6-1-1-1-1" title="Copy permalink for Item 1.4.4.6.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.6.a"><a href="#sec-pivots-6-6-1-1-1-1" title="Copy heading and permalink for Item 1.4.4.6.a" aria-label="Copy heading and permalink for Item 1.4.4.6.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-6-1-1-1-2">
 <div class="para logical" id="sec-pivots-6-6-1-1-1-2-1">
 <div class="para">For what values of the parameters <span class="process-math">\(k\)</span> and <em class="emphasis">l</em> is the following system consistent?  For which of those values is the solution unique?</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-6-1-1-1-2-1-3">
 \begin{equation*}
 \begin{alignedat}{3}
 2x_1 \amp {}+{} \amp 4x_2 \amp {}={} \amp 3 \\
@@ -1380,17 +1470,19 @@ y = 2 - \frac12 x\text{.}
 \end{alignedat}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-6-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-6-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.6.b"><a href="#sec-pivots-6-6-1-1-1-2" title="Copy permalink for Item 1.4.4.6.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.6.b"><a href="#sec-pivots-6-6-1-1-1-2" title="Copy heading and permalink for Item 1.4.4.6.b" aria-label="Copy heading and permalink for Item 1.4.4.6.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.6"><a href="#sec-pivots-6-6" title="Copy permalink for Exercise 1.4.4.6">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.6"><a href="#sec-pivots-6-6" title="Copy heading and permalink for Exercise 1.4.4.6" aria-label="Copy heading and permalink for Exercise 1.4.4.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-7-1-1">
 <div class="para">Consider the linear system described by the following augmented matrix.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-7-1-1-1">
 \begin{equation*}
 \left[
 \begin{array}{ccc|c}
@@ -1403,27 +1495,29 @@ a \amp b \amp c \amp 9 \\
 </div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-7-1-1-2">
 <li id="sec-pivots-6-7-1-1-2-1">
-<div class="para" id="sec-pivots-6-7-1-1-2-1-1">Find a choice for the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> that causes the linear system to be inconsistent.  Explain why your choice has this property.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-7-1-1-2-1-1">Find a choice for the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> that causes the linear system to be inconsistent.  Explain why your choice has this property.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.7.a"><a href="#sec-pivots-6-7-1-1-2-1" title="Copy permalink for Item 1.4.4.7.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.7.a"><a href="#sec-pivots-6-7-1-1-2-1" title="Copy heading and permalink for Item 1.4.4.7.a" aria-label="Copy heading and permalink for Item 1.4.4.7.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-7-1-1-2-2">
-<div class="para" id="sec-pivots-6-7-1-1-2-2-1">Find a choice for the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> that causes the linear system to have a unique solution. Explain why your choice has this property.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-7-1-1-2-2-1">Find a choice for the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> that causes the linear system to have a unique solution. Explain why your choice has this property.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.7.b"><a href="#sec-pivots-6-7-1-1-2-2" title="Copy permalink for Item 1.4.4.7.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.7.b"><a href="#sec-pivots-6-7-1-1-2-2" title="Copy heading and permalink for Item 1.4.4.7.b" aria-label="Copy heading and permalink for Item 1.4.4.7.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-7-1-1-2-3">
-<div class="para" id="sec-pivots-6-7-1-1-2-3-1">Find a choice for the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> that causes the linear system to have infinitely many solutions.  Explain why your choice has this property.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-7-1-1-2-3-1">Find a choice for the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> that causes the linear system to have infinitely many solutions.  Explain why your choice has this property.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.7.c"><a href="#sec-pivots-6-7-1-1-2-3" title="Copy permalink for Item 1.4.4.7.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.7.c"><a href="#sec-pivots-6-7-1-1-2-3" title="Copy heading and permalink for Item 1.4.4.7.c" aria-label="Copy heading and permalink for Item 1.4.4.7.c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.7"><a href="#sec-pivots-6-7" title="Copy permalink for Exercise 1.4.4.7">🔗</a></div></article><article class="exercise exercise-like" id="sec-pivots-6-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 1.4.4.7"><a href="#sec-pivots-6-7" title="Copy heading and permalink for Exercise 1.4.4.7" aria-label="Copy heading and permalink for Exercise 1.4.4.7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-pivots-6-8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para logical" id="sec-pivots-6-8-1-1">
 <div class="para">A linear system where the right hand side of every equation is 0 is called <em class="emphasis">homogeneous</em>.  The augmented matrix of a homogeneous system, for instance, has the following form:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-pivots-6-8-1-1-2">
 \begin{equation*}
 \left[
 \begin{array}{cccc|c}
@@ -1436,63 +1530,73 @@ a \amp b \amp c \amp 9 \\
 </div>
 <ol class="lower-alpha ol-marker-1" id="sec-pivots-6-8-1-1-3">
 <li id="sec-pivots-6-8-1-1-3-1">
-<div class="para" id="sec-pivots-6-8-1-1-3-1-1">Using the concepts we’ve seen in this section, explain why a homogeneous linear system must be consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-8-1-1-3-1-1">Using the concepts we’ve seen in this section, explain why a homogeneous linear system must be consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.8.a"><a href="#sec-pivots-6-8-1-1-3-1" title="Copy permalink for Item 1.4.4.8.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.8.a"><a href="#sec-pivots-6-8-1-1-3-1" title="Copy heading and permalink for Item 1.4.4.8.a" aria-label="Copy heading and permalink for Item 1.4.4.8.a">🔗</a></div>
 </li>
 <li id="sec-pivots-6-8-1-1-3-2">
-<div class="para" id="sec-pivots-6-8-1-1-3-2-1">What values for the variables are guaranteed to give a solution?  Use this to offer another explanation for why a homogeneous linear system is consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-8-1-1-3-2-1">What values for the variables are guaranteed to give a solution?  Use this to offer another explanation for why a homogeneous linear system is consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.8.b"><a href="#sec-pivots-6-8-1-1-3-2" title="Copy permalink for Item 1.4.4.8.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.8.b"><a href="#sec-pivots-6-8-1-1-3-2" title="Copy heading and permalink for Item 1.4.4.8.b" aria-label="Copy heading and permalink for Item 1.4.4.8.b">🔗</a></div>
 </li>
 <li id="sec-pivots-6-8-1-1-3-3">
 <div class="para logical" id="sec-pivots-6-8-1-1-3-3-1">
 <div class="para">Suppose that a homogeneous linear system has a unique solution.</div>
 <ol class="decimal ol-marker-2" id="sec-pivots-6-8-1-1-3-3-1-1">
 <li id="sec-pivots-6-8-1-1-3-3-1-1-1">
-<div class="para" id="sec-pivots-6-8-1-1-3-3-1-1-1-1">Give an example of such a system by writing its augmented matrix in reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-8-1-1-3-3-1-1-1-1">Give an example of such a system by writing its augmented matrix in reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.8.c.1"><a href="#sec-pivots-6-8-1-1-3-3-1-1-1" title="Copy permalink for Item 1.4.4.8.c.1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.8.c.1"><a href="#sec-pivots-6-8-1-1-3-3-1-1-1" title="Copy heading and permalink for Item 1.4.4.8.c.1" aria-label="Copy heading and permalink for Item 1.4.4.8.c.1">🔗</a></div>
 </li>
 <li id="sec-pivots-6-8-1-1-3-3-1-1-2">
-<div class="para" id="sec-pivots-6-8-1-1-3-3-1-1-2-1">Write just the coefficient matrix for the example you gave in the previous part.  What can you say about the pivot positions in the coefficient matrix?  Explain why your observation must hold for any homogeneous system having a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-8-1-1-3-3-1-1-2-1">Write just the coefficient matrix for the example you gave in the previous part.  What can you say about the pivot positions in the coefficient matrix?  Explain why your observation must hold for any homogeneous system having a unique solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.8.c.2"><a href="#sec-pivots-6-8-1-1-3-3-1-1-2" title="Copy permalink for Item 1.4.4.8.c.2">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.8.c.2"><a href="#sec-pivots-6-8-1-1-3-3-1-1-2" title="Copy heading and permalink for Item 1.4.4.8.c.2" aria-label="Copy heading and permalink for Item 1.4.4.8.c.2">🔗</a></div>
 </li>
 <li id="sec-pivots-6-8-1-1-3-3-1-1-3">
-<div class="para" id="sec-pivots-6-8-1-1-3-3-1-1-3-1">If a homogeneous system of equations has a unique solution, what can you say about the number of equations compared to the number of variables?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-pivots-6-8-1-1-3-3-1-1-3-1">If a homogeneous system of equations has a unique solution, what can you say about the number of equations compared to the number of variables?<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.8.c.3"><a href="#sec-pivots-6-8-1-1-3-3-1-1-3" title="Copy permalink for Item 1.4.4.8.c.3">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.8.c.3"><a href="#sec-pivots-6-8-1-1-3-3-1-1-3" title="Copy heading and permalink for Item 1.4.4.8.c.3" aria-label="Copy heading and permalink for Item 1.4.4.8.c.3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.8.c"><a href="#sec-pivots-6-8-1-1-3-3" title="Copy permalink for Item 1.4.4.8.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.8.c"><a href="#sec-pivots-6-8-1-1-3-3" title="Copy heading and permalink for Item 1.4.4.8.c" aria-label="Copy heading and permalink for Item 1.4.4.8.c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-pivots-6-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.8"><a href="#sec-pivots-6-8" title="Copy permalink for Exercise 1.4.4.8">🔗</a></div></article><article class="exercise exercise-like" id="exercise-poly-fit"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para" id="exercise-poly-fit-1-1">In a previous math class, you have probably seen the fact that, if we are given two points in the plane, then there is a unique line passing through both of them.  In this problem, we will begin with the four points on the left below and ask to find a polynomial that passes through these four points as shown on the right. <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel top" style="width:47.3684210526316%;">
-<img src="external/images/interpolation-0.svg" role="img" class="contained" alt="A coordinate grid and axes with four points."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="exercise-poly-fit-1-1-1-1-description"><div class="para" id="exercise-poly-fit-1-1-1-1-2-1">Four points in the plane are shown along with a set of axes and a coordinate grid.  The points are <span class="process-math">\((0,2)\text{,}\)</span> <span class="process-math">\((1,3)\text{,}\)</span> <span class="process-math">\((2,0)\text{,}\)</span> and <span class="process-math">\((3,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<div class="autopermalink" data-description="Exercise 1.4.4.8"><a href="#sec-pivots-6-8" title="Copy heading and permalink for Exercise 1.4.4.8" aria-label="Copy heading and permalink for Exercise 1.4.4.8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-poly-fit"><h4 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise-poly-fit-1-1">In a previous math class, you have probably seen the fact that, if we are given two points in the plane, then there is a unique line passing through both of them.  In this problem, we will begin with the four points on the left below and ask to find a polynomial that passes through these four points as shown on the right. 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;grid-template-columns:47.3684210526316% 47.3684210526316%;column-gap:5%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/interpolation-0.svg" role="img" class="contained" alt="A coordinate grid and axes with four points."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="exercise-poly-fit-1-1-1-1-description">
+<div class="para" id="exercise-poly-fit-1-1-1-1-2-1">Four points in the plane are shown along with a set of axes and a coordinate grid.  The points are <span class="process-math">\((0,2)\text{,}\)</span> <span class="process-math">\((1,3)\text{,}\)</span> <span class="process-math">\((2,0)\text{,}\)</span> and <span class="process-math">\((3,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="sbspanel top" style="width:47.3684210526316%;">
-<img src="external/images/interpolation-1.svg" role="img" class="contained" alt="A coordinate grid and axes along with four points and the graph of a cubic function passing through the points."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="exercise-poly-fit-1-1-1-2-description"><div class="para" id="exercise-poly-fit-1-1-1-2-2-1">Four points in the plane are shown along with a set of axes and a coordinate grid.  The points are <span class="process-math">\((0,2)\text{,}\)</span> <span class="process-math">\((1,3)\text{,}\)</span> <span class="process-math">\((2,0)\text{,}\)</span> and <span class="process-math">\((3,1)\text{.}\)</span>  Also shown is the graph of a degree three polynomial that passes through all four points.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-1-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div>
+</div></details>
 </div></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="exercise-poly-fit-1-2">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/interpolation-1.svg" role="img" class="contained" alt="A coordinate grid and axes along with four points and the graph of a cubic function passing through the points."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="exercise-poly-fit-1-1-1-2-description">
+<div class="para" id="exercise-poly-fit-1-1-1-2-2-1">Four points in the plane are shown along with a set of axes and a coordinate grid.  The points are <span class="process-math">\((0,2)\text{,}\)</span> <span class="process-math">\((1,3)\text{,}\)</span> <span class="process-math">\((2,0)\text{,}\)</span> and <span class="process-math">\((3,1)\text{.}\)</span>  Also shown is the graph of a degree three polynomial that passes through all four points.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="exercise-poly-fit-1-2">
 <div class="para">A degree three polynomial can be written as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-poly-fit-1-2-1">
 \begin{equation*}
 p(x) = a + bx + cx^2 + dx^3
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\)</span> are coefficients that we would like to determine. Since we want the polynomial to pass through the point <span class="process-math">\((3,1)\text{,}\)</span> we should require that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-poly-fit-1-2-7">
 \begin{equation*}
 p(3) = a + 3b + 9c + 27d = 1\text{.}
 \end{equation*}
@@ -1501,28 +1605,28 @@ p(3) = a + 3b + 9c + 27d = 1\text{.}
 </div>
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-poly-fit-1-2-12">
 <li id="exercise-poly-fit-1-2-12-1">
-<div class="para" id="exercise-poly-fit-1-2-12-1-1">Write the four linear equations for the coefficients obtained by requiring that the graph of the polynomial <span class="process-math">\(p(x)\)</span> passes through the four points above.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-poly-fit-1-2-12-1-1">Write the four linear equations for the coefficients obtained by requiring that the graph of the polynomial <span class="process-math">\(p(x)\)</span> passes through the four points above.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.9.a"><a href="#exercise-poly-fit-1-2-12-1" title="Copy permalink for Item 1.4.4.9.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.9.a"><a href="#exercise-poly-fit-1-2-12-1" title="Copy heading and permalink for Item 1.4.4.9.a" aria-label="Copy heading and permalink for Item 1.4.4.9.a">🔗</a></div>
 </li>
 <li id="exercise-poly-fit-1-2-12-2">
 <div class="para" id="exercise-poly-fit-1-2-12-2-1">Write the augmented matrix corresponding to this system of equations and use the Sage cell below to solve for the coefficients. <div id="exercise-poly-fit-1-2-12-2-1-1" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.9.b"><a href="#exercise-poly-fit-1-2-12-2" title="Copy permalink for Item 1.4.4.9.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.9.b"><a href="#exercise-poly-fit-1-2-12-2" title="Copy heading and permalink for Item 1.4.4.9.b" aria-label="Copy heading and permalink for Item 1.4.4.9.b">🔗</a></div>
 </li>
 <li id="exercise-poly-fit-1-2-12-3">
 <div class="para" id="exercise-poly-fit-1-2-12-3-1">Write the polynomial <span class="process-math">\(p(x)\)</span> that you found and check your work by graphing it in the Sage cell below and verifying that it passes through the four points.  To plot a function over a range, you may use a command like <code class="code-inline tex2jax_ignore"> plot(1 + x- 2*x^2, xmin = -1, xmax = 4)</code>. <div id="exercise-poly-fit-1-2-12-3-1-3" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.9.c"><a href="#exercise-poly-fit-1-2-12-3" title="Copy permalink for Item 1.4.4.9.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.9.c"><a href="#exercise-poly-fit-1-2-12-3" title="Copy heading and permalink for Item 1.4.4.9.c" aria-label="Copy heading and permalink for Item 1.4.4.9.c">🔗</a></div>
 </li>
 <li id="exercise-poly-fit-1-2-12-4">
 <div class="para logical" id="exercise-poly-fit-1-2-12-4-1">
 <div class="para">Rather than looking for a degree three polynomial, suppose we wanted to find a polynomial that passes through the four points and that has degree two, such as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-poly-fit-1-2-12-4-1-1">
 \begin{equation*}
 p(x) = a + bx + cx^2\text{.}
 \end{equation*}
@@ -1530,14 +1634,14 @@ p(x) = a + bx + cx^2\text{.}
 <div class="para">Solve the linear system for the coefficients. What can you say about the existence and uniqueness of a degree two polynomial passing through these four points? <div id="exercise-poly-fit-1-2-12-4-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.9.d"><a href="#exercise-poly-fit-1-2-12-4" title="Copy permalink for Item 1.4.4.9.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.9.d"><a href="#exercise-poly-fit-1-2-12-4" title="Copy heading and permalink for Item 1.4.4.9.d" aria-label="Copy heading and permalink for Item 1.4.4.9.d">🔗</a></div>
 </li>
 <li id="exercise-poly-fit-1-2-12-5">
 <div class="para logical" id="exercise-poly-fit-1-2-12-5-1">
 <div class="para">Rather than looking for a degree three polynomial, suppose we wanted to find a polynomial that passes through the four points and that has degree four, such as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exercise-poly-fit-1-2-12-5-1-1">
 \begin{equation*}
 p(x) = a + bx + cx^2 + dx^3 + ex^4\text{.}
 \end{equation*}
@@ -1545,19 +1649,23 @@ p(x) = a + bx + cx^2 + dx^3 + ex^4\text{.}
 <div class="para">Solve the linear system for the coefficients. What can you say about the existence and uniqueness of a degree four polynomial passing through these four points? <div id="exercise-poly-fit-1-2-12-5-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.9.e"><a href="#exercise-poly-fit-1-2-12-5" title="Copy permalink for Item 1.4.4.9.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.9.e"><a href="#exercise-poly-fit-1-2-12-5" title="Copy heading and permalink for Item 1.4.4.9.e" aria-label="Copy heading and permalink for Item 1.4.4.9.e">🔗</a></div>
 </li>
 <li id="exercise-poly-fit-1-2-12-6">
-<div class="para" id="exercise-poly-fit-1-2-12-6-1">Suppose you had 10 points and you wanted to find a polynomial passing through each of them.  What should the degree of the polynomial be to guarantee that there is exactly one such polynomial?  Explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-poly-fit-1-2-12-6-1">Suppose you had 10 points and you wanted to find a polynomial passing through each of them.  What should the degree of the polynomial be to guarantee that there is exactly one such polynomial?  Explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2-12-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1.4.4.9.f"><a href="#exercise-poly-fit-1-2-12-6" title="Copy permalink for Item 1.4.4.9.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 1.4.4.9.f"><a href="#exercise-poly-fit-1-2-12-6" title="Copy heading and permalink for Item 1.4.4.9.f" aria-label="Copy heading and permalink for Item 1.4.4.9.f">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-poly-fit-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.4.4.9"><a href="#exercise-poly-fit" title="Copy permalink for Exercise 1.4.4.9">🔗</a></div></article><div class="autopermalink" data-description="Exercises 1.4.4"><a href="#sec-pivots-6" title="Copy permalink for Exercises 1.4.4">🔗</a></div></section><div class="autopermalink" data-description="Section 1.4: Pivots and their influence on solution spaces"><a href="#sec-pivots" title="Copy permalink for Section 1.4: Pivots and their influence on solution spaces">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercise 1.4.4.9"><a href="#exercise-poly-fit" title="Copy heading and permalink for Exercise 1.4.4.9" aria-label="Copy heading and permalink for Exercise 1.4.4.9">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises 1.4.4"><a href="#sec-pivots-6" title="Copy heading and permalink for Exercises 1.4.4" aria-label="Copy heading and permalink for Exercises 1.4.4">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 1.4: Pivots and their influence on solution spaces"><a href="#sec-pivots" title="Copy heading and permalink for Section 1.4: Pivots and their influence on solution spaces" aria-label="Copy heading and permalink for Section 1.4: Pivots and their influence on solution spaces">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-sage-introduction.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

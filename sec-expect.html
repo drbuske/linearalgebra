@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -73,14 +73,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -97,7 +97,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Linear Algebra">
 <meta property="book:author" content=" Dale Buske ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -128,7 +128,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -523,44 +523,52 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-expect"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">What can we expect</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-expect">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What can we expect</span>
 </h2>
-<section class="introduction" id="sec-expect-2"><div class="para" id="sec-expect-2-1">At its heart, the subject of linear algebra is about linear equations and, more specifically, sets of two or more linear equations.  Google routinely deals with a set of trillions of equations each of which has trillions of unknowns. We will eventually understand how to deal with that kind of complexity.  To begin, however, we will look at a more familiar situation in which there are a small number of equations and a small number of unknowns.  In spite of its relative simplicity, this situation is rich enough to demonstrate some fundamental concepts that will motivate much of our exploration.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-expect-2">
+<div class="para" id="sec-expect-2-1">At its heart, the subject of linear algebra is about linear equations and, more specifically, sets of two or more linear equations.  Google routinely deals with a set of trillions of equations each of which has trillions of unknowns. We will eventually understand how to deal with that kind of complexity.  To begin, however, we will look at a more familiar situation in which there are a small number of equations and a small number of unknowns.  In spite of its relative simplicity, this situation is rich enough to demonstrate some fundamental concepts that will motivate much of our exploration.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="objectives goal-like" id="sec-expect-2-2"><h3 class="heading"><span class="type">Videos</span></h3>
 <ul class="disc" id="sec-expect-2-2-1">
 <li id="sec-expect-2-2-1-1">
 <div class="para" id="sec-expect-2-2-1-1-1">
-<a class="external" href="https://youtu.be/9xSOC9lwtl8?si=cVMr8U6pMpak-N5Y" target="_blank"><code class="code-inline tex2jax_ignore">Intro to Linear Systems - Part 1 (6:44)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<a class="external" href="https://youtu.be/9xSOC9lwtl8?si=cVMr8U6pMpak-N5Y" target="_blank"><code class="code-inline tex2jax_ignore">Intro to Linear Systems - Part 1 (6:44)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-expect-2-2-1-1" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-expect-2-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="sec-expect-2-2-1-2">
 <div class="para" id="sec-expect-2-2-1-2-1">
-<a class="external" href="https://youtu.be/oG3jcJb6M70?si=kdizNDVATXJTafKq" target="_blank"><code class="code-inline tex2jax_ignore">Intro to Linear Systems - Part 2 (9:59)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<a class="external" href="https://youtu.be/oG3jcJb6M70?si=kdizNDVATXJTafKq" target="_blank"><code class="code-inline tex2jax_ignore">Intro to Linear Systems - Part 2 (9:59)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-expect-2-2-1-2" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-expect-2-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="sec-expect-2-2-1-3">
 <div class="para" id="sec-expect-2-2-1-3-1">
-<a class="external" href="https://youtu.be/ZKUqtErZCiU?si=7JYX_mK7hRnw1IeV" target="_blank"><code class="code-inline tex2jax_ignore">What's the big idea of Linear Algebra (12:57)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<a class="external" href="https://youtu.be/ZKUqtErZCiU?si=7JYX_mK7hRnw1IeV" target="_blank"><code class="code-inline tex2jax_ignore">What's the big idea of Linear Algebra (12:57)</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-expect-2-2-1-3" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-expect-2-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Videos"><a href="#sec-expect-2-2" title="Copy permalink for Videos">🔗</a></div></article></section><section class="subsection" id="sec-expect-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Some simple examples</span>
+<div class="autopermalink" data-description="Videos"><a href="#sec-expect-2-2" title="Copy heading and permalink for Videos" aria-label="Copy heading and permalink for Videos">🔗</a></div>
+</article></section>
+<section class="subsection" id="sec-expect-3">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Some simple examples</span>
 </h3>
 <article class="activity project-like" id="ula-preview-1-1"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="introduction" id="ula-preview-1-1-1"><div class="para" id="ula-preview-1-1-1-1">In this activity, we consider sets of linear equations having just two unknowns.  In this case, we can graph the solutions sets for the equations, which allows us to visualize different types of behavior.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div>
+<div class="introduction" id="ula-preview-1-1-1">
+<div class="para" id="ula-preview-1-1-1-1">In this activity, we consider sets of linear equations having just two unknowns.  In this case, we can graph the solutions sets for the equations, which allows us to visualize different types of behavior.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
 <article class="task exercise-like" id="ula-preview-1-1-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical" id="ula-preview-1-1-a-1-1">
 <div class="para">On the grid below, graph the lines</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ula-preview-1-1-a-1-1-1">
 \begin{equation*}
 \begin{aligned}
 y \amp = x+1 \\
@@ -568,16 +576,26 @@ y \amp = 2x-1\text{.} \\
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ula-preview-1-1-a-1-2">At what point or points <span class="process-math">\((x,y)\text{,}\)</span> do the lines intersect?  How many points <span class="process-math">\((x,y)\)</span> satisfy both equations?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-a-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
-<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-a-1-3-1-description"><div class="para" id="ula-preview-1-1-a-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-a-1-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div></div></div>
-<div class="autopermalink" data-description="Task 1.1.1.a"><a href="#ula-preview-1-1-a" title="Copy permalink for Task 1.1.1.a">🔗</a></div></article><article class="task exercise-like" id="ula-preview-1-1-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ula-preview-1-1-a-1-2">At what point or points <span class="process-math">\((x,y)\text{,}\)</span> do the lines intersect?  How many points <span class="process-math">\((x,y)\)</span> satisfy both equations?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-a-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:25%;margin-right:25%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-a-1-3-1-description">
+<div class="para" id="ula-preview-1-1-a-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-a-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Task 1.1.1.a"><a href="#ula-preview-1-1-a" title="Copy heading and permalink for Task 1.1.1.a" aria-label="Copy heading and permalink for Task 1.1.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-preview-1-1-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para logical" id="ula-preview-1-1-b-1-1">
 <div class="para">On the grid below, graph the lines</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ula-preview-1-1-b-1-1-1">
 \begin{equation*}
 \begin{aligned}
 y \amp = x+1 \\
@@ -585,30 +603,50 @@ y \amp = x-1\text{.} \\
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ula-preview-1-1-b-1-2">At what point or points <span class="process-math">\((x,y)\text{,}\)</span> do the lines intersect?  How many points <span class="process-math">\((x,y)\)</span> satisfy both equations?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-b-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
-<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-b-1-3-1-description"><div class="para" id="ula-preview-1-1-b-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-b-1-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div></div></div>
-<div class="autopermalink" data-description="Task 1.1.1.b"><a href="#ula-preview-1-1-b" title="Copy permalink for Task 1.1.1.b">🔗</a></div></article><article class="task exercise-like" id="ula-preview-1-1-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ula-preview-1-1-b-1-2">At what point or points <span class="process-math">\((x,y)\text{,}\)</span> do the lines intersect?  How many points <span class="process-math">\((x,y)\)</span> satisfy both equations?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-b-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:25%;margin-right:25%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-b-1-3-1-description">
+<div class="para" id="ula-preview-1-1-b-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-b-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Task 1.1.1.b"><a href="#ula-preview-1-1-b" title="Copy heading and permalink for Task 1.1.1.b" aria-label="Copy heading and permalink for Task 1.1.1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-preview-1-1-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="ula-preview-1-1-c-1-1">
 <div class="para">On the grid below, graph the line</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ula-preview-1-1-c-1-1-1">
 \begin{equation*}
 y = x+1\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-c-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ula-preview-1-1-c-1-2">How many points <span class="process-math">\((x,y)\)</span> satisfy this equation?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-c-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
-<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-c-1-3-1-description"><div class="para" id="ula-preview-1-1-c-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-c-1-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div></div></div>
-<div class="autopermalink" data-description="Task 1.1.1.c"><a href="#ula-preview-1-1-c" title="Copy permalink for Task 1.1.1.c">🔗</a></div></article><article class="task exercise-like" id="ula-preview-1-1-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ula-preview-1-1-c-1-2">How many points <span class="process-math">\((x,y)\)</span> satisfy this equation?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-c-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:25%;margin-right:25%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-c-1-3-1-description">
+<div class="para" id="ula-preview-1-1-c-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-c-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Task 1.1.1.c"><a href="#ula-preview-1-1-c" title="Copy heading and permalink for Task 1.1.1.c" aria-label="Copy heading and permalink for Task 1.1.1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ula-preview-1-1-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical" id="ula-preview-1-1-d-1-1">
 <div class="para">On the grid below, graph the lines</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ula-preview-1-1-d-1-1-1">
 \begin{equation*}
 \begin{aligned}
 y \amp = x+1 \\
@@ -617,249 +655,317 @@ y \amp = -x. \\
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-d-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ula-preview-1-1-d-1-2">At what point or points <span class="process-math">\((x,y)\text{,}\)</span> do the lines intersect?  How many points <span class="process-math">\((x,y)\)</span> satisfy all three equations?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-d-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;">
-<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-d-1-3-1-description"><div class="para" id="ula-preview-1-1-d-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-d-1-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div></div></div>
-<div class="autopermalink" data-description="Task 1.1.1.d"><a href="#ula-preview-1-1-d" title="Copy permalink for Task 1.1.1.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.1.1"><a href="#ula-preview-1-1" title="Copy permalink for Activity 1.1.1">🔗</a></div></article><div class="para" id="sec-expect-3-3">The examples in this introductory activity demonstrate several possible outcomes for the solutions to a set of linear equations.  Notice that we are interested in points that satisfy each equation in the set and that these are seen as intersection points of the lines.  Similar to the examples considered in the activity, three types of outcomes are seen in <a href="sec-expect.html#fig-three-possibilities" class="xref" data-knowl="./knowl/xref/fig-three-possibilities.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.1">Figure 1.1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-d-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ula-preview-1-1-d-1-2">At what point or points <span class="process-math">\((x,y)\text{,}\)</span> do the lines intersect?  How many points <span class="process-math">\((x,y)\)</span> satisfy all three equations?<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-d-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:25%;margin-right:25%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/empty-4.svg" role="img" class="contained" alt="A coordinate grid and axes for plotting two lines."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ula-preview-1-1-d-1-3-1-description">
+<div class="para" id="ula-preview-1-1-d-1-3-1-2-1">A coordinate grid and axes where the horizontal and vertical coordinates range from -4 to 4.  There are no other features as the reader is asked to graph two lines with this image as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#ula-preview-1-1-d-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Task 1.1.1.d"><a href="#ula-preview-1-1-d" title="Copy heading and permalink for Task 1.1.1.d" aria-label="Copy heading and permalink for Task 1.1.1.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Activity 1.1.1"><a href="#ula-preview-1-1" title="Copy heading and permalink for Activity 1.1.1" aria-label="Copy heading and permalink for Activity 1.1.1">🔗</a></div>
+</article>
+<div class="para" id="sec-expect-3-3">The examples in this introductory activity demonstrate several possible outcomes for the solutions to a set of linear equations.  Notice that we are interested in points that satisfy each equation in the set and that these are seen as intersection points of the lines.  Similar to the examples considered in the activity, three types of outcomes are seen in <a href="sec-expect.html#fig-three-possibilities" class="xref" data-knowl="./knowl/xref/fig-three-possibilities.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.1">Figure 1.1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-three-possibilities"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;">
-<img src="external/images/three-possibilities-2.svg" role="img" class="contained" alt="Three graphs depicting some possibilities for sets of linear equations."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-three-possibilities-1-description"><div class="para logical" id="fig-three-possibilities-1-2-1">
+<img src="external/images/three-possibilities-2.svg" role="img" class="contained" alt="Three graphs depicting some possibilities for sets of linear equations."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-three-possibilities-1-description">
+<div class="para logical" id="fig-three-possibilities-1-2-1">
 <div class="para">Three separate graphs are shown.</div>
 <ul class="disc" id="fig-three-possibilities-1-2-1-1">
 <li id="fig-three-possibilities-1-2-1-1-1">
-<div class="para" id="fig-three-possibilities-1-2-1-1-1-1">The left graph shows a single line, which contains infinitely many points.  This demonstrates that a set of linear equations may have infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="fig-three-possibilities-1-2-1-1-1-1">The left graph shows a single line, which contains infinitely many points.  This demonstrates that a set of linear equations may have infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#fig-three-possibilities-1-2-1-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#fig-three-possibilities-1-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="fig-three-possibilities-1-2-1-1-2">
-<div class="para" id="fig-three-possibilities-1-2-1-1-2-1">The middle graph shows a pair of lines that intersect in a single point, demonstrating that a set of linear equations may contain a single common solution.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="fig-three-possibilities-1-2-1-1-2-1">The middle graph shows a pair of lines that intersect in a single point, demonstrating that a set of linear equations may contain a single common solution.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#fig-three-possibilities-1-2-1-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#fig-three-possibilities-1-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="fig-three-possibilities-1-2-1-1-3">
-<div class="para" id="fig-three-possibilities-1-2-1-1-3-1">The right graph shows three lines that have no common point of intersection.  This shows that a set of linear equations may have no common solutions.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="fig-three-possibilities-1-2-1-1-3-1">The right graph shows three lines that have no common point of intersection.  This shows that a set of linear equations may have no common solutions.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#fig-three-possibilities-1-2-1-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#fig-three-possibilities-1-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-possibilities-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span>Three possible graphs for sets of linear equations in two unknowns.<div class="autopermalink" data-description="Figure 1.1.1"><a href="#fig-three-possibilities" title="Copy permalink for Figure 1.1.1">🔗</a></div></figcaption></figure><div class="para" id="sec-expect-3-5">In this figure, we see that<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Three possible graphs for sets of linear equations in two unknowns.<div class="autopermalink" data-description="Figure 1.1.1"><a href="#fig-three-possibilities" title="Copy heading and permalink for Figure 1.1.1" aria-label="Copy heading and permalink for Figure 1.1.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-expect-3-5">In this figure, we see that<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ul class="disc" id="sec-expect-3-6">
 <li id="sec-expect-3-6-1">
 <div class="para" id="p-derived-sec-expect-3-6-1">With a single equation, there are infinitely many points <span class="process-math">\((x,y)\)</span> satisfying that equation.</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-6-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-3-6-2">
 <div class="para" id="p-derived-sec-expect-3-6-2">Adding a second equation adds another condition we place on the points <span class="process-math">\((x,y)\)</span> resulting in a single point that satisfies both equations.</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-6-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-3-6-3">
 <div class="para" id="p-derived-sec-expect-3-6-3">Adding a third equation adds a third condition on the points <span class="process-math">\((x,y)\text{,}\)</span> and there is no point that satisfies all three equations.</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-6-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para" id="sec-expect-3-7">Generally speaking, a single equation will have many solutions, in fact, infinitely many.  As we add equations, we add conditions which lead, in a sense we will make precise later, to a smaller number of solutions.  Eventually, we have too many equations and find there are no points that satisfy all of them.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-7" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-7">Generally speaking, a single equation will have many solutions, in fact, infinitely many.  As we add equations, we add conditions which lead, in a sense we will make precise later, to a smaller number of solutions.  Eventually, we have too many equations and find there are no points that satisfy all of them.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-expect-3-8">This example illustrates a general principle to which we will frequently return.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-8">This example illustrates a general principle to which we will frequently return.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="solution-possibilities"><h4 class="heading"><span class="title">Solutions to sets of linear equations.</span></h4>
 <div class="para logical" id="solution-possibilities-2">
 <div class="para">Given a set of linear equations, there are either:</div>
 <ul class="disc" id="solution-possibilities-2-1">
 <li id="solution-possibilities-2-1-1">
-<div class="para" id="solution-possibilities-2-1-1-1">infinitely many points,<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="solution-possibilities-2-1-1-1">infinitely many points,<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#solution-possibilities-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#solution-possibilities-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="solution-possibilities-2-1-2">
-<div class="para" id="solution-possibilities-2-1-2-1">exactly one point, or<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="solution-possibilities-2-1-2-1">exactly one point, or<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#solution-possibilities-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#solution-possibilities-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="solution-possibilities-2-1-3">
-<div class="para" id="solution-possibilities-2-1-3-1">no points<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="solution-possibilities-2-1-3-1">no points<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#solution-possibilities-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#solution-possibilities-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">that satisfy every equation in the set.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#solution-possibilities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Solutions to sets of linear equations"><a href="#solution-possibilities" title="Copy permalink for Assemblage: Solutions to sets of linear equations">🔗</a></div></article><div class="para logical" id="sec-expect-3-10">
+<div class="autopermalink" data-description="Assemblage: Solutions to sets of linear equations"><a href="#solution-possibilities" title="Copy heading and permalink for Assemblage: Solutions to sets of linear equations" aria-label="Copy heading and permalink for Assemblage: Solutions to sets of linear equations">🔗</a></div>
+</article>
+<div class="para logical" id="sec-expect-3-10">
 <div class="para">Notice that we can see a bit more.  In <a href="sec-expect.html#fig-three-possibilities" class="xref" data-knowl="./knowl/xref/fig-three-possibilities.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.1">Figure 1.1.1</a>, we are looking at equations in two unknowns.  Here we see that</div>
 <ul class="disc" id="sec-expect-3-10-2">
 <li id="sec-expect-3-10-2-1">
-<div class="para" id="sec-expect-3-10-2-1-1">One equation has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-10-2-1-1">One equation has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-10-2-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-10-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-3-10-2-2">
-<div class="para" id="sec-expect-3-10-2-2-1">Two equations have exactly one solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-10-2-2-1">Two equations have exactly one solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-10-2-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-10-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-3-10-2-3">
-<div class="para" id="sec-expect-3-10-2-3-1">Three equations have no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-10-2-3-1">Three equations have no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-10-2-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-3-10-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-expect-3-11">It seems reasonable to wonder if the number of solutions depends on whether the number of equations is less than, equal to, or greater than the number of unknowns.  Of course, one of the examples in the activity shows that there are exceptions to this simple rule, as seen in <a href="sec-expect.html#solution-exceptions" class="xref" data-knowl="./knowl/xref/solution-exceptions.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.2">Figure 1.1.2</a>.  For instance, two equations in two unknowns may correspond to parallel lines so that the set of equations has no solutions. It may also happen that a set of three equations in two unknowns has a single solution.  However, it seems safe to think that the more equations we have, the smaller the set of solutions will be.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-11" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-11">It seems reasonable to wonder if the number of solutions depends on whether the number of equations is less than, equal to, or greater than the number of unknowns.  Of course, one of the examples in the activity shows that there are exceptions to this simple rule, as seen in <a href="sec-expect.html#solution-exceptions" class="xref" data-knowl="./knowl/xref/solution-exceptions.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.2">Figure 1.1.2</a>.  For instance, two equations in two unknowns may correspond to parallel lines so that the set of equations has no solutions. It may also happen that a set of three equations in two unknowns has a single solution.  However, it seems safe to think that the more equations we have, the smaller the set of solutions will be.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="solution-exceptions"><div class="sidebyside"><div class="sbsrow" style="margin-left:8%;margin-right:8%;">
-<div class="sbspanel top" style="width:47.6190476190476%;">
-<img src="external/images/intro-parallel.svg" role="img" class="contained" alt="Two parallel lines"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="solution-exceptions-2-1-description"><div class="para" id="solution-exceptions-2-1-2-1">Two parallel lines are shown, which demonstrates the fact that a set of two equations in two unknowns may have no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#solution-exceptions-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<figure class="figure figure-like" id="solution-exceptions">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:8%;margin-right:8%;grid-template-columns:47.6190476190476% 47.6190476190476%;column-gap:4%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/intro-parallel.svg" role="img" class="contained" alt="Two parallel lines"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="solution-exceptions-2-1-description">
+<div class="para" id="solution-exceptions-2-1-2-1">Two parallel lines are shown, which demonstrates the fact that a set of two equations in two unknowns may have no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#solution-exceptions-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="sbspanel top" style="width:47.6190476190476%;">
-<img src="external/images/intro-coincident.svg" role="img" class="contained" alt="Three lines that intersect in a single point."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="solution-exceptions-2-2-description"><div class="para" id="solution-exceptions-2-2-2-1">Three lines are shown in the two dimensional plane and intersect in a single point.  This demonstrates that a set of three equations in two unknowns may have exactly one solution.<div class="autopermalink" data-description="Paragraph"><a href="#solution-exceptions-2-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div>
+</div></details>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span>A set of two equations in two unknowns can have no solutions, and a set of three equations can have one solution.<div class="autopermalink" data-description="Figure 1.1.2"><a href="#solution-exceptions" title="Copy permalink for Figure 1.1.2">🔗</a></div></figcaption></figure><div class="para" id="sec-expect-3-13">Let’s also consider some examples of equations having three unknowns, which we call <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\text{.}\)</span>  Just as solutions to linear equations in two unknowns formed straight lines, solutions to linear equations in three unknowns form planes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-13" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/intro-coincident.svg" role="img" class="contained" alt="Three lines that intersect in a single point."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="solution-exceptions-2-2-description">
+<div class="para" id="solution-exceptions-2-2-2-1">Three lines are shown in the two dimensional plane and intersect in a single point.  This demonstrates that a set of three equations in two unknowns may have exactly one solution.<div class="autopermalink" data-description="Paragraph"><a href="#solution-exceptions-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-expect-3-14">When we consider an equation in three unknowns graphically, we need to add a third coordinate axis, as shown in <a href="sec-expect.html#fig-coordinates" class="xref" data-knowl="./knowl/xref/fig-coordinates.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.3">Figure 1.1.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-14" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<figure class="figure figure-like" id="fig-coordinates"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;">
-<img src="external/images/coordinates-2d.svg" role="img" class="contained" alt="A set of two dimensional coordinate axes labelled by x and y."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-coordinates-1-1-description"><div class="para" id="fig-coordinates-1-1-2-1">A set of two dimensional coordinate axes labelled by x and y.<div class="autopermalink" data-description="Paragraph"><a href="#fig-coordinates-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div>
-<div class="sbspanel top" style="width:44.4444444444444%;">
-<img src="external/images/coordinates-3d.svg" role="img" class="contained" alt="A set of three dimensional coordinate axes labelled by x, y, and z."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-coordinates-1-2-description"><div class="para" id="fig-coordinates-1-2-2-1">A set of three dimensional coordinate axes labelled by x, y, and z.<div class="autopermalink" data-description="Paragraph"><a href="#fig-coordinates-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div>
+</div></details>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.3<span class="period">.</span></span><span class="space"> </span>Coordinate systems in two and three dimensions.<div class="autopermalink" data-description="Figure 1.1.3"><a href="#fig-coordinates" title="Copy permalink for Figure 1.1.3">🔗</a></div></figcaption></figure><div class="para" id="sec-expect-3-16">As shown in <a href="sec-expect.html#fig-plane-z0" class="xref" data-knowl="./knowl/xref/fig-plane-z0.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.4">Figure 1.1.4</a>, a linear equation in two unknowns, such as <span class="process-math">\(y=0\text{,}\)</span> is a line while a linear equation in three unknowns, such as <span class="process-math">\(z=0\text{,}\)</span> is a plane.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-16" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="fig-plane-z0"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;">
-<img src="external/images/2dy0.svg" role="img" class="contained" alt="The solution to the equation y equals zero in two dimensions"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-plane-z0-1-1-description"><div class="para" id="fig-plane-z0-1-1-2-1">The solution to the equation <span class="process-math">\(y=0\)</span> in two dimensions consists of the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#fig-plane-z0-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
 </div>
-<div class="sbspanel top" style="width:44.4444444444444%;">
-<img src="external/images/3dz0.svg" role="img" class="contained" alt="The solution to the equation z equals zero in three dimensions."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-plane-z0-1-2-description"><div class="para" id="fig-plane-z0-1-2-2-1">The solution to the equation <span class="process-math">\(z=0\)</span> in three dimensions consists of the <span class="process-math">\(xy\)</span>-plane.<div class="autopermalink" data-description="Paragraph"><a href="#fig-plane-z0-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A set of two equations in two unknowns can have no solutions, and a set of three equations can have one solution.<div class="autopermalink" data-description="Figure 1.1.2"><a href="#solution-exceptions" title="Copy heading and permalink for Figure 1.1.2" aria-label="Copy heading and permalink for Figure 1.1.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-expect-3-13">Let’s also consider some examples of equations having three unknowns, which we call <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\text{.}\)</span>  Just as solutions to linear equations in two unknowns formed straight lines, solutions to linear equations in three unknowns form planes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="para" id="sec-expect-3-14">When we consider an equation in three unknowns graphically, we need to add a third coordinate axis, as shown in <a href="sec-expect.html#fig-coordinates" class="xref" data-knowl="./knowl/xref/fig-coordinates.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.3">Figure 1.1.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-coordinates">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:5%;margin-right:5%;grid-template-columns:44.4444444444444% 44.4444444444444%;column-gap:10%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/coordinates-2d.svg" role="img" class="contained" alt="A set of two dimensional coordinate axes labelled by x and y."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-coordinates-1-1-description">
+<div class="para" id="fig-coordinates-1-1-2-1">A set of two dimensional coordinate axes labelled by x and y.<div class="autopermalink" data-description="Paragraph"><a href="#fig-coordinates-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.4<span class="period">.</span></span><span class="space"> </span>The solutions to the equation <span class="process-math">\(y=0\)</span> in two dimensions and <span class="process-math">\(z=0\)</span> in three.<div class="autopermalink" data-description="Figure 1.1.4"><a href="#fig-plane-z0" title="Copy permalink for Figure 1.1.4">🔗</a></div></figcaption></figure><div class="para" id="sec-expect-3-18">In three unknowns, the set of solutions to one linear equation forms a plane.  The set of solutions to a pair of linear equations is seen graphically as the intersection of the two planes.  As in <a href="sec-expect.html#fig-two-planes" class="xref" data-knowl="./knowl/xref/fig-two-planes.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.5">Figure 1.1.5</a>, we typically expect this intersection to be a line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-18" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/coordinates-3d.svg" role="img" class="contained" alt="A set of three dimensional coordinate axes labelled by x, y, and z."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-coordinates-1-2-description">
+<div class="para" id="fig-coordinates-1-2-2-1">A set of three dimensional coordinate axes labelled by x, y, and z.<div class="autopermalink" data-description="Paragraph"><a href="#fig-coordinates-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="fig-two-planes"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:50%;">
-<img src="external/images/plane-simple.svg" role="img" class="contained" alt="A single plane in three dimensions."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-two-planes-1-1-description"><div class="para" id="fig-two-planes-1-1-2-1">The solutions to one equation in three unknowns form a plane.<div class="autopermalink" data-description="Paragraph"><a href="#fig-two-planes-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div>
-<div class="sbspanel top" style="width:50%;">
-<img src="external/images/plane-int-1.svg" role="img" class="contained" alt="Two planes intersecting in a line."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-two-planes-1-2-description"><div class="para" id="fig-two-planes-1-2-2-1">The set of solutions to two equations in three unknowns is represented by a pair of planes that intersect in a single line.<div class="autopermalink" data-description="Paragraph"><a href="#fig-two-planes-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
-</div>
+</div></details>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.5<span class="period">.</span></span><span class="space"> </span>A single plane and the intersection of two planes.<div class="autopermalink" data-description="Figure 1.1.5"><a href="#fig-two-planes" title="Copy permalink for Figure 1.1.5">🔗</a></div></figcaption></figure><div class="para" id="sec-expect-3-20">When we add a third equation, we are looking for the intersection of three planes, which we expect to form a point, as in the left of <a href="sec-expect.html#fig-three-planes" class="xref" data-knowl="./knowl/xref/fig-three-planes.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.6">Figure 1.1.6</a>.  However, in certain special cases, it may happen that there are no solutions, as seen on the right.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-20" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="fig-three-planes"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:50%;">
-<img src="external/images/plane-int-2.svg" role="img" class="contained" alt="Three planes that intersect in a single point."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-three-planes-1-1-description"><div class="para" id="fig-three-planes-1-1-2-1">This set of solutions to three equations in three unknowns is represented by three planes that intersect in a single point.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-planes-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
 </div>
-<div class="sbspanel top" style="width:50%;">
-<img src="external/images/plane-int-3.svg" role="img" class="contained" alt="Three planes that do not intersect in any common points."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-three-planes-1-2-description"><div class="para" id="fig-three-planes-1-2-2-1">This set of three equations in three unknowns is represented by three planes that have no common points of intersection.  This demonstrates that a set of three equations in three unknowns may have no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-planes-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Coordinate systems in two and three dimensions.<div class="autopermalink" data-description="Figure 1.1.3"><a href="#fig-coordinates" title="Copy heading and permalink for Figure 1.1.3" aria-label="Copy heading and permalink for Figure 1.1.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-expect-3-16">As shown in <a href="sec-expect.html#fig-plane-z0" class="xref" data-knowl="./knowl/xref/fig-plane-z0.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.4">Figure 1.1.4</a>, a linear equation in two unknowns, such as <span class="process-math">\(y=0\text{,}\)</span> is a line while a linear equation in three unknowns, such as <span class="process-math">\(z=0\text{,}\)</span> is a plane.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<figure class="figure figure-like" id="fig-plane-z0">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:5%;margin-right:5%;grid-template-columns:44.4444444444444% 44.4444444444444%;column-gap:10%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/2dy0.svg" role="img" class="contained" alt="The solution to the equation y equals zero in two dimensions"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-plane-z0-1-1-description">
+<div class="para" id="fig-plane-z0-1-1-2-1">The solution to the equation <span class="process-math">\(y=0\)</span> in two dimensions consists of the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#fig-plane-z0-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.6<span class="period">.</span></span><span class="space"> </span>Two examples showing the intersections of three planes.<div class="autopermalink" data-description="Figure 1.1.6"><a href="#fig-three-planes" title="Copy permalink for Figure 1.1.6">🔗</a></div></figcaption></figure><article class="activity project-like" id="sec-expect-3-22"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/3dz0.svg" role="img" class="contained" alt="The solution to the equation z equals zero in three dimensions."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-plane-z0-1-2-description">
+<div class="para" id="fig-plane-z0-1-2-2-1">The solution to the equation <span class="process-math">\(z=0\)</span> in three dimensions consists of the <span class="process-math">\(xy\)</span>-plane.<div class="autopermalink" data-description="Paragraph"><a href="#fig-plane-z0-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The solutions to the equation <span class="process-math">\(y=0\)</span> in two dimensions and <span class="process-math">\(z=0\)</span> in three.<div class="autopermalink" data-description="Figure 1.1.4"><a href="#fig-plane-z0" title="Copy heading and permalink for Figure 1.1.4" aria-label="Copy heading and permalink for Figure 1.1.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-expect-3-18">In three unknowns, the set of solutions to one linear equation forms a plane.  The set of solutions to a pair of linear equations is seen graphically as the intersection of the two planes.  As in <a href="sec-expect.html#fig-two-planes" class="xref" data-knowl="./knowl/xref/fig-two-planes.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.5">Figure 1.1.5</a>, we typically expect this intersection to be a line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-two-planes">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/plane-simple.svg" role="img" class="contained" alt="A single plane in three dimensions."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-two-planes-1-1-description">
+<div class="para" id="fig-two-planes-1-1-2-1">The solutions to one equation in three unknowns form a plane.<div class="autopermalink" data-description="Paragraph"><a href="#fig-two-planes-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/plane-int-1.svg" role="img" class="contained" alt="Two planes intersecting in a line."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-two-planes-1-2-description">
+<div class="para" id="fig-two-planes-1-2-2-1">The set of solutions to two equations in three unknowns is represented by a pair of planes that intersect in a single line.<div class="autopermalink" data-description="Paragraph"><a href="#fig-two-planes-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A single plane and the intersection of two planes.<div class="autopermalink" data-description="Figure 1.1.5"><a href="#fig-two-planes" title="Copy heading and permalink for Figure 1.1.5" aria-label="Copy heading and permalink for Figure 1.1.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-expect-3-20">When we add a third equation, we are looking for the intersection of three planes, which we expect to form a point, as in the left of <a href="sec-expect.html#fig-three-planes" class="xref" data-knowl="./knowl/xref/fig-three-planes.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.6">Figure 1.1.6</a>.  However, in certain special cases, it may happen that there are no solutions, as seen on the right.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-three-planes">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/plane-int-2.svg" role="img" class="contained" alt="Three planes that intersect in a single point."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-three-planes-1-1-description">
+<div class="para" id="fig-three-planes-1-1-2-1">This set of solutions to three equations in three unknowns is represented by three planes that intersect in a single point.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-planes-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<img src="external/images/plane-int-3.svg" role="img" class="contained" alt="Three planes that do not intersect in any common points."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-three-planes-1-2-description">
+<div class="para" id="fig-three-planes-1-2-2-1">This set of three equations in three unknowns is represented by three planes that have no common points of intersection.  This demonstrates that a set of three equations in three unknowns may have no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#fig-three-planes-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Two examples showing the intersections of three planes.<div class="autopermalink" data-description="Figure 1.1.6"><a href="#fig-three-planes" title="Copy heading and permalink for Figure 1.1.6" aria-label="Copy heading and permalink for Figure 1.1.6">🔗</a></div></figcaption>
+</figure>
+<article class="activity project-like" id="sec-expect-3-22"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="sec-expect-3-22-1-1">
 <div class="para">This activity considers sets of equations having three unknowns.  In this case, we know that the solutions of a single equation form a plane.  If it helps with visualization, consider using <span class="process-math">\(3\times5\)</span>-inch index cards to represent planes.</div>
 <ol class="lower-alpha ol-marker-1" id="sec-expect-3-22-1-1-2">
 <li id="sec-expect-3-22-1-1-2-1">
-<div class="para" id="sec-expect-3-22-1-1-2-1-1">Is it possible that there are no solutions to two linear equations in three unknowns?  Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-22-1-1-2-1-1">Is it possible that there are no solutions to two linear equations in three unknowns?  Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec-expect-3-22-1-1-2-1" title="Copy permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-expect-3-22-1-1-2-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec-expect-3-22-1-1-2-2">
-<div class="para" id="sec-expect-3-22-1-1-2-2-1">Is it possible that there is exactly one solution to two linear equations in three unknowns?  Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-22-1-1-2-2-1">Is it possible that there is exactly one solution to two linear equations in three unknowns?  Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec-expect-3-22-1-1-2-2" title="Copy permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-expect-3-22-1-1-2-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec-expect-3-22-1-1-2-3">
-<div class="para" id="sec-expect-3-22-1-1-2-3-1">Is it possible that the solutions to four equations in three unknowns form a line?  Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-22-1-1-2-3-1">Is it possible that the solutions to four equations in three unknowns form a line?  Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec-expect-3-22-1-1-2-3" title="Copy permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-expect-3-22-1-1-2-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="sec-expect-3-22-1-1-2-4">
-<div class="para" id="sec-expect-3-22-1-1-2-4-1">What would you usually expect for the set of solutions to four equations in three unknowns?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-22-1-1-2-4-1">What would you usually expect for the set of solutions to four equations in three unknowns?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#sec-expect-3-22-1-1-2-4" title="Copy permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#sec-expect-3-22-1-1-2-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="sec-expect-3-22-1-1-2-5">
-<div class="para" id="sec-expect-3-22-1-1-2-5-1">Suppose we have a set of 500 linear equations in 10 unknowns.  Which of the <a href="sec-expect.html#solution-possibilities" class="xref" data-knowl="./knowl/xref/solution-possibilities.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Solutions to sets of linear equations">three possibilities</a> would you expect to hold?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-22-1-1-2-5-1">Suppose we have a set of 500 linear equations in 10 unknowns.  Which of the <a href="sec-expect.html#solution-possibilities" class="xref" data-knowl="./knowl/xref/solution-possibilities.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Solutions to sets of linear equations">three possibilities</a> would you expect to hold?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#sec-expect-3-22-1-1-2-5" title="Copy permalink for Item e">🔗</a></div>
+<div class="autopermalink" data-description="Item e"><a href="#sec-expect-3-22-1-1-2-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 <li id="sec-expect-3-22-1-1-2-6">
-<div class="para" id="sec-expect-3-22-1-1-2-6-1">Suppose we have a set of 10 linear equations in 500 unknowns.  Which of the three possibilities would you expect to hold?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-3-22-1-1-2-6-1">Suppose we have a set of 10 linear equations in 500 unknowns.  Which of the three possibilities would you expect to hold?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item f"><a href="#sec-expect-3-22-1-1-2-6" title="Copy permalink for Item f">🔗</a></div>
+<div class="autopermalink" data-description="Item f"><a href="#sec-expect-3-22-1-1-2-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-3-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.1.2"><a href="#sec-expect-3-22" title="Copy permalink for Activity 1.1.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.1.1: Some simple examples"><a href="#sec-expect-3" title="Copy permalink for Subsection 1.1.1: Some simple examples">🔗</a></div></section><section class="subsection" id="sec-expect-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">Systems of linear equations</span>
+<div class="autopermalink" data-description="Activity 1.1.2"><a href="#sec-expect-3-22" title="Copy heading and permalink for Activity 1.1.2" aria-label="Copy heading and permalink for Activity 1.1.2">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.1.1: Some simple examples"><a href="#sec-expect-3" title="Copy heading and permalink for Subsection 1.1.1: Some simple examples" aria-label="Copy heading and permalink for Subsection 1.1.1: Some simple examples">🔗</a></div>
+</section>
+<section class="subsection" id="sec-expect-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Systems of linear equations</span>
 </h3>
-<div class="para" id="sec-expect-4-2">Now that we have seen some simple examples, let’s agree on some terminology to help us think more precisely about sets of equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-2">Now that we have seen some simple examples, let’s agree on some terminology to help us think more precisely about sets of equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-expect-4-3">
 <div class="para">First, we considered a linear equation having the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-3-1">
 \begin{equation*}
 y = 2x - 1\text{.}
 \end{equation*}
 </div>
 <div class="para">It will be convenient for us to rewrite this so that all the unknowns are on one side of the equation:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-3-2">
 \begin{equation*}
 -2x + y = -1\text{.}
 \end{equation*}
 </div>
 <div class="para">More generally, the equation of a line can always be expressed in the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-3-3">
 \begin{equation*}
 ax + by = c,
 \end{equation*}
 </div>
 <div class="para">which gives us the flexibility to describe all lines.  For instance, vertical lines, such as <span class="process-math">\(x=3\text{,}\)</span> may be represented in this form.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-expect-4-4">Notice that each term on the left is the product of a constant and the first power of an unknown.  In the future, we will want to consider equations having many more unknowns, which we will sometimes denote as <span class="process-math">\(x_1, x_2, \ldots, x_n\text{.}\)</span>  This leads to the following definition:<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-4">Notice that each term on the left is the product of a constant and the first power of an unknown.  In the future, we will want to consider equations having many more unknowns, which we will sometimes denote as <span class="process-math">\(x_1, x_2, \ldots, x_n\text{.}\)</span>  This leads to the following definition:<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec-expect-4-5"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="sec-expect-4-5-1">
 <div class="para"> A linear equation in the unknowns <span class="process-math">\(x_1,x_2,\ldots,x_n\)</span> may be written in the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-5-1-3">
 \begin{equation*}
 a_1x_1 + a_2x_2 + \ldots + a_nx_n = b\text{,}
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(a_1,a_2,\ldots,a_n\)</span> are real numbers known as <em class="emphasis">coefficients</em>.  We also say that <span class="process-math">\(x_1,x_2,\ldots,x_n\)</span> are the <em class="emphasis">variables</em> in the equation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-expect-4-5-2">By a <dfn class="terminology">system of linear equations</dfn> or a  <dfn class="terminology">linear system</dfn>, we mean a set of linear equations written in a common set of unknowns.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-5-2">By a <dfn class="terminology">system of linear equations</dfn> or a  <dfn class="terminology">linear system</dfn>, we mean a set of linear equations written in a common set of unknowns.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.1.7"><a href="#sec-expect-4-5" title="Copy permalink for Definition 1.1.7">🔗</a></div></article><div class="para logical" id="sec-expect-4-6">
+<div class="autopermalink" data-description="Definition 1.1.7"><a href="#sec-expect-4-5" title="Copy heading and permalink for Definition 1.1.7" aria-label="Copy heading and permalink for Definition 1.1.7">🔗</a></div>
+</article>
+<div class="para logical" id="sec-expect-4-6">
 <div class="para">For instance,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-6-1">
 \begin{equation*}
 \begin{alignedat}{4}
 2x_1 \amp {} + \amp {} 1.2x_2 \amp {}-{} \amp 4x_3 \amp {}={}
@@ -872,16 +978,18 @@ x_1 \amp {}+{} \amp x_2 \amp {}-{} \amp x_3 \amp {}={} \amp
 \end{equation*}
 </div>
 <div class="para">is an example of a linear system.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec-expect-4-7"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sec-expect-4-7-1"> A <dfn class="terminology">solution</dfn> to a linear system is simply a set of numbers <span class="process-math">\(x_1 = s_1, x_2 = s_2, \ldots, x_n=s_n\)</span> that satisfy all the equations in the system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-7-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-7-1"> A <dfn class="terminology">solution</dfn> to a linear system is simply a set of numbers <span class="process-math">\(x_1 = s_1, x_2 = s_2, \ldots, x_n=s_n\)</span> that satisfy all the equations in the system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.1.8"><a href="#sec-expect-4-7" title="Copy permalink for Definition 1.1.8">🔗</a></div></article><div class="para logical" id="sec-expect-4-8">
+<div class="autopermalink" data-description="Definition 1.1.8"><a href="#sec-expect-4-7" title="Copy heading and permalink for Definition 1.1.8" aria-label="Copy heading and permalink for Definition 1.1.8">🔗</a></div>
+</article>
+<div class="para logical" id="sec-expect-4-8">
 <div class="para">For instance, we earlier considered the linear system</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-8-1">
 \begin{equation*}
 \begin{alignedat}{3}
 -x \amp {}+{} \amp y \amp {} = {} \amp 1 \\
@@ -890,7 +998,7 @@ x_1 \amp {}+{} \amp x_2 \amp {}-{} \amp x_3 \amp {}={} \amp
 \end{equation*}
 </div>
 <div class="para">To check that <span class="process-math">\((x,y) = (2,3)\)</span> is a solution, we verify that the following equations are true.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-8-3">
 \begin{equation*}
 \begin{alignedat}{3}
 -2 \amp {}+{} \amp 3 \amp {} = {} \amp 1 \\
@@ -898,15 +1006,17 @@ x_1 \amp {}+{} \amp x_2 \amp {}-{} \amp x_3 \amp {}={} \amp
 \end{alignedat}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec-expect-4-9"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sec-expect-4-9-1"> We call the set of all solutions the <dfn class="terminology">solution space</dfn> of the linear system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-9-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-9-1"> We call the set of all solutions the <dfn class="terminology">solution space</dfn> of the linear system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.1.9"><a href="#sec-expect-4-9" title="Copy permalink for Definition 1.1.9">🔗</a></div></article><article class="activity project-like" id="sec-expect-4-10"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Linear equations and their solutions.</span>
+<div class="autopermalink" data-description="Definition 1.1.9"><a href="#sec-expect-4-9" title="Copy heading and permalink for Definition 1.1.9" aria-label="Copy heading and permalink for Definition 1.1.9">🔗</a></div>
+</article>
+<article class="activity project-like" id="sec-expect-4-10"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear equations and their solutions.</span>
 </h4>
 <div class="para logical" id="sec-expect-4-10-2-1">
 <ol class="lower-alpha ol-marker-1" id="sec-expect-4-10-2-1-1">
@@ -916,46 +1026,46 @@ x_1 \amp {}+{} \amp x_2 \amp {}-{} \amp x_3 \amp {}={} \amp
 <ol class="decimal ol-marker-2" id="sec-expect-4-10-2-1-1-1-1-1">
 <li id="sec-expect-4-10-2-1-1-1-1-1-1">
 <div class="para logical" id="sec-expect-4-10-2-1-1-1-1-1-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-10-2-1-1-1-1-1-1-1-1">
 \begin{equation*}
 2x + xy -3y^2 = 2 \text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a.1"><a href="#sec-expect-4-10-2-1-1-1-1-1-1" title="Copy permalink for Item a.1">🔗</a></div>
+<div class="autopermalink" data-description="Item a.1"><a href="#sec-expect-4-10-2-1-1-1-1-1-1" title="Copy heading and permalink for Item a.1" aria-label="Copy heading and permalink for Item a.1">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-1-1-1-2">
 <div class="para logical" id="sec-expect-4-10-2-1-1-1-1-1-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-10-2-1-1-1-1-1-2-1-1">
 \begin{equation*}
 -2x_1 + 3x_2 +4x_3 - x_5 = 0 \text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a.2"><a href="#sec-expect-4-10-2-1-1-1-1-1-2" title="Copy permalink for Item a.2">🔗</a></div>
+<div class="autopermalink" data-description="Item a.2"><a href="#sec-expect-4-10-2-1-1-1-1-1-2" title="Copy heading and permalink for Item a.2" aria-label="Copy heading and permalink for Item a.2">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-1-1-1-3">
 <div class="para logical" id="sec-expect-4-10-2-1-1-1-1-1-3-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-10-2-1-1-1-1-1-3-1-1">
 \begin{equation*}
 x = 3z - 4y \text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a.3"><a href="#sec-expect-4-10-2-1-1-1-1-1-3" title="Copy permalink for Item a.3">🔗</a></div>
+<div class="autopermalink" data-description="Item a.3"><a href="#sec-expect-4-10-2-1-1-1-1-1-3" title="Copy heading and permalink for Item a.3" aria-label="Copy heading and permalink for Item a.3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec-expect-4-10-2-1-1-1" title="Copy permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-expect-4-10-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-2">
 <div class="para logical" id="sec-expect-4-10-2-1-1-2-1">
 <div class="para">Consider the system of linear equations:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-4-10-2-1-1-2-1-1">
 \begin{equation*}
 \begin{alignedat}{4}
 x \amp {}+{} \amp y \amp \amp \amp {}={}
@@ -969,76 +1079,83 @@ x \amp {}+{} \amp y \amp \amp \amp {}={}
 </div>
 <ol class="decimal ol-marker-2" id="sec-expect-4-10-2-1-1-2-1-2">
 <li id="sec-expect-4-10-2-1-1-2-1-2-1">
-<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-1-1">Is <span class="process-math">\((x,y,z) = (1,2,0)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-1-1">Is <span class="process-math">\((x,y,z) = (1,2,0)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.1"><a href="#sec-expect-4-10-2-1-1-2-1-2-1" title="Copy permalink for Item b.1">🔗</a></div>
+<div class="autopermalink" data-description="Item b.1"><a href="#sec-expect-4-10-2-1-1-2-1-2-1" title="Copy heading and permalink for Item b.1" aria-label="Copy heading and permalink for Item b.1">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-2-1-2-2">
-<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-2-1">Is <span class="process-math">\((x,y,z) = (-2,1,0)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-2-1">Is <span class="process-math">\((x,y,z) = (-2,1,0)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.2"><a href="#sec-expect-4-10-2-1-1-2-1-2-2" title="Copy permalink for Item b.2">🔗</a></div>
+<div class="autopermalink" data-description="Item b.2"><a href="#sec-expect-4-10-2-1-1-2-1-2-2" title="Copy heading and permalink for Item b.2" aria-label="Copy heading and permalink for Item b.2">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-2-1-2-3">
-<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-3-1">Is <span class="process-math">\((x,y,z) = (0,-3,1)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-3-1">Is <span class="process-math">\((x,y,z) = (0,-3,1)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.3"><a href="#sec-expect-4-10-2-1-1-2-1-2-3" title="Copy permalink for Item b.3">🔗</a></div>
+<div class="autopermalink" data-description="Item b.3"><a href="#sec-expect-4-10-2-1-1-2-1-2-3" title="Copy heading and permalink for Item b.3" aria-label="Copy heading and permalink for Item b.3">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-2-1-2-4">
-<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-4-1">Can you find a solution in which <span class="process-math">\(y = 0\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-4-1">Can you find a solution in which <span class="process-math">\(y = 0\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.4"><a href="#sec-expect-4-10-2-1-1-2-1-2-4" title="Copy permalink for Item b.4">🔗</a></div>
+<div class="autopermalink" data-description="Item b.4"><a href="#sec-expect-4-10-2-1-1-2-1-2-4" title="Copy heading and permalink for Item b.4" aria-label="Copy heading and permalink for Item b.4">🔗</a></div>
 </li>
 <li id="sec-expect-4-10-2-1-1-2-1-2-5">
-<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-5-1">Do you think there are other solutions? Please explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-4-10-2-1-1-2-1-2-5-1">Do you think there are other solutions? Please explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.5"><a href="#sec-expect-4-10-2-1-1-2-1-2-5" title="Copy permalink for Item b.5">🔗</a></div>
+<div class="autopermalink" data-description="Item b.5"><a href="#sec-expect-4-10-2-1-1-2-1-2-5" title="Copy heading and permalink for Item b.5" aria-label="Copy heading and permalink for Item b.5">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec-expect-4-10-2-1-1-2" title="Copy permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-expect-4-10-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-4-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.1.3: Linear equations and their solutions"><a href="#sec-expect-4-10" title="Copy permalink for Activity 1.1.3: Linear equations and their solutions">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.1.2: Systems of linear equations"><a href="#sec-expect-4" title="Copy permalink for Subsection 1.1.2: Systems of linear equations">🔗</a></div></section><section class="subsection" id="sec-expect-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="space"> </span><span class="title">Summary</span>
+<div class="autopermalink" data-description="Activity 1.1.3: Linear equations and their solutions"><a href="#sec-expect-4-10" title="Copy heading and permalink for Activity 1.1.3: Linear equations and their solutions" aria-label="Copy heading and permalink for Activity 1.1.3: Linear equations and their solutions">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.1.2: Systems of linear equations"><a href="#sec-expect-4" title="Copy heading and permalink for Subsection 1.1.2: Systems of linear equations" aria-label="Copy heading and permalink for Subsection 1.1.2: Systems of linear equations">🔗</a></div>
+</section>
+<section class="subsection" id="sec-expect-5">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
 </h3>
-<div class="para" id="sec-expect-5-2">The point of this section is to build some intuition about the behavior of solutions to linear systems through consideration of some simple examples.  We will develop a deeper and more precise understanding of these phenomena in our future explorations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-5-2">The point of this section is to build some intuition about the behavior of solutions to linear systems through consideration of some simple examples.  We will develop a deeper and more precise understanding of these phenomena in our future explorations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-expect-5-3">
 <ul class="disc" id="sec-expect-5-3-1">
 <li id="sec-expect-5-3-1-1">
 <div class="para logical" id="sec-expect-5-3-1-1-1">
 <div class="para">A linear equation is one that may be written in the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-expect-5-3-1-1-1-1">
 \begin{equation*}
 a_1x_1 + a_2x_2 + \ldots + a_nx_n = b\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-5-3-1-2">
-<div class="para" id="sec-expect-5-3-1-2-1">A linear system is a set of linear equations and a solution is a set of values assigned to the unknowns that make each equation true.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-5-3-1-2-1">A linear system is a set of linear equations and a solution is a set of values assigned to the unknowns that make each equation true.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-5-3-1-3">
-<div class="para" id="sec-expect-5-3-1-3-1">We came to expect that a linear system has either infinitely many solutions, exactly one solution, or no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-5-3-1-3-1">We came to expect that a linear system has either infinitely many solutions, exactly one solution, or no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-expect-5-3-1-4">
-<div class="para" id="sec-expect-5-3-1-4-1">When we add more equations to a system, the solution space usually seems to become smaller.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-expect-5-3-1-4-1">When we add more equations to a system, the solution space usually seems to become smaller.<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-4" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-expect-5-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-expect-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.1.3: Summary"><a href="#sec-expect-5" title="Copy permalink for Subsection 1.1.3: Summary">🔗</a></div></section><div class="autopermalink" data-description="Section 1.1: What can we expect"><a href="#sec-expect" title="Copy permalink for Section 1.1: What can we expect">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Subsection 1.1.3: Summary"><a href="#sec-expect-5" title="Copy heading and permalink for Subsection 1.1.3: Summary" aria-label="Copy heading and permalink for Subsection 1.1.3: Summary">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 1.1: What can we expect"><a href="#sec-expect" title="Copy heading and permalink for Section 1.1: What can we expect" aria-label="Copy heading and permalink for Section 1.1: What can we expect">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="chap1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-finding-solutions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

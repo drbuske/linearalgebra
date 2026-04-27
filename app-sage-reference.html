@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -73,14 +73,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -97,7 +97,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Linear Algebra">
 <meta property="book:author" content=" Dale Buske ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -128,7 +128,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -523,42 +523,46 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="app-sage-reference"><h2 class="heading">
-<span class="type">Appendix</span><span class="space"> </span><span class="codenumber">A</span><span class="space"> </span><span class="title">Sage Reference</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="appendix" id="app-sage-reference">
+<h2 class="heading">
+<span class="type">Appendix</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sage Reference</span>
 </h2>
-<div class="para" id="app-sage-reference-2">We have introduced a number of Sage commands throughout the text, and the most important ones are summarized here in a single place.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-2">We have introduced a number of Sage commands throughout the text, and the most important ones are summarized here in a single place.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="app-sage-reference-3">
 <dl class="description-list">
-<dt id="app-sage-reference-3-1-1">Accessing Sage<div class="autopermalink" data-description="Item: Accessing Sage"><a href="#app-sage-reference-3-1-1" title="Copy permalink for Item: Accessing Sage">🔗</a></div>
+<dt id="app-sage-reference-3-1-1">Accessing Sage<div class="autopermalink" data-description="Item: Accessing Sage"><a href="#app-sage-reference-3-1-1" title="Copy heading and permalink for Item: Accessing Sage" aria-label="Copy heading and permalink for Item: Accessing Sage">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-1-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-1-2">
 <div class="para">In addition to the Sage cellls included throughout the book, there are a number of ways to access Sage.</div>
 <ol class="lower-alpha ol-marker-1" id="app-sage-reference-3-1-1-2-1">
 <li id="app-sage-reference-3-1-1-2-1-1">
-<div class="para" id="app-sage-reference-3-1-1-2-1-1-1">There is a freely available Sage cell at <a class="external" href="https://sagecell.sagemath.org/" target="_blank"><code class="code-inline tex2jax_ignore">sagecell.sagemath.org</code></a>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-1-2-1-1-1">There is a freely available Sage cell at <a class="external" href="https://sagecell.sagemath.org/" target="_blank"><code class="code-inline tex2jax_ignore">sagecell.sagemath.org</code></a>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-1-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-1-2-1-2">
-<div class="para" id="app-sage-reference-3-1-1-2-1-2-1">You can save your Sage work by creating an account at <a class="external" href="https://cocalc.com" target="_blank"><code class="code-inline tex2jax_ignore">cocalc.com</code></a> and working in a Sage worksheet.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-1-2-1-2-1">You can save your Sage work by creating an account at <a class="external" href="https://cocalc.com" target="_blank"><code class="code-inline tex2jax_ignore">cocalc.com</code></a> and working in a Sage worksheet.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-1-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-1-2-1-3">
-<div class="para" id="app-sage-reference-3-1-1-2-1-3-1">There is a page of Sage cells at <a class="external" href="http://gvsu.edu/s/0Ng" target="_blank"><code class="code-inline tex2jax_ignore">gvsu.edu/s/0Ng</code></a>. The results obtained from evaluating one cell are available in other cells on that page. However, you will lose any work once the page is reloaded.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-1-2-1-3-1">There is a page of Sage cells at <a class="external" href="http://gvsu.edu/s/0Ng" target="_blank"><code class="code-inline tex2jax_ignore">gvsu.edu/s/0Ng</code></a>. The results obtained from evaluating one cell are available in other cells on that page. However, you will lose any work once the page is reloaded.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-1-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-2">Creating matrices<div class="autopermalink" data-description="Item: Creating matrices"><a href="#app-sage-reference-3-1-2" title="Copy permalink for Item: Creating matrices">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-2">Creating matrices<div class="autopermalink" data-description="Item: Creating matrices"><a href="#app-sage-reference-3-1-2" title="Copy heading and permalink for Item: Creating matrices" aria-label="Copy heading and permalink for Item: Creating matrices">🔗</a></div>
 </dt>
 <dd>
 <div class="para logical" id="app-sage-reference-3-1-2-2">
 <div class="para">There are a couple of ways to create matrices.  For instance, the matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="app-sage-reference-3-1-2-2-1">
 \begin{equation*}
 \begin{bmatrix}
 -2 \amp 3 \amp 0 \amp 4 \\
@@ -571,251 +575,269 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="lower-alpha ol-marker-1" id="app-sage-reference-3-1-2-2-2">
 <li id="app-sage-reference-3-1-2-2-2-1">
 <div class="para logical" id="app-sage-reference-3-1-2-2-2-1-1">
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 matrix(3, 4, [-2, 3, 0, 4,
                1,-2, 1,-3,
 	       0, 2, 3, 0])
 	    </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-2-2-2-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-2-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-2-2-2-2">
 <div class="para logical" id="app-sage-reference-3-1-2-2-2-2-1">
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 matrix([ [-2, 3, 0, 4],
          [ 1,-2, 1,-3],
 	 [ 0, 2, 3, 0] ])
 	    </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-2-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-2-2-2-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-2-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="app-sage-reference-3-1-2-3">
 <div class="para">Be aware that Sage can treat mathematically equivalent matrices in different ways depending on how they are entered. For instance, the matrix</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 matrix([ [1, 2],
          [2, 1] ])
 	</pre>
 <div class="para">has integer entries while</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 matrix([ [1.0, 2.0],
          [2.0, 1.0] ])
 	</pre>
 <div class="para">has floating point entries.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="app-sage-reference-3-1-2-4">
 <div class="para">If you would like the entries to be considered as floating point numbers, you can include <code class="code-inline tex2jax_ignore">RDF</code> in the definition of the matrix.</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 matrix(RDF, [ [1, 2],
               [2, 1] ])
 	</pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="app-sage-reference-3-1-3">Special matrices<div class="autopermalink" data-description="Item: Special matrices"><a href="#app-sage-reference-3-1-3" title="Copy permalink for Item: Special matrices">🔗</a></div>
+<dt id="app-sage-reference-3-1-3">Special matrices<div class="autopermalink" data-description="Item: Special matrices"><a href="#app-sage-reference-3-1-3" title="Copy heading and permalink for Item: Special matrices" aria-label="Copy heading and permalink for Item: Special matrices">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-3-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-3-2">
 <div class="para">The <span class="process-math">\(4\times 4\)</span> identity matrix can be created with</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 identity_matrix(4)	    
 	  </pre>
 <div class="para">A diagonal matrix can be created from a list of its diagonal entries.  For instance,</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 diagonal_matrix([3,-4,2])	    
 	  </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-3-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-4">Reduced row echelon form<div class="autopermalink" data-description="Item: Reduced row echelon form"><a href="#app-sage-reference-3-1-4" title="Copy permalink for Item: Reduced row echelon form">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-4">Reduced row echelon form<div class="autopermalink" data-description="Item: Reduced row echelon form"><a href="#app-sage-reference-3-1-4" title="Copy heading and permalink for Item: Reduced row echelon form" aria-label="Copy heading and permalink for Item: Reduced row echelon form">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-4-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-4-2">
 <div class="para">The reduced row echelon form of a matrix can be obtained using the <code class="code-inline tex2jax_ignore">rref()</code> function.  For instance,</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 A = matrix([ [1,2], [2,1] ])
 A.rref()
 	  </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-4-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-5">Vectors<div class="autopermalink" data-description="Item: Vectors"><a href="#app-sage-reference-3-1-5" title="Copy permalink for Item: Vectors">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-5">Vectors<div class="autopermalink" data-description="Item: Vectors"><a href="#app-sage-reference-3-1-5" title="Copy heading and permalink for Item: Vectors" aria-label="Copy heading and permalink for Item: Vectors">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-5-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-5-2">
 <div class="para">A vector is defined by listing its components.</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 v = vector([3,-1,2])
 	  </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-5-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-6">Addition<div class="autopermalink" data-description="Item: Addition"><a href="#app-sage-reference-3-1-6" title="Copy permalink for Item: Addition">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-6">Addition<div class="autopermalink" data-description="Item: Addition"><a href="#app-sage-reference-3-1-6" title="Copy heading and permalink for Item: Addition" aria-label="Copy heading and permalink for Item: Addition">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-6-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-6-2">
 <div class="para">The <code class="code-inline tex2jax_ignore">+</code> operator performs vector and matrix addition.</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 v = vector([2,1])
 w = vector([-3,2])
 print(v+w)
 	</pre>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 A = matrix([[2,-3],[1,2]])
 B = matrix([[-4,1],[3,-1]])
 print(A+B)
 	</pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-6-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-7">Multiplication<div class="autopermalink" data-description="Item: Multiplication"><a href="#app-sage-reference-3-1-7" title="Copy permalink for Item: Multiplication">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-7">Multiplication<div class="autopermalink" data-description="Item: Multiplication"><a href="#app-sage-reference-3-1-7" title="Copy heading and permalink for Item: Multiplication" aria-label="Copy heading and permalink for Item: Multiplication">🔗</a></div>
 </dt>
 <dd>
 <div class="para logical" id="app-sage-reference-3-1-7-2">
 <div class="para">The <code class="code-inline tex2jax_ignore">*</code> operator performs scalar multiplication of vectors and matrices.</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 v = vector([2,1])
 print(3*v)
 A = matrix([[2,1],[-3,2]])	    
 print(3*A)
 	  </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-7-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="app-sage-reference-3-1-7-3">
 <div class="para">Similarly, the <code class="code-inline tex2jax_ignore">*</code> is used for matrix-vector and matrix-matrix multiplication.</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 A = matrix([[2,-3],[1,2]])
 v = vector([2,1])	    
 print(A*v)
 B = matrix([[-4,1],[3,-1]])
 print(A*B)
 	  </pre>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-7-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="app-sage-reference-3-1-8">Operations on vectors<div class="autopermalink" data-description="Item: Operations on vectors"><a href="#app-sage-reference-3-1-8" title="Copy permalink for Item: Operations on vectors">🔗</a></div>
+<dt id="app-sage-reference-3-1-8">Operations on vectors<div class="autopermalink" data-description="Item: Operations on vectors"><a href="#app-sage-reference-3-1-8" title="Copy heading and permalink for Item: Operations on vectors" aria-label="Copy heading and permalink for Item: Operations on vectors">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-8-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-8-2">
 <ol class="lower-alpha ol-marker-1" id="app-sage-reference-3-1-8-2-1">
 <li id="app-sage-reference-3-1-8-2-1-1">
-<div class="para" id="app-sage-reference-3-1-8-2-1-1-1">The length of a vector <code class="code-inline tex2jax_ignore">v</code> is found using <code class="code-inline tex2jax_ignore">v.norm()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-8-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-8-2-1-1-1">The length of a vector <code class="code-inline tex2jax_ignore">v</code> is found using <code class="code-inline tex2jax_ignore">v.norm()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-8-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-8-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-8-2-1-2">
-<div class="para" id="app-sage-reference-3-1-8-2-1-2-1">The dot product of two vectors <code class="code-inline tex2jax_ignore">v</code> and <code class="code-inline tex2jax_ignore">w</code> is <code class="code-inline tex2jax_ignore">v*w</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-8-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-8-2-1-2-1">The dot product of two vectors <code class="code-inline tex2jax_ignore">v</code> and <code class="code-inline tex2jax_ignore">w</code> is <code class="code-inline tex2jax_ignore">v*w</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-8-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-8-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-8-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-9">Operations on matrices<div class="autopermalink" data-description="Item: Operations on matrices"><a href="#app-sage-reference-3-1-9" title="Copy permalink for Item: Operations on matrices">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-9">Operations on matrices<div class="autopermalink" data-description="Item: Operations on matrices"><a href="#app-sage-reference-3-1-9" title="Copy heading and permalink for Item: Operations on matrices" aria-label="Copy heading and permalink for Item: Operations on matrices">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-9-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-9-2">
 <ol class="lower-alpha ol-marker-1" id="app-sage-reference-3-1-9-2-1">
 <li id="app-sage-reference-3-1-9-2-1-1">
-<div class="para" id="app-sage-reference-3-1-9-2-1-1-1">The transpose of a matrix <code class="code-inline tex2jax_ignore">A</code> is obtained using either <code class="code-inline tex2jax_ignore">A.transpose()</code> or <code class="code-inline tex2jax_ignore">A.T</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-9-2-1-1-1">The transpose of a matrix <code class="code-inline tex2jax_ignore">A</code> is obtained using either <code class="code-inline tex2jax_ignore">A.transpose()</code> or <code class="code-inline tex2jax_ignore">A.T</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-9-2-1-2">
-<div class="para" id="app-sage-reference-3-1-9-2-1-2-1">The inverse of a matrix <code class="code-inline tex2jax_ignore">A</code> is obtained using either <code class="code-inline tex2jax_ignore">A.inverse()</code> or <code class="code-inline tex2jax_ignore">A^-1</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-9-2-1-2-1">The inverse of a matrix <code class="code-inline tex2jax_ignore">A</code> is obtained using either <code class="code-inline tex2jax_ignore">A.inverse()</code> or <code class="code-inline tex2jax_ignore">A^-1</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-9-2-1-3">
-<div class="para" id="app-sage-reference-3-1-9-2-1-3-1">The determinant of <code class="code-inline tex2jax_ignore">A</code> is <code class="code-inline tex2jax_ignore">A.det()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-9-2-1-3-1">The determinant of <code class="code-inline tex2jax_ignore">A</code> is <code class="code-inline tex2jax_ignore">A.det()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-9-2-1-4">
-<div class="para" id="app-sage-reference-3-1-9-2-1-4-1">A basis for the null space <span class="process-math">\(\nul(A)\)</span> is found with <code class="code-inline tex2jax_ignore">A.right_kernel()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-9-2-1-4-1">A basis for the null space <span class="process-math">\(\nul(A)\)</span> is found with <code class="code-inline tex2jax_ignore">A.right_kernel()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-4" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-9-2-1-5">
-<div class="para" id="app-sage-reference-3-1-9-2-1-5-1">Pull out a column of <code class="code-inline tex2jax_ignore">A</code> using, for instance, <code class="code-inline tex2jax_ignore">A.column(0)</code>, which returns the vector that is the first column of <code class="code-inline tex2jax_ignore">A</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-9-2-1-5-1">Pull out a column of <code class="code-inline tex2jax_ignore">A</code> using, for instance, <code class="code-inline tex2jax_ignore">A.column(0)</code>, which returns the vector that is the first column of <code class="code-inline tex2jax_ignore">A</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-5" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-9-2-1-6">
-<div class="para" id="app-sage-reference-3-1-9-2-1-6-1">The command <code class="code-inline tex2jax_ignore">A.matrix_from_columns([0,1,2])</code> returns the matrix formed by the first three columns of <code class="code-inline tex2jax_ignore">A</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-9-2-1-6-1">The command <code class="code-inline tex2jax_ignore">A.matrix_from_columns([0,1,2])</code> returns the matrix formed by the first three columns of <code class="code-inline tex2jax_ignore">A</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-6" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-9-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-10">Eigenvectors and eigenvalues<div class="autopermalink" data-description="Item: Eigenvectors and eigenvalues"><a href="#app-sage-reference-3-1-10" title="Copy permalink for Item: Eigenvectors and eigenvalues">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-10">Eigenvectors and eigenvalues<div class="autopermalink" data-description="Item: Eigenvectors and eigenvalues"><a href="#app-sage-reference-3-1-10" title="Copy heading and permalink for Item: Eigenvectors and eigenvalues" aria-label="Copy heading and permalink for Item: Eigenvectors and eigenvalues">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-10-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-10-2">
 <ol class="lower-alpha ol-marker-1" id="app-sage-reference-3-1-10-2-1">
 <li id="app-sage-reference-3-1-10-2-1-1">
-<div class="para" id="app-sage-reference-3-1-10-2-1-1-1">The eigenvalues of a matrix <code class="code-inline tex2jax_ignore">A</code> can be found with <code class="code-inline tex2jax_ignore">A.eigenvalues()</code>. The number of times that an eigenvalue appears in the list equals its multiplicity.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-10-2-1-1-1">The eigenvalues of a matrix <code class="code-inline tex2jax_ignore">A</code> can be found with <code class="code-inline tex2jax_ignore">A.eigenvalues()</code>. The number of times that an eigenvalue appears in the list equals its multiplicity.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-10-2-1-2">
-<div class="para" id="app-sage-reference-3-1-10-2-1-2-1">The eigenvectors of a matrix having rational entries can be found with <code class="code-inline tex2jax_ignore">A.eigenvectors_right()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-10-2-1-2-1">The eigenvectors of a matrix having rational entries can be found with <code class="code-inline tex2jax_ignore">A.eigenvectors_right()</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-10-2-1-3">
 <div class="para logical" id="app-sage-reference-3-1-10-2-1-3-1">
 <div class="para">If <span class="process-math">\(A\)</span> can be diagonalized as <span class="process-math">\(A=PDP^{-1}\text{,}\)</span> then</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 D, P = A.right_eigenmatrix()
 		</pre>
 <div class="para">provides the matrices <code class="code-inline tex2jax_ignore">D</code> and <code class="code-inline tex2jax_ignore">P</code>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-10-2-1-4">
-<div class="para" id="app-sage-reference-3-1-10-2-1-4-1">The characteristic polynomial of <code class="code-inline tex2jax_ignore">A</code> is <code class="code-inline tex2jax_ignore">A.charpoly('x')</code> and its factored form <code class="code-inline tex2jax_ignore">A.fcp('x')</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-10-2-1-4-1">The characteristic polynomial of <code class="code-inline tex2jax_ignore">A</code> is <code class="code-inline tex2jax_ignore">A.charpoly('x')</code> and its factored form <code class="code-inline tex2jax_ignore">A.fcp('x')</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-4" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-10-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-<dt id="app-sage-reference-3-1-11">Matrix factorizations<div class="autopermalink" data-description="Item: Matrix factorizations"><a href="#app-sage-reference-3-1-11" title="Copy permalink for Item: Matrix factorizations">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="app-sage-reference-3-1-11">Matrix factorizations<div class="autopermalink" data-description="Item: Matrix factorizations"><a href="#app-sage-reference-3-1-11" title="Copy heading and permalink for Item: Matrix factorizations" aria-label="Copy heading and permalink for Item: Matrix factorizations">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="app-sage-reference-3-1-11-2">
+<dd>
+<div class="para logical" id="app-sage-reference-3-1-11-2">
 <ol class="lower-alpha ol-marker-1" id="app-sage-reference-3-1-11-2-1">
 <li id="app-sage-reference-3-1-11-2-1-1">
 <div class="para logical" id="app-sage-reference-3-1-11-2-1-1-1">
 <div class="para">The <span class="process-math">\(LU\)</span> factorization of a matrix</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 P, L, U = A.LU()	    
 		</pre>
 <div class="para">gives matrices so that <span class="process-math">\(PA = LU\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-11-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-11-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-11-2-1-2">
 <div class="para logical" id="app-sage-reference-3-1-11-2-1-2-1">
 <div class="para">A singular value decomposition is obtained with</div>
-<pre class="code-display tex2jax_ignore">
+<pre class="code-display tex2jax_ignore clipboardable">
 U, Sigma, V = A.SVD()	    
 		</pre>
 <div class="para">It’s important to note that the matrix must be defined using <code class="code-inline tex2jax_ignore">RDF</code>.  For instance, <code class="code-inline tex2jax_ignore">A = matrix(RDF, 3,2,[1,0,-1,1,1,1])</code>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-11-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-11-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="app-sage-reference-3-1-11-2-1-3">
-<div class="para" id="app-sage-reference-3-1-11-2-1-3-1">The <span class="process-math">\(QR\)</span> factorization of <code class="code-inline tex2jax_ignore">A</code> is <code class="code-inline tex2jax_ignore">A.QR()</code> provided that <code class="code-inline tex2jax_ignore">A</code> is defined using <code class="code-inline tex2jax_ignore">RDF</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="app-sage-reference-3-1-11-2-1-3-1">The <span class="process-math">\(QR\)</span> factorization of <code class="code-inline tex2jax_ignore">A</code> is <code class="code-inline tex2jax_ignore">A.QR()</code> provided that <code class="code-inline tex2jax_ignore">A</code> is defined using <code class="code-inline tex2jax_ignore">RDF</code>.<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-11-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#app-sage-reference-3-1-11-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div></dd>
-</dl>
-<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3-1-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Appendix A: Sage Reference"><a href="#app-sage-reference" title="Copy permalink for Appendix A: Sage Reference">🔗</a></div></section></div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#app-sage-reference-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Appendix A: Sage Reference"><a href="#app-sage-reference" title="Copy heading and permalink for Appendix A: Sage Reference" aria-label="Copy heading and permalink for Appendix A: Sage Reference">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="backmatter.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="preface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
