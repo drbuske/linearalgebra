@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter xml:id="chap7" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="chap7truncated" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <title>
-    Singular value decompositions
+    Orthogonal Diagonalization
   </title> 
 
-  <introduction>
+  <!-- <introduction>
     <p>
       <xref ref="chap4" /> demonstrated several important uses for the
       theory of eigenvalues and eigenvectors.  For example,
@@ -38,12 +38,12 @@
       features of the matrix.
     </p>
 
-  </introduction>
+  </introduction> -->
 
   <xi:include href="./section7-1.xml" />
-  <xi:include href="./section7-2.xml" />
+  <!-- <xi:include href="./section7-2.xml" />
   <xi:include href="./section7-3.xml" />
   <xi:include href="./section7-4.xml" />
-  <xi:include href="./section7-5.xml" />
+  <xi:include href="./section7-5.xml" /> -->
 
 </chapter>
