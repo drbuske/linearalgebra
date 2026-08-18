@@ -32,7 +32,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#sec-expect-2-2",
   "type": "Videos",
-  "number": "",
+  "number": "1.1",
   "title": "",
   "body": "               "
 },
@@ -50,7 +50,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#fig-three-possibilities",
   "type": "Figure",
-  "number": "1.1.1",
+  "number": "1.1.2",
   "title": "",
   "body": "  Three graphs depicting some possibilities for sets of linear equations.   Three separate graphs are shown.  The left graph shows a single line, which contains infinitely many points. This demonstrates that a set of linear equations may have infinitely many solutions.  The middle graph shows a pair of lines that intersect in a single point, demonstrating that a set of linear equations may contain a single common solution.  The right graph shows three lines that have no common point of intersection. This shows that a set of linear equations may have no common solutions.      Three possible graphs for sets of linear equations in two unknowns.  "
 },
@@ -59,7 +59,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#solution-exceptions",
   "type": "Figure",
-  "number": "1.1.2",
+  "number": "1.1.3",
   "title": "",
   "body": " A set of two equations in two unknowns can have no solutions, and a set of three equations can have one solution.    Two parallel lines   Two parallel lines are shown, which demonstrates the fact that a set of two equations in two unknowns may have no solutions.     Three lines that intersect in a single point.   Three lines are shown in the two dimensional plane and intersect in a single point. This demonstrates that a set of three equations in two unknowns may have exactly one solution.     "
 },
@@ -68,7 +68,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#fig-coordinates",
   "type": "Figure",
-  "number": "1.1.3",
+  "number": "1.1.4",
   "title": "",
   "body": "   A set of two dimensional coordinate axes labelled by x and y.   A set of two dimensional coordinate axes labelled by x and y.     A set of three dimensional coordinate axes labelled by x, y, and z.   A set of three dimensional coordinate axes labelled by x, y, and z.     Coordinate systems in two and three dimensions.  "
 },
@@ -77,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#fig-plane-z0",
   "type": "Figure",
-  "number": "1.1.4",
+  "number": "1.1.5",
   "title": "",
   "body": "   The solution to the equation y equals zero in two dimensions   The solution to the equation in two dimensions consists of the -axis.     The solution to the equation z equals zero in three dimensions.   The solution to the equation in three dimensions consists of the -plane.     The solutions to the equation in two dimensions and in three.  "
 },
@@ -86,7 +86,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#fig-two-planes",
   "type": "Figure",
-  "number": "1.1.5",
+  "number": "1.1.6",
   "title": "",
   "body": "   A single plane in three dimensions.   The solutions to one equation in three unknowns form a plane.     Two planes intersecting in a line.   The set of solutions to two equations in three unknowns is represented by a pair of planes that intersect in a single line.     A single plane and the intersection of two planes.  "
 },
@@ -95,7 +95,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#fig-three-planes",
   "type": "Figure",
-  "number": "1.1.6",
+  "number": "1.1.7",
   "title": "",
   "body": "   Three planes that intersect in a single point.   This set of solutions to three equations in three unknowns is represented by three planes that intersect in a single point.     Three planes that do not intersect in any common points.   This set of three equations in three unknowns is represented by three planes that have no common points of intersection. This demonstrates that a set of three equations in three unknowns may have no solutions.     Two examples showing the intersections of three planes.  "
 },
@@ -104,7 +104,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#sec-expect-3-22",
   "type": "Activity",
-  "number": "1.1.2",
+  "number": "1.1.8",
   "title": "",
   "body": "  This activity considers sets of equations having three unknowns. In this case, we know that the solutions of a single equation form a plane. If it helps with visualization, consider using -inch index cards to represent planes.   Is it possible that there are no solutions to two linear equations in three unknowns? Either sketch an example or state a reason why it can't happen.    Is it possible that there is exactly one solution to two linear equations in three unknowns? Either sketch an example or state a reason why it can't happen.    Is it possible that the solutions to four equations in three unknowns form a line? Either sketch an example or state a reason why it can't happen.    What would you usually expect for the set of solutions to four equations in three unknowns?    Suppose we have a set of 500 linear equations in 10 unknowns. Which of the three possibilities would you expect to hold?   Suppose we have a set of 10 linear equations in 500 unknowns. Which of the three possibilities would you expect to hold?       Yes, it is possible if the two planes are parallel to one another.    No, this is not possible. Two planes will either intersect in a line, if they are not parallel, or not intersect at all, if they are parallel.    Yes, it is possible that four planes intersect in a line. One may sketch four planes that intersect in, say, the -axis.    In general, we would expect there to be no solutions to four equations in three unknowns because there are more equations than unknowns.    Since there are more equations than unknowns, we would expect there to be no solutions. We cannot guarantee this, however.    Since there are fewer equations than unknowns, we would expect there to be infinitely many solutions. We cannot guarantee this, however.        Yes.   No.   Yes.   We would expect there to be no solutions.   We would expect there to be no solutions.   We would expect there to be infinitely many solutions.    "
 },
@@ -113,7 +113,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#sec-expect-4-5",
   "type": "Definition",
-  "number": "1.1.7",
+  "number": "1.1.9",
   "title": "",
   "body": "   linear equation A linear equation in the unknowns may be written in the form , where are real numbers known as coefficients . We also say that are the variables in the equation.  By a system of linear equations or a  linear system  linear system , we mean a set of linear equations written in a common set of unknowns.  "
 },
@@ -122,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#sec-expect-4-7",
   "type": "Definition",
-  "number": "1.1.8",
+  "number": "1.1.10",
   "title": "",
   "body": " solution A solution to a linear system is simply a set of numbers that satisfy all the equations in the system.  "
 },
@@ -131,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#sec-expect-4-9",
   "type": "Definition",
-  "number": "1.1.9",
+  "number": "1.1.11",
   "title": "",
   "body": "  solution space  We call the set of all solutions the solution space of the linear system.  "
 },
@@ -140,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-expect.html#sec-expect-4-10",
   "type": "Activity",
-  "number": "1.1.3",
+  "number": "1.1.12",
   "title": "Linear equations and their solutions.",
   "body": " Linear equations and their solutions     Which of the following equations are linear? Please provide a justification for your response.   .   .   .    Consider the system of linear equations:    Is a solution?   Is a solution?    Is a solution?   Can you find a solution in which ?   Do you think there are other solutions? Please explain your response.          There are two linear equations in this list.  This is not a linear equation due to the presence of in the third term on the left.  This is a linear equation.  This is a linear equation since it can be rewritten in the form .     We will see that the system of linear equations has infinitely many solutions.  Yes, this is a solution since all three equations are satisfied if we set , , and .  No, this is not a solution since the first equation is not satisfied if and .  This is also not a solution.  If , then we arrive at the system of three linear equations: We have a solution when and . Therefore, is a solution to the original system of equations.  Since we have found more than one solution to the system of equations, we should expect that there are infinitely many. Therefore, there should be many other solutions.         There are two linear equations in this list.  This is not a linear equation.  This is a linear equation.  This is a linear equation.     We will see that the system of linear equations has infinitely many solutions.  This is a solution.  This is a not solution.  This is a not solution.  Yes, is a solution.  Yes, because there should be infinitely many solutions.       "
 },
@@ -158,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "1.2",
   "title": "",
   "body": "                     "
 },
@@ -176,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-3-5",
   "type": "Observation",
-  "number": "1.2.1",
+  "number": "1.2.2",
   "title": "",
   "body": " First, finding the solution space to some systems is simple. For example, because each equation in the following system has only one variable, it prescribes a specific value for that variable. We therefore see that there is exactly one solution, which is . We call such a system decoupled . decoupled system   "
 },
@@ -185,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-3-6",
   "type": "Observation",
-  "number": "1.2.2",
+  "number": "1.2.3",
   "title": "",
   "body": " Second, there is a process that can be used to find solutions to certain types of linear systems. For instance, let's consider the system Multiplying both sides of the last equation by gives us Any solution to this linear system must then have .  Once we know that, we can substitute into the first and second equations and simplify to obtain a new system of equations having the same solutions: The second equation, after multiplying both sides by , tells us that . We can then substitute this value into the first equation to determine that .  In this way, we arrive at a decoupled system, which shows that there is exactly one solution, namely .  Our original system,  triangular system  back substitution is called a triangular system due to the shape formed by the coefficients. As this example demonstrates, triangular systems are easily solved by this process, which is called back substitution .  "
 },
@@ -194,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-3-7",
   "type": "Observation",
-  "number": "1.2.3",
+  "number": "1.2.4",
   "title": "",
   "body": " We can use substitution in a more general way to solve linear systems. For example, a natural approach to the system is to use the first equation to express in terms of : and then substitute this into the second equation and simplify: From here, we can substitute into the first equation to arrive at the solution .  However, the two-step process of solving for in terms of and substituting into the second equation may be performed more efficiently by adding a multiple of the first equation to the second. In this case, we will multiply the first equation by -2 and add to the second equation to obtain which gives us   In this way, the system is transformed into the new triangular system Notice that this process can be reversed. Beginning with the triangular system, we can recover the original system by multiplying the first equation by 2 and adding it to the second. Because of this, the two systems have the same solution space. We will revisit this point later and give what may be a more convincing explanation.  Of course, the choice to multiply the first equation by -2 was made so that the terms involving in the two equations will cancel leading to a triangular system that can be solved using back substitution.  "
 },
@@ -203,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-3-9",
   "type": "Example",
-  "number": "1.2.4",
+  "number": "1.2.5",
   "title": "",
   "body": "  Let's illustrate the use of these operations to find the solution space to the system of equations:   We will first transform the system into a triangular system so we start by eliminating from the second and third equations.  We begin with a replacement operation where we multiply the first equation by -2 and add the result to the second equation.         Another replacement operation eliminates from the third equation. We multiply the first equation by 3 and add to the third.         Scale the second equation by multiplying it by .         Eliminate from the third equation by multiplying the second equation by -4 and adding it to the third. Notice that we now have a triangular system that can be solved using back substitution.         After scaling the third equation by , we have found the value for .         We eliminate from the second equation by multiplying the third equation by -1 and adding to the second.         Finally, multiply the second equation by -2 and add to the first to obtain:       Now that we have arrived at a decoupled system, we know that there is exactly one solution to our original system of equations, which is .   "
 },
@@ -212,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-3-12",
   "type": "Activity",
-  "number": "1.2.2",
+  "number": "1.2.6",
   "title": "Gaussian Elimination.",
   "body": " Gaussian Elimination   For each of the following linear systems, use Gaussian elimination to describe the solutions to the following systems of linear equations. In particular, determine whether each linear system has exactly one solution, infinitely many solutions, or no solutions.                   Our aim is to apply a sequence of scaling, interchange, and replacement operations to first put the system into a triangular form. We begin by multiplying the first equation by and adding it to the second equation. Next, we add the first equation to the third. This leads us to: We will now apply a scaling operation to make the coefficient of equal in the second equation. Another replacement operation brings the system into a triangular form.   From here, we begin the process of back substitution seeking a decoupled system. Finally, we have the decoupled system which tells us that the solution space consists of the single solution .  Once again, we begin with a sequence of replacement and scaling operations that lead to the triangular system Back substitution gives us the system The third equation does not impose a restriction on the solutions since it is satisfied for any . The second equation tells us that must equal ; however, there are infinitely many solutions to the first equation that have . Therefore, this system has infinitely many solutions.  After applying two replacement and one scaling operation, we find Another replacement operation leads to the system Since the third equation has no solutions, the original system can have no solutions as well.      There is a single solution .  There are infinitely many solutions.  There are no solutions.    "
 },
@@ -221,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-4-7",
   "type": "Activity",
-  "number": "1.2.3",
+  "number": "1.2.7",
   "title": "Augmented matrices and solution spaces.",
   "body": " Augmented matrices and solution spaces      Write the augmented matrix for the linear system and perform Gaussian elimination to describe the solution space in as much detail as you can.    Suppose that you have a linear system in the variables and whose augmented matrix is row equivalent to Write the linear system corresponding to this augmented matrix and describe its solution set in as much detail as you can.    Suppose that you have a linear system in the variables and whose augmented matrix is row equivalent to Write the linear system corresponding to this augmented matrix and describe its solution set in as much detail as you can.    Suppose that the augmented matrix of a linear system has the following shape where could be any real number.    How many equations are there in this system and how many variables?   Based on our earlier discussion in , do you think it's possible that this system has exactly one solution, infinitely many solutions, or no solutions?   Suppose that this augmented matrix is row equivalent to Make a choice for the names of the variables and write the corresponding linear system. Does the system have exactly one solution, infinitely many solutions, or no solutions?         The augmented matrix for this linear system is This corresponds to the system of equations showing that there is a single solution .  The corresponding system of equations is The third equation is satisfied for any values of and . Therefore, we see that the only solution to the system is .  Here, the corresponding system of equations is Since the third equation is not satisfied for any values of and , there are no solutions to the system.  The system corresponding to this augmented matrix has three equations and five variables. Our first guess is there are infinitely many solutions. If we write out the equations corresponding to the augmented matrix, we find since the third row of the augmented matrix does not restrict the solution space. From here, we see that there are infinitely many solutions: if we make any choice for the variables , , and , we can find values for and that give a solution.      There is a single solution .  There is a single solution .  There are no solutions.  This system has three equations in five variables, and there are infinitely many solutions.    "
 },
@@ -230,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#reduced-row-echelon",
   "type": "Definition",
-  "number": "1.2.5",
+  "number": "1.2.8",
   "title": "",
   "body": " reduced row echelon form  We say that a matrix is in reduced row echelon form if the following properties are satisfied.   If the entries in a row are all zero, then the same is true of any row below it.    If we move across a row from left to right, the first nonzero entry we encounter is 1. We call this entry the leading entry in the row.    The leading entry in any row is to the right of the leading entries in all the rows above it.    A leading entry is the only nonzero entry in its column.    reduced row echelon matrix We call a matrix in reduced row echelon form a reduced row echelon matrix .  "
 },
@@ -239,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-5-5",
   "type": "Activity",
-  "number": "1.2.4",
+  "number": "1.2.9",
   "title": "Identifying reduced row echelon matrices.",
   "body": " Identifying reduced row echelon matrices   Consider each of the following augmented matrices. Determine if the matrix is in reduced row echelon form. If it is not, perform a sequence of scaling, interchange, and replacement operations to obtain a row equivalent matrix that is in reduced row echelon form. Then use the reduced row echelon matrix to describe the solution space.                            Because the leading entry in the first row is not a , this is not in reduced row echelon form. If we scale the first row by , however, we have a matrix in reduced row echelon form. We may write the corresponding linear system as which may be rewritten as Since may take on any value, this shows that there are infinitely many solutions.   This matrix is in reduced row echelon form. There is a single solution .   This matrix is also in reduced row echelon form. However, this are no solutions since the third equation is .   This is not in reduced row echelon form because the row of zeroes should be at the bottom of the matrix. We also need another interchange so that the leading entry in the second row is to the right of the leading entry in the first row. Once again, there are infinitely many solutions.   This is not in reduced row echelon form because the leading entry in the second and third rows are not the only nonzero elements in their columns. We can use replacement operations to remedy this and see that the system has the single solution .      The row equivalent reduced row echelon form is and there are infinitely many solutions.   This matrix is in reduced row echelon form. There is a single solution .   This matrix is also in reduced row echelon form. However, this are no solutions since the third equation is .  The row equivalent reduced row echelon form is There are infinitely many solutions.  The row equivalent reduced row echelon form is This system has the single solution .    "
 },
@@ -248,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#thm-rref-is-unique",
   "type": "Theorem",
-  "number": "1.2.6",
+  "number": "1.2.10",
   "title": "",
   "body": " For any given matrix, there is exactly one reduced row echelon matrix to which it is row equivalent.  "
 },
@@ -257,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#sec-finding-solutions-5-9",
   "type": "Example",
-  "number": "1.2.7",
+  "number": "1.2.11",
   "title": "Describing the solution space from a reduced row echelon matrix.",
   "body": " Describing the solution space from a reduced row echelon matrix     Consider the reduced row echelon matrix and its corresponding linear system as Let's rewrite the equations as From this description, it is clear that we obtain a solution for any value of the variable . For instance, if , then and so that is a solution. Similarly, if , we see that is also a solution.  Because there is no restriction on the value of , we call it a free variable , and note that the linear system has infinitely many solutions. The variables and are called basic variables as they are determined once we make a choice of the free variable. free variable  basic variable   We will call this description of the solution space, in which the basic variables are written in terms of the free variables, a parametric description of the solution space. parametric description     Consider the matrix The last equation gives , which is true for any . We may safely ignore this equation since it does not impose a restriction on . We then see that there is a unique solution .    Consider the matrix Beginning with the last equation, we see that , which is not true for any . There is no solution to this particular equation and therefore no solution to the system of equations.     "
 },
@@ -266,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#ula-proteus-1-2-augmented-system-v1",
   "type": "Checkpoint",
-  "number": "1.2.8",
+  "number": "1.2.12",
   "title": "Linear systems and augmented matrices.",
   "body": "  Linear systems and augmented matrices   If possible, match each linear system on the left to its corresponding augmented matrix.                                        "
 },
@@ -275,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#ula-proteus-1-2-rref-identify-v1",
   "type": "Checkpoint",
-  "number": "1.2.9",
+  "number": "1.2.13",
   "title": "Identifying reduced row echelon form.",
   "body": "  Identifying reduced row echelon form   Consider each of the following matrices where , represents an unknown real number. Determine whether each matrix is in reduced row echelon form or whether additional information is needed.               Not in reduced row echelon form                In reduced row echelon form       Not enough information to determine    "
 },
@@ -284,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#ula-proteus-1-2-elimination",
   "type": "Checkpoint",
-  "number": "1.2.10",
+  "number": "1.2.14",
   "title": "Implementing Gaussian elimination.",
   "body": " Implementing Gaussian elimination    The Gaussian elimination algorithm is a process that will produce information about the set of solutions to a linear system. This set of questions asks about the order in which the steps of the algorithm are performed.     Consider roughly how many row operations are required to solve each of the following systems and put them in order from the most number of row operations to the least.                    Beginning with the augmented matrix , indicate the next three steps in the Gaussian elimination.                          Give a description of the set of solutions to the linear system , which is the system represented by the augmented matrix in part (b) of this question.     "
 },
@@ -293,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#ula_proteus_1_2_RREF_using_EROs_v1",
   "type": "Checkpoint",
-  "number": "1.2.11",
+  "number": "1.2.15",
   "title": "Do elementary row operations to achieve RREF.",
   "body": " Do elementary row operations to achieve RREF   The following matrices each require a sequence of one or two row operations to convert them to reduced row echelon form. For each matrix, choose the sequence that will convert it to reduced row echelon form.                              then         then         then              then    then    then     "
 },
@@ -302,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-finding-solutions.html#ula_proteus_1-2_Solutions_from_RREF_v1",
   "type": "Checkpoint",
-  "number": "1.2.12",
+  "number": "1.2.16",
   "title": "Determine the number of solutions from RREF.",
   "body": " Determine the number of solutions from RREF   Each of the following is the RREF of a linear system in augmented matrix form. The symbol represents an unknown real number. For each associated linear system, choose the correct response.           The linear system has one and only one solution.       The linear system has no solution.             The linear system has infinitely many solutions.       More information is needed to determine the number of solutions.    "
 },
@@ -392,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sage-introduction.html#principle-augmentation-principle",
   "type": "Proposition",
-  "number": "1.3.1",
+  "number": "1.3.3",
   "title": "Augmentation Principle.",
   "body": " Augmentation Principle  If matrix is an augmentation of matrix , then the reduced row echelon form of is an augmentation of the reduced row echelon form of .  "
 },
@@ -401,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sage-introduction.html#subsec-compute-effort-8",
   "type": "Observation",
-  "number": "1.3.2",
+  "number": "1.3.4",
   "title": "",
   "body": "  The number of operations required to find the reduced row echelon form of an matrix is roughly proportional to .   "
 },
@@ -482,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#ula-preview-1-4",
   "type": "Preview Activity",
-  "number": "1.4.1",
+  "number": "1.4.2",
   "title": "Some basic observations about pivots.",
   "body": " Some basic observations about pivots    Shown below is a matrix and its reduced row echelon form. Indicate the pivot positions. .     The pivot positions are indicated below     The pivot positions are indicated below       How many pivot positions can there be in one row? In a matrix, what is the largest possible number of pivot positions? Give an example of a matrix that has the largest possible number of pivot positions.    A row contains at most one pivot position. Therefore, a matrix, which has three rows, contains at most three pivot positions. Here is an example:     Three.      How many pivots can there be in one column? In a matrix, what is the largest possible number of pivot positions? Give an example of a matrix that has the largest possible number of pivot positions.    A column contains at most one pivot position. Therefore, a matrix, which has three columns, contains at most three pivot positions. Here is an example     Three.      Give an example of a matrix with a pivot position in every row and every column. What is special about such a matrix?    A matrix with a pivot position in every row and every column would have the following reduced row echelon form: Such a matrix must necessarily have the same number of rows and columns, which means it is what we call a square matrix.    Such a matrix must necessarily have the same number of rows and columns, which means it is what we call a square matrix.    "
 },
@@ -491,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#fundamental-questions",
   "type": "Question",
-  "number": "1.4.2",
+  "number": "1.4.3",
   "title": "Two Fundamental Questions.",
   "body": " Two Fundamental Questions  When we encounter a linear system, we often ask   Existence  Is there a solution to the linear system? If so, we say that the system is consistent ; if not, we say it is inconsistent . consistent system  inconsistent system     Uniqueness  If the linear system is consistent, is the solution unique or are there infinitely many solutions?     "
 },
@@ -500,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#sec-pivots-2-9",
   "type": "Videos",
-  "number": "",
+  "number": "1.4",
   "title": "",
   "body": "                             "
 },
@@ -509,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#sec-pivots-3-2",
   "type": "Activity",
-  "number": "1.4.2",
+  "number": "1.4.4",
   "title": "",
   "body": "     Shown below are three augmented matrices in reduced row echelon form.             For each matrix, identify the pivot positions and determine if the corresponding linear system is consistent. Explain how the location of the pivots determines whether the system is consistent or inconsistent.    Each of the augmented matrices above has a row in which each entry is zero. What, if anything, does the presence of such a row tell us about the consistency of the corresponding linear system?   Give an example of a augmented matrix in reduced row echelon form that represents a consistent system. Indicate the pivot positions in your matrix and explain why these pivot positions guarantee a consistent system.   Give an example of a augmented matrix in reduced row echelon form that represents an inconsistent system. Indicate the pivot positions in your matrix and explain why these pivot positions guarantee an inconsistent system.   Write the reduced row echelon form of the coefficient matrix of the corresponding linear system in ? (Remember that the Augmentation Principle says that the reduced row echelon form of the coefficient matrix simply consists of the first four columns of the augmented matrix.) What do you notice about the pivot positions in this coefficient matrix?   Suppose we have a linear system for which the coefficient matrix has the following reduced row echelon form. What can you say about the consistency of the linear system?        The pivot positions are indicated below.           The first two augmented matrices correspond to consistent linear systems. The third does not, however, since the third row corresponds to the equation .  In general, a linear system is inconsistent exactly when there is a pivot position in the rightmost column of the augmented matrix.  A row in which every entry is zero corresponds to the equation , which is always true. Such an equation has no bearing on the consistency of the linear system.   This corresponds to a consistent system because there is not a pivot in the rightmost column.   This is an inconsistent system because the third row corresponds to the equation , which is never satisfied.   In the coefficient matrix, there is a row without a pivot position so that each entry is . This allows a pivot position to appear in the rightmost column of the augmented matrix.  This linear system must be consistent because the augmented matrix cannot have a pivot position in the rightmost column.     "
 },
@@ -518,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#thm-pivot-inconsistency",
   "type": "Proposition",
-  "number": "1.4.3",
+  "number": "1.4.5",
   "title": "",
   "body": "  A linear system is inconsistent if and only if there is a pivot position in the rightmost column of the corresponding augmented matrix.   "
 },
@@ -527,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#sec-pivots-3-9",
   "type": "Proposition",
-  "number": "1.4.4",
+  "number": "1.4.6",
   "title": "",
   "body": " If every row of the coefficient matrix has a pivot position, then the corresponding system of linear equations is consistent.  "
 },
@@ -536,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#sec-pivots-4-3",
   "type": "Activity",
-  "number": "1.4.3",
+  "number": "1.4.7",
   "title": "",
   "body": "   Here are the three augmented matrices in reduced row echelon form that we considered in the previous section.             For each matrix, identify the pivot positions and state whether the corresponding linear system is consistent. If the system is consistent, explain whether the solution is unique or whether there are infinitely many solutions.   If possible, give an example of a augmented matrix that corresponds to a linear system having a unique solution. If it is not possible, explain why.  If possible, give an example of a augmented matrix that corresponds to a linear system having a unique solution. If it is not possible, explain why.   What condition on the pivot positions guarantees that a linear system has a unique solution?   If a linear system has a unique solution, what can we say about the relationship between the number of equations and the number of variables?        The pivot positions are indicated below.           The third linear system is inconsistent. The first system is consistent and has exactly one solution because , , and . The second system is consistent and has infinitely many solutions since we can write the equations as   This is not possible as we see by considering the shape of a typical matrix: In this case, the variable is free meaning there are infinitely many solutions.  This is possible as the following matrix illustrates:   If every column of the coefficient matrix has a pivot position, we can guarantee that the solution is unique.  If the coefficient matrix has a pivot position in every column, there must be at least as many rows as columns. Therefore, the number of equations must be at least as many as the number of variables.     "
 },
@@ -545,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#sec-pivots-4-8",
   "type": "Principle",
-  "number": "1.4.5",
+  "number": "1.4.8",
   "title": "",
   "body": "  Suppose that we consider a consistent linear system.  If every column of the coefficient matrix contains a pivot position, then the system has a unique solution.  If there is a column in the coefficient matrix that contains no pivot position, then the system has infinitely many solutions.  Columns that contain a pivot position correspond to basic variables while columns that do not correspond to free variables.     "
 },
@@ -554,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#ula-proteus-1-4-pivots-reading-q1",
   "type": "Checkpoint",
-  "number": "1.4.6",
+  "number": "1.4.9",
   "title": "Pivots and the solution sets of linear systems.",
   "body": " Pivots and the solution sets of linear systems   Suppose that , where each represents an unknown number.     If the linear system represented by is consistent and is in reduced row echelon form , can we determine any of the unknown numbers? If so, which ones? Explain your thinking.       If the linear system represented by is inconsistent and is in reduced row echelon form , can we determine any of the unknown numbers? If so, which ones? Explain your thinking.       If the linear system represented by is consistent and is in reduced row echelon form , can you guarantee that there is a single solution or that there are infinitely many solutions? Explain your thinking.     "
 },
@@ -563,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#ula-proteus-1-4-pivots-reading-q2",
   "type": "Checkpoint",
-  "number": "1.4.7",
+  "number": "1.4.10",
   "title": "The shape of a matrix and consistency.",
   "body": " The shape of a matrix and consistency   Give an example of a augmented matrix in reduced row echelon form having two pivot positions and for which the associated system is consistent or explain why this is not possible.    "
 },
@@ -572,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-pivots.html#ula-proteus-1-4-pivots-reading-q3",
   "type": "Checkpoint",
-  "number": "1.4.8",
+  "number": "1.4.11",
   "title": "The shape of a matrix and solutions to a linear system.",
   "body": " The shape of a matrix and solutions to a linear system   Suppose you have a linear system with 4 equations and 5 variables. Which of the following options are not possible as solution sets of the linear system?  infinitely many solutions  one and only one solution  no solution     Explain your response by considering the possible pivot positions.    "
 },
@@ -671,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-2-2",
   "type": "Videos",
-  "number": "",
+  "number": "2.1",
   "title": "",
   "body": "                     "
 },
@@ -689,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#ula-preview-2-1",
   "type": "Preview Activity",
-  "number": "2.1.1",
+  "number": "2.1.2",
   "title": "Scalar Multiplication and Vector Addition.",
   "body": " Scalar Multiplication and Vector Addition   Suppose that      Find expressions for the vectors and sketch them using .  Sketch the vectors on this grid.    A coordinate grid and axes for sketching vectors.   A coordinate grid and axes where the horizontal and vertical coordinates range from -6 to 6. There are no other features as the reader is asked to sketch a set of eight vectors.         Solutions to this preview activity are given in the text below.      What geometric effect does scalar multiplication have on a vector? Also, describe the effect that multiplying by a negative scalar has.      Sketch the vectors using .  Sketch the vectors on this grid.    A coordinate grid and axes for sketching vectors.   A coordinate grid and axes where the horizontal and vertical coordinates range from -6 to 6. There are no other features as the reader is asked to sketch vectors and and their sum .           Consider vectors that have the form where is any scalar. Sketch a few of these vectors when, say, and . Give a geometric description of this set of vectors.  Sketch the vectors on this grid.    A coordinate grid and axes for sketching vectors.   A coordinate grid and axes where the horizontal and vertical coordinates range from -6 to 6. There are no other features as the reader is asked to sketch vectors of the form where the scalar takes on five different values.           If and are two scalars, then the vector is called a linear combination of the vectors and . Find the vector that is the linear combination when and .      Can the vector be represented as a linear combination of and ? Asked differently, can we find scalars and such that .    "
 },
@@ -698,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#fig-scalar-mult",
   "type": "Figure",
-  "number": "2.1.5",
+  "number": "2.1.6",
   "title": "",
   "body": "   A vector and several scalar multiples all of which lie on the same line   The vector is represented graphically along with scalar multiples , and . These vectors lie on the same line, which is also indicated as extending infinitely far in both directions.     Scalar multiples of the vector .  "
 },
@@ -707,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#fig-vector-sum",
   "type": "Figure",
-  "number": "2.1.6",
+  "number": "2.1.7",
   "title": "",
   "body": "   Two vectors and their vector sum   A vector is drawn starting at the origin, and a second vector is drawn starting from the tip of . Then the vector sum is drawn from the origin to the tip of .     Aparallelogram formed by two vectors with their sum drawn as a diagonal.   Two vectors and are shown forming a parallelogram.  One half of the parallelogram is formed by placing an arrow that starts at the origin and represents . From the tip of , a second arrow is shown representing .  The second half of the parallelogram is formed by placing an arrow that starts at the origin and represents . From the tip of this vector, another arrow is shown representing .  One set of opposite sides of the parallelogram are representations of while the other set of opposite sides are representations of .  The vector sum is shown as an arrow that begins at the origin and has its tip at the opposite corner of the parallelogram.     Vector addition as a simple walk in the plane is illustrated on the left. The vector sum is represented as the diagonal of a parallelogram on the right.  "
 },
@@ -716,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#fig-parametric-line",
   "type": "Figure",
-  "number": "2.1.7",
+  "number": "2.1.8",
   "title": "",
   "body": "   Representations of vectors obtained by multiplying one vector by scalars and adding to another vector.   Two vectors and are shown, both of which begin at the origin. The line defined by is also shown as extending infinitely far in both direction, while a second infinite line parallel to is drawn passing through the tip of . The vectors obtained as for scalars are shown starting at the origin with their tips on the second line parallel to .     The set of vectors form a line.  "
 },
@@ -725,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-3-14",
   "type": "Observation",
-  "number": "2.1.8",
+  "number": "2.1.9",
   "title": "",
   "body": " Even though these vector operations are new, it is straightforward to check that some familiar properties hold.   Commutativity   .   Distributivity   .    "
 },
@@ -734,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-4-3",
   "type": "Definition",
-  "number": "2.1.9",
+  "number": "2.1.10",
   "title": "",
   "body": " linear combination  weights  The linear combination of the vectors with scalars is the vector The scalars are called the weights of the linear combination.  "
 },
@@ -743,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-4-4",
   "type": "Activity",
-  "number": "2.1.2",
+  "number": "2.1.11",
   "title": "",
   "body": "  In this activity, we will look at linear combinations of a pair of vectors, and .   Linear combinations of vectors and .      The weight is initially set to 0. Explain what happens as you vary while keeping . How is this related to scalar multiplication?   What is the linear combination of and when and ? You may find this result using the diagram, but you should also verify it by computing the linear combination.   Describe the vectors that arise when the weight is set to 1 and is varied. How is this related to our investigations in the preview activity?   Can the vector be expressed as a linear combination of and ? If so, what are the weights and ?   Can the vector be expressed as a linear combination of and ? If so, what are the weights and ?   Verify the result from the previous part by algebraically finding the weights and that form the linear combination .   Can the vector be expressed as a linear combination of and ? What about the vector ?   Are there any two-dimensional vectors that cannot be expressed as linear combinations of and ?       When we vary with , the linear combination moves along the line defined by .  When and , we find   When and is allowed to vary, the linear combinations lie on the line through parallel to .  If the weights and , then the linear combination is the vector .  If the weights and , then the linear combination is the vector .  We find the linear system for the weights: If we construct the corresponding augmented matrix and determine its reduced row echelon matrix, we find the weights and .  In the same way, we construct a linear system for the weights whose augmented matrix is which shows that there are weights that produce the desired linear combination. The same will happen for any vector that we ask to write as a linear combination of and .  Every two-dimensional vector can be written as a linear combination of and because the coefficient matrix of the linear system remains the same. Since that coefficient matrix has a pivot position in every row, the augmented matrix can never have a pivot position in the rightmost column.        The linear combinations lie on the line defined by .   .  They lie on the line through parallel to .  Yes, with weights .  Yes, with weights and .  This can be done by writing the appropriate linear system for the weights.  No, any two-dimensional vector can be expressed as a linear combination of and .     "
 },
@@ -752,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-4-6",
   "type": "Example",
-  "number": "2.1.11",
+  "number": "2.1.13",
   "title": "",
   "body": "  The previous activity also shows that questions about linear combinations lead naturally to linear systems. Suppose we have vectors and . Let's determine whether we can describe the vector as a linear combination of and . In other words, we would like to know whether there are weights and such that   This leads to the equations   Equating the components of the vectors on each side of the equation, we arrive at the linear system This means that is a linear combination of and if this linear system is consistent.  To solve this linear system, we construct its corresponding augmented matrix and find its reduced row echelon form, giving us the weights and ; that is, . In fact, we know more because the reduced row echelon matrix tells us that these are the only possible weights. Therefore, may be expressed as a linear combination of and in exactly one way.   "
 },
@@ -761,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#prop-system-comb",
   "type": "Proposition",
-  "number": "2.1.12",
+  "number": "2.1.14",
   "title": "",
   "body": "  The vector is a linear combination of the vectors if and only if the linear system corresponding to the augmented matrix is consistent. A solution to this linear system gives weights such that .   "
 },
@@ -770,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-4-11",
   "type": "Activity",
-  "number": "2.1.3",
+  "number": "2.1.15",
   "title": "Linear combinations and linear systems.",
   "body": " Linear combinations and linear systems     Given the vectors , can be expressed as a linear combination of , , and ? Rephrase this question by writing a linear system for the weights , , and and use the Sage cell below to answer this question.   Consider the following linear system. Identify vectors , , , and such that the question \"Is this linear system consistent?\" is equivalent to the question \"Can be expressed as a linear combination of , , and ?\"   Consider the vectors . Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of these vectors in more than one way?    Considering the vectors , , and from the previous part, can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions of the matrix help answer this question.   Now consider the vectors . Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of these vectors in more than one way?    Considering the vectors , , and from the previous part, can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions of the matrix help answer this question.        We find the linear system with corresponding augmented matrix This shows that the linear system is inconsistent so there are no such weights , , and . This means that is not a linear combination of , , and .  We find vectors   This is the same as asking if the linear system corresponding to the following augmented matrix is consistent: From the reduced row echelon form, we see that the system is consistent, which means that can be expressed as a linear combination of , , and . Moreover, there are infinitely many ways in which we can do so.  No, it is not possible to write every three-dimensional as a linear combination of , , and because the matrix does not have a pivot position in every row. This means that, with some choice of vector , we will obtain an inconsistent system.  We find the augmented matrix This shows that can be expressed as a linear combination of , , and in exactly one way.  Every vector can be expressed as a linear combination of , , and in exactly one way because has a pivot position in every row and every column.        The vector cannot be expressed as a linear combination of , , and .  We find vectors   Yes, can be expressed as a linear combination of , , and in infinitely many ways.  No.  Yes, can be expressed as a linear combination of , , and in exactly one way.  Any vector can be expressed as a linear combination of , , and in exactly one way.     "
 },
@@ -779,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vectors-lin-combs.html#sec-vectors-lin-combs-4-12",
   "type": "Example",
-  "number": "2.1.13",
+  "number": "2.1.16",
   "title": "",
   "body": "  Consider the vectors and , as shown in .   Vectors and .    Two vectors that lie on the same line.   Two vectors, and are represented by arrows starting at the origin. These arrows lie on the same line, and that line is also shown extending infinitely far in both directions.      These vectors appear to lie on the same line, a fact that becomes apparent once we notice that . Intuitively, we think of the linear combination as the result of walking times in the direction and times in the direction. With these vectors, we are always walking along the same line so it would seem that any linear combination of these vectors should lie on the same line. In addition, a vector that is not on the line, say , should be not be expressible as a linear combination of and .  We can verify this by checking This shows that the associated linear system is inconsistent, which means that the vector cannot be written as a linear combination of and .  Notice that the reduced row echelon form of the coefficient matrix tells us to expect this. Since there is not a pivot position in the second row of the coefficient matrix , it is possible for a pivot position to appear in the rightmost column of the augmented matrix for some choice of .   "
 },
@@ -869,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "2.2",
   "title": "",
   "body": "               "
 },
@@ -887,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-4-3",
   "type": "Example",
-  "number": "2.2.1",
+  "number": "2.2.2",
   "title": "Matrix-vector multiplication.",
   "body": " Matrix-vector multiplication   Suppose we have the matrix and vector : . Their product will be defined to be the linear combination of the columns of using the components of as weights. This means that   Because has two columns, we need two weights to form a linear combination of those columns, which means that must have two components. In other words, the number of columns of must equal the dimension of the vector .  Similarly, the columns of are 3-dimensional so any linear combination of them is 3-dimensional as well. Therefore, will be 3-dimensional.  We then see that if is a matrix, must be a 2-dimensional vector and will be 3-dimensional.   "
 },
@@ -896,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-4-5",
   "type": "Definition",
-  "number": "2.2.2",
+  "number": "2.2.3",
   "title": "Matrix-vector multiplication.",
   "body": " Matrix-vector multiplication  matrix-vector multiplication   The product of a matrix by a vector will be the linear combination of the columns of using the components of as weights. More specifically, if then .  If is an matrix, then must be an -dimensional vector, and the product will be an -dimensional vector.   "
 },
@@ -905,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-4-7",
   "type": "Activity",
-  "number": "2.2.2",
+  "number": "2.2.4",
   "title": "Matrix-vector multiplication.",
   "body": " Matrix-vector multiplication     Find the matrix product .   Suppose that is the matrix . If is defined, what is the dimension of the vector and what is the dimension of ?   A vector whose entries are all zero is denoted by . If is a matrix, what is the product ?   Suppose that is the identity matrix and . Find the product and explain why is called the identity matrix.   Suppose we write the matrix in terms of its columns as . If the vector , what is the product ?    Suppose that . Is there a vector such that ?       We have   The dimension of must be the same as the number of columns of so is three-dimensional. The dimension of equals the number of rows of so is four-dimensional.  We have .  We have ; that is, multiplying a vector by produces the same vector.  The product .  If , then we have with corresponding augmented matrix This means that is the unique solution to the equation .         The dimension of must three, and the dimension of must be four.   .   .   .   is the unique solution.    "
 },
@@ -914,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-4-11",
   "type": "Activity",
-  "number": "2.2.3",
+  "number": "2.2.5",
   "title": "",
   "body": "  Sage can find the product of a matrix and vector using the * operator. For example,    Use Sage to evaluate the product from of the previous activity.    In Sage, define the matrix and vectors .   What do you find when you evaluate ?  What do you find when you evaluate and and compare your results?  What do you find when you evaluate and and compare your results?       We define A = matrix(3, 4, [1, 2, 0, -1, 2, 4, -3, -2, -1, -2, 6, 1]) v = vector([3, 1, -1, 1]) A*v   We define A = matrix(2, 3, [-2, 0, 3, 1, 4, 2]) zero = vector([0, 0]) v = vector([-2, 3]) w = vector([1, 2])    .   .         We define A = matrix(3, 4, [1, 2, 0, -1, 2, 4, -3, -2, -1, -2, 6, 1]) v = vector([3, 1, -1, 1]) A*v   We define A = matrix(2, 3, [-2, 0, 3, 1, 4, 2]) zero = vector([0, 0]) v = vector([-2, 3]) w = vector([1, 2])    .   .       "
 },
@@ -923,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#prop-matrix-mult-prop",
   "type": "Proposition",
-  "number": "2.2.3",
+  "number": "2.2.6",
   "title": "Linearity of matrix multiplication.",
   "body": " Linearity of matrix multiplication   If is a matrix, and vectors of the appropriate dimensions, and a scalar, then    .    .    .     "
 },
@@ -932,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#prop-matrix-eq-solution",
   "type": "Proposition",
-  "number": "2.2.4",
+  "number": "2.2.7",
   "title": "",
   "body": "  If and , then the following statements are equivalent.   The vector satisfies the equation .   The vector is a linear combination of the columns of with weights : .   The components of form a solution to the linear system corresponding to the augmented matrix      "
 },
@@ -941,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-5-9",
   "type": "Example",
-  "number": "2.2.5",
+  "number": "2.2.8",
   "title": "",
   "body": "  We will describe the solution space of the equation   By , this equation may be equivalently expressed as , which is the linear system corresponding to the augmented matrix . The reduced row echelon form of the augmented matrix is which corresponds to the linear system The variable is free so we may write the solution space parametrically as   Since we originally asked to describe the solutions to the equation , we will express the solution in terms of the vector : As before, we call this a parametric description of the solution space.  This shows that the solutions may be written in the form , for appropriate vectors and . Geometrically, the solution space is a line in through moving parallel to .   "
 },
@@ -950,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-5-10",
   "type": "Activity",
-  "number": "2.2.4",
+  "number": "2.2.9",
   "title": "The equation <span class=\"process-math\">\\(A\\xvec = \\bvec\\)<\/span>.",
   "body": " The equation      Consider the linear system Identify the matrix and vector to express this system in the form .   If and are as below, write the linear system corresponding to the equation and describe its solution space, using a parametric description if appropriate:    Describe the solution space of the equation .   Suppose is an matrix. What can you guarantee about the solution space of the equation ?       and .  Form the augmented matrix so that   We have the augmented matrix Since this system is inconsistent, there are no solutions to the matrix equation.  We know that there is at least one solution, namely, .       and .     There are no solutions.  There is at least one solution, namely, .    "
 },
@@ -959,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-6-3",
   "type": "Definition",
-  "number": "2.2.6",
+  "number": "2.2.10",
   "title": "Matrix-matrix multiplication.",
   "body": " Matrix-matrix multiplication   Given matrices and , we form their product by first writing in terms of its columns and then defining    "
 },
@@ -968,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-6-4",
   "type": "Example",
-  "number": "2.2.7",
+  "number": "2.2.11",
   "title": "",
   "body": "  Given the matrices , we have .   "
 },
@@ -977,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-6-5",
   "type": "Observation",
-  "number": "2.2.8",
+  "number": "2.2.12",
   "title": "",
   "body": "  It is important to note that we can only multiply matrices if the shapes of the matrices are compatible. More specifically, when constructing the product , the matrix multiplies the columns of . Therefore, the number of columns of must equal the number of rows of . When this condition is met, the number of rows of is the number of rows of , and the number of columns of is the number of columns of .   "
 },
@@ -986,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#sec-matrices-lin-combs-6-6",
   "type": "Activity",
-  "number": "2.2.5",
+  "number": "2.2.13",
   "title": "",
   "body": "  Consider the matrices .   Before computing, first explain why the shapes of and enable us to form the product . Then describe the shape of .   Compute the product .  Sage can multiply matrices using the * operator. Define the matrices and in the Sage cell below and check your work by computing .   Are we able to form the matrix product ? If so, use the Sage cell above to find . Is it generally true that ?  Suppose we form the three matrices. . Compare what happens when you compute and . State your finding as a general principle.   Compare the results of evaluating and and state your finding as a general principle.  When we are dealing with real numbers, we know if and , then . Define matrices and compute and . If , is it necessarily true that ?  Again, with real numbers, we know that if , then either or . Define and compute . If , is it necessarily true that either or ?       The product exists because the number of columns of equals the number of rows of . The dimensions of are .  We have .  Define A = matrix(2, 3, [1, 3, 2, -3, 4, -1]) B = matrix(3, 2, [3, 0, 1, 2, -2, -1]) A*B   Yes, we can form the product because the number of columns of equals the number of rows of . This product will be , however, so it must be true that .  We find that .  We find that .  It is not generally true that if , as illustrated by this example.  It is not generally true that or if , as illustrated by this example.      The product exists because the number of columns of equals the number of rows of . The dimensions of are .  We have .  Define A = matrix(2, 3, [1, 3, 2, -3, 4, -1]) B = matrix(3, 2, [3, 0, 1, 2, -2, -1]) A*B   It is not generally true that .  We find that .  We find that .  It is not generally true that if .  It is not generally true that or if .    "
 },
@@ -995,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#ula_proteus_2-2_Linear_Combinations_v1",
   "type": "Checkpoint",
-  "number": "2.2.9",
+  "number": "2.2.14",
   "title": "Determining if a vector is a linear combination of a set of vectors.",
   "body": " Determining if a vector is a linear combination of a set of vectors   Explain how you would determine whether a given vector in is a linear combination of a given set of vectors , , in .    "
 },
@@ -1004,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#ula_proteus_2-2_Linear_Combinations2_v1",
   "type": "Checkpoint",
-  "number": "2.2.10",
+  "number": "2.2.15",
   "title": "Writing a vector as a linear combination of other vectors in three ways.",
   "body": " Writing a vector as a linear combination of other vectors in three ways   Express the vector as a linear combination of , , in three different ways. Explain how you arrived at your three different expressions.    "
 },
@@ -1013,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#ula_proteus_2-2_Linear_Combinations3_v1",
   "type": "Checkpoint",
-  "number": "2.2.11",
+  "number": "2.2.16",
   "title": "Connecting linear combinations and matrix multiplication.",
   "body": " Connecting linear combinations and matrix multiplication   Suppose , , are vectors in , and let . Suppose that a solution to is given by . Find constants , , and with . Explain your thinking.    "
 },
@@ -1022,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#ula-proteus-2-2-algprop-v1",
   "type": "Checkpoint",
-  "number": "2.2.12",
+  "number": "2.2.17",
   "title": "Algebraic properties of matrix multiplication.",
   "body": " Algebraic properties of matrix multiplication   Suppose and are scalars, are vectors in , and is a matrix. Determine whether each of the following algebraic properties is Always True, Never True, or Sometimes True.     Always True      where is the identity     Never True   If , then .    Sometimes True  If , then .  If , then .    "
 },
@@ -1031,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-lin-combs.html#ula-proteus-2-2-equivalence-representations-v1",
   "type": "Checkpoint",
-  "number": "2.2.13",
+  "number": "2.2.18",
   "title": "Representing linear systems.",
   "body": " Representing linear systems   Given below is a series of tasks in two columns. If possible, match each task in the left column with an equivalent task in the right column.      Find all vectors for which .    Find scalars , , and so that .    Find , , and that satisfy .      Find the linear combinations of the vectors , , that form the vector .    Find the set of solutions to the linear system represented by the augmented matrix .      Find the product .    Find the linear combination of the vectors , , with weights , , and .      Describe the ways in which can be expressed as a linear combination of , , .    Find vectors , , and that satisfy the linear system described by .     "
 },
@@ -1175,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#sec-span-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "2.3",
   "title": "",
   "body": "               "
 },
@@ -1184,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#sec-span-3-4",
   "type": "Definition",
-  "number": "2.3.1",
+  "number": "2.3.2",
   "title": "",
   "body": " span  The span of a set of vectors is the set of all linear combinations that can be formed from the vectors.  Alternatively, if , then the span of the vectors consists of all vectors for which the equation is consistent.  "
 },
@@ -1193,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#sec-span-3-5",
   "type": "Example",
-  "number": "2.3.2",
+  "number": "2.3.3",
   "title": "",
   "body": "  Considering the set of vectors and , we see that the vector is one vector in the span of the vectors and because it is a linear combination of and .  To determine whether the vector is in the span of and , we form the matrix and consider the equation . We have which shows that the equation is inconsistent. Therefore, is one vector that is not in the span of and .   "
 },
@@ -1202,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#activity-intro-span",
   "type": "Activity",
-  "number": "2.3.2",
+  "number": "2.3.4",
   "title": "",
   "body": "  Let's look at two examples to develop some intuition for the concept of span.  First, we will consider the set of vectors .   An interactive diagram for constructing linear combinations of the vectors and .      What vector is the linear combination of and with weights:    and ?    and ?    and ?      Can the vector be expressed as a linear combination of and ? Is the vector in the span of and ?   Can the vector be expressed as a linear combination of and ? Is the vector in the span of and ?   Describe the set of vectors in the span of and .   For what vectors does the equation have a solution?      We will now look at an example where .   An interactive diagram for constructing linear combinations of the vectors and .      What vector is the linear combination of and with weights:    and ?    and ?    and ?      Can the vector be expressed as a linear combination of and ? Is the vector in the span of and ?   Can the vector be expressed as a linear combination of and ? Is the vector in the span of and ?   Describe the set of vectors in the span of and .   For what vectors does the equation have a solution?         For the first set of vectors, we find:  We can form the linear combinations:  When and , the linear combination is .   When and , the linear combination is .   When and , the linear combination is .    Yes, we saw that there are at least two ways. For instance, when the weights are and . This means that is in the span of and .  No. No matter how we change the weights, the linear combination lies on the line through and . This means that is not in the span of and .  The span of and is the set of all vectors on the line through .  If the equation has a solution, must lie on the line defined by .    For the second set of vectors, we have:  We can form the linear combinations:   When and , the linear combination is .   When and , the linear combination is .   When and , the linear combination is .    Yes. Using the diagram, we see that . This means that is in the span of and .  Yes. Using the diagram, we see that . This means that is in the span of and .  Every two-dimensional vector is in the span of and .  The equation has a solution for every .     "
 },
@@ -1211,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#example-span-linear-indep",
   "type": "Example",
-  "number": "2.3.5",
+  "number": "2.3.7",
   "title": "",
   "body": "  Let's consider the vectors and as shown in .   The vectors and and some linear combinations they create.   Two vectors in the plane along with a grid representing the linear combinations of these vectors.   Two vectors and are shown along with the standard set of axes with labels. There are also two sets of parallel lines defined by these vectors. One set is parallel to and passes through integer multiples of while the other set is parallel to and passes through integer multiples of .       The figure shows us that is a linear combination of and . Indeed, we can verify this algebraically by constructing the linear system whose corresponding augmented matrix has the reduced row echelon form Because this system is consistent, we know that is in the span of and .  In fact, we can say more. Notice that the coefficient matrix has a pivot position in every row. This means that for any other vector , the augmented matrix corresponding to the equation cannot have a pivot position in its rightmost column: Therefore, the equation is consistent for every two-dimensional vector , which tells us that every two-dimensional vector is in the span of and . In this case, we say that the span of and is .  The intuitive meaning is that we can walk to any point in the plane by moving an appropriate distance in the and directions.   "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#example-span-linear-dep",
   "type": "Example",
-  "number": "2.3.7",
+  "number": "2.3.9",
   "title": "",
   "body": "  Now let's consider the vectors and as shown in .   The vectors and and some linear combinations they create.   Two vectors that lie on a line.   Two vectors, and are shown along with a standard set of labelled axes. These vectors lie on a line, which is also shown.       From the figure, we expect that is not a linear combination of and . Once again, we can verify this algebraically by constructing the linear system The augmented matrix has the reduced row echelon form from which we see that the system is inconsistent. Therefore, is not in the span of and .  We should expect this behavior from the coefficient matrix Because the second row of the coefficient matrix does not have a pivot position, it is possible for a linear system to have a pivot position in its rightmost column:   If we notice that , we see that any linear combination of and , is actually a scalar multiple of . Therefore, the span of and is the line defined by the vector . Intuitively, this means that we can only walk to points on this line using these two vectors.   "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#sec-span-3-10",
   "type": "Notation",
-  "number": "2.3.9",
+  "number": "2.3.11",
   "title": "",
   "body": " We will denote the span of the set of vectors by .  "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#activity-span-r3",
   "type": "Activity",
-  "number": "2.3.3",
+  "number": "2.3.12",
   "title": "",
   "body": "  In this activity, we will look at the span of sets of vectors in .   Suppose . Give a geometric description of and a rough sketch of and its span in .   A three-dimensional coordinate system for sketching and its span.    A set of three dimensional coordinate axes.   The standard three-dimensional coordinate axes labelled , , and .        Now consider the two vectors . Sketch the vectors below. Then give a geometric description of and a rough sketch of the span in .   A coordinate system for sketching , , and .    A set of three dimensional coordinate axes.   The standard three-dimensional coordinate axes labelled , , and .       Let's now look at this situation algebraically by writing write . Determine the conditions on , , and so that is in by considering the linear system or . Explain how this relates to your sketch of .   Consider the vectors    Is the vector in ?    Is the vector in ?   Give a geometric description of .    Consider the vectors . Form the matrix and find its reduced row echelon form. What does this tell you about ?   If the span of a set of vectors is , what can you say about the pivot positions of the matrix ?  What is the smallest number of vectors such that ?       is the line defined by .   is the -plane.   For the linear system to be consistent, we need , which means that the third coordinate of the vector must be 0 for to be in . In other words, must lie in the -plane.   We consider the two cases.  We have the augmented matrix which shows that the system is inconsistent. Therefore, is not in .  We have the augmented matrix which shows that the system is consistent. Therefore, is in .  The span is the plane in defined by and .   We have the reduced row echelon form Since there is a pivot position in every row, this says that every equation is consistent. The is therefore .  There must be a pivot position in every row.  If a set of vectors spans , its corresponding matrix must have a pivot position in every row. Because there can be at most one pivot position in a column, there must be at least three columns. Therefore, the smallest number of vectors that span is three.    "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#fig-span-line",
   "type": "Figure",
-  "number": "2.3.12",
+  "number": "2.3.15",
   "title": "",
   "body": " The span of a single nonzero vector is a line.    A three dimensional diagram showing a vector, the line it defines, and the standard coordinate axes.   A three dimensional vector is shown along with the line that it defines. The standard set of three dimensional coordinate axes are also represented.     "
 },
@@ -1256,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#fig-span-plane",
   "type": "Figure",
-  "number": "2.3.13",
+  "number": "2.3.16",
   "title": "",
   "body": " The span of these two vectors in is a plane.    The span of two three dimensional vectors.   Two three-dimensional vectors and are shown along with the plane consisting of all linear combinations of these two vectors. In this plane is the usual set of parallel lines defined by these two vectors.     "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#prop-pivot-row",
   "type": "Proposition",
-  "number": "2.3.14",
+  "number": "2.3.17",
   "title": "",
   "body": "  Suppose we have vectors in . Then if and only if the matrix has a pivot position in every row.   "
 },
@@ -1274,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#prop-span-bound",
   "type": "Proposition",
-  "number": "2.3.15",
+  "number": "2.3.18",
   "title": "",
   "body": "  A set of vectors whose span is contains at least vectors.   "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#ula-proteus-2-3-span-geometric",
   "type": "Checkpoint",
-  "number": "2.3.16",
+  "number": "2.3.19",
   "title": "Describing span geometrically.",
   "body": " Describing span geometrically     Let be a nonzero vector in . Explain why is always an infinite set of vectors and describe geometrically.       If , , and are nonzero vectors in and is a line, what can you say about the vectors , , and ? Explain your thinking.     "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#ula-proteus-2-3-span-algebraic",
   "type": "Checkpoint",
-  "number": "2.3.17",
+  "number": "2.3.20",
   "title": "Describing span algebraically.",
   "body": " Describing span algebraically    Suppose that is a matrix whose columns are , , and and that is a vector in .     If is in , what can we conclude about the set of solutions to the equation ? Explain your thinking.       If , what can we say about the relationship between and ? Explain your thinking.     "
 },
@@ -1301,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#ula-proteus-2-3-span-rref",
   "type": "Checkpoint",
-  "number": "2.3.18",
+  "number": "2.3.21",
   "title": "Connecting span with reduced row echelon form.",
   "body": " Connecting span with reduced row echelon form    Suppose that are vectors in . The matrices in the left column are some possible reduced row echelon forms for the matrix . If possible, match the matrices to the corresponding geometric object for .             is a plane in .          is a line in .             is .       is .       is .     "
 },
@@ -1310,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#ula-proteus-2-3-identifying-span",
   "type": "Checkpoint",
-  "number": "2.3.19",
+  "number": "2.3.22",
   "title": "Identifying vectors in the span of a set of vectors.",
   "body": " Identifying vectors in the span of a set of vectors   Suppose that and that . Determine if each vector in the left column is in .       The zero vector in   Is in .     The vector where is inconsistent  Any vector in  Is not in .    Any vector in  Not enough information to determine    "
 },
@@ -1319,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-span.html#ula_proteus_2-3_Span_Matching_True_False_Sometimes_v1",
   "type": "Checkpoint",
-  "number": "2.3.20",
+  "number": "2.3.23",
   "title": "Understanding Span - True\/False\/Sometimes.",
   "body": " Understanding Span - True\/False\/Sometimes   Determine whether each of the statements in the left column is always true, never true, or sometimes true.     If is in , then is in .  If are vectors in and has a pivot in every row, then .  If are vectors in and , then has a pivot in every column.  Always True    If is a set of 22 vectors in , then .  Never true     If are vectors in , then .  If are vectors in and , then .  If are vectors in and has a pivot in every column, then .  Sometimes True    "
 },
@@ -1445,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "2.4",
   "title": "",
   "body": "            "
 },
@@ -1454,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#example-span-r3",
   "type": "Example",
-  "number": "2.4.1",
+  "number": "2.4.2",
   "title": "",
   "body": "  Let's consider the set of three vectors in : Forming the associated matrix gives Because there is a pivot position in every row, tells us that .   "
 },
@@ -1463,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#example-span-plane",
   "type": "Example",
-  "number": "2.4.2",
+  "number": "2.4.3",
   "title": "",
   "body": "  Now let's consider the set of three vectors: Forming the associated matrix gives Since the last row does not have a pivot position, we know that the span of these vectors is not but is instead a plane.  In fact, we can say more if we shift our perspective slightly and view this as an augmented matrix: In this way, we see that , which enables us to rewrite any linear combination of these three vectors:   In other words, any linear combination of , , and may be written as a linear combination using only the vectors and . Since the span of a set of vectors is simply the set of their linear combinations, this shows that As a result, adding the vector to the set of vectors and does not change the span.   "
 },
@@ -1472,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#figure-span-r3",
   "type": "Figure",
-  "number": "2.4.3",
+  "number": "2.4.4",
   "title": "",
   "body": " The span of the vectors , , and .    Two three-dimensional vectors and the plane formed by their linear combinations.   Two three dimensional vectors and are shown along with the plane formed by all of their linear combinations.     Two three-dimensional vectors, the plane they define, and a third vector not in the plane.   Two three dimensional vectors and are shown along with the plane formed by all of their linear combinations. There is a third vector that is not contained in the plane.     "
 },
@@ -1481,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#figure-span-plane",
   "type": "Figure",
-  "number": "2.4.4",
+  "number": "2.4.5",
   "title": "",
   "body": " The span of the vectors , , and .    Two three-dimensional vectors and the plane formed by their linear combinations.   Two three dimensional vectors and are shown along with the plane formed by all of their linear combinations.     Two three-dimensional vectors, the plane they define, and a third vector contained in the plane.   Two three dimensional vectors and are shown along with the plane formed by all of their linear combinations. There is a third vector that is contained in the plane.     "
 },
@@ -1490,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#definition-linear-independence",
   "type": "Definition",
-  "number": "2.4.5",
+  "number": "2.4.6",
   "title": "",
   "body": " linearly independent  linearly dependent   A set of vectors is called linearly dependent if one of the vectors is a linear combination of the others. Otherwise, the set of vectors is called linearly independent .   "
 },
@@ -1499,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-4-2",
   "type": "Activity",
-  "number": "2.4.2",
+  "number": "2.4.7",
   "title": "",
   "body": "  We would like to develop a means to detect when a set of vectors is linearly dependent. This activity will point the way.  Suppose we have five vectors in that form the columns of a matrix having reduced row echelon form . Is it possible to write one of the vectors as a linear combination of the others? If so, show explicitly how one vector appears as a linear combination of some of the other vectors. Is this set of vectors linearly dependent or independent?  Suppose we have another set of three vectors in that form the columns of a matrix having reduced row echelon form . Is it possible to write one of these vectors , , as a linear combination of the others? If so, show explicitly how one vector appears as a linear combination of some of the other vectors. Is this set of vectors linearly dependent or independent?  By looking at the pivot positions, how can you determine whether the columns of a matrix are linearly dependent or independent?  If one vector in a set is the zero vector , can the set of vectors be linearly independent?  Suppose a set of vectors in has twelve vectors. Is it possible for this set to be linearly independent?      Let's focus on the first three vectors and view the matrix as an augmented one: This shows that so it is possible to write one of the vectors as a linear combination of the others. Therefore, the set is linearly dependent.  Applying the same reasoning as in the previous part, we see that we cannot write any of the vectors as a linear combination of the others. Therefore, the set is linearly independent.  The columns of a matrix are linearly independent exactly when there is a pivot position in every column of the matrix.  No, because we can write the zero vector as a linear combination of the other vectors: .  No, because the matrix formed by the vectors would have 12 columns and only 10 rows. There can be at most 10 pivot positions so there are at least two columns without pivot positions.    "
 },
@@ -1508,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-4-7",
   "type": "Proposition",
-  "number": "2.4.6",
+  "number": "2.4.8",
   "title": "",
   "body": "  The columns of a matrix are linearly independent if and only if every column contains a pivot position.   "
 },
@@ -1517,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#prop-linear-indep-bound",
   "type": "Proposition",
-  "number": "2.4.7",
+  "number": "2.4.9",
   "title": "",
   "body": "  A linearly independent set of vectors in contains at most vectors.   "
 },
@@ -1526,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-5-3",
   "type": "Activity",
-  "number": "2.4.3",
+  "number": "2.4.10",
   "title": "Linear independence and homogeneous equations.",
   "body": " Linear independence and homogeneous equations    Explain why the homogeneous equation is consistent no matter the matrix .  Consider the matrix whose columns we denote by , , and . Describe the solution space of the homogeneous equation using a parametric description, if appropriate.   Find a nonzero solution to the homogeneous equation and use it to find weights , , and such that .  Use the equation you found in the previous part to write one of the vectors as a linear combination of the others.  Are the vectors , , and linearly dependent or independent?      The vector is always a solution.  We have From the reduced row echelon form, we see that is a free variable and that we have The solution space is then written parametrically as   If we set , then we have the solution , which says that   We may rewrite this expression as , showing that is a linear combination of and .   The vectors , , and are linearly dependent, and we know this in two ways. We have seen how to express one vector as a linear combination of the others. Also, we have seen that the associated matrix has a column without a pivot position.     "
 },
@@ -1535,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-5-5",
   "type": "Example",
-  "number": "2.4.8",
+  "number": "2.4.11",
   "title": "",
   "body": "  Let's consider the vectors and their associated matrix .  The homogeneous equation has the associated augmented matrix Therefore, has a column without a pivot position, which tells us that the vectors , , and are linearly dependent. However, we can also see this fact in another way.  The reduced row echelon matrix tells us that the homogeneous equation has a free variable so that there must be infinitely many solutions. In particular, we have so the solutions have the form   If we choose , then we obtain the nonzero solution to the homogeneous equation , which implies that In other words,   Because is a linear combination of and , we know that this set of vectors is linearly dependent.   "
 },
@@ -1544,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-5-7",
   "type": "Proposition",
-  "number": "2.4.9",
+  "number": "2.4.12",
   "title": "",
   "body": "  For a matrix , the following statements are equivalent:   The columns of are linearly dependent.   One of the vectors in the set is a linear combination of the others.   The matrix has a column without a pivot position.   The homogeneous equation has infinitely many solutions and hence a nonzero solution.   There are weights , not all of which are zero, such that .     "
 },
@@ -1553,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#sec-linear-dep-6-5",
   "type": "Table",
-  "number": "2.4.10",
+  "number": "2.4.13",
   "title": "Span and Linear Independence",
   "body": " Span and Linear Independence      Span  Linear independence     A vector is in the span of a set of vectors if it is a linear combination of those vectors.    A set of vectors is linearly dependent if one of the vectors is a linear combination of the others.      A vector is in the span of if there exists a solution to .    The vectors are linearly independent if is the unique solution to .      The columns of an matrix span if the matrix has a pivot position in every row.    The columns of a matrix are linearly independent if the matrix has a pivot position in every column.      A set of vectors that span has at least vectors.    A set of linearly independent vectors in has at most vectors.     "
 },
@@ -1562,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#ula-proteus-2-4-linear-indep-definition",
   "type": "Checkpoint",
-  "number": "2.4.11",
+  "number": "2.4.14",
   "title": "Defining the concept of linear dependence.",
   "body": " Defining the concept of linear dependence   Select the best definition of a set of linear dependent vectors in .      A set of vectors that span .   This set of vectors is linearly independent, but a linearly dependent set need not have vectors.     A set of vectors that can be used to form the zero vector as a linear combination.   The zero vector is a linear combination of any set of vectors if we choose all the weights to be zero.     A set of vectors in which one vector is a linear combination of the others.   This is correct! You may wish to also select the other choices and consider why they are not the best definition.     A matrix without a pivot position in some column.   This is a test we can use to determine if the columns of a matrix form a linearly dependent set but is not what we mean by a linear dependent set.    "
 },
@@ -1571,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#ula-proteus-2-4-linear-indep-review",
   "type": "Checkpoint",
-  "number": "2.4.12",
+  "number": "2.4.15",
   "title": "A review of linear independence.",
   "body": " A review of linear independence   This set of questions summarizes our discussion of linear independence in this section.     Suppose there are three vectors , , and for which . If possible, find a linear combination with nonzero scalars , , and .       Suppose that , , , and are vectors such that . What, if anything, can you conclude about the linear independence or linear dependence of this set of vectors? Explain your thinking by referring to the definition of linear independence.        Suppose that , , , and are vectors such that . What, if anything, can you conclude about the relationship between and ? Explain your thinking.       Suppose that , , and form a linearly independent set of vectors in . Is it Always True, Sometimes True, or Never True that and form a linearly independent set? Explain your thinking.       Suppose that , , and form a linearly independent set of vectors in and that is a fourth vector in . Is it Always True, Sometimes True, or Never True that , , , and form a linearly independent set? Explain your thinking.     "
 },
@@ -1580,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-dep.html#ula-proteus-2-4-recognizing-linear-independence",
   "type": "Checkpoint",
-  "number": "2.4.13",
+  "number": "2.4.16",
   "title": "Recognizing linear independence.",
   "body": " Recognizing linear independence   Suppose that is a set of vectors in and that . For each of the statements on the left, determine what we can conclude about the linear independence of this set of vectors.     The matrix has a pivot position in every column.  The equation has exactly one solution.  Linearly independent     .   is a set of vectors.  Linearly dependent     .   is a set of vectors.   is a set of vectors.  The matrix has a pivot position in every row.  Not enough information to determine    "
 },
@@ -1697,7 +1697,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#sec-linear-trans-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "2.5",
   "title": "",
   "body": "                  "
 },
@@ -1706,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#sec-linear-trans-3-4",
   "type": "Definition",
-  "number": "2.5.3",
+  "number": "2.5.4",
   "title": "",
   "body": "  matrix transformation  The matrix transformation associated to the matrix is the function that assigns to the vector the vector ; that is, .   "
 },
@@ -1715,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#example-matrix-to-mt",
   "type": "Example",
-  "number": "2.5.4",
+  "number": "2.5.5",
   "title": "",
   "body": "  The matrix defines a matrix transformation in the following way:   Notice that the input to is a two-dimensional vector and the output is a three-dimensional vector . As a shorthand, we will write to indicate that the inputs are two-dimensional vectors and the outputs are three-dimensional vectors.   "
 },
@@ -1724,7 +1724,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#example-mt-to-matrix",
   "type": "Example",
-  "number": "2.5.5",
+  "number": "2.5.6",
   "title": "",
   "body": "  Suppose we have a function that has the form We may write This shows that is a matrix transformation associated to the matrix    "
 },
@@ -1733,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#sec-linear-trans-3-7",
   "type": "Activity",
-  "number": "2.5.2",
+  "number": "2.5.7",
   "title": "",
   "body": "  In this activity, we will look at some examples of matrix transformations.  To begin, suppose that is the matrix with associated matrix transformation .  What is ?  What is ?  What is ?  Is there a vector such that ?  Write as a two-dimensional vector.      Suppose that where .  What is the dimension of the vectors that are inputs for ?  What is the dimension of the vectors that are outputs?  If we describe this transformation as , what are the values of and and how do they relate to the shape of ?  Describe the vectors for which .   If is the matrix , what is in terms of the vectors and ? What about ?  Suppose that is a matrix and that . If , what is the matrix ?      If , then   .   .   .   .  We seek a vector such that . We can solve this equation to find the unique solution .    Now if the matrix has dimensions .   must be a four-dimensional vector.   must be a three-dimensional vector.  For this matrix, we have . In general, if is an matrix, .  If we solve the homogeneous equation , we find that .     , the first column of the matrix. Similarly, gives the second column of the matrix.  The matrix is     "
 },
@@ -1742,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#prop-linear-trans-columns",
   "type": "Proposition",
-  "number": "2.5.6",
+  "number": "2.5.8",
   "title": "",
   "body": "  If is a matrix transformation given by , then the matrix has columns ; that is, .   "
 },
@@ -1751,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#activity-mt-intro",
   "type": "Activity",
-  "number": "2.5.3",
+  "number": "2.5.9",
   "title": "",
   "body": "  Let's look at some examples and apply these observations.   To begin, suppose that is the matrix transformation that takes a two-dimensional vector as an input and outputs , the two-dimensional vector obtained by rotating counterclockwise by , as shown in .   The matrix transformation takes two-dimensional vectors on the left and rotates them by counterclockwise into the vectors on the right.    Three two dimensional vectors   The standard two dimensional basis vectors and along with a third vector .     Three two dimensional vectors obtained by rotating the vectors in the previous figure.   The three vectors, , , and , from the previous diagram have been rotated counterclockwise through by the matrix transformation . The vector points up the positive vertical axis while points horizontally to the left. The vector has also been rotated into , which demonstrates that .      We will see in the next section that many geometric operations like this one can be performed by matrix transformations.   If we write , what are the values of and , and what is the shape of the associated matrix ?    Determine the matrix by applying .    If as shown on the left in , use your matrix to determine and verify that it agrees with that shown on the right of .    If , determine the vector obtained by rotating counterclockwise by .       Suppose that we work for a company that makes baked goods, including cakes, doughnuts, and eclairs. The company operates two bakeries, Bakery 1 and Bakery 2. In one hour of operation,  Bakery 1 produces 10 cakes, 50 doughnuts, and 30 eclairs.  Bakery 2 produces 20 cakes, 30 doughnuts, and 30 eclairs.  If Bakery 1 operates for hours and Bakery 2 for hours, we will use the vector to describe the operation of the two bakeries.  We would like to describe a matrix transformation where describes the number of hours the bakeries operate and describes the total number of cakes, doughnuts, and eclairs produced. That is, where is the number of cakes, is the number of doughnuts, and is the number of eclairs produced.   If , what are the values of and , and what is the shape of the associated matrix ?    We can determine the matrix using . For instance, will describe the number of cakes, doughnuts, and eclairs produced when Bakery 1 operates for one hour and Bakery 2 sits idle. What is this vector?    In the same way, determine . What is the matrix ?    If Bakery 1 operates for 120 hours and Bakery 2 for 180 hours, what is the total number of cakes, doughnuts, and eclairs produced?     Suppose that in one period of time, the company produces 5060 cakes, 14310 doughnuts, and 10470 eclairs. How long did each bakery operate?    Suppose that the company receives an order for a certain number of cakes, doughnuts, and eclairs. Can you guarantee that you can fill the order without having leftovers?                Since both the inputs and the outputs of are two-dimensional, it follows that and that is a matrix.    Since we have .    Multiplying , which agrees with the vector shown in the figure.     .          The shape of matrix is , and .     .     .     .    We solve the equation to obtain     No, you cannot guarantee this because the two columns of cannot span . If we view an order received as a three-dimensional vector , then a solution to the equation tells us how long to operate the two bakeries to produce this order. However, since is a matrix, it must have a row without a pivot position, which means that the equation will be inconsistent for some vectors .         "
 },
@@ -1760,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#sec-linear-trans-4-5",
   "type": "Proposition",
-  "number": "2.5.8",
+  "number": "2.5.11",
   "title": "",
   "body": " If and are matrix transformations with associated matrices and respectively, then the composition is also a matrix transformation whose associated matrix is the product .  "
 },
@@ -1769,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#sec-linear-trans-4-7",
   "type": "Activity",
-  "number": "2.5.4",
+  "number": "2.5.12",
   "title": "",
   "body": "  We will explore the composition of matrix transformations by revisiting the matrix transformations from .   Let's begin with the matrix transformation that rotates a two-dimensional vector by to produce . We saw in the earlier activity that the associated matrix is . Suppose that we compose this matrix transformation with itself to obtain , which is the result of rotating by twice.   What is the matrix associated to the composition ?    What is the result of rotating twice?    Suppose that is the matrix transformation that rotates vectors by , as shown in .   The matrix transformation takes two-dimensional vectors on the left and rotates them by into the vectors on the right.    Three two dimensional vectors   The standard two dimensional basis vectors and along with a third vector .     Three two dimensional vectors obtained by rotating the vectors in the previous figure.   The three vectors, , , and , from the previous diagram have been rotated through by the matrix transformation . The vector points points horizontally to the left while points vertically downward. The vector has also been rotated into , which demonstrates that .      Use to find the matrix associated to and explain why it is the same matrix associated to .    Write the two-dimensional vector . How might this vector be expressed in terms of scalar multiplication and why does this make sense geometrically?       In the previous activity, we imagined a company that operates two bakeries. We found the matrix transformation where describes the number of cakes, doughnuts, and eclairs when Bakery1 runs for hours and Bakery 2 runs for hours. The associated matrix is .  Suppose now that  Each cake requires 4 cups of flour and and 2 cups of sugar.  Each doughnut requires 1 cup of flour and 1 cup of sugar.  Each eclair requires 1 cup of flour and 2 cups of sugar.  We will describe a matrix transformation where is a two-dimensional vector describing the number of cups of flour and sugar required to make cakes, doughnuts, and eclairs.   Use to write the matrix associated to the transformation .    If we make 1200 cakes, 2850 doughnuts, and 2250 eclairs, how many cups of flour and sugar are required?     Suppose that Bakery 1 operates for 75 hours and Bakery 2 operates for 53 hours. How many cakes, doughnuts, and eclairs are produced? How many cups of flour and sugar are required?    What is the meaning of the composition and what is its associated matrix?    In a certain time interval, both bakeries use a total of 5800 cups of flour and 5980 cups of sugar. How long have the two bakeries been operating?                The matrix is .     .    The matrix associated to is also since rotating by twice is the same as rotating once by .     , which makes sense because multiplying a vector by simply changes its direction.           .     .     and .     takes as input a vector that records the number of hours both bakeries operate and outputs a vector that tells us the total number of cups of flour and sugar used. The associated matrix is .    We want to find the vector for which . Solving this equation gives .         "
 },
@@ -1778,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-trans.html#subsec-dynamical-systems-3",
   "type": "Activity",
-  "number": "2.5.5",
+  "number": "2.5.14",
   "title": "",
   "body": "  Suppose we run a company that has two warehouses, which we will call and , and a fleet of 1000 delivery trucks. Every morning, a delivery truck goes out from one of the warehouses and returns in the evening to one of the warehouses. It is observed that  70% of the trucks that leave return to . The other 30% return to .  50% of the trucks that leave return to and 50% return to .   The distribution of trucks is represented by the vector when there are trucks at location and trucks at . If describes the distribution of trucks in the morning, then the matrix transformation will describe the distribution in the evening.   Suppose that all 1000 trucks begin the day at location and none at . How many trucks are at each location that evening? Using our vector representation, what is ?  So that we can find the matrix associated to , what does this tell us about ?  In the same way, suppose that all 1000 trucks begin the day at location and none at . How many trucks are at each location that evening? What is the result and what is ?  Find the matrix such that .  Suppose that there are 100 trucks at and 900 at in the morning. How many are there at the two locations in the evening?  Suppose that there are 550 trucks at and 450 at in the evening. How many trucks were there at the two locations that morning?  Suppose that all of the trucks are at location on Monday morning.  How many trucks are at each location Monday evening?  How many trucks are at each location Tuesday evening?  How many trucks are at each location Wednesday evening?   Suppose that is the matrix transformation that transforms the distribution of trucks one morning into the distribution of trucks in the morning one week (seven days) later. What is the matrix that defines the transformation ?      If 1000 trucks begin at , that evening we find that 70% of them are at with the remaining 30% at . Therefore, . Since , we see that .  In the same way, we see that so that .  The columns of are and so that .  Evaluate .  We solve to find .  We denote the distribution of trucks Monday morning by .  Monday evening, we have .  Tuesday evening, we have .  Wednesday evening, we have .    The matrix is .    "
 },
@@ -1895,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#sec-transforms-geom-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "2.6",
   "title": "",
   "body": "                  "
 },
@@ -1904,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#activity-linear-trans-geom",
   "type": "Activity",
-  "number": "2.6.2",
+  "number": "2.6.3",
   "title": "Using matrix transformations to describe geometric operations.",
   "body": " Using matrix transformations to describe geometric operations    The matrix transformation transforms features shown on the left into features shown on the right.    For the following matrices , use the diagram to study the effect of the corresponding matrix transformation . For each transformation, describe the geometric effect the transformation has on the plane.   .   .   .   .   .   .   .   .       This transformation stretches by a factor of 2 in the horizontal direction.  This transformation stretches by a factor of 2 uniformly in all directions.  This is a clockwise rotation.  This transformation is called a shear ; it pushes vectors horizontally an amount equal to the vertical component.  This transformation reflects vectors in the vertical axis.  This transformation is called a projection ; it produces the shadow of the vector on the horizontal axis.  This transformation is called the identity ; it causes no change.  This transformation pushes vectors onto the line defined by the vector .    "
 },
@@ -1913,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#prop-linear-trans-characterization",
   "type": "Proposition",
-  "number": "2.6.3",
+  "number": "2.6.5",
   "title": "",
   "body": "  The function is a matrix transformation where for some matrix if and only if . In this case, is the matrix whose columns are ; that is, .   "
 },
@@ -1922,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#sec-transforms-geom-3-10",
   "type": "Example",
-  "number": "2.6.4",
+  "number": "2.6.6",
   "title": "",
   "body": "  We will consider the function that rotates a vector by in the counterclockwise direction to obtain as seen in .     A two dimensional vector and the vector obtained by rotating it by 45 degrees.   There are two figures shown on the left and on the right. The figure on the left contains the vector while the figure on the right has the vector obtained by rotating counterclockwise by 45 degrees.     The function rotates a vector counterclockwise by .   We first need to know that can be represented by a matrix transformation, which means, by , that we need to verify the linearity properties:   The next two figures illustrate why these properties hold. For instance, shows the relationship between and when is a scalar. In particular, scaling a vector and then rotating it is the same as rotating and then scaling it, which means that .     A vector and a scalar multiple along with the result of rotating both vectors by 45 degrees.   Two figures are shown side by side. On the left is a vector and a scalar multiple , both of which lie on the same line. The matrix transformation rotates vectors counterclockwise by 45 degrees. In the figure on the right are the vectors and , which again lie on the same line. This demonstrates that .     We see that the vector is a scalar multiple to so that .   Similarly, shows the relationship between , , and . Remember that the sum of two vectors is represented by the diagonal of the parallelogram defined by the two vectors. The rotation has the effect of rotating the parallelogram defined by and into the parallelogram defined by and , explaining why .     Two vectors and their sum along with the results of rotating all of these vectors by 45 degrees.   Two figures are presented, one on the left and one on the right. In the left figure are the vectors and , the parallelogram formed by them, and their vector sum . Denoting the transformation that rotates vectors counterclockwise by 45 degrees, the right figure contains the vectors and , the parallelogram formed by them, and the vector , which forms the diagonal of this parallelogram. This demonstrates that .     We see that the vector is the sum of and so that .   Having verified these two properties, we now know that the function that rotates vectors by is a matrix transformation. We may therefore write it as where is the matrix . The columns of this matrix, and , are shown on the right of .     Two vectors and the results of applying the matrix transformation T to them.   The two vector and are shown on the left. On the right is shown the result of rotating both of these vectors counterclockwise by 45 degrees, which is the effect of the matrix transformation .     The matrix transformation rotates and by .   Notice that forms an isosceles right triangle, as shown in . Since the length of is 1, the length of , the hypotenuse of the triangle, is also 1, and by Pythagoras' theorem, the lengths of its legs are .     The vector obtained by rotating e 1 counterclockwise by 45 degrees.   The vector , where , is represented by an arrow that begins at the origin, has length one, and makes a 45 degree angle with the positive horizontal axis. A right triangle is formed by this vector, the horizontal axis, and a vertical line segment from the tip of the vector to the horizontal axis. The legs of this right triangle each have length .     The vector has length 1 and is the hypotenuse of a right isosceles triangle.   This leads to . In the same way, we find that so that the matrix is . You may wish to check this using the interactive diagram in the previous activity using the approximation .   "
 },
@@ -1931,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#sec-transforms-geom-3-12",
   "type": "Activity",
-  "number": "2.6.3",
+  "number": "2.6.12",
   "title": "",
   "body": "  In this activity, we seek to describe various matrix transformations by finding the matrix that gives the desired transformation. All of the transformations that we study here have the form .  Find the matrix of the transformation that has no effect on vectors; that is, .  Find the matrix of the transformation that reflects vectors in across the line .  What is the result of composing the reflection you found in the previous part with itself; that is, what is the effect of reflecting across the line and then reflecting across this line again? Provide a geometric explanation for your result as well as an algebraic one obtained by multiplying matrices.  Find the matrix that rotates vectors counterclockwise in the plane by .  Compare the result of rotating by and then reflecting in the line to the result of first reflecting in and then rotating .  Find the matrix that results from composing a rotation with itself four times; that is, if is the matrix transformation that rotates vectors by , find the matrix for . Explain why your result makes sense geometrically.  Explain why the matrix that rotates vectors counterclockwise by an angle is .     We use the fact that the columns of the requested matrices have the form .   .   .  The composition of this reflection with itself is described by multiplying the matrix by itself. This produces the matrix , which we just saw is the matrix for the identity transformation. This means that reflecting a vector in the line twice produces the original vector.   .  If we first rotate and then reflect, we obtain the matrix transformation defined by which is the matrix for reflecting in the horizontal axis.  If we first reflect and then rotate, we obtain the matrix which is the matrix for reflecting in the vertical axis.  Composing four times corresponds to raising the matrix to the fourth power, which gives us the identity matrix .  If we consider the effect of rotating the vector by an angle , we obtain the vector .    "
 },
@@ -1940,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#fig-blob-man",
   "type": "Figure",
-  "number": "2.6.10",
+  "number": "2.6.13",
   "title": "",
   "body": "   A three dimensional rendering of a human character used in computer animation.   A three dimensional human character used in computer animation. The character is standing upright with both arms extending horizontally to the sides. There is also an set of triangles that form a solid encasing the character. Computer animators move the character by moving the vertices of the triangles.     The same character shown leaning to one side.   The same character is now shown leaning to one side with its arms still extending perpendicularly to the body.     Computer animators define a character and create motion by drawing it in a sequence of poses. copyright Disney\/Pixar  "
 },
@@ -1949,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#fig-animate-translate",
   "type": "Figure",
-  "number": "2.6.11",
+  "number": "2.6.14",
   "title": "",
   "body": "   The character has been translated two units horizontally and one unit vertically.   The character has been translated two units horizontally and one unit vertically.     Translating our character to a new position in the plane.  "
 },
@@ -1958,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#fig-animate-homogeneous",
   "type": "Figure",
-  "number": "2.6.12",
+  "number": "2.6.15",
   "title": "",
   "body": "   A three dimensional figure showing the two dimensional coordinate plane drawn as the plane z equal 1.   A three dimensional diagram with coordinate axes labelled , , and . The two dimensional coordinate plane, including the stick figure character, is included as the plane so that it appears as a horizontal plane one unit above the origin.     Include the two-dimensional coordinate plane in as the plane so that we can translate the character.  "
 },
@@ -1967,7 +1967,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#sec-transforms-geom-4-11",
   "type": "Activity",
-  "number": "2.6.4",
+  "number": "2.6.16",
   "title": "",
   "body": "  In this activity, we will use homogeneous coordinates and matrix transformations to move our character into a variety of poses.   Since we regard our character as living in , we will consider matrix transformations defined by matrices . Verify that such a matrix transformation transforms points in the plane into points in the same plane; that is, verify that . Express the coordinates of the resulting point and in terms of the coordinates of the original point and .   An interactive diagram that allows us to move the character using homogeneous coordinates.     Find the matrix transformation that translates our character to a new position in the plane, as shown in      The standard view of the stick figure character.   The standard view of the stick figure character.     The stick figure character after translating two units horizontally and one unit vertically.   The stick figure character after translating two units horizontally and one unit vertically.     Translating to a new position.    As originally drawn, our character is waving with one of their hands. In one of the movie's scenes, we would like them to wave with their other hand, as shown in . Find the matrix transformation that moves them into this pose.     The standard view of the stick figure character.   The standard view of the stick figure character.     The stick figure character has been reflected in the vertical axis.   The stick figure character has been reflected in the vertical axis.     Waving with the other hand.    Later, our character performs a cartwheel by moving through the sequence of poses shown in . Find the matrix transformations that create these poses.      The stick figure character after rotating 45 degrees counterclockwise about the origin.   The stick figure character after rotating 45 degrees counterclockwise about the origin.     The stick figure character after rotating 90 degrees counterclockwise about the origin.   The stick figure character after rotating 90 degrees counterclockwise about the origin.       The stick figure character after rotating 135 degrees counterclockwise about the origin.   The stick figure character after rotating 135 degrees counterclockwise about the origin.     The stick figure character after rotating 180 degrees counterclockwise about the origin.   The stick figure character after rotating 180 degrees counterclockwise about the origin.      Performing a cartwheel.    Next, we would like to find the transformations that zoom in on our character's face, as shown in . To do this, you should think about composing matrix transformations. This can be accomplished in the diagram by using the Compose button, which makes the current pose, displayed on the right, the new beginning pose, displayed on the left. What is the matrix transformation that moves the character from the original pose, shown in the upper left, to the final pose, shown in the lower right?      The standard view of the stick figure character.   The standard view of the stick figure character.     The the stick figure character has been translated downward by one unit.   The the stick figure character has been translated downward by one unit.       The the stick figure character has been again translated downward by one unit.   The the stick figure character has been again translated downward by one unit so that its head is centered at the origin and its feet are half a unit on either side of .     The stick figure character has been enlarged by a factor of two.   Starting from the last position, the character has been enlarged by a factor of two. The head is still centered at the origin but the feet are now one unit on either side of      Zooming in on our characters' face.    We would also like to create our character's shadow, shown in the sequence of poses in . Find the sequence of matrix transformations that achieves this. In particular, find the matrix transformation that takes our character from their original pose to their shadow in the lower right.      The standard view of the stick figure character.   The standard view of the stick figure character.     The character is drawn with the same height but slanting to the right at a 45 degree angle.   The character's feet are still half a horizontal unit on either side of the origin. However, its body forms a 45 degree line from the positive horizontal axis, and its head is centered about the point .       The character has been vertically compressed from its previous position.   From its previous position, the character has been vertically compressed by a factor of two. The feet are still half a horizontal unit on either side of the origin but the head is now centered on .     The character has again been vertically compressed from its previous position.   From its previous position, the characters has again been vertically compressed by a factor of two. The feet are still half a horizontal unit on either side of the origin but the head is now centered on .      Casting a shadow.    Write a final scene to the movie and describe how to construct a sequence of matrix transformations that create your scene.        which shows that   Notice that the entries and are responsible for the translation. Therefore, we need the matrix transformation defined by .  We would like to reflect in the vertical axis so we use the matrix .  The character is successively rotated by using the matrix .  We first translate the character down two units using the matrix . Then we zoom in by uniformly stretching by a factor of using the matrix . The net effect is the transformation described by the matrix   The shadow is first created using the shear . Then the vertical scale is compressed using the matrix .    "
 },
@@ -1976,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#ula-proteus-2-6-seeing-functions-v1",
   "type": "Checkpoint",
-  "number": "2.6.19",
+  "number": "2.6.23",
   "title": "Seeing matrix transformations as functions.",
   "body": " Seeing matrix transformations as functions   Consider the function .     Evaluate if        If we write , what are the values of and ?       What is the matrix for which ?       Describe all vectors for which .       Describe all vectors for which .     "
 },
@@ -1985,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#ula_proteus_2-6_Correct_Matrix_for_Transformation_v1",
   "type": "Checkpoint",
-  "number": "2.6.20",
+  "number": "2.6.24",
   "title": "Finding matrices of transformations.",
   "body": " Finding matrices of transformations   On the left, you are given some transformations in vector form. If the transformation is a matrix transformation, drag it to the associated matrix. Otherwise, drag it to \"Not a matrix transformation\".                                           Not a matrix transformation    "
 },
@@ -1994,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#ula_proteus_2-6_Find_Matrix_from_Unit_Square_Image_v1",
   "type": "Checkpoint",
-  "number": "2.6.21",
+  "number": "2.6.25",
   "title": "Finding matrices of transformations graphically.",
   "body": " Finding matrices of transformations graphically   The unit square is shown on the left of . Suppose that the matrix transformation transforms the unit square into the parallelogram shown on the right.              The unit square and the vector one zero.   A coordinate grid and a set of coordinate axes along with a square with opposite corners at the origin and . The vector is also included.              A paralellogram and vector.   A coordinate grid and a set of coordinate axes together with the parallelogram whose vertices are the origin, , , and .     The unit square, which appears on the left, is transformed into the parallelogram shown on the right.      Give the matrix of the transformation described above.       Using the transformation , match each of the expressions on the left with the appropriate output.                                                      "
 },
@@ -2003,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#ula-proteus-2-6-algebraic-properties",
   "type": "Checkpoint",
-  "number": "2.6.23",
+  "number": "2.6.27",
   "title": "Algebraic properties of matrix transformations.",
   "body": " Algebraic properties of matrix transformations   Suppose is a matrix transformation defined by the matrix . Determine whether each of the following properties is Always True, Never True, or Sometimes True.      If and , then .       If , then for any scalar .   Always True     If is a matrix and , then is in .   Never True     If , then .    If , then .    If , then .   Sometimes True    "
 },
@@ -2012,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transforms-geom.html#ula-proteus-2-6-identify-matrix-graphically",
   "type": "Checkpoint",
-  "number": "2.6.24",
+  "number": "2.6.28",
   "title": "Identifying matrix transformations graphically.",
   "body": " Identifying matrix transformations graphically   The unit square is depicted in . The right columns shows the image of the unit square under a matrix transformation. Match each matrix in the left column with the corresponding image of the unit square.   The unit square     origin=(0,0)  v1=(1,0)  v2=(0,1)         The unit square   The unit square, which is square whose sides are parallel to the coordinate axes and with opposite corners at the origin and .                origin=(0,0)  v1=(0,1)  v2=(-1,0)         A square in the second quadrant of the coordinate plane.   A square with sides parallel to the coordinate axes and opposite corners at the origin and .                origin=(0,0)  v1=(-1,0)  v2=(0,2)         A rectangle in the second quadrant of the coordinate plane with width one and height two.   A rectangle whose sides are parallel to the coordinate axes and with opposite corners at the origin and .                origin=(0,0)  v1=(1,0)  v2=(1,1)         A parallelogram in the first quadrant of the coordinate plane.   A parallelogram whose corners are at the origin, , , and .                origin=(0,0)  v1=(1,0)  v2=(0,1)         The unit square in the coordinate plane.   A square whose sides are parallel to the coordinate axes and with opposite corners at the origin and .                origin=(0,0)  v1=(1,1)  v2=(-1,1)         A square in the coordinate plane.   A square in the coordinate plane with corners at the origin, , , and .                origin=(0,0)  v1=(1,1)  v2=(1,1)         A line segment from the origin extending into the first quadrant at a 45 degree angle.   The line segment from the origin to the point .        "
 },
@@ -2111,7 +2111,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#sec-matrix-inverse-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "3.1",
   "title": "",
   "body": "                                 "
 },
@@ -2120,7 +2120,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#subsec-invertible-matrices-4",
   "type": "Definition",
-  "number": "3.1.1",
+  "number": "3.1.2",
   "title": "",
   "body": "  invertible  matrix, inverse  An matrix is called invertible if there is a matrix such that , where is the identity matrix. The matrix is called the inverse of and denoted .   "
 },
@@ -2129,7 +2129,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#subsec-invertible-matrices-6",
   "type": "Example",
-  "number": "3.1.2",
+  "number": "3.1.3",
   "title": "",
   "body": "  Suppose that is the matrix that rotates two-dimensional vectors counterclockwise by and that rotates vectors by . We have We can check that which shows that is invertible and that .  Notice that if we multiply the matrices in the opposite order, we find that , which says that is also invertible and that . In other words, and are inverses of each other.   "
 },
@@ -2138,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#subsec-invertible-matrices-7",
   "type": "Activity",
-  "number": "3.1.2",
+  "number": "3.1.4",
   "title": "",
   "body": "  This activity demonstrates a procedure for finding the inverse of a matrix .   Suppose that . To find an inverse , we write its columns as and require that In other words, we can find the columns of by solving the equations Solve these equations to find and . Then write the matrix and verify that . This is enough for us to conclude that is the inverse of .     Find the product and explain why we now know that is invertible and .     What happens when you try to find the inverse of ?    We now develop a condition that must be satisfied by an invertible matrix. Suppose that is an invertible matrix with inverse and suppose that is any -dimensional vector. Since , we have This says that the equation is consistent and that is a solution.  Since we know that is consistent for any vector , what does this say about the span of the columns of ?    Since is a square matrix, what does this say about the pivot positions of ? What is the reduced row echelon form of ?    In this activity, we have studied the matrices Find the reduced row echelon form of each and explain how those forms enable us to conclude that one matrix is invertible and the other is not.        Solving the two equations for and gives . We can verify that, as we expect, .  We find that , which is the condition that tells us that is invertible.  Seeking the first column of , we see that the equation is not consistent. This means that is not invertible.  Since the equation is consistent for every , we know that the span of the columns of is .  Because the span of the columns of is , there is a pivot position in every row. Since is square, there is also a pivot position in every column. This means that the reduced row echelon form of must be the identity matrix .  We see that which shows that is invertible and is not.    "
 },
@@ -2147,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#example-inverse-augment-I",
   "type": "Example",
-  "number": "3.1.3",
+  "number": "3.1.5",
   "title": "",
   "body": "  We can reformulate this procedure for finding the inverse of a matrix. For the sake of convenience, suppose that is a invertible matrix with inverse . Rather than solving the equations separately, we can solve them at the same time by augmenting by both vectors and and finding the reduced row echelon form.  For example, if , we form This shows that the matrix is the inverse of .  In other words, beginning with , we augment by the identify and find the reduced row echelon form to determine :    "
 },
@@ -2156,7 +2156,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#proposition-inverse-solve",
   "type": "Proposition",
-  "number": "3.1.4",
+  "number": "3.1.6",
   "title": "",
   "body": "  If is an invertible matrix with inverse , then any equation is consistent and is a solution. In other words, the solution to is .   "
 },
@@ -2165,7 +2165,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#proposition-invertible-rref",
   "type": "Proposition",
-  "number": "3.1.5",
+  "number": "3.1.7",
   "title": "",
   "body": "  The matrix is invertible if and only if the reduced row echelon form of is the identity matrix: . In addition, we can find the inverse by augmenting by the identity and finding the reduced row echelon form:    "
 },
@@ -2174,7 +2174,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#proposition-inverse-inverse",
   "type": "Proposition",
-  "number": "3.1.6",
+  "number": "3.1.8",
   "title": "",
   "body": "  If is a invertible matrix with inverse , then , which tells us that is invertible with inverse . In other words,    "
 },
@@ -2183,7 +2183,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#sec-matrix-inverse-4-3",
   "type": "Activity",
-  "number": "3.1.3",
+  "number": "3.1.9",
   "title": "",
   "body": "  We'll begin by considering the square matrix    Describe the solution space to the equation by augmenting and finding the reduced row echelon form.     Using , explain why is invertible and find its inverse.    Now use the inverse to solve the equation and verify that your result agrees with what you found in part a.    If you have defined a matrix B in Sage, you can find it's inverse as B.inverse() or B^-1 . Use Sage to find the inverse of the matrix and use it to solve the equation .     If and are the two matrices defined in this activity, find their product and verify that it is invertible.    Compute the products and . Which one agrees with ?    Explain your finding by considering the product and using associativity to regroup the products so that the middle two terms are multiplied first.        Constructing the augmented matrix, we see that which says that there is a unique solution .    Our work in part a shows that from which we conclude that is invertible. To find the inverse, which says that     We see that .    Sage tells us that .    Sage helps us see that , which tells us that is invertible.   We find that .   We see that      "
 },
@@ -2192,7 +2192,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#proposition-invertible-properties",
   "type": "Proposition",
-  "number": "3.1.7",
+  "number": "3.1.10",
   "title": "Properties of invertible matrices.",
   "body": " Properties of invertible matrices     An matrix is invertible if and only if .  If is invertible, then the solution to the equation is given by .  We can find by finding the reduced row echelon form of ; namely, .  If and are two invertible matrices, then their product is also invertible and .     "
 },
@@ -2201,7 +2201,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#subsec-triangular-invertible-3",
   "type": "Definition",
-  "number": "3.1.8",
+  "number": "3.1.11",
   "title": "",
   "body": "  lower triangular matrix  upper triangular matrix  We say that a matrix is lower triangular if all its entries above the diagonal are zero. Similarly, is upper triangular if all the entries below the diagonal are zero.   "
 },
@@ -2210,7 +2210,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#proposition-triangular-invertibility",
   "type": "Proposition",
-  "number": "3.1.9",
+  "number": "3.1.12",
   "title": "",
   "body": "  An triangular matrix is invertible if and only if the entries on the diagonal are all nonzero.   "
 },
@@ -2219,7 +2219,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#subsec-triangular-invertible-8",
   "type": "Activity",
-  "number": "3.1.4",
+  "number": "3.1.13",
   "title": "Gaussian elimination and matrix multiplication.",
   "body": " Gaussian elimination and matrix multiplication   This activity explores how the row operations of scaling, interchange, and replacement can be performed using matrix multiplication.  As an example, we consider the matrix and apply a replacement operation that multiplies the first row by and adds it to the second row. Rather than performing this operation in the usual way, we construct a new matrix by applying the desired replacement operation to the identity matrix. To illustrate, we begin with the identity matrix and form a new matrix by multiplying the first row by and adding it to the second row to obtain   Show that the product is the result of applying the replacement operation to .   Explain why is invertible and find its inverse .  Describe the relationship between and and use the connection to replacement operations to explain why it holds.  Other row operations can be performed using a similar procedure. For instance, suppose we want to scale the second row of by . Find a matrix so that is the same as that obtained from the scaling operation. Why is invertible and what is ?   Finally, suppose we want to interchange the first and third rows of . Find a matrix , usually called a permutation matrix that performs this operation. What is ?  The original matrix is seen to be row equivalent to the upper triangular matrix by performing three replacement operations on : Find the matrices , , and that perform these row replacement operations so that .  Explain why the matrix product is invertible and use this fact to write . What is the matrix that you find? Why do you think we denote it by ?        Performing the matrix multiplication, we find that   We know that is invertible because it is a lower triangular matrix whose diagonal entries are all 1. We find that , which can be verified.  But we can see this in another way as well. The replacement operation is reversible; that is, multiplying the first row by and adding it to the second row can be undone by multiplying the first row by and adding it to the second row.  We find that This makes sense because scaling a row by can be undone by scaling the same row by .  We find that Moreover, because we can undo the interchange operation by repeating it.  Continuing with the Gaussian elimination algorithm, we have , as above, we then have .  Each of the matrices , , and is invertible so their product will be as well. Since , we have . Moreover, gives . Notice that this matrix is lower triangular so we call it .    "
 },
@@ -2228,7 +2228,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#subsec-triangular-invertible-10",
   "type": "Example",
-  "number": "3.1.10",
+  "number": "3.1.14",
   "title": "",
   "body": "  Suppose we have For the forward substitution phase of Gaussian elimination, we perform a sequence of three replacement operations. The first replacement operation multiplies the first row by and adds the result to the second row. We can perform this operation by multiplying by the lower triangular matrix where   The next two replacement operations are performed by the matrices so that   Notice that the inverse of has the simple form: . This says that if we want to undo the operation of multiplying the first row by and adding to the second row, we should multiply the first row by and add it to the second row. That is the effect of .  Notice that we now have , which gives where is the lower triangular matrix This way of writing as the product of a lower and an upper triangular matrix is known as an factorization of , and its usefulness will be explored later.    "
 },
@@ -2237,7 +2237,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#ula-proteus-3-1-matching-matrix-invertibility",
   "type": "Checkpoint",
-  "number": "3.1.11",
+  "number": "3.1.15",
   "title": "Determining the invertibility of matrices.",
   "body": " Determining the invertibility of matrices   Given below are some descriptions of matrices where represents a nonzero number. For each matrix, determine if it is invertible, not invertible, or whether more information is needed.    You may wish to review how the structure of a triangular matrix determines its invertibility. The chapter summary above may help as well as material in .                 Definitely invertible          Definitely not invertible       More information needed    "
 },
@@ -2246,7 +2246,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#ula-proteus-3-1-matching-invertibility-conditions",
   "type": "Checkpoint",
-  "number": "3.1.12",
+  "number": "3.1.16",
   "title": "Determining conditions for invertibility.",
   "body": " Determining conditions for invertibility   Suppose that are vectors in and let . Match each of the following conditions with the appropriate description of , if possible.    You may wish to review how the reduced row echelon form of a matrix determines whether it is invertible and what consequences arise as a result. The chapter summary above may help as well as material in .      is a linearly independent set of vectors.   is row equivalent to the identity matrix .   has exactly one solution.   .  is invertible    The reduced row echelon form of has a row whose entries are all zero.   .  is not invertible     has the solution .  Not possible to determine    "
 },
@@ -2255,7 +2255,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrix-inverse.html#ula-proteus-3-1-reading-invertibility",
   "type": "Checkpoint",
-  "number": "3.1.13",
+  "number": "3.1.17",
   "title": "Connecting invertibility to solutions of equations.",
   "body": " Connecting invertibility to solutions of equations   If is a matrix such that has the unique solution , is there anything that we can conclude about the invertibility of ? Explain your thinking.    "
 },
@@ -2390,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula-preview-3-2",
   "type": "Preview Activity",
-  "number": "3.2.1",
+  "number": "3.2.2",
   "title": "",
   "body": "  Consider the vectors in , which are shown in .     Two vectors and a set of skewed grid lines representing their linear combinations.   There is a set of coordinate axes and a standard coordinate grid in the background. There are also two vectors and and two sets of parallel lines representing the linear combinations of and . One set of parallel lines is parallel to and passes through the integer multiples of while the other set is parallel to and passes through integer multiples of .     Linear combinations of and .      Indicate the linear combination on the figure.    We can see graphically, or we can compute, that .      Express the vector as a linear combination of and .    Again, we graphically see that .      Find the linear combination .    Since the linear combination extends beyond the figure, we compute that .      Express the vector as a linear combination of and .    We need to find the solution to the linear system , which is .      Explain why every vector in can be written as a linear combination of and in exactly one way.    The matrix has a pivot position in every row and every column.    "
 },
@@ -2399,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-2-7",
   "type": "Videos",
-  "number": "",
+  "number": "3.2",
   "title": "",
   "body": "                                 "
 },
@@ -2408,7 +2408,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-3-3",
   "type": "Definition",
-  "number": "3.2.3",
+  "number": "3.2.4",
   "title": "",
   "body": "  basis  A set of vectors in is called a basis for if the set of vectors spans and is linearly independent.   "
 },
@@ -2417,7 +2417,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-3-4",
   "type": "Activity",
-  "number": "3.2.2",
+  "number": "3.2.5",
   "title": "",
   "body": "  We will look at some examples of bases in this activity.  In the preview activity, we worked with the set of vectors in : . Explain why these vectors form a basis for .  Consider the set of vectors in  and determine whether they form a basis for .   Do the vectors form a basis for ?  Explain why the vectors form a basis for .  If a set of vectors forms a basis for , what can you guarantee about the pivot positions of the matrix ?  If the set of vectors is a basis for , how many vectors must be in the set?       The matrix is row equivalent to the identity matrix so it has a pivot position in every row. The span of the columns is therefore . There is also a pivot position in every column, which means that the columns are linearly independent.  We note that Since there is a pivot position in every row, the span of the vectors is . Since there is a pivot position in every column, the vectors are linearly independent. Consequently, this set of vectors forms a basis for .  The matrix whose columns are the vectors , , , and has dimensions . Therefore, there cannot be a pivot position in every column, which tells us that the columns cannot be linearly independent. Therefore, the set of vectors do not form a basis for .  Putting these vectors into a matrix produces the identity matrix, which has a pivot position in every row and every column. Therefore, the span of the vectors is , and they are linearly independent.  There must be a pivot position in every row and every column.  A basis for must have vectors. Because the associated matrix must have a pivot position in every row and every column, there must be the same number of columns as there are rows. Since the vectors are -dimensional, there must be 10 vectors.    "
 },
@@ -2426,7 +2426,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-3-8",
   "type": "Proposition",
-  "number": "3.2.4",
+  "number": "3.2.6",
   "title": "",
   "body": "  A set of vectors forms a basis for if and only if the matrix This means there must be vectors in a basis for .   "
 },
@@ -2435,7 +2435,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-3-9",
   "type": "Example",
-  "number": "3.2.5",
+  "number": "3.2.7",
   "title": "",
   "body": "  Notice that the vectors form the columns of the identity matrix, which implies that this set forms a basis for . More generally, the set of vectors forms a basis for , which we call the standard basis for . basis, standard    "
 },
@@ -2444,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-4-3",
   "type": "Example",
-  "number": "3.2.6",
+  "number": "3.2.8",
   "title": "",
   "body": "  In this section's preview activity, we considered the vectors , which form a basis for .   In the standard coordinate system, the point is found by moving 2 units to the right and 3 units down. We would like to define a new coordinate system where we interpret to mean we move two times along and 3 times along . As we see in the figure, doing so leaves us at the point , expressed in the usual coordinate system.   Two vectors and a set of skewed grid lines representing their linear combinations.   There is a set of coordinate axes and a standard coordinate grid in the background. There are also two vectors and and two sets of parallel lines representing the linear combinations of and . One set of parallel lines is parallel to and passes through the integer multiples of while the other set is parallel to and passes through integer multiples of .     We have seen that . The coordinates of the vector in the new coordinate system are the weights that we use to create as a linear combination of and .  Since we now have two descriptions of the vector , we need some notation to keep track of which coordinate system we are using. Because , we will write . More generally, will denote the coordinates of in the basis ; that is, is the vector of weights such that .  For example, if the coordinates of in the basis are , then and we conclude that . This demonstrates how we can translate coordinates in the basis into standard coordinates.  Suppose we know the expression of a vector in standard coordinates. How can we find its coordinates in the basis ? For instance, suppose and that we would like to find . We can write which means that or This linear system for the weights defines an augmented matrix . which means that .   "
 },
@@ -2453,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-4-6",
   "type": "Activity",
-  "number": "3.2.3",
+  "number": "3.2.9",
   "title": "",
   "body": "  Let's begin with the basis of where .  If the coordinates of in the basis are , what is the vector ?  If , find the coordinates of in the basis ; that is, find .  Find a matrix such that, for any vector , we have . Explain why this matrix is invertible.  Using what you found in the previous part, find a matrix such that, for any vector , we have . What is the relationship between the two matrices and ? Explain why this relationship holds.  Suppose we consider the standard basis . What is the relationship between and ?  Suppose we also consider the basis . Find a matrix that converts coordinates in the basis into coordinates in the basis ; that is, . You may wish to think about converting coordinates from the basis into the standard coordinate system and then into the basis .      We know that .  We solve the linear system to find .  If , we have This matrix , whose columns are the vectors and , has a pivot position in every row and every column because the vectors form a basis. It is, therefore, row equivalent to the identity matrix and hence invertible.  Since we have , we also have .  We have   If we define to be the matrix whose columns are and , then Therefore,     "
 },
@@ -2462,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#proposition-coordinate-transform",
   "type": "Proposition",
-  "number": "3.2.7",
+  "number": "3.2.10",
   "title": "",
   "body": "  If is a basis and the matrix whose columns are the basis vectors, then    "
 },
@@ -2471,7 +2471,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-5-3",
   "type": "Example",
-  "number": "3.2.8",
+  "number": "3.2.11",
   "title": "",
   "body": "  Let's consider the basis of : It is relatively straightforward to convert a vector's representation in this basis into to the standard basis using the matrix whose columns are the basis vectors: For example, suppose that the vector is described in the coordinate system defined by the basis as . We then have .  Consider now the vector . If we would like to express in the coordinate system defined by , then we compute .   "
 },
@@ -2480,7 +2480,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#example-wavelet-basis",
   "type": "Example",
-  "number": "3.2.9",
+  "number": "3.2.12",
   "title": "",
   "body": "  Suppose we work for a company that records its quarterly revenue, in millions of dollars, as:   A company's quarterly revenue    Quarter  Revenue    1  10.3   2  13.1   3  7.5   4  8.2      Rather than using a table to record the data, we could display it in a graph or write it as a vector in : .   Plot of four data points representing a company's revenue in the four quarters of a year.   Four data points are plotted representing a company's revenue in the four quarters of a year. The horizontal axis is labelled Quarter and indicates quarters one, two, three, and four. The vertical axis is labelled Revenue and has labelled positions five, ten, and fifteen. The data points are plotted at , , , and .     Let's consider a new basis for using vectors . We may view these basis elements graphically, as in      Visual representation of the four basis elements.   A set of four diagrams arranged in a grid. Each diagram is a plot of four points at horizontal locations one, two, three, and four.  In the upper left is a representation of where each point has a vertical coordinate of one. The upper right shows a representation of , whose first two points have a vertical coordinate of one and whose last two points have a vertical coordinate of minus one.  In the lower left is a representation of . The vertical coordinates of the points from left to right are one, negative one, zero, and zero. In the lower right, the vertical coordinates are zero, zero, one, and negative one, which represents .     A representation of the basis elements of .   To convert our revenue vectors into the coordinates given by , we form the matrices: In particular, if the revenue vector is , then Notice that the first component of is the average of the components of .  For our particular revenue vector , we have This means that our revenue vector is . We will think about what these terms mean by adding them together one at a time.    The first term, gives us the average revenue over the year.   Plot of the revenue data points and a horizontal drawn at their average.   This diagram plots the four revenue data points as before and adds a horiztonal line drawn at the average of the four revenue values and extending across the width of the diagram.      The average revenue for the first two quarters is 11.7, which is 1.925 million dollars above the yearly average. Similarly, the average revenue for the last two quarters is 1.925 million dollars below the yearly average. This is recorded by the second term    Plot of the data points with horiztonal lines indicating averages over two halves of a year.   The four revenue data points are again plotted with a horizontal line indicating the average drawn in the background. There are two horizontal line segments added, the first of which represents the average of the first two quarters with the second representing the average of the last two quarters. The two new horizontal lines show the difference in the averages over the two halves of the year compared to the average over the entire year.      Finally, the first quarter's revenue is 1.400 million dollars below the average over the first two quarters and the second quarter's revenue is 1.400 million dollars above that average. This, and the corresponding data for the last two quarters, is captured by the last two terms: .   Four revenue data points and short horizontal lines through each of the points   The four revenue data points are plotted with two horizontal lines indicating the averages over the first and second halves of the year drawn in the background.  There are also four new horizontal lines passing through each of the data points that indicate the revenue in each quarter. This demonstrates how the revenue in each quarter differs from the average revenue over its half of the year.      If we write , we see that the coefficient measures the average revenue over the year, measures the deviation from the annual average in the first and second halves of the year, and measures how the revenue in the first and second quarter differs from the average in the first half of the year. In this way, the coefficients provide a view of the revenue over different time scales, from an annual summary to a finer view of quarterly behavior.  This basis is sometimes called a Haar wavelet basis, and the change of basis is known as a Haar wavelet transform. In the next section, we will see how this basis provides a useful way to store digital images.   "
 },
@@ -2489,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#sec-bases-5-5",
   "type": "Activity",
-  "number": "3.2.4",
+  "number": "3.2.15",
   "title": "Edge detection.",
   "body": " Edge detection   An important problem in the field of computer vision is to detect edges in a digital photograph, as is shown in . Edge detection algorithms are useful when, say, we want a robot to locate an object in its field of view. Graphic designers also use these algorithms to create artistic effects.     A color photograph of a red rock canyon wall against a blue sky.   A color photograph showing a red rock canyon wall against a blue sky. There are a few shadows in the canyon wall, but the region of the photograph occupied by the wall is fairly homogeneous. The blue sky is also fairly homogeneous so that there is a sharp division between the area occupied by the canyon wall and the area occupied by the sky. There is also some vegetation at the bottom and branches of a tree on the left.     Black and white image showing the edges detected in the photograph by an edge detection algorithm.   This image has a pure white background and curves drawn in black indicating edges detected in the photograph. There is a prominent vertical curve representing the edge between the canyon wall and the sky. Additional curves highlight some of the shadows in the canyon wall as well as the vegetation and branches of the tree.     A canyon wall in Capitol Reef National Park and the result of an edge detection algorithm.   We will consider a very simple version of an edge detection algorithm to give a sense of how this works. Rather than considering a two-dimensional photograph, we will think about a one-dimensional row of pixels in a photograph. The grayscale values of a pixel measure the brightness of a pixel; a grayscale value of 0 corresponds to black, and a value of 255 corresponds to white.  Suppose, for simplicity, that the grayscale values for a row of six pixels are represented by a vector in :    .   Plot of grayscale values for the six pixels.   A horizontal axis with labelled locations one through six representing the six pixels and a vertical axis with a scale from zero to 250. There are six points plotted representing the grayscale values of the six pixels. The first four grayscale values are relatively small, but the fifth and sixth are relatively large so that we see a jump in the values between the fourth and fifth pixel.     We can easily see that there is a jump in brightness between pixels 4 and 5, but how can we detect it computationally? We will introduce a new basis for with vectors: .  Construct the matrix that relates the standard coordinate system with the coordinates in the basis .  Determine the matrix that converts the representation of in standard coordinates into the coordinate system defined by .   Suppose the vectors are expressed in general terms as . Using the relationship , determine an expression for the coefficient in terms of . What does measure in terms of the grayscale values of the pixels? What does measure in terms of the grayscale values of the pixels?  Now for the specific vector , determine the representation of in the -coordinate system.  Explain how the coefficients in determine the location of the jump in brightness in the grayscale values represented by the vector .    Readers who are familiar with calculus may recognize that this change of basis converts a vector into , the set of changes in . This process is similar to differentiation in calculus. Similarly, the process of converting into the vector adds together the changes in a process similar to integration. As a result, this change of basis represents a linear algebraic version of the Fundamental Theorem of Calculus.     We form the matrix   We find that   We see that so measures the change in brightness between one pixel and its neighbor. Similarly, , which measures another change in brightness.  We compute that   Most of the coefficients that measure changes are relatively small in absolute value. The coefficient , however, which measures the change in brightness between the fourth and fifth pixel, has a large absolute value. This tells us that there is a large change in brightness between the fourth and fifth pixel, which points to an edge in the image.    "
 },
@@ -2498,7 +2498,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula-proteus-3-2-def-basis",
   "type": "Checkpoint",
-  "number": "3.2.13",
+  "number": "3.2.17",
   "title": "Defining the concept of basis.",
   "body": " Defining the concept of basis   Select the best definition of a basis for .      A set of vectors that span .   This is a consequence of the definition but does not make clear both of the main properties of being a basis.     A set of vectors in that are linearly independent and that span .   This is correct! You may wish to also select the other choices and consider why they are not the best definition.     A matrix that is row equivalent to the identity matrix .  This is a test to determine if the vectors form a basis but is not what we mean by a basis.     The columns of an invertible matrix.   This a consequence of being a basis but does not make clear the significance of a basis.    "
 },
@@ -2507,7 +2507,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula-proteus-3-2-recognizing-basis-props",
   "type": "Checkpoint",
-  "number": "3.2.14",
+  "number": "3.2.18",
   "title": "Recognizing the properties of a basis.",
   "body": " Recognizing the properties of a basis   Suppose that is a set of vectors in and that is the matrix whose columns are . Determine whether each of the conditions on the left implies that the set of vectors is a basis.      If , then .    Every row of has a pivot position.    is invertible.    Any vector in can be written as a linear combination of .    is a basis for .      Some column of has no pivot position.    .    is not a basis for .      For some vector , the equation has a solution.    If , then .    Not enough information to determine     "
 },
@@ -2516,7 +2516,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula_proteus_3-2_Change_of_Basis_v1",
   "type": "Checkpoint",
-  "number": "3.2.15",
+  "number": "3.2.19",
   "title": "Explaining change of basis.",
   "body": " Explaining change of basis   Suppose is a basis of .     Explain the process for converting a coordinate vector in basis to a standard coordinate vector .       Explain the process for converting a standard coordinate vector to a coordinate vector in basis .      "
 },
@@ -2525,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula-proteus-3-2-basismatch-v1",
   "type": "Checkpoint",
-  "number": "3.2.16",
+  "number": "3.2.20",
   "title": "Changing coordinate representations algebraically.",
   "body": " Changing coordinate representations algebraically  Consider the basis . If possible, match each vector on the left with its coordinates, , in the basis .                          "
 },
@@ -2534,7 +2534,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula_proteus_3-2_Coordinate_Representations_v1",
   "type": "Checkpoint",
-  "number": "3.2.17",
+  "number": "3.2.21",
   "title": "Changing coordinate representations graphically.",
   "body": " Changing coordinate representations graphically   The vectors and shown below form a basis of . Match each column vector on the left with its description on the right. Some vectors do not match with a description.   Coordinate representations        pa=(2.7,-1.8)  pb=(1,2.8)  pc=(6.5,2.2)  pd=(-5.1,5.5)  pe=(-4.5,-3.3)       \\bvec_1  \\bvec_2  \\xvec  \\yvec  \\zvec     Two vectors and the skewed grid of linear combinations along with three other vectors.   Vectors and along with the skewed grid of linear combinations of these two vectors. There is a vector that begins at the origin and ends on the grid lines found by starting at the origin and moving twice in the direction and twice in the direction.  The vector begins at the origin and ends on the grid lines found by moving times in the direction and times in the direction.  The vector begins at the origin and ends on the grid lines found by moving times in the direction and time in the direction.           The coordinates of in the standard basis       The coordinates of in the standard basis       The coordinates of in the standard basis       The coordinates of in the basis        The coordinates of in the basis        The coordinates of in the basis                    "
 },
@@ -2543,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-bases.html#ula-proteus-3-2-changebasismatrix-v1",
   "type": "Checkpoint",
-  "number": "3.2.19",
+  "number": "3.2.23",
   "title": "Changing coordinates between several bases.",
   "body": " Changing coordinates between several bases   Consider the three bases . Match each matrix on the left with the appropriate change of basis description.      The matrix for which .     The matrix for which .     The matrix for which .     The matrix for which .               "
 },
@@ -2651,7 +2651,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#ula-preview-3-4",
   "type": "Preview Activity",
-  "number": "3.3.1",
+  "number": "3.3.2",
   "title": "",
   "body": "  We will explore the area formula in this preview activity.     Find the area of the following parallelograms.    1.   A one by one square   A parallelogram with vertices at the origin, , , and .    2.   A rectangle having sides of length two and three   A parallelogram with vertices at the origin, , , and .    3.   A square whose sides make 45 degree angles with the coordinate axes.   A parallelogram with vertices at the origin, , , and .      4.   A parallelogram with horizontal sides.   A parallelogram with vertices at the origin, , , and .    5.   A parallelogram with horizontal sides.   A parallelogram with vertices at the origin, , , and .            We find the following areas.  A square has area 1.  A rectangle has area 6.  The square has side length giving an area of 2.  If we consider the horizontal length as the base, we see that so that the area is 4.  In the same way, we can consider both the base and height to be 2 so that the area is 4.         Explain why the area of the parallelogram formed by the vectors and is the same as that formed by and .   A horizontal vector with two vectors ending on the same horizontal line.   A horizontal vector and two vectors and that end on the same horizontal line.       If we consider the base to be the length of , then the height, which is the perpendicular distance to its parallel side, is the same in both parallelograms.    "
 },
@@ -2660,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-2-7",
   "type": "Videos",
-  "number": "",
+  "number": "3.3",
   "title": "",
   "body": "                              "
 },
@@ -2669,7 +2669,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#fig-det-orientation",
   "type": "Figure",
-  "number": "3.3.2",
+  "number": "3.3.3",
   "title": "",
   "body": "   Two diagrams demonstrating the two possible orientations of a pair of two dimensional vectors.   The diagram on the left shows two vectors and both in the first quadrant. The vector makes a smaller angle with the positive horizontal axis so that rotating counterclockwise by an angle less than causes the two vectors to point in the same direction. We say these vectors are positively oriented.  The diagram on the right shows the same two vectors but the names of the vectors have been interchanged so that now makes a larger angle with the positive horizontal axis. The vector needs to be rotated counterclockwise by an angle greater than to cause the vectors to point in the same direction. This pair of vectors is negatively oriented.     The vectors on the left are positively oriented while the ones on the right are negatively oriented.  "
 },
@@ -2678,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-3-4",
   "type": "Definition",
-  "number": "3.3.3",
+  "number": "3.3.4",
   "title": "",
   "body": "  determinant  Suppose a matrix has columns and . If the pair of vectors is positively oriented, then the determinant of , denoted , is the area of the parallelogram formed by and . If the pair is negatively oriented, then is -1 times the area of the parallelogram.   "
 },
@@ -2687,7 +2687,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#example-det-identity",
   "type": "Example",
-  "number": "3.3.4",
+  "number": "3.3.5",
   "title": "",
   "body": "  Consider the determinant of the identity matrix . As seen on the left of , the vectors and form a positively oriented pair. Since the parallelogram they form is a square, we have      Two diagrams illustrating the determinants of two matrices.   The diagram on the left shows the vectors and and the parallelogram they form, which is unit square.  The diagram on the right shows the vectors and and the parallelogram that they form, which is a rectangle having sides of length two and one.     The determinant , as seen on the left. On the right, we see that where is the matrix whose columns are shown.   Now consider the matrix . As seen on the right of , the vectors and form a negatively oriented pair. The parallelogram they define is a rectangle so we have .   "
 },
@@ -2696,7 +2696,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-3-6",
   "type": "Activity",
-  "number": "3.3.2",
+  "number": "3.3.7",
   "title": "",
   "body": "  In this activity, we will find the determinant of some simple matrices and discover some important properties of determinants.   The geometric meaning of the determinant of a matrix.      Use the diagram to find the determinant of the matrix . Along with , what does this lead you to believe is generally true about the determinant of a diagonal matrix?  Use the diagram to find the determinant of the matrix . What is the geometric effect of the matrix transformation defined by this matrix?  Use the diagram to find the determinant of the matrix . More generally, what do you notice about the determinant of any matrix of the form ? What does this say about the determinant of an upper triangular matrix?  Use the diagram to find the determinant of any matrix of the form . What does this say about the determinant of a lower triangular matrix?  Use the diagram to find the determinant of the matrix . In general, what is the determinant of a matrix whose columns are linearly dependent?  Consider the matrices . Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?      The determinant is because the vectors are negatively oriented and the rectangle has sides of length and . The determinant of a diagonal matrix seems to be the product of the diagonal entries.  The matrix transformation is a reflection over the line and we see that the determinant is .  The determinant will continue to be for any value of . This illustrates the fact that the determinant of an upper triangular matrix equals the product of its diagonal entries.  The same reasoning tells us that this determinant is and, in fact, the determinant of a lower triangular matrix equals the product of its diagonal entries.  The determinant of this matrix is because the parallelogram formed by the vector has no area. This suggests that the determinant of a matrix whose columns are linearly dependent is .  We find that , , and . This suggests that .    "
 },
@@ -2705,7 +2705,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#fig-parallelogram-f",
   "type": "Figure",
-  "number": "3.3.7",
+  "number": "3.3.9",
   "title": "",
   "body": "   A parallelogram formed by the columns of a two by two matrix.   The parallelogram whose vertices are at the origin, , , and .     A rectangle whose sides have lengths two and three.   A rectangle whose vertices are at the origin, , , and .     The determinant of a triangular matrix equals the product of its diagonal entries.  "
 },
@@ -2714,7 +2714,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#proposition-det-properties",
   "type": "Proposition",
-  "number": "3.3.8",
+  "number": "3.3.10",
   "title": "",
   "body": "  The determinant satisfies these properties:   The determinant of a triangular matrix equals the product of its diagonal entries.    If is obtained by interchanging two rows of the identity matrix, then .     .      "
 },
@@ -2723,7 +2723,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#figure-linear-dep-det",
   "type": "Figure",
-  "number": "3.3.9",
+  "number": "3.3.11",
   "title": "",
   "body": " When the columns of are linearly dependent, we find that .    A line segment in the two dimensional coordinate plane.   A parallelogram that is collapsed onto a line segment. The vertices of the parallelogram are at the origin, , , and .     "
 },
@@ -2732,7 +2732,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#prop-invertible-det",
   "type": "Proposition",
-  "number": "3.3.10",
+  "number": "3.3.12",
   "title": "",
   "body": "  The matrix is invertible if and only if .   "
 },
@@ -2741,7 +2741,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#proposition-det-row-operations",
   "type": "Proposition",
-  "number": "3.3.11",
+  "number": "3.3.13",
   "title": "The effect of row operations on the determinant.",
   "body": " The effect of row operations on the determinant      If is obtained from by scaling a row by , then .    If is obtained from by interchanging two rows, then .    If is obtained from by performing a row replacement operation, then .      "
 },
@@ -2750,7 +2750,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-4-9",
   "type": "Activity",
-  "number": "3.3.3",
+  "number": "3.3.14",
   "title": "",
   "body": "  We will investigate the connection between the determinant of a matrix and its invertibility using Gaussian elimination.  Consider the two upper triangular matrices Remembering , which of the matrices and are invertible? What are the determinants and ?  Explain why an upper triangular matrix is invertible if and only if its determinant is not zero.  Let's now consider the matrix and begin the Gaussian elimination process with a row replacement operation . What is the relationship between and ?  Next we perform another row replacement operation: . What is the relationship between and ?  Finally, we perform an interchange: to arrive at an upper triangular matrix . What is the relationship between and ?  Since is upper triangular, we can compute its determinant, which allows us to find . What is ? Is invertible?  Now consider the matrix Perform a sequence of row operations to find an upper triangular matrix that is row equivalent to . Use this to determine and whether is invertible.  Suppose we apply a sequence of row operations on a matrix to obtain . Explain why if and only if .  Explain why an matrix is invertible if and only if .      The matrix is invertible because we see there is a pivot position in every row and column. The matrix , however, is not invertible because there is not a pivot position in the third row. Also, and .  The determinant of an upper triangular matrix equals the product of its diagonal entries. Consequently, if the determinant of an upper triangular matrix is not zero, then each of its diagonal entries must be nonzero. In this case, there is a pivot position in every row and every column so that the matrix is invertible.  Row replacement operations do not change the determinant so .  In the same way, .  Interchanges change the sign of the determinant so .  The determinant since it is the product of the diagonal entries of . This means that . We see that is invertible because , which has a pivot position in every row and every column, is invertible.  Beginning with a row replacement operation, we arrive at . We next scale the second row by to obtain . Another row replacement operation gives . Putting these operations together, we see that . In this case, is not invertible because , which has a row without a pivot position, is not invertible.  Performing one of the three row operations either leaves the determinant unchanged (row replacement), changes its sign (interchange), or multiplies it by a nonzero number (scaling). Therefore, if we begin with a matrix whose determinant is not zero, the determinant remains nonzero after any row operation is applied.  If we apply a sequence of row operations to to find a row equivalent matrix that is upper triangular, we know that if and only if . We also know that is invertible if and only if is invertible. Putting these facts together, we conclude that if and only if is invertible.    "
 },
@@ -2759,7 +2759,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-4-15",
   "type": "Proposition",
-  "number": "3.3.12",
+  "number": "3.3.15",
   "title": "",
   "body": "  If is an invertible matrix, then .   "
 },
@@ -2768,7 +2768,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-5-5",
   "type": "Example",
-  "number": "3.3.13",
+  "number": "3.3.16",
   "title": "",
   "body": "  We illustrate how to use a cofactor expansion to find the determinant of where   To begin, we choose one row or column. It doesn't matter which we choose because the result will be the same in any case. Here, we choose the second row .  The determinant will be found by creating a sum of terms, one for each entry in the row we have chosen. For each entry in the row, we form its term by multiplying   where and are the row and column numbers, respectively, of the entry,  the entry itself, and  the determinant of the entries left over when we have crossed out the row and column containing the entry.     Since we are computing the determinant of this matrix using the second row, the entry in the first column of this row is . Let's see how to form the term from this entry.  The term itself is , and the matrix that is left over when we cross out the second row and first column is whose determinant is . Since this entry is in the second row and first column, the term we construct is .  Putting this together, we find the determinant to be . Notice that this agrees with the determinant that we found for this matrix using row operations in the last activity.   "
 },
@@ -2777,7 +2777,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-determinants.html#sec-determinants-5-6",
   "type": "Activity",
-  "number": "3.3.4",
+  "number": "3.3.17",
   "title": "",
   "body": "  We will explore cofactor expansions through some examples.  Using a cofactor expansion, show that the determinant of the following matrix . Remember that you can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.  Use a cofactor expansion to find the determinant of . Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.  Use a cofactor expansion to determine whether the following vectors form a basis of : .  Sage will compute the determinant of a matrix A with the command A.det() . Use Sage to find the determinant of the matrix .       We will using a cofactor expanion along the first row so that   Expanding along the first row gives   We form the matrix whose columns are the three given vectors. Expanding along either the second row or third column to take advantage of the zero in the entry, we see that , which means that is not invertible. Therefore, the vectors do not form a basis for .  Sage tells us that .    "
 },
@@ -2921,7 +2921,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "3.4",
   "title": "",
   "body": "                  "
 },
@@ -2930,7 +2930,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-3-3",
   "type": "Definition",
-  "number": "3.4.1",
+  "number": "3.4.2",
   "title": "",
   "body": " subspace   A subspace of is a subset of that is the span of a set of vectors.   "
 },
@@ -2939,7 +2939,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-3-5",
   "type": "Example",
-  "number": "3.4.2",
+  "number": "3.4.3",
   "title": "Subspaces of <span class=\"process-math\">\\(\\real^3\\)<\/span>.",
   "body": " Subspaces of   In and the following discussion, we looked at subspaces in without explicitly using that language. Let's recall some of those examples.     Suppose we have a single nonzero vector . The span of is a subspace, which we'll write as . As we have seen, the span of a single vector consists of all scalar multiples of that vector, and these form a line passing through the origin.   A line formed by all scalar multiples of a three dimensional vector.   A three dimensional diagram showing the three coordinate axes, a vector , and the line formed by all scalar multiples of .         If instead we have two linearly independent vectors and , the subspace is a plane passing through the origin.   A three dimensional diagram with two vectors and the plane formed by all their linear combinations.   A three dimensional diagram with two vectors and . The set of all their linear combinations is shown as a plane passing through the origin.       Consider the three vectors , , and . Since we know that every 3-dimensional vector can be written as a linear combination, we have .    One more subspace worth mentioning is . Since any linear combination of the zero vector is itself the zero vector, this subspace consists of a single vector, .     In fact, any subspace of is one of these types: the origin, a line, a plane, or all of .  "
 },
@@ -2948,7 +2948,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-3-6",
   "type": "Activity",
-  "number": "3.4.2",
+  "number": "3.4.4",
   "title": "",
   "body": "  We will look at some sets of vectors and the subspaces they form.   If is a set of vectors in , explain why can be expressed as a linear combination of these vectors. Use this fact to explain why the zero vector belongs to any subspace in .    Explain why the line on the left of is not a subspace of and why the line on the right is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.     A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.        Consider the vectors and describe the subspace of .     Consider the vectors    Write as a linear combination of and .    Explain why .    Describe the subspace of .       Suppose that , , , and are four vectors in and that Give a description of the subspace of .          If we choose all the weights , then the linear combination This means that is the subspace .    The line on the left cannot be a subspace of since it does not contain the zero vector. The line on the right is a subspace because it can be represented as the span of any nonzero vector on the line.    The matrix whose columns are the given vectors has a pivot in every row. Therefore, the span of these vectors is and so .       We see that .    Any linear combination     The subspace is a plane in .       Since we can write and , then which is a plane in .      "
 },
@@ -2957,7 +2957,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-3-8",
   "type": "Definition",
-  "number": "3.4.4",
+  "number": "3.4.6",
   "title": "",
   "body": "  dimension  A basis for a subspace of is a set of vectors in that are linearly independent and whose span is . We say that the dimension of the subspace , denoted , is the number of vectors in any basis.   "
 },
@@ -2966,7 +2966,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-3-9",
   "type": "Example",
-  "number": "3.4.5",
+  "number": "3.4.7",
   "title": "A subspace of <span class=\"process-math\">\\(\\real^4\\)<\/span>.",
   "body": " A subspace of   Suppose we have the 4-dimensional vectors , , and that define the subspace of . Suppose also that From the reduced row echelon form of the matrix, we see that . Therefore, any linear combination of , , and can be rewritten as a linear combination of and . This tells us that   Furthermore, the reduced row echelon form of the matrix shows that and are linearly independent. Therefore, is a basis for , which means that is a two-dimensional subspace of .  "
 },
@@ -2975,7 +2975,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-4-3",
   "type": "Definition",
-  "number": "3.4.6",
+  "number": "3.4.8",
   "title": "",
   "body": "  column space  If is an matrix, we call the span of its columns the column space of and denote it as .   "
 },
@@ -2984,7 +2984,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-4-5",
   "type": "Activity",
-  "number": "3.4.3",
+  "number": "3.4.9",
   "title": "",
   "body": "  We will explore some column spaces in this activity.  Consider the matrix Since is the span of the columns, we have Explain why can be written as a linear combination of and and why .   Explain why the vectors and form a basis for and why is a 2-dimensional subspace of and therefore a plane.  Now consider the matrix and its reduced row echelon form: Explain why is a 1-dimensional subspace of and is therefore a line.  For a general matrix , what is the relationship between the dimension and the number of pivot positions in ?  How does the location of the pivot positions indicate a basis for ?  If is an invertible matrix, what can you say about the column space ?   Suppose that is an matrix and that . If is an 8-dimensional vector, what can you say about the equation ?       We have which shows that the vectors are not linearly independent and, in fact, that . As we've seen several times, this means that any linear combination of , , and can be written as a linear combination of and alone and hence that   The reduced row echelon form of shows that and are linearly independent. We also know that the span of these two vectors is . Therefore, they form a basis for .  Denoting the columns of as , the reduced row echelon form shows that , , and . Therefore, any linear combination of , , , and can be written as a linear combination of alone. This means that forms a basis for , which is then the line consisting of all scalar multiples of . p  The number of vectors in a basis of equals the number of pivot positions. Therefore, equals the number of pivot positions in .  As the examples in this activity illustrate, the columns of that contain pivot positions form a basis for .  If is invertible, then it has a pivot position in every row, which means that the span of the columns is . Therefore, .  Since , we know that every 8-dimensional vector is in . This means that is in the span of the columns of so the equation must be consistent.    "
 },
@@ -2993,7 +2993,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#example-col-basis",
   "type": "Example",
-  "number": "3.4.7",
+  "number": "3.4.10",
   "title": "",
   "body": " Consider the matrix and its reduced row echelon form: and denote the columns of as .  It is certainly true that by the definition of the column space. However, the reduced row echelon form of the matrix shows us that the vectors are not linearly independent so do not form a basis for .  From the reduced row echelon form, however, we can see that . This means that any linear combination of can be written as a linear combination of just and . Therefore, we see that .  Moreover, the reduced row echelon form shows that and are linearly independent, which implies that they form a basis for . This means that is a 2-dimensional subspace of , which is a plane in , having basis .  "
 },
@@ -3002,7 +3002,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-4-8",
   "type": "Definition",
-  "number": "3.4.8",
+  "number": "3.4.11",
   "title": "",
   "body": " rank  matrix, rank   The rank of a matrix is the number of pivot positions in and is denoted by .   "
 },
@@ -3011,7 +3011,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#proposition-col-dim",
   "type": "Proposition",
-  "number": "3.4.9",
+  "number": "3.4.12",
   "title": "",
   "body": "  If is an matrix, then is a subspace of whose dimension equals . The columns of that contain pivot positions form a basis for .   "
 },
@@ -3020,7 +3020,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-5-3",
   "type": "Definition",
-  "number": "3.4.10",
+  "number": "3.4.13",
   "title": "",
   "body": "  null space  If is an matrix, we call the subset of vectors in satisfying the null space of and denote it by .   "
 },
@@ -3029,7 +3029,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-5-5",
   "type": "Activity",
-  "number": "3.4.4",
+  "number": "3.4.14",
   "title": "",
   "body": "  We will explore some null spaces in this activity and see why satisfies the definition of a subspace.  Consider the matrix and give a parametric description of the solution space to the equation . In other words, give a parametric description of .    This parametric description shows that the vectors satisfying the equation can be written as a linear combination of a set of vectors. In other words, this description shows why is the span of a set of vectors and is therefore a subspace. Identify a set of vectors whose span is .    Use this set of vectors to find a basis for and state the dimension of .   The null space is a subspace of for which value of ?  Now consider the matrix whose reduced row echelon form is given by Give a parametric description of .   The parametric description gives a set of vectors that span . Explain why this set of vectors is linearly independent and hence forms a basis. What is the dimension of ?    For a general matrix , how does the number of pivot positions indicate the dimension of ?    Suppose that the columns of a matrix are linearly independent. What can you say about ?       We have which leads to the parametric description of the solution space to the homogeneous equation:   The parametric description shows that every solution to the equation is a linear combination of and .   The vectors and are linearly independent so they form a basis for . Therefore, is 2-dimensional.   The vectors in are 4-dimensional so is a subspace of .  A parametric description of the null space is . We can check that the vectors are linearly independent so they form a basis for . This means that is 3-dimensional.  The number of vectors in a basis of the null space equals the number of free variables that appear in the equation , which is the number of columns that do not have pivot positions. This says that equals the number of columns of minus the number of pivot positions.  If the columns are linearly independent, then the homogeneous equation has only the zero solution . Therefore, .    "
 },
@@ -3038,7 +3038,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#example-null-intro",
   "type": "Example",
-  "number": "3.4.11",
+  "number": "3.4.15",
   "title": "",
   "body": " Consider the matrix along with its reduced row echelon form:   To find a parametric description of the solution space to , imagine that we augment both and its reduced row echelon form by a column of zeroes, which leads to the equations Notice that , , and are free variables so we rewrite these equations as In vector form, we have   This expression says that any vector satisfying is a linear combination of the vectors It is straightforward to check that these vectors are linearly independent, which means that , , and form a basis for , a 3-dimensional subspace of .  "
 },
@@ -3047,7 +3047,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#proposition-nul-dim",
   "type": "Proposition",
-  "number": "3.4.12",
+  "number": "3.4.16",
   "title": "",
   "body": "  If is an matrix, then is a subspace of whose dimension is    "
 },
@@ -3056,7 +3056,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#sec-subspaces-5-10",
   "type": "Proposition",
-  "number": "3.4.13",
+  "number": "3.4.17",
   "title": "",
   "body": "  If is an matrix, then    "
 },
@@ -3065,7 +3065,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#ula-proteus-3-5-def-subspace",
   "type": "Checkpoint",
-  "number": "3.4.14",
+  "number": "3.4.18",
   "title": "Defining the column space.",
   "body": " Defining the column space   Select the best definition of the column space of a matrix .      The columns of that have a pivot position.   This is the algorithm for finding a basis for but not the definition.     The vectors for which is consistent.   This is a consequence of the definition but not the simplest way in which to think about .     The span of .   We refer to the span of a set of vectors and not the span of a matrix.     The span of the columns of .   This is correct! You may wish to select the other choices and consider why each is not the best definition.    "
 },
@@ -3074,7 +3074,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#ula-proteus-3-5-subspace-short-ans",
   "type": "Checkpoint",
-  "number": "3.4.15",
+  "number": "3.4.19",
   "title": "Describing properties of subspaces.",
   "body": " Describing properties of subspaces    What do we mean by a subspace of ?       What do we mean by a basis for a subspace of ?       Explain in your own words why the zero vector must be in every subspace of .       If is a matrix with , what do we know about ?       If is a matrix with , what do we know about ?     "
 },
@@ -3083,7 +3083,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#ula-proteus-3-5-eltsofspaces-v1",
   "type": "Checkpoint",
-  "number": "3.4.16",
+  "number": "3.4.20",
   "title": "Determining elements of spaces.",
   "body": " Determining elements of spaces   Consider the matrix and its reduced row echelon form: . If possible, determine if the given vectors are in and\/or .      In , but not in .       In , but not in .      In neither nor .        In both and .     "
 },
@@ -3092,7 +3092,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#ula-proteus-3-5-matchdim-v1",
   "type": "Checkpoint",
-  "number": "3.4.17",
+  "number": "3.4.21",
   "title": "Determining dimensions of subspaces.",
   "body": " Determining dimensions of subspaces   Suppose is a matrix with . Match the unknown values on the left with the values on the right.        The dimension of .  The number of free variables describing the solutions to .        The dimension of .  The number of pivot positions in .  The number of linearly independent columns of .     is a subspace of for which ?     is a subspace of for which ?  ?     "
 },
@@ -3101,7 +3101,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-subspaces.html#ula-proteus-3-5-matching-rank-true-false-sometimes",
   "type": "Checkpoint",
-  "number": "3.4.18",
+  "number": "3.4.22",
   "title": "Implications of an <span class=\"process-math\">\\(n\\times n\\)<\/span> matrix having rank <span class=\"process-math\">\\(n\\)<\/span>.",
   "body": " Implications of an matrix having rank   Suppose is a matrix with . Decide whether each of the statements on the left is always true, sometimes true, or never true.    You may wish to review how the rank of a matrix relates to its RREF, as well as how the RREF relates to concepts such as invertibility, the determinant, solutions to linear systems, and the dimensions of the column space and the null space.      is invertible.   is .  The columns of form a basis of .  The reduced row echelon form of is .  If , then .  Always true     .   for some nonzero in .   is inconsistent for some vector in .   has a column without a pivot position.  Never true     .   .  Sometimes true    "
 },
@@ -3218,7 +3218,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#sec-eigen-intro-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "4.1",
   "title": "",
   "body": "               "
 },
@@ -3227,7 +3227,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#definition-eigenvectors",
   "type": "Definition",
-  "number": "4.1.1",
+  "number": "4.1.2",
   "title": "",
   "body": "  eigenvalue  eigenvector  Given a square matrix , we say that a nonzero vector is an eigenvector of if there is a scalar such that . The scalar is called the eigenvalue associated to the eigenvector .   "
 },
@@ -3236,7 +3236,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#sec-eigen-intro-3-5",
   "type": "Example",
-  "number": "4.1.2",
+  "number": "4.1.3",
   "title": "",
   "body": "  Consider the matrix and the vector . We find that . In other words, , which says that is an eigenvector of the matrix with associated eigenvalue .  Similarly, if , we find that . Here again, we have showing that is an eigenvector of with associated eigenvalue .   "
 },
@@ -3245,7 +3245,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#activity-eigen-geom",
   "type": "Activity",
-  "number": "4.1.2",
+  "number": "4.1.4",
   "title": "",
   "body": "  This definition has an important geometric interpretation that we will investigate here.  Suppose that is a nonzero vector and that is a scalar. What is the geometric relationship between and ?  Let's now consider the eigenvector condition: . Here we have two vectors, and . If , what is the geometric relationship between and ?    A geometric interpretation of the eigenvalue-eigenvector condition .    Choose the matrix . Move the vector so that the eigenvector condition holds. What is the eigenvector and what is the associated eigenvalue?  By algebraically computing , verify that the eigenvector condition holds for the vector that you found.  If you multiply the eigenvector that you found by , do you still have an eigenvector? If so, what is the associated eigenvalue?  Are you able to find another eigenvector that is not a scalar multiple of the first one that you found? If so, what is the eigenvector and what is the associated eigenvalue?  Now consider the matrix . Use the diagram to describe any eigenvectors and associated eigenvalues.  Finally, consider the matrix . Use the diagram to describe any eigenvectors and associated eigenvalues. What geometric transformation does this matrix perform on vectors? How does this explain the presence of any eigenvectors?       The vectors and lie on the same line.  The vectors and lie on the same line.  There are many possibilities, but we see that is an eigenvector with associated eigenvalue .  If we perform the matrix multiplication, we see that .  Yes, is still an eigenvector with associated eigenvalue .  We see that is an eigenvector with associated eigenvalue .  The only eigenvectors that appear are scalar multiples of with associated eigenvalue .  There are no eigenvectors. The matrix transformation rotates vectors by so it is not possible for and to lie on the same line.    "
 },
@@ -3254,7 +3254,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#fig-eigen-intro",
   "type": "Figure",
-  "number": "4.1.4",
+  "number": "4.1.6",
   "title": "",
   "body": "   A vector that is not an eigenvector of the matrix A and the result of multiplying it by A.   The vectors and are shown. The key point is that these vectors do not lie on the same line.     An eigenvector of the matrix and the result of multiplying it by the matrix.   The vectors and . This shows that is an eigenvector of the matrix since they lie on the same line.     On the left, the vector is not an eigenvector. On the right, the vector is an eigenvector with eigenvalue .  "
 },
@@ -3263,7 +3263,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#fig-eigen-intro-2",
   "type": "Figure",
-  "number": "4.1.5",
+  "number": "4.1.7",
   "title": "",
   "body": "   Another eigenvector of A and the result of multiplying it by A.   The vectors and . This demonstrates that is an eigenvector of the matrix since they lie on the same line.     Here we see another eigenvector with eigenvalue .  "
 },
@@ -3272,7 +3272,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#fig-eigen-intro-diagonal",
   "type": "Figure",
-  "number": "4.1.6",
+  "number": "4.1.8",
   "title": "",
   "body": "   The unit square and the effect that multiplication by the diagonal matrix has on it.   On the left is shown the unit square, the square with vertices at the origin and . On the right is the rectangle with vertices at the origin, , , and , which shows how the unit square is transformed by multiplication by the diagonal matrix .     The diagonal matrix stretches vectors horizontally by a factor of and flips vectors vertically.  "
 },
@@ -3281,7 +3281,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#fig-eigen-intro-A",
   "type": "Figure",
-  "number": "4.1.7",
+  "number": "4.1.9",
   "title": "",
   "body": "   Multiplication by A transforms a rotated square into a rotated rectangle.   On the left is shown the eigenvectors and and the skewed coordinate grid of their linear combinations. The square whose vertices are the origin, , , and is also shaded.  The effect of multiplying these features by is shown on the right. The vectors and are shown along with the rectangle whose vertices are at the origin, , , and . This rectangle shows how the square on the left is transformed under multiplication by .  This diagram is similar to except that the square on the left and the rectangle on the right are rotated by degrees.     The matrix has the same geometric effect as the diagonal matrix when expressed in the coordinate system defined by the basis of eigenvectors.  "
 },
@@ -3290,7 +3290,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#activity-eigen-intro",
   "type": "Activity",
-  "number": "4.1.3",
+  "number": "4.1.10",
   "title": "",
   "body": "  Let's consider an example that illustrates how we can put these ideas to use.  Suppose that we work for a car rental company that has two locations, and . When a customer rents a car at one location, they have the option to return it to either location at the end of the day. After doing some market research, we determine:  80% of the cars rented at location are returned to and 20% are returned to .  40% of the cars rented at location are returned to and 60% are returned to .    Suppose that there are 1000 cars at location and no cars at location on Monday morning. How many cars are there are locations and at the end of the day on Monday?  How many are at locations and at end of the day on Tuesday?  If we let and be the number of cars at locations and , respectively, at the end of day , we then have We can write the vector to reflect the number of cars at the two locations at the end of day , which says that or where .  Suppose that . Compute and to demonstrate that and are eigenvectors of . What are the associated eigenvalues and ?  We said that 1000 cars are initially at location and none at location . This means that the initial vector describing the number of cars is . Write as a linear combination of and .  Remember that and are eigenvectors of . Use the linearity of matrix multiplication to write the vector , describing the number of cars at the two locations at the end of the first day, as a linear combination of and .  Write the vector as a linear combination of and . Then write the next few vectors as linear combinations of and :   .   .   .   .    What will happen to the number of cars at the two locations after a very long time? Explain how writing as a linear combination of eigenvectors helps you determine the long-term behavior.     The solution to this activity is given in the text below.   "
 },
@@ -3299,7 +3299,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#question-eigen-basis",
   "type": "Question",
-  "number": "4.1.8",
+  "number": "4.1.11",
   "title": "",
   "body": "  If is an matrix, can we form a basis of consisting of eigenvectors of ?   "
 },
@@ -3308,7 +3308,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#ula-proteus-4-1-eigen-def",
   "type": "Checkpoint",
-  "number": "4.1.9",
+  "number": "4.1.12",
   "title": "Using the definition of eigenvectors and eigenvalues.",
   "body": " Using the definition of eigenvectors and eigenvalues   Respond to this set of questions by referring to the definition of eigenvectors and the linearity of matrix multiplication.      What does it mean for a vector to be an eigenvector of a matrix ?       Is an eigenvector of the matrix ? If so, what is the associated eigenvalue? Explain your response.       Suppose that is an eigenvector of a matrix with eigenvalue 3. Use algebra to show that .       If is an eigenvector of a matrix with eigenvalue 3, is necessarily an eigenvector of ? Explain your reasoning.       If is an eigenvector of a matrix with eigenvalue 3, is necessarily an eigenvector of ? Explain your reasoning.     "
 },
@@ -3317,7 +3317,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#ula-proteus-4-1-identifying-eigenvectors",
   "type": "Checkpoint",
-  "number": "4.1.10",
+  "number": "4.1.13",
   "title": "Identifying eigenvectors and eigenvalues of a matrix.",
   "body": " Identifying eigenvectors and eigenvalues of a matrix   Suppose that . Determine whether each of the vectors on the left is an eigenvector of .            Eigenvector of with eigenvalue .         Eigenvector of with eigenvalue .         Eigenvector of with eigenvalue .           Not an eigenvector of .    "
 },
@@ -3326,7 +3326,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#ula-proteus-4-1-linearity-v1",
   "type": "Checkpoint",
-  "number": "4.1.11",
+  "number": "4.1.14",
   "title": "Applying linearity to products of eigenvectors.",
   "body": " Applying linearity to products of eigenvectors   Suppose and are eigenvectors for a matrix such that and . Use linearity of matrix multiplication to match the products on the left with an equivalent vector on the right.                               "
 },
@@ -3335,7 +3335,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-intro.html#ula-proteus-4-1-using-eigenvectors-to-compute-matrix-power-times-vector",
   "type": "Checkpoint",
-  "number": "4.1.12",
+  "number": "4.1.15",
   "title": "Using eigenvectors in computations involving matrix powers.",
   "body": " Using eigenvectors in computations involving matrix powers   Suppose that a matrix has an eigenvector with eigenvalue and an eigenvector with eigenvalue . Let .     Express as a linear combination of and .       Find . Explain your thinking.     "
 },
@@ -3452,7 +3452,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "4.2",
   "title": "",
   "body": "                           "
 },
@@ -3470,7 +3470,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#example-eigenvalues-poly",
   "type": "Example",
-  "number": "4.2.1",
+  "number": "4.2.3",
   "title": "",
   "body": " If we write the characteristic equation for the matrix , we see that This shows us that the eigenvalues are and .  "
 },
@@ -3479,7 +3479,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-3-8",
   "type": "Example",
-  "number": "4.2.2",
+  "number": "4.2.4",
   "title": "",
   "body": " Consider the matrix , whose characteristic equation is In this case, the characteristic polynomial has one real root, which means that this matrix has a single real eigenvalue, .  "
 },
@@ -3488,7 +3488,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-3-9",
   "type": "Example",
-  "number": "4.2.3",
+  "number": "4.2.5",
   "title": "",
   "body": " To find the eigenvalues of a triangular matrix, we remember that the determinant of a triangular matrix is the product of the entries on the diagonal. For instance, the following triangular matrix has the characteristic equation showing that the eigenvalues are the diagonal entries .  "
 },
@@ -3497,7 +3497,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-4-4",
   "type": "Activity",
-  "number": "4.2.3",
+  "number": "4.2.6",
   "title": "",
   "body": "  In this activity, we will find the eigenvectors of a matrix as the null space of the matrix .  Let's begin with the matrix . We have seen that is an eigenvalue. Form the matrix and find a basis for the eigenspace . What is the dimension of this eigenspace? For each of the basis vectors , verify that .  We also saw that is an eigenvalue. Form the matrix and find a basis for the eigenspace . What is the dimension of this eigenspace? For each of the basis vectors , verify that .  Is it possible to form a basis of consisting of eigenvectors of ?  Now consider the matrix . Write the characteristic equation for and use it to find the eigenvalues of . For each eigenvalue, find a basis for its eigenspace . Is it possible to form a basis of consisting of eigenvectors of ?  Next, consider the matrix . Write the characteristic equation for and use it to find the eigenvalues of . For each eigenvalue, find a basis for its eigenspace . Is it possible to form a basis of consisting of eigenvectors of ?  Finally, find the eigenvalues and eigenvectors of the diagonal matrix . Explain your result by considering the geometric effect of the matrix transformation defined by .       We have The null space is one-dimensional with basis .  We have The null space is one-dimensional with basis .  We can form a basis for consisting of eigenvectors of by taking .  The characteristic equation is , which means that there is a single eigenvalue . This eigenspace is two-dimensional with basis . In this case, we can form a basis for consisting of eigenvectors of .  The characteristic equation is so there is again a single eigenvalue . In this case, the eigenspace is one-dimensional with basis vector . It is not possible to form a basis for consisting of eigenvectors.  We have eigenvectors with associated eigenvector and with associated eigenvector .    "
 },
@@ -3506,7 +3506,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-4-6",
   "type": "Example",
-  "number": "4.2.4",
+  "number": "4.2.7",
   "title": "",
   "body": " Revisiting the matrix from , we recall that we found eigenvalues and .  Considering the eigenvalue , we have Since the eigenvectors are the solutions of the equation , we see that they are determined by the single equation or . Therefore the eigenvectors in have the form In other words, is a one-dimensional subspace of with basis vector or basis vector . In the same way, we find that a basis for the eigenspace is .  We note that, for this matrix, it is possible to construct a basis of consisting of eigenvectors, namely,   "
 },
@@ -3515,7 +3515,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-4-7",
   "type": "Example",
-  "number": "4.2.5",
+  "number": "4.2.8",
   "title": "",
   "body": " Consider the matrix whose characteristic equation is   There is a single eigenvalue , and we find that Therefore, the eigenspace is one-dimensional with a basis vector .  "
 },
@@ -3524,7 +3524,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-4-8",
   "type": "Example",
-  "number": "4.2.6",
+  "number": "4.2.9",
   "title": "",
   "body": " If , then which implies that there is a single eigenvalue . We find that which says that every two-dimensional vector satisfies . Therefore, every vector is an eigenvector and so . This eigenspace is two-dimensional.  We can see this in another way. The matrix transformation defined by rotates vectors by , which says that for every vector . In other words, every two-dimensional vector is an eigenvector with associated eigenvalue .  "
 },
@@ -3533,7 +3533,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-5",
   "type": "Example",
-  "number": "4.2.7",
+  "number": "4.2.10",
   "title": "",
   "body": "  We have seen that the matrix has the characteristic equation . This matrix has a single eigenvalue , which has multiplicity .   "
 },
@@ -3542,7 +3542,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-6",
   "type": "Example",
-  "number": "4.2.8",
+  "number": "4.2.11",
   "title": "",
   "body": "  If a matrix has the characteristic equation , then that matrix has four eigenvalues: having multiplicity 2; having multiplicity 1; having multiplicity 7; and having multiplicity 2. The degree of the characteristic polynomial is the sum of the multiplicities so this matrix must be a matrix.   "
 },
@@ -3551,7 +3551,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#prop-eigen-basis",
   "type": "Proposition",
-  "number": "4.2.9",
+  "number": "4.2.12",
   "title": "",
   "body": "  If is a real eigenvalue of the matrix with multiplicity , then .   "
 },
@@ -3560,7 +3560,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-9",
   "type": "Example",
-  "number": "4.2.10",
+  "number": "4.2.13",
   "title": "",
   "body": "  The diagonal matrix has the characteristic equation . There is a single eigenvalue having multiplicity , and we saw earlier that .   "
 },
@@ -3569,7 +3569,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-10",
   "type": "Example",
-  "number": "4.2.11",
+  "number": "4.2.14",
   "title": "",
   "body": "  The matrix has the characteristic equation . This tells us that there is a single eigenvalue having multiplicity . In contrast with the previous example, we have .   "
 },
@@ -3578,7 +3578,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-11",
   "type": "Example",
-  "number": "4.2.12",
+  "number": "4.2.15",
   "title": "",
   "body": "  We saw earlier that the matrix has the characteristic equation . There are three eigenvalues each having multiplicity . By the proposition, we are guaranteed that the dimension of each eigenspace is ; that is, . It turns out that this is enough to guarantee that there is a basis of consisting of eigenvectors.   "
 },
@@ -3587,7 +3587,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-12",
   "type": "Example",
-  "number": "4.2.13",
+  "number": "4.2.16",
   "title": "",
   "body": "  If a matrix has the characteristic equation , we know there are four eigenvalues . Without more information, all we can say about the dimensions of the eigenspaces is We can guarantee that , but we cannot be more specific about the dimensions of the other eigenspaces.   "
 },
@@ -3596,7 +3596,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-14",
   "type": "Proposition",
-  "number": "4.2.14",
+  "number": "4.2.17",
   "title": "",
   "body": "  If is an matrix having distinct real eigenvalues, then there is a basis of consisting of eigenvectors of .   "
 },
@@ -3605,7 +3605,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-5-16",
   "type": "Activity",
-  "number": "4.2.4",
+  "number": "4.2.18",
   "title": "",
   "body": "    Identify the eigenvalues, and their multiplicities, of an matrix whose characteristic polynomial is . What can you conclude about the dimensions of the eigenspaces? What is the shape of the matrix? Do you have enough information to guarantee that there is a basis of consisting of eigenvectors?  Find the eigenvalues of and state their multiplicities. Can you find a basis of consisting of eigenvectors of this matrix?  Consider the matrix whose characteristic equation is .  Identify the eigenvalues and their multiplicities.  For each eigenvalue , find a basis of the eigenspace and state its dimension.  Is there a basis of consisting of eigenvectors of ?   Now consider the matrix whose characteristic equation is also .  Identify the eigenvalues and their multiplicities.  For each eigenvalue , find a basis of the eigenspace and state its dimension.  Is there a basis of consisting of eigenvectors of ?   Consider the matrix whose characteristic equation is .  Identify the eigenvalues and their multiplicities.  For each eigenvalue , find a basis of the eigenspace and state its dimension.  Is there a basis of consisting of eigenvectors of ?        There are three eigenvalues, has multiplicity , has multiplicity , and has multiplicity . We know that We can guarantee that , but we can say nothing further about the other two eigenspaces.  The dimension of the matrix is since the degree of the characteristic polynomial is . We cannot guarantee that we can form a basis for consisting of eigenvectors, however.  There is one eigenvalue having multiplicity two. Because the eigenspace is one-dimensional, however, we cannot find a basis for consisting of eigenvectors of .  For the matrix ,  We have eigenvalues with multiplicity and with multiplicity .  The eigenspace is two-dimensional with basis . The eigenspace is one-dimensional with basis vector .  We are able to form a basis for consisting of eigenvectors of .    For the matrix ,  We have eigenvalues with multiplicity and with multiplicity .  The eigenspace is one-dimensional with basis vector . The eigenspace is also one-dimensional with basis vector .  It is not possible to form a basis for consisting of eigenvectors of .    For this matrix,  There are three eigenvalues , , and , each having multiplicity .  A basis vector for the eigenspace is . A basis vector for the eigenspace is . A basis vector for the eigenspace is .  We can form a basis for consisting of eigenvectors of .      "
 },
@@ -3614,7 +3614,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#sec-eigen-find-6-3",
   "type": "Activity",
-  "number": "4.2.5",
+  "number": "4.2.19",
   "title": "",
   "body": "  We will use Sage to find the eigenvalues and eigenvectors of a matrix. Let's begin with the matrix .  We can find the characteristic polynomial of by writing A.charpoly('lambda') . Notice that we have to give Sage a variable in which to write the polynomial; here, we use lambda though x works just as well.   The factored form of the characteristic polynomial may be more useful since it will tell us the eigenvalues and their multiplicities. The factored characteristic polynomial is found with A.fcp('lambda') .    If we only want the eigenvalues, we can use A.eigenvalues() .   Notice that the multiplicity of an eigenvalue is the number of times it is repeated in the list of eigenvalues.   Finally, we can find eigenvectors by A.eigenvectors_right() . (We are looking for right eigenvalues since the vector appears to the right of in the definition .)   At first glance, the result of this command can be a little confusing to interpret. What we see is a list with one entry for each eigenvalue. For each eigenvalue, there is a triple consisting of (i) the eigenvalue , (ii) a basis for , and (iii) the multiplicity of .   When working with decimal entries, which are called floating point numbers in computer science, we must remember that computers perform only approximate arithmetic. This is a problem when we wish to find the eigenvectors of such a matrix. To illustrate, consider the matrix .  Without using Sage, find the eigenvalues of this matrix.  What do you find for the reduced row echelon form of ?  Let's now use Sage to determine the reduced row echelon form of :   What result does Sage report for the reduced row echelon form? Why is this result not correct?   Because the arithmetic Sage performs with floating point entries is only approximate, we are not able to find the eigenspace . In this next chapter, we will learn how to address this issue. In the meantime, we can get around this problem by writing the entries in the matrix as rational numbers:          The fcp command will return the factored characteristic polynomial lambda^2 - 2*lambda - 3 .  The eigenvalues command returns a list of eigenvalues [-3, -3] .  The eigenvectors_right command returns [(-3, [(1, 0)], 2)] .  If we begin with the matrix , we find  The eigenvalues are and .  The reduced row echelon form is , which shows that is not invertible, as expected.  Sage returns , which is not correct because cannot be invertible if is an eigenvalue of .  Here we find the correct eigenvalues, with basis vector for and with basis vector for .      "
 },
@@ -3623,7 +3623,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#ula-proteus-4-2-reasoning-about-eigenthings",
   "type": "Checkpoint",
-  "number": "4.2.15",
+  "number": "4.2.20",
   "title": "Reasoning about eigenvectors and eigenvalues.",
   "body": " Reasoning about eigenvectors and eigenvalues   Determine whether each of the statements about the eigenvectors and eigenvalues of a square matrix is Always True, Never True, or Sometimes True.     If , then is an eigenvalue of .  If is an eigenvalue of , then .  If is an eigenvalue of , then .  If , then is not an eigenvalue of .  Always True    If is an eigenvalue of a matrix , then is row equivalent to .  If the columns of are linearly independent, then is an eigenvalue of .  Never True    The eigenvalues of a matrix are its diagonal entries.  If is a factor of the characteristic polynomial of , then .  Sometimes True    "
 },
@@ -3632,7 +3632,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#ula-proteus-4-2-finding-and-using-eigenvectors",
   "type": "Checkpoint",
-  "number": "4.2.16",
+  "number": "4.2.21",
   "title": "Finding and using eigenvectors.",
   "body": " Finding and using eigenvectors   Let .     Find the characteristic polynomial of .       Use the characteristic polynomial to find the eigenvalues of .       Find a basis for each eigenspace of .       Suppose . Write as a linear combination of the eigenvectors of .       Suppose . Use your answer to the preceding part to write as a linear combination of the eigenvectors of .     "
 },
@@ -3641,7 +3641,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#ula-proteus-4-2-reasoning-char-poly",
   "type": "Checkpoint",
-  "number": "4.2.17",
+  "number": "4.2.22",
   "title": "Reasoning with the characteristic polynomial.",
   "body": " Reasoning with the characteristic polynomial   Suppose the matrix has the characteristic polynomial .     What is the shape of ? Explain your thinking.       What are the eigenvalues of ?       What can we conclude about the dimensions of the eigenspaces?       Can any vector in be expressed as a linear combination of eigenvectors? Explain your thinking.     "
 },
@@ -3650,7 +3650,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#ula-proteus-4-2-conditions-for-evector-basis",
   "type": "Checkpoint",
-  "number": "4.2.18",
+  "number": "4.2.23",
   "title": "Determining when there is a basis of eigenvectors.",
   "body": " Determining when there is a basis of eigenvectors   Determine whether each condition on an matrix implies that there is a basis of consisting of eigenvectors of .      .   .   .   is and there are vectors and with with and .  There is a basis of eigenvectors.     .  There is not a basis of eigenvectors.     .   is and there are vectors and with and .   is invertible.  There is not enough information to determine.    "
 },
@@ -3659,7 +3659,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#ula-proteus-4-2-proofcharpoly-v1",
   "type": "Checkpoint",
-  "number": "4.2.19",
+  "number": "4.2.24",
   "title": "Proving the characteristic polynomial condition.",
   "body": " Proving the characteristic polynomial condition   Suppose is an matrix and is a scalar. Put the appropriate statements in order to give a proof that if for some nonzero vector , then .     Assume for some nonzero vector .    .    .    .    Since is not zero, is not invertible.    Therefore, .    Assume .    .    .    "
 },
@@ -3668,7 +3668,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-find.html#ula-proteus-4-2-examplemultandbasis-v1",
   "type": "Checkpoint",
-  "number": "4.2.20",
+  "number": "4.2.25",
   "title": "Finding examples of matrices with multiplicity 2.",
   "body": " Finding examples of matrices with multiplicity 2   Give an example of a matrix that meets the given criteria.     Give an example of a matrix with one real eigenvalue of multiplicity 2 for which there is a basis of consisting of eigenvectors of . Explain your thinking.       Give an example of a matrix with one real eigenvalue of multiplicity 2 for which there is not a basis of consisting of eigenvectors of . Explain your thinking.     "
 },
@@ -3767,7 +3767,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-preview-4-3",
   "type": "Preview Activity",
-  "number": "4.3.1",
+  "number": "4.3.2",
   "title": "",
   "body": "  In this preview activity, we will review some familiar properties about matrix multiplication that appear in this section.     Remember that matrix-vector multiplication constructs linear combinations of the columns of the matrix. For instance, if , express the product in terms of and .     .      What is the product in terms of and ?     .      Next, remember how matrix-matrix multiplication is defined. Suppose that we have matrices and and that . How can we express the matrix product in terms of the columns of ?     .      Suppose that is a matrix having eigenvectors and with associated eigenvalues and . Express the product in terms of and .     .      Suppose that is the matrix from the previous part and that . What is the matrix product      .    "
 },
@@ -3776,7 +3776,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-2-6",
   "type": "Videos",
-  "number": "",
+  "number": "4.3",
   "title": "",
   "body": "                                    "
 },
@@ -3785,7 +3785,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-3",
   "type": "Activity",
-  "number": "4.3.2",
+  "number": "4.3.3",
   "title": "",
   "body": "  Suppose that is a matrix having eigenvectors and with associated eigenvalues and . Because the eigenvalues are real and distinct, we know by that these eigenvectors form a basis of .   What are the products and in terms of and ?    If we form the matrix , what is the product in terms of and ?    Use the eigenvalues to form the diagonal matrix and determine the product in terms of and .    The results from the previous two parts of this activity demonstrate that . Using the fact that the eigenvectors and form a basis of , explain why is invertible and that we must have .    Suppose that . Verify that and are eigenvectors of with eigenvalues and .    Use the Sage cell below to define the matrices and and then verify that .        We have and .    .     . Comparing the result of this part of the activity to the previous, we see that .    Since the eigenvectors form a basis, the columns of are linearly independent and their span is . This guarantees that is invertible. Multiplying the equation on the right by gives .    The rest of the activity can be verified using Sage.   "
 },
@@ -3794,7 +3794,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#prop-diagonalizable",
   "type": "Proposition",
-  "number": "4.3.2",
+  "number": "4.3.4",
   "title": "",
   "body": "  If is an matrix and there is a basis of consisting of eigenvectors of having associated eigenvalues , then we can write where is the diagonal matrix whose diagonal entries are the eigenvalues of  and the matrix .   "
 },
@@ -3803,7 +3803,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-7",
   "type": "Example",
-  "number": "4.3.3",
+  "number": "4.3.5",
   "title": "",
   "body": " We have seen that has eigenvectors and with associated eigenvalues and . Forming the matrices we see that .  This is the sense in which we mean that is equivalent to a diagonal matrix . The expression says that , expressed in the basis defined by the columns of , has the same geometric effect as , expressed in the standard basis .  "
 },
@@ -3812,7 +3812,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-8",
   "type": "Definition",
-  "number": "4.3.4",
+  "number": "4.3.6",
   "title": "",
   "body": "  diagonalizable  We say that the matrix is diagonalizable if there is a diagonal matrix and invertible matrix such that    "
 },
@@ -3821,7 +3821,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-9",
   "type": "Example",
-  "number": "4.3.5",
+  "number": "4.3.7",
   "title": "",
   "body": "  We will try to find a diagonalization of whose characteristic equation is . This shows that the eigenvalues of are and .  By constructing , we find a basis for consisting of the vector . Similarly, a basis for consists of the vector . This shows that we can construct a basis of consisting of eigenvectors of .  We now form the matrices and verify that .  There are, in fact, many ways to diagonalize . For instance, we could change the order of the eigenvalues and eigenvectors and write .  If we choose a different basis for the eigenspaces, we will also find a different matrix that diagonalizes . The point is that there are many ways in which can be written in the form .   "
 },
@@ -3830,7 +3830,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-10",
   "type": "Example",
-  "number": "4.3.6",
+  "number": "4.3.8",
   "title": "",
   "body": "  We will try to find a diagonalization of .  Once again, we find the eigenvalues by solving the characteristic equation: . In this case, there is a single eigenvalue .  We find a basis for the eigenspace by describing : . This shows that the eigenspace is one-dimensional with forming a basis.  In this case, there is not a basis of consisting of eigenvectors of , which tells us that is not diagonalizable.   "
 },
@@ -3839,7 +3839,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-12",
   "type": "Proposition",
-  "number": "4.3.7",
+  "number": "4.3.9",
   "title": "",
   "body": "  An matrix is diagonalizable if and only if there is a basis of consisting of eigenvectors of .   "
 },
@@ -3848,7 +3848,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-13",
   "type": "Example",
-  "number": "4.3.8",
+  "number": "4.3.10",
   "title": "",
   "body": "  Suppose we know that where The columns of form eigenvectors of so that is an eigenvector of with eigenvalue and is an eigenvector with eigenvalue .  We can verify this by computing and checking that and .   "
 },
@@ -3857,7 +3857,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-3-14",
   "type": "Activity",
-  "number": "4.3.3",
+  "number": "4.3.11",
   "title": "",
   "body": "    Find a diagonalization of , if one exists, when .  Can the diagonal matrix be diagonalized? If so, explain how to find the matrices and .  Find a diagonalization of , if one exists, when .    Find a diagonalization of , if one exists, when .    Suppose that where .  Explain why is invertible.  Find a diagonalization of .  Find a diagonalization of .        We find that has eigenvectors with associated eigenvalue and with associated eigenvalue . We then have and .  Yes. We know that the eigenvectors are with associated eigenvalue and with associated eigenvalue . Therefore, and . This shows that the diagonalization is ; that is, since is already diagonal, it is diagonalized by the identity matrix.  We find eigenvectors , , and with associated eigenvalues , , and . Therefore, where   Once again, we see that is an eigenvalue with multiplicity one and is an eigenvalue with multiplicity two. However, so we are not able to find a basis for consisting of eigenvalues of . Therefore, is not diagonalizable.  If ,   is invertible since .  We know that and are eigenvectors of with associated eigenvalues and . If is an eigenvector of with associated eigenvalue , then is an eigenvector of with associated eigenvalue . Therefore, where .  We have where .      "
 },
@@ -3866,7 +3866,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-4-3",
   "type": "Activity",
-  "number": "4.3.4",
+  "number": "4.3.12",
   "title": "",
   "body": "    Let's begin with the diagonal matrix . Find the powers , , and . What is for a general value of ?  Suppose that is a matrix with eigenvector and associated eigenvalue ; that is, . By considering , explain why is also an eigenvector of with eigenvalue .  Suppose that where . Remembering that the columns of are eigenvectors of , explain why is diagonalizable and find a diagonalization in terms of and .  Give another explanation of the diagonalizability of by writing .  In the same way, find a diagonalization of , , and .  Suppose that is a diagonalizable matrix with eigenvalues and . What happens to as becomes very large?       We have   We know that so that is also an eigenvector of with associated eigenvalue .  Since eigenvectors of are also eigenvectors of , we can use the matrix to diagonalize . The eigenvalues are squared, however, so we have where .  We can also see this by noting that    , , and .  We can write where . Therefore, where . As becomes very large, and become very close to zero. Hence and become very close to the zero matrix.    "
 },
@@ -3875,7 +3875,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-4-5",
   "type": "Proposition",
-  "number": "4.3.9",
+  "number": "4.3.13",
   "title": "",
   "body": "  If , then . When is invertible, we also have .   "
 },
@@ -3884,7 +3884,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-4-6",
   "type": "Example",
-  "number": "4.3.10",
+  "number": "4.3.14",
   "title": "",
   "body": " Let's revisit where we had the matrix and the initial vector . We were interested in understanding the sequence of vectors , which means that .  We can verify that and are eigenvectors of having associated eigenvalues and . This means that where Therefore, the powers of have the form .  Notice that . As increases, becomes closer and closer to zero. This means that for very large powers , we have and therefore   Beginning with the vector , we find that when is very large.  "
 },
@@ -3893,7 +3893,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-5-4",
   "type": "Definition",
-  "number": "4.3.11",
+  "number": "4.3.15",
   "title": "",
   "body": "  similarity  We say that is similar to if there is an invertible matrix such that .   "
 },
@@ -3902,7 +3902,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-5-8",
   "type": "Activity",
-  "number": "4.3.5",
+  "number": "4.3.16",
   "title": "",
   "body": "  We begin by rewriting in terms of and and noting that   Explain why has the geometric effect of rotating vectors by and scaling them by a factor of .  Let's now consider the matrix whose eigenvalues are and . We will choose to focus on one of the eigenvalues   Form the matrix using these values of and . Then rewrite the point in polar coordinates by identifying the values of and . Explain the geometric effect of multiplying vectors by .   Suppose that . Verify that .    Explain why .  We formed the matrix by choosing the eigenvalue . Suppose we had instead chosen . Form the matrix and use polar coordinates to describe the geometric effect of .  Using the matrix , show that .      The matrix has the geometric effect of scaling vectors uniformly by a factor of while the matrix rotates vectors by .  We have so we form the matrix . This shows that will scale vectors by a factor of while rotating them by .  Sage will verify this relationship.  As we saw earlier, we have and hence .  We have and so we form the matrix . This shows that will scale vectors by a factor of while rotating them by .    "
 },
@@ -3911,7 +3911,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#sec-eigen-diag-5-10",
   "type": "Proposition",
-  "number": "4.3.12",
+  "number": "4.3.17",
   "title": "",
   "body": "  If is a matrix with a complex eigenvalue , then is similar to ; that is, there is a matrix such that .   "
 },
@@ -3920,7 +3920,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-constructing-matrix-from-eigenpairs",
   "type": "Checkpoint",
-  "number": "4.3.13",
+  "number": "4.3.18",
   "title": "Constructing a matrix from its eigenvalues and eigenvectors.",
   "body": " Constructing a matrix from its eigenvalues and eigenvectors   Suppose that is a matrix with all of the following properties:    is an eigenvector with eigenvalue ,     is an eigenvector with eigenvalue ,     is an eigenvector with eigenvalue .   Determine the matrix and explain your thinking.    "
 },
@@ -3929,7 +3929,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-diagonalizating-matrix",
   "type": "Checkpoint",
-  "number": "4.3.14",
+  "number": "4.3.19",
   "title": "Diagonalizing a matrix.",
   "body": " Diagonalizing a matrix   Suppose that .     Find the characteristic polynomial of .       Use the characteristic polynomial to find the eigenvalues of .       Find bases for each of the eigenspaces of .       Find a diagonal matrix and a matrix such that .     "
 },
@@ -3938,7 +3938,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-diagonalizabel-t-f",
   "type": "Checkpoint",
-  "number": "4.3.15",
+  "number": "4.3.20",
   "title": "Reasoning about diagonalizable matrices.",
   "body": " Reasoning about diagonalizable matrices   Determine whether each statement on the left is Always True, Never True, or Sometimes True.      If is an eigenvalue of , then is an eigenvalue of .    If is diagonalizable, then is diagonalizable.    If is diagonalizable, then is diagonalizable.    If is diagonalizable, any vector in can be written as a linear combination of eigenvectors.    If with a diagonal matrix, then the columns of are eigenvectors of .    Always True     Never True     If is diagonalizable, then is invertible.    If is an eigenvalue of having multiplicity , then is not diagonalizable.   Sometimes True    "
 },
@@ -3947,7 +3947,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-matching-diagonalizable-or-not",
   "type": "Checkpoint",
-  "number": "4.3.16",
+  "number": "4.3.21",
   "title": "Conditions affecting diagonalizability.",
   "body": " Conditions affecting diagonalizability   Suppose that is a matrix. For each condition on the left, choose the appropriate conclusion on the right.      has exactly 4 different real eigenvalues.   has exactly 2 real eigenvalues, each of multiplicity 2. Both eigenspaces of have dimension 2.   is diagonalizable.     has exactly 3 real eigenvalues, one of which, , has multiplicity 2. The dimension of the eigenspace corresponding to is 1.  The eigenvalues of include a pair of complex eigenvalues with .   has an eigenspace whose dimension is less than the multiplicity of the corresponding eigenvalue.   is not diagonalizable.     has exactly 3 real eigenvalues, one of which has multiplicity 2.   has only 1 real eigenvalue and no other eigenvalues.  More information is needed to determine whether or not is diagonalizable.    "
 },
@@ -3956,7 +3956,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-conditions-for-diagonalizability",
   "type": "Checkpoint",
-  "number": "4.3.17",
+  "number": "4.3.22",
   "title": "Determining when a matrix is diagonalizable.",
   "body": " Determining when a matrix is diagonalizable   Determine whether each condition on an matrix implies that is diagonalizable.      .   .   .   is and there are vectors and with with and .   is diagonalizable.     .   is not diagonalizable.     .   is and there are vectors and with and .   is invertible.  There is not enough information to determine.    "
 },
@@ -3965,7 +3965,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-proofA2simD2-v1",
   "type": "Checkpoint",
-  "number": "4.3.18",
+  "number": "4.3.23",
   "title": "Proving if <span class=\"process-math\">\\(A\\)<\/span> is diagonalizable, then <span class=\"process-math\">\\(A^2\\)<\/span> is diagonlizable.",
   "body": " Proving if is diagonalizable, then is diagonlizable   Suppose for some invertible matrix and diagonal matrix . Put the appropriate algebraic steps in order to find .                             "
 },
@@ -3974,7 +3974,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-eigen-diag.html#ula-proteus-4-3-proofsimmatricesdet-v1",
   "type": "Checkpoint",
-  "number": "4.3.19",
+  "number": "4.3.24",
   "title": "Proving similar matrices have the same determinant.",
   "body": " Proving similar matrices have the same determinant   Suppose is similar to . Put the appropriate statements in order to give a proof that .     Assume for some invertible matrix .                            "
 },
@@ -4091,7 +4091,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#sec-vecspace-intro-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "5.1",
   "title": "",
   "body": "            "
 },
@@ -4100,7 +4100,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#definition-vector-space",
   "type": "Definition",
-  "number": "5.1.1",
+  "number": "5.1.2",
   "title": "Vector space.",
   "body": " Vector space  Let be a field. A vector space over is a set equipped with two operations of addition and scalar multiplication , such that the following properties hold:    A1. Commutative law of addition: .   A2. Associative law of addition: .   A3. The existence of an additive unit: there exists an element such that for all , .   A4. The law of additive inverses: .   SM1. The distributive law over vector addition: .   SM2. The distributive law over scalar addition: .   SM3. The associative law for scalar multiplication: .   SM4. The rule for multiplication by one: .   "
 },
@@ -4127,7 +4127,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-rn-vector-space",
   "type": "Example",
-  "number": "5.1.2",
+  "number": "5.1.3",
   "title": "",
   "body": "   The set of -dimensional real column vectors, with the usual operations of vector addition and scalar multiplication, is a (real) vector space.   Proof: Properties (A1)–(A4) hold by our definition of vector addition, and properties (SM1)–(SM4) hold by our definition of vector-scalar multiplication.   "
 },
@@ -4136,7 +4136,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-cn-vector-space",
   "type": "Example",
-  "number": "5.1.3",
+  "number": "5.1.4",
   "title": "",
   "body": "   The set of -dimensional complex column vectors, with the usual operations of vector addition and scalar multiplication, is a (complex) vector space.   "
 },
@@ -4145,7 +4145,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-p2-polynomials",
   "type": "Example",
-  "number": "5.1.4",
+  "number": "5.1.5",
   "title": "",
   "body": "   Let be the set of all polynomials of degree at most 2 with real coefficients, i.e., expressions of the form , where . Define addition and scalar multiplication of polynomials in the usual way: Then is a vector space.   Proof: To show that is a vector space, we verify the 8 vector space axioms. Let , , and be polynomials in and let be scalars.   (A1) We prove the commutative law of addition. Since addition in is commutative, this equals    (A2) We prove the associative law of addition. By associativity in , this equals    (A3) To prove the existence of an additive unit, let , the so‑called zero polynomial. Then    (A4) We prove the law of additive inverses.    (SM1) We prove the distributive law over vector addition.    (SM2) We prove the distributive law over scalar addition.    (SM3) We prove the associative law for scalar multiplication.    (SM4) Finally, we prove the rule for multiplication by one.   Since the operations of addition and scalar multiplication on satisfy the 8 vector space axioms, is a vector space.   "
 },
@@ -4154,7 +4154,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-8-4",
   "type": "Example",
-  "number": "5.1.5",
+  "number": "5.1.6",
   "title": "",
   "body": "   Let be the set of all -matrices with real entries, together with the usual operations of matrix addition and scalar multiplication. Then is a vector space.   Proof: The properties (A1)–(A4) hold by our definition of matrix addition, and the properties (SM1)–(SM4) hold by our definition of scalar-matrix multiplication.   "
 },
@@ -4163,7 +4163,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-8-5",
   "type": "Example",
-  "number": "5.1.6",
+  "number": "5.1.7",
   "title": "",
   "body": "   Let denote the set of -matrices. Let us define a non-standard addition in by for all matrices . Let scalar multiplication in be the usual scalar multiplication of matrices. We show that is not a vector space.  In order to show that is not a vector space, it suffices to find one of the 8 axioms that is not satisfied. We will begin by examining the axioms for addition until one is found which does not hold. In fact, for this example, the very first axiom fails.  Let Then and . Since , we have , so property (A1) is false.   "
 },
@@ -4172,7 +4172,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-8-6",
   "type": "Example",
-  "number": "5.1.7",
+  "number": "5.1.8",
   "title": "",
   "body": "   Let be a nonempty set and define to be the set of functions defined on and valued in . In other words, the elements of are functions . The sum of two functions is defined by , and scalar multiplication is defined by . Then is a vector space.  To verify that is a vector space, we must prove the 8 axioms of vector spaces. Let be functions in , and let be scalars.  Recall that two functions are equal if for all , we have .   (A1) For all , . Therefore .   (A2) For all , . Therefore .   (A3) Let denote the function defined by . Then for all , so .   (A4) Let be defined by . Then for all , so .   (SM1) For all , , hence .   (SM2)  , so .   (SM3)  , so .   (SM4)  for all , so .  It follows that satisfies all the required axioms and is a vector space.   "
 },
@@ -4181,7 +4181,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-8-7",
   "type": "Example",
-  "number": "5.1.8",
+  "number": "5.1.9",
   "title": "",
   "body": "   A sequence of real numbers, i.e. elements of is an infinite list , where for all . We also use the notation , or occasionally , to denote such a sequence. Let be the set of sequences of real numbers.  We add two sequences by adding their th elements: . We scale a sequence by scaling each of its elements: . Then is a vector space.   "
 },
@@ -4190,7 +4190,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#example-8-8",
   "type": "Example",
-  "number": "5.1.9",
+  "number": "5.1.10",
   "title": "",
   "body": "   Let be the set of all polynomials (of any degree) with real coefficients, i.e., expressions of the form , where and . Addition and scalar multiplication of polynomials are defined in the usual way. Then is a vector space.   "
 },
@@ -4199,7 +4199,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#vs-polys-degree-n",
   "type": "Activity",
-  "number": "5.1.2",
+  "number": "5.1.11",
   "title": "",
   "body": "  Let be an integer and let denote the set of all polynomials with real coefficients of degree at most . Members of have the form where are real numbers and is a real variable. The purpose of this activity is to verify that is a vector space.    Explain why is closed under the operation of usual polynomial addition. That is, explain why if .    Explain why is closed under scalar multiplication. That is, explain why if and .    Identify\/describe the zero element in axiom (A3) . Then show that for every .    For an element , identify\/describe the additive inverse in axiom A4.    For elements , show that axiom (SM1) holds.        If , then both and are polynomials of degree at most . Adding two such polynomials yields a polynomial having degree at most as well.    If , then . For any constant , we then have which is clearly also in .     . If is any element in , then so that .    If is any element in , then and the additive inverse is defined by .    If is any element in , then . Similarly, if is any element in , then . For any constant , we then have .     "
 },
@@ -4208,7 +4208,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#vs-continuous_ab",
   "type": "Activity",
-  "number": "5.1.3",
+  "number": "5.1.12",
   "title": "",
   "body": "  Let be an open interval of real numbers. Define to be the set of continuous, real-valued functions defined on . That is, elements are continuous functions . Define the addition of continous functions by and scalar multiplication by We investigate whether is a vector space or not.   Explain why is closed under addition as defined. That is, explain why if .  Explain why is closed under scalar multiplication. That is, explain why if and .  Identify\/describe the zero element 0 and additive inverse of elements . How do you know that these elements are also in ?  Carefully show that axiom (SM2) holds for .  Is a vector space?       Adding two continuous functions gives another continuous function.  Think of multiplying by as vertically stretching the graph of a function . If , then it is also reflected about the axis. In any case, if a function is continuous, then vertically stretching and\/or reflecting about the -axis will not change the continuous nature of the graph.  The element in is the zero function for every . Since constant functions are continuous, the zero function is continuous. If is continuous on , then is the function having graph reflected about the -axis and is therefore also continuous.  If , then is a continuous function on . For any , we then have .  yes.     "
 },
@@ -4217,7 +4217,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#vs-sequences-real",
   "type": "Activity",
-  "number": "5.1.4",
+  "number": "5.1.13",
   "title": "",
   "body": "  Let denote the space of all infinite sequences of real numbers. We denote such a sequence as where it is understood that the subscripts run from 0 to . Addition is defined by and scalar multiplication by for .   Identify the zero element in from axiom (A3) .  Identify the additive inverse of and then show that for every .  Is a vector space?  Let denote the space of all convergent sequences of real numbers under the same operations. Is a vector space or not?  Let denote the space of all real sequences that converge to 1 under the same operations. Is a vector space or not?  Let denote the space of all real sequences that converge to 0 under the same operations. Is a vector space or not?  Let denote the space of all real positive sequences under the same operations. Is a vector space or not?       The zero element is the sequence  For , we have . The additive inverse is the sequence . Then, .  Yes.  Yes; note that the sum of two convergent sequences is also convergent. So too is a scalar multiple of a convergent sequence.  No. This is easy to see by taking the constant sequence and adding it to itself. This sequence does not converge to 1.  Yes. The sum of two such sequences also converges to 0 and any constant multiple of a sequence converging to 0 also converges to 0.  No. There is no additive unit - see axiom (A3) .     "
 },
@@ -4226,7 +4226,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#proposition-8-9",
   "type": "Proposition",
-  "number": "5.1.10",
+  "number": "5.1.14",
   "title": "",
   "body": "   In any vector space, the following are true:   The additive unit is unique. In other words, whenever , then .  Additive inverses are unique. In other words, whenever , then .   for all vectors .  The following cancellation law holds: if , then .     We prove the first three properties, and leave the last one as an exercise. Assume is any vector space over a field .   (a) Consider arbitrary vectors and assume . Applying the law (A1) (commutative law) to the left-hand side, we have . Adding to both sides of the equation, we have . Applying the law (A2) (associative law) to the left-hand side, we have . Applying the law (A4) (additive inverse law) to both sides of the equation, we have . Applying the law (A3) (additive unit law) to the left-hand side, we have . This proves that whenever , then , or in other words, is the only element acting as an additive unit.   (b) Consider arbitrary vectors and assume . Applying the law (A1) (commutative law) to the left-hand side, we have . Adding to both sides of the equation, we have . Applying the law (A2) (associative law) to the left-hand side, we have . Applying the law (A4) (additive inverse law) to the left-hand side, we have . Applying the law (A1) (commutative law) to the right-hand side, we have . Applying the law (A3) (additive unit law) to both sides of the equation, we have . This proves that whenever , then , or in other words, is the only element acting as an additive inverse of .   (c) First, note that the scalar satisfies the property , by property (A3) of the definition of a field. Now let be any vector. Using the vector space law (SM2) (distributive law over scalar addition) and , we have . Next, we use a small trick: add to both sides of the equation. This gives . Applying the additional laws (A2), (A4), and (A3), we have , , and . This proves that holds for all vectors , as desired.   (d) This is left as an exercise.   "
 },
@@ -4235,7 +4235,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#ula-proteus-8-1-vssort",
   "type": "Checkpoint",
-  "number": "5.1.11",
+  "number": "5.1.15",
   "title": "Is This a Vector Space?",
   "body": " Is This a Vector Space?   Determine whether each set is a vector space or not.     All vectors in with the usual vector addition and scalar multiplication.  The set of all polynomials with real coefficients of degree at most 2.  The set of all real-valued functions such that .  Is a vector space    The set of all vectors in with positive entries under the usual addition and scalar multiplication.  The set of all polynomials with constant term equal to 1 under the usual addition and scalar multiplication.  The set of all real matrices with determinant 1 under the usual matrix addition and scalar multiplication.  Is not a vector space    "
 },
@@ -4244,7 +4244,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecspace-intro.html#cardsort-vecspace-basic-ideas",
   "type": "Checkpoint",
-  "number": "5.1.12",
+  "number": "5.1.16",
   "title": "Basic Ideas Behind Vector Spaces.",
   "body": " Basic Ideas Behind Vector Spaces   Vector spaces are defined by a small number of basic ideas. Match each statement with the idea it illustrates.     Adding two vectors in the space always produces another vector in the same space.   Closure under addition     There is a vector that leaves every vector unchanged when added to it.   Zero vector     For every vector, there is another vector that adds with it to give the zero vector.   Additive inverse     Multiplying a vector by a real number produces another vector in the space.   Closure under scalar multiplication     Linear combinations of vectors in the space stay in the space.   Vector space structure     "
 },
@@ -4361,7 +4361,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#sec-lin-comb-span-lin-ind-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "5.2",
   "title": "",
   "body": "         "
 },
@@ -4370,7 +4370,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#definition-8-10",
   "type": "Definition",
-  "number": "5.2.1",
+  "number": "5.2.2",
   "title": "",
   "body": "  Let be a vector space over a field . Let . A vector is called a linear combination of if there exist scalars such that   "
 },
@@ -4379,7 +4379,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-11",
   "type": "Example",
-  "number": "5.2.2",
+  "number": "5.2.3",
   "title": "",
   "body": "  We write the matrix as a linear combination of   We must find coefficients such that or equivalently,   This yields a system of four equations in four variables: We can easily solve the system of equations to find the unique solution , , , .  Therefore   "
 },
@@ -4388,7 +4388,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-12",
   "type": "Example",
-  "number": "5.2.3",
+  "number": "5.2.4",
   "title": "",
   "body": "  We write the polynomial as a linear combination of , , and .  Note that and . We must find coefficients such that or equivalently,   Collecting equal powers of , we can rewrite this as Since two polynomials are equal if and only if each corresponding coefficient is equal, this yields a system of three equations in three variables:   We can easily solve this system of equations and find that the unique solution is , , and . Therefore   "
 },
@@ -4397,7 +4397,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#definition-8-13",
   "type": "Definition",
-  "number": "5.2.4",
+  "number": "5.2.5",
   "title": "",
   "body": "  Let be a vector space over some field , and let be a set of vectors (i.e., a subset of ). The span of is the set of all linear combinations of elements of .  In symbols,   "
 },
@@ -4406,7 +4406,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-14",
   "type": "Example",
-  "number": "5.2.5",
+  "number": "5.2.6",
   "title": "",
   "body": "  Consider the vector space of infinite sequences of real numbers. For every , let be the sequence whose th element is 1 and that is 0 everywhere else, i.e., and so on. Let . Which of the following sequences are in ?     (a) We have , because .  (b) We have , because .  (c) The sequence is not in , because each element of is, by definition, a linear combination of finitely many elements of . No linear combinations of finitely many can end in infinitely many ones. Note that we are not permitted to write an infinite sum such as . Such infinite sums are not defined in vector spaces.  (d) The sequence is not in , for the same reason. We would need to add infinitely many sequences of the form to get a sequence that contains infinitely many non-zero elements. However, this is not permitted by the definition of span.  "
 },
@@ -4415,7 +4415,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-15",
   "type": "Example",
-  "number": "5.2.6",
+  "number": "5.2.7",
   "title": "",
   "body": "  Let . Is ?  The answer is yes, because we found in that   "
 },
@@ -4424,7 +4424,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-16",
   "type": "Example",
-  "number": "5.2.7",
+  "number": "5.2.8",
   "title": "",
   "body": "  Let . We show that is a spanning set for , the vector space of all polynomials of degree at most 2.  This is analogous to . Consider an arbitrary element of . We must show that , i.e., that there exist such that   We can equivalently rewrite this equation as which yields the system of equations   Since the system has rank 3, it has a solution. Therefore . Since was an arbitrary element of , it follows that is a spanning set for .  "
 },
@@ -4433,7 +4433,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#definition-8-17",
   "type": "Definition",
-  "number": "5.2.8",
+  "number": "5.2.9",
   "title": "",
   "body": "  Let be a vector space over a field . A finite set of vectors is called linearly independent if the equation has only the trivial solution   An infinite set of vectors is linearly independent if every finite subset is linearly independent.  "
 },
@@ -4442,7 +4442,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-18",
   "type": "Example",
-  "number": "5.2.9",
+  "number": "5.2.10",
   "title": "",
   "body": "  Determine whether the polynomials , , and are linearly independent.  According to the definition of linear independence, we must solve the equation If there is a non-trivial solution, the polynomials are linearly dependent. If there is only the trivial solution, they are linearly independent.  We first rearrange the left-hand side to collect equal powers of : This turns into a system of 3 equations in 3 variables:   Since the system has rank 3, there are no free variables. The only solution is , and the polynomials are linearly independent.  "
 },
@@ -4451,7 +4451,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-19",
   "type": "Example",
-  "number": "5.2.10",
+  "number": "5.2.11",
   "title": "",
   "body": "  Consider again the real-valued sequences from , and so on. Let . This is an infinite subset of . We show that is linearly independent.  Since is an infinite set, we have to show that every finite subset of is linearly independent. So consider a finite subset and assume that   We have to show that . Consider some index . Then the th element of is equal to by the left-hand side of the equation, but it is also equal to 0 by the right-hand side. It follows that for all .  Therefore is linearly independent. Since this was an arbitrary finite subset of , it follows, by definition, that is linearly independent.  "
 },
@@ -4460,7 +4460,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-20",
   "type": "Example",
-  "number": "5.2.11",
+  "number": "5.2.12",
   "title": "",
   "body": "  We determine whether the following elements of are linearly independent:   We look for solutions to . Notice that this equation has non-trivial solutions, for example , , and . Therefore the matrices are linearly dependent.  "
 },
@@ -4469,7 +4469,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-21",
   "type": "Example",
-  "number": "5.2.12",
+  "number": "5.2.13",
   "title": "Linearly independent functions.",
   "body": " Linearly independent functions  In the vector space of real-valued functions on the real numbers, we show that the functions and are linearly independent.  Assume . Note that this is an equality of functions, which means that it is true for all .  In particular, substituting into the equation, and using the fact that and , we have and therefore . On the other hand, substituting into the equation, and using the fact that and , we have and therefore . Therefore the equation only has the trivial solution , and it follows that and are linearly independent.  "
 },
@@ -4478,7 +4478,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#proposition-8-22",
   "type": "Proposition",
-  "number": "5.2.13",
+  "number": "5.2.14",
   "title": "",
   "body": "   Let be a vector space, and let be a (finite or infinite) sequence of vectors in . If are linearly dependent, then at least one of the vectors can be written as a linear combination of earlier vectors in the sequence: for some . We say that the vector is redundant .    Suppose that the vectors are linearly dependent. Then the equation has a non-trivial solution for some . In other words, there exist scalars , not all equal to zero, such that   Let be the largest index such that . Then Dividing by and solving for , we have so can be written as a linear combination of earlier vectors as claimed.   "
 },
@@ -4487,7 +4487,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#example-8-23",
   "type": "Example",
-  "number": "5.2.14",
+  "number": "5.2.15",
   "title": "",
   "body": "  Consider a sequence of non-zero polynomials of increasing degree, i.e., such that the degree of each is strictly larger than that of . We show that are linearly independent in the vector space .  A polynomial of degree cannot be a linear combination of polynomials of degree less than . Therefore, none of the polynomials can be written as a linear combination of earlier polynomials. By , are linearly independent.  "
 },
@@ -4496,7 +4496,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#proposition-8-24",
   "type": "Proposition",
-  "number": "5.2.15",
+  "number": "5.2.16",
   "title": "",
   "body": "   Suppose is linearly independent and . Then the set is also linearly independent.    Assume, on the contrary, that the set were linearly dependent. Then by , one of the vectors can be written as a linear combination of earlier vectors. This vector cannot be one of the , because are linearly independent. It also cannot be , because . Therefore, our assumption cannot be true, and the set is linearly independent.   "
 },
@@ -4505,7 +4505,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#ula-8-2-spansort",
   "type": "Checkpoint",
-  "number": "5.2.16",
+  "number": "5.2.17",
   "title": "Do these vectors span the vector space?",
   "body": " Do these vectors span the vector space?   Determine whether each set spans the vector space or not.     The set in .  The set in .  The set in the vector space .  The set in .  Spans the space    The set in .  The set in the vector space .  The set in .  The set in .  Does not span the space    "
 },
@@ -4514,7 +4514,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-lin-comb-span-lin-ind.html#cardsort-linear-independence",
   "type": "Checkpoint",
-  "number": "5.2.17",
+  "number": "5.2.18",
   "title": "Linear Independence.",
   "body": " Linear Independence   Determine whether the given set is linearly independent or linearly dependent .     The set in .  The set in the vector space .  The set of functions in .   Linearly independent     The set in .  The set in the vector space .  The set of functions in .   Linearly dependent     "
 },
@@ -4622,7 +4622,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#sec-vecsubspace-intro-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "5.3",
   "title": "",
   "body": "                   "
 },
@@ -4631,7 +4631,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#definition-8-25",
   "type": "Definition",
-  "number": "5.3.1",
+  "number": "5.3.2",
   "title": "",
   "body": "  Let be a vector space over a field . A subset is said to be a subspace of if the following conditions hold:    , where is the additive unit of .   is closed under addition: Whenever , then .   is closed under scalar multiplication: Whenever and , then .   "
 },
@@ -4640,7 +4640,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-26",
   "type": "Example",
-  "number": "5.3.2",
+  "number": "5.3.3",
   "title": "",
   "body": "  As we have seen, the subspaces of are:   the zero subspace ;  lines through the origin;  planes through the origin;  itself.   "
 },
@@ -4649,7 +4649,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-27",
   "type": "Example",
-  "number": "5.3.3",
+  "number": "5.3.4",
   "title": "",
   "body": "  Let , the vector space of functions from real numbers to real numbers. Let be the subset of continuous functions. Then is a subspace of .   Proof: We know from calculus that:   the zero function, defined by for all , is continuous;  if are continuous functions, then is continuous;  if is a continuous function and a constant, then is continuous.   It follows that contains , and is closed under addition and scalar multiplication. Therefore, is a subspace of .  "
 },
@@ -4658,7 +4658,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-28",
   "type": "Example",
-  "number": "5.3.4",
+  "number": "5.3.5",
   "title": "",
   "body": "  Let . Recall from calculus that a function is called differentiable if the derivative exists for all . Let be the subset of differentiable functions. Then is a subspace of .  We know from calculus that:   the zero function, defined by for all , is differentiable. In fact, its derivative is ;  if are differentiable functions, then is differentiable. In fact, ;  if is a differentiable function and a constant, then is differentiable. In fact, .   It follows that contains , and is closed under addition and scalar multiplication. Therefore, is a subspace of .  "
 },
@@ -4667,7 +4667,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-29",
   "type": "Example",
-  "number": "5.3.5",
+  "number": "5.3.6",
   "title": "",
   "body": "  Let , the vector space of sequences of real numbers. Let In other words, is the set of all sequences satisfying the recurrence relation . Then is a subspace of .   Proof: Before we prove that is a subspace, let us first consider an example. The following sequences are elements of , because they both satisfy the recurrence:     Note that if we add these sequences, we get which again satisfies the recurrence. Therefore, the set is closed under the addition of these particular sequences and .  We now prove the properties in general.   Let be the zero sequence, defined by for all . Then satisfies the recurrence relation, since for all , . Therefore .  To show that is closed under addition, consider any two sequences , and let . Then for all , so satisfies the recurrence. It follows that .  To show that is closed under scalar multiplication, consider any and , and let . Then for all , so satisfies the recurrence. It follows that .   "
 },
@@ -4676,7 +4676,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#subspace-sequences",
   "type": "Activity",
-  "number": "5.3.2",
+  "number": "5.3.7",
   "title": "",
   "body": "   Let denote the vector space of convergent, infinite sequences of real numbers. Let denote the subset of infinite sequences of real numbers that converge to 0. Show that is a subspace of .  Let denote the subset of (the vector space of convergent, infinite sequences) that consists of those sequences having finite support . By that, we mean that consists of sequences where only finitely many of the terms are nonzero. Is a subspace of ? Why or why not?  Is the set of convergent, geometric sequences (i.e. those of the form where ) a subspace of ? Why or why not?  Is the set a subspace of ? Why or why not?  Is the set of all constant sequences a subspace of ? Why or why not?       We show that if and are sequences in , then their sum is as well. But the sum of two sequences that converge to 0 also converges to 0. We also show that if is a sequence converging to 0 then any multiple of it will also converge to 0. But this is clear. So is closed under addition and scalar multiplication. The zero element is obviously the sequence of all 0's and hence clearly converges to 0 and is in .  is a subspace. If we add two such sequences, then the sum will only have a finite number of terms that are not zero (at most double the number of nonzero terms in each individual sequence). If we multiply such a sequence by a constant, it will have (at most) the same number of nonzero terms. The zero sequence (consisting of all 0's) has no nonzero terms and so is also in .  No. Adding the sequences and gives a sequence which is not geometric unless either or is 0.  No. The constant sequence is in , but adding this sequence to itself will not yield a sequence in .  Yes. The zero sequence is the zero element and is constant. Adding two constant sequences will yield a constant sequence. Multiplying each term of a sequence by a scalar will produce another constant sequence.     "
 },
@@ -4685,7 +4685,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-30",
   "type": "Example",
-  "number": "5.3.6",
+  "number": "5.3.8",
   "title": "",
   "body": "  Let . Recall from calculus that a differential equation is an equation about an unknown function and its derivatives. For example is a differential equation. The functions , , and are examples of solutions of this differential equation. Let be the set of all functions that are solutions of the differential equation . Then is a subspace of .   Proof: The zero function is a solution of the differential equation, and therefore an element of .  To show that is closed under addition, let and consider . Then and , and therefore . Therefore .  To show that is closed under scalar multiplication, let and , and consider . Then , and therefore . It follows that .  "
 },
@@ -4694,7 +4694,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-31",
   "type": "Example",
-  "number": "5.3.7",
+  "number": "5.3.9",
   "title": "",
   "body": "  Consider , the vector space of polynomials of degree at most 2, with real coefficients. Fix some real number , and let be the subset of polynomials that have as a root. Then is a subspace of .   Proof: We can express as follows: We need to show that is a subspace.   The zero polynomial, given by , satisfies , so .   To show that is closed under addition, assume , and let . Then and , therefore . It follows that .   To show that is closed under scalar multiplication, assume and be a scalar. Then , and therefore .  "
 },
@@ -4703,7 +4703,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-32",
   "type": "Example",
-  "number": "5.3.8",
+  "number": "5.3.10",
   "title": "",
   "body": "  Let be an arbitrary vector space over a field . Then is a subspace of , called the zero subspace. Also, is a subspace of itself.   Proof: Clearly contains , and is closed under addition and scalar multiplication because and for all . Similarly, contains and is closed under addition and scalar multiplication, because addition and scalar multiplication are operations on . Therefore, both and are subspaces of .  "
 },
@@ -4712,7 +4712,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#subspace-function-spaces",
   "type": "Activity",
-  "number": "5.3.3",
+  "number": "5.3.11",
   "title": "",
   "body": "    Let , the vector space of continuous real-valued functions. Define to be the set of functions for which . For example, is in . Show that is a subspace of .    Let as before. Define to be the set of functions for which . For example, and are in . Is a subspace of ? If so, prove it. If not, why not?    Let , the vector space of real-valued matrices. Is a subspace of ? If so, prove it. If not, why not? If so, what is the dimension of this subspace?    Let , the vector space of real-valued matrices. Is a subspace of ? If so, prove it. If not, why not? If so, what is the dimension of this subspace?    Let . Show that is a subspace of .    Let , the vector space of polynomials with real coefficients of degree at most 2. Let . Is a subspace of ? If so, prove it. If not, why not?    Let , the vector space of polynomials with real coefficients of degree at most 2. Let . Is a subspace of ? If so, prove it. If not, why not?    Let , the vector space of continuous real-valued functions. Define , the set of functions that vanish at infinity. That is . Is a subspace of ? Why or why not?        The zero vector, (the constant zero function) is in since it satisfies the equation . If and both satisfy the equation, then also satisfies the equation since . Also, if , and is any real number, then since .     is a subspace. The zero vector, (the constant zero function) is in since it satisfies the equation . If and both satisfy the equation, then also satisfies the equation since . Also, if , and is any real number, then since .    Yes and the dimension is 2. The zero matrix is clearly in . If and , then which is clearly in as well. Also, for any scalar , we have which is also clearly in . A basis is .    Yes and the dimension is 2. The zero matrix is clearly in . If and , then which is clearly in as well. Also, for any scalar , we have which is also clearly in . A basis is .    Since the matrix commutes with any matrix, we know that . Suppose . Then and . So Also,     No. The zero polynomial is not in .    Yes. First, the zero polynomial is in since all coefficients are 0 (and hence their sum is too). If , where and , then and we have since and . Also, where so that is closed under addition and scalar multiplication.    Yes. The zero function is in since it vanishes at . Adding two functions that vanish at will produce a function that also vanishes there. And multiplying such a function by a constant will still vanish at .     "
 },
@@ -4721,7 +4721,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#proposition-8-33",
   "type": "Proposition",
-  "number": "5.3.9",
+  "number": "5.3.12",
   "title": "",
   "body": "   Let be a subspace of a vector space . Then satisfies the vector space axioms (A1)–(A4) and (SM1)–(SM4) , with respect to the same operations (addition and scalar multiplication) as those defined on .    Since is a subspace, it is closed under addition and scalar multiplication. This ensures that addition and scalar multiplication are well-defined operations on . The axioms (A1) , (A2) , (A4) , and (SM1)–(SM4) all obviously hold in , because they hold in (two elements of are equal in if and only if they are equal in ). The axiom (A3) holds because .   "
 },
@@ -4730,7 +4730,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#proposition-8-34",
   "type": "Proposition",
-  "number": "5.3.10",
+  "number": "5.3.13",
   "title": "",
   "body": "   Let be a vector space over some field , and consider a set of vectors . Then is the smallest subspace of containing . More explicitly, we have:   The set is a subspace of , and .  If is any other subspace of such that , then .      To show that is a subspace, first note that , because is the empty linear combination. Also, if , then by definition of span, there exist and such that Then and therefore . It follows that is closed under addition. The proof for scalar multiplication is similar. Finally, every is trivially a linear combination of itself, , and therefore .  Consider any other subspace of such that . To show that , consider an arbitrary element . By definition of span, there exist and such that By assumption, . Since is closed under addition and scalar multiplication, it follows that . Since was an arbitrary element of , it follows that .    "
 },
@@ -4739,7 +4739,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#example-8-35",
   "type": "Example",
-  "number": "5.3.11",
+  "number": "5.3.14",
   "title": "",
   "body": " We show that the sets and span the same subspace of . In other words, we show that   To show that two sets are equal, we must show that each is a subset of the other. So we will show and . By , it is sufficient to show that and , i.e., we must show that every element of is a linear combination of elements of and vice versa.    . We have Since each element of is an element of , it follows that . By , this implies that .    . We have Since each element of is an element of , it follows that . By , this implies that .  "
 },
@@ -4748,7 +4748,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#cardsort-vecsubspace-intro",
   "type": "Checkpoint",
-  "number": "5.3.12",
+  "number": "5.3.15",
   "title": "Identifying Vector Subspaces.",
   "body": " Identifying Vector Subspaces   Determine whether the subset of a vector space, together with the usual vector addition and scalar multiplication, is a subspace of the given vector space.     The set of all vectors of the form .  The set of all vectors such that .  The set of all polynomials in with zero constant term.   Subspace     The set of all vectors such that .  The set of all polynomials in of degree exactly .   Not a subspace     "
 },
@@ -4757,7 +4757,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vecsubspace-intro.html#cardsort-vecsubspace-sufficient",
   "type": "Checkpoint",
-  "number": "5.3.13",
+  "number": "5.3.16",
   "title": "What Guarantees a Subspace?",
   "body": " What Guarantees a Subspace?   Each card describes a property of a subset of a vector space. Match each property with one conclusion that follows.     A nonempty subset is closed under addition and scalar multiplication.   The subset is a subspace     A subset contains the zero vector and is closed under addition.   Scalar closure must still be checked     A subset contains the zero vector and is closed under scalar multiplication.   Additive closure must still be checked     A subset is the span of a set of vectors.   The subset is automatically a subspace     "
 },
@@ -4955,7 +4955,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#sec-basis-dimension-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "5.4",
   "title": "",
   "body": "              "
 },
@@ -4964,7 +4964,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#definition-basis",
   "type": "Definition",
-  "number": "5.4.1",
+  "number": "5.4.2",
   "title": "",
   "body": " Let be a vector space. A set of vectors is called a basis of if    is a spanning set for , and   is linearly independent.   "
 },
@@ -4973,7 +4973,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-37",
   "type": "Example",
-  "number": "5.4.2",
+  "number": "5.4.3",
   "title": "",
   "body": "  Consider the vector space of polynomials of degree at most 2 with real coefficients.    is a basis of .   is a basis of .   is a basis of .   Unlike , a vector space like does not necessarily have a “standard” basis. One basis might be useful for one application, and another basis for a different application.  It is easy to verify that each set of vectors is linearly independent and spanning. See , , and for similar calculations.  "
 },
@@ -4982,7 +4982,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-38",
   "type": "Example",
-  "number": "5.4.3",
+  "number": "5.4.4",
   "title": "",
   "body": "  Consider the vector space of all polynomials with rational coefficients. The following is a basis for :   Note that this basis is infinite.   Proof: The polynomials are linearly independent by . Namely, if they were linearly dependent, then one of the polynomials could be written as a linear combination of earlier ones. However, this is not possible because a polynomial of degree cannot be a linear combination of polynomials of degree less than .  To show that the polynomials are a spanning set, consider an arbitrary element of . Then by definition, is of the form for some and . But then is a linear combination of , i.e., it is in the span of .  "
 },
@@ -4991,7 +4991,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-39",
   "type": "Example",
-  "number": "5.4.4",
+  "number": "5.4.5",
   "title": "",
   "body": "  Consider the vector space of infinite sequences. As before, let be the sequence whose th element is 1 and that is 0 everywhere else, i.e., and so on. Then the set is not a basis of .  Indeed, although we saw in that the sequences are linearly independent, shows that they are not spanning. Indeed, is a subspace of , consisting exactly of the finitely supported sequences, i.e., those sequences that have only finitely many non-zero components. Thus, is a basis of .  "
 },
@@ -5000,7 +5000,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#theorem-8-40",
   "type": "Theorem",
-  "number": "5.4.5",
+  "number": "5.4.6",
   "title": "",
   "body": "   Every vector space has a basis.   "
 },
@@ -5018,7 +5018,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#lemma-8-41",
   "type": "Lemma",
-  "number": "5.4.6",
+  "number": "5.4.7",
   "title": "[Exchange Lemma].",
   "body": " [Exchange Lemma]   Let be a vector space over a field . Suppose are linearly independent elements of . Then .   "
 },
@@ -5027,7 +5027,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#theorem-8-42",
   "type": "Theorem",
-  "number": "5.4.7",
+  "number": "5.4.8",
   "title": "",
   "body": "   Let be a vector space over some field , and let and be bases of . Then either and are both finite and have the same number of elements, or else and are both infinite.    We first show that and are either both finite or both infinite. Assume one of them, say , is finite and contains vectors. Since is spanning and is linearly independent, it follows from the Exchange Lemma that cannot contain more than vectors, and in particular, must be finite. So the sets are either both finite or both infinite.  If they are both finite, say of size and , then by the Exchange Lemma, we have and , hence .   "
 },
@@ -5036,7 +5036,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#definition-8-43",
   "type": "Definition",
-  "number": "5.4.8",
+  "number": "5.4.9",
   "title": "",
   "body": "  Let be a vector space over a field . If has a basis consisting of vectors, we say that has dimension , and we write . In this case we also say that is finite-dimensional. If has an infinite basis, we say that is infinite-dimensional, and we write .  "
 },
@@ -5045,7 +5045,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-44",
   "type": "Example",
-  "number": "5.4.9",
+  "number": "5.4.10",
   "title": "",
   "body": "  In , we considered the space of sequences of real numbers that satisfy the recurrence . What is the dimension of this space?  The space is -dimensional. The easiest way to see this is to observe that a sequence is determined by its first two elements. We can say that the first two elements of the sequence are parameters, and all the other elements are then computed by the recurrence relation.  Specifically, suppose and . Using the recurrence relation to compute the remaining elements, we have   Since this is the general form of the elements of , and since the two sequences starting with and are clearly linearly independent, it follows that is a basis of .  "
 },
@@ -5054,7 +5054,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-45",
   "type": "Example",
-  "number": "5.4.10",
+  "number": "5.4.11",
   "title": "",
   "body": "  In , we considered the space of solutions of the differential equation . What is the dimension of this space?  From calculus, we know that the general solution of the differential equation is , where are constants. We also know, from , that and are linearly independent. It follows that is a basis for the solution space. The solution space is therefore -dimensional.  "
 },
@@ -5063,7 +5063,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#proposition-8-46",
   "type": "Proposition",
-  "number": "5.4.11",
+  "number": "5.4.12",
   "title": "",
   "body": "   Let be a vector space, and let be a linearly independent set of vectors. Then can be extended to a basis of , i.e., there exists a basis of such that .   "
 },
@@ -5072,7 +5072,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#proposition-8-47",
   "type": "Proposition",
-  "number": "5.4.12",
+  "number": "5.4.13",
   "title": "",
   "body": "   Let be a vector space, and let be a spanning set of . Then can be shrunk to a basis, i.e., there exists a basis of such that .   "
 },
@@ -5081,7 +5081,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-48",
   "type": "Example",
-  "number": "5.4.13",
+  "number": "5.4.14",
   "title": "",
   "body": "  Let be the linearly independent set given by We enlarge to a basis of .  We can obtain a basis of by adding two more linearly independent matrices The resulting basis is   "
 },
@@ -5090,7 +5090,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#example-8-49",
   "type": "Example",
-  "number": "5.4.14",
+  "number": "5.4.15",
   "title": "",
   "body": "  Consider the spanning set given by We shrink to a basis of .  We use a version of the casting-out method . We examine each element of from left to right and cast out the elements that are linear combinations of previous elements. Clearly the first two elements, and , are linearly independent.  The next element, , is redundant because it is a linear combination of and . The next element is linearly independent of and . The final element is redundant because it is a linear combination of and .  Therefore, the following subset of is a basis of :   "
 },
@@ -5099,7 +5099,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#subspace-dimension",
   "type": "Activity",
-  "number": "5.4.2",
+  "number": "5.4.16",
   "title": "",
   "body": "  For each vector space below, calculate the dimension.               , the vector space of matrics with real entries.     , the subspace of lower triangular matrices.     , the vector space of continuous real-valued functions on .     , the subspace of real-valued sequences that converge to 0.    The subspace .    The subspace of constant real-valued sequences.             6    9    6              3    1     "
 },
@@ -5108,7 +5108,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#cardsort-basis-dimension",
   "type": "Checkpoint",
-  "number": "5.4.15",
+  "number": "5.4.17",
   "title": "Understanding Basis and Dimension.",
   "body": " Understanding Basis and Dimension   Determine whether the set of vectors given is a basis for the given vector space or not a basis.     The set in .  The set in the vector space .  The set in .   Basis     The set in .  The set in the vector space .  The set in .   Not a basis     "
 },
@@ -5117,7 +5117,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basis-dimension.html#cardsort-dimension",
   "type": "Checkpoint",
-  "number": "5.4.16",
+  "number": "5.4.18",
   "title": "Understanding Dimension.",
   "body": " Understanding Dimension   Sort the vector spaces below according to their dimension.     The vector space .  The span of .  The set of all matrices of the form with .   Dimension     The vector space .  The vector space of all polynomials of degree at most .  The set of all symmetric matrices,    Dimension     "
 },
@@ -5234,7 +5234,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-2-3",
   "type": "Videos",
-  "number": "",
+  "number": "6.1",
   "title": "",
   "body": "            "
 },
@@ -5243,7 +5243,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-3-3",
   "type": "Example",
-  "number": "6.1.2",
+  "number": "6.1.3",
   "title": "",
   "body": "  We compute the dot product between two four-dimensional vectors as    "
 },
@@ -5252,7 +5252,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-3-5",
   "type": "Example",
-  "number": "6.1.3",
+  "number": "6.1.4",
   "title": "",
   "body": "  Suppose that and . Then    "
 },
@@ -5261,7 +5261,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#fig-dot-length",
   "type": "Figure",
-  "number": "6.1.4",
+  "number": "6.1.5",
   "title": "",
   "body": "   A two dimensional vector against a coordinate grid and set of axes.   The vector shown against a coordinate grid and set of axes. From the tip of the vector at the point , there is a vertical line segment drawn to the horizontal axis and a horizontal line segment drawn to the vertical axis. Along with the coordinate axes, these line segments form two right triangles whose legs have length and and whose shared hypotenuse is the vector .     The vector .  "
 },
@@ -5270,7 +5270,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#fig-dot-angle",
   "type": "Figure",
-  "number": "6.1.5",
+  "number": "6.1.6",
   "title": "",
   "body": "   Two vectors, the angle between them, and their vector difference.   Two vectors and are shown along with the angle between them. Between the tips of the two vectors is drawn the vector . The three vectors form a triangle with being an interior angle whose opposite side is formed by .     The dot product measures the angle .  "
 },
@@ -5279,7 +5279,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-3-14",
   "type": "Activity",
-  "number": "6.1.2",
+  "number": "6.1.7",
   "title": "",
   "body": "     Sketch the vectors and using .     A coordinate grid and set of axes.   A standard coordinate grid and set of coordinate axes. The horizontal and vertical ranges both run from to .     Sketch the vectors and here.    Find the lengths and using the dot product.  Find the dot product and use it to find the angle between and .  Consider the vector . Include it in your sketch in and find the angle between and .  If two vectors are perpendicular, what can you say about their dot product? Explain your thinking.  For what value of is the vector perpendicular to ?  Sage can be used to find lengths of vectors and their dot products. For instance, if v and w are vectors, then v.norm() gives the length of v and v * w gives .  Suppose that Use the Sage cell below to find , , , and the angle between and . You may use arccos to find the angle's measure expressed in radians.              We find that so that and .     so that      so that     If two vectors are perpendicular, then the angle between them is . Since , their dot product must be zero.    The dot product is so .    We find that , , , and the angle between these vectors is .                and .              Their dot product must be zero.     .     .      "
 },
@@ -5288,7 +5288,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-3-16",
   "type": "Definition",
-  "number": "6.1.7",
+  "number": "6.1.9",
   "title": "",
   "body": "  orthogonal We say that vectors and are orthogonal if .  "
 },
@@ -5297,7 +5297,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#fig-similar-vectors",
   "type": "Figure",
-  "number": "6.1.8",
+  "number": "6.1.10",
   "title": "",
   "body": "   Three two dimensional vectors two of which nearly point in the same direction.   Three vectors , , and are shown against a standard coordinate grid and axes. The vectors and point in nearly the same direction while points in a very different direction.     Which of the vectors are most similar?  "
 },
@@ -5306,7 +5306,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-3-20",
   "type": "Activity",
-  "number": "6.1.3",
+  "number": "6.1.11",
   "title": "",
   "body": "  This activity explores two further uses of the dot product beginning with the similarity of vectors.   Our first task is to assess the similarity between various Wikipedia articles by forming vectors from each of five articles. In particular, one may download the text from a Wikipedia article, remove common words, such as the and and , count the number of times the remaining words appear in the article, and represent these counts in a vector.  For example, evaluate the following cell that loads some special commands along with the vectors constructed from the Wikipedia articles on Veteran's Day, Memorial Day, Labor Day, the Golden Globe Awards, and the Super Bowl. For each of the five articles, you will see a list of the number of times 10 words appear in these articles. For instance, the word act appears 3 times in the Veteran's Day article and 0 times in the Labor Day article. For each of the five articles, we obtain 604-dimensional vectors, which are named veterans , memorial , labor , golden , and super .     Suppose that two articles have no words in common. What is the value of the dot product between their corresponding vectors? What does this say about the angle between these vectors?    Suppose there are two articles on the same subject, yet one article is twice as long. What approximate relationship would you expect to hold between the two vectors? What does this say about the angle between them?    Use the Sage cell below to find the angle between the vector veterans and the other four vectors. To express the angle in degrees, use the degrees(x) command, which gives the number of degrees in x radians.     Compare the four angles you have found and discuss what they mean about the similarity between the Veteran's Day article and the other four. How do your findings reflect the nature of these five events?       Vectors are often used to represent how a quantity changes over time. For instance, the vector might represent the value of a company's stock on four consecutive days. When interpreted in this way, we call the vector a time series. Evaluate the Sage cell below to see a representation of two time series , in blue, and , in orange, which we imagine represent the value of two stocks over a period of time. (This cell relies on some data loaded by the first cell in this activity.) Even though one stock has a higher value than the other, the two appear to be related since they seem to rise and fall at roughly similar ways. We often say that they are correlated , and we would like to measure the degree to which they are correlated.   In order to compare the ways in which they rise and fall, we will first demean the time series; that is, for each time series, we will subtract its average value to obtain a new time series. There is a command, demean(s) , that returns the demeaned time series of s . Use the Sage cell below to demean the series and and plot.     If the demeaned series are and , then the correlation between and is defined to be Given the geometric interpretation of the dot product, the correlation equals the cosine of the angle between the demeaned time series, and therefore is between -1 and 1.  Find the correlation between and .     Suppose that two time series are such that their demeaned time series are scalar multiples of one another, as in      Two time series that are positively correlated.   A representation of two time series where each time series is shown as a set of plotted points. There is a set of axes with tick marks on the horizontal axis representing time values , , , and so on. The components of each time series determine the vertical coordinates of the plotted points and each component is one time unit to the right of the preceeding component. Adjacent points are connected by line segments, which gives the time series the appearance of the graph of a function.  The two time series in this diagram roughly rise and fall at the same time as one another, which is why they are positively correlated.     Two time series that are negatively correlated.   Two time series are represented in the same manner as the previous diagram. In this diagram, however, when one of the time series rises, the other falls and vice versa. This is why the time series are negatively correlated.     On the left, the demeaned time series are positive scalar multiples of one another. On the right, they are negative scalar multiples.   For instance, suppose we have time series and whose demeaned time series and are positive scalar multiples of one another. What is the angle between the demeaned vectors? What does this say about the correlation ?    Suppose the demeaned time series and are negative scalar multiples of one another, what is the angle between the demeaned vectors? What does this say about the correlation ?    Use the Sage cell below to plot the time series and and find their correlation.     Use the Sage cell below to plot the time series and and find their correlation.                 If there are no words in common, then the dot product between the two vectors will be zero. This means that they are perpendicular to one another.    The vectors should be, at least approximately, scalar multiples of one another, which means that the angle between them is zero.    The angle veterans makes with memorial is , with labor is , with golden is , and with super is .    It appears that the articles on Veteran's Day and Memorial Day are most similar. This makes sense because both are U.S. national holidays that honor military service. The second most similar article is Labor Day, which is also a national holiday. The other two are quite dissimilar as they are entertainment events.          The graphs are now lowered so that their averages are zero.    The correlation is , which is quite close to 1.    The angle should be zero, which means that the correlation will be .    The angle should be , which means that the correlation should be .    The correlation is .    The correlation is .                They are perpendicular.    The angle should be close to 0.    The angle veterans makes with memorial is , with labor is , with golden is , and with super is .    The articles on Veteran's Day and Memorial Day are most similar.          The graphs are now lowered so that their averages are zero.                                  "
 },
@@ -5315,7 +5315,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#fig-clusters",
   "type": "Figure",
-  "number": "6.1.10",
+  "number": "6.1.13",
   "title": "",
   "body": "   A scatter plot of 177 data points.   A scatter plot of two dimensional data points. While the points appear to be somewhat randomly scattered throughout the plane, there are subsets of points that are close to one another and that seem to form clusters.     A set of 177 data points.  "
 },
@@ -5324,7 +5324,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-4-7",
   "type": "Activity",
-  "number": "6.1.4",
+  "number": "6.1.14",
   "title": "",
   "body": "  To begin, we identify the centroid , or the average, of a set of vectors as    Find the centroid of the vectors and sketch the vectors and the centroid using . You may wish to simply plot the points represented by the tips of the vectors rather than drawing the vectors themselves.     A coordinate grid and set of coordinate axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges both extend from to .     The vectors , , and their centroid.   Notice that the centroid lies in the center of the points defined by the vectors.    Now we'll illustrate an algorithm that forms clusterings. To begin, consider the following points, represented as vectors, which are shown in .     A scatter plot of four data points.   A coordinate grid and set of axes that contain four data points corresponding to the vectors , , , and .     We will group this set of four points into two clusters.   Suppose that we would like to group these points into clusters. (Later on, we'll see how to choose an appropriate value for , the number of clusters.) We begin by choosing two points and at random and declaring them to be the centers ' of the two clusters.  For example, suppose we randomly choose and as the center of two clusters. The cluster centered on will be the set of points that are closer to than to . Determine which of the four data points are in this cluster, which we denote by , and circle them in .    The second cluster will consist of the data points that are closer to than . Determine which of the four points are in this cluster, which we denote by , and circle them in .    We now have a clustering with two clusters, but we will try to improve upon it in the following way. First, find the centroids of the two clusters; that is, redefine to be the centroid of cluster and to be the centroid of . Find those centroids and indicate them in      A scatter plot of four data points.   A coordinate grid and set of axes that contain four data points corresponding to the vectors , , , and .     Indicate the new centroids and clusters.   Now update the cluster to be the set of points closer to than . Update the cluster in a similar way and indicate the clusters in .    Let's perform this last step again. That is, update the centroids and from the new clusters and then update the clusters and . Indicate your centroids and clusters in .     A scatter plot of four data points.   A coordinate grid and set of axes that contain four data points corresponding to the vectors , , , and .     Indicate the new centroids and clusters.   Notice that this last step produces the same set of clusters so there is no point in repeating it. We declare this to be our final clustering.          The centroid is .       The first cluster is .    The second cluster is .    We redefine and . This leads to new clusters and .    We have new centroids and , and the clusters and are unchanged.          The centroid is .        .     .     and    and .     and . The clusters and are unchanged.      "
 },
@@ -5333,7 +5333,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#sec-dot-product-4-13",
   "type": "Activity",
-  "number": "6.1.5",
+  "number": "6.1.19",
   "title": "",
   "body": "  We'll now use the objective to compare clusterings and to choose an appropriate value of .   In the previous activity, one initial choice of and led to the clustering: with centroids and . Find the objective of this clustering.    We have now seen two clusterings and computed their objectives. Recall that our dataset is shown in . Which of the two clusterings feels like the better fit? How is this fit reflected in the values of the objectives?    Evaluating the following cell will load and display a dataset consisting of 177 data points. This dataset has the name data . Given this plot of the data, what would seem like a reasonable number of clusters?    In the following cell, you may choose a value of and then run the algorithm to determine and display a clustering and its objective. If you run the algorithm a few times with the same value of , you will likely see different clusterings having different objectives. This is natural since our algorithm starts by making a random choice of points , and a different choices may lead to different clusterings. Choose a value of and run the algorithm a few times. Notice that clusterings having lower objectives seem to fit the data better. Repeat this experiment with a few different values of .     For a given value of , our strategy is to run the algorithm several times and choose the clustering with the smallest objective. After choosing a value of , the following cell will run the algorithm 10 times and display the clustering having the smallest objective.   For each value of between 2 and 9, find the clustering having the smallest objective and plot your findings in .     A horizontal axis labelled k and a vertical axis labelled Objective.   A set of coordinate axes where the horizontal axis is labelled and the vertical axis is labelled Objective . The horizontal range is from to while the vertical range is from to . There is also a coordinate grid to help in plotting points.     Construct a plot of the minimal objective as it depends on the choice of .   This plot is called an elbow plot due to its shape. Notice how the objective decreases sharply when is small and then flattens out. This leads to a location, called the elbow, where the objective transitions from being sharply decreasing to relatively flat. This means that increasing beyond the elbow does not significantly decrease the objective, which makes the elbow a good choice for .  Where does the elbow occur in your plot above? How does this compare to the best value of that you estimated by simply looking at the data in .     Of course, we could increase until each data point is its own cluster. However, this defeats the point of the technique, which is to group together nearby data points in the hope that they share common features, thus providing insight into the structure of the data.       The objective is     The clustering with and appears to be a tighter clustering and has a smaller objective.    It appears that the best clustering is either or .    With a fixed value of , running the algorithm several times leads to different clusterings with different objectives. If we increase , the objective generally decreases.    The elbow occurs around or , which are the values that we felt led to the best clusterings.             The objective is .    The clustering and has a smaller objective.     or .    With a fixed value of , running the algorithm several times leads to different clusterings with different objectives. If we increase , the objective generally decreases.    The elbow occurs around or .         "
 },
@@ -5342,7 +5342,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#cardsort-dot-product",
   "type": "Checkpoint",
-  "number": "6.1.16",
+  "number": "6.1.21",
   "title": "Understanding the Dot Product.",
   "body": " Understanding the Dot Product   Match each statement or situation with the correct interpretation of the dot product.     Two vectors and satisfy .   The vectors are orthogonal     The dot product of two nonzero vectors is positive.   The angle between the vectors is acute     The dot product of two nonzero vectors is negative.   The angle between the vectors is obtuse         The square of the length of         Geometric definition of the dot product     "
 },
@@ -5351,7 +5351,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#choices-kmeans",
   "type": "Checkpoint",
-  "number": "6.1.17",
+  "number": "6.1.22",
   "title": "k‑Means Clustering.",
   "body": " k‑Means Clustering   What is the primary goal of the k‑means algorithm?     To partition data into clusters by minimizing the distance from points to their assigned cluster centers    To find clusters of arbitrary shape using density estimates    To build a hierarchy of nested clusters    To classify data using labeled training examples    "
 },
@@ -5360,7 +5360,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-dot-product.html#choices-kmeans-2",
   "type": "Checkpoint",
-  "number": "6.1.18",
+  "number": "6.1.23",
   "title": "k‑Means Clustering II.",
   "body": " k‑Means Clustering II   What must be chosen before running the k‑means algorithm?     The number of clusters    The final cluster centers    The order in which points are processed    The stopping tolerance for distances    "
 },
@@ -5486,7 +5486,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "6.2",
   "title": "",
   "body": "            "
 },
@@ -5495,7 +5495,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#fig-orthog-comps",
   "type": "Figure",
-  "number": "6.2.2",
+  "number": "6.2.3",
   "title": "",
   "body": "   A line in two dimensions and its orthogonal complement.   A two dimensional vector and the line that it defines. The orthogonal complement , which is a line orthogonal to , is also shown.     A plane in three dimensions and its orthogonal complement.   A plane in three dimensions and its orthogonal complement , which is a line orthogonal to .     On the left is a line and its orthogonal complement . On the right is a plane and its orthogonal complement in .  "
 },
@@ -5504,7 +5504,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-3-5",
   "type": "Definition",
-  "number": "6.2.3",
+  "number": "6.2.4",
   "title": "",
   "body": " orthogonal complement   Given a subspace of , the orthogonal complement of is the set of vectors in each of which is orthogonal to every vector in . We denote the orthogonal complement by .   "
 },
@@ -5513,7 +5513,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-3-8",
   "type": "Activity",
-  "number": "6.2.2",
+  "number": "6.2.5",
   "title": "",
   "body": "  Suppose that and form a basis for , a two-dimensional subspace of . We will find a description of the orthogonal complement .   Suppose that the vector is orthogonal to . If we write , use the fact that to write a linear equation for , , and .    Suppose that is also orthogonal to . In the same way, write a linear equation for , , and that arises from the fact that .    If is orthogonal to both and , these two equations give us a linear system for some matrix . Identify the matrix and write a parametric description of the solution space to the equation .    Since and form a basis for the two-dimensional subspace , any vector in can be written as a linear combination If is orthogonal to both and , use the distributive property of dot products to explain why is orthogonal to .    Give a basis for the orthogonal complement and state the dimension .    Describe , the orthogonal complement of .          We have the equation .    We have the equation .    These two equations give where whose solutions have the parametric form .    By distributivity, .     is the solution space to the equation . Therefore, a basis consists of the single vector , and is one-dimensional.    Since every vector in is orthogonal to every vector in , the orthogonal complement of is .           .     .     so .    By distributivity, .    A basis consists of , and is one-dimensional.    The orthogonal complement of is .      "
 },
@@ -5522,7 +5522,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#example-orthog-comp-line",
   "type": "Example",
-  "number": "6.2.4",
+  "number": "6.2.6",
   "title": "",
   "body": "  If is the line defined by in , we will describe the orthogonal complement , the set of vectors orthogonal to .  If is orthogonal to , it must be orthogonal to so we have   We can describe the solutions to this equation parametrically as Therefore, the orthogonal complement is a plane, a two-dimensional subspace of , spanned by the vectors and .   "
 },
@@ -5531,7 +5531,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#example-orthog-comp-gen",
   "type": "Example",
-  "number": "6.2.5",
+  "number": "6.2.7",
   "title": "",
   "body": "  Suppose that is the -dimensional subspace of with basis We will give a description of the orthogonal complement .  If is in , we know that is orthogonal to both and . Therefore, In other words, where The solutions may be described parametrically as The distributive property of dot products implies that any vector that is orthogonal to both and is also orthogonal to any linear combination of and since Therefore, is a -dimensional subspace of with basis One may check that the vectors , , and are each orthogonal to both and .   "
 },
@@ -5540,7 +5540,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-4-3",
   "type": "Definition",
-  "number": "6.2.6",
+  "number": "6.2.8",
   "title": "",
   "body": " transpose   The transpose of the matrix is the matrix whose rows are the columns of .   "
 },
@@ -5549,7 +5549,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-4-4",
   "type": "Example",
-  "number": "6.2.7",
+  "number": "6.2.9",
   "title": "",
   "body": "  If , then   "
 },
@@ -5558,7 +5558,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-4-5",
   "type": "Activity",
-  "number": "6.2.3",
+  "number": "6.2.10",
   "title": "",
   "body": "  This activity illustrates how multiplying a vector by is related to computing dot products with the columns of . You'll develop a better understanding of this relationship if you compute the dot products and matrix products in this activity without using technology.  If , write the matrix .  Suppose that Find the dot products and .  Now write the matrix and its transpose . Find the product and describe how this product computes both dot products and .  Suppose that is a vector that is orthogonal to both and . What does this say about the dot products and ? What does this say about the product ?  Use the matrix to give a parametric description of all the vectors that are orthogonal to and .   Remember that , the null space of , is the solution set of the equation . If is a vector in , explain why must be orthogonal to both and .    Remember that , the column space of , is the set of linear combinations of the columns of . Therefore, any vector in can be written as . If is a vector in , explain why is orthogonal to every vector in .                         Both dot products are 0 so we have .    We need to solve the equation so we find the reduced row echelon form The vectors orthogonal to both and have the form .     tells us that and .    Since is orthogonal to both and , we have                 , .          .     .     .    Apply the distributive property of dot products.      "
 },
@@ -5567,7 +5567,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#prop-transpose-multiplication",
   "type": "Proposition",
-  "number": "6.2.8",
+  "number": "6.2.11",
   "title": "",
   "body": "  If is the matrix whose columns are , then    "
 },
@@ -5576,7 +5576,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-4-8",
   "type": "Example",
-  "number": "6.2.9",
+  "number": "6.2.12",
   "title": "",
   "body": "  Suppose that is a subspace of having basis and that we wish to describe the orthogonal complement .  If is the matrix and is in , we have Describing vectors that are orthogonal to both and is therefore equivalent to the more familiar task of describing the solution set . To do so, we find the reduced row echelon form of and write the solution set parametrically as Once again, the distributive property of dot products tells us that such a vector is also orthogonal to any linear combination of and so this solution set is, in fact, the orthogonal complement . Indeed, we see that the vectors form a basis for , which is a two-dimensional subspace of .   "
 },
@@ -5585,7 +5585,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#prop-col-orthog",
   "type": "Proposition",
-  "number": "6.2.10",
+  "number": "6.2.13",
   "title": "",
   "body": "  For any matrix , the orthogonal complement of is ; that is,    "
 },
@@ -5594,7 +5594,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#fig-orthog-comp",
   "type": "Figure",
-  "number": "6.2.11",
+  "number": "6.2.14",
   "title": "",
   "body": "   The column space of a matrix and the null space of its transpose.   The column space of a matrix is represented as a plane in three dimensions. The null space of its transpose is shown as a line orthogonal to demonstrating that and are orthogonal complements of one another.     The orthogonal complement of the column space of is the null space of .  "
 },
@@ -5603,7 +5603,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-5-3",
   "type": "Activity",
-  "number": "6.2.4",
+  "number": "6.2.15",
   "title": "",
   "body": "  In Sage, the transpose of a matrix A is given by A.T . Define the matrices    Evaluate and . What do you notice about the relationship between these two matrices?  What happens if you transpose a matrix twice; that is, what is ?  Find and . What do you notice about the relationship between these determinants?    Find the product and its transpose .  Is it possible to compute the product ? Explain why or why not.  Find the product and compare it to . What do you notice about the relationship between these two matrices?    What is the transpose of the identity matrix ?  If a square matrix is invertible, explain why you can guarantee that is invertible and why .         .     .             and     The product is not defined because has two columns and has three rows.                 We have so . This means that .           .     .          .          .      "
 },
@@ -5612,7 +5612,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#prop-col-row-rank",
   "type": "Proposition",
-  "number": "6.2.12",
+  "number": "6.2.16",
   "title": "",
   "body": " For any matrix , we have   "
 },
@@ -5621,7 +5621,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#prop-orthog-dim",
   "type": "Proposition",
-  "number": "6.2.13",
+  "number": "6.2.17",
   "title": "",
   "body": "  If is a subspace of , then    "
 },
@@ -5630,7 +5630,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-5-12",
   "type": "Example",
-  "number": "6.2.14",
+  "number": "6.2.18",
   "title": "",
   "body": "  In , we constructed the orthogonal complement of a line in . The dimension of the orthogonal complement should be , which explains why we found the orthogonal complement to be a plane.   "
 },
@@ -5639,7 +5639,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-5-13",
   "type": "Example",
-  "number": "6.2.15",
+  "number": "6.2.19",
   "title": "",
   "body": "  In , we looked at , a -dimensional subspace of and found its orthogonal complement to be a -dimensional subspace of .   "
 },
@@ -5648,7 +5648,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#sec-transpose-5-14",
   "type": "Activity",
-  "number": "6.2.5",
+  "number": "6.2.20",
   "title": "",
   "body": "     Suppose that is a -dimensional subspace of and that is a matrix whose columns form a basis for ; that is, .  What is the shape of ?  What is the rank of ?  What is the shape of ?  What is the rank of ?  What is ?  What is ?  How are the dimensions of and related?      Suppose that is a subspace of having basis    Find the dimensions and .    Find a basis for . It may be helpful to know that the Sage command A.right_kernel() produces a basis for .     Verify that each of the basis vectors you found for are orthogonal to the basis vectors for .                 is .     .     is .                    since the subspaces live in .           so .    A basis is and .    You can verify by computing the four dot products.                                                               and .    Verify by computing the four dot products.         "
 },
@@ -5657,7 +5657,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#ula-proteus-6-2-reasoning-with-transpose-orthog-comp",
   "type": "Checkpoint",
-  "number": "6.2.16",
+  "number": "6.2.21",
   "title": "Reasoning about the matrix transpose and orthogonality.",
   "body": " Reasoning about the matrix transpose and orthogonality      If is a matrix, then has rows and columns.    If is a -dimensional subspace of , then is a -dimensional subspace of for  .    If is orthogonal to , then  .    If and , then  and  .                                           "
 },
@@ -5666,7 +5666,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#ula-proteus-6-2-vectors_in_W_and_W_perp",
   "type": "Checkpoint",
-  "number": "6.2.17",
+  "number": "6.2.22",
   "title": "Determining whether vectors are in <span class=\"process-math\">\\(W\\)<\/span> or <span class=\"process-math\">\\(W^\\perp\\)<\/span>.",
   "body": " Determining whether vectors are in or   Let . Match the following vectors with the responses.           In but not .                In but not .          In neither nor .       In both and .    "
 },
@@ -5675,7 +5675,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#ula-proteus-6-2-intesectionorth-v1",
   "type": "Checkpoint",
-  "number": "6.2.18",
+  "number": "6.2.23",
   "title": "Vectors in <span class=\"process-math\">\\(W\\)<\/span> and <span class=\"process-math\">\\(W^\\perp\\)<\/span>.",
   "body": " Vectors in and   Can a nonzero vector be in both and ? Why or why not. Explain your answer.    "
 },
@@ -5684,7 +5684,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#ula-proteus-6-2-complementofplane-v1",
   "type": "Checkpoint",
-  "number": "6.2.19",
+  "number": "6.2.24",
   "title": "The complement of a plane.",
   "body": " The complement of a plane   Look at and explain why the orthogonal complement of a line in is a line, but the orthogonal complement of a plane in is a line (and not a plane).     "
 },
@@ -5693,7 +5693,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#ula-proteus-6-2-determining-dims-of-col-and-nul",
   "type": "Checkpoint",
-  "number": "6.2.20",
+  "number": "6.2.25",
   "title": "Dimensions of column spaces and null spaces.",
   "body": " Dimensions of column spaces and null spaces   Suppose that is a matrix with .    is a subspace of for  and  .     is a subspace of for  and  .     is a subspace of for  and  .     is a subspace of for  and  .                                                "
 },
@@ -5702,7 +5702,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-transpose.html#ula-proteus-6-2-matching-vectors-col-nul",
   "type": "Checkpoint",
-  "number": "6.2.21",
+  "number": "6.2.26",
   "title": "Placing vectors in subspaces.",
   "body": " Placing vectors in subspaces   Suppose that . Place each vector on the left in its appropriate subspace on the right.                      None of these subspaces    "
 },
@@ -5819,7 +5819,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-2-5",
   "type": "Videos",
-  "number": "",
+  "number": "6.3",
   "title": "",
   "body": "            "
 },
@@ -5828,7 +5828,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-3-3",
   "type": "Definition",
-  "number": "6.3.1",
+  "number": "6.3.2",
   "title": "",
   "body": " orthogonal set   By an orthogonal set of vectors, we mean a set of nonzero vectors each of which is orthogonal to the others.   "
 },
@@ -5837,7 +5837,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#example-orthogonal-basis",
   "type": "Example",
-  "number": "6.3.2",
+  "number": "6.3.3",
   "title": "",
   "body": "  The 3-dimensional vectors form an orthogonal set, which can be verified by computing Notice that this set of vectors forms a basis for .   "
 },
@@ -5846,7 +5846,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#example-orthogonal-set",
   "type": "Example",
-  "number": "6.3.3",
+  "number": "6.3.4",
   "title": "",
   "body": "  The vectors form an orthogonal set of 4-dimensional vectors. Since there are only three vectors, this set does not form a basis for . It does, however, form a basis for a 3-dimensional subspace of .   "
 },
@@ -5855,7 +5855,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-orthog-lincomb",
   "type": "Proposition",
-  "number": "6.3.4",
+  "number": "6.3.5",
   "title": "",
   "body": "  If a vector is a linear combination of an orthogonal set of vectors , then    "
 },
@@ -5864,7 +5864,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-orthog-lin-indep",
   "type": "Proposition",
-  "number": "6.3.5",
+  "number": "6.3.6",
   "title": "",
   "body": "  An orthogonal set of vectors is linearly independent.   "
 },
@@ -5873,7 +5873,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-3-12",
   "type": "Activity",
-  "number": "6.3.2",
+  "number": "6.3.7",
   "title": "",
   "body": "  Consider the vectors    Verify that this set forms an orthogonal set of -dimensional vectors.     Explain why we know that this set of vectors forms a basis for .    Suppose that . Find the weights , , and that express as a linear combination using .    If we multiply a vector by a positive scalar , the length of is also multiplied by ; that is, .   unit vector Using this observation, find a vector that is parallel to and has length 1. Such vectors are called unit vectors .     Similarly, find a unit vector that is parallel to and a unit vector that is parallel to .    Construct the matrix and find the product . Use to explain your result.          We compute the dot products , , and .    We know that an orthogonal set of vectors is linearly independent. Therefore, we have a set of three linearly independent vectors in so they must form a basis for .    We find that .    Since , we find     We find that     We find since each entry in this matrix product is the dot product of two columns of .          We compute the dot products , , and .    An orthogonal set of vectors is linearly independent.     .         We find that            "
 },
@@ -5882,7 +5882,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-3-15",
   "type": "Definition",
-  "number": "6.3.6",
+  "number": "6.3.8",
   "title": "",
   "body": " othonormal set   An orthonormal set is an orthogonal set of vectors each of which has unit length.   "
 },
@@ -5891,7 +5891,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-3-16",
   "type": "Example",
-  "number": "6.3.7",
+  "number": "6.3.9",
   "title": "",
   "body": "  The vectors are an orthonormal set of vectors in and form an orthonormal basis for .  If we form the matrix we find that since tells us that    "
 },
@@ -5900,7 +5900,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-orthonormal-QTQ",
   "type": "Proposition",
-  "number": "6.3.8",
+  "number": "6.3.10",
   "title": "",
   "body": "  If the columns of the matrix form an orthonormal set, then , the identity matrix.   "
 },
@@ -5909,7 +5909,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#fig-3d-orthog-proj",
   "type": "Figure",
-  "number": "6.3.9",
+  "number": "6.3.11",
   "title": "",
   "body": "   A plane in three dimensions, a vector not in the plane, and the orthogonal projection of that vector.   Two three dimensional vectors and and the plane that they define. There is another vector that is not in the plane. The orthogonal projection of is shown as the vector in the plane that is closest to the vector .     Given a plane in and a vector not in the plane, we wish to find the vector in the plane that is closest to .  "
 },
@@ -5918,7 +5918,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#fig-projection-line-a",
   "type": "Figure",
-  "number": "6.3.10",
+  "number": "6.3.12",
   "title": "",
   "body": "   A line in two dimensions defined by a vector and another vector not on the line.   A two dimensional vector and the line that it defines. There is another vector that is not on the line.     A line in two dimensions, a vector not on the line, and the orthogonal projection of that vector onto the line.   A two dimensional vector defines a line . There is a vector that is not on the line and its orthogonal projection onto the line . The vector is shown as being orthogonal to the line.     Given a line and a vector , we seek the vector on that is closest to .  "
 },
@@ -5927,7 +5927,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#fig-projection-line-b",
   "type": "Figure",
-  "number": "6.3.11",
+  "number": "6.3.13",
   "title": "",
   "body": "   A two dimensional diagram demonstrating how orthogonality determines the orthogonal projection.   A line is shown along with a vector , which is not on , and its orthogonal projection , which lies on . There is another vector on , and the vectors and are shown. Because is orthogonal to , there is a right triangle formed by , , and . Since is the hypotenuse of this right triangle, its length is greater than that of .     The vector is closer to than because is orthogonal to .  "
 },
@@ -5936,7 +5936,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-4-8",
   "type": "Definition",
-  "number": "6.3.12",
+  "number": "6.3.14",
   "title": "",
   "body": " orthogonal projection   Given a vector in and a subspace of , the orthogonal projection of onto is the vector in that is closest to . It is characterized by the property that is orthogonal to .   "
 },
@@ -5945,7 +5945,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-4-9",
   "type": "Activity",
-  "number": "6.3.3",
+  "number": "6.3.15",
   "title": "",
   "body": "  This activity demonstrates how to determine the orthogonal projection of a vector onto a subspace of .   Let's begin by considering a line , defined by the vector , and a vector not on , as illustrated in .     A two dimensional line, a vector not on the line, and its orthogonal complement.   A two dimensional vector defines a line . There is a vector not on as well as its orthogonal projection onto the line and the difference .     The orthogonal projection is now represented as a scalar multiple of a basis vector for the line.   This diagram contains most of the same key features as the previous diagram. There is a vector that defines the line , a vector not on line, and the orthogonal projection of onto . The key difference is that the orthogonal projection is written as , a scalar multiple of . In this way, the vector is orthogonal to , which provides a means of finding and hence .     Finding the orthogonal projection of onto the line defined by .      To find , first notice that for some scalar . Since is orthogonal to , what do we know about the dot product     Apply the distributive property of dot products to find the scalar . What is the vector , the orthogonal projection of onto ?    More generally, explain why the orthogonal projection of onto the line defined by is        The same ideas apply more generally. Suppose we have an orthogonal set of vectors and that define a plane in . If another vector in , we seek the vector on the plane closest to . As before, the vector will be orthogonal to , as illustrated in .     Finding the orthogonal projection in three dimensions.   Two orthogonal three dimensional vectors and define a plane . There is a vector not on the plane and its orthogonal projection onto . The vector is drawn as a vector orthogonal to .     Given a plane defined by the orthogonal vectors and and another vector , we seek the vector on closest to .      The vector is orthogonal to . What does this say about the dot products: and ?    Since is in the plane , we can write it as a linear combination . Then Find the weight by dotting with and applying the distributive property of dot products. Similarly, find the weight .    What is the vector , the orthogonal projection of onto the plane ?       Suppose that is a subspace of with orthogonal basis and that is a vector in . Explain why the orthogonal projection of onto is the vector     Suppose that is an orthonormal basis for ; that is, the vectors are orthogonal to one another and have unit length. Explain why the orthogonal projection is     If is the matrix whose columns are an orthonormal basis of , use to explain why .             This dot product should be 0 since the vectors are orthogonal.     .    As before,           These dot products are 0.                    We know and we can find by requiring that be orthogonal to every vector .    The vectors form an orthogonal set and since , the weights are .    We have so that              0     .               0                    We require that be orthogonal to every vector .         Use the fact that       "
 },
@@ -5954,7 +5954,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-proj-formula",
   "type": "Proposition",
-  "number": "6.3.15",
+  "number": "6.3.18",
   "title": "Projection formula.",
   "body": " Projection formula   If is a subspace of having an orthogonal basis and is a vector in , then the orthogonal projection of onto is    "
 },
@@ -5963,7 +5963,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-proj-orthonormal",
   "type": "Proposition",
-  "number": "6.3.16",
+  "number": "6.3.19",
   "title": "",
   "body": "  If is an orthonormal basis for a subspace of , then the matrix transformation that projects vectors in orthogonally onto is represented by the matrix where    "
 },
@@ -5972,7 +5972,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#example-projection-matrix",
   "type": "Example",
-  "number": "6.3.17",
+  "number": "6.3.20",
   "title": "",
   "body": "  In the previous activity, we looked at the plane defined by the two orthogonal vectors We can form an orthonormal basis by scalar multiplying these vectors to have unit length: Using these vectors, we form the matrix The projection onto the plane is then given by the matrix   Let's check that this works by considering the vector and finding , its orthogonal projection onto the plane . In terms of the original basis and , the projection formula from tells us that   Alternatively, we use the matrix , as in , to find that    "
 },
@@ -5981,7 +5981,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-4-18",
   "type": "Activity",
-  "number": "6.3.4",
+  "number": "6.3.21",
   "title": "",
   "body": "     Suppose that is the line in defined by the vector .    Find an orthonormal basis for .    Construct the matrix and use it to construct the matrix that projects vectors orthogonally onto .    Use your matrix to find , the orthogonal projection of onto .    Find and explain its geometric significance.       The vectors form an orthogonal basis of , a two-dimensional subspace of .    Use the projection formula from to find , the orthogonal projection of onto .    Find an orthonormal basis and for and use it to construct the matrix that projects vectors orthogonally onto . Check that , the orthogonal projection you found in the previous part of this activity.    Find and explain its geometric significance.    Find a basis for .    Find a vector in such that     If is the matrix whose columns are and , find the product and explain your result.                               We find that , which makes sense because , a 1-dimensional subspace of .                     since     Since , then , which gives and     We can find      since this product computes the dot products between the columns of .                                                          and                    "
 },
@@ -5990,7 +5990,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-orthog-decomp",
   "type": "Proposition",
-  "number": "6.3.18",
+  "number": "6.3.22",
   "title": "",
   "body": "  If is a subspace of with orthogonal complement , then any -dimensional vector can be uniquely written as where is in and is in . The vector is the orthogonal projection of onto and is the orthogonal projection of onto .   "
 },
@@ -5999,7 +5999,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#fig-orthog-decomp",
   "type": "Figure",
-  "number": "6.3.19",
+  "number": "6.3.23",
   "title": "",
   "body": "   A two dimensional vector orthogonally projected onto a line and the orthogonal complement of the line.   A two dimensional line and its orthogonal complement , which is another two dimensional line. There is a vector and its orthogonal projection onto and its orthogonal projection onto . This shows that .     A vector along with , its orthogonal projection onto the line , and , its orthogonal projection onto the orthogonal complement .  "
 },
@@ -6008,7 +6008,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-4-24",
   "type": "Example",
-  "number": "6.3.20",
+  "number": "6.3.24",
   "title": "",
   "body": "  Consider the orthonormal set of vectors and the matrix they define In this case, and span a plane, a 2-dimensional subspace of . We know that and projects vectors orthogonally onto the plane. However, is not a square matrix so it cannot be invertible.   "
 },
@@ -6017,7 +6017,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-4-25",
   "type": "Example",
-  "number": "6.3.21",
+  "number": "6.3.25",
   "title": "",
   "body": "  Now consider the orthonormal set of vectors and the matrix they define Here, , , and form a basis for so that both and . Therefore, is a square matrix and is invertible.  Moreover, since , we see that so finding the inverse of is as simple as writing its transpose. Matrices with this property are very special and will play an important role in our upcoming work. We will therefore give them a special name.   "
 },
@@ -6026,7 +6026,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#sec-orthogonal-bases-4-26",
   "type": "Definition",
-  "number": "6.3.22",
+  "number": "6.3.26",
   "title": "",
   "body": "  orthogonal matrix  A square matrix whose columns form an orthonormal basis for is called orthogonal .   "
 },
@@ -6035,7 +6035,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#prop-orthog-matrix",
   "type": "Proposition",
-  "number": "6.3.23",
+  "number": "6.3.27",
   "title": "",
   "body": "  An orthogonal matrix is invertible and its inverse .   "
 },
@@ -6044,7 +6044,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#ula-proteus-6-3-determining-weights-from-dot-products",
   "type": "Checkpoint",
-  "number": "6.3.24",
+  "number": "6.3.28",
   "title": "Determining weights from dot products.",
   "body": " Determining weights from dot products   Suppose that is an orthogonal basis of and that , , and . Suppose that is a vector in satisfying , , and .  Fill in the weights:        .                     "
 },
@@ -6053,7 +6053,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#ula-proteus-6-3-reasoning-orthog-basis",
   "type": "Checkpoint",
-  "number": "6.3.25",
+  "number": "6.3.29",
   "title": "Reasoning about an orthogonal basis.",
   "body": " Reasoning about an orthogonal basis   Suppose that is an orthogonal set spanning a -dimensional subspace of and that . Determine whether each of the following statements is Always True, Never True, or Sometimes True.     is a diagonal matrix.  If , then is an orthonormal set.  .  Always true    is the orthogonal projection of onto .  Sometimes true     is invertible.  .   Never True    "
 },
@@ -6062,7 +6062,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#ula-proteus-6-1-othogonalsort-v1",
   "type": "Checkpoint",
-  "number": "6.3.26",
+  "number": "6.3.30",
   "title": "Determining orthogonality.",
   "body": " Determining orthogonality   For the following sets of vectors, determine if they are orthonormal, orthogonal but not orthonormal, linearly independent but not orthogonal, or not linearly independent.       Linearly independent, not orthogonal     Orthogonal, not orthonormal      Orthonormal     Not linearly independent    "
 },
@@ -6071,7 +6071,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#ula-proteus-6-3-matching-orthog-proj",
   "type": "Checkpoint",
-  "number": "6.3.27",
+  "number": "6.3.31",
   "title": "Reasoning about orthogonal projections.",
   "body": " Reasoning about orthogonal projections   Suppose that is a -dimensional subspace of , that is a nonzero vector in , and that is the orthogonal projection of onto . Suppose also that is a matrix whose columns form an orthonormal basis for . Determine whether each of the following statements is Always True, Never True, or Sometimes True.     is the vector in that is closest to .  is in .  .  If , then is in .  .  Always True    If , then is in .  .  If , then is in .  Never True    Sometimes True    "
 },
@@ -6080,7 +6080,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-orthogonal-bases.html#ula-proteus-6-3-process-for-decomposing-a-vector",
   "type": "Checkpoint",
-  "number": "6.3.28",
+  "number": "6.3.32",
   "title": "Writing a vector as a sum of a vector in <span class=\"process-math\">\\(W\\)<\/span> and a vector orthogonal to <span class=\"process-math\">\\(W\\)<\/span>.",
   "body": " Writing a vector as a sum of a vector in and a vector orthogonal to   Suppose is an orthogonal basis of a subspace of . Drag some of the following blocks to create a list of steps that will write a vector in as where is in and is in .     Divide each of the vectors , , and by its length to give an orthonormal basis of .    Let .    Find .    Compute .    Compute .    Check that , is in , and is in .    Let .    Find .    Compute .    "
 },
@@ -6197,7 +6197,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#sec-gram-schmidt-2-4",
   "type": "Videos",
-  "number": "",
+  "number": "6.4",
   "title": "",
   "body": "            "
 },
@@ -6206,7 +6206,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#fig-proj-orthog",
   "type": "Figure",
-  "number": "6.4.3",
+  "number": "6.4.4",
   "title": "",
   "body": "   Orthogonally projecting a three dimensional vector onto a plane.   Two orthogonal vectors and and the plane they define in three dimensions. A vector and its orthogonal projection onto is shown along with the vector , which is orthogonal to .     If is the orthogonal projection of onto , then is orthogonal to .  "
 },
@@ -6215,7 +6215,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#activity-gram-schmidt",
   "type": "Activity",
-  "number": "6.4.2",
+  "number": "6.4.5",
   "title": "",
   "body": "  Suppose that is a three-dimensional subspace of with basis: We can see that this basis is not orthogonal by noting that . Our goal is to create an orthogonal basis , , and for .  To begin, we declare that , and we call the line defined by .      Find the vector that is the orthogonal projection of onto , the line defined by .    Form the vector and verify that it is orthogonal to .    Explain why by showing that any linear combination of and can be written as a linear combination of and and vice versa.    The vectors and are an orthogonal basis for a two-dimensional subspace of . Find the vector that is the orthogonal projection of onto .    Verify that is orthogonal to both and .    Explain why , , and form an orthogonal basis for .    Now find an orthonormal basis for .           .         We have and . Therefore, a linear combination of and can be rewritten as In the same way, and so any linear combination of and can be rewritten as a linear combination of and .    By the Projection Formula, .         We can check that , , and form an orthogonal set. Since can be written in terms of and vice-versa, these new vectors form a basis for .                .         We have and so a linear combination of and can be rewritten as a linear combination of and .     .         Since can be written in terms of and vice-versa, these new vectors form a basis for .           "
 },
@@ -6224,7 +6224,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#example-gram-schmidt",
   "type": "Example",
-  "number": "6.4.4",
+  "number": "6.4.6",
   "title": "",
   "body": "  Let's start with the basis which is a basis for .  To get started, we'll simply set . We construct from by subtracting its orthogonal projection onto , the line defined by . This gives   Notice that we found . Therefore, we can rewrite any linear combination of and as a linear combination of and . This tells us that In other words, and is a orthogonal basis for , the 2-dimensional subspace that is the span of and .  Finally, we form from by subtracting its orthogonal projection onto :   We can now check that is an orthogonal set. Furthermore, we have, as before, , which says that we have found a new orthogonal basis for .  To create an orthonormal basis, we form unit vectors parallel to each of the vectors in the orthogonal basis:    "
 },
@@ -6233,7 +6233,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#sec-gram-schmidt-3-10",
   "type": "Activity",
-  "number": "6.4.3",
+  "number": "6.4.7",
   "title": "",
   "body": "  Sage can automate these computations for us. Before we begin, however, it will be helpful to understand how we can combine things using a list in Python. For instance, if the vectors v1 , v2 , and v3 form a basis for a subspace, we can bundle them together using square brackets: [v1, v2, v3] . Furthermore, we could assign this to a variable, such as basis = [v1, v2, v3] .  Evaluating the following cell will load in some special commands.    There is a command to apply the projection formula: projection(b, basis) returns the orthogonal projection of b onto the subspace spanned by basis , which is a list of vectors.    The command unit(w) returns a unit vector parallel to w .    Given a collection of vectors, say, v1 and v2 , we can form the matrix whose columns are v1 and v2 using matrix([v1, v2]).T . When given a list of vectors, Sage constructs a matrix whose rows are the given vectors. For this reason, we need to apply the transpose.     Let's now consider , the subspace of having basis    Apply the Gram-Schmidt algorithm to find an orthogonal basis , , and for .     Find , the orthogonal projection of onto .    Explain why we know that is a linear combination of the original vectors , , and and then find weights so that     Find an orthonormal basis , , for for and form the matrix whose columns are these vectors.     Find the product and explain the result.    Find the matrix that projects vectors orthogonally onto and verify that gives , the orthogonal projection that you found earlier.                    We know that is in and , , and is a basis for . We find .          since the matrix product computes the dot products of the columns of .                          .                     "
 },
@@ -6242,7 +6242,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#sec-gram-schmidt-4-3",
   "type": "Activity",
-  "number": "6.4.4",
+  "number": "6.4.8",
   "title": "",
   "body": "  Suppose that is the matrix whose columns are These vectors form a basis for , the subspace of that we encountered in . Since these vectors are the columns of , we have .    When we implemented Gram-Schmidt, we first found an orthogonal basis , , and using Use these expressions to write , , and as linear combinations of , , and .    We next normalized the orthogonal basis , , and to obtain an orthonormal basis , , and .  Write the vectors as scalar multiples of . Then use these expressions to write , , and as linear combinations of , , and .    Suppose that . Use the result of the previous part to find a vector so that .    Then find vectors and such that and .    Construct the matrix . Remembering that , explain why .    What is special about the shape of ?    Suppose that is a matrix whose columns are linearly independent. This means that the columns of form a basis for , a 6-dimensional subspace of . Suppose that we apply Gram-Schmidt orthogonalization to create an orthonormal basis whose vectors form the columns of and that we write . What are the shape of and what the shape of ?           Therefore,      so we have This leads to     Since , we have .    In the same way, we have and .    We have .     so is upper triangular.     will be and will be a upper triangular matrix.                     .     and .    We have .     is upper triangular.     will be and will be .      "
 },
@@ -6251,7 +6251,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#prop-qr",
   "type": "Proposition",
-  "number": "6.4.5",
+  "number": "6.4.9",
   "title": "<span class=\"process-math\">\\(QR\\)<\/span> factorization.",
   "body": "  factorization  If is an matrix whose columns are linearly independent, we may write where is an matrix whose columns form an orthonormal basis for and is an upper triangular matrix.  "
 },
@@ -6260,7 +6260,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#sec-gram-schmidt-4-6",
   "type": "Example",
-  "number": "6.4.6",
+  "number": "6.4.10",
   "title": "",
   "body": "  We'll consider the matrix whose columns, which we'll denote , , and , are the basis of that we considered in . There we found an orthogonal basis , , and that satisfied   In terms of the resulting orthonormal basis , , and , we had so that   Therefore, if , we have the factorization    "
 },
@@ -6269,7 +6269,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#sec-gram-schmidt-4-8",
   "type": "Activity",
-  "number": "6.4.5",
+  "number": "6.4.11",
   "title": "",
   "body": "  As before, we would like to use Sage to automate the process of finding and using the factorization of a matrix . Evaluating the following cell provides a command QR(A) that returns the factorization, which may be stored using, for example, Q, R = QR(A) .   Suppose that is the following matrix whose columns are linearly independent.    If , what is the shape of and ? What is special about the form of ?    Find the factorization using Q, R = QR(A) and verify that has the predicted shape and that .     Find the matrix that orthogonally projects vectors onto .    Find , the orthogonal projection of onto .    Explain why the equation must be consistent and then find .           is and is a upper triangular matrix.    We see that               Since is in , the system must be consistent. We find a solution by augmenting by and row reducing: .           is and is a upper triangular matrix.    We see that                .      "
 },
@@ -6278,7 +6278,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#ula-proteus-6-4-short-ans-gram-schmidt",
   "type": "Checkpoint",
-  "number": "6.4.7",
+  "number": "6.4.12",
   "title": "Describing the Gram-Schmidt algorithm.",
   "body": " Describing the Gram-Schmidt algorithm   Use a couple of sentences to respond to each of the following prompts.     What is the purpose of the Gram-Schmidt algorithm?       Suppose that , , , and form a basis for a subspace of . The third step of the Gram-Schmidt algorithm would involve computing . What goal does this step accomplish in the Gram-Schmidt algorithm and why does this specific computation achieve this goal?       Why would it not be appropriate to compute the following in the third step of the algorithm: ?    For instance, why should you use and in this expression?     "
 },
@@ -6287,7 +6287,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#ula-proteus-6-4-parsons-problem-for-gram-schmit",
   "type": "Checkpoint",
-  "number": "6.4.8",
+  "number": "6.4.13",
   "title": "Using Gram-Schmidt to obtain an orthonormal basis.",
   "body": " Using Gram-Schmidt to obtain an orthonormal basis   Suppose is a basis of and that you want to use the Gram-Schmidt process to create an orthonormal basis of . Drag some of the following blocks to create a list of steps that will accomplish this.     Set .    Find the orthogonal projection of onto .    Compute .    Find the orthogonal projection of onto .    Compute .    Scale each of the vectors , , and to give an orthonormal basis of .    Scale each of the vectors , , and to give an orthonormal basis of .    Find the orthogonal projection of onto .    Compute .    Compute .    "
 },
@@ -6296,7 +6296,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#ula-proteus-6-4-matrix-sizes-and-products-in-QR-factorization",
   "type": "Checkpoint",
-  "number": "6.4.9",
+  "number": "6.4.14",
   "title": "The shapes of a <span class=\"process-math\">\\(QR\\)<\/span>-factorization.",
   "body": " The shapes of a -factorization   Suppose is a matrix with linearly independent columns, and suppose is the -factorization of .  Provide numerical responses in the boxes below.  The matrix has rows and columns.  The matrix has rows and columns.  The matrix has rows and columns.  The matrix has rows and columns.                                             "
 },
@@ -6305,7 +6305,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-gram-schmidt.html#ula_proteus_Section_6_4_QR_Factorization_True_False",
   "type": "Checkpoint",
-  "number": "6.4.10",
+  "number": "6.4.15",
   "title": "Evaluating the truth or falsity of statements about the <span class=\"process-math\">\\(QR\\)<\/span>-factorization.",
   "body": " Evaluating the truth or falsity of statements about the -factorization    Suppose is a matrix with linearly independent columns and is the -factorization of .  Drag each of the following statements to the appropriate response.      is the identity matrix of the appropriate size.   is an invertible matrix.  The columns of form an orthonormal basis of .  Never True     is the identity matrix of the appropriate size.   is an invertible matrix.   .  The columns of form an orthonormal basis of .  Always True     is is a diagonal matrix.  Sometimes True    "
 },
@@ -6404,7 +6404,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#ula-preview-6-5",
   "type": "Preview Activity",
-  "number": "6.5.1",
+  "number": "6.5.2",
   "title": "",
   "body": "   Is there a solution to the equation where and are such that .     The reduced row echelon form shows that there is no solution.      We know that and form a basis for . Find an orthogonal basis for .    Applying Gram-Schmidt, we find an orthogonal basis consisting of and .      Find the orthogonal projection of onto .    The projection formula gives .      Explain why the equation must be consistent and then find its solution.    The equation is consistent because is in . We find the solution .    "
 },
@@ -6413,7 +6413,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-2-5",
   "type": "Videos",
-  "number": "",
+  "number": "6.5",
   "title": "",
   "body": "            "
 },
@@ -6422,7 +6422,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-3-3",
   "type": "Activity",
-  "number": "6.5.2",
+  "number": "6.5.3",
   "title": "",
   "body": "  Suppose we have three data points , , and and that we would like to find a line passing through them.   Plot these three points in . Are you able to draw a line that passes through all three points?    A two dimensional coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     Plot the three data points here.      Remember that the equation of a line can be written as where is the slope and is the -intercept. We will try to find and so that the three points lie on the line.  The first data point gives an equation for and . In particular, we know that when , then so we have or . Use the other two data points to create a linear system describing and .    We have obtained a linear system having three equations, one from each data point, for the two unknowns and . Identify a matrix and vector so that the system has the form , where .  Notice that the unknown vector describes the line that we seek.    Is there a solution to this linear system? How does this question relate to your attempt to draw a line through the three points above?     Since this system is inconsistent, we know that is not in the column space . Find an orthogonal basis for and use it to find the orthogonal projection of onto .    Since is in , the equation is consistent. Find its solution and sketch the line in . We say that this is the line of best fit.          After plotting the points, we see that it's not possible to draw a line through all three points.    We have the equations     We have and .    Finding the reduced row echelon form of the associated augmented matrix tells us this is an inconsistent system. Since a solution would describe a line passing through the three points, we should expect this.    Applying Gram-Schmidt gives us the orthogonal basis and . Projecting onto gives .    Solving the equation gives , which describes a line having vertical intercept and the slope . This line is shown in .      The line that best approximates the three data points.           It's not possible to draw a line through all three points.    We have the equations     We have and .    This linear system is inconsistent.     .     . This line is shown in .      The line that best approximates the three data points.       "
 },
@@ -6431,7 +6431,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#fig-least-squares-def",
   "type": "Figure",
-  "number": "6.5.5",
+  "number": "6.5.7",
   "title": "",
   "body": "   Three data points, the least squares line, and vertical lines from the points to the line.   Three data points from the last activity and the line given as the solution to the least squares problem. There are vertical line segments from each of the data points to the least squares line that demonstrate the degree to which the line misses the points.     The solution of the least-squares problem and the vertical distances between the line and the data points.  "
 },
@@ -6440,7 +6440,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-4-6",
   "type": "Proposition",
-  "number": "6.5.6",
+  "number": "6.5.8",
   "title": "",
   "body": "  If the columns of are linearly independent, then there is a unique least-squares approximate solution to the equation given by the normal equation    "
 },
@@ -6449,7 +6449,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-4-7",
   "type": "Example",
-  "number": "6.5.7",
+  "number": "6.5.9",
   "title": "",
   "body": " Consider the equation with matrix and vector . Since this equation is inconsistent, we will find the least-squares approximate solution by solving the normal equation , which has the form and the solution .  "
 },
@@ -6458,7 +6458,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-4-8",
   "type": "Activity",
-  "number": "6.5.3",
+  "number": "6.5.10",
   "title": "",
   "body": "  The rate at which a cricket chirps is related to the outdoor temperature, as reflected in some experimental data that we'll study in this activity. The chirp rate is expressed in chirps per second while the temperature is in degrees Fahrenheit. Evaluate the following cell to load the data: Evaluating this cell also provides:   the vectors chirps and temps formed from the columns of the dataset.    the command onesvec(n) , which creates an -dimensional vector whose entries are all one.    Remember that you can form a matrix whose columns are the vectors v1 and v2 with matrix([v1, v2]).T .     We would like to represent this relationship by a linear function    Use the first data point to write an equation involving and .    Suppose that we represent the unknowns using a vector . Use the 15 data points to create the matrix and vector so that the linear system describes the unknown vector .     Write the normal equations ; that is, find the matrix and the vector .    Solve the normal equations to find , the least-squares approximate solution to the equation . Call your solution xhat since x has another meaning in Sage.   What are the values of and that you found?    If the chirp rate is 22 chirps per second, what is your prediction for the temperature?  You can plot the data and your line, assuming you called the solution xhat , using the cell below.           We have the equation .     is the matrix whose first column consists only of 1's and whose second column is the vector of chirp rates. The vector is the vector of temperatures.     and      .    The predicted temperature is degrees.           .     is the matrix whose first column consists only of 1's and whose second column is the vector of chirp rates. The vector is the vector of temperatures.     and      .     degrees.      "
 },
@@ -6467,7 +6467,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#fig-regression-scale",
   "type": "Figure",
-  "number": "6.5.8",
+  "number": "6.5.11",
   "title": "",
   "body": "   Three data points, the least squares line, and vertical line segments from the points to the line.   The three data points from the activity, the least squares line, and vertical line segments from the data points to the line indicating the degree to which the line misses the points.     A similar set of three data points whose coordinates have been multiplied by a factor of 10.   This diagram is similar to the previous one, except the coordinates of the data points have been scaled by a factor of . For example, the point in the original data set has been scaled to in this set. The least squares line and vertical line segments from the points to the line also appear. The key observation is that the two diagrams look exactly the same except for the scale on the axes.     The lines appear to fit equally well in spite of the fact that differs by a factor of 100.  "
 },
@@ -6476,7 +6476,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-4-14",
   "type": "Definition",
-  "number": "6.5.9",
+  "number": "6.5.12",
   "title": "Coefficient of determination.",
   "body": " Coefficient of determination  coefficient of determination  R squared   The coefficient of determination is where is the vector obtained by demeaning .   "
 },
@@ -6485,7 +6485,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#activity-BFI",
   "type": "Activity",
-  "number": "6.5.4",
+  "number": "6.5.13",
   "title": "",
   "body": "     Suppose we are interested in finding the least-squares approximate solution to the equation and that we have the factorization . Explain why the least-squares approximate solution is given by solving     Multiply both sides of the second expression by and explain why   Since is upper triangular, this is a relatively simple equation to solve using back substitution. We will therefore write the least-squares approximate solution as and put this to use in the following context.    Brozak’s formula, which is used to calculate a person's body fat index , is where denotes a person's body density in grams per cubic centimeter. Obtaining an accurate measure of is difficult, however, because it requires submerging the person in water and measuring the volume of water displaced. Instead, we will gather several other body measurements, which are more easily obtained, and use it to predict .  For instance, suppose we take 10 patients and measure their weight in pounds, height in inches, abdomen in centimeters, wrist circumference in centimeters, neck circumference in centimeters, and . Evaluating the following cell loads and displays the data. In addition, that cell provides:   vectors weight , height , abdomen , wrist , neck , and BFI formed from the columns of the dataset.    the command onesvec(n) , which returns an -dimensional vector whose entries are all one.    the command QR(A) that returns the factorization of as Q, R = QR(A) .    the command demean(v) , which returns the demeaned vector .     We would like to find the linear function that best fits the data.  Use the first data point to write an equation for the parameters .    Describe the linear system for these parameters. More specifically, describe how the matrix and the vector are formed.    Construct the matrix and find its factorization in the cell below.     Find the least-squares approximate solution by solving the equation . You may want to use N(xhat) to display a decimal approximation of the vector. What are the parameters that best fit the data?    Find the coefficient of determination for your parameters. What does this imply about the quality of the fit?     Suppose a person's measurements are: weight 190, height 70, abdomen 90, wrist 18, and neck 35. Estimate this person's .          The columns of form an orthonormal basis for so that . The equation then becomes .    Since , we have , which gives .          is the matrix whose columns are a vector of all 1's followed by the vectors of weights, heights, abdominal, wrist, and neck measurements. The vector is the vector of BFI readings.     is a matrix and is a upper triangular matrix.    We find that          Evaluating           Use the fact that .    Use the fact that .          is the matrix whose columns are a vector of all 1's followed by the vectors of weights, heights, abdominal, wrist, and neck measurements. The vector is the vector of BFI readings.     is a matrix and is a upper triangular matrix.    We find that          Evaluating       "
 },
@@ -6494,7 +6494,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-5-6",
   "type": "Proposition",
-  "number": "6.5.10",
+  "number": "6.5.14",
   "title": "",
   "body": "  If the columns of are linearly independent and we have the factorization , then the least-squares approximate solution to the equation is given by    "
 },
@@ -6503,7 +6503,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-6-3",
   "type": "Activity",
-  "number": "6.5.5",
+  "number": "6.5.15",
   "title": "",
   "body": "     Suppose that we have a small dataset containing the points , , , and , such as appear when the following cell is evaluated. In addition to loading and plotting the data, evaluating that cell provides the following commands:    Q, R = QR(A) returns the factorization of .     demean(v) returns the demeaned vector .     Let's fit a quadratic function of the form to this dataset.  Write four equations, one for each data point, that describe the coefficients , , and .    Express these four equations as a linear system where .  Find the factorization of and use it to find the least-squares approximate solution .     Use the parameters , , and that you found to write the quadratic function that fits the data. You can plot this function, along with the data, by entering your function in the place indicated below.     What is your predicted value when ?    Find the coefficient of determination for the quadratic function. What does this say about the quality of the fit?    Now fit a cubic polynomial of the form to this dataset.     Find the coefficient of determination for the cubic function. What does this say about the quality of the fit?    What do you notice when you plot the cubic function along with the data? How does this reflect the value of that you found?           We have the equations     With and , we find     The quadratic function is .    The predicted value is .         We find .     , which means that we have a perfect fit.    The graph of the cubic function passes through each data point.          We have the equations           .     .          .         The graph of the cubic function passes through each data point.      "
 },
@@ -6512,7 +6512,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#sec-least-squares-6-5",
   "type": "Activity",
-  "number": "6.5.6",
+  "number": "6.5.16",
   "title": "",
   "body": "  This activity explores a dataset describing Arctic sea ice and that comes from Sustainability Math.   Evaluating the cell below will plot the extent of Arctic sea ice, in millions of square kilometers, during the twelve months of 2012. In addition, you have access to a few special variables and commands:    month is the vector of month values and ice is the vector of sea ice values from the table above.     vandermonde(x, k) constructs the Vandermonde matrix of degree using the points in the vector x .     Q, R = QR(A) provides the factorization of .     demean(v) returns the demeaned vector .        Find the vector , the least-squares approximate solution to the linear system that results from fitting a degree 5 polynomial to the data.     If your result is stored in the variable xhat , you may plot the polynomial and the data together using the following cell.     Find the coefficient of determination for this polynomial fit.    Repeat these steps to fit a degree 8 polynomial to the data, plot the polynomial with the data, and find .     Repeat one more time by fitting a degree 11 polynomial to the data, creating a plot, and finding .   It's certainly true that higher degree polynomials fit the data better, as seen by the increasing values of , but that's not always a good thing. For instance, when , you may notice that the graph of the polynomial wiggles a little more than we would expect. In this case, the polynomial is trying too hard to fit the data, which usually contains some uncertainty, especially if it's obtained from measurements. The error built in to the data is called noise, and its presence means that we shouldn't expect our polynomial to fit the data perfectly. When we choose a polynomial whose degree is too high, we give the noise too much weight in the model, which leads to some undesirable behavior, like the wiggles in the graph.  Fitting the data with a polynomial whose degree is too high is called overfitting , a phenomenon that can appear in many machine learning applications. Generally speaking, we would like to choose large enough to capture the essential features of the data but not so large that we overfit and build the noise into the model. There are ways to determine the optimal value of , but we won't pursue that here.    Choosing a reasonable value of , estimate the extent of Arctic sea ice at month 6.5, roughly at the Summer Solstice.               The fifth degree polynomial fits the data fairly well.          .          seems like a good choice, and this gives the prediction of million square kilometers of sea ice.               The fifth degree polynomial fits the data fairly well.          .          million square kilometers of sea ice.      "
 },
@@ -6521,7 +6521,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-least-squares.html#ula-proteus-6-5-finding-least-squares-approximate-solution-for-linear-system",
   "type": "Checkpoint",
-  "number": "6.5.11",
+  "number": "6.5.17",
   "title": "Finding and using eigenvectors.",
   "body": " Finding and using eigenvectors   Consider the linear system of equations given by . The Sage cell below loads many of the commands that we have used in this section.      Find the reduced row echelon form of the augmented matrix corresponding to this linear system and explain why this shows that the system is inconsistent.       This system can be written in the form . What does the fact that the linear system is inconsistent say about the relationship between and ? Explain your thinking.       Determine a matrix such that is the orthogonal projection of onto .       Use the matrix found in the previous part to find the orthogonal projection of onto .       With and as in the previous part, find the solution to the linear system . Explain the significance of the solution as it relates to the original linear system .     "
 },
@@ -6632,6 +6632,276 @@ var ptx_lunr_docs = [
   "number": "6.5.6.12",
   "title": "",
   "body": "  This problem is about the meaning of the coefficient of determination and its connection to variance, a topic that appears in the next section. Throughout this problem, we consider the linear system and the approximate least-squares solution , where . We suppose that is an matrix, and we will denote the -dimensional vector .     Explain why , the mean of the components of , can be found as the dot product     In the examples we have seen in this section, explain why is in .    If we write , explain why and hence why the mean of the components of is zero.    The variance of an -dimensional vector is , where is the vector obtained by demeaning .  Explain why     Explain why and hence   These expressions indicate why it is sometimes said that measures the fraction of variance explained by the function we are using to fit the data. As seen in the previous exercise, there may be other features that are not recorded in the dataset that influence the quantity we wish to predict.    Explain why .           simply sums the components of .    The examples we've seen fit the data using functions that have a constant term such as . This means that will be a column of the matrix and hence in .    Since is in , any vector in , such as , will be orthogonal to .    Notice that which says that Since and are orthogonal, we have . This means that so that .     , which explains why Then     The variances are nonnegative so we have . Also,            simply sums the components of .     is a column of .     is in .    Use the fact that and are orthogonal.    This follows from .    This follow from .      "
+},
+{
+  "id": "sec-symmetric-matrices",
+  "level": "1",
+  "url": "sec-symmetric-matrices.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Symmetric matrices and variance",
+  "body": " Symmetric matrices and variance   In this section, we will revisit the theory of eigenvalues and eigenvectors for the special class of matrices that are symmetric , meaning that the matrix equals its transpose. This understanding of symmetric matrices will enable us to form singular value decompositions later in the chapter. We'll also begin studying variance in this section as it provides an important context that motivates some of our later work.  To begin, remember that if is a square matrix, we say that is an eigenvector of with associated eigenvalue if . In other words, for these special vectors, the operation of matrix multiplication simplifies to scalar multiplication.    This preview activity reminds us how a basis of eigenvectors can be used to relate a square matrix to a diagonal one.     A coordinate grid and set of axes.   A standard coordinate grid and set of axes. Both the horizontal and vertical ranges run from to .     A coordinate grid and set of axes.   A standard coordinate grid and set of axes. Both the horizontal and vertical ranges run from to .     Use these plots to sketch the vectors requested in the preview activity.      Suppose that and that and .   Sketch the vectors and on the left side of .    Sketch the vectors and on the left side of .    Sketch the vectors and on the left side.    Give a geometric description of the matrix transformation defined by .                          stretches vectors horizontally by a factor of 3 and reflects them in the horizontal axis.         Now suppose we have vectors and and that is a matrix such that . That is, and are eigenvectors of with associated eigenvalues and .   Sketch the vectors and on the right side of .    Sketch the vectors and on the right side of .    Sketch the vectors and on the right side.    Give a geometric description of the matrix transformation defined by .                          stretches vectors in the direction of by a factor of 3 and reflects them in the line defined by .         In what ways are the matrix transformations defined by and related to one another?    The effect of the two transformations are the same when viewed in the coordinate systems given by the appropriate set of vectors.      The preview activity asks us to compare the matrix transformations defined by two matrices, a diagonal matrix and a matrix whose eigenvectors are given to us. The transformation defined by stretches horizontally by a factor of 3 and reflects in the horizontal axis, as shown in      The transformation of the plane by a diagonal matrix.   On the left is a standard coordinate grid, a set of axes, and the unit square whose vertices are at the origin, , , and .  The diagram on the right shows these features after they have been transformed by the diagonal matrix . The coordinate grid is stretched horizontally by a factor of , and the unit square is transformed into a rectangle whose vertices are at the origin, , , and . This rectangle is obtained by stretching the unit square horizontally by a factor of and flipping it over the horizontal axis.     The matrix transformation defined by .   By contrast, the transformation defined by stretches the plane by a factor of 3 in the direction of and reflects in the line defined by , as seen in .     The transformation of the plane by the matrix A.   On the left is a coordinate grid that has been rotated counterclockwise by degrees so that the grid lines are parallel to the eigenvectors of . The unit square has also been rotated.  The diagram on the right shows how the grid and square are transformed by the matrix . The grid has been stretched by a factor of in the direction of the eigenvector . The square has also been stretched by a factor of in the direction of and reflected across the line defined by .  The diagram is much like the previous one only rotated by degrees so that the axes have been rotated to align with the eigenvectors.     The matrix transformation defined by .   In this way, we see that the matrix transformations defined by these two matrices are equivalent after a rotation. This notion of equivalence is what we called similarity in . There we considered a square matrix that provided enough eigenvectors to form a basis of . For example, suppose we can construct a basis for using eigenvectors having associated eigenvalues . Forming the matrices, enables us to write . This is what it means for to be diagonalizable.  For the example in the preview activity, we are led to form which tells us that .  Notice that the matrix has eigenvectors and that not only form a basis for but, in fact, form an orthogonal basis for . Given the prominent role played by orthogonal bases in the last chapter, we would like to understand what conditions on a matrix enable us to form an orthogonal basis of eigenvectors.    Symmetric matrices and orthogonal diagonalization  Let's begin by looking at some examples in the next activity.    Remember that the Sage command A.right_eigenmatrix() attempts to find a basis for consisting of eigenvectors of . In particular, the assignment D, P = A.right_eigenmatrix() provides a diagonal matrix constructed from the eigenvalues of with the columns of containing the associated eigenvectors.    For each of the following matrices, determine whether there is a basis for consisting of eigenvectors of that matrix. When there is such a basis, form the matrices and and verify that the matrix equals .    .     .     .     .       For which of these examples is it possible to form an orthogonal basis for consisting of eigenvectors?    For any such matrix , find an orthonormal basis of eigenvectors and explain why where is an orthogonal matrix.    Finally, explain why in this case.    When , what is the relationship between and ?             The eigenvalues of this matrix are complex so there is no such basis.    There is one eigenvalue with multiplicity two. The associated eigenspace is one-dimensional so there is not a basis of consisting of eigenvectors.    This matrix is diagonalizable with     This matrix is also diagonalizable with        Only the last matrix .    We form an orthonormal basis by scaling the eigenvectors to have length 1. This gives , which is orthogonal since the columns form an orthonormal basis of .    Orthogonal matrices are invertible and have     If , we have . This means that the matrix is symmetric.             There is no such basis.    There is no such basis.    This matrix is diagonalizable with     This matrix is also diagonalizable with        Only the last matrix.                      The examples in this activity illustrate a range of possibilities. First, a matrix may have complex eigenvalues, in which case it will not be diagonalizable. Second, even if all the eigenvalues are real, there may not be a basis of eigenvalues if the dimension of one of the eigenspaces is less than the algebraic multiplicity of the associated eigenvalue.  We are interested in matrices for which there is an orthogonal basis of eigenvectors. When this happens, we can create an orthonormal basis of eigenvectors by scaling each eigenvector in the basis so that its length is 1. Putting these orthonormal vectors into a matrix produces an orthogonal matrix, which means that . We then have In this case, we say that is orthogonally diagonalizable .   orthogonal diagonalization   If there is an orthonormal basis of consisting of eigenvectors of the matrix , we say that is orthogonally diagonalizable . In particular, we can write where is an orthogonal matrix.    When is orthogonally diagonalizable, notice that That is, when is orthogonally diagonalizable, and we say that is symmetric .   symmetric matrix   A symmetric matrix is one for which .      Consider the matrix , which has eigenvectors , with associated eigenvalue , and , with associated eigenvalue . Notice that and are orthogonal so we can form an orthonormal basis of eigenvectors:   In this way, we construct the matrices and note that .  Notice also that, as expected, is symmetric; that is, .      If , then there is an orthogonal basis of eigenvectors and with eigenvalues and . Using these eigenvectors, we form the orthogonal matrix consisting of eigenvectors and the diagonal matrix , where Then we have .  Notice that the matrix transformation represented by is a rotation while that represented by is a rotation. Therefore, if we multiply a vector by , we can decompose the multiplication as That is, we first rotate by , then apply the diagonal matrix , which stretches and reflects, and finally rotate by . We may visualize this factorization as in .     The transformation of the plane by the matrix A broken into steps defined by the orthogonal diagonalization.   Our goal is to explain the transformation of the plane by , which was described in , using the orthogonal diagonalization . There are four diagrams here arranged in a array, which will be read from left to right and then top to bottom. The transformation from one diagram to the next is given by one of the factors in the orthogonal diagonalization .  The diagram in the upper left shows a coordinate grid and unit square rotated counterclockwise by degrees. The matrix , the first factor in the orthogonal diagonalization, rotates this diagram clockwise by degrees to obtain the diagram in the upper right. Here we see the standard coordinate grid and the unit square.  The diagram in the lower left is the result of applying the next matrix in the factorization, which we have already explored. The coordinate grid is stretched horiztonally by a factor of , and the unit square is transformed into a rectangle by stretching horizontally by a factor of and flipping across the horizontal axis.  Finally the diagram in the lower right results from applying the last matrix in the factorization, which rotates the previous diagram counterclockwise by degrees.     The transformation defined by can be interpreted as a sequence of geometric transformations: rotates by , stretches and reflects, and rotates by .   In fact, a similar picture holds any time the matrix is orthogonally diagonalizable.    We have seen that a matrix that is orthogonally diagonalizable must be symmetric. In fact, it turns out that any symmetric matrix is orthogonally diagonalizable. We record this fact in the next theorem.   The Spectral Theorem   The matrix is orthogonally diagonalizable if and only if is symmetric.      Each of the following matrices is symmetric so the Spectral Theorem tells us that each is orthogonally diagonalizable. The point of this activity is to find an orthogonal diagonalization for each matrix.  To begin, find a basis for each eigenspace. Use this basis to find an orthogonal basis for each eigenspace and put these bases together to find an orthogonal basis for consisting of eigenvectors. Use this basis to write an orthogonal diagonalization of the matrix.     .     .     .    Consider the matrix where . Explain how we know that is symmetric and then find an orthogonal diagonalization of .          We have eigenvectors and with associated eigenvalues and . We form an orthonormal basis of eigenvectors, and . This gives     We find     We have eigenvalues with associated eigenvector and with associated eigenvectors and . Notice that is orthogonal to both and , but and are not orthogonal to one another. We can, however, apply Gram-Schmidt to create an orthogonal basis of the eigenspace . We can then form an orthonormal basis so that     We have so must be symmetric. Then we find the orthogonal diagonalization                                  As the examples in illustrate, the Spectral Theorem implies a number of things. Namely, if is a symmetric matrix, then   the eigenvalues of are real.    there is a basis of consisting of eigenvectors.    two eigenvectors that are associated to different eigenvalues are orthogonal.     We won't justify the first two facts here since that would take us rather far afield. However, it will be helpful to explain the third fact. To begin, notice the following: This is a useful fact that we'll employ quite a bit in the future so let's summarize it in the following proposition.    For any matrix , we have In particular, if is symmetric, then       Suppose a symmetric matrix has eigenvectors , with associated eigenvalue , and , with associated eigenvalue . Notice that Since by , we have which can only happen if . Therefore, and are orthogonal.  More generally, the same argument shows that two eigenvectors of a symmetric matrix associated to distinct eigenvalues are orthogonal.      Variance  Many of the ideas we'll encounter in this chapter, such as orthogonal diagonalizations, can be applied to the study of data. In fact, it can be useful to understand these applications because they provide an important context in which mathematical ideas have a more concrete meaning and their motivation appears more clearly. For that reason, we will now introduce the statistical concept of variance as a way to gain insight into the significance of orthogonal diagonalizations.  Given a set of data points, their variance measures how spread out the points are. The next activity looks at some examples.    We'll begin with a set of three data points    Find the centroid, or mean, . Then plot the data points and their centroid in .     A standard coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     Plot the data points and their centroid here.     Notice that the centroid lies in the center of the data so the spread of the data will be measured by how far away the points are from the centroid. To simplify our calculations, find the demeaned data points and plot them in .     A standard coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     Plot the demeaned data points here.     Now that the data has been demeaned, we will define the total variance as the average of the squares of the distances from the origin; that is, the total variance is Find the total variance for our set of three points.    Now plot the projections of the demeaned data onto the and axes using and find the variances and of the projected points.     A horizontal number line.   A horizontal number line beginning on the left at and ending on the right at .     A vertical number line   A vertical number line beginning on the bottom at and ending on the top at .     Plot the projections of the demeaned data onto the and axes.     Which of the variances, and , is larger and how does the plot of the projected points explain your response?    What do you notice about the relationship between , , and ? How does the Pythagorean theorem explain this relationship?    Plot the projections of the demeaned data points onto the lines defined by vectors and using and find the variances and of these projected points.     A coordinate grid and set of axes along with two orthogonal lines at 45 degrees to the axes.   A standard coordinate grid, a set of axes, and two orthogonal lines parallel to the vectors and .     Plot the projections of the deameaned data onto the lines defined by and .     What is the relationship between the total variance and and ? How does the Pythagorean theorem explain your response?          The centroid is .    The demeaned data points are     The total variance is .    We find and . Notice that is larger because the points are more spread out in the vertical direction.    We have due to the Pythagorean theorem.    The points projected onto the line defined by are , , and . This gives the variance .  The points projected onto the line defined by are , , and . This gives the variance .    Once again, because of the Pythagorean theorem.           .          .     and                          Notice that variance enjoys an additivity property. Consider, for instance, the situation where our data points are two-dimensional and suppose that the demeaned points are . We have If we take the average over all data points, we find that the total variance is the sum of the variances in the and directions:   More generally, suppose that we have an orthonormal basis and . If we project the demeaned points onto the line defined by , we obtain the points so that   For each of our demeaned data points, the Projection Formula tells us that We then have since . When we average over all the data points, we find that the total variance is the sum of the variances in the and directions. This leads to the following proposition, in which this observation is expressed more generally.   Additivity of Variance   If is a subspace with orthonormal basis , , , , then the variance of the points projected onto is the sum of the variances in the directions:     The next activity demonstrates a more efficient way to find the variance in a particular direction and connects our discussion of variance with symmetric matrices.    Let's return to the dataset from the previous activity in which we have demeaned data points: Our goal is to compute the variance in the direction defined by a unit vector .  To begin, form the demeaned data matrix and suppose that is a unit vector.   Write the vector in terms of the dot products .    Explain why .    Apply to explain why     In general, the matrix is called the covariance matrix of the dataset, and it is useful because the variance , as we have just seen. Find the matrix for our dataset with three points.     Use the covariance matrix to find the variance when .    Use the covariance matrix to find the variance when . Since and are orthogonal, verify that the sum of and gives the total variance.    Explain why the covariance matrix is a symmetric matrix.               Projecting onto gives , whose length squared is . Then                   . Then , which is the total variance.                                       .            This activity introduced the covariance matrix of a dataset, which is defined to be where is the matrix of demeaned data points. Notice that which tells us that is symmetric. In particular, we know that it is orthogonally diagonalizable, an observation that will play an important role in the future.  This activity also demonstrates the significance of the covariance matrix, which is recorded in the following proposition.    If is the covariance matrix associated to a demeaned dataset and is a unit vector, then the variance of the demeaned points projected onto the line defined by is     Our goal in the future will be to find directions where the variance is as large as possible and directions where it is as small as possible. The next activity demonstrates why this is useful.       Evaluating the following Sage cell loads a dataset consisting of 100 demeaned data points and provides a plot of them. It also provides the demeaned data matrix .   What is the shape of the covariance matrix ? Find and verify your response.     By visually inspecting the data, determine which is larger, or . Then compute both of these quantities to verify your response.    What is the total variance ?    In approximately what direction is the variance greatest? Choose a reasonable vector that points in approximately that direction and find .    In approximately what direction is the variance smallest? Choose a reasonable vector that points in approximately that direction and find .    How are the directions and in the last two parts of this problem related to one another? Why does this relationship hold?           will be the matrix      and , which agrees with the fact that the data is more spread out in the horizontal than vertical direction.         It looks like the direction defined by the unit vector . We find that , which is almost all of the total variance.    It looks like the direction defined by the unit vector . We find that .    They are orthogonal to one another. Since the total variance when and are orthogonal, will be as large as possible when is as small as possible.                and          If , then .    If , then .    They are orthogonal to one another.       This activity illustrates how variance can identify a line along which the data are concentrated. When the data primarily lie along a line defined by a vector , then the variance in that direction will be large while the variance in an orthogonal direction will be small.  Remember that variance is additive, according to , so that if and are orthogonal unit vectors, then the total variance is Therefore, if we choose to be the direction where is a maximum, then will be a minimum.  In the next section, we will use an orthogonal diagonalization of the covariance matrix to find the directions having the greatest and smallest variances. In this way, we will be able to determine when data are concentrated along a line or subspace.    Summary  This section explored both symmetric matrices and variance. In particular, we saw that   A matrix is orthogonally diagonalizable if there is an orthonormal basis of eigenvectors. In particular, we can write , where is a diagonal matrix of eigenvalues and is an orthogonal matrix of eigenvectors.    The Spectral Theorem tells us that a matrix is orthogonally diagonalizable if and only if it is symmetric; that is, .    The variance of a dataset can be computed using the covariance matrix , where is the matrix of demeaned data points. In particular, the variance of the demeaned data points projected onto the line defined by the unit vector is .    Variance is additive so that if is a subspace with orthonormal basis , then        Thinking Like a Diagonal Matrix   Sort each statement according to whether it is describing a diagonal matrix or a matrix whose eigenvectors and eigenvalues are known.     The standard basis vectors are special directions for the transformation.  The action of the matrix can be read directly from the entries on the main diagonal.  The vectors and are stretched or reflected without changing their directions.  Diagonal matrix    The eigenvectors are the special directions for the transformation.  The matrix acts by stretching or reflecting along eigenvector directions.  Knowing a basis of eigenvectors reveals how the transformation changes vectors.  Matrix described by its eigenvectors    A special direction may be stretched by a factor of 3.  A special direction may be reflected because its associated scaling factor is negative.  The transformation is easiest to understand when described using its special directions.  True for both      Directions and Variance   Sort each description according to the type of direction being described.     The variance in this direction is as large as possible.  This direction corresponds to the largest eigenvalue of the covariance matrix.  If the data were projected onto a line, this direction would preserve the most variation in the data.  Direction of maximum variance    The variance in this direction is as small as possible.  This direction corresponds to the smallest eigenvalue of the covariance matrix.  Projecting onto this direction captures very little variation in the data.  Direction of minimum variance    This direction is neither the most variable nor the least variable.  The variance in this direction lies between the largest and smallest possible values.  This direction need not be an eigenvector of the covariance matrix.  General direction        For each of the following matrices, find the eigenvalues and a basis for each eigenspace. Determine whether the matrix is diagonalizable and, if so, find a diagonalization. Determine whether the matrix is orthogonally diagonalizable and, if so, find an orthogonal diagonalization.                              This matrix is not diagonalizable because there is not a basis of consisting of eigenvectors.    This matrix is symmetric so it is orthogonally diagonalizable:     This matrix is diagonalizable but not orthogonally diagonalizable.     This matrix is symmetric so it's orthogonally diagonalizable.           Not diagonalizable         Diagonalizable, but not orthogonally diagonalizable.               Consider the matrix whose eigenvalues are , , and .    Explain why is orthogonally diagonalizable.    Find an orthonormal basis for the eigenspace .    Find a basis for the eigenspace .    Now find an orthonormal basis for .    Find matrices and such that .          Since the matrix is symmetric, the Spectral Theorem says it is orthogonally diagonalizable.          and      and                Because of the Spectral Theorem          and      and               Find an orthogonal diagonalization, if one exists, for the following matrices.     .     .     .               This matrix is not symmetric so it is not orthogonally diagonalizable.                    Not orthogonally diagonalizable              Suppose that is an matrix and that .   Explain why is orthogonally diagonalizable.    Explain why .    Suppose that is an eigenvector of with associated eigenvalue and that has unit length. Explain why .    Explain why the eigenvalues of are nonnegative.    If is the covariance matrix associated to a demeaned dataset, explain why the eigenvalues of are nonnegative.          Because , the matrix is symmetric and hence orthogonally diagonalizable.     .         Because .    In the same way, so that . Therefore, .           is symmetric               .     .         Suppose that you have the data points    Find the demeaned data points.    Find the total variance of the dataset.    Find the variance in the direction and the variance in the direction .    Project the demeaned data points onto the line defined by and find the variance of these projected points.    Project the demeaned data points onto the line defined by and find the variance of these projected points.    How and why are the results of from the last two parts related to the total variance?                    and     Let be the unit vector parallel to so that .    Let be the unit vector parallel to so that .    The vectors are parallel so the variances add to the toal variance.                   and               The variances add to the toal variance.        Suppose you have six 2-dimensional data points arranged in the matrix    Find the matrix of demeaned data points and plot the points in .    A standard coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     A plot for the demeaned data points.      Construct the covariance matrix and explain why you know that it is orthogonally diagonalizable.    Find an orthogonal diagonalization of .    Sketch the lines corresponding to the two eigenvectors on the plot above.    Find the variances in the directions of the eigenvectors.                is orthonally diagonalizable because it is symmetric.         Sketch the lines defined by and .    The variances are the eigenvalues and                           and .     and          Suppose that is the covariance matrix of a demeaned dataset.   Suppose that is an eigenvector of with associated eigenvalue and that has unit length. Explain why .    Suppose that the covariance matrix of a demeaned dataset can be written as where What is ? What does this tell you about the demeaned data?    Explain why the total variance of a dataset equals the sum of the eigenvalues of the covariance matrix.          The variance is .                     .                   Determine whether the following statements are true or false and explain your thinking.   If is an invertible, orthogonally diagonalizable matrix, then so is .    If is an eigenvalue of , then cannot be orthogonally diagonalizable.    If there is a basis for consisting of eigenvectors of , then is orthogonally diagonalizable.    If and are eigenvectors of a symmetric matrix associated to eigenvalues -2 and 3, then .    If is a square matrix, then .          True. If is invertible, then the eigenvalues are nonzero, which means that is invertible. Therefore, , which says that is orthogonally diagonalizable.    True. In this case, there cannot be a basis for consisting of eigenvalues of so is not diagonalizable.    False. This condition implies that is diagonalizable, but it may not be orthogonally diagonalizable.    True. The eigenvectors of a symmetric matrix associated to different eigenvalues are orthogonal.    False. This is only true if is symmetric.          True.    True.    False.    True.    False.         Suppose that is a noninvertible, symmetric matrix having eigenvectors and associated eigenvalues and . Find matrices and such that .    Since is not invertible, the third eigenvalue must be zero: . Also, an eigenvector associated to must be orthogonal to both and . We can find such a vector by finding where . This leads to            Suppose that is a plane in and that is the matrix that projects vectors orthogonally onto .   Explain why is orthogonally diagonalizable.    What are the eigenvalues of ?    Explain the relationship between the eigenvectors of and the plane .          If is a matrix whose columns are an orthonormal basis for , then . This means that so is symmetric and hence orthogonally diagonalizable.    If is in , then and if is in , then . This means that the eigenvalues of are either 0 or 1.    The eigenspaces and            is symmetric    0 or 1    The eigenspaces and         "
+},
+{
+  "id": "ula-preview-7-1",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#ula-preview-7-1",
+  "type": "Preview Activity",
+  "number": "7.1.1",
+  "title": "",
+  "body": "  This preview activity reminds us how a basis of eigenvectors can be used to relate a square matrix to a diagonal one.     A coordinate grid and set of axes.   A standard coordinate grid and set of axes. Both the horizontal and vertical ranges run from to .     A coordinate grid and set of axes.   A standard coordinate grid and set of axes. Both the horizontal and vertical ranges run from to .     Use these plots to sketch the vectors requested in the preview activity.      Suppose that and that and .   Sketch the vectors and on the left side of .    Sketch the vectors and on the left side of .    Sketch the vectors and on the left side.    Give a geometric description of the matrix transformation defined by .                          stretches vectors horizontally by a factor of 3 and reflects them in the horizontal axis.         Now suppose we have vectors and and that is a matrix such that . That is, and are eigenvectors of with associated eigenvalues and .   Sketch the vectors and on the right side of .    Sketch the vectors and on the right side of .    Sketch the vectors and on the right side.    Give a geometric description of the matrix transformation defined by .                          stretches vectors in the direction of by a factor of 3 and reflects them in the line defined by .         In what ways are the matrix transformations defined by and related to one another?    The effect of the two transformations are the same when viewed in the coordinate systems given by the appropriate set of vectors.     "
+},
+{
+  "id": "fig-eigen-diag-D",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#fig-eigen-diag-D",
+  "type": "Figure",
+  "number": "7.1.3",
+  "title": "",
+  "body": "   The transformation of the plane by a diagonal matrix.   On the left is a standard coordinate grid, a set of axes, and the unit square whose vertices are at the origin, , , and .  The diagram on the right shows these features after they have been transformed by the diagonal matrix . The coordinate grid is stretched horizontally by a factor of , and the unit square is transformed into a rectangle whose vertices are at the origin, , , and . This rectangle is obtained by stretching the unit square horizontally by a factor of and flipping it over the horizontal axis.     The matrix transformation defined by .  "
+},
+{
+  "id": "fig-eigen-diag-general",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#fig-eigen-diag-general",
+  "type": "Figure",
+  "number": "7.1.4",
+  "title": "",
+  "body": "   The transformation of the plane by the matrix A.   On the left is a coordinate grid that has been rotated counterclockwise by degrees so that the grid lines are parallel to the eigenvectors of . The unit square has also been rotated.  The diagram on the right shows how the grid and square are transformed by the matrix . The grid has been stretched by a factor of in the direction of the eigenvector . The square has also been stretched by a factor of in the direction of and reflected across the line defined by .  The diagram is much like the previous one only rotated by degrees so that the axes have been rotated to align with the eigenvectors.     The matrix transformation defined by .  "
+},
+{
+  "id": "sec-symmetric-matrices-3-3",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-3-3",
+  "type": "Activity",
+  "number": "7.1.5",
+  "title": "",
+  "body": "  Remember that the Sage command A.right_eigenmatrix() attempts to find a basis for consisting of eigenvectors of . In particular, the assignment D, P = A.right_eigenmatrix() provides a diagonal matrix constructed from the eigenvalues of with the columns of containing the associated eigenvectors.    For each of the following matrices, determine whether there is a basis for consisting of eigenvectors of that matrix. When there is such a basis, form the matrices and and verify that the matrix equals .    .     .     .     .       For which of these examples is it possible to form an orthogonal basis for consisting of eigenvectors?    For any such matrix , find an orthonormal basis of eigenvectors and explain why where is an orthogonal matrix.    Finally, explain why in this case.    When , what is the relationship between and ?             The eigenvalues of this matrix are complex so there is no such basis.    There is one eigenvalue with multiplicity two. The associated eigenspace is one-dimensional so there is not a basis of consisting of eigenvectors.    This matrix is diagonalizable with     This matrix is also diagonalizable with        Only the last matrix .    We form an orthonormal basis by scaling the eigenvectors to have length 1. This gives , which is orthogonal since the columns form an orthonormal basis of .    Orthogonal matrices are invertible and have     If , we have . This means that the matrix is symmetric.             There is no such basis.    There is no such basis.    This matrix is diagonalizable with     This matrix is also diagonalizable with        Only the last matrix.                     "
+},
+{
+  "id": "def-orthog-diag",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#def-orthog-diag",
+  "type": "Definition",
+  "number": "7.1.6",
+  "title": "",
+  "body": " orthogonal diagonalization   If there is an orthonormal basis of consisting of eigenvectors of the matrix , we say that is orthogonally diagonalizable . In particular, we can write where is an orthogonal matrix.   "
+},
+{
+  "id": "sec-symmetric-matrices-3-8",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-3-8",
+  "type": "Definition",
+  "number": "7.1.7",
+  "title": "",
+  "body": " symmetric matrix   A symmetric matrix is one for which .   "
+},
+{
+  "id": "sec-symmetric-matrices-3-9",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-3-9",
+  "type": "Example",
+  "number": "7.1.8",
+  "title": "",
+  "body": "  Consider the matrix , which has eigenvectors , with associated eigenvalue , and , with associated eigenvalue . Notice that and are orthogonal so we can form an orthonormal basis of eigenvectors:   In this way, we construct the matrices and note that .  Notice also that, as expected, is symmetric; that is, .   "
+},
+{
+  "id": "sec-symmetric-matrices-3-10",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-3-10",
+  "type": "Example",
+  "number": "7.1.9",
+  "title": "",
+  "body": "  If , then there is an orthogonal basis of eigenvectors and with eigenvalues and . Using these eigenvectors, we form the orthogonal matrix consisting of eigenvectors and the diagonal matrix , where Then we have .  Notice that the matrix transformation represented by is a rotation while that represented by is a rotation. Therefore, if we multiply a vector by , we can decompose the multiplication as That is, we first rotate by , then apply the diagonal matrix , which stretches and reflects, and finally rotate by . We may visualize this factorization as in .     The transformation of the plane by the matrix A broken into steps defined by the orthogonal diagonalization.   Our goal is to explain the transformation of the plane by , which was described in , using the orthogonal diagonalization . There are four diagrams here arranged in a array, which will be read from left to right and then top to bottom. The transformation from one diagram to the next is given by one of the factors in the orthogonal diagonalization .  The diagram in the upper left shows a coordinate grid and unit square rotated counterclockwise by degrees. The matrix , the first factor in the orthogonal diagonalization, rotates this diagram clockwise by degrees to obtain the diagram in the upper right. Here we see the standard coordinate grid and the unit square.  The diagram in the lower left is the result of applying the next matrix in the factorization, which we have already explored. The coordinate grid is stretched horiztonally by a factor of , and the unit square is transformed into a rectangle by stretching horizontally by a factor of and flipping across the horizontal axis.  Finally the diagram in the lower right results from applying the last matrix in the factorization, which rotates the previous diagram counterclockwise by degrees.     The transformation defined by can be interpreted as a sequence of geometric transformations: rotates by , stretches and reflects, and rotates by .   In fact, a similar picture holds any time the matrix is orthogonally diagonalizable.   "
+},
+{
+  "id": "sec-symmetric-matrices-3-12",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-3-12",
+  "type": "Theorem",
+  "number": "7.1.11",
+  "title": "The Spectral Theorem.",
+  "body": " The Spectral Theorem   The matrix is orthogonally diagonalizable if and only if is symmetric.   "
+},
+{
+  "id": "activity-orthog-diag",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#activity-orthog-diag",
+  "type": "Activity",
+  "number": "7.1.12",
+  "title": "",
+  "body": "  Each of the following matrices is symmetric so the Spectral Theorem tells us that each is orthogonally diagonalizable. The point of this activity is to find an orthogonal diagonalization for each matrix.  To begin, find a basis for each eigenspace. Use this basis to find an orthogonal basis for each eigenspace and put these bases together to find an orthogonal basis for consisting of eigenvectors. Use this basis to write an orthogonal diagonalization of the matrix.     .     .     .    Consider the matrix where . Explain how we know that is symmetric and then find an orthogonal diagonalization of .          We have eigenvectors and with associated eigenvalues and . We form an orthonormal basis of eigenvectors, and . This gives     We find     We have eigenvalues with associated eigenvector and with associated eigenvectors and . Notice that is orthogonal to both and , but and are not orthogonal to one another. We can, however, apply Gram-Schmidt to create an orthogonal basis of the eigenspace . We can then form an orthonormal basis so that     We have so must be symmetric. Then we find the orthogonal diagonalization                                 "
+},
+{
+  "id": "prop-symmetric-dot",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#prop-symmetric-dot",
+  "type": "Proposition",
+  "number": "7.1.13",
+  "title": "",
+  "body": "  For any matrix , we have In particular, if is symmetric, then    "
+},
+{
+  "id": "sec-symmetric-matrices-3-17",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-3-17",
+  "type": "Example",
+  "number": "7.1.14",
+  "title": "",
+  "body": "  Suppose a symmetric matrix has eigenvectors , with associated eigenvalue , and , with associated eigenvalue . Notice that Since by , we have which can only happen if . Therefore, and are orthogonal.  More generally, the same argument shows that two eigenvectors of a symmetric matrix associated to distinct eigenvalues are orthogonal.   "
+},
+{
+  "id": "sec-symmetric-matrices-4-4",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-4-4",
+  "type": "Activity",
+  "number": "7.1.15",
+  "title": "",
+  "body": "  We'll begin with a set of three data points    Find the centroid, or mean, . Then plot the data points and their centroid in .     A standard coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     Plot the data points and their centroid here.     Notice that the centroid lies in the center of the data so the spread of the data will be measured by how far away the points are from the centroid. To simplify our calculations, find the demeaned data points and plot them in .     A standard coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     Plot the demeaned data points here.     Now that the data has been demeaned, we will define the total variance as the average of the squares of the distances from the origin; that is, the total variance is Find the total variance for our set of three points.    Now plot the projections of the demeaned data onto the and axes using and find the variances and of the projected points.     A horizontal number line.   A horizontal number line beginning on the left at and ending on the right at .     A vertical number line   A vertical number line beginning on the bottom at and ending on the top at .     Plot the projections of the demeaned data onto the and axes.     Which of the variances, and , is larger and how does the plot of the projected points explain your response?    What do you notice about the relationship between , , and ? How does the Pythagorean theorem explain this relationship?    Plot the projections of the demeaned data points onto the lines defined by vectors and using and find the variances and of these projected points.     A coordinate grid and set of axes along with two orthogonal lines at 45 degrees to the axes.   A standard coordinate grid, a set of axes, and two orthogonal lines parallel to the vectors and .     Plot the projections of the deameaned data onto the lines defined by and .     What is the relationship between the total variance and and ? How does the Pythagorean theorem explain your response?          The centroid is .    The demeaned data points are     The total variance is .    We find and . Notice that is larger because the points are more spread out in the vertical direction.    We have due to the Pythagorean theorem.    The points projected onto the line defined by are , , and . This gives the variance .  The points projected onto the line defined by are , , and . This gives the variance .    Once again, because of the Pythagorean theorem.           .          .     and                         "
+},
+{
+  "id": "prop-variance-additivity",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#prop-variance-additivity",
+  "type": "Proposition",
+  "number": "7.1.20",
+  "title": "Additivity of Variance.",
+  "body": " Additivity of Variance   If is a subspace with orthonormal basis , , , , then the variance of the points projected onto is the sum of the variances in the directions:    "
+},
+{
+  "id": "sec-symmetric-matrices-4-10",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-4-10",
+  "type": "Activity",
+  "number": "7.1.21",
+  "title": "",
+  "body": "  Let's return to the dataset from the previous activity in which we have demeaned data points: Our goal is to compute the variance in the direction defined by a unit vector .  To begin, form the demeaned data matrix and suppose that is a unit vector.   Write the vector in terms of the dot products .    Explain why .    Apply to explain why     In general, the matrix is called the covariance matrix of the dataset, and it is useful because the variance , as we have just seen. Find the matrix for our dataset with three points.     Use the covariance matrix to find the variance when .    Use the covariance matrix to find the variance when . Since and are orthogonal, verify that the sum of and gives the total variance.    Explain why the covariance matrix is a symmetric matrix.               Projecting onto gives , whose length squared is . Then                   . Then , which is the total variance.                                       .           "
+},
+{
+  "id": "prop-covariance",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#prop-covariance",
+  "type": "Proposition",
+  "number": "7.1.22",
+  "title": "",
+  "body": "  If is the covariance matrix associated to a demeaned dataset and is a unit vector, then the variance of the demeaned points projected onto the line defined by is    "
+},
+{
+  "id": "sec-symmetric-matrices-4-15",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-4-15",
+  "type": "Activity",
+  "number": "7.1.23",
+  "title": "",
+  "body": "     Evaluating the following Sage cell loads a dataset consisting of 100 demeaned data points and provides a plot of them. It also provides the demeaned data matrix .   What is the shape of the covariance matrix ? Find and verify your response.     By visually inspecting the data, determine which is larger, or . Then compute both of these quantities to verify your response.    What is the total variance ?    In approximately what direction is the variance greatest? Choose a reasonable vector that points in approximately that direction and find .    In approximately what direction is the variance smallest? Choose a reasonable vector that points in approximately that direction and find .    How are the directions and in the last two parts of this problem related to one another? Why does this relationship hold?           will be the matrix      and , which agrees with the fact that the data is more spread out in the horizontal than vertical direction.         It looks like the direction defined by the unit vector . We find that , which is almost all of the total variance.    It looks like the direction defined by the unit vector . We find that .    They are orthogonal to one another. Since the total variance when and are orthogonal, will be as large as possible when is as small as possible.                and          If , then .    If , then .    They are orthogonal to one another.      "
+},
+{
+  "id": "ula-proteus-7-1-1-eigenvector-view-cardsort",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#ula-proteus-7-1-1-eigenvector-view-cardsort",
+  "type": "Checkpoint",
+  "number": "7.1.24",
+  "title": "Thinking Like a Diagonal Matrix.",
+  "body": " Thinking Like a Diagonal Matrix   Sort each statement according to whether it is describing a diagonal matrix or a matrix whose eigenvectors and eigenvalues are known.     The standard basis vectors are special directions for the transformation.  The action of the matrix can be read directly from the entries on the main diagonal.  The vectors and are stretched or reflected without changing their directions.  Diagonal matrix    The eigenvectors are the special directions for the transformation.  The matrix acts by stretching or reflecting along eigenvector directions.  Knowing a basis of eigenvectors reveals how the transformation changes vectors.  Matrix described by its eigenvectors    A special direction may be stretched by a factor of 3.  A special direction may be reflected because its associated scaling factor is negative.  The transformation is easiest to understand when described using its special directions.  True for both    "
+},
+{
+  "id": "ula-proteus-7-1-variance-directions-cardsort",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#ula-proteus-7-1-variance-directions-cardsort",
+  "type": "Checkpoint",
+  "number": "7.1.25",
+  "title": "Directions and Variance.",
+  "body": " Directions and Variance   Sort each description according to the type of direction being described.     The variance in this direction is as large as possible.  This direction corresponds to the largest eigenvalue of the covariance matrix.  If the data were projected onto a line, this direction would preserve the most variation in the data.  Direction of maximum variance    The variance in this direction is as small as possible.  This direction corresponds to the smallest eigenvalue of the covariance matrix.  Projecting onto this direction captures very little variation in the data.  Direction of minimum variance    This direction is neither the most variable nor the least variable.  The variance in this direction lies between the largest and smallest possible values.  This direction need not be an eigenvector of the covariance matrix.  General direction    "
+},
+{
+  "id": "sec-symmetric-matrices-8-1",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-1",
+  "type": "Exercise",
+  "number": "7.1.4.1",
+  "title": "",
+  "body": "  For each of the following matrices, find the eigenvalues and a basis for each eigenspace. Determine whether the matrix is diagonalizable and, if so, find a diagonalization. Determine whether the matrix is orthogonally diagonalizable and, if so, find an orthogonal diagonalization.                              This matrix is not diagonalizable because there is not a basis of consisting of eigenvectors.    This matrix is symmetric so it is orthogonally diagonalizable:     This matrix is diagonalizable but not orthogonally diagonalizable.     This matrix is symmetric so it's orthogonally diagonalizable.           Not diagonalizable         Diagonalizable, but not orthogonally diagonalizable.            "
+},
+{
+  "id": "sec-symmetric-matrices-8-2",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-2",
+  "type": "Exercise",
+  "number": "7.1.4.2",
+  "title": "",
+  "body": "  Consider the matrix whose eigenvalues are , , and .    Explain why is orthogonally diagonalizable.    Find an orthonormal basis for the eigenspace .    Find a basis for the eigenspace .    Now find an orthonormal basis for .    Find matrices and such that .          Since the matrix is symmetric, the Spectral Theorem says it is orthogonally diagonalizable.          and      and                Because of the Spectral Theorem          and      and            "
+},
+{
+  "id": "sec-symmetric-matrices-8-3",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-3",
+  "type": "Exercise",
+  "number": "7.1.4.3",
+  "title": "",
+  "body": "  Find an orthogonal diagonalization, if one exists, for the following matrices.     .     .     .               This matrix is not symmetric so it is not orthogonally diagonalizable.                    Not orthogonally diagonalizable           "
+},
+{
+  "id": "sec-symmetric-matrices-8-4",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-4",
+  "type": "Exercise",
+  "number": "7.1.4.4",
+  "title": "",
+  "body": "  Suppose that is an matrix and that .   Explain why is orthogonally diagonalizable.    Explain why .    Suppose that is an eigenvector of with associated eigenvalue and that has unit length. Explain why .    Explain why the eigenvalues of are nonnegative.    If is the covariance matrix associated to a demeaned dataset, explain why the eigenvalues of are nonnegative.          Because , the matrix is symmetric and hence orthogonally diagonalizable.     .         Because .    In the same way, so that . Therefore, .           is symmetric               .     .      "
+},
+{
+  "id": "sec-symmetric-matrices-8-5",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-5",
+  "type": "Exercise",
+  "number": "7.1.4.5",
+  "title": "",
+  "body": "  Suppose that you have the data points    Find the demeaned data points.    Find the total variance of the dataset.    Find the variance in the direction and the variance in the direction .    Project the demeaned data points onto the line defined by and find the variance of these projected points.    Project the demeaned data points onto the line defined by and find the variance of these projected points.    How and why are the results of from the last two parts related to the total variance?                    and     Let be the unit vector parallel to so that .    Let be the unit vector parallel to so that .    The vectors are parallel so the variances add to the toal variance.                   and               The variances add to the toal variance.     "
+},
+{
+  "id": "sec-symmetric-matrices-8-6",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-6",
+  "type": "Exercise",
+  "number": "7.1.4.6",
+  "title": "",
+  "body": "  Suppose you have six 2-dimensional data points arranged in the matrix    Find the matrix of demeaned data points and plot the points in .    A standard coordinate grid and set of axes.   A standard coordinate grid and set of axes. The horizontal and vertical ranges run from to .     A plot for the demeaned data points.      Construct the covariance matrix and explain why you know that it is orthogonally diagonalizable.    Find an orthogonal diagonalization of .    Sketch the lines corresponding to the two eigenvectors on the plot above.    Find the variances in the directions of the eigenvectors.                is orthonally diagonalizable because it is symmetric.         Sketch the lines defined by and .    The variances are the eigenvalues and                           and .     and       "
+},
+{
+  "id": "sec-symmetric-matrices-8-7",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-7",
+  "type": "Exercise",
+  "number": "7.1.4.7",
+  "title": "",
+  "body": "  Suppose that is the covariance matrix of a demeaned dataset.   Suppose that is an eigenvector of with associated eigenvalue and that has unit length. Explain why .    Suppose that the covariance matrix of a demeaned dataset can be written as where What is ? What does this tell you about the demeaned data?    Explain why the total variance of a dataset equals the sum of the eigenvalues of the covariance matrix.          The variance is .                     .                "
+},
+{
+  "id": "sec-symmetric-matrices-8-8",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-8",
+  "type": "Exercise",
+  "number": "7.1.4.8",
+  "title": "",
+  "body": "  Determine whether the following statements are true or false and explain your thinking.   If is an invertible, orthogonally diagonalizable matrix, then so is .    If is an eigenvalue of , then cannot be orthogonally diagonalizable.    If there is a basis for consisting of eigenvectors of , then is orthogonally diagonalizable.    If and are eigenvectors of a symmetric matrix associated to eigenvalues -2 and 3, then .    If is a square matrix, then .          True. If is invertible, then the eigenvalues are nonzero, which means that is invertible. Therefore, , which says that is orthogonally diagonalizable.    True. In this case, there cannot be a basis for consisting of eigenvalues of so is not diagonalizable.    False. This condition implies that is diagonalizable, but it may not be orthogonally diagonalizable.    True. The eigenvectors of a symmetric matrix associated to different eigenvalues are orthogonal.    False. This is only true if is symmetric.          True.    True.    False.    True.    False.      "
+},
+{
+  "id": "sec-symmetric-matrices-8-9",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-9",
+  "type": "Exercise",
+  "number": "7.1.4.9",
+  "title": "",
+  "body": "  Suppose that is a noninvertible, symmetric matrix having eigenvectors and associated eigenvalues and . Find matrices and such that .    Since is not invertible, the third eigenvalue must be zero: . Also, an eigenvector associated to must be orthogonal to both and . We can find such a vector by finding where . This leads to         "
+},
+{
+  "id": "sec-symmetric-matrices-8-10",
+  "level": "2",
+  "url": "sec-symmetric-matrices.html#sec-symmetric-matrices-8-10",
+  "type": "Exercise",
+  "number": "7.1.4.10",
+  "title": "",
+  "body": "  Suppose that is a plane in and that is the matrix that projects vectors orthogonally onto .   Explain why is orthogonally diagonalizable.    What are the eigenvalues of ?    Explain the relationship between the eigenvectors of and the plane .          If is a matrix whose columns are an orthonormal basis for , then . This means that so is symmetric and hence orthogonally diagonalizable.    If is in , then and if is in , then . This means that the eigenvalues of are either 0 or 1.    The eigenspaces and            is symmetric    0 or 1    The eigenspaces and       "
 },
 {
   "id": "app-sage-reference",
