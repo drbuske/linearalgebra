@@ -527,7 +527,7 @@ sagecell.makeSagecell({
 \vvec_1\amp\vvec_2\amp\ldots\amp\vvec_n \end{array}\right] ~\xvec
 = \bvec \)</span> exists.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-linear-dep-2-2">In this section, we turn to the uniqueness of solutions of a linear system, the second of our <a href="sec-pivots.html#fundamental-questions" class="xref" data-knowl="./knowl/xref/fundamental-questions.html" data-reveal-label="Reveal" data-close-label="Close" title="Question 1.4.3: Two Fundamental Questions">two fundamental questions</a>.  This will lead us to the concept of linear independence.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-linear-dep-2-2">In this section, we turn to the uniqueness of solutions of a linear system, the second of our <a href="sec-pivots.html#fundamental-questions" class="xref" data-knowl="./knowl/xref/fundamental-questions.html" data-reveal-label="Reveal" data-close-label="Close" title="Question 1.4.2: Two Fundamental Questions">two fundamental questions</a>.  This will lead us to the concept of linear independence.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exploration project-like" id="ula-preview-2-4"><h2 class="heading">
 <span class="type">Preview Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -635,7 +635,7 @@ c_1\wvec_1 + c_2\wvec_2 + c_3\wvec_3
 <div class="para" id="sec-linear-dep-3-2">We have seen examples where the span of a set of three vectors in <span class="process-math">\(\real^3\)</span> is <span class="process-math">\(\real^3\)</span> and other examples where the span of three vectors is a plane.  We would like to understand the difference between these two situations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-span-r3"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="example-span-r3-1-1">
 <div class="para">Let’s consider the set of three vectors in <span class="process-math">\(\real^3\text{:}\)</span>
@@ -665,14 +665,14 @@ c_1\wvec_1 + c_2\wvec_2 + c_3\wvec_3
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="para">Because there is a pivot position in every row, <a href="sec-span.html#prop-pivot-row" class="xref" data-knowl="./knowl/xref/prop-pivot-row.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.3.17">Proposition 2.3.17</a> tells us that <span class="process-math">\(\laspan{\vvec_1, \vvec_2, \vvec_3} = \real^3\text{.}\)</span>
+<div class="para">Because there is a pivot position in every row, <a href="sec-span.html#prop-pivot-row" class="xref" data-knowl="./knowl/xref/prop-pivot-row.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.3.14">Proposition 2.3.14</a> tells us that <span class="process-math">\(\laspan{\vvec_1, \vvec_2, \vvec_3} = \real^3\text{.}\)</span>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-span-r3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.2"><a tabindex="-1" href="#example-span-r3" title="Copy heading and permalink for Example 2.4.2" aria-label="Copy heading and permalink for Example 2.4.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.1"><a tabindex="-1" href="#example-span-r3" title="Copy heading and permalink for Example 2.4.1" aria-label="Copy heading and permalink for Example 2.4.1">🔗</a></div>
 </article>
 <article class="example example-like" id="example-span-plane"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="example-span-plane-1-1">
 <div class="para">Now let’s consider the set of three vectors:</div>
@@ -755,9 +755,9 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 <div class="para">As a result, adding the vector <span class="process-math">\(\wvec_3\)</span> to the set of vectors <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> does not change the span.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-span-plane-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.3"><a tabindex="-1" href="#example-span-plane" title="Copy heading and permalink for Example 2.4.3" aria-label="Copy heading and permalink for Example 2.4.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.2"><a tabindex="-1" href="#example-span-plane" title="Copy heading and permalink for Example 2.4.2" aria-label="Copy heading and permalink for Example 2.4.2">🔗</a></div>
 </article>
-<div class="para" id="sec-linear-dep-3-5">Before exploring this type of behavior more generally, let’s think about it from a geometric point of view.  Suppose that we begin with the two vectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> in <a href="sec-linear-dep.html#example-span-r3" class="xref" data-knowl="./knowl/xref/example-span-r3.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.2">Example 2.4.2</a>.  The span of these two vectors is a plane in <span class="process-math">\(\real^3\text{,}\)</span> as seen on the left of <a href="sec-linear-dep.html#figure-span-r3" class="xref" data-knowl="./knowl/xref/figure-span-r3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.4">Figure 2.4.4</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-linear-dep-3-5">Before exploring this type of behavior more generally, let’s think about it from a geometric point of view.  Suppose that we begin with the two vectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> in <a href="sec-linear-dep.html#example-span-r3" class="xref" data-knowl="./knowl/xref/example-span-r3.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.1">Example 2.4.1</a>.  The span of these two vectors is a plane in <span class="process-math">\(\real^3\text{,}\)</span> as seen on the left of <a href="sec-linear-dep.html#figure-span-r3" class="xref" data-knowl="./knowl/xref/figure-span-r3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.3">Figure 2.4.3</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="figure-span-r3">
 <div class="sidebyside">
@@ -776,11 +776,11 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 </div></div>
 </div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of the vectors <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.4.4"><a tabindex="-1" href="#figure-span-r3" title="Copy heading and permalink for Figure 2.4.4" aria-label="Copy heading and permalink for Figure 2.4.4">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of the vectors <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.4.3"><a tabindex="-1" href="#figure-span-r3" title="Copy heading and permalink for Figure 2.4.3" aria-label="Copy heading and permalink for Figure 2.4.3">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="sec-linear-dep-3-7">Because the vector <span class="process-math">\(\vvec_3\)</span> is not a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{,}\)</span> it provides a direction to move that is independent of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{.}\)</span>  Adding this third vector <span class="process-math">\(\vvec_3\)</span> therefore forms a set whose span is <span class="process-math">\(\real^3\text{,}\)</span> as seen on the right of <a href="sec-linear-dep.html#figure-span-r3" class="xref" data-knowl="./knowl/xref/figure-span-r3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.4">Figure 2.4.4</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-linear-dep-3-7">Because the vector <span class="process-math">\(\vvec_3\)</span> is not a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{,}\)</span> it provides a direction to move that is independent of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{.}\)</span>  Adding this third vector <span class="process-math">\(\vvec_3\)</span> therefore forms a set whose span is <span class="process-math">\(\real^3\text{,}\)</span> as seen on the right of <a href="sec-linear-dep.html#figure-span-r3" class="xref" data-knowl="./knowl/xref/figure-span-r3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.3">Figure 2.4.3</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-linear-dep-3-8">Similarly, the span of the vectors <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> in <a href="sec-linear-dep.html#example-span-plane" class="xref" data-knowl="./knowl/xref/example-span-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.3">Example 2.4.3</a> is also a plane.  However, the third vector <span class="process-math">\(\wvec_3\)</span> is a linear combination of <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\text{,}\)</span> which means that it already lies in the plane formed by <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\text{,}\)</span> as seen in <a href="sec-linear-dep.html#figure-span-plane" class="xref" data-knowl="./knowl/xref/figure-span-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.5">Figure 2.4.5</a>. Since we can already move in this direction using just <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\text{,}\)</span> adding <span class="process-math">\(\wvec_3\)</span> to the set does not change the span.  As a result, it remains a plane.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-linear-dep-3-8">Similarly, the span of the vectors <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> in <a href="sec-linear-dep.html#example-span-plane" class="xref" data-knowl="./knowl/xref/example-span-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.2">Example 2.4.2</a> is also a plane.  However, the third vector <span class="process-math">\(\wvec_3\)</span> is a linear combination of <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\text{,}\)</span> which means that it already lies in the plane formed by <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\text{,}\)</span> as seen in <a href="sec-linear-dep.html#figure-span-plane" class="xref" data-knowl="./knowl/xref/figure-span-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.4">Figure 2.4.4</a>. Since we can already move in this direction using just <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\text{,}\)</span> adding <span class="process-math">\(\wvec_3\)</span> to the set does not change the span.  As a result, it remains a plane.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="figure-span-plane">
 <div class="sidebyside">
@@ -799,16 +799,16 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 </div></div>
 </div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of the vectors <span class="process-math">\(\wvec_1\text{,}\)</span> <span class="process-math">\(\wvec_2\text{,}\)</span> and <span class="process-math">\(\wvec_3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.4.5"><a tabindex="-1" href="#figure-span-plane" title="Copy heading and permalink for Figure 2.4.5" aria-label="Copy heading and permalink for Figure 2.4.5">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of the vectors <span class="process-math">\(\wvec_1\text{,}\)</span> <span class="process-math">\(\wvec_2\text{,}\)</span> and <span class="process-math">\(\wvec_3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.4.4"><a tabindex="-1" href="#figure-span-plane" title="Copy heading and permalink for Figure 2.4.4" aria-label="Copy heading and permalink for Figure 2.4.4">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="sec-linear-dep-3-10">What distinguishes these two examples is whether one of the vectors is a linear combination of the others, an observation that leads to the following definition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-linear-independence"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="definition-linear-independence-3-1">A set of vectors is called <em class="emphasis">linearly dependent</em> if one of the vectors is a linear combination of the others.  Otherwise, the set of vectors is called <em class="emphasis">linearly independent</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#definition-linear-independence-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 2.4.6"><a tabindex="-1" href="#definition-linear-independence" title="Copy heading and permalink for Definition 2.4.6" aria-label="Copy heading and permalink for Definition 2.4.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 2.4.5"><a tabindex="-1" href="#definition-linear-independence" title="Copy heading and permalink for Definition 2.4.5" aria-label="Copy heading and permalink for Definition 2.4.5">🔗</a></div>
 </article>
 <div class="para" id="sec-linear-dep-3-12">For the sake of completeness, we say that a set of vectors containing only one nonzero vector is linearly independent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -819,7 +819,7 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How to recognize linear dependence</span>
 </h2>
 <article class="activity project-like" id="sec-linear-dep-4-2"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec-linear-dep-4-2-1-1">
 <div class="para">We would like to develop a means to detect when a set of vectors is linearly dependent.  This activity will point the way.</div>
@@ -887,7 +887,7 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.7"><a tabindex="-1" href="#sec-linear-dep-4-2" title="Copy heading and permalink for Activity 2.4.7" aria-label="Copy heading and permalink for Activity 2.4.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.2"><a tabindex="-1" href="#sec-linear-dep-4-2" title="Copy heading and permalink for Activity 2.4.2" aria-label="Copy heading and permalink for Activity 2.4.2">🔗</a></div>
 </article>
 <div class="para logical" id="sec-linear-dep-4-3">
 <div class="para">By now, we should expect that the pivot positions play an important role in determining whether the columns of a matrix are linearly dependent.  For instance, suppose we have four vectors and their associated matrix</div>
@@ -961,11 +961,11 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 <div class="para" id="sec-linear-dep-4-6">The following proposition summarizes these findings.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="sec-linear-dep-4-7"><h3 class="heading">
-<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="sec-linear-dep-4-7-1-1">The columns of a matrix are linearly independent if and only if every column contains a pivot position.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.4.8"><a tabindex="-1" href="#sec-linear-dep-4-7" title="Copy heading and permalink for Proposition 2.4.8" aria-label="Copy heading and permalink for Proposition 2.4.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.4.6"><a tabindex="-1" href="#sec-linear-dep-4-7" title="Copy heading and permalink for Proposition 2.4.6" aria-label="Copy heading and permalink for Proposition 2.4.6">🔗</a></div>
 </article>
 <div class="para logical" id="sec-linear-dep-4-8">
 <div class="para">This condition imposes a constraint on how many vectors we can have in a linearly independent set.  Here is an example of the reduced row echelon form of a matrix whose columns form a set of three linearly independent vectors in <span class="process-math">\(\real^5\text{:}\)</span>
@@ -987,15 +987,15 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 <div class="para" id="sec-linear-dep-4-9">More generally, if <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\)</span> is a linearly independent set of vectors in <span class="process-math">\(\real^m\text{,}\)</span> the associated matrix must have a pivot position in every column.  Since every row contains at most one pivot position, the number of columns can be no greater than the number of rows. This means that the number of vectors in a linearly independent set can be no greater than the number of dimensions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="prop-linear-indep-bound"><h3 class="heading">
-<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="prop-linear-indep-bound-1-1">A linearly independent set of vectors in <span class="process-math">\(\real^m\)</span> contains at most <span class="process-math">\(m\)</span> vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prop-linear-indep-bound-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.4.9"><a tabindex="-1" href="#prop-linear-indep-bound" title="Copy heading and permalink for Proposition 2.4.9" aria-label="Copy heading and permalink for Proposition 2.4.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.4.7"><a tabindex="-1" href="#prop-linear-indep-bound" title="Copy heading and permalink for Proposition 2.4.7" aria-label="Copy heading and permalink for Proposition 2.4.7">🔗</a></div>
 </article>
 <div class="para" id="sec-linear-dep-4-11">This says, for instance, that any linearly independent set of vectors in <span class="process-math">\(\real^3\)</span> can contain no more three vectors.  We usually imagine three independent directions, such as up/down, front/back, left/right, in our three-dimensional world.  This proposition tells us that there can be no more independent directions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-linear-dep-4-12">The proposition above says that a set of vectors in <span class="process-math">\(\real^m\)</span> that is linear independent has at most <span class="process-math">\(m\)</span> vectors.  By comparison, <a href="sec-span.html#prop-span-bound" class="xref" data-knowl="./knowl/xref/prop-span-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.3.18">Proposition 2.3.18</a> says that a set of vectors whose span is <span class="process-math">\(\real^m\)</span> has at least <span class="process-math">\(m\)</span> vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-linear-dep-4-12">The proposition above says that a set of vectors in <span class="process-math">\(\real^m\)</span> that is linear independent has at most <span class="process-math">\(m\)</span> vectors.  By comparison, <a href="sec-span.html#prop-span-bound" class="xref" data-knowl="./knowl/xref/prop-span-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.3.15">Proposition 2.3.15</a> says that a set of vectors whose span is <span class="process-math">\(\real^m\)</span> has at least <span class="process-math">\(m\)</span> vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.2: How to recognize linear dependence"><a tabindex="-1" href="#sec-linear-dep-4" title="Copy heading and permalink for Subsection 2.4.2: How to recognize linear dependence" aria-label="Copy heading and permalink for Subsection 2.4.2: How to recognize linear dependence">🔗</a></div>
 </section>
@@ -1007,7 +1007,7 @@ c_1\wvec_1 + c_2\wvec_2 + c_3(-2\wvec_1-\wvec_2) \\
 \zerovec\)</span> a <em class="emphasis">homogeneous</em> equation.  As we’ll see, the uniqueness of solutions to this equation reflects on the linear independence of the columns of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="sec-linear-dep-5-3"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear independence and homogeneous equations.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear independence and homogeneous equations.</span>
 </h3>
 <div class="para logical" id="sec-linear-dep-5-3-2-1">
 <ol class="lower-alpha ol-marker-1" id="sec-linear-dep-5-3-2-1-1">
@@ -1061,12 +1061,12 @@ c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 = \zerovec\text{.}
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.10: Linear independence and homogeneous equations"><a tabindex="-1" href="#sec-linear-dep-5-3" title="Copy heading and permalink for Activity 2.4.10: Linear independence and homogeneous equations" aria-label="Copy heading and permalink for Activity 2.4.10: Linear independence and homogeneous equations">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.3: Linear independence and homogeneous equations"><a tabindex="-1" href="#sec-linear-dep-5-3" title="Copy heading and permalink for Activity 2.4.3: Linear independence and homogeneous equations" aria-label="Copy heading and permalink for Activity 2.4.3: Linear independence and homogeneous equations">🔗</a></div>
 </article>
 <div class="para" id="sec-linear-dep-5-4">This activity shows how the solution space of the homogeneous equation <span class="process-math">\(A\xvec = \zerovec\)</span> indicates whether the columns of <span class="process-math">\(A\)</span> are linearly dependent or independent.  First, we know that the equation <span class="process-math">\(A\xvec = \zerovec\)</span> always has at least one solution, the vector <span class="process-math">\(\xvec = \zerovec\text{.}\)</span>  Any other solution is a nonzero solution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="sec-linear-dep-5-5"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec-linear-dep-5-5-1-1">
 <div class="para">Let’s consider the vectors</div>
@@ -1155,12 +1155,12 @@ A\threevec{-1}{-1}1 =
 </div> 
 <div class="para" id="sec-linear-dep-5-5-1-5">Because <span class="process-math">\(\vvec_3\)</span> is a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{,}\)</span> we know that this set of vectors is linearly dependent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-5-5-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.11"><a tabindex="-1" href="#sec-linear-dep-5-5" title="Copy heading and permalink for Example 2.4.11" aria-label="Copy heading and permalink for Example 2.4.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.8"><a tabindex="-1" href="#sec-linear-dep-5-5" title="Copy heading and permalink for Example 2.4.8" aria-label="Copy heading and permalink for Example 2.4.8">🔗</a></div>
 </article>
 <div class="para" id="sec-linear-dep-5-6">As this example demonstrates, there are many ways we can view the question of linear independence, some of which are recorded in the following proposition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="sec-linear-dep-5-7"><h3 class="heading">
-<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec-linear-dep-5-7-1-1">
 <div class="para">For a matrix <span class="process-math">\(A = \left[\begin{array}{rrrr}
@@ -1203,7 +1203,7 @@ c_1\vvec_1 + c_2\vvec_2 + \ldots + c_n\vvec_n = \zerovec\text{.}
 </ul>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.4.12"><a tabindex="-1" href="#sec-linear-dep-5-7" title="Copy heading and permalink for Proposition 2.4.12" aria-label="Copy heading and permalink for Proposition 2.4.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.4.9"><a tabindex="-1" href="#sec-linear-dep-5-7" title="Copy heading and permalink for Proposition 2.4.9" aria-label="Copy heading and permalink for Proposition 2.4.9">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.3: Homogeneous equations"><a tabindex="-1" href="#sec-linear-dep-5" title="Copy heading and permalink for Subsection 2.4.3: Homogeneous equations" aria-label="Copy heading and permalink for Subsection 2.4.3: Homogeneous equations">🔗</a></div>
 </section>
 <section class="subsection" id="sec-linear-dep-6">
@@ -1248,7 +1248,7 @@ c_1\vvec_1 + c_2\vvec_2 + \ldots + c_n\vvec_n = \zerovec\text{.}
 </ul>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-linear-dep-6-3">At the beginning of the section, we said that this concept addressed the second of our <a href="sec-pivots.html#fundamental-questions" class="xref" data-knowl="./knowl/xref/fundamental-questions.html" data-reveal-label="Reveal" data-close-label="Close" title="Question 1.4.3: Two Fundamental Questions">two fundamental questions</a> concerning the uniqueness of solutions to a linear system.  It is worth comparing the results of this section with those of the previous one so that the parallels between them become clear.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-linear-dep-6-3">At the beginning of the section, we said that this concept addressed the second of our <a href="sec-pivots.html#fundamental-questions" class="xref" data-knowl="./knowl/xref/fundamental-questions.html" data-reveal-label="Reveal" data-close-label="Close" title="Question 1.4.2: Two Fundamental Questions">two fundamental questions</a> concerning the uniqueness of solutions to a linear system.  It is worth comparing the results of this section with those of the previous one so that the parallels between them become clear.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-linear-dep-6-4">
 <div class="para">As usual, we will write a matrix as a collection of vectors,</div>
@@ -1260,7 +1260,7 @@ A=\left[\begin{array}{rrrr} \vvec_1\amp\vvec_2 \amp
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-linear-dep-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="sec-linear-dep-6-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Span and Linear Independence<div class="autopermalink" aria-hidden="true" data-description="Table 2.4.13: Span and Linear Independence"><a tabindex="-1" href="#sec-linear-dep-6-5" title="Copy heading and permalink for Table 2.4.13: Span and Linear Independence" aria-label="Copy heading and permalink for Table 2.4.13: Span and Linear Independence">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="sec-linear-dep-6-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Span and Linear Independence<div class="autopermalink" aria-hidden="true" data-description="Table 2.4.10: Span and Linear Independence"><a tabindex="-1" href="#sec-linear-dep-6-5" title="Copy heading and permalink for Table 2.4.10: Span and Linear Independence" aria-label="Copy heading and permalink for Table 2.4.10: Span and Linear Independence">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c t b2 r0 l0 t0 lines">Span</th>
 <th scope="col" class="c t b2 r0 l0 t0 lines">Linear independence</th>
@@ -1309,7 +1309,7 @@ A=\left[\begin{array}{rrrr} \vvec_1\amp\vvec_2 \amp
 </table></div>
 </figure>
 <article class="exercise exercise-like" id="ula-proteus-2-4-linear-indep-definition"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Defining the concept of linear dependence.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Defining the concept of linear dependence.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
@@ -1336,10 +1336,10 @@ A=\left[\begin{array}{rrrr} \vvec_1\amp\vvec_2 \amp
 <li data-component="feedback" id="rs-ula-proteus-2-4-linear-indep-definition_opt_d">This is a test we can use to determine if the columns of a matrix form a linearly dependent set but is not what we mean by a linear dependent set.</li>
 </ul>
 </div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.4.14: Defining the concept of linear dependence"><a tabindex="-1" href="#ula-proteus-2-4-linear-indep-definition" title="Copy heading and permalink for Checkpoint 2.4.14: Defining the concept of linear dependence" aria-label="Copy heading and permalink for Checkpoint 2.4.14: Defining the concept of linear dependence">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.4.11: Defining the concept of linear dependence"><a tabindex="-1" href="#ula-proteus-2-4-linear-indep-definition" title="Copy heading and permalink for Checkpoint 2.4.11: Defining the concept of linear dependence" aria-label="Copy heading and permalink for Checkpoint 2.4.11: Defining the concept of linear dependence">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ula-proteus-2-4-linear-indep-review"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A review of linear independence.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A review of linear independence.</span>
 </h3>
 <div class="introduction" id="ula-proteus-2-4-linear-indep-review-2">
 <div class="para" id="ula-proteus-2-4-linear-indep-review-2-1">This set of questions summarizes our discussion of linear independence in this section.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-2-4-linear-indep-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1357,7 +1357,7 @@ a_1\wvec_1 + a_2\wvec_2 + a_3\wvec_3 = \zerovec
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-linear_independence_q1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.15.a"><a tabindex="-1" href="#ula-proteus-linear_independence_q1" title="Copy heading and permalink for Task 2.4.15.a" aria-label="Copy heading and permalink for Task 2.4.15.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.12.a"><a tabindex="-1" href="#ula-proteus-linear_independence_q1" title="Copy heading and permalink for Task 2.4.12.a" aria-label="Copy heading and permalink for Task 2.4.12.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ula-proteus-linear_independence_q2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="ula-proteus-linear_independence_q2-1-1">
@@ -1367,11 +1367,11 @@ a_1\wvec_1 + a_2\wvec_2 + a_3\wvec_3 = \zerovec
 2\vvec_1 -3\vvec_2 -\vvec_3 +\vvec_4= \zerovec\text{.}
 \end{equation*}
 </div>
-<div class="para">What, if anything, can you conclude about the linear independence or linear dependence of this set of vectors? Explain your thinking by referring to the <a href="sec-linear-dep.html#definition-linear-independence" class="xref" data-knowl="./knowl/xref/definition-linear-independence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.4.6">definition of linear independence.</a>
+<div class="para">What, if anything, can you conclude about the linear independence or linear dependence of this set of vectors? Explain your thinking by referring to the <a href="sec-linear-dep.html#definition-linear-independence" class="xref" data-knowl="./knowl/xref/definition-linear-independence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.4.5">definition of linear independence.</a>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-linear_independence_q2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.15.b"><a tabindex="-1" href="#ula-proteus-linear_independence_q2" title="Copy heading and permalink for Task 2.4.15.b" aria-label="Copy heading and permalink for Task 2.4.15.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.12.b"><a tabindex="-1" href="#ula-proteus-linear_independence_q2" title="Copy heading and permalink for Task 2.4.12.b" aria-label="Copy heading and permalink for Task 2.4.12.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ula-proteus-linear_independence_q3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para logical" id="ula-proteus-linear_independence_q3-1-1">
@@ -1384,21 +1384,21 @@ a_1\wvec_1 + a_2\wvec_2 + a_3\wvec_3 = \zerovec
 <div class="para">What, if anything, can you conclude about the relationship between <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}\)</span> and <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\vvec_3}\text{?}\)</span> Explain your thinking.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-linear_independence_q3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.15.c"><a tabindex="-1" href="#ula-proteus-linear_independence_q3" title="Copy heading and permalink for Task 2.4.15.c" aria-label="Copy heading and permalink for Task 2.4.15.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.12.c"><a tabindex="-1" href="#ula-proteus-linear_independence_q3" title="Copy heading and permalink for Task 2.4.12.c" aria-label="Copy heading and permalink for Task 2.4.12.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ula-proteus-linear_independence_q4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ula-proteus-linear_independence_q4-1-1">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> form a linearly independent set of vectors in <span class="process-math">\(\real^n\text{.}\)</span> Is it Always True, Sometimes True, or Never True that <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> form a linearly independent set? Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-linear_independence_q4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.15.d"><a tabindex="-1" href="#ula-proteus-linear_independence_q4" title="Copy heading and permalink for Task 2.4.15.d" aria-label="Copy heading and permalink for Task 2.4.15.d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.12.d"><a tabindex="-1" href="#ula-proteus-linear_independence_q4" title="Copy heading and permalink for Task 2.4.12.d" aria-label="Copy heading and permalink for Task 2.4.12.d">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ula-proteus-linear_independence_q5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="ula-proteus-linear_independence_q5-1-1">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> form a linearly independent set of vectors in <span class="process-math">\(\real^n\)</span> and that <span class="process-math">\(\vvec_4\)</span> is a fourth vector in <span class="process-math">\(\real^n\text{.}\)</span> Is it Always True, Sometimes True, or Never True that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\text{,}\)</span> and <span class="process-math">\(\vvec_4\)</span> form a linearly independent set? Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-linear_independence_q5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.15.e"><a tabindex="-1" href="#ula-proteus-linear_independence_q5" title="Copy heading and permalink for Task 2.4.15.e" aria-label="Copy heading and permalink for Task 2.4.15.e">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.4.15: A review of linear independence"><a tabindex="-1" href="#ula-proteus-2-4-linear-indep-review" title="Copy heading and permalink for Checkpoint 2.4.15: A review of linear independence" aria-label="Copy heading and permalink for Checkpoint 2.4.15: A review of linear independence">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.4.12.e"><a tabindex="-1" href="#ula-proteus-linear_independence_q5" title="Copy heading and permalink for Task 2.4.12.e" aria-label="Copy heading and permalink for Task 2.4.12.e">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.4.12: A review of linear independence"><a tabindex="-1" href="#ula-proteus-2-4-linear-indep-review" title="Copy heading and permalink for Checkpoint 2.4.12: A review of linear independence" aria-label="Copy heading and permalink for Checkpoint 2.4.12: A review of linear independence">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ula-proteus-2-4-recognizing-linear-independence"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Recognizing linear independence.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Recognizing linear independence.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-4-recognizing-linear-independence">
 <span data-subcomponent="question">
@@ -1421,7 +1421,7 @@ a_1\wvec_1 + a_2\wvec_2 + a_3\wvec_3 = \zerovec
 <li data-subcomponent="draggable" id="rs-ula-proteus-2-4-recognizing-linear-independence_drag8" data-category="3">The matrix <span class="process-math">\(A\)</span> has a pivot position in every row.</li>
 <li data-subcomponent="dropzone" for="rs-ula-proteus-2-4-recognizing-linear-independence_drag3" data-category="3">Not enough information to determine</li>
 </ul></div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.4.16: Recognizing linear independence"><a tabindex="-1" href="#ula-proteus-2-4-recognizing-linear-independence" title="Copy heading and permalink for Checkpoint 2.4.16: Recognizing linear independence" aria-label="Copy heading and permalink for Checkpoint 2.4.16: Recognizing linear independence">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.4.13: Recognizing linear independence"><a tabindex="-1" href="#ula-proteus-2-4-recognizing-linear-independence" title="Copy heading and permalink for Checkpoint 2.4.13: Recognizing linear independence" aria-label="Copy heading and permalink for Checkpoint 2.4.13: Recognizing linear independence">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.4: Summary"><a tabindex="-1" href="#sec-linear-dep-6" title="Copy heading and permalink for Subsection 2.4.4: Summary" aria-label="Copy heading and permalink for Subsection 2.4.4: Summary">🔗</a></div>
 </section>
 <section class="exercises" id="sec-linear-dep-7">

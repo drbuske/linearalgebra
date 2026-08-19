@@ -526,7 +526,7 @@ sagecell.makeSagecell({
 <div class="para" id="sec-span-2-1">Matrix multiplication allows us to rewrite a linear system in the form <span class="process-math">\(A\xvec = \bvec\text{.}\)</span>  Besides being a more compact way of expressing a linear system, this form allows us to think about linear systems geometrically since matrix multiplication is defined in terms of linear combinations of vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-span-2-2">
-<div class="para">We now return to our <a href="sec-pivots.html#fundamental-questions" class="xref" data-knowl="./knowl/xref/fundamental-questions.html" data-reveal-label="Reveal" data-close-label="Close" title="Question 1.4.3: Two Fundamental Questions">two fundamental questions,</a> rephrased here in terms of matrix multiplication.</div>
+<div class="para">We now return to our <a href="sec-pivots.html#fundamental-questions" class="xref" data-knowl="./knowl/xref/fundamental-questions.html" data-reveal-label="Reveal" data-close-label="Close" title="Question 1.4.2: Two Fundamental Questions">two fundamental questions,</a> rephrased here in terms of matrix multiplication.</div>
 <ul class="disc" id="sec-span-2-2-2">
 <li id="sec-span-2-2-2-1">
 <div class="para" id="sec-span-2-2-2-1-1">
@@ -630,22 +630,22 @@ A = \left[\begin{array}{rrrr}
 \end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">Remember that <a href="sec-matrices-lin-combs.html#prop-matrix-eq-solution" class="xref" data-knowl="./knowl/xref/prop-matrix-eq-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.2.7">Proposition 2.2.7</a> says that the equation <span class="process-math">\(A\xvec = \bvec\)</span> is consistent if and only if we can express <span class="process-math">\(\bvec\)</span> as a linear combination of <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\text{.}\)</span>
+<div class="para">Remember that <a href="sec-matrices-lin-combs.html#prop-matrix-eq-solution" class="xref" data-knowl="./knowl/xref/prop-matrix-eq-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.2.4">Proposition 2.2.4</a> says that the equation <span class="process-math">\(A\xvec = \bvec\)</span> is consistent if and only if we can express <span class="process-math">\(\bvec\)</span> as a linear combination of <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\text{.}\)</span>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec-span-3-4"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="sec-span-3-4-2">The <dfn class="terminology">span</dfn> of a set of vectors <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\)</span> is the set of all linear combinations that can be formed from the vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-span-3-4-3">Alternatively, if <span class="process-math">\(A = \begin{bmatrix} \vvec_1 \amp \vvec_2 \amp \cdots \amp
 \vvec_n \end{bmatrix}\text{,}\)</span> then the span of the vectors consists of all vectors <span class="process-math">\(\bvec\)</span> for which the equation <span class="process-math">\(A\xvec = \bvec\)</span> is consistent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 2.3.2"><a tabindex="-1" href="#sec-span-3-4" title="Copy heading and permalink for Definition 2.3.2" aria-label="Copy heading and permalink for Definition 2.3.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 2.3.1"><a tabindex="-1" href="#sec-span-3-4" title="Copy heading and permalink for Definition 2.3.1" aria-label="Copy heading and permalink for Definition 2.3.1">🔗</a></div>
 </article>
 <article class="example example-like" id="sec-span-3-5"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec-span-3-5-1-1">
 <div class="para">Considering the set of vectors <span class="process-math">\(\vvec=\twovec{-2}{1}\)</span> and <span class="process-math">\(\wvec = \twovec{8}{-4}\text{,}\)</span> we see that the vector</div>
@@ -691,10 +691,10 @@ A = \begin{bmatrix} \vvec \amp \wvec \end{bmatrix} =
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.3"><a tabindex="-1" href="#sec-span-3-5" title="Copy heading and permalink for Example 2.3.3" aria-label="Copy heading and permalink for Example 2.3.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.2"><a tabindex="-1" href="#sec-span-3-5" title="Copy heading and permalink for Example 2.3.2" aria-label="Copy heading and permalink for Example 2.3.2">🔗</a></div>
 </article>
 <article class="activity project-like" id="activity-intro-span"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="activity-intro-span-1-1">
 <div class="para">Let’s look at two examples to develop some intuition for the concept of span.</div>
@@ -734,7 +734,7 @@ c\vvec + d\wvec
 <div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#interactive-span1-4" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
 </div></details>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An interactive diagram for constructing linear combinations of the vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.5"><a tabindex="-1" href="#js-span-1" title="Copy heading and permalink for Figure 2.3.5" aria-label="Copy heading and permalink for Figure 2.3.5">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An interactive diagram for constructing linear combinations of the vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.3"><a tabindex="-1" href="#js-span-1" title="Copy heading and permalink for Figure 2.3.3" aria-label="Copy heading and permalink for Figure 2.3.3">🔗</a></div></figcaption>
 </figure>
 <div class="para logical" id="activity-intro-span-1-1-1-1-3">
 <ol class="decimal ol-marker-2" id="activity-intro-span-1-1-1-1-3-1">
@@ -833,7 +833,7 @@ c\vvec + d\wvec.
 <div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#interactive-span2-4" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
 </div></details>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An interactive diagram for constructing linear combinations of the vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.6"><a tabindex="-1" href="#js-span-2" title="Copy heading and permalink for Figure 2.3.6" aria-label="Copy heading and permalink for Figure 2.3.6">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An interactive diagram for constructing linear combinations of the vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.4"><a tabindex="-1" href="#js-span-2" title="Copy heading and permalink for Figure 2.3.4" aria-label="Copy heading and permalink for Figure 2.3.4">🔗</a></div></figcaption>
 </figure>
 <div class="para logical" id="activity-intro-span-1-1-1-2-3">
 <ol class="decimal ol-marker-2" id="activity-intro-span-1-1-1-2-3-1">
@@ -901,14 +901,14 @@ c\vvec + d\wvec.
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-intro-span-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Activity 2.3.4"><a tabindex="-1" href="#activity-intro-span" title="Copy heading and permalink for Activity 2.3.4" aria-label="Copy heading and permalink for Activity 2.3.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.3.2"><a tabindex="-1" href="#activity-intro-span" title="Copy heading and permalink for Activity 2.3.2" aria-label="Copy heading and permalink for Activity 2.3.2">🔗</a></div>
 </article>
 <div class="para" id="sec-span-3-7">This activity aims to convey the geometric meaning of span. Remember that we can think of a linear combination of the two vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> as a recipe for walking in the plane <span class="process-math">\(\real^2\text{.}\)</span>  We first move a prescribed amount in the direction of <span class="process-math">\(\vvec\)</span> and then a prescribed amount in the direction of <span class="process-math">\(\wvec\text{.}\)</span>  The span consists of all the places we can walk to.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-span-linear-indep"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="example-span-linear-indep-1-1">Let’s consider the vectors <span class="process-math">\(\vvec=\twovec20\)</span> and <span class="process-math">\(\wvec=\twovec{-1}1\)</span> as shown in <a href="sec-span.html#fig-span-linear-indep" class="xref" data-knowl="./knowl/xref/fig-span-linear-indep.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.8">Figure 2.3.8</a>. 
+<div class="para" id="example-span-linear-indep-1-1">Let’s consider the vectors <span class="process-math">\(\vvec=\twovec20\)</span> and <span class="process-math">\(\wvec=\twovec{-1}1\)</span> as shown in <a href="sec-span.html#fig-span-linear-indep" class="xref" data-knowl="./knowl/xref/fig-span-linear-indep.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.6">Figure 2.3.6</a>. 
 <div class="sidebyside">
 <div class="sbsrow" style="margin-left:25%;margin-right:25%;grid-template-columns:100%;column-gap:0%;">
 <div class="sbspanel sbspanel--top top" style="">
@@ -918,7 +918,7 @@ c\vvec + d\wvec.
 </div>
 </div></details>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> and some linear combinations they create.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.8"><a tabindex="-1" href="#fig-span-linear-indep" title="Copy heading and permalink for Figure 2.3.8" aria-label="Copy heading and permalink for Figure 2.3.8">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> and some linear combinations they create.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.6"><a tabindex="-1" href="#fig-span-linear-indep" title="Copy heading and permalink for Figure 2.3.6" aria-label="Copy heading and permalink for Figure 2.3.6">🔗</a></div></figcaption>
 </figure>
 </div>
 </div>
@@ -997,12 +997,12 @@ c\vvec + d\wvec.
 </div> 
 <div class="para" id="example-span-linear-indep-1-4">The intuitive meaning is that we can walk to any point in the plane by moving an appropriate distance in the <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> directions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-span-linear-indep-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.7"><a tabindex="-1" href="#example-span-linear-indep" title="Copy heading and permalink for Example 2.3.7" aria-label="Copy heading and permalink for Example 2.3.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.5"><a tabindex="-1" href="#example-span-linear-indep" title="Copy heading and permalink for Example 2.3.5" aria-label="Copy heading and permalink for Example 2.3.5">🔗</a></div>
 </article>
 <article class="example example-like" id="example-span-linear-dep"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="example-span-linear-dep-1-1">Now let’s consider the vectors <span class="process-math">\(\vvec=\twovec{-1}1\)</span> and <span class="process-math">\(\wvec=\twovec2{-2}\)</span> as shown in <a href="sec-span.html#fig-span-linear-dep" class="xref" data-knowl="./knowl/xref/fig-span-linear-dep.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.10">Figure 2.3.10</a>. 
+<div class="para" id="example-span-linear-dep-1-1">Now let’s consider the vectors <span class="process-math">\(\vvec=\twovec{-1}1\)</span> and <span class="process-math">\(\wvec=\twovec2{-2}\)</span> as shown in <a href="sec-span.html#fig-span-linear-dep" class="xref" data-knowl="./knowl/xref/fig-span-linear-dep.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.8">Figure 2.3.8</a>. 
 <div class="sidebyside">
 <div class="sbsrow" style="margin-left:25%;margin-right:25%;grid-template-columns:100%;column-gap:0%;">
 <div class="sbspanel sbspanel--top top" style="">
@@ -1012,7 +1012,7 @@ c\vvec + d\wvec.
 </div>
 </div></details>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> and some linear combinations they create.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.10"><a tabindex="-1" href="#fig-span-linear-dep" title="Copy heading and permalink for Figure 2.3.10" aria-label="Copy heading and permalink for Figure 2.3.10">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The vectors <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> and some linear combinations they create.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.8"><a tabindex="-1" href="#fig-span-linear-dep" title="Copy heading and permalink for Figure 2.3.8" aria-label="Copy heading and permalink for Figure 2.3.8">🔗</a></div></figcaption>
 </figure>
 </div>
 </div>
@@ -1097,16 +1097,16 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="para">is actually a scalar multiple of <span class="process-math">\(\vvec\text{.}\)</span>  Therefore, the span of <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\)</span> is the line defined by the vector <span class="process-math">\(\vvec\text{.}\)</span> Intuitively, this means that we can only walk to points on this line using these two vectors.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-span-linear-dep-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.9"><a tabindex="-1" href="#example-span-linear-dep" title="Copy heading and permalink for Example 2.3.9" aria-label="Copy heading and permalink for Example 2.3.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.7"><a tabindex="-1" href="#example-span-linear-dep" title="Copy heading and permalink for Example 2.3.7" aria-label="Copy heading and permalink for Example 2.3.7">🔗</a></div>
 </article>
 <article class="convention remark-like" id="sec-span-3-10"><h3 class="heading">
-<span class="type">Notation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Notation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="sec-span-3-10-1">We will denote the span of the set of vectors <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\)</span> by <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\ldots,\vvec_n}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Notation 2.3.11"><a tabindex="-1" href="#sec-span-3-10" title="Copy heading and permalink for Notation 2.3.11" aria-label="Copy heading and permalink for Notation 2.3.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Notation 2.3.9"><a tabindex="-1" href="#sec-span-3-10" title="Copy heading and permalink for Notation 2.3.9" aria-label="Copy heading and permalink for Notation 2.3.9">🔗</a></div>
 </article>
-<div class="para" id="sec-span-3-11">In <a href="sec-span.html#example-span-linear-indep" class="xref" data-knowl="./knowl/xref/example-span-linear-indep.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.7">Example 2.3.7</a>, we saw that <span class="process-math">\(\laspan{\vvec,\wvec} = \real^2\text{.}\)</span>  However, for the vectors in <a href="sec-span.html#example-span-linear-dep" class="xref" data-knowl="./knowl/xref/example-span-linear-dep.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.9">Example 2.3.9</a>, we saw that <span class="process-math">\(\laspan{\vvec,\wvec}\)</span> is simply a line.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-span-3-11">In <a href="sec-span.html#example-span-linear-indep" class="xref" data-knowl="./knowl/xref/example-span-linear-indep.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.5">Example 2.3.5</a>, we saw that <span class="process-math">\(\laspan{\vvec,\wvec} = \real^2\text{.}\)</span>  However, for the vectors in <a href="sec-span.html#example-span-linear-dep" class="xref" data-knowl="./knowl/xref/example-span-linear-dep.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.7">Example 2.3.7</a>, we saw that <span class="process-math">\(\laspan{\vvec,\wvec}\)</span> is simply a line.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Subsection 2.3.1: The span of a set of vectors"><a tabindex="-1" href="#sec-span-3" title="Copy heading and permalink for Subsection 2.3.1: The span of a set of vectors" aria-label="Copy heading and permalink for Subsection 2.3.1: The span of a set of vectors">🔗</a></div>
 </section>
@@ -1120,14 +1120,14 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="para" id="sec-span-4-3">The previous examples point to the fact that the span is related to the pivot positions of <span class="process-math">\(A\text{.}\)</span>  While <a href="sec-linear-dep.html" class="internal" title="Section 2.4: Linear independence">Section 2.4</a> and <a href="sec-subspaces.html" class="internal" title="Section 3.4: Subspaces">Section 3.4</a> develop this idea more fully, we will now examine the possibilities in <span class="process-math">\(\real^3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="activity-span-r3"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="activity-span-r3-1-1">
 <div class="para">In this activity, we will look at the span of sets of vectors in <span class="process-math">\(\real^3\text{.}\)</span>
 </div>
 <ol class="lower-alpha ol-marker-1" id="activity-span-r3-1-1-2">
 <li id="activity-span-r3-1-1-2-1">
-<div class="para" id="activity-span-r3-1-1-2-1-1">Suppose <span class="process-math">\(\vvec=\threevec{1}{2}{1}\text{.}\)</span>  Give a geometric description of <span class="process-math">\(\laspan{\vvec}\)</span> and a rough sketch of <span class="process-math">\(\vvec\)</span> and its span in <a href="sec-span.html#fig-3d-span-1" class="xref" data-knowl="./knowl/xref/fig-3d-span-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.13">Figure 2.3.13</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-span-r3-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activity-span-r3-1-1-2-1-1">Suppose <span class="process-math">\(\vvec=\threevec{1}{2}{1}\text{.}\)</span>  Give a geometric description of <span class="process-math">\(\laspan{\vvec}\)</span> and a rough sketch of <span class="process-math">\(\vvec\)</span> and its span in <a href="sec-span.html#fig-3d-span-1" class="xref" data-knowl="./knowl/xref/fig-3d-span-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.10">Figure 2.3.10</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-span-r3-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-3d-span-1">
 <div class="sidebyside">
@@ -1140,7 +1140,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </div></div>
 </div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A three-dimensional coordinate system for sketching <span class="process-math">\(\vvec\)</span> and its span.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.13"><a tabindex="-1" href="#fig-3d-span-1" title="Copy heading and permalink for Figure 2.3.13" aria-label="Copy heading and permalink for Figure 2.3.13">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A three-dimensional coordinate system for sketching <span class="process-math">\(\vvec\)</span> and its span.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.10"><a tabindex="-1" href="#fig-3d-span-1" title="Copy heading and permalink for Figure 2.3.10" aria-label="Copy heading and permalink for Figure 2.3.10">🔗</a></div></figcaption>
 </figure><div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#activity-span-r3-1-1-2-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="activity-span-r3-1-1-2-2">
@@ -1152,7 +1152,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 \evec_2 = \threevec{0}{1}{0}\text{.}
 \end{equation*}
 </div>
-<div class="para">Sketch the vectors below.  Then give a geometric description of <span class="process-math">\(\laspan{\evec_1,\evec_2}\)</span> and a rough sketch of  the span in <a href="sec-span.html#fig-3d-span-2" class="xref" data-knowl="./knowl/xref/fig-3d-span-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.14">Figure 2.3.14</a>.</div>
+<div class="para">Sketch the vectors below.  Then give a geometric description of <span class="process-math">\(\laspan{\evec_1,\evec_2}\)</span> and a rough sketch of  the span in <a href="sec-span.html#fig-3d-span-2" class="xref" data-knowl="./knowl/xref/fig-3d-span-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.11">Figure 2.3.11</a>.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-span-r3-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-3d-span-2">
@@ -1166,7 +1166,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </div></div>
 </div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A coordinate system for sketching <span class="process-math">\(\evec_1\text{,}\)</span> <span class="process-math">\(\evec_2\text{,}\)</span> and <span class="process-math">\(\laspan{\evec_1,\evec_2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.14"><a tabindex="-1" href="#fig-3d-span-2" title="Copy heading and permalink for Figure 2.3.14" aria-label="Copy heading and permalink for Figure 2.3.14">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A coordinate system for sketching <span class="process-math">\(\evec_1\text{,}\)</span> <span class="process-math">\(\evec_2\text{,}\)</span> and <span class="process-math">\(\laspan{\evec_1,\evec_2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.11"><a tabindex="-1" href="#fig-3d-span-2" title="Copy heading and permalink for Figure 2.3.11" aria-label="Copy heading and permalink for Figure 2.3.11">🔗</a></div></figcaption>
 </figure><div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#activity-span-r3-1-1-2-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="activity-span-r3-1-1-2-3">
@@ -1266,13 +1266,13 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-span-r3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Activity 2.3.12"><a tabindex="-1" href="#activity-span-r3" title="Copy heading and permalink for Activity 2.3.12" aria-label="Copy heading and permalink for Activity 2.3.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.3.3"><a tabindex="-1" href="#activity-span-r3" title="Copy heading and permalink for Activity 2.3.3" aria-label="Copy heading and permalink for Activity 2.3.3">🔗</a></div>
 </article>
 <div class="para logical" id="sec-span-4-5">
 <div class="para">The types of sets that appear as the span of a set of vectors in <span class="process-math">\(\real^3\)</span> are relatively simple.</div>
 <ul class="disc" id="sec-span-4-5-2">
 <li id="sec-span-4-5-2-1">
-<div class="para" id="sec-span-4-5-2-1-1">First, with a single nonzero vector, all linear combinations are simply scalar multiples of that vector so that the span of this vector is a line, as shown in <a href="sec-span.html#fig-span-line" class="xref" data-knowl="./knowl/xref/fig-span-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.15">Figure 2.3.15</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-span-4-5-2-1-1">First, with a single nonzero vector, all linear combinations are simply scalar multiples of that vector so that the span of this vector is a line, as shown in <a href="sec-span.html#fig-span-line" class="xref" data-knowl="./knowl/xref/fig-span-line.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.12">Figure 2.3.12</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-span-line">
 <div class="sidebyside">
@@ -1285,7 +1285,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </div></div>
 </div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of a single nonzero vector is a line.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.15"><a tabindex="-1" href="#fig-span-line" title="Copy heading and permalink for Figure 2.3.15" aria-label="Copy heading and permalink for Figure 2.3.15">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of a single nonzero vector is a line.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.12"><a tabindex="-1" href="#fig-span-line" title="Copy heading and permalink for Figure 2.3.12" aria-label="Copy heading and permalink for Figure 2.3.12">🔗</a></div></figcaption>
 </figure>
 <div class="para logical" id="sec-span-4-5-2-1-3">
 <div class="para">Notice that the matrix formed by this vector has one pivot position.  For example,</div>
@@ -1299,7 +1299,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-span-4-5-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-span-4-5-2-2">
-<div class="para" id="sec-span-4-5-2-2-1">The span of two vectors in <span class="process-math">\(\real^3\)</span> that do not lie on the same line will be a plane, as seen in <a href="sec-span.html#fig-span-plane" class="xref" data-knowl="./knowl/xref/fig-span-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.16">Figure 2.3.16</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-span-4-5-2-2-1">The span of two vectors in <span class="process-math">\(\real^3\)</span> that do not lie on the same line will be a plane, as seen in <a href="sec-span.html#fig-span-plane" class="xref" data-knowl="./knowl/xref/fig-span-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.13">Figure 2.3.13</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-span-plane">
 <div class="sidebyside">
@@ -1312,7 +1312,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </div></div>
 </div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of these two vectors in <span class="process-math">\(\real^3\)</span> is a plane.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.16"><a tabindex="-1" href="#fig-span-plane" title="Copy heading and permalink for Figure 2.3.16" aria-label="Copy heading and permalink for Figure 2.3.16">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of these two vectors in <span class="process-math">\(\real^3\)</span> is a plane.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.13"><a tabindex="-1" href="#fig-span-plane" title="Copy heading and permalink for Figure 2.3.13" aria-label="Copy heading and permalink for Figure 2.3.13">🔗</a></div></figcaption>
 </figure>
 <div class="para logical" id="sec-span-4-5-2-2-3">
 <div class="para">For example, the vectors</div>
@@ -1423,13 +1423,13 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="para" id="sec-span-4-7">The reasoning that led us to conclude that the span of a set of vectors is <span class="process-math">\(\real^3\)</span> when the associated matrix has a pivot position in every row applies more generally.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="prop-pivot-row"><h3 class="heading">
-<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="prop-pivot-row-1-1">Suppose we have vectors <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\)</span> in <span class="process-math">\(\real^m\text{.}\)</span> Then <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\ldots,\vvec_n}=\real^m\)</span> if and only if the matrix <span class="process-math">\(\left[\begin{array}{rrrr}
 \vvec_1\amp\vvec_2\amp\cdots\amp\vvec_n
 \end{array}\right]\)</span> has a pivot position in every row.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prop-pivot-row-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.3.17"><a tabindex="-1" href="#prop-pivot-row" title="Copy heading and permalink for Proposition 2.3.17" aria-label="Copy heading and permalink for Proposition 2.3.17">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.3.14"><a tabindex="-1" href="#prop-pivot-row" title="Copy heading and permalink for Proposition 2.3.14" aria-label="Copy heading and permalink for Proposition 2.3.14">🔗</a></div>
 </article>
 <div class="para logical" id="sec-span-4-9">
 <div class="para">This tells us something important about the number of vectors needed to span <span class="process-math">\(\real^m\text{.}\)</span>  Suppose we have <span class="process-math">\(n\)</span> vectors <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\)</span> that span <span class="process-math">\(\real^m\text{.}\)</span>  The proposition tells us that the matrix <span class="process-math">\(A = \left[\begin{array}{rrrr}
@@ -1449,11 +1449,11 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="prop-span-bound"><h3 class="heading">
-<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="prop-span-bound-1-1">A set of vectors whose span is <span class="process-math">\(\real^m\)</span> contains at least <span class="process-math">\(m\)</span> vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prop-span-bound-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.3.18"><a tabindex="-1" href="#prop-span-bound" title="Copy heading and permalink for Proposition 2.3.18" aria-label="Copy heading and permalink for Proposition 2.3.18">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Proposition 2.3.15"><a tabindex="-1" href="#prop-span-bound" title="Copy heading and permalink for Proposition 2.3.15" aria-label="Copy heading and permalink for Proposition 2.3.15">🔗</a></div>
 </article>
 <div class="para" id="sec-span-4-11">We have thought about a linear combination of a set of vectors <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\)</span> as the result of walking a certain distance in the direction of <span class="process-math">\(\vvec_1\text{,}\)</span> followed by walking a certain distance in the direction of <span class="process-math">\(\vvec_2\text{,}\)</span> and so on.  If <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\ldots,\vvec_n} = \real^m\text{,}\)</span> this means that we can walk to every point in <span class="process-math">\(\real^m\)</span> using the directions <span class="process-math">\(\vvec_1,\vvec_2,\ldots,\vvec_n\text{.}\)</span>  Intuitively, this proposition is telling us that we need at least <span class="process-math">\(m\)</span> directions to have the flexibility needed to reach every point in <span class="process-math">\(\real^m\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1522,21 +1522,21 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-span-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="ula-proteus-2-3-span-geometric"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing span geometrically.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing span geometrically.</span>
 </h3>
 <article class="task exercise-like" id="ula-proteus-2-3-span-geometric-a-v1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ula-proteus-2-3-span-geometric-a-v1-1-1">Let <span class="process-math">\(\vvec\)</span> be a nonzero vector in <span class="process-math">\(\real^3\text{.}\)</span> Explain why <span class="process-math">\(\laspan{\vvec}\)</span> is always an infinite set of vectors and describe <span class="process-math">\(\laspan{\vvec}\)</span> geometrically.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric-a-v1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.19.a"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric-a-v1" title="Copy heading and permalink for Task 2.3.19.a" aria-label="Copy heading and permalink for Task 2.3.19.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.16.a"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric-a-v1" title="Copy heading and permalink for Task 2.3.16.a" aria-label="Copy heading and permalink for Task 2.3.16.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ula-proteus-2-3-span-geometric-b-v1"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ula-proteus-2-3-span-geometric-b-v1-1-1">If <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> are nonzero vectors in <span class="process-math">\(\real^4\)</span> and <span class="process-math">\(\laspan{\vvec_1, \vvec_2,\vvec_3}\)</span> is a line, what can you say about the vectors <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\text{?}\)</span>  Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric-b-v1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.19.b"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric-b-v1" title="Copy heading and permalink for Task 2.3.19.b" aria-label="Copy heading and permalink for Task 2.3.19.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.19: Describing span geometrically"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric" title="Copy heading and permalink for Checkpoint 2.3.19: Describing span geometrically" aria-label="Copy heading and permalink for Checkpoint 2.3.19: Describing span geometrically">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.16.b"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric-b-v1" title="Copy heading and permalink for Task 2.3.16.b" aria-label="Copy heading and permalink for Task 2.3.16.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.16: Describing span geometrically"><a tabindex="-1" href="#ula-proteus-2-3-span-geometric" title="Copy heading and permalink for Checkpoint 2.3.16: Describing span geometrically" aria-label="Copy heading and permalink for Checkpoint 2.3.16: Describing span geometrically">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ula-proteus-2-3-span-algebraic"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing span algebraically.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing span algebraically.</span>
 </h3>
 <div class="introduction" id="ula-proteus-2-3-span-algebraic-2">
 <div class="para" id="ula-proteus-2-3-span-algebraic-2-1">Suppose that <span class="process-math">\(A\)</span> is a <span class="process-math">\(4\times3\)</span> matrix whose columns are <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> and <span class="process-math">\(\vvec_3\)</span> and that <span class="process-math">\(\bvec\)</span> is a vector in <span class="process-math">\(\real^4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1545,16 +1545,16 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <article class="task exercise-like" id="ula-proteus-2-3-span-algebraic-a-v1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ula-proteus-2-3-span-algebraic-a-v1-1-1">If <span class="process-math">\(\bvec\)</span> is in <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\vvec_3}\)</span> , what can we conclude about the set of solutions to the equation <span class="process-math">\(A\xvec = \bvec\text{?}\)</span>  Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-a-v1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.20.a"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-a-v1" title="Copy heading and permalink for Task 2.3.20.a" aria-label="Copy heading and permalink for Task 2.3.20.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.17.a"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-a-v1" title="Copy heading and permalink for Task 2.3.17.a" aria-label="Copy heading and permalink for Task 2.3.17.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ula-proteus-2-3-span-algebraic-b-v1"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ula-proteus-2-3-span-algebraic-b-v1-1-1">If <span class="process-math">\(2\vvec_1-\vvec_2+3\vvec_3 = \bvec\text{,}\)</span> what can we say about the relationship between <span class="process-math">\(\bvec\)</span> and <span class="process-math">\(\laspan{\vvec_1,\vvec_2,\vvec_3}\text{?}\)</span> Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-b-v1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.20.b"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-b-v1" title="Copy heading and permalink for Task 2.3.20.b" aria-label="Copy heading and permalink for Task 2.3.20.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.20: Describing span algebraically"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic" title="Copy heading and permalink for Checkpoint 2.3.20: Describing span algebraically" aria-label="Copy heading and permalink for Checkpoint 2.3.20: Describing span algebraically">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.17.b"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic-b-v1" title="Copy heading and permalink for Task 2.3.17.b" aria-label="Copy heading and permalink for Task 2.3.17.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.17: Describing span algebraically"><a tabindex="-1" href="#ula-proteus-2-3-span-algebraic" title="Copy heading and permalink for Checkpoint 2.3.17: Describing span algebraically" aria-label="Copy heading and permalink for Checkpoint 2.3.17: Describing span algebraically">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ula-proteus-2-3-span-rref"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connecting span with reduced row echelon form.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connecting span with reduced row echelon form.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-3-span-rref">
 <span data-subcomponent="question">
@@ -1614,10 +1614,10 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </div>
 </li>
 </ul></div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.21: Connecting span with reduced row echelon form"><a tabindex="-1" href="#ula-proteus-2-3-span-rref" title="Copy heading and permalink for Checkpoint 2.3.21: Connecting span with reduced row echelon form" aria-label="Copy heading and permalink for Checkpoint 2.3.21: Connecting span with reduced row echelon form">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.18: Connecting span with reduced row echelon form"><a tabindex="-1" href="#ula-proteus-2-3-span-rref" title="Copy heading and permalink for Checkpoint 2.3.18: Connecting span with reduced row echelon form" aria-label="Copy heading and permalink for Checkpoint 2.3.18: Connecting span with reduced row echelon form">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ula-proteus-2-3-identifying-span"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identifying vectors in the span of a set of vectors.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identifying vectors in the span of a set of vectors.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula-proteus-2-3-identifying-span">
 <span data-subcomponent="question">
@@ -1667,10 +1667,10 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 <div class="para" id="ula-proteus-2-3-identifying-span-3-3-2-1">Not enough information to determine</div>
 </li>
 </ul></div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.22: Identifying vectors in the span of a set of vectors"><a tabindex="-1" href="#ula-proteus-2-3-identifying-span" title="Copy heading and permalink for Checkpoint 2.3.22: Identifying vectors in the span of a set of vectors" aria-label="Copy heading and permalink for Checkpoint 2.3.22: Identifying vectors in the span of a set of vectors">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.19: Identifying vectors in the span of a set of vectors"><a tabindex="-1" href="#ula-proteus-2-3-identifying-span" title="Copy heading and permalink for Checkpoint 2.3.19: Identifying vectors in the span of a set of vectors" aria-label="Copy heading and permalink for Checkpoint 2.3.19: Identifying vectors in the span of a set of vectors">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ula_proteus_2-3_Span_Matching_True_False_Sometimes_v1"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding Span - True/False/Sometimes.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding Span - True/False/Sometimes.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-ula_proteus_2-3_Span_Matching_True_False_Sometimes_v1">
 <span data-subcomponent="question">
@@ -1698,7 +1698,7 @@ c\vvec -2d\vvec = (c-2d)\vvec,
 </li>
 <li data-subcomponent="dropzone" for="rs-ula_proteus_2-3_Span_Matching_True_False_Sometimes_v1_drag3" data-category="3">Sometimes True</li>
 </ul></div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.23: Understanding Span - True/False/Sometimes"><a tabindex="-1" href="#ula_proteus_2-3_Span_Matching_True_False_Sometimes_v1" title="Copy heading and permalink for Checkpoint 2.3.23: Understanding Span - True/False/Sometimes" aria-label="Copy heading and permalink for Checkpoint 2.3.23: Understanding Span - True/False/Sometimes">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.3.20: Understanding Span - True/False/Sometimes"><a tabindex="-1" href="#ula_proteus_2-3_Span_Matching_True_False_Sometimes_v1" title="Copy heading and permalink for Checkpoint 2.3.20: Understanding Span - True/False/Sometimes" aria-label="Copy heading and permalink for Checkpoint 2.3.20: Understanding Span - True/False/Sometimes">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.3.3: Summary"><a tabindex="-1" href="#sec-span-5" title="Copy heading and permalink for Subsection 2.3.3: Summary" aria-label="Copy heading and permalink for Subsection 2.3.3: Summary">🔗</a></div>
 </section>
 <section class="exercises" id="sec-span-6">
