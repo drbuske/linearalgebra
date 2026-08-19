@@ -39,5 +39,8 @@
       solution="no"
     />	
   </common>
+    <numbering>
+    <projects distinct="yes" />
+  </numbering>
   <webwork server="https://webwork-ptx.aimath.org" />
 </publication>
