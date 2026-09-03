@@ -1,48 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Front Matter</title>
-  <!-- <subtitle>Math 312</subtitle> -->
 
+  <!-- <subtitle>Math 312</subtitle> -->
   <titlepage>
     <titlepage-items/>
   </titlepage>
-
   <bibinfo>
     <author>
-      <personname> Dale Buske </personname>
+      <personname>Dale Buske</personname>
       <department> Department of Mathematics and Physics </department>
       <institution> St. Cloud State University </institution>
       <email> drbuske@stcloudstate.edu </email>
     </author>
-
-    <date> <today /> </date>
-
-    <edition>
-      2026
-    </edition>
+    <date><today/></date>
+    <edition>2026</edition>
     <website>
       <!-- <url href="https://understandinglinearalgebra.org"
            visual="understandinglinearalgebra.org"/> -->
-           <url href="https://drbuske.github.io/linearalgebra" visual="https://drbuske.github.io/linearalgebra"/>
+      <url href="https://drbuske.github.io/linearalgebra" visual="https://drbuske.github.io/linearalgebra"/>
       <!--
       <name>http://gvsu.edu/s/0Ck</name>
       <address>http://gvsu.edu/s/0Ck</address>
       -->
     </website>
+
     <copyright>
-      <year> 2026 </year>
+      <year>2026</year>
       <holder>Dale Buske</holder>
       <minilicense>CC BY 4.0 License</minilicense>
       <shortlicense>
-	This work is licensed under a <url rel="license"
-	href="http://creativecommons.org/licenses/by/4.0/"
-	visual="creativecommons.org">Creative
-	Commons Attribution 4.0 International License</url>.  
-	<sidebyside width="25%">
-	  <image source="images/license">
+        This work is licensed under a
+        <url rel="license" href="http://creativecommons.org/licenses/by/4.0/" visual="creativecommons.org">
+          Creative
+	Commons Attribution 4.0 International License
+        </url>
+        .
+        <sidebyside width="25%">
+          <image source="images/license">
             <shortdescription>Creative Commons logo</shortdescription>
           </image>
-	</sidebyside>
+        </sidebyside>
       </shortlicense>
     </copyright>
   </bibinfo>
@@ -51,26 +50,28 @@
     <colophon-items/>
   </colophon>
 
-   <preface>
-      <title>Acknowledgement</title>
-  <!-- <acknowledgement> -->
+  <preface>
+    <title>Acknowledgements</title>
+
+    <!-- <acknowledgement> -->
     <p>
-      David Austin has written the vast majority of this text (Understanding Linear Algebra) and deserves significant credit for its production.  I acknowledge him and his acknowledgements are found in an appendix.  
+      David Austin has written the vast majority of this text (<url href="https://understandinglinearalgebra.org/ula.html">Understanding
+      Linear Algebra</url>) and deserves significant credit for its production.
+      I acknowledge him and his acknowledgements are found in an appendix.
     </p>
 
+    <p>
+      Much of chapter 5 content on the topic of vector spaces is modified from another open electronic
+      resource (<url href="https://github.com/selinger/linear-algebra/blob/master/baseText/compiled/LinearAlgebra-AFirstCourse-2017A-BaseText.pdf">A First Course in Linear Algebra</url>) by lyryx.  The original text is by K. Kuttler of Brigham
+      Young University and used under Creative Common license CC BY (https://creativecommons.org/licenses/by/3.0/) 
+      made possible by funding from the Saylor Foundation's Open Textbook Challenge.  Ilijas Farah of York
+      University also contributed to this work.  
+    </p>
   </preface>
-
   <!-- <dedication>
     <p>
       For Sam and Henry
     </p>
   </dedication> -->
-
-
-
   <!-- <xi:include href="./syllabus.ptx" /> -->
-
-  
-
 </frontmatter>
-
