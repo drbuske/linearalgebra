@@ -15,8 +15,8 @@ var ptx_lunr_docs = [
   "url": "frontmatter-5.html",
   "type": "Preface",
   "number": "",
-  "title": "Acknowledgement",
-  "body": " Acknowledgement   David Austin has written the vast majority of this text (Understanding Linear Algebra) and deserves significant credit for its production. I acknowledge him and his acknowledgements are found in an appendix.  "
+  "title": "Acknowledgements",
+  "body": " Acknowledgements   David Austin has written the vast majority of this text ( Understanding Linear Algebra ) and deserves significant credit for its production. I acknowledge him and his acknowledgements are found in an appendix.  Much of chapter 5 content on the topic of vector spaces is modified from another open electronic resource ( A First Course in Linear Algebra ) by lyryx. The original text is by K. Kuttler of Brigham Young University and used under Creative Common license CC BY (https:\/\/creativecommons.org\/licenses\/by\/3.0\/) made possible by funding from the Saylor Foundation's Open Textbook Challenge. Ilijas Farah of York University also contributed to this work.  "
 },
 {
   "id": "sec-expect",
