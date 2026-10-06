@@ -267,7 +267,7 @@
 	      <p>
 		The diagram below demonstrates the effect of a matrix
 		transformation <m>T</m> on the plane.  You may modify
-		the matrix <m>A=\begin{bmatrix} a \amp b \\ c \amp c
+		the matrix <m>A=\begin{bmatrix} a \amp b \\ c \amp d
 		\\ \end{bmatrix}</m> defining <m>T</m>
 		through the sliders at the top.
 	      </p>
