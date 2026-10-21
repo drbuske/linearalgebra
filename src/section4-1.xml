@@ -159,7 +159,7 @@
     </exploration>
 
     <objectives>
-<title>Buske Videos</title>
+<p>Buske Videos</p>
 <ul>
 	        <li>
             <p>
@@ -168,10 +168,7 @@
         </li>
         
 	</ul>
-</objectives>
-
-     <objectives>
-<title>Other Videos</title>
+  <p>Other Videos</p>
 <ul>
 	        <li>
             <p>
@@ -186,6 +183,10 @@
         </li>
 	</ul>
 </objectives>
+
+
+
+
 
   </introduction>
 

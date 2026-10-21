@@ -283,7 +283,23 @@
 	 <objectives>
 <!-- <title>Videos</title> -->
 <ul>
-	        <li>
+	    <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.4+Pivot+positions+-+Buske+-+Linear+Algebra/1_guy313hy" visual="Pivot Positions (3:33)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.4.2+-+Buske+-+Linear+Algebra/1_7u1kcfyj" visual="Activity 1.4.2 (10:27)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.4.3+-+Buske+-+Linear+Algebra/1_z00o4cfc" visual="Activity 1.4.3 (10:34)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.4+Uniqueness+of+Solutions+-+Buske+-+Linear+Algebra/1_29byzv39" visual="Uniqueness of Solutions (2:59)"/></p>
+        </li>
+
+		  <li>
             <p>
                 <url href="https://youtu.be/iQ4fokLHA6I?si=K_4O22jLV1qsX5KW" visual="Existence and Uniqueness for Linear Systems (7:21)"/>
             </p>
