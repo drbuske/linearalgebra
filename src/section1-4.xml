@@ -280,52 +280,7 @@
     concerning the existence of solutions.
     </p>
 
-	 <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	    <li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.4+Pivot+positions+-+Buske+-+Linear+Algebra/1_guy313hy" visual="Pivot Positions (3:33)"/></p>
-        </li>
-
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.4.2+-+Buske+-+Linear+Algebra/1_7u1kcfyj" visual="Activity 1.4.2 (10:27)"/></p>
-        </li>
-
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.4.3+-+Buske+-+Linear+Algebra/1_z00o4cfc" visual="Activity 1.4.3 (10:34)"/></p>
-        </li>
-
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.4+Uniqueness+of+Solutions+-+Buske+-+Linear+Algebra/1_29byzv39" visual="Uniqueness of Solutions (2:59)"/></p>
-        </li>
-
-		  <li>
-            <p>
-                <url href="https://youtu.be/iQ4fokLHA6I?si=K_4O22jLV1qsX5KW" visual="Existence and Uniqueness for Linear Systems (7:21)"/>
-            </p>
-        </li>
-		<li>
-			<p>
-				<url href="https://youtu.be/vhm1bPMAgyU?si=23GiZJksGq1nTLcX" visual="The Gaussian Algorithm Visualized (13:36)"/>
-			</p>
-		</li>
-		<li>
-			<p>
-				<url href="https://youtu.be/B8oszxF9fhI?si=-LAc7siuRo74zlbl" visual="Examples with 0, 1, and infinitely many solutions (6:29)"/>
-			</p>
-		</li>
-		<li>
-			<p>
-				<url href="https://youtu.be/W01H0LcVUdQ?si=3lPk6G0rr-moQdyA" visual="Row Echelon and Reduced Row Echelon Form (6:40)"/>
-			</p>
-		</li>
-		<li>
-			<p>
-				<url href="https://youtu.be/3lMH_no_OvA?si=lukOiP2G1fdaHwyH" visual="Back substitution with infinitely many solutions (11:04)"/>
-			</p>
-		</li>
-	</ul>
-</objectives>
+	 
 
   </introduction>
 
@@ -1012,6 +967,61 @@
     </p>
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	    <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.4+Pivot+positions+-+Buske+-+Linear+Algebra/1_guy313hy" visual="Pivot Positions (3:33)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.4.2+-+Buske+-+Linear+Algebra/1_7u1kcfyj" visual="Activity 1.4.2 (10:27)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.4.3+-+Buske+-+Linear+Algebra/1_z00o4cfc" visual="Activity 1.4.3 (10:34)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.4+Uniqueness+of+Solutions+-+Buske+-+Linear+Algebra/1_29byzv39" visual="Uniqueness of Solutions (2:59)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/TQai0XIHBV8?si=rD1sEzQeyP8xHkM7" visual="Pivot Positions and Fundamental Questions (4:56)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/RNi80uRDnac?si=neN9G0yofLuUwCL2" visual="Consistency, Uniqueness, and Free Variables (7:29)"/></p>
+        </li>
+
+		  <li>
+            <p>
+                <url href="https://youtu.be/iQ4fokLHA6I?si=K_4O22jLV1qsX5KW" visual="Existence and Uniqueness for Linear Systems (7:21)"/>
+            </p>
+        </li>
+		<li>
+			<p>
+				<url href="https://youtu.be/vhm1bPMAgyU?si=23GiZJksGq1nTLcX" visual="The Gaussian Algorithm Visualized (13:36)"/>
+			</p>
+		</li>
+		<li>
+			<p>
+				<url href="https://youtu.be/B8oszxF9fhI?si=-LAc7siuRo74zlbl" visual="Examples with 0, 1, and infinitely many solutions (6:29)"/>
+			</p>
+		</li>
+		<li>
+			<p>
+				<url href="https://youtu.be/W01H0LcVUdQ?si=3lPk6G0rr-moQdyA" visual="Row Echelon and Reduced Row Echelon Form (6:40)"/>
+			</p>
+		</li>
+		<li>
+			<p>
+				<url href="https://youtu.be/3lMH_no_OvA?si=lukOiP2G1fdaHwyH" visual="Back substitution with infinitely many solutions (11:04)"/>
+			</p>
+		</li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>

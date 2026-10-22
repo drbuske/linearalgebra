@@ -30,31 +30,7 @@
       features as we encounter their need.
     </p>
 
-	<objectives>
-<p>Buske Videos</p> 
-<ul>
-		<!-- <li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Augmentation+Principle+-+Buske+-+Linear+Algebra/1_2xv0i3hf?iframeembed=true&amp;config[provider]={&quot;widgetId&quot;:&quot;1_lf3rm97e&quot;}" visual="Augmentation Principle (2:08)"/></p>
-        </li> -->
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Augmentation+Principle+-+Buske+-+Linear+Algebra/1_2xv0i3hf?iframeembed=true" visual="Augmentation Principle (2:08)"/></p>
-        </li>
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.3.1+-+Buske+-+Linear+Algebra/1_r86k6ead" visual="Activity 1.3.1 (4:39)"/></p>
-        </li>
-	        <li>
-            <p>
-                <url href="https://mediaspace.minnstate.edu/media/Activity+1.3.2+-+Buske+-+Linear+Algebra/1_vfm659nf" visual="Activity 1.3.2 (11:09)"/>
-            </p>
-        </li>
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Computation+Effort+-+Buske+-+Linear+Algebra/1_b6d99q4f" visual="Computational Effort (5:40)"/></p>
-        </li>
-		<li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Exercise+6+-+Buske+-+Linear+Algebra/1_2d8c6f51" visual="Exercise 6 (8:58)"/></p>
-        </li>
-	</ul>
-</objectives>
+	
 
   </introduction>
     
@@ -846,6 +822,31 @@ A.rref()
     </p>
 	
   </subsection>
+
+<objectives>
+<ul>
+		<!-- <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Augmentation+Principle+-+Buske+-+Linear+Algebra/1_2xv0i3hf?iframeembed=true&amp;config[provider]={&quot;widgetId&quot;:&quot;1_lf3rm97e&quot;}" visual="Augmentation Principle (2:08)"/></p>
+        </li> -->
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Augmentation+Principle+-+Buske+-+Linear+Algebra/1_2xv0i3hf?iframeembed=true" visual="Augmentation Principle (2:08)"/></p>
+        </li>
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.3.1+-+Buske+-+Linear+Algebra/1_r86k6ead" visual="Activity 1.3.1 (4:39)"/></p>
+        </li>
+	        <li>
+            <p>
+                <url href="https://mediaspace.minnstate.edu/media/Activity+1.3.2+-+Buske+-+Linear+Algebra/1_vfm659nf" visual="Activity 1.3.2 (11:09)"/>
+            </p>
+        </li>
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Computation+Effort+-+Buske+-+Linear+Algebra/1_b6d99q4f" visual="Computational Effort (5:40)"/></p>
+        </li>
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.3+Exercise+6+-+Buske+-+Linear+Algebra/1_2d8c6f51" visual="Exercise 6 (8:58)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>

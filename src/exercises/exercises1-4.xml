@@ -991,7 +991,7 @@
 	</me>.
 	In this way, we obtain a linear equation for the coefficients
 	<m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
-	<ol>
+	<ol marker="a.">
 	  <li> <p> Write the four linear equations for the
 	  coefficients obtained by requiring that the graph of the
 	  polynomial <m>p(x)</m> passes through the four

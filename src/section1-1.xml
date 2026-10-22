@@ -21,34 +21,7 @@
       concepts that will motivate much of our exploration.
     </p>
 
-    <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-    	  <li>
-            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.1.2+-+Buske+-+Linear+Algebra/1_f0d9dydu" visual="Activity 1.1.2 (7:08)"/></p>
-        </li>
-    	  <li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.1+Linear+Systems+with+Two+Unknowns+-+Buske+-+Linear+Algebra/1_zgvteqoq" visual="Linear Systems in Two Unknowns (6:12)"/></p>
-        </li>
-  	    <li>
-            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.1.3+-+Buske+-+Linear+Algebra/1_m90kbuyk" visual="Activity 1.1.3 (7:31)"/></p>
-        </li>
-            	  <li>
-            <p><url href="https://mediaspace.minnstate.edu/media/1.1+Solutions+Spaces+-+Buske+-+Linear+Algebra/1_6gue34fa" visual="Solution Spaces (2:21)"/></p>
-        </li>
-	        <li>
-            <p>
-                <url href="https://youtu.be/9xSOC9lwtl8?si=cVMr8U6pMpak-N5Y" visual="Intro to Linear Systems - Part 1 (6:44)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/oG3jcJb6M70?si=kdizNDVATXJTafKq" visual="Intro to Linear Systems - Part 2 (9:59)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/ZKUqtErZCiU?si=7JYX_mK7hRnw1IeV" visual="What's the big idea of Linear Algebra (12:57)"/></p>
-        </li>
-	</ul>
-</objectives>
+    
     
   </introduction>
 
@@ -911,6 +884,48 @@
     </activity>
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+    	  <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.1.2+-+Buske+-+Linear+Algebra/1_f0d9dydu" visual="Activity 1.1.2 (7:08)"/></p>
+        </li>
+    	  <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.1+Linear+Systems+with+Two+Unknowns+-+Buske+-+Linear+Algebra/1_zgvteqoq" visual="Linear Systems in Two Unknowns (6:12)"/></p>
+        </li>
+  	    <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.1.3+-+Buske+-+Linear+Algebra/1_m90kbuyk" visual="Activity 1.1.3 (7:31)"/></p>
+        </li>
+         <li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.1+Solutions+Spaces+-+Buske+-+Linear+Algebra/1_6gue34fa" visual="Solution Spaces (2:21)"/></p>
+        </li>
+
+         <li>
+            <p><url href="https://youtu.be/mCW2rdd1el8?si=IO4kOoEHvIiwNskd" visual="Solving Systems of Equations (4:35)"/></p>
+        </li>
+
+         <li>
+            <p><url href="https://youtu.be/kH3NIEjzktA?si=2dN0aTLKDJ8h-YTF" visual="Solution Sets of Linear Systems (5:11)"/></p>
+        </li>
+
+         <li>
+            <p><url href="https://youtu.be/sNbHXatRq8Q?si=zHbSUQFUFrSkVrg7" visual="Systems of Linear Equations (4:26)"/></p>
+        </li>
+
+	        <li>
+            <p>
+                <url href="https://youtu.be/9xSOC9lwtl8?si=cVMr8U6pMpak-N5Y" visual="Intro to Linear Systems - Part 1 (6:44)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/oG3jcJb6M70?si=kdizNDVATXJTafKq" visual="Intro to Linear Systems - Part 2 (9:59)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/ZKUqtErZCiU?si=7JYX_mK7hRnw1IeV" visual="What's the big idea of Linear Algebra (12:57)"/></p>
+        </li>
+	</ul>
+</objectives>
   
   <subsection>
     <title>

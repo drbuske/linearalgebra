@@ -19,28 +19,7 @@
       systems.
     </p>
 
-	   <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/g3aO3W18Wjw?si=dNETCQq-_JTCIARg" visual="Vectors - Part 1 (8:11)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/L87_dt-zeRw?si=5_sbm9RdH1gnyf91" visual="Vectors - Part 2 (13:35)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/SS48Om0PX6Q?si=qZMcE4tQ-EFaMgAe" visual="Visualizing Vector Addition and Scalar Mulitiplication (6:39)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/4zVKQ4hKj2Y?si=fG6tN9oGy6ofv_j4" visual="Linear Combination of Vectors (9:25)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/fNk_zzaMoSs?si=McwH32ylZB7EFiLg" visual="Vectors (9:51)"/></p>
-        </li>
-	</ul>
-</objectives>
+	   
     
   </introduction>
 
@@ -1317,6 +1296,43 @@
     </example>
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+		<li>
+            <p><url href="https://youtu.be/ZRLt_Rab7Lk?si=xxf90u_7GV9PYQmR" visual="Vectors in R^n, Scalar Multiplication, and Vector Addition (9:40)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/muDgkQrTC5k?si=Oqmb9NA8y0ICHScX" visual="Visualizing Vector Addition and Scalar Multiplication (11:25)"/></p>
+        </li>
+
+		<li>
+            <p><url href="hhttps://youtu.be/8NdaGOtcdB0?si=wRs28czWghtATwXg" visual="Linear Combinations of Vectors (13:06)"/></p>
+        </li>
+
+	        <li>
+            <p>
+                <url href="https://youtu.be/g3aO3W18Wjw?si=dNETCQq-_JTCIARg" visual="Vectors - Part 1 (8:11)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/L87_dt-zeRw?si=5_sbm9RdH1gnyf91" visual="Vectors - Part 2 (13:35)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/SS48Om0PX6Q?si=qZMcE4tQ-EFaMgAe" visual="Visualizing Vector Addition and Scalar Mulitiplication (6:39)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/4zVKQ4hKj2Y?si=fG6tN9oGy6ofv_j4" visual="Linear Combination of Vectors (9:25)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/fNk_zzaMoSs?si=McwH32ylZB7EFiLg" visual="Vectors (9:51)"/></p>
+        </li>
+
+
+	</ul>
+</objectives>
 
   <subsection>
     <title>

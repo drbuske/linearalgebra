@@ -19,29 +19,7 @@
     problem algebraically and develop a technique to describe the
     solution spaces of general linear systems.</p>
 
-	   <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-
-		<li>
-            <p><url href="https://youtu.be/H8MiZMJr1kQ?si=T6bx4fqssIxymmEz" visual="What is a solution to a Linear System? (5:27)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/qKyturOAD60?si=THEJ4clZaRjZlN8h" visual="Visualizing Solutions to Linear Systems (8:18)"/></p>
-        </li>
-	        <li>
-            <p>
-                <url href="https://youtu.be/J3FXEGdTPJc?si=bk69vC3IdEfBa-v8" visual="Gaussian Elimination (6:23)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/cXSqU660008?si=tFmtrVWhlFi29IMM" visual="Row Operations and Echelon Form (8:07)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/vhm1bPMAgyU?si=0IAgYKv5epigW1Ex" visual="The Gaussian Algorithm Visualized (13:36)"/></p>
-        </li>
-	</ul>
-</objectives>
+	
 
   </introduction>
 
@@ -1501,6 +1479,69 @@
     </example>
 
   </subsection>
+
+   <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.2+Equivalent+Systems+-+Buske+-+Linear+Algebra/1_9h8k6633" visual="Equivalent Systems (3:22)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.2.2+-+Buske+-+Linear+Algebra/1_igcxwx1a" visual="Activity 1.2.2 (12:26)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.2+Augmented+Matrices+-+Buske+-+Linear+Algebra/1_33sn4g9f" visual="Augmented Matrices (5:15)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.2.3+-+Buske+-+Linear+Algebra/1_0olkbb5n" visual="Activity 1.2.3 (15:53)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/1.2+Reduced+Row+Echelon+Form+-+Buske+-+Linear+Algebra/1_pfzw1qci" visual="Reduced Row Echelon Form (12:54)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://mediaspace.minnstate.edu/media/Activity+1.2.4+-+Buske+-+Linear+Algebra/1_70d7pl8j" visual="Activity 1.2.4 (11:04)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/QjBLyajJDVo?si=A2C6eOgTMkHTdQYG" visual="Finding Solutions to Linear Systems (7:52)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/cpUR_il5beU?si=t5Y2AiEoPPlYz6KC" visual="Augmented Matrices and Row Operations (5:18)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/k13RtNzqko4?si=TFa3-G-j_SufGlSM" visual="Solving Linear Systems with Augmented Matrices (8:34)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/r_sDsitJMQE?si=VncWLvpmdXPrZuZ7" visual="Reduced Row Echelon Form (7:50)"/></p>
+        </li>
+
+		<li>
+            <p><url href="https://youtu.be/H8MiZMJr1kQ?si=T6bx4fqssIxymmEz" visual="What is a solution to a Linear System? (5:27)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/qKyturOAD60?si=THEJ4clZaRjZlN8h" visual="Visualizing Solutions to Linear Systems (8:18)"/></p>
+        </li>
+	        <li>
+            <p>
+                <url href="https://youtu.be/J3FXEGdTPJc?si=bk69vC3IdEfBa-v8" visual="Gaussian Elimination (6:23)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/cXSqU660008?si=tFmtrVWhlFi29IMM" visual="Row Operations and Echelon Form (8:07)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/vhm1bPMAgyU?si=0IAgYKv5epigW1Ex" visual="The Gaussian Algorithm Visualized (13:36)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>
