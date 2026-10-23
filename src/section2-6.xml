@@ -177,25 +177,7 @@
 
     </exploration>
 
-    <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/Jg9IofCsc6E?si=RpQ2NirKzjWS39yJ" visual="Geometry of Matrix Transformations - Part 1 (9:50)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/xwp4l4KiUII?si=BOSAnq6RfKwwgvkI" visual="Reflections - Part 2 (5:58)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/rsCPzNuoCFs?si=i_uHrNZY9wwvsqnO" visual="Computer Graphics (4:58)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/kYB8IZa5AuE?si=Z3DjLyKm7CjuzXAN" visual="Linear Transformations and Matrices (10:58)"/></p>
-        </li>
-	</ul>
-</objectives>
+    
 
   </introduction>
 
@@ -1600,6 +1582,26 @@
 
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/Jg9IofCsc6E?si=RpQ2NirKzjWS39yJ" visual="Geometry of Matrix Transformations - Part 1 (9:50)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/xwp4l4KiUII?si=BOSAnq6RfKwwgvkI" visual="Reflections - Part 2 (5:58)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/rsCPzNuoCFs?si=i_uHrNZY9wwvsqnO" visual="Computer Graphics (4:58)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/kYB8IZa5AuE?si=Z3DjLyKm7CjuzXAN" visual="Linear Transformations and Matrices (10:58)"/></p>
+        </li>
+	</ul>
+</objectives>
   
   <subsection>
     <title>
