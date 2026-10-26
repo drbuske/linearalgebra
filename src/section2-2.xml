@@ -1564,17 +1564,58 @@ A*B
 <objectives>
 <!-- <title>Videos</title> -->
 <ul>
-	        <li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/2.2+Scalar+Multiplication+and+Matrix+Addition+-+Buske+-+Linear+Algebra/1_ub3z4sl2" visual="Scalar Multiplication and Matrix Addition (6:56)"/>
+        </p>
+        </li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/Activity+2.2.2+-+Buske+-+Linear+Algebra/1_3swczk8o" visual="Activity 2.2.2 (12:25)"/>
+        </p>
+        </li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/Activity+2.2.3+-+Buske+-+Linear+Algebra/1_4c989k6h" visual="Activity 2.2.3 (5:57)"/>
+        </p>
+        </li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/2.2+Matrix-vector+Multiplication+-+Buske+-+Linear+Algebra/1_9494thf6" visual="Matrix-vector Multiplication (4:21)"/>
+        </p>
+        </li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/Activity+2.2.4+-+Buske+-+Linear+Algebra/1_3d5naunb" visual="Activity 2.2.4 (10:45)"/>
+        </p>
+        </li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/2.2+Matrix-matrix+Products+-+Buske+-+Linear+Algebra/1_orwizmt8" visual="Matrix-matrix Products (6:48)"/>
+        </p>
+        </li>
+
+		<li>
+    	<p>
+        <url href="https://mediaspace.minnstate.edu/media/Activity+2.2.5+-+Buske+-+Linear+Algebra/1_0zy2575k" visual="Activity 2.2.5 (13:48)"/>
+        </p>
+        </li>
+
+	   <!-- <li>
             <p>
                 <url href="https://youtu.be/g3aO3W18Wjw?si=dNETCQq-_JTCIARg" visual="Matrices and Matrix-Vector Product (14:17)"/>
             </p>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <p><url href="https://youtu.be/AUSWMTSTspQ?si=bZW6v6h86uCYRTOB" visual="Matrix Arithmetic, Matrix Multiplication and Matrix Transpose (13:46)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/EiWGoOunTU0?si=V4MovtC_4c_oolxL" visual="Elementary Matrices (8:03)"/></p>
-        </li>
+        </li> -->
+
 	</ul>
 </objectives>
 
