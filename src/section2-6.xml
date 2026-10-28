@@ -1586,6 +1586,24 @@
 <objectives>
 <!-- <title>Videos</title> -->
 <ul>
+  	    <li>
+        <p>
+        <url href="https://mediaspace.minnstate.edu/media/2.6+Linear+Vs+Matrix+Transformations+-+Buske+-+Linear+Algebra/1_d856fjk7" visual="Linear Vs Matrix Transformations (6:11)"/>
+        </p>
+        </li>
+
+        <li>
+        <p>
+        <url href="https://mediaspace.minnstate.edu/media/Activity+2.6.2+-+Buske+-+Linear+Algebra/1_so4ym8zl" visual="Activity 2.6.2 (10:59)"/>
+        </p>
+        </li>
+
+        <li>
+        <p>
+        <url href="https://mediaspace.minnstate.edu/media/Activity+2.6.3+-+Buske+-+Linear+Algebra/1_80xiomnp" visual="Activity 2.6.3 (20:54)"/>
+        </p>
+        </li>
+
 	        <li>
             <p>
                 <url href="https://youtu.be/Jg9IofCsc6E?si=RpQ2NirKzjWS39yJ" visual="Geometry of Matrix Transformations - Part 1 (9:50)"/>

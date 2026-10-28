@@ -199,40 +199,7 @@
     descriptions.  This example illustrates the central idea of this
     section.  </p> 
 
-    <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/BKeQor6Y2EM?si=AL_yPSMdK4S7u2bL" visual="Basis and Dimension (7:14)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/0QFE8J-Ge00?si=VvT_cG3pQRL6SfeI" visual="Coordinates and Change of Basis (11:12)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/QN00isODmEs?si=uOOODqbS4p8xE7ec" visual="Coordinate Systems from Non-Standard Bases (6:33)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/jZ-eL71AyzU?si=pCqIgIg8UiosLaIm" visual="Writing Vectors in a New Coordinate System (3:51)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/ArZGG7F-pgo?si=PiGDIHLkHDjrZPMD" visual="What Exactly are Grid Lines in Coordinate Systems (5:15)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/KjlTOLhaI9s?si=dVqbvGHWVCOIhUrk" visual="Changing Between Two Bases (7:54)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/s4GC6zoULi0?si=Qwk0rIO7YvnEEb83" visual="Visualizing Change of Basis Dynamically (7:41)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/k7RM-ot2NWY?si=YBoTa11PX-KNXr4a" visual="Linear Combinations, Span, and Basis Vectors (9:58)"/></p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/P2LTAUO1TdA?si=CX6IRrDWGCuXeGvQ" visual="Change of Basis (12:50)"/></p>
-        </li>
-	</ul>
-</objectives>
+    
 
   </introduction>
 
@@ -1334,6 +1301,41 @@
   </activity>
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/BKeQor6Y2EM?si=AL_yPSMdK4S7u2bL" visual="Basis and Dimension (7:14)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/0QFE8J-Ge00?si=VvT_cG3pQRL6SfeI" visual="Coordinates and Change of Basis (11:12)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/QN00isODmEs?si=uOOODqbS4p8xE7ec" visual="Coordinate Systems from Non-Standard Bases (6:33)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/jZ-eL71AyzU?si=pCqIgIg8UiosLaIm" visual="Writing Vectors in a New Coordinate System (3:51)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/ArZGG7F-pgo?si=PiGDIHLkHDjrZPMD" visual="What Exactly are Grid Lines in Coordinate Systems (5:15)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/KjlTOLhaI9s?si=dVqbvGHWVCOIhUrk" visual="Changing Between Two Bases (7:54)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/s4GC6zoULi0?si=Qwk0rIO7YvnEEb83" visual="Visualizing Change of Basis Dynamically (7:41)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/k7RM-ot2NWY?si=YBoTa11PX-KNXr4a" visual="Linear Combinations, Span, and Basis Vectors (9:58)"/></p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/P2LTAUO1TdA?si=CX6IRrDWGCuXeGvQ" visual="Change of Basis (12:50)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>
