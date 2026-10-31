@@ -1366,7 +1366,43 @@
 <objectives>
 <!-- <title>Videos</title> -->
 <ul>
-	        <li>
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/3.1+Definition+of+Matrix+Inverse+-+Buske+-+Linear+Algebra/1_zcv1hx9b" visual="Definition of Matrix Inverse (6:43)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+3.1.2+-+Buske+-+Linear+Algebra/1_cqzmutwe" visual="Activity 3.1.2 (13:04)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/3.1+Finding+Matrix+Inverses+-+Buske+-+Linear+Algebra/1_ktshtdqe" visual="Finding Matrix Inverses (6:35)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+3.1.3+-+Buske+-+Linear+Algebra/1_71v0i905" visual="Activity 3.1.3 (14:37)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/3.1+LU+factorization+-+Buske+-+Linear+Algebra/1_ou08jxpl" visual="LU Factorizations (13:25)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+3.1.4+-+Buske+-+Linear+Algebra/1_frfhtbi3" visual="Activity 3.1.4 (20:18)"/>
+    </p>
+    </li>
+		
+		   <li>
             <p>
                 <url href="https://youtu.be/kWssP242EgI?si=BBtZdHN1kdBYl_o9" visual="Matrix Inverse (10:47)"/>
             </p>
