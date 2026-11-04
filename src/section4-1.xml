@@ -158,32 +158,7 @@
 
     </exploration>
 
-    <objectives>
-<p>Buske Videos</p>
-<ul>
-	        <li>
-            <p>
-                <url href="https://mediaspace.minnstate.edu/media/Eigenvalue+and+Eigenvector+Definition+-+Buske+-+Linear+Algebra/1_3tfzm8nv" visual="Eigenvalue and Eigenvector Definition (4:11)"/>
-            </p>
-        </li>
-        
-	</ul>
-  <p>Other Videos</p>
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/Yyy1nehBIjs?si=aBIuvDSEVXvDkG1J" visual="Intro to Eigenvectors (7:09)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/iXJsjWhb6aE?si=s6gF2Bywvr3dU6fZ" visual="Intro to Complex Numbers (6:29)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/X6W-cSgfa6I?si=EHVyg7Gh2Zfmvmlz" visual="Complex Numbers - Polar Form (7:04)"/></p>
-        </li>
-	</ul>
-</objectives>
-
+    
 
 
 
@@ -913,6 +888,33 @@
     </question>
 
   </subsection>
+
+<objectives>
+<!-- <p>Buske Videos</p> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://mediaspace.minnstate.edu/media/Eigenvalue+and+Eigenvector+Definition+-+Buske+-+Linear+Algebra/1_3tfzm8nv" visual="Eigenvalue and Eigenvector Definition (4:11)"/>
+            </p>
+        </li>
+        
+	</ul>
+  <p>Other Videos</p>
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/Yyy1nehBIjs?si=aBIuvDSEVXvDkG1J" visual="Intro to Eigenvectors (7:09)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/iXJsjWhb6aE?si=s6gF2Bywvr3dU6fZ" visual="Intro to Complex Numbers (6:29)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/X6W-cSgfa6I?si=EHVyg7Gh2Zfmvmlz" visual="Complex Numbers - Polar Form (7:04)"/></p>
+        </li>
+	</ul>
+</objectives>
+
 
   <subsection>
     <title> Summary </title>

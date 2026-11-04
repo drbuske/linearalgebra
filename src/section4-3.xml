@@ -204,43 +204,7 @@
 
     </exploration>
 
-	  <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/PrELT2y7dC4?si=GJzu312hwAJ2nJlX" visual="Similar Matrices (14:48)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/5MWwYZ27L9I?si=MahmlLZcO6SB8J8-" visual="Diagonalization (7:53)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/q48o3PXlg4Q?si=6M0i1fhXgjVFP192" visual="Diagonal Matrices are Freaking Awesome (6:27)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/nNwZA1X-C3c?si=5An3P6hA735hJ-db" visual="How the Diagonalization Process Works (7:29)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/Z8KBxf4C8kk?si=m1LpeFs3jLrjp4iT" visual="Compute Large Powers of a Matrix via Diagonalization (3:00)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/EJG6gBeVdfw?si=h8WKpv4Z011c-wPH" visual="Visualizing Diagonalization and Eigenbases (9:45)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/ieWyx2mlZyk?si=bEyvwM2xfyVQNRiM" visual="Diagonalizing a Matrix (10:07)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/FOoi8h47Tw4?si=rfNtKYCIk3DiNX1S" visual="Complex Eigenvalues, Eigenvectors, and Diagonalization (14:09)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/jNtiENbAcFM?si=ZmslHDhMLhQuWKT6" visual="Similar Matrices have Similar Properties (8:46)"/></p>
-        </li>
-		<li>
-            <p><url href="https://youtu.be/s4c5LQ5a4ek?si=fhO5YAwV4jAuLnwd" visual="The Similarity Relationship Represents a Change of Basis (9:58)"/></p>
-        </li>
-	</ul>
-</objectives>
+	  
 
   </introduction>
 
@@ -1271,6 +1235,44 @@ P*C*P.inverse()
     </proposition>
      
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	        <li>
+            <p>
+                <url href="https://youtu.be/PrELT2y7dC4?si=GJzu312hwAJ2nJlX" visual="Similar Matrices (14:48)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/5MWwYZ27L9I?si=MahmlLZcO6SB8J8-" visual="Diagonalization (7:53)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/q48o3PXlg4Q?si=6M0i1fhXgjVFP192" visual="Diagonal Matrices are Freaking Awesome (6:27)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/nNwZA1X-C3c?si=5An3P6hA735hJ-db" visual="How the Diagonalization Process Works (7:29)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/Z8KBxf4C8kk?si=m1LpeFs3jLrjp4iT" visual="Compute Large Powers of a Matrix via Diagonalization (3:00)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/EJG6gBeVdfw?si=h8WKpv4Z011c-wPH" visual="Visualizing Diagonalization and Eigenbases (9:45)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/ieWyx2mlZyk?si=bEyvwM2xfyVQNRiM" visual="Diagonalizing a Matrix (10:07)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/FOoi8h47Tw4?si=rfNtKYCIk3DiNX1S" visual="Complex Eigenvalues, Eigenvectors, and Diagonalization (14:09)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/jNtiENbAcFM?si=ZmslHDhMLhQuWKT6" visual="Similar Matrices have Similar Properties (8:46)"/></p>
+        </li>
+		<li>
+            <p><url href="https://youtu.be/s4c5LQ5a4ek?si=fhO5YAwV4jAuLnwd" visual="The Similarity Relationship Represents a Change of Basis (9:58)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>
