@@ -892,15 +892,30 @@
 <objectives>
 <!-- <p>Buske Videos</p> -->
 <ul>
-	        <li>
-            <p>
-                <url href="https://mediaspace.minnstate.edu/media/Eigenvalue+and+Eigenvector+Definition+-+Buske+-+Linear+Algebra/1_3tfzm8nv" visual="Eigenvalue and Eigenvector Definition (4:11)"/>
-            </p>
-        </li>
+	   <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/Eigenvalue+and+Eigenvector+Definition+-+Buske+-+Linear+Algebra/1_3tfzm8nv" visual="Eigenvalue and Eigenvector Definition (4:11)"/>
+     </p>
+     </li>
+
+     <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/Activity+4.1.2+-+Buske+-+Linear+Algebra/1_qv94x6uz" visual="Activity 4.1.2 (16:00)"/>
+     </p>
+     </li>
+
+     <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/4.1+Geometric+Value+of+Eigenvectors+-+Buske+-+Linear+Algebra/1_8ityli7c" visual="Geometric Value of Eigenvectors (6:12)"/>
+     </p>
+     </li>
+
+     <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/Activity+4.1.3+-+Buske+-+Linear+Algebra/1_lrzs6ab7" visual="Activity 4.1.3 (21:52)"/>
+     </p>
+     </li>
         
-	</ul>
-  <p>Other Videos</p>
-<ul>
 	        <li>
             <p>
                 <url href="https://youtu.be/Yyy1nehBIjs?si=aBIuvDSEVXvDkG1J" visual="Intro to Eigenvectors (7:09)"/>
