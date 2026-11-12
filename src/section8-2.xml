@@ -144,16 +144,7 @@
     section, and at subspaces, bases, and dimension in the next section.
   </p>
 
-  <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/SzZaQnzstfE?si=X_3DIlCagZeLoyNz" visual="The Vector Space of Polynomials: Span, Linear Independence, and Basis (12:49)"/>
-            </p>
-        </li>
-	</ul>
-</objectives>
+  
 
 </introduction>
 
@@ -750,10 +741,37 @@ vector spaces. We also have the usual characterization of linear dependence in t
     </p>
   </proof>
 </proposition>
-``
-
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	   <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/5.2+Linear+Combinations+and+Span+-+Buske+-+Linear+Algebra/1_bclh0sjg" visual="Linear Combinations and Span (11:11)"/>
+     </p>
+     </li>
+
+     <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/Activity+5.2.2+-+Buske+-+Linear+Algebra/1_0o6kl48n" visual="Activity 5.2.2 (7:36)"/>
+     </p>
+     </li>
+
+     <li>
+     <p>
+     <url href="https://mediaspace.minnstate.edu/media/5.2+Linear+Independence+-+Buske+-+Linear+Algebra/1_rb2g99d4" visual="Linear Independence (15:31)"/>
+     </p>
+     </li>
+
+	        <li>
+            <p>
+                <url href="https://youtu.be/SzZaQnzstfE?si=X_3DIlCagZeLoyNz" visual="The Vector Space of Polynomials: Span, Linear Independence, and Basis (12:49)"/>
+            </p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection xml:id="subsec-lincombo-Summary">
     <title>Summary</title>
