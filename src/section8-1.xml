@@ -612,7 +612,7 @@
   The purpose of this activity is to verify that <m>\mathbb{P}_{n}</m> is a vector space.
 </p>
 
-  <ol marker="(a)">
+  <ol marker="a.">
     <li>
       <p>
         Explain why <m>\mathbb{P}_{n}</m> is closed under the operation of usual polynomial addition.
@@ -649,7 +649,7 @@
   </statement>
 
   <solution>
-    <ol>
+    <ol marker="a.">
       <li>
         <p>If <m>\pvec, \qvec \in \mathbb{P}_{n}</m>, then both <m>\pvec</m> and <m>\qvec</m> are polynomials of degree at most <m>n</m>. Adding two such polynomials yields a polynomial <m>\pvec + \qvec</m> having degree at most <m>n</m> as well. </p>
       </li>
@@ -697,7 +697,7 @@ and scalar multiplication by
   <mrow> (c\fvec)(x) = c(\fvec(x)).</mrow>
 </md>
 We investigate whether <m>C(a,b)</m> is a vector space or not.</p>
-<ol marker="(a)">
+<ol marker="a.">
   <li>Explain why <m>C(a,b)</m> is closed under addition as defined.
 That is, explain why <m>{\fvec}+ \gvec \in C(a,b)</m> if <m>\fvec, \gvec \in C(a,b)</m>.  
 </li>
@@ -713,7 +713,7 @@ How do you know that these elements are also in <m>C(a,b)</m>?   </li>
 
   <solution>
     <p>
-      <ol marker="(a)">
+      <ol marker="a.">
         <li>Adding two continuous functions gives another continuous function.</li>
         <li>Think of multiplying by <m>c</m> as vertically stretching the graph of a function <m>f(x)</m>.
 If <m>c &#x3C; 0</m>, then it is also reflected about the <m>x-</m>axis.
@@ -739,7 +739,7 @@ For any <m>k, l \in \mathbb{R}</m>, we then have <m>((k+l)\uvec)(x) = k\uvec(x) 
 We denote such a sequence as <m>(\avec_{n})</m> where it is understood that the subscripts <m>n</m> run from 0 to <m>\infty</m>.
 Addition is defined by <m>(\avec_{n}) + (\bvec_{n}) = (\avec_{n}+\bvec_{n})</m> and scalar multiplication by <m>c(\avec_{n}) = (c\avec_{n})</m> for <m>c \in \mathbb{R}</m>.
   </p>
-  <ol marker="(a)">
+  <ol marker="a.">
     <li>Identify the zero element <m>{\zerovec}</m> in <m>\mathbb{R}^{\mathbb{N}}</m> from axiom <em>(A3)</em>.</li>
     <li>Identify the additive inverse of <m>(\avec_{n}) \in \mathbb{R}^{\mathbb{N}}</m> and then show that <m>(\avec_{n}) + (-\avec_{n}) ={\zerovec}</m> for every <m>(\avec_{n}) \in \mathbb{R}^{\mathbb{N}}</m>. </li>
     <li> Is <m>\mathbb{R}^{\mathbb{N}}</m> a vector space?  </li>
@@ -755,7 +755,7 @@ Is <m>c^{+}</m> a vector space or not? </li>
 </statement>
 <solution>
   <p>
-    <ol marker="(a)">
+    <ol marker="a.">
       <li> The zero element <m>{\zerovec}</m> is the sequence <m>0,0,0,0,\hdots</m></li>
       <li> For <m>(\avec_{n}) \in \mathbb{R}^{\mathbb{N}}</m>, we have <m>(\avec_{n}) = a_{1}, a_{2}, a_{3}, \ldots</m>.
 The additive inverse <m>(-\avec_{n})</m> is the sequence <m>-a_{1}, -a_{2}, -a_{3}, \ldots</m>.

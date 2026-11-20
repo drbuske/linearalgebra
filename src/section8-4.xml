@@ -556,7 +556,7 @@ following theorem guarantees that such a basis exists.
 <activity xml:id="subspace-dimension">
 <statement>
   <p> For each vector space below, calculate the dimension.  </p>
-    <ol marker="(a)">
+    <ol marker="a.">
       <li>
         <p>
           <m>\mathbb{R}^{n}</m>

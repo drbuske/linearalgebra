@@ -346,7 +346,7 @@
 <activity xml:id="subspace-sequences">
 
   <statement>
-<ol marker="(a)">
+<ol marker="a.">
   <li>Let <m>c</m> denote the vector space of convergent, infinite sequences of real numbers.
 Let <m>c_{0}</m> denote the subset of infinite sequences of real numbers that converge to 0.
 Show that <m>c_{0}</m> is a subspace of <m>c</m>.
@@ -363,7 +363,7 @@ those of the form <m>a_{n}=ar^{n}</m> where <m>|r|&#x3C;1</m>) a subspace of <m>
 
   <solution>
     <p>
-      <ol marker="(a)">
+      <ol marker="a.">
         <li>We show that if <m>(\avec_{n})</m> and <m>(\bvec_{n})</m> are sequences in <m>c_{0}</m>, then their sum is as well.
 But the sum of two sequences that converge to 0 also converges to 0.
 We also show that if <m>(\avec_{n})</m> is a sequence converging to 0 then any multiple of it will also converge to 0.
@@ -483,7 +483,7 @@ Multiplying each term of a sequence by a scalar <m>k</m> will produce another co
 
 <activity xml:id="subspace-function-spaces">
 <statement>
-  <ol marker="(a)">
+  <ol marker="a.">
     <li>
       <p>
         Let <m>V=C(-\infty,\infty)</m>, the vector space of continuous real-valued functions.
@@ -548,7 +548,7 @@ Is <m>W</m> a subspace of <m>V</m>? Why or why not?
   </ol>
 </statement>
 <solution>
-  <ol marker="(a)">
+  <ol marker="a.">
     <li>
       <p>
         The zero vector, <m>{\bfseries{0}}(x) = 0</m> (the constant zero function) is in <m>W</m> since it satisfies the equation <m>\fvec' - \fvec=0</m>.
@@ -601,7 +601,7 @@ The zero polynomial is not in <m>W</m>.
     <li>
       <p>
         Yes.
-First, the zero polynomial <m>{\zerovec(x) = 0</m> is in <m>W</m> since all coefficients are 0 (and hence their sum is too).
+First, the zero polynomial <m>\zerovec(x) = 0</m> is in <m>W</m> since all coefficients are 0 (and hence their sum is too).
 If <m>\pvec, \qvec \in W</m>, where <m>\pvec(x) = a_{1}x^{2} + b_{1}x + c_{1}</m> and <m>\qvec(x) = a_{2}x^{2} + b_{2}x + c_{2}</m>, then <m>(\pvec+\qvec)(x) = a_{1}x^{2} + b_{1}x + c_{1} + a_{2}x^{2} + b_{2}x + c_{2} = (a_{1}+a_{2})x^{2} + (b_{1}+b_{2})x + (c_{1}+c_{2})</m> and we have <m>(a_{1}+a_{2}) + (b_{1}+b_{2}) + (c_{1}+c_{2})=0</m> since <m>a_{1}+b_{1}+c_{1}=0</m> and <m>a_{2}+b_{2}+c_{2}=0</m>.
 Also, <m>(k\pvec)(x) = k(a_{1}x^{2}+b_{1}x+c_{1}) = (ka_{1})x^{2} + (kb_{1})x + (kc_{1})</m> where <m>ka_{1} + kb_{1} + kc_{1} = k(a_{1}+b_{1}+c_{1})=0</m> so that <m>W</m> is closed under addition and scalar multiplication.
       </p>
