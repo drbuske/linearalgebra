@@ -167,19 +167,7 @@
       </task>
     </exploration>
 
-	  <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/6VvAMmctvcE?si=WPKc1Z3kl4Ck0zu5" visual="Orthogonal Complements (9:16)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/fGZQSXMYIx4?si=NRj20kpU4YNbZ4bC" visual="Dimension Theorem for Orthogonal Complements (7:41)"/></p>
-        </li>
-	</ul>
-</objectives>
+
 
   </introduction>
   
@@ -1424,6 +1412,112 @@
     </activity>
 
   </subsection>
+
+	  <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+<!-- <li>
+<p>Orthogonal Complements (3:04)</p>
+  <interactive
+    aspect="16:9" responsive="true" playerSize="custom" width="50%" height="50%"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_jh4ppnj0"/>
+</li>
+
+
+<li>
+	<p>Activity 6.2.2 (9:38)</p>
+  <interactive
+    aspect="16:9"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_gx0kj9x1"/>
+</li>
+
+<li>
+	<p>Orthogonal Complement Examples (8:27)</p>
+  <interactive
+    aspect="16:9"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_d40dmtnm"/>
+</li>
+
+<li>
+	<p>Activity 6.2.3 (12:03)</p>
+  <interactive
+    aspect="16:9"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_j3itz2zo"/>
+</li>
+
+<li>
+	<p>Matrix Transpose and Orthogonal Complement (7:36)</p>
+  <interactive
+    aspect="16:9"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_7m8nz1ww"/>
+</li>
+
+<li>
+	<p>Activity 6.2.4 (9:22)</p>
+  <interactive
+    aspect="16:9"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_rf24pu5h"/>
+</li>
+
+<li>
+<p>Activity 6.2.5 (9:23)</p>
+  <interactive
+    aspect="16:9"
+    iframe="https://cdnapisec.kaltura.com/p/812561/embedPlaykitJs/uiconf_id/52484262?iframeembed=true&amp;entry_id=1_r95vljrh"/>
+</li> -->
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.2+Orthogonal+Complements+-+Buske+-+Linear+Algebra/1_jh4ppnj0" visual="Orthogonal Complements (3:04)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.2.2+-+Buske+-+Linear+Algebra/1_gx0kj9x1" visual="Activity 6.2.2 (9:38)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.2+Orthogonal+Complement+Examples+-+Buske+-+Linear+Algebra/1_d40dmtnm" visual="Orthogonal Complement Examples (8:27)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.2.3+-+Buske+-+Linear+Algebra/1_j3itz2zo" visual="Activity 6.2.3 (12:03)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.2+Matrix+Transpose+and+Orthogonal+Complement+-+Buske+-+Linear+Algebra/1_7m8nz1ww" visual="Matrix Transpose and Orthogonal Complement (7:36)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.2.4+-+Buske+-+Linear+Algebra/1_rf24pu5h" visual="Activity 6.2.4 (9:22)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.2.5+-+Buske+-+Linear+Algebra/1_r95vljrh" visual="Activity 6.2.5 (9:23)"/>
+    </p>
+    </li>
+
+	        <li>
+            <p>
+                <url href="https://youtu.be/6VvAMmctvcE?si=WPKc1Z3kl4Ck0zu5" visual="Orthogonal Complements (9:16)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/fGZQSXMYIx4?si=NRj20kpU4YNbZ4bC" visual="Dimension Theorem for Orthogonal Complements (7:41)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>
