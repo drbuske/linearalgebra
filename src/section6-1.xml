@@ -168,19 +168,7 @@
       </task>
     </exploration>
 
-	  <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/4J0s1Xo2L-w?si=7aprIN8wep7ao3qX" visual="Dot Product (3:24)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/fa_TfVGC1jQ?si=72LoWJd29sLF1l-f" visual="Length and Orthogonality (11:26)"/></p>
-        </li>
-	</ul>
-</objectives>
+	 
 
   </introduction>
 
@@ -1795,6 +1783,51 @@ plotclusters(clusters, centroids)
     </p>
 
   </subsection>
+
+ <objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.1+Dot+Product+Introduction+-+Buske+-+Linear+Algebra/1_ol0x67dd" visual="Dot Product Introduction (7:13)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.1.2+-+Buske+-+Linear+Algebra/1_baa3qbzd" visual="Activity 6.1.2 (9:55)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.1.4+-+Buske+-+Linear+Algebra/1_ggiauakt" visual="Activity 6.1.4 (14:54)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.1+k-means+Clustering+Summary+-+Buske+-+Linear+Algebra/1_ia633qh3" visual="k-means Clustering Summary (4:38)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Active+6.1.5+-+Buske+-+Linear+Algebra/1_qlgdqcya" visual="Activity 6.1.5 (17:01)"/>
+    </p>
+    </li>
+
+
+	        <li>
+            <p>
+                <url href="https://youtu.be/4J0s1Xo2L-w?si=7aprIN8wep7ao3qX" visual="Dot Product (3:24)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/fa_TfVGC1jQ?si=72LoWJd29sLF1l-f" visual="Length and Orthogonality (11:26)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>
