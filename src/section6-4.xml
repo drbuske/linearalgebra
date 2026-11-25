@@ -199,19 +199,7 @@
       </task>
     </exploration>
 
-	 <objectives>
-<!-- <title>Videos</title> -->
-<ul>
-	        <li>
-            <p>
-                <url href="https://youtu.be/Pp4APwaPVzI?si=PONpDo9kbAcdUYMs" visual="Gram-Schmidt Process (12:44)"/>
-            </p>
-        </li>
-        <li>
-            <p><url href="https://youtu.be/o9Eu9pdL-DA?si=qTtAbMFW2XPLkYeD" visual="Gram-Schmidt Process - Part 2 (16:35)"/></p>
-        </li>
-	</ul>
-</objectives>
+	 
 
   </introduction>
 
@@ -1389,6 +1377,49 @@ sage.repl.load.load("https://raw.githubusercontent.com/davidaustinm/ula_modules/
     </p>
 
   </subsection>
+
+<objectives>
+<!-- <title>Videos</title> -->
+<ul>
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Preview+Activity+6.4.1+-+Buske+-+Linear+Algebra/1_jx4lblw5" visual="Preview Activity 6.4.1 (10:24)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.4+Gram-Schmidt+Introduction+-+Buske+-+Linear+Algebra/1_4yylgour" visual="Gram-Schmidt Introduction (4:19)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.4.2+-+Buske+-+Linear+Algebra/1_khbnq6ww" visual="Activity 6.4.2 (20:09)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/6.4+Gram-Schmidt+Algorithm+Summary+-+Buske+-+Linear+Algebra/1_zgb6nsn1" visual="Gram-Schmidt Algorithm Summary (2:39)"/>
+    </p>
+    </li>
+
+	<li>
+    <p>
+    <url href="https://mediaspace.minnstate.edu/media/Activity+6.4.4+-+Buske+-+Linear+Algebra/1_3twr0q4v" visual="Activity 6.4.4 (22:27)"/>
+    </p>
+    </li>
+	        <li>
+            <p>
+                <url href="https://youtu.be/Pp4APwaPVzI?si=PONpDo9kbAcdUYMs" visual="Gram-Schmidt Process (12:44)"/>
+            </p>
+        </li>
+        <li>
+            <p><url href="https://youtu.be/o9Eu9pdL-DA?si=qTtAbMFW2XPLkYeD" visual="Gram-Schmidt Process - Part 2 (16:35)"/></p>
+        </li>
+	</ul>
+</objectives>
 
   <subsection>
     <title> Summary </title>
